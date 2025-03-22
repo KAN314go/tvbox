@@ -1,0 +1,248 @@
+{
+  "name": "飞捷",
+  "type": 1,
+  "url": "https://fjkkk.cn/toujiexisiquanjia.php?url=",
+  "ext": {
+    "flag": [
+      "qq"   , "腾讯"   , "letv" , "乐视"   , "mgtv" , "芒果"   , "youku",
+      "优酷"   , "qiyi" , "iqiyi", "爱奇艺"  , "奇艺"
+    ]
+  }
+},
+{
+  "name": "集象",
+  "type": 1,
+  "url": "http://110.42.2.115:880/analysis/json/?uid=2245&my=cdfhirsuwyEGIPU346&url=",
+  "ext": {
+    "flag": [
+      "qq"      , "腾讯"      , "qiyi"    , "爱奇艺"     , "奇艺"      ,
+      "youku"   , "优酷"      , "sohu"    , "搜狐"      , "letv"    ,
+      "乐视"      , "mgtv"    , "芒果"      , "CL4K"    , "renrenmi",
+      "ltnb"    , "xigua"
+    ]
+  }
+},
+{
+  "name": "海星解析",
+  "type": 1,
+  "url": "http://110.42.2.115:880/analysis/json/?uid=1735&my=hjklmsuwyzDGHIKXY3&url=",
+  "ext": {
+    "flag": [
+      "qq"   , "腾讯"   , "letv" , "乐视"   , "mgtv" , "芒果"   , "youku",
+      "优酷"   , "qiyi" , "iqiyi", "爱奇艺"  , "奇艺"
+    ]
+  }
+},
+{
+  "name": "VIP2",
+  "type": 1,
+  "url": "http://110.42.2.115:880/analysis/json/?uid=2233&my=eginqstBCJMNSUX689&url=",
+  "ext": {
+    "flag": [
+      "qq"   , "腾讯"   , "letv" , "乐视"   , "mgtv" , "芒果"   , "youku",
+      "优酷"   , "qiyi" , "iqiyi", "爱奇艺"  , "奇艺"
+    ]
+  }
+},
+{
+  "name": "MuX蓝光解析（辉夜）",
+  "type": 1,
+  "url": "https://vvip.funsline.cn/api/?key=8vMzuXb87MWtyJeECE&url=",
+  "ext": {
+    "flag": [
+      "qq"      , "腾讯"      , "qiyi"    , "爱奇艺"     , "奇艺"      ,
+      "youku"   , "优酷"      , "sohu"    , "搜狐"      , "letv"    ,
+      "乐视"      , "mgtv"    , "芒果"      , "CL4K"    , "renrenmi",
+      "ltnb"    , "xigua"   , "rongxing", "rx"      , "xfy"     , "xueren"
+    ]
+  }
+},
+{
+  "name": "群鑫影视",
+  "type": 1,
+  "url": "http://cl.yjhan.com:8090/home/api?type=ys&uid=651075&key=aehuDFGIJSVWX24589&url=",
+  "ext": { "flag": ["youku", "优酷", "qiyi", "爱奇艺", "奇艺", "qq", "腾讯"] }
+},
+{
+  "name": "qiyi[官源]",
+  "type": 1,
+  "url": "http://39.104.230.177:1122/lxjx/myyk.php?url="
+},
+{
+  "name": "肥猫解析",
+  "type": 1,
+  "url": "http://xn--ihqu10cn4c.xn--z7x900a.live/jx.php?id=2&url=",
+  "ext": {
+    "flag": [
+      "qq"      , "腾讯"      , "qiyi"    , "爱奇艺"     , "奇艺"      ,
+      "youku"   , "优酷"      , "tucheng" , "sohu"    , "搜狐"      ,
+      "letv"    , "乐视"      , "mgtv"    , "芒果"      , "tnmb"    ,
+      "seven"   , "yzm"     , "aliyun"  , "RJuMao"  , "bilibili",
+      "1905"    , "xinvip"  , "XAL"     , "qiqi"    , "XALS"    , "YuMi-vip"
+    ]
+  }
+},
+{"name": "云析", "type": 0, "url": "https://jx.yparse.com/index.php?url="},
+{
+  "name": "白云",
+  "type": 0,
+  "url": "http://jx.hjfggzs.top/api/diy/?key=ceshi&url="
+},
+{"name": "8090", "type": 0, "url": "https://www.8090g.cn/jiexi/?url="},
+{"name": "ik9", "type": 0, "url": "https://yparse.ik9.cc/index.php?url="},
+{"name": "冰豆", "type": 0, "url": "https://bd.jx.cn/?url="},
+{
+  "name": "寶片",
+  "type": 0,
+  "url": "https://jiexi.ibaopian.pro/player/?url="
+},
+{"name": "七七雲", "type": 0, "url": "https://jx.77flv.cc/?url="},
+{"name": "M1097", "type": 0, "url": "https://im1907.top/?jx="},
+{
+  "name": "m3u8TV-1",
+  "type": 0,
+  "url": "https://jx.m3u8.tv/jx/jx.php?url="
+},
+{"name": "m3u8TV-2", "type": 0, "url": "https://jx.m3u8.tv/jiexi/?url="},
+{"name": "41快解", "type": 1, "url": "http://41c.ch/vip.php?url="},
+{
+  "name": "CK解析",
+  "type": 1,
+  "url": "https://ckflv.icu/neibu.php?url=",
+  "header": {"User-Agent": "okhttp/4.9.1"}
+},
+{"name": "777", "type": 0, "url": "https://jx.777jiexi.com/player/?url="},
+{
+  "name": "1080",
+  "type": 1,
+  "url": "https://jf.lemiaoyun.cn/api/?key=86950663b3198d25885fdf61501a3366&url="
+},
+{"name": "杰森", "type": 0, "url": "https://jx.jsonplayer.com/player/?url="},
+{"name": "阳途", "type": 0, "url": "https://jx.yangtu.top/?url="},
+{
+  "name": "嗅探1",
+  "type": 0,
+  "url": "https://jx.jsonplayer.com/player/?url="
+},
+{
+  "name": "niu",
+  "type": 1,
+  "url": "http://122.228.84.103:7777/api/?key=4Dk5tdayvY6NZufEMG&url="
+},
+{
+  "name": "云仓",
+  "url": "http://43.242.202.173:3636/json.php/?key=182750826&url=",
+  "flag": ["LXTX"],
+  "header": {"User-Agent": "Dalvik/2.1.0"},
+  "type": "1"
+},
+{
+  "name": "KK",
+  "type": 1,
+  "url": "http://112.74.124.75:8899/jiexi/api.php?url="
+}
+
+    {
+      "name": "急速1",
+      "type": 1,
+      "url": "https://www.daina.hk/api/?key=RXpzyrbMFYySN0sNps&url=",
+      "ext": {
+        "flag": [
+          "qq"      , "腾讯"      , "qiyi"    , "爱奇艺"     , "奇艺"      ,
+          "youku"   , "优酷"      , "sohu"    , "搜狐"      , "letv"    ,
+          "乐视"      , "mgtv"    , "芒果"      , "CL4K"    , "renrenmi",
+          "ltnb"    , "xigua"
+        ]
+      }
+    },
+    {
+      "name": "急速2",
+      "type": 1,
+      "url": "https://jx.parwix.com:4433/player/?url=",
+      "ext": {
+        "flag": [
+          "qq"      , "腾讯"      , "qiyi"    , "爱奇艺"     , "奇艺"      ,
+          "youku"   , "优酷"      , "mgtv"    , "芒果"      , "letv"    ,
+          "乐视"      , "pptv"    , "PPTV"    , "sohu"    , "bilibili",
+          "哔哩哔哩"    , "哔哩"
+        ]
+      }
+    },
+    {
+      "name": "VIP1",
+      "type": 1,
+      "url": "http://jifei.mrcy0.com/home/api?type=ys&uid=2752189&key=aefghtACLNRSZ01247&url=",
+      "ext": {
+        "flag": [
+          "qq"   , "腾讯"   , "letv" , "乐视"   , "mgtv" , "芒果"   , "youku",
+          "优酷"   , "qiyi" , "iqiyi", "爱奇艺"  , "奇艺"
+        ]
+      }
+    },
+    {
+      "name": "急速3",
+      "type": 1,
+      "url": "http://api.vip123kan.vip/?url=",
+      "ext": {
+        "flag": [
+          "youku", "优酷"   , "mgtv" , "芒果"   , "qq"   , "腾讯"   , "qiyi" ,
+          "爱奇艺"  , "qq"   , "奇艺"
+        ]
+      }
+    },
+    {
+      "name": "急速4",
+      "type": 1,
+      "url": "http://yaluan.520say.cn/home/api?type=ys&uid=65588&key=cdeghikortvAFGI078&url=",
+      "ext": {
+        "flag": [
+          "CL4K"    , "饭后独播"    , "芒果视频"    , "youku"   , "rx"      ,
+          "ltnb"    , "优酷"      , "qiyi"    , "爱奇艺"     , "奇艺"      ,
+          "renrenmi", "qq"      , "腾讯"      , "腾讯视频"    , "letv"    , "乐视"
+        ]
+      }
+    },
+    {
+      "name": "急速5",
+      "type": 1,
+      "url": "https://jf.96ym.cn/home/api?type=ys&uid=1319830&key=cefgnoprtvxyzBGKP6&url=",
+      "ext": {
+        "flag": [
+          "qq"   , "腾讯"   , "letv" , "乐视"   , "mgtv" , "芒果"   , "youku",
+          "优酷"   , "qiyi" , "iqiyi", "爱奇艺"  , "奇艺"
+        ]
+      }
+    },
+    {
+      "name": "急速6",
+      "type": 1,
+      "url": "http://ck.laobandq.com/3515240842.php?pltfrom=1100&url=",
+      "ext": {
+        "flag": [
+          "qq"      , "腾讯"      , "qiyi"    , "爱奇艺"     , "奇艺"      ,
+          "youku"   , "优酷"      , "sohu"    , "搜狐"      , "letv"    ,
+          "乐视"      , "mgtv"    , "芒果"      , "CL4K"    , "renrenmi",
+          "ltnb"    , "xigua"
+        ]
+      }
+    },
+    {
+      "name": "急速7",
+      "type": 1,
+      "url": "https://api.exeyz.cc/api/Json.php?url="
+    },
+    {"name": "解析聚合", "type": 3, "url": "Demo"},
+    {"name": "Json并发", "type": 2, "url": "Parallel"},
+    {"name": "Json轮询", "type": 2, "url": "Sequence"},
+    {"name": "Web聚合", "type": 3, "url": "Web"},
+    {
+      "name": "急速8",
+      "type": 1,
+      "url": "https://api.m3u8.tv:5678/home/api?type=ys&uid=1931000&key=gktuvyzABEORSYZ135&url=",
+      "ext": { "flag": ["youku", "优酷", "qq", "腾讯", "mgtv", "芒果"] }
+    },
+    {
+      "name": "蓝天白云3",
+      "type": 1,
+      "url": "http://qn6z7b.yun.42jx.com/jx/jx.php?url="
+    },
