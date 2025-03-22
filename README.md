@@ -9,7 +9,7 @@
 
 - recha-sex.json：蒐集github各設計者所列性感接口
 
-- recha-media.json：蒐集github各設計者所列點撥接口
+- recha-movie.json：蒐集github各設計者所列點撥接口
 
 - recha-live.json：蒐集github各設計者所列直播接口
 
