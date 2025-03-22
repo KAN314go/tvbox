@@ -12,7 +12,7 @@
       {
         "name": "私密線路(18+)",
         "playerType": 2,
-        "url": ".live/178.txt",
+        "url": "./live/178.txt",
         "epg": "http://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Taipei"
       },
       {
@@ -297,7 +297,7 @@
         "key": "py_lav.py",
         "name": "⏭｜LAV｜PYTHON",
         "type": 3,
-        "api": ".py/lav.py",
+        "api": "./py/lav.py",
         "searchable": 1,
         "quickSearch": 1,
         "filterable": 1
@@ -306,14 +306,14 @@
         "key": "py_推特",
         "name": "⏭｜推特｜PYTHON",
         "type": 3,
-        "api": ".py/py_推特.py",
+        "api": "./py/py_推特.py",
         "style": {"type": "rect", "ratio": 1.5}
       },
       {
         "key": "py_rou",
         "name": "⏭｜Rou(沐辰)｜PYTHON",
         "type": 3,
-        "api": ".py/py_rou.py",
+        "api": "./py/py_rou.py",
         "searchable": 1,
         "quickSearch": 0,
         "filterable": 0,
@@ -326,7 +326,7 @@
         "searchable": 1,
         "changeable": 1,
         "quickSearch": 1,
-        "api": ".py/py_小红薯.py",
+        "api": "./py/py_小红薯.py",
         "playerType": 2,
         "filterable": 1
       },
@@ -356,7 +356,7 @@
         "key": "py_慾火社",
         "name": "⏭｜慾火社｜PYTHON(失效)",
         "type": 3,
-        "api": ".py/py_浴火社.py",
+        "api": "./py/py_浴火社.py",
         "searchable": 1,
         "quickSearch": 1,
         "filterable": 1
@@ -398,7 +398,7 @@
         "changeable": 1,
         "quickSearch": 1,
         "filterable": 1,
-        "api": ".drpy_js1/lf_p2p2_min.js",
+        "api": "./drpy_js/lf_p2p2_min.js",
         "jar": "./jar/pg.jar",
         "ext": "18+"
       },
@@ -446,7 +446,7 @@
         "type": 3,
         "api": "csp_JavBus",
         "jar": "./jar/pg.jar",
-        "ext": ".drpy_libs1/tokenm.json$$$https://www.cdnbus.shop",
+        "ext": "./drpy_libs/tokenm.json$$$https://www.cdnbus.shop",
         "filterable": 1,
         "changeable": 0,
         "style": {"type": "rect", "ratio": 1.77},
@@ -458,7 +458,7 @@
         "type": 3,
         "api": "csp_JavDb",
         "jar": "./jar/pg.jar",
-        "ext": ".drpy_libs1/tokenm.json$$$1",
+        "ext": "./drpy_libs/tokenm.json$$$1",
         "filterable": 1,
         "changeable": 0,
         "style": {"type": "rect", "ratio": 1.77},
@@ -852,12 +852,12 @@
         "key": "hipy_js_avtoday[密]",
         "name": "🔞AVtoday",
         "type": 3,
-        "api": ".drpy_libs1/drpy2.min.js",
+        "api": "./drpy_libs/drpy2.min.js",
         "searchable": 1,
         "quickSearch": 1,
         "filterable": 1,
         "order_num": 0,
-        "ext": ".drpy_js1/avtoday-改.js"
+        "ext": "./drpy_js/avtoday-改.js"
       },
       {
         "key": "csp_XYQHiker_missav",
@@ -1045,11 +1045,11 @@
         "key": "Theporn",
         "name": "🔞Theporn(點選點播才有東西)",
         "type": 3,
-        "api": ".drpy_libs1/drpy2.min.js",
+        "api": "./drpy_libs/drpy2.min.js",
         "changeable": 1,
         "timeout": 60,
         "style": {"type": "rect", "ratio": 1.5},
-        "ext": ".drpy_js1/theporn.js"
+        "ext": "./drpy_js/theporn.js"
       },
       {
         "key": "csp_XYQHiker_鉴黄师",
@@ -1124,10 +1124,10 @@
         "key": "hipy_js_地瓜视频[密]",
         "name": "🔞地瓜(點選點播才有東西)",
         "type": 3,
-        "api": ".drpy_libs1/drpy2.min.js",
+        "api": "./drpy_libs/drpy2.min.js",
         "filterable": 1,
         "order_num": 0,
-        "ext": ".drpy_js1/地瓜视频[密].js"
+        "ext": "./drpy_js/地瓜视频[密].js"
       },
       {
         "key": "apilj.com",
@@ -2415,10 +2415,10 @@
         "key": "hipy_js_UAA[密]",
         "name": "🔞UAA(點選點播才有東西)",
         "type": 3,
-        "api": ".drpy_libs1/drpy2.min.js",
+        "api": "./drpy_libs/drpy2.min.js",
         "filterable": 1,
         "order_num": 0,
-        "ext": ".drpy_js1/UAA[密].js"
+        "ext": "./drpy_js/UAA[密].js"
       },
       {
         "key": "csp_XYQHiker_xHamster",
@@ -2484,28 +2484,28 @@
         "key": "hipy_js_一点视频[密]",
         "name": "🔞一点视频(點選點播才有東西)",
         "type": 3,
-        "api": ".drpy_libs1/drpy2.min.js",
+        "api": "./drpy_libs/drpy2.min.js",
         "filterable": 1,
         "order_num": 0,
-        "ext": ".drpy_js1/一点视频[密].js"
+        "ext": "./drpy_js/一点视频[密].js"
       },
       {
         "key": "hipy_js_爱爱影院[密]",
         "name": "🔞爱爱影院",
         "type": 3,
-        "api": ".drpy_libs1/drpy2.min.js",
+        "api": "./drpy_libs/drpy2.min.js",
         "filterable": 1,
         "order_num": 0,
-        "ext": ".drpy_js1/爱爱影院[密].js"
+        "ext": "./drpy_js/爱爱影院[密].js"
       },
       {
         "key": "hipy_js_黑料不打烊-z",
         "name": "🔞黑料不打烊-z",
         "type": 3,
-        "api": ".drpy_libs1/drpy2.min.js",
+        "api": "./drpy_libs/drpy2.min.js",
         "filterable": 1,
         "order_num": 0,
-        "ext": ".drpy_js1/黑料不打烊-z.js"
+        "ext": "./drpy_js/黑料不打烊-z.js"
       },
       {
         "key": "淫水机资源",
