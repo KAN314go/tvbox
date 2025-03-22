@@ -80,37 +80,6 @@
         "quickSearch": 0,
         "filterable": 0
     },
-    {
-        "key": "苹果影院",
-        "name": "📺｜苹果短剧",
-        "type": 3,
-        "api": "csp_XBPQ",
-        "searchable": 1,
-        "quickSearch": 1,
-        "filterable": 1,
-        "ext": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/json_now/苹果短剧.json"
-    },
-    {
-        "key": "奶茶影院",
-        "name": "📺｜奶茶短剧",
-        "type": 3,
-        "api": "csp_XBPQ",
-        "searchable": 1,
-        "quickSearch": 1,
-        "filterable": 1,
-        "ext": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/json_now/奶茶短剧.json"
-    },
-    
-    {
-        "key": "mp4影院",
-        "name": "📺｜mp4短剧",
-        "type": 3,
-        "api": "csp_XBPQ",
-        "searchable": 1,
-        "quickSearch": 1,
-        "filterable": 1,
-        "ext": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/json_now/mp4短剧.json"
-    },
      {
         "key": "NUU短剧",
         "name": "📺｜NUU短剧",
@@ -132,46 +101,6 @@
         "ext": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/json_now/麦田短剧.json"
     },
     {
-        "key": "火车太堵",
-        "name": "📺｜火车太堵短剧",
-        "type": 3,
-        "api": "csp_XBPQ",
-        "searchable": 1,
-        "quickSearch": 1,
-        "filterable": 1,
-        "ext": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/json_now/火车太堵短剧.json"
-    },
-    {
-        "key": "雷神影院",
-        "name": "📺｜雷神短剧",
-        "type": 3,
-        "api": "csp_XBPQ",
-        "searchable": 1,
-        "quickSearch": 1,
-        "filterable": 1,
-        "ext": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/json_now/雷神短剧.json"
-    },
-    {
-        "key": "抖音短剧",
-        "name": "📺｜抖音短剧",
-        "type": 3,
-        "api": "csp_XBPQ",
-        "searchable": 1,
-        "quickSearch": 1,
-        "filterable": 1,
-        "ext": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/json_now/抖音短剧.json"
-    },
-    {
-        "key": "唐人街影院",
-        "name": "📺｜唐人街短剧",
-        "type": 3,
-        "api": "csp_XBPQ",
-        "searchable": 1,
-        "quickSearch": 1,
-        "filterable": 1,
-        "ext": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/json_now/唐人街短剧.json"
-    },
-    {
         "key": "天龙影院",
         "name": "📺｜天龙短剧",
         "type": 3,
@@ -180,57 +109,6 @@
         "quickSearch": 1,
         "filterable": 1,
         "ext": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/json_now/天龙短剧.json"
-    },
-    {
-        "key": "无敌短剧",
-        "name": "📺｜无敌短剧",
-        "type": 3,
-        "api": "csp_XBPQ",
-        "searchable": 1,
-        "quickSearch": 1,
-        "filterable": 1,
-        "ext": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/json_now/无敌短剧.json"
-    },
-    {
-        "key": "追剧网",
-        "name": "📺｜追剧短剧",
-        "type": 3,
-        "api": "csp_XBPQ",
-        "searchable": 1,
-        "quickSearch": 1,
-        "filterable": 1,
-        "ext": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/json_now/追剧短剧.json"
-    },
-    {
-        "key": "一起看",
-        "name": "📺｜一起看短剧",
-        "type": 3,
-        "api": "csp_XBPQ",
-        "searchable": 1,
-        "quickSearch": 1,
-        "filterable": 1,
-        "ext": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/json_now/一起看短剧.json"
-    },
-    {
-        "key": "可爱短剧",
-        "name": "📺｜可爱短剧",
-        "type": 3,
-        "jar": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/json_now/jar/sjc.jar",
-        "api": "csp_XBPQ",
-        "searchable": 1,
-        "quickSearch": 1,
-        "filterable": 1,
-        "ext": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/json_now/可爱短剧.json"
-    },
-    {
-        "key": "NUU短剧",
-        "name": "📺｜NUU短剧",
-        "type": 3,
-        "api": "csp_XBPQ",
-        "searchable": 1,
-        "quickSearch": 1,
-        "filterable": 1,
-        "ext": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/json_now/NUU短剧.json"
     },
     {
         "key": "奈飞短剧",
@@ -254,24 +132,13 @@
     },
     {
         "key": "七味短剧",
-        "name": "📺｜味短剧",
+        "name": "📺｜七味短剧",
         "type": 3,
         "api": "csp_XBPQ",
         "searchable": 1,
         "quickSearch": 1,
         "filterable": 1,
         "ext": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/json_now/七味短剧.json"
-    },
-    {
-        "key": "优影视",
-        "name": "📺｜优短剧",
-        "type": 3,
-        "jar": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/json_now/jar/sjc.jar",
-        "api": "csp_XBPQ",
-        "searchable": 1,
-        "quickSearch": 1,
-        "filterable": 1,
-        "ext": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/json_now/优短剧.json"
     },
     {
         "key": "111影视",
@@ -282,16 +149,6 @@
         "quickSearch": 1,
         "filterable": 1,
         "ext": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/json_now/111短剧.json"
-    },
-    {
-        "key": "米兔影视",
-        "name": "📺｜米兔短剧",
-        "type": 3,
-        "api": "csp_XBPQ",
-        "searchable": 1,
-        "quickSearch": 1,
-        "filterable": 1,
-        "ext": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/json_now/米兔短剧.json"
     },
     {
         "key": "纽约短剧",
@@ -312,27 +169,6 @@
         "quickSearch": 1,
         "filterable": 1,
         "ext": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/json_now/量子短剧.json"
-    },
-    {
-        "key": "映播短剧",
-        "name": "📺｜映播短剧",
-        "type": 3,
-        "api": "csp_XBPQ",
-        "searchable": 1,
-        "quickSearch": 1,
-        "filterable": 1,
-        "ext": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/json_now/映播短剧.json"
-    },
-    {
-        "key": "映迷影视",
-        "name": "📺｜映迷短剧",
-        "type": 3,
-        "jar": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/json_now/jar/sjc.jar",
-        "api": "csp_XBPQ",
-        "searchable": 1,
-        "quickSearch": 1,
-        "filterable": 1,
-        "ext": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/json_now/映迷短剧.json"
     },
     {
         "key": "护航短剧",
@@ -371,16 +207,6 @@
         "ext": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/json_now/稀饭短剧.json"
     },
     {
-        "key": "猎手",
-        "name": "📺｜猎手短剧",
-        "type": 3,
-        "api": "csp_XBPQ",
-        "searchable": 1,
-        "quickSearch": 1,
-        "filterable": 1,
-        "ext": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/json_now/猎手短剧.json"
-    },
-    {
         "key": "安迪短剧",
         "name": "📺｜安迪短剧",
         "type": 3,
@@ -389,16 +215,6 @@
         "quickSearch": 1,
         "filterable": 1,
         "ext": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/json_now/安迪短剧.json"
-    },
-    {
-        "key": "妖狐短剧",
-        "name": "📺｜妖狐短剧",
-        "type": 3,
-        "api": "csp_XBPQ",
-        "searchable": 1,
-        "quickSearch": 1,
-        "filterable": 1,
-        "ext": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/json_now/妖狐短剧.json"
     },
     {
         "key": "PTT短剧",
@@ -421,47 +237,6 @@
         "ext": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/json_now/理理短剧.json"
     },
     {
-        "key": "免费电影网",
-        "name": "📺｜免费短剧",
-        "type": 3,
-        "api": "csp_XBPQ",
-        "searchable": 1,
-        "quickSearch": 1,
-        "filterable": 1,
-        "ext": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/json_now/免费短剧.json"
-    },
-    {
-        "key": "蚂蚁影库",
-        "name": "📺｜蚂蚁短剧",
-        "type": 3,
-        "api": "csp_XBPQ",
-        "searchable": 1,
-        "quickSearch": 1,
-        "filterable": 1,
-        "ext": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/json_now/蚂蚁短剧.json"
-    },
-    {
-        "key": "荔枝TV",
-        "name": "📺｜荔枝短剧",
-        "type": 3,
-        "api": "csp_XBPQ",
-        "searchable": 1,
-        "quickSearch": 1,
-        "filterable": 1,
-        "ext": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/json_now/荔枝短剧.json"
-    },
-    {
-        "key": "DJW",
-        "name": "📺｜短剧网",
-        "type": 3,
-        "api": "csp_XBPQ",
-        "playerType": 2,
-        "searchable": 1,
-        "quickSearch": 1,
-        "filterable": 1,
-        "ext": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/json_now/短剧网.json"
-    },
-    {
         "key": "白嫖者联盟",
         "name": "📺｜白嫖短剧",
         "type": 3,
@@ -470,16 +245,6 @@
         "quickSearch": 1,
         "filterable": 1,
         "ext": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/json_now/白嫖者.json"
-    },
-    {
-        "key": "电视剧网",
-        "name": "📺｜电视剧网",
-        "type": 3,
-        "api": "csp_XBPQ",
-        "searchable": 1,
-        "quickSearch": 1,
-        "filterable": 1,
-        "ext": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/json_now/电视剧网.json"
     },
     {
         "key": "老王影院",
@@ -510,16 +275,6 @@
         "quickSearch": 1,
         "filterable": 1,
         "ext": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/json_now/奇优短剧.json"
-    },
-    {
-        "key": "大熊短剧",
-        "name": "📺｜大熊短剧",
-        "type": 3,
-        "api": "csp_XBPQ",
-        "searchable": 1,
-        "quickSearch": 1,
-        "filterable": 1,
-        "ext": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/json_now/大熊短剧.json"
     },
     {
         "key": "毒舌短剧",
@@ -615,51 +370,12 @@
         }
       },
       {
-          "key": "星芽短剧",
-          "name": "📺｜星芽短剧",
-          "type": 3,
-          "api": "csp_AppXY",
-          "jar":"https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/jar1/spider.jar;md5;b836384ede14d319c1dcbf257a264eda",
-          "searchable": 1,
-          "quickSearch": 0,
-          "filterable": 0
-      },
-      {
-          "key": "吉吉短剧",
-          "name": "📺｜吉吉短剧",
-          "type": 3,
-          "api": "csp_XBPQ",
-          "jar":"https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/jar1/spider.jar;md5;b836384ede14d319c1dcbf257a264eda",
-          "ext": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/new_json/XBPQ/吉吉短剧.json"
-      },
-      {
           "key": "短剧网",
           "name": "📺｜短剧网(瀟灑)",
           "type": 3,
           "api": "csp_XBPQ",
           "jar":"https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/jar1/spider.jar;md5;b836384ede14d319c1dcbf257a264eda",
           "ext": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/new_json/XBPQ/短剧网.json"
-      },
-      {
-        "key": "爱你短剧",
-        "name": "📺｜爱你短剧",
-        "type": 3,
-        "api": "csp_XBPQ",
-        "searchable": 1,
-        "quickSearch": 1,
-        "filterable": 1,
-        "ext": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/json_now/爱你短剧.json"
-      },
-      {
-          "key": "爱我短剧",
-          "name": "📺｜爱我短剧",
-          "type": 3,
-          "api": "csp_XBPQ",
-          "jar":"https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/jar1/spider.jar;md5;b836384ede14d319c1dcbf257a264eda",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "ext": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/new_json/XBPQ/爱我短剧.json"
       },
       {
         "key": "河马短剧",
@@ -681,17 +397,7 @@
         "filterable": 1,
         "ext": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/json_now/短劇王.json"
       },
-      {
-          "key": "韩小圈",
-          "name": "📺｜韩小圈(APP)",
-          "type": 3,
-          "api": "csp_HanXiaoQuan",
-          "jar":"https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/jar1/spider.jar;md5;b836384ede14d319c1dcbf257a264eda;md5;b836384ede14d319c1dcbf257a264eda",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1
-      },
-      {
+       {
           "key": "短剧网③",
           "name": "📺｜短剧看看",
           "type": 3,
