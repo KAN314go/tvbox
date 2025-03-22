@@ -51,17 +51,14 @@
                 "分类url":"https://www.duanjuwang.cc/vodshow/{cateId}-{area}-{by}--{lang}-{letter}---{catePg}---{year}.html",
                 "分类":"短剧$duanju#电影$dianying#电视剧$dianshiju#动漫$dongman#综艺$zongyi",
                 "类型":"有声动漫$ysdm#女频恋爱$npla#反转爽剧$fzsj#古装仙侠$gzxx#年代穿越$ndcy#脑洞悬疑$ndxy#现代都市$xdds||动作片$dongzuopian#喜剧片$xijupian#爱情片$aiqingpian#科幻片$kehuanpian#恐怖片$kongbupian#剧情片$juqingpian#纪录片$jilupian#战争片$zhanzhengpian#动画片$donghuapian||国产剧$guochanju#欧美剧$oumeiju#韩剧$hanju#日剧$riju#港剧$gangju#台剧$taiju#泰剧$taiju2#海外剧$haiwaiju||国产动漫$guochandongman#日韩动漫$rihandongman#欧美动漫$oumeidongman#港台动漫$gangtaidongman#海外动漫$haiwaidongman||演唱会$yanchanghui#大陆综艺$daluzongyi#日韩综艺$rihanzongyi#港台综艺$gangtaizongyi#欧美综艺$oumeizongyi"}
-      },
-      {
-        "key": "星芽短剧",
-        "name": "📺｜星芽短剧",
+    },
+    {
+        "key": "csp_AppXY",
+        "name": "📺｜星牙短剧",
         "type": 3,
-        "api": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/drpy_libs1/drpy2.min.js",
-        "searchable": 1,
-        "quickSearch": 1,
-        "filterable": 1,
-        "ext": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/drpy_js1/星芽短剧.js"
-    },   
+        "jar":"https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/jar1/PandaQ250227c.jar;md5;ceda5421cdce5fad2a2f6d8c71ae4311",
+        "api": "csp_AppXY"
+    },
     {
         "key": "河马短剧",
         "name": "📺｜河马秒播",
