@@ -13,9 +13,27 @@
         "quickSearch": 0,
         "filterable": 0,
         "changeable": 1
-      },   
-      
-    
+    },   
+    {
+        "key": "Xhm",
+        "name": "Xhm",
+        "type": 3,
+        "api": "https://down.nigx.cn/raw.githubusercontent.com/JJBJJ/PyramidStore/refs/heads/main/plugin/adult/Xhm.py",
+        "searchable": 1,
+        "quickSearch": 1,
+        "filterable": 1,
+        "changeable": 1
+    },
+    {
+      "key": "Xhm2",
+      "name": "Xhm2",
+      "type": 3,
+      "api": "./py/xhm.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "changeable": 1
+  },
     {
       "key": "豆瓣",
       "name": "🇹🇼【老王點播專區】🇹🇼",

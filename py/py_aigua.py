@@ -1,7 +1,7 @@
 ﻿# -*- coding: utf-8 -*-
 # @Author  : Doubebly
 # @Time    : 2025/3/22 21:03
-
+import json
 import sys
 import requests
 from lxml import etree, html
@@ -21,6 +21,7 @@ class Spider(Spider):
             "Referer": "https://aigua1.com/",
         }
         self.image_domain = "https://vres.wbadl.cn"  # 圖片域名
+
         self.default_play_url = 'https://sf1-cdn-tos.huoshanstatic.com/obj/media-fe/xgplayer_doc_video/mp4/xgplayer-demo-720p.mp4'
 
     def getDependence(self):
@@ -362,6 +363,7 @@ class Spider(Spider):
                 ]
             }
         }
+        # print(f"Debug homeContent: {result}")
         return result
 
     def homeVideoContent(self):
@@ -386,22 +388,16 @@ class Spider(Spider):
             return {'list': d, 'parse': 0, 'jx': 0}
 
     def categoryContent(self, cid, page, filter, ext):
-        # 從 ext 中提取篩選參數，若未提供則使用默認值
-        _class = ext.get('class', '0')    # 剧情/类型
-        _area = ext.get('area', '0')      # 地区
-        _year = ext.get('year', '0')      # 年份
+        _class = ext.get('class', '0')  # 剧情/类型
+        _area = ext.get('area', '0')  # 地区
+        _year = ext.get('year', '0')  # 年份
         _status = ext.get('status', '0')  # 状态
-        _by = ext.get('by', 'new')        # 排序
+        _by = ext.get('by', 'new')  # 排序
 
-        # 動態構造 URL，將篩選條件應用到請求中
-        url = (f'{self.home_url}/video/refresh-cate?page_num={page}&sorttype=desc'
-               f'&channel_id={cid}&tag={_class}&area={_area}&year={_year}&status={_status}'
-               f'&sort={_by}&page_size=28')
-
+        url = self.home_url + f'/video/refresh-cate?page_num={page}&sorttype=desc&channel_id={cid}&tag={_class}&area={_area}&year={_year}&status={_status}&sort={_by}&page_size=28'
         d = []
         try:
             res = requests.get(url, headers=self.headers)
-            res.raise_for_status()  # 检查请求是否成功
             data_list = res.json()['data']['list']
             for i in data_list:
                 d.append(
@@ -414,7 +410,7 @@ class Spider(Spider):
                 )
             return {'list': d, 'parse': 0, 'jx': 0}
         except Exception as e:
-            print(f"Error in categoryContent: {e}")
+            print(e)
             return {'list': d, 'parse': 0, 'jx': 0}
 
     def detailContent(self, did):
@@ -424,14 +420,23 @@ class Spider(Spider):
         try:
             res = requests.get(url, headers=self.headers)
             root = etree.HTML(res.text.encode('utf-8'))
+            # vod_play_from_list = root.xpath('//span[@class="source-item-label"]/text()')
             vod_play_from = '$$$'.join(['线路一', '线路二', '线路三'])
+            # 电视剧
             play_list1 = root.xpath('//ul[contains(@class, "qy-episode-num")]')
+            # print(play_list1)
+            # 电影
+            # play_list2 = root.xpath('//ul[contains(@class, "qy-play-list")]')
             play_list2 = root.xpath('//ul[@id="srctab-1"]')
+            # print(play_list2)
             vod_play_url_list = []
             if len(play_list1) > 0:
                 play_list = play_list1[:-1]
+                # print(play_list)
+
             elif len(play_list2) > 0:
                 play_list = play_list2
+                # print(play_list)
             else:
                 play_list = []
 
@@ -439,13 +444,20 @@ class Spider(Spider):
                 name_list1 = i.xpath('.//div[@class="select-link"]/text()')
                 name_list2 = i.xpath('.//span[@class="title-link"]/text()')
                 name_list3 = i.xpath('./li/text()')
+                # print(name_list1)
+                # print(name_list2)
+                # print(name_list3)
+                # print(name_list1 + name_list2 + name_list3)
                 name_list = name_list1 + name_list2 + name_list3
                 url_list = i.xpath('./li/@data-chapter-id')
                 vod_play_url_list.append(
                     '#'.join([_name.strip() + '$' + f'{ids}-{_url}' for _name, _url in zip(name_list, url_list)])
                 )
 
-            vod_play_url = '$$$'.join(vod_play_url_list * 3)
+
+            # print(vod_play_url_list*3)
+            vod_play_url = '$$$'.join(vod_play_url_list*3)
+            # print(vod_play_url_list)
             video_list.append({
                 'type_name': '',
                 'vod_id': ids,
@@ -460,29 +472,31 @@ class Spider(Spider):
                 'vod_play_url': vod_play_url
             })
             return {"list": video_list, 'parse': 0, 'jx': 0}
+
         except Exception as e:
             print(f"Error in detailContent: {e}")
             return {'list': [], 'msg': str(e)}
 
     def searchContent(self, key, quick, page='1'):
-        url = f'{self.home_url}/search?k={key}&page={page}&os=pc'
+        if str(page) != '1':
+            return {'list': [], 'parse': 0, 'jx': 0}
+        url = f'{self.home_url}/video/refresh-video?page_num=1&sorttype=desc&page_size=28&tvNum=7&sort=new&keyword={key}'
         d = []
         try:
             res = requests.get(url, headers=self.headers)
             res.encoding = 'utf-8'
             root = etree.HTML(res.text)
-            data_list = root.xpath('//a[@class="search-result-item"]')
+            data_list = root.xpath('//div[@class="SSbox"]')
             for i in data_list:
                 d.append(
                     {
-                        'vod_id': i.xpath('./@href')[0],
-                        'vod_name': i.xpath('.//div[@class="title"]/text()')[0],
-                        'vod_pic': 'https://vres.wbadl.cn' + i.xpath('.//img/@data-original')[0],
-                        'vod_remarks': i.xpath('.//div[@class="tags"]/span[1]/text()')[0]
+                        'vod_id': i.xpath('./a/@href')[0].split('=')[-1],
+                        'vod_name': ''.join(i.xpath('.//span/text()')),
+                        'vod_pic': i.xpath('./a/img/@originalsrc')[0],
+                        'vod_remarks': i.xpath('.//div[@class="SSjgTitle"]/text()')[0],
                     }
                 )
-            result = {'list': d, 'parse': 0, 'jx': 0}
-            return result
+            return {'list': d, 'parse': 0, 'jx': 0}
         except Exception as e:
             print(f"Error in searchContent: {e}")
             return {'list': [], 'parse': 0, 'jx': 0}
@@ -498,6 +512,7 @@ class Spider(Spider):
             play_url_list = res.json()['data']['urlinfo']['resource_url']
             if flag == '线路一':
                 play_url = play_url_list['1']
+                pass
             elif flag == '线路二':
                 play_url = play_url_list['16']
             else:
@@ -512,6 +527,10 @@ class Spider(Spider):
 
     def destroy(self):
         return '正在Destroy'
+
+    def get_data(self):
+        url = self.home_url + 'https://aigua1.com/video/refresh-cate?page_num=1&sorttype=desc&channel_id=0&tag=0&area=0&year=0&page_size=28&sort=new'
+        pass
 
 if __name__ == '__main__':
     pass
