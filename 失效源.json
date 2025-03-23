@@ -4,6 +4,16 @@
     "wallpaper": "https://picsum.photos/1080/",
     "sites": [ 
       {
+        "key": "薦片",
+        "name": "🥇｜薦片｜跑不出來",
+        "type": 3,
+        "playerType": 2,
+        "searchable": 1,
+        "quickSearch": 1,
+        "changeable": 1,
+        "api": "./py/py_jianpian.py"
+      },
+      {
         "key": "csp_海兔影院",
         "name": "🥈｜海兔｜高清◎龜速(跑馬燈廣告+成人太多)",
         "type": 3,
