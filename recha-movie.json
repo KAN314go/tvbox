@@ -3,6 +3,17 @@
   "logo": "https://p3-pc.douyinpic.com/img/aweme-avatar/tos-cn-i-0813_6e2553f5708c414386eeca88b5f2674a~c5_300x300.jpeg?from=2956013662",
   "wallpaper": "https://tv.nxog.top/m//t/",
   "sites": [
+
+    {
+      "key": "薦片",
+      "name": "🥇｜薦片｜測試",
+      "type": 3,
+      "playerType": 2,
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 1,
+      "api": "./py/py_jianpian.py"
+    },
     {
       "key": "豆瓣",
       "name": "🇹🇼【老王點播專區】🇹🇼",
@@ -3706,6 +3717,7 @@
     }
   ],
   "lives": [
+    
     {
       "name": "小雲(M3U)",
       "url": "https://tang.hz.cz/so/xiaoyun.m3u",
