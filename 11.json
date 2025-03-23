@@ -51,6 +51,7 @@
       "name": "🌰莉莉┃1080P",
       "type": 3,
       "api": "csp_AppGetGuard",
+      "jar": "./jar/mi-0319.jar",
       "ext": "sHR2rlsfjI4L3t4RXQMkn0xaBCNcSQUCvczzn7zWpJd7PJ5uE10QNLrWWS17wAYglPoC8UNLIX0B4DnEefWcAydxKYH8rxXY/n5Z1HeXH9exVQ6o+uIi6FAmTcCFBKVEhbMLsvvqM3GIa16E8qYderB0nB+AiqMMXAUC0sfjCrt7OHidpXhNZqkTjmVqiwvC3NjlI8h65kp6Qu58FpriLCfdQOs2uyQq6VaJAApvA2cYX2V5fMu4UtLCjorwdlJc"
     },
     {
@@ -67,7 +68,6 @@
       "type": 3,
       "api": "csp_AppGetGuard",
       "jar": "./jar/mi-0319.jar",
-			"spider":"./jar/mi-0319.jar",
       "ext": "sHR2rlsfjI4L3t4RXQMkn97hxHYaEbu5lFfPUXOxEzpAZL11z+ayZEbLSb3vs/v8ZS0i6U3Oh/aCVpUdIeZzRgc5TQyB2k7aC0UwqxoW281lBnRyLoSPb+ejqJ92E4RYuH9BABywIr8NA9Bn0Ndnl5c+AJCGNVdUwDUcd6fmGzQoQ+VuzRpX5xfgCbnpjcTp56dL50nhDb7IIe7CtKv7pA=="
     },
 		{
@@ -3906,6 +3906,14 @@
               }
     },
     {
+      "name": "沐辰直播",
+      "type": 3,
+      "api": "https://json.doube.eu.org/python/py_litv.py",
+      "ext": "",
+      "epg": "http://epg.112114.xyz/?ch={name}&date={date}",
+      "logo": "https://epg.112114.xyz/logo/{name}.png"
+    },
+    {
       "name": "4G-TV(喵老師)",
       "type": 0,
       "url": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/live/iptv.txt",
@@ -4140,19 +4148,10 @@
       "logo": "https://epg.112114.xyz/logo/{name}.png"
     },
     {
-      "name": "沐辰直播(故障)",
-      "type": 3,
-      "api": "https://json.doube.eu.org/python/py_litv.py",
-      "ext": "",
-      "epg": "http://epg.112114.xyz/?ch={name}&date={date}",
-      "logo": "https://epg.112114.xyz/logo/{name}.png"
-    },
-    {
       "name": "MYTVSUPER線路1(故障)",
       "playerType": 2,
       "url": "https://video.mytvsuper.xyz/playlist/zong-he-ding-yue.m3u?token=708977457046983",
       "epg": "http://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Taipei",
-      "logo": "https://epg.112114.xyz/logo/{name}.png",
       "pass": true
     },
     {
