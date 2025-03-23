@@ -4141,8 +4141,9 @@
     },
     {
       "name": "沐辰直播(故障)",
-      "type": 0,
-      "url": "https://json.doube.eu.org/litv.json",
+      "type": 3,
+      "api": "./python/py_litv.py",
+      "ext": "",
       "epg": "http://epg.112114.xyz/?ch={name}&date={date}",
       "logo": "https://epg.112114.xyz/logo/{name}.png"
     },
