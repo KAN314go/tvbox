@@ -3767,14 +3767,6 @@
       "playerType": 2
     },
     {
-      "name": "PIXMAN",
-      "type": 0,
-      "url": "https://tv.850930.xyz/pix.m3u",
-      "ua": "okhttp/3.15",
-      "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
-      "logo": "https://epg.112114.xyz/logo/{name}.png"
-    },
-    {
         "name": "RobYang| http://RobYang.ggff.net",
         "type": 0,
         "url": "http://www1.RobYang.ggff.net/VodLive/lb8ffa",
@@ -3799,20 +3791,6 @@
       "ua": "okhttp/4.12.0",
       "timeout": 5,
       "epg": "https://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Hong_Kong",
-      "logo": "https://epg.112114.xyz/logo/{name}.png"
-    },
-    {
-      "name": "沐辰直播",
-      "type": 0,
-      "url": "https://py.doube.eu.org/Sub?type=litv",
-      "epg": "http://epg.112114.xyz/?ch={name}&date={date}",
-      "logo": "https://epg.112114.xyz/logo/{name}.png"
-    },
-    {
-      "name": "kx2024",
-      "type": 0,
-      "url": "http://ttkx.cc:55/lib/kx2024.txt",
-      "epg": "http://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Taipei",
       "logo": "https://epg.112114.xyz/logo/{name}.png"
     },
     {
@@ -3998,6 +3976,28 @@
       "url": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/live/10.txt",
       "ua": "okhttp/4.12",
       "epg": "http://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Taipei"
+    },
+    {
+      "name": "天天開心(故障)",
+      "type": 0,
+      "url": "http://ttkx.cc:55/lib/kx2024.txt",
+      "epg": "http://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Taipei",
+      "logo": "https://epg.112114.xyz/logo/{name}.png"
+    },
+    {
+      "name": "沐辰直播(故障)",
+      "type": 0,
+      "url": "https://py.doube.eu.org/Sub?type=litv",
+      "epg": "http://epg.112114.xyz/?ch={name}&date={date}",
+      "logo": "https://epg.112114.xyz/logo/{name}.png"
+    },
+    {
+      "name": "PIXMAN(故障)",
+      "type": 0,
+      "url": "https://tv.850930.xyz/pix.m3u",
+      "ua": "okhttp/3.15",
+      "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
+      "logo": "https://epg.112114.xyz/logo/{name}.png"
     }
   ],
   "parses": [
