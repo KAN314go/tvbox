@@ -2,7 +2,6 @@
 # @Author  : Doubebly
 # @Time    : 2025/3/22 21:03
 
-
 import sys
 import requests
 from lxml import etree, html
@@ -43,7 +42,7 @@ class Spider(Spider):
                 {'type_id': '32', 'type_name': '纪录片'}
             ],
             'filters': {
-                '1': [  # 电影筛选条件，未修改
+                '1': [  # 电影筛选条件
                     {'name': '剧情', 'key': 'class', 'value': [
                         {'n': '全部', 'v': '0'},
                         {'n': '魔幻', 'v': '179'},
@@ -112,7 +111,7 @@ class Spider(Spider):
                         {'n': '评分高低', 'v': 'score'}
                     ]}
                 ],
-                '2': [  # 电视剧筛选条件，未修改
+                '2': [  # 电视剧筛选条件
                     {'name': '剧情', 'key': 'class', 'value': [
                         {'n': '全部', 'v': '0'},
                         {'n': '短剧', 'v': '364'},
@@ -192,7 +191,7 @@ class Spider(Spider):
                         {'n': '评分高低', 'v': 'score'}
                     ]}
                 ],
-                '3': [  # 综艺筛选条件，未修改（根據之前修正）
+                '3': [  # 综艺筛选条件
                     {'name': '类型', 'key': 'class', 'value': [
                         {'n': '全部', 'v': '0'},
                         {'n': '生活', 'v': '229'},
@@ -252,7 +251,7 @@ class Spider(Spider):
                         {'n': '评分高低', 'v': 'score'}
                     ]}
                 ],
-                '4': [  # 动漫筛选条件，未修改（根據之前修正）
+                '4': [  # 动漫筛选条件
                     {'name': '类型', 'key': 'class', 'value': [
                         {'n': '全部', 'v': '0'},
                         {'n': '儿童', 'v': '363'},
@@ -321,7 +320,7 @@ class Spider(Spider):
                         {'n': '评分高低', 'v': 'score'}
                     ]}
                 ],
-                '32': [  # 纪录片筛选条件，根据新HTML调整
+                '32': [  # 纪录片筛选条件
                     {'name': '类型', 'key': 'class', 'value': [
                         {'n': '全部', 'v': '0'}  # HTML未提供具体类型，仅保留“全部”
                     ]},
@@ -363,7 +362,6 @@ class Spider(Spider):
                 ]
             }
         }
-        print(f"Debug homeContent: {result}")
         return result
 
     def homeVideoContent(self):
@@ -388,21 +386,22 @@ class Spider(Spider):
             return {'list': d, 'parse': 0, 'jx': 0}
 
     def categoryContent(self, cid, page, filter, ext):
-        # 剧情
-        _class = ext.get('class', '')
-        # 地区
-        _area = ext.get('area', '')
-        # 语言
-        _language = ext.get('language', '')
-        # 年份
-        _year = ext.get('year', '')
-        # 排序
-        _by = ext.get('by', '')
+        # 從 ext 中提取篩選參數，若未提供則使用默認值
+        _class = ext.get('class', '0')    # 剧情/类型
+        _area = ext.get('area', '0')      # 地区
+        _year = ext.get('year', '0')      # 年份
+        _status = ext.get('status', '0')  # 状态
+        _by = ext.get('by', 'new')        # 排序
 
-        url = self.home_url + f'/video/refresh-cate?page_num={page}&sorttype=desc&channel_id={cid}&tag=0&area=0&year=0&page_size=28&sort=new'
+        # 動態構造 URL，將篩選條件應用到請求中
+        url = (f'{self.home_url}/video/refresh-cate?page_num={page}&sorttype=desc'
+               f'&channel_id={cid}&tag={_class}&area={_area}&year={_year}&status={_status}'
+               f'&sort={_by}&page_size=28')
+
         d = []
         try:
             res = requests.get(url, headers=self.headers)
+            res.raise_for_status()  # 检查请求是否成功
             data_list = res.json()['data']['list']
             for i in data_list:
                 d.append(
@@ -415,7 +414,7 @@ class Spider(Spider):
                 )
             return {'list': d, 'parse': 0, 'jx': 0}
         except Exception as e:
-            print(e)
+            print(f"Error in categoryContent: {e}")
             return {'list': d, 'parse': 0, 'jx': 0}
 
     def detailContent(self, did):
@@ -425,23 +424,14 @@ class Spider(Spider):
         try:
             res = requests.get(url, headers=self.headers)
             root = etree.HTML(res.text.encode('utf-8'))
-            # vod_play_from_list = root.xpath('//span[@class="source-item-label"]/text()')
             vod_play_from = '$$$'.join(['线路一', '线路二', '线路三'])
-            # 电视剧
             play_list1 = root.xpath('//ul[contains(@class, "qy-episode-num")]')
-            # print(play_list1)
-            # 电影
-            # play_list2 = root.xpath('//ul[contains(@class, "qy-play-list")]')
             play_list2 = root.xpath('//ul[@id="srctab-1"]')
-            # print(play_list2)
             vod_play_url_list = []
             if len(play_list1) > 0:
                 play_list = play_list1[:-1]
-                # print(play_list)
-
             elif len(play_list2) > 0:
                 play_list = play_list2
-                # print(play_list)
             else:
                 play_list = []
 
@@ -449,19 +439,13 @@ class Spider(Spider):
                 name_list1 = i.xpath('.//div[@class="select-link"]/text()')
                 name_list2 = i.xpath('.//span[@class="title-link"]/text()')
                 name_list3 = i.xpath('./li/text()')
-                # print(name_list1)
-                # print(name_list2)
-                # print(name_list3)
-                # print(name_list1 + name_list2 + name_list3)
                 name_list = name_list1 + name_list2 + name_list3
                 url_list = i.xpath('./li/@data-chapter-id')
                 vod_play_url_list.append(
                     '#'.join([_name.strip() + '$' + f'{ids}-{_url}' for _name, _url in zip(name_list, url_list)])
                 )
 
-            # print(vod_play_url_list*3)
-            vod_play_url = '$$$'.join(vod_play_url_list*3)
-            # print(vod_play_url_list)
+            vod_play_url = '$$$'.join(vod_play_url_list * 3)
             video_list.append({
                 'type_name': '',
                 'vod_id': ids,
@@ -476,13 +460,11 @@ class Spider(Spider):
                 'vod_play_url': vod_play_url
             })
             return {"list": video_list, 'parse': 0, 'jx': 0}
-
         except Exception as e:
             print(f"Error in detailContent: {e}")
             return {'list': [], 'msg': str(e)}
 
     def searchContent(self, key, quick, page='1'):
-        # url = 'https://aigua1.com/video/search-result?keyword=%E6%96%97%E7%BD%97%E5%A4%A7%E9%99%86'
         url = f'{self.home_url}/search?k={key}&page={page}&os=pc'
         d = []
         try:
@@ -516,7 +498,6 @@ class Spider(Spider):
             play_url_list = res.json()['data']['urlinfo']['resource_url']
             if flag == '线路一':
                 play_url = play_url_list['1']
-                pass
             elif flag == '线路二':
                 play_url = play_url_list['16']
             else:
