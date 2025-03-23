@@ -12,7 +12,7 @@
 			"quickSearch": 1,
 			"ext": "caHR0cDovL2FwcC53dWlxLmNufOS8mOS8mOWFlHw0LjEuOA==",
 			"spider":"./jar/mi-0319.jar;md5;b73ed98a0a285189794be3c8d9c3a335",
-            "jar": "./jar/mi-0319.jar;md5;b73ed98a0a285189794be3c8d9c3a335"
+            "jar": "https://gitlab.com/newrecha/tvbox/-/blob/main/jar/mi-0319.jar;md5;b73ed98a0a285189794be3c8d9c3a335"
 		},
 		{
 			"key": "巧技",
@@ -29,7 +29,7 @@
 			"name": "🦢天天┃1080P",
 			"type": 3,
 			"api": "csp_AppRJGuard",
-			"jar": "./jar/mi-0319.jar;md5;b73ed98a0a285189794be3c8d9c3a335",
+			"jar": "https://gitlab.com/newrecha/tvbox/-/blob/main/jar/mi-0319.jar;md5;b73ed98a0a285189794be3c8d9c3a335",
       "ext": "sHR2rlsfjI4L3t4RXQMknxhunFUlA4159TKiKvIPpfcM1xianxebcSLajBbwFymqC+z9WoGzQYbh7FSvh8KdiC0BKF0CalaPaCEMOZm+ClGEeNzXAaR0FnrV04SiB2NK"
 		},
 		{
