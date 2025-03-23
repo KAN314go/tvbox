@@ -3775,24 +3775,31 @@
       "logo": "https://epg.112114.xyz/logo/{name}.png"
     },
     {
-      "name": "RobYang",
-      "playerType": 2,
-      //"url": "https://robyang.ggff.net/VodLive/lb8ffa",
-      "url": "https://robyang.ggff.net/",
-      "epg": "http://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Taipei",
-      "logo": "https://epg.112114.xyz/logo/{name}.png",
-      "pass": true
+        "name": "RobYang| http://RobYang.ggff.net",
+        "type": 0,
+        "url": "http://www1.RobYang.ggff.net/VodLive/lb8ffa",
+        "ua": "okhttp/4.12.0",
+        "timeout": 5,
+        "epg": "https://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Hong_Kong",
+        "logo": "https://epg.112114.xyz/logo/{name}.png"
     },
     {
-      "name": "RobYang(備份)",
+      "name": "RobYang備1| http://RobYang.dpdns.org",
       "type": 0,
-      //"url": "http://www1.RobYang.rr.nu/VodLive/lb8ffa",
-      "url": "http://www1.RobYang.rr.nu/",
+      "url": "http://www1.RobYang.dpdns.org/VodLive/lb8ffa",
       "ua": "okhttp/4.12.0",
       "timeout": 5,
-      "epg": "http://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Taipei",
-      "logo": "https://epg.112114.xyz/logo/{name}.png",
-      "pass": true
+      "epg": "https://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Hong_Kong",
+      "logo": "https://epg.112114.xyz/logo/{name}.png"
+    },
+    {
+      "name": "RobYang備2| http://RobYang.rr.nu",
+      "type": 0,
+      "url": "http://RobYang.runasp.net/VodLive/lb8ffa",
+      "ua": "okhttp/4.12.0",
+      "timeout": 5,
+      "epg": "https://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Hong_Kong",
+      "logo": "https://epg.112114.xyz/logo/{name}.png"
     },
     {
       "name": "沐辰直播",
