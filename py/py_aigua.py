@@ -2,6 +2,7 @@
 # @Author  : Doubebly
 # @Time    : 2025/3/22 21:03
 
+
 import sys
 import requests
 from lxml import etree, html
@@ -20,7 +21,7 @@ class Spider(Spider):
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
             "Referer": "https://aigua1.com/",
         }
-        self.image_domain = "https://vres.wbadl.cn"  # 图片域名
+        self.image_domain = "https://vres.wbadl.cn"  # 圖片域名
         self.default_play_url = 'https://sf1-cdn-tos.huoshanstatic.com/obj/media-fe/xgplayer_doc_video/mp4/xgplayer-demo-720p.mp4'
 
     def getDependence(self):
@@ -369,7 +370,7 @@ class Spider(Spider):
         d = []
         try:
             res = requests.get(self.home_url, headers=self.headers)
-            res.encoding = 'utf-8'
+            res.encoding = 'utf-8'  # 根据实际情况设置编码
             root = etree.HTML(res.text.encode('utf-8'))
             data_list = root.xpath('//div[@class="video-box-new"]/div[@class="Movie-list"]')
             for i in data_list:
@@ -388,17 +389,17 @@ class Spider(Spider):
 
     def categoryContent(self, cid, page, filter, ext):
         # 剧情
-        _class = ext.get('class', '0')
+        _class = ext.get('class', '')
         # 地区
-        _area = ext.get('area', '0')
+        _area = ext.get('area', '')
+        # 语言
+        _language = ext.get('language', '')
         # 年份
-        _year = ext.get('year', '0')
-        # 状态
-        _status = ext.get('status', '0')
+        _year = ext.get('year', '')
         # 排序
-        _by = ext.get('by', 'new')
+        _by = ext.get('by', '')
 
-        url = self.home_url + f'/video/refresh-cate?page_num={page}&sorttype=desc&channel_id={cid}&tag={_class}&area={_area}&year={_year}&status={_status}&sort={_by}&page_size=28'
+        url = self.home_url + f'/video/refresh-cate?page_num={page}&sorttype=desc&channel_id={cid}&tag=0&area=0&year=0&page_size=28&sort=new'
         d = []
         try:
             res = requests.get(url, headers=self.headers)
@@ -424,8 +425,112 @@ class Spider(Spider):
         try:
             res = requests.get(url, headers=self.headers)
             root = etree.HTML(res.text.encode('utf-8'))
+            # vod_play_from_list = root.xpath('//span[@class="source-item-label"]/text()')
             vod_play_from = '$$$'.join(['线路一', '线路二', '线路三'])
+            # 电视剧
             play_list1 = root.xpath('//ul[contains(@class, "qy-episode-num")]')
+            # print(play_list1)
+            # 电影
+            # play_list2 = root.xpath('//ul[contains(@class, "qy-play-list")]')
             play_list2 = root.xpath('//ul[@id="srctab-1"]')
+            # print(play_list2)
             vod_play_url_list = []
             if len(play_list1) > 0:
+                play_list = play_list1[:-1]
+                # print(play_list)
+
+            elif len(play_list2) > 0:
+                play_list = play_list2
+                # print(play_list)
+            else:
+                play_list = []
+
+            for i in play_list:
+                name_list1 = i.xpath('.//div[@class="select-link"]/text()')
+                name_list2 = i.xpath('.//span[@class="title-link"]/text()')
+                name_list3 = i.xpath('./li/text()')
+                # print(name_list1)
+                # print(name_list2)
+                # print(name_list3)
+                # print(name_list1 + name_list2 + name_list3)
+                name_list = name_list1 + name_list2 + name_list3
+                url_list = i.xpath('./li/@data-chapter-id')
+                vod_play_url_list.append(
+                    '#'.join([_name.strip() + '$' + f'{ids}-{_url}' for _name, _url in zip(name_list, url_list)])
+                )
+
+            # print(vod_play_url_list*3)
+            vod_play_url = '$$$'.join(vod_play_url_list*3)
+            # print(vod_play_url_list)
+            video_list.append({
+                'type_name': '',
+                'vod_id': ids,
+                'vod_name': '',
+                'vod_remarks': '',
+                'vod_year': '',
+                'vod_area': '',
+                'vod_actor': '',
+                'vod_director': '',
+                'vod_content': '',
+                'vod_play_from': vod_play_from,
+                'vod_play_url': vod_play_url
+            })
+            return {"list": video_list, 'parse': 0, 'jx': 0}
+
+        except Exception as e:
+            print(f"Error in detailContent: {e}")
+            return {'list': [], 'msg': str(e)}
+
+    def searchContent(self, key, quick, page='1'):
+        # url = 'https://aigua1.com/video/search-result?keyword=%E6%96%97%E7%BD%97%E5%A4%A7%E9%99%86'
+        url = f'{self.home_url}/search?k={key}&page={page}&os=pc'
+        d = []
+        try:
+            res = requests.get(url, headers=self.headers)
+            res.encoding = 'utf-8'
+            root = etree.HTML(res.text)
+            data_list = root.xpath('//a[@class="search-result-item"]')
+            for i in data_list:
+                d.append(
+                    {
+                        'vod_id': i.xpath('./@href')[0],
+                        'vod_name': i.xpath('.//div[@class="title"]/text()')[0],
+                        'vod_pic': 'https://vres.wbadl.cn' + i.xpath('.//img/@data-original')[0],
+                        'vod_remarks': i.xpath('.//div[@class="tags"]/span[1]/text()')[0]
+                    }
+                )
+            result = {'list': d, 'parse': 0, 'jx': 0}
+            return result
+        except Exception as e:
+            print(f"Error in searchContent: {e}")
+            return {'list': [], 'parse': 0, 'jx': 0}
+
+    def playerContent(self, flag, pid, vipFlags):
+        url = 'https://aigua1.com/video/play-url?videoId=230907&sourceId=0&citycode=HKG&chapterId=2916522'
+        a = pid.split('-')
+        videoId = a[0]
+        chapterId = a[1]
+        url = self.home_url + f'/video/play-url?videoId={videoId}&sourceId=0&citycode=HKG&chapterId={chapterId}'
+        try:
+            res = requests.get(url, headers=self.headers)
+            play_url_list = res.json()['data']['urlinfo']['resource_url']
+            if flag == '线路一':
+                play_url = play_url_list['1']
+                pass
+            elif flag == '线路二':
+                play_url = play_url_list['16']
+            else:
+                play_url = play_url_list['21']
+            return {'url': play_url, 'parse': 0, 'jx': 0, 'header': self.headers}
+        except Exception as e:
+            print(f"Error in playerContent: {e}")
+            return {'url': self.default_play_url, 'parse': 0, 'jx': 0}
+
+    def localProxy(self, params):
+        pass
+
+    def destroy(self):
+        return '正在Destroy'
+
+if __name__ == '__main__':
+    pass
