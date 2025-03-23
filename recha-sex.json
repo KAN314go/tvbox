@@ -363,7 +363,7 @@
       },
       {
         "key": "Zuise",
-        "name": "最色",
+        "name": "⏭最色",
         "type": 3,
         "api": "csp_Zuise",
         "quickSearch": 1,
@@ -373,22 +373,22 @@
         "ext": "proxy"
       },
       {
-        "key": "91md",
-        "name": "91md",
-        "type": 1,
-        "api": "https://91md.me/api.php/provide/vod/",
-        "searchable": 1,
-        "quickSearch": 1,
-        "filterable": 1,
-        "ext": "proxy"
-      },
-      {
         "key": "avdb",
         "name": "⏭｜avdb(老張)｜GO",
         "type": 4,
         "api": "http://zhangqun1818.serv00.net/228_1.php",
         "searchable": 0,
         "changeable": 0
+      },
+      {
+        "key": "Xhm",
+        "name": "⏭小黃書",
+        "type": 3,
+        "api": "https://down.nigx.cn/raw.githubusercontent.com/JJBJJ/PyramidStore/refs/heads/main/plugin/adult/Xhm.py",
+        "searchable": 1,
+        "quickSearch": 1,
+        "filterable": 1,
+        "changeable": 1
       },
       {
         "key": "lf_js_p2p",
@@ -415,6 +415,16 @@
         "api": "https://qu.ax/cLnn.js",
         "jar": "./jar/pg.jar",
         "ext": "18+"
+      },
+      {
+        "key": "91md",
+        "name": "91md",
+        "type": 1,
+        "api": "https://91md.me/api.php/provide/vod/",
+        "searchable": 1,
+        "quickSearch": 1,
+        "filterable": 1,
+        "ext": "proxy"
       },
       {
         "key": "csp_XYQHiker_ggjav",

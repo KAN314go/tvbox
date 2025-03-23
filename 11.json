@@ -3,37 +3,8 @@
   "logo": "https://p3-pc.douyinpic.com/img/aweme-avatar/tos-cn-i-0813_6e2553f5708c414386eeca88b5f2674a~c5_300x300.jpeg?from=2956013662",
   "wallpaper": "https://tv.nxog.top/m//t/",
   "sites": [
+ 
 
-    {
-        "key": "py_aiguatv",
-        "name": "🥇｜愛瓜｜高清◎秒播(無廣告)",
-        "type": 3,
-        "api": "./py/py_aigua.py",
-        "searchable": 1,
-        "quickSearch": 0,
-        "filterable": 0,
-        "changeable": 1
-    },   
-    {
-        "key": "Xhm",
-        "name": "Xhm",
-        "type": 3,
-        "api": "https://down.nigx.cn/raw.githubusercontent.com/JJBJJ/PyramidStore/refs/heads/main/plugin/adult/Xhm.py",
-        "searchable": 1,
-        "quickSearch": 1,
-        "filterable": 1,
-        "changeable": 1
-    },
-    {
-      "key": "Xhm2",
-      "name": "Xhm2",
-      "type": 3,
-      "api": "./py/xhm.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "changeable": 1
-  },
     {
       "key": "豆瓣",
       "name": "🇹🇼【老王點播專區】🇹🇼",
@@ -285,6 +256,16 @@
       "filterable": 1,
       "changeable": 1
     },
+    {
+      "key": "py_aiguatv",
+      "name": "🥇｜愛瓜｜高清◎秒播(無廣告)",
+      "type": 3,
+      "api": "./py/py_aigua.py",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 0,
+      "changeable": 1
+    }, 
     {
       "key": "现代",
       "name": "🥇｜现代｜藍光◎秒播(無廣告)",
@@ -3138,8 +3119,18 @@
       "timeout": 20
     },
     {
+      "key": "py_animal3",
+      "name": "动漫｜3號動漫",
+      "type": 3,
+      "api": "./py/xhm.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "changeable": 1
+    },
+    {
       "key": "py_dm84",
-      "name": "⏭｜动漫巴士(沐辰)｜PYTHON",
+      "name": "动漫｜动漫巴士(沐辰)｜PYTHON",
       "type": 3,
       "api": "./py/py_dm84.py",
       "searchable": 1,
@@ -3149,7 +3140,7 @@
     },
     {
       "key": "csp_動漫巴士",
-      "name": "⏭｜動漫巴士｜老王",
+      "name": "动漫｜動漫巴士｜老王",
       "type": 3,
       "api": "csp_XBPQ",
       "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
