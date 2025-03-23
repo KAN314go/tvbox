@@ -3978,9 +3978,9 @@
       "epg": "http://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Taipei"
     },
     {
-      "name": "天天開心(故障)",
+      "name": "天天開心",
       "type": 0,
-      "url": "http://ttkx.cc:55/lib/kx2024.txt",
+      "url": "http://ttkx.cc:55/天天开心",
       "epg": "http://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Taipei",
       "logo": "https://epg.112114.xyz/logo/{name}.png"
     },
