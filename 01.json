@@ -5,137 +5,130 @@
   "sites": [
     {
 			"key": "悠悠",
-			"name": "🏊悠悠┃1080P",
+			"name": "🥇｜悠悠｜待測",
 			"type": 3,
 			"api": "csp_Muou",
 			"playerType": 2,
 			"quickSearch": 1,
 			"ext": "caHR0cDovL2FwcC53dWlxLmNufOS8mOS8mOWFlHw0LjEuOA==",
-			"jar": "./jar/mi-0303.jar"
+			"jar": "./jar/mi-0303.jar;md5;ec975f203099b42d6286751914e27fc9"
 		},
 		{
 			"key": "巧技",
-			"name": "🚗巧记┃1080P",
+			"name": "🥇｜巧记｜待測",
 			"type": 3,
 			"api": "csp_qiao2",
 			"playerType": 2,
-			"jar": "./jar/mi-0303.jar",
+			"jar": "./jar/mi-0303.jar;md5;ec975f203099b42d6286751914e27fc9",
       "ext": "https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1740038979341/cksp.txt"
 		},
 		{
 			"key": "天天",
-			"name": "🦢天天┃1080P",
+			"name": "🥇｜天天｜待測",
 			"type": 3,
 			"api": "csp_AppRJGuard",
-			"jar": "./jar/mi-0319.jar",
+			"jar": "./jar/mi-0319.jar;md5;b73ed98a0a285189794be3c8d9c3a335",
       "ext": "sHR2rlsfjI4L3t4RXQMknxhunFUlA4159TKiKvIPpfcM1xianxebcSLajBbwFymqC+z9WoGzQYbh7FSvh8KdiC0BKF0CalaPaCEMOZm+ClGEeNzXAaR0FnrV04SiB2NK"
 		},
 		{
 			"key": "热热",
-			"name": "🏜热热┃1080P",
+			"name": "🥇｜热热｜待測",
 			"type": 3,
 			"api": "csp_AppRJGuard",
-			"jar": "./jar/mi-0319.jar",
+			"jar": "./jar/mi-0319.jar;md5;b73ed98a0a285189794be3c8d9c3a335",
       "ext": "sHR2rlsfjI4L3t4RXQMkn9mmg6Ofmy66+wcs9waIyn4hKqT9jG9s4kO6qzcu2OSqWS1/T+wfkqe+UwoipekwvcM11PTDrQqKYI8lmMXUc1vBHxp/2uWIw5HUoscBNWEb"
 		},
 		{
 			"key": "追剧",
-			"name": "🏈追剧┃1080P",
+			"name": "🥇｜追剧｜待測",
 			"type": 3,
 			"api": "csp_AppRJGuard",
-			"jar": "./jar/mi-0319.jar",
+			"jar": "./jar/mi-0319.jar;md5;b73ed98a0a285189794be3c8d9c3a335",
       "ext": "sHR2rlsfjI4L3t4RXQMkn9NPgTvCXvJVoUvXJHT6PqBNTg88Q5I4mc95m2RizprWhdAIQNMU/HShly4WRNzUsfhvqzHXHhHD57G7QagNV0Cx+WDSBgm0uZMAbZVHmzjM"
 		},
 		{
       "key": "莉莉",
-      "name": "🌰莉莉┃1080P",
+      "name": "🥇｜莉莉｜待測",
       "type": 3,
       "api": "csp_AppGetGuard",
-      "jar": "./jar/mi-0319.jar",
+      "jar": "./jar/mi-0319.jar;md5;b73ed98a0a285189794be3c8d9c3a335",
       "ext": "sHR2rlsfjI4L3t4RXQMkn0xaBCNcSQUCvczzn7zWpJd7PJ5uE10QNLrWWS17wAYglPoC8UNLIX0B4DnEefWcAydxKYH8rxXY/n5Z1HeXH9exVQ6o+uIi6FAmTcCFBKVEhbMLsvvqM3GIa16E8qYderB0nB+AiqMMXAUC0sfjCrt7OHidpXhNZqkTjmVqiwvC3NjlI8h65kp6Qu58FpriLCfdQOs2uyQq6VaJAApvA2cYX2V5fMu4UtLCjorwdlJc"
     },
     {
       "key": "优秀",
-      "name": "🎮优秀┃1080P",
+      "name": "🥇｜优秀｜待測",
       "type": 3,
       "api": "csp_AppGetGuard",
-      "jar": "./jar/mi-0319.jar",
+      "jar": "./jar/mi-0319.jar;md5;b73ed98a0a285189794be3c8d9c3a335",
       "ext": "rpb8IjZTuzYSqZNn/sGvG+nmDP6c5rlJM5DTXdn6d/OdwIl8hAgvoCnQmL7YkzCXHe+hpViArom3TFB7ORHGx8Gsyk/NiHE7VuNzVMP/C+/r78ogd9EF54Pi+n6PkOaxl7jEppsqJjozMoCPS929dwPWfx4NGsZnpVFvANeZUOzlo4RKfmAaN35kAo+7amKcqawPF/jPPsCEXambLeH+PqICmlcdkCN+3k+Dft4Z8iA="
     },
 		{
       "key": "光速",
-      "name": "🌟光速┃1080P",
+      "name": "🥇｜光速｜待測",
       "type": 3,
       "api": "csp_AppGetGuard",
-      "jar": "./jar/mi-0319.jar",
+      "jar": "./jar/mi-0319.jar;md5;b73ed98a0a285189794be3c8d9c3a335",
       "ext": "sHR2rlsfjI4L3t4RXQMkn97hxHYaEbu5lFfPUXOxEzpAZL11z+ayZEbLSb3vs/v8ZS0i6U3Oh/aCVpUdIeZzRgc5TQyB2k7aC0UwqxoW281lBnRyLoSPb+ejqJ92E4RYuH9BABywIr8NA9Bn0Ndnl5c+AJCGNVdUwDUcd6fmGzQoQ+VuzRpX5xfgCbnpjcTp56dL50nhDb7IIe7CtKv7pA=="
     },
 		{
 			"key": "电影",
-			"name": "🎬电影┃1080P",
+			"name": "🥇｜电影｜待測",
 			"type": 3,
 			"quickSearch": 0,
 			"api": "csp_AppGetGuard",
-			"jar": "./jar/mi-0319.jar",
+			"jar": "./jar/mi-0319.jar;md5;b73ed98a0a285189794be3c8d9c3a335",
       "ext": "sHR2rlsfjI4L3t4RXQMkn9pXqDDJVVS6pwdk2S4nTvU6TUFngKGexyvHMXSXO57AN6M4LsBHwZ1tcHnPZ2gPH1m7qu7r1zc7CkawgqunMPxZznGnqtbiv5NVOliQUr2NK4Pee7PFE2+BCvbGUPd3IR9Hiub1wBkbrfqjptJFLEpVXeR1pgeGp6pPUjADtyQPuXHj4azaFzDrobUCcdcn7KM6ZC4rjkupd5HlbdqhOJTRBv917h5RUlXs1sgRU1+EWkMXuNopX+18VjWwSrFYPw=="
 		},
 		{
 			"key": "︎酷云",
-			"name": "🐰米兔┃1080P",
+			"name": "🥇｜米兔｜待測",
 			"type": 3,
 			"quickSearch": 0,
 			"api": "csp_AppGetGuard",
-			"jar": "./jar/mi-0319.jar",
+			"jar": "./jar/mi-0319.jar;md5;b73ed98a0a285189794be3c8d9c3a335",
       "ext": "sHR2rlsfjI4L3t4RXQMkn4/zRHG7KueeJHsenaeUMOWp1EzObBSdbU9et5QXxSbLZNx3dMChdqtSieuV5wZj006LehfFeCmj8B095j2lIKIF0YoQe+MZcPjGy7gtOViYZ6wvyGkzWk6oD1mJmauAyZhYFgIf28dxzY5kbxJVtI2PjlO6xlD2NRNjVM5uVtSkhN2Pf9gmJ5qaWk40c4YC+w=="
 		},
 		{
-			"key": "csp_AppXY",
-			"name": "🐸上头┃短剧",
-			"type": 3,
-			"jar": "./jar/mi-0319.jar",
-      "api": "csp_AppXYGuard"
-		},
-		{
 			"key": "csp_SAOHUO",
-			"name": "🔥火火┃1080P",
+			"name": "🥇｜火火｜待測",
 			"type": 3,
-			"jar": "./jar/mi-0319.jar",
+			"jar": "./jar/mi-0319.jar;md5;b73ed98a0a285189794be3c8d9c3a335",
       "api": "csp_SaoHuoGuard"
 		},
 		{
 			"key": "csp_LiteApple",
-			"name": "🍎苹果┃1080P",
+			"name": "🥇｜苹果｜待測",
 			"type": 3,
-			"jar": "./jar/mi-0319.jar",
+			"jar": "./jar/mi-0319.jar;md5;b73ed98a0a285189794be3c8d9c3a335",
       "api": "csp_LiteAppleGuard"
 		},
 		{
 			"key": "csp_Gz360",
-			"name": "🍉瓜子┃1080P",
+			"name": "🥇｜瓜子｜待測",
 			"type": 3,
-			"jar": "./jar/mi-0319.jar",
+			"jar": "./jar/mi-0319.jar;md5;b73ed98a0a285189794be3c8d9c3a335",
       "api": "csp_Gz360Guard"
 		},
 		{
 			"key": "csp_Jpys",
-			"name": "🥇金牌┃1080P",
+			"name": "🥇｜金牌｜待測",
 			"type": 3,
-			"jar": "./jar/mi-0319.jar",
+			"jar": "./jar/mi-0319.jar;md5;b73ed98a0a285189794be3c8d9c3a335",
       "api": "csp_JpysGuard"
 		},
 		{
 			"key": "csp_Wwys",
-			"name": "👨农民┃1080P",
+			"name": "🥇｜农民｜待測",
 			"type": 3,
 			"api": "csp_WwysGuard",
-			"jar": "./jar/mi-0319.jar",
+			"jar": "./jar/mi-0319.jar;md5;b73ed98a0a285189794be3c8d9c3a335",
       "ext": "https://www.wwgz.cn"
 		},
 		{
 			"key": "csp_Lgyy",
-			"name": "⏳️️流光┃1080P",
+			"name": "🥇️｜流光｜待測",
 			"type": 3,
-			"jar": "./jar/mi-0319.jar",
+			"jar": "./jar/mi-0319.jar;md5;b73ed98a0a285189794be3c8d9c3a335",
       "api": "csp_FreeOkGuard"
 		},
 
