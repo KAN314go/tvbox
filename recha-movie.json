@@ -3816,6 +3816,15 @@
       "epg": "http://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Taipei"
     },
     {
+        "name": "天天開心",
+        "type": 0,
+        "url": "http://ttkx.cc:55/lib/kx2024.txt",
+        "ua": "okhttp/3",
+        "playerType": 2,
+        "epg": "http://diyp2.112114.xyz/?ch={name}&date={date}",
+        "logo": "http://diyp2.112114.xyz/logo/{name}.png"
+      },
+    {
       "name": "雷蒙直播",
       "type": 0,
       "url": "https://cors.isteed.cc/https://raw.githubusercontent.com/n3rddd/CTVLive/main/live.txt",
@@ -3933,13 +3942,6 @@
       "url": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/live/10.txt",
       "ua": "okhttp/4.12",
       "epg": "http://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Taipei"
-    },
-    {
-      "name": "天天開心",
-      "type": 0,
-      "url": "http://ttkx.cc:55/天天开心",
-      "epg": "http://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Taipei",
-      "logo": "https://epg.112114.xyz/logo/{name}.png"
     },
     {
       "name": "野火(故障)",
