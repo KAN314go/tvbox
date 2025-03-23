@@ -1,4 +1,4 @@
-台灣#genre#
+台灣,#genre#
 ViVa 1台,tvbus://4bDzLSKEj3zSq5Batf2bfo6WbCQTBrZWxSfun1t7wS7PLagp7U
 ViVa 1台,tvbus://3PbyrHyxgcoUVePojhmm2P4UGaDWxFsBvBwZhbDgs1j6trgyAL
 ViVa 1台,tvbus://4cMmcWHBXzQJJXwmXSXcqKDHu3SHGLkzDnxu9JykMkfJFfPu8b
@@ -2834,7 +2834,7 @@ Z頻道,tvbus://6VXrywKLXqBEpiTUBhcbcpSXWztjguKXhJ3X7A7EUKYiWyuwaYo6A85JMXwub
 龍華電影,tvbus://79J6XrjHWS1HuDpf8FRAY4jbjKyU6xYcyUHMc2FS3ZnRDVQWEE
 龍華電影,tvbus://5iEHsmBu7hUbkiTNdaGpa6KkMYhGLb8N6bhp6r4W9PjoRVUDtVZghYx9bKvgj
 
-港澳#genre#
+港澳,#genre#
 HOY TV,tvbus://3Y8e64WdJQDTrmqko3cW3rDSrfrJGeYAkNRufm8JwWPdn964L5
 HOY TV,tvbus://3LhNw5KbpKu11RSLMTQEEqtdvdN6Y9ytLdBfj2jBP5SRqkxd9X
 HOY TV,tvbus://4g935AcSoDeNdHrG53a9kEYytqzqX13KkReQmcVkqrwRtUqpHw
@@ -3226,7 +3226,7 @@ viuTV6,tvbus://5XGTV4ASgQGfVmYA3KUpChswhQJroDUH9y6dttgy3mBd743Fa2mpVQSpJwkRW
 黃金翡翠台,tvbus://7t4SV6zMykzKZjY28SCHKTStyTQY7sY6Wq9pZ8W6edszsbgVi3
 黃金翡翠台,tvbus://5wU7G8zVtLAaooftSJWkhNVQiNmayi2Jo1fBKopj9CpwpEKtpKCWF1biVMoBF
 
-印度#genre#
+印度,#genre#
 6TV,tvbus://4azDMma5kPzS3zV9PFJ3wb3VBT3kBeLGZzVsYaeDPQXFVMCu1x
 6TV,tvbus://41LiCgR9nJnyeDi7TaLbbhurJSTgfwyi2Q94bGVMYVevR6Qdgp
 6TV,tvbus://3QFq4oDghrTEmNZPynoFZSJh1Aw8AhQG5XWL1h3mCtrXJFe35Z
@@ -3553,7 +3553,7 @@ ZEE Thirai,tvbus://7suDdoAMJg1kZdWBoyvQSmu7ViJjo27QYSo2NQcxfnB2s9HwSw
 ZEE Thirai,tvbus://8g3q6FR3hdNifZNcWnyN3cm8i2gHKmRNSj8SnEKZ744GXQapgP
 ZEE Thirai,tvbus://6JfVcNXD1aPpbVLNxoKgxZiwRKuSWhuwFqkVE4JF3RcXAaJT7yMqxrqvCvsnC
 
-英國#genre#
+英國,#genre#
 AL JAZEERA,tvbus://4CyyiotaWZQMJdvzMwxF2o2HUh3xTA9FRk3H9gGzLo34iH4P7W
 AL JAZEERA,tvbus://4YHmvFBjdaw9WeSvjP3RA6yTrucFrqsNeZ1aj3emxhJsnjk5J8
 AL JAZEERA,tvbus://3CTp2uxuoAFiihQbSzZCx7XZSjcuVYcFNpeZs4SpYwFHysaLNZ
@@ -3828,7 +3828,7 @@ Sky Sports F1 HD,tvbus://8VWcAcKfbkcGLk7T8pPoWfJtouC6VWt5tZ1uRfEEdLdTAEitqi
 Sky Sports F1 HD,tvbus://8TsBXBDLdXDC3qvBm1DjDd4LegG6Ek2gAyLn4j8B9BCaq12oFB
 Sky Sports F1 HD,tvbus://5T82kEAKSrHgMR6oYhDtNB2Xwn4nAQWvh7Xtt7QmhxTgdfvTZiwsgAB6KHvsb
 
-回看#genre#
+回看,#genre#
 8TV,tvbus://4AaPdix6QWJ4oUzbPh88wyMweyQKFK7A1WREYzZjHFBEMrepoV
 8TV,tvbus://2wyLHxEdPMq4T7fgW4d6ktS5pw89iQqEZZS8oSXo3L8TD4WVbb
 8TV,tvbus://4bEEPEENBcbmwRkJGqPTqNe7sePfAg4vtTCNxuUzS6tXbLAu3P
@@ -3987,7 +3987,7 @@ AXN臺灣,tvbus://71BfgJrqQ2REfzqmbtSU4gQnafg2KKumeeBvm1EJpUqhBPEi45
 AXN臺灣,tvbus://62DMEV9KvAvYF2YutGBvRLLPrSQRzmdGbqC41mCCTC2NKUE3oqF56oPnMyAPd
 
 
-大陸#genre#
+大陸,#genre#
 CCTV1綜合,tvbus://4MsdatnmfwG2JkB5J9n5CPFpruCRwhsGDTTsx7gZGEDThd3Kri
 CCTV1綜合,tvbus://3B24nnuhQGYE5FBijZ7bJkozuEAgzjEBbUH2wqo8ZnXkyKmXQE
 CCTV1綜合,tvbus://3poVtgLH6dD14e9bnhKLTgDDvBpg7PPMYZdYRhAZQB7Tsfrzsp
@@ -5136,7 +5136,7 @@ Adithya TV,tvbus://8Vg4HwLBPaTrzAFBpL2Hvtmag3jmsccai1gnUUoPp3qPHcgsgW
 Adithya TV,tvbus://693iqxCz4G9CwDVtERpTmTEKre1APz7bXVx7KrvsKeYEzNSCFodNeGPJrRHjV
 
 
-印尼#genre#
+印尼,#genre#
 AFC HD,tvbus://3PyLJRD3nKZjTb9eKhSmVfHhw1Y8GHb3WMTuKgrCzjN5pe1N4K
 AFC HD,tvbus://4UQyjeXLWTVfTQmgM4RoJqfx5zCNi93CNPbWNFvZoCbRZ9knvm
 AFC HD,tvbus://4WGNmz997cPB3wJm1F6zMJhHMQm2eRx3qnEqmsCfJTTDuSNfDv
@@ -7390,7 +7390,7 @@ ANTV,tvbus://8QUFGdnAyX9qGbzkzPHoRXMFQiRpcfUfeBdGL8VVupsTK5CHHe
 ANTV,tvbus://8ijHxCpso1yxPM8hLc5uwyGryesiqDhMrQ7nDhadANbpXcMn7t
 ANTV,tvbus://6T5k81S7MwdzZWonw7ZtJPwwMm3oKuLSLiwLAee9DYKwZEKpJ9webSnwUq3VP
 
-韓國#genre#
+韓國,#genre#
 Arirang,tvbus://3a5Jwf6ZY3vjsmKXdJVWpDSRgLJUsrSHNEXmfWRmYdFqxVemcw
 Arirang,tvbus://4f9r9mbVygaxs7vEjNFfFGyk1GoCTajvFzRkkicdtYKjLpXspz
 Arirang,tvbus://2xT5JR839JjpEzKxoWn6BMArtm4eoupCvGXqykAGck1MRfhEFo
@@ -8939,7 +8939,7 @@ YTN,tvbus://6AWu1Nc4WydwpEmQXfTtorY9XLMAez7NCDUQmZ55eokm9QhH7mUcKpE27CUcG
 한국경제TV,tvbus://7dqX7KgxHGtD1e1btM5DXc1hGmEdsHiJR7EGEn3UnPzQj8dtZh
 한국경제TV,tvbus://5iS51SKsabNmsCfzGQbZ77hR9L7daePEYv4VTaKbq4ipjhq28Pm4d5WWUqxbA
 
-日本#genre#
+日本,#genre#
 ABCテレビ,tvbus://4KXgVdgLR66x1sVFPfJtaQWEGE5aXqhNjKz7jVmbqwUzD1J7rY
 ABCテレビ,tvbus://3cVSXPrDMJgMKycy9EmFiXFojmez3XcKzfdumVrpABnTnQWUtr
 ABCテレビ,tvbus://4Euvth8kV8YAhAgayXvqVcpJs6iCGau55XRE6nWPDvWXVHyskf
@@ -9475,7 +9475,7 @@ WOWOW ライブ,tvbus://5X3SsgxEczcZS9LPE5uchS6wMx5ZrNNvKbfo5HnGGSHFMERZjnGjnV86
 関西テレビ,tvbus://6SCwQg6fgmM3jCfVPU6j1a3QWDUcaVrXGYXirW76qcPLN4nqMaLkvjGGMQZJM
 ABS-CBN News,tvbus://3rquU4CCiCk116dDHxftAGpDndXKFKytcA9frqiDtvCf3sehLi
 
-菲律賓#genre#
+菲律賓,#genre#
 ABS-CBN News,tvbus://4Py9WB7nVb7bkyxxFv6JRYQayVJohcAnGg296VxqNbqRwUwU8Y
 ABS-CBN News,tvbus://3sWTscLm4KeuwUqYNCMs2ZTNcfg6Ni9nxTrATRBv4JFWgiFXnv
 ABS-CBN News,tvbus://3bMvfeHqPQYCZfg2wbbwCz6Zfq1LmaaPNgEZipTXipjsot3jrC
@@ -9567,7 +9567,7 @@ TV5MONDEASIE,tvbus://7j9rcgeiyB4SkZfSqyb3v3EnHqdWENAmmgpFh3cpPbAyLVEpvk
 TV5MONDEASIE,tvbus://8Kffw81XwGp5o7hAfpMPiGNcLAFmbYneSvt8R2QqGPrB1qMw6Z
 TV5MONDEASIE,tvbus://6K9RhfkGFgBcZ8afcdr91tvXrKDBaLMFFtnGoeVCDH6TcKgbuRuset937982B
 
-越南#genre#
+越南,#genre#
 ANTV(VN),tvbus://4Ne1DEu8HwLEvuqWhvd5qi8rNgBQA31sypdoi4aFArQuCiuBJu
 ANTV(VN),tvbus://3asG5nX5BY8FNSMsakibyyAtHykHg7k7fMKArvyUoz1xhFd7X2
 ANTV(VN),tvbus://44tbJQxezzcWudgGJJ7ZzC2LKNQ2SFtogQhKJ3h9fUjMdx78QC
@@ -9881,7 +9881,7 @@ VTV9(VN),tvbus://8DB8jK9Vd8bhXW6CTojunpUuyd1Lgxoo3KA3ZxZ14MBiLcdxsZ
 VTV9(VN),tvbus://8ffMoq391QmCqcBWbiTLUDgqCLwRqbFGrGYBMwjmmvyBRLb7vL
 VTV9(VN),tvbus://6Kis8QnmRY31AT3dcHTFQhWnoZJaZ4Gx1LWqhbn6FLH8VTNnbsDQtPfwRMhtB
 
-泰國#genre#
+泰國,#genre#
 3+,tvbus://3EmAWxCh3dnU5HpTU6yZd6zhpiDrbwB3waqJ6xYjJNv5axDDCF
 3+,tvbus://3YoZwZMSBn18oLTwnQP8SgaLUsXGajiJjVN3xcWSr26Kmsr6gJ
 3+,tvbus://4PXKW72FtezFUNmiD9Yc1jUpfj2QpuDjX3wXNybchW8ySqCZwr
@@ -10403,7 +10403,7 @@ TVB Thai,tvbus://6GjKemQmZjvopqMpSBxJannmL9uakxCUzfk1Z5ApeeZK5WKUKMBX3RVqfpF1x
 ไทยรัฐ ทีวี HD,tvbus://7FWe2XcPSXYCddRuY7EjHThvgpJbkFi7a4LmKgjevJWPME4duf
 ไทยรัฐ ทีวี HD,tvbus://6Fw81jDquQcX4MGbpf3npxyAvtF1sEoeERrwRHxf8btucgdT6NJEYewzeUspn
 
-加拿大#genre#
+加拿大,#genre#
 600 News,tvbus://43kef7XuYhj5UDBqLBjLrBAwM4gjicCi8con6k1R6e9qKV9XHT
 600 News,tvbus://4LSRF7zdAAFKJPCfkmrcmfXaCcigCL1szwXXycCkHD6L7QoUd7
 600 News,tvbus://3ujJFxvpPhZmaZBHm9f3hsrHAeqijVtcMH7eha7kva8ZUozoZU
@@ -10821,7 +10821,7 @@ YTV,tvbus://6fXXatBbD5NXYrf1L6UKUZwK7kickdpvWppLZZQvXEEkSjpGoHb8LH9rFhNmL
 新時代西部,tvbus://7WFveP84XuXhswf8mWj6CeJsqHFw521nQmywtFfkdY5ayvFU73
 新時代西部,tvbus://5kCuMA1qAWZTSwFHfb89haxqJRNSi33oMaBPdZ9H7skmSib2WYWeniWN94epR
 
-澳大利亞#genre#
+澳大利亞,#genre#
 7,tvbus://4Z64uejZGaWnLoNZo6VFU1TgAtXYehPajnMK6iyRQA2jZanSNU
 7,tvbus://4HfTiFgtU8T8ZzxrmtPSkq5sPRoFWgEFGFDhFQJtaGnhZuS33m
 7,tvbus://3uqasFUaJJv3tX6NVKQEbeJkkXCnGDzkQx19vmg5Eziq4WM7YG
@@ -11304,7 +11304,7 @@ Sky Racing 2,tvbus://8mBXaqThPu5UGfaa3Jt7dVG9nVkADBPJ5xSjjH575nPqnHa2FS
 Sky Racing 2,tvbus://7MbYwaJRyaDMkrLRZfVdQsRcSVkUhQ5GoN4f8DawRv5eMFp2Ce
 Sky Racing 2,tvbus://6WX1FgeMXcDoUmi9LNPJo2zzS8oJhfQvyFkzYKk7gSSNbntRTAbqiz4q23AtA
 
-綜合#genre#
+綜合,#genre#
 8TV,tvbus://4AaPdix6QWJ4oUzbPh88wyMweyQKFK7A1WREYzZjHFBEMrepoV
 8TV,tvbus://2wyLHxEdPMq4T7fgW4d6ktS5pw89iQqEZZS8oSXo3L8TD4WVbb
 8TV,tvbus://4bEEPEENBcbmwRkJGqPTqNe7sePfAg4vtTCNxuUzS6tXbLAu3P
@@ -11722,7 +11722,7 @@ TVOkey,tvbus://64ysFX4wwBmifjAVzTrCsGRbbMiZkwriEkzPBShi8g2nwJHBvX6naSyurEKh9
 鳳凰衛視香港台,tvbus://7trNUetjhaUdrZvqThsm3QwWJUxoRWEwaeAqT91KwU3s3ssqPd
 鳳凰衛視香港台,tvbus://6AW4HEATG9LySpaF6w1PEJwnGMDS7DasGvh1QZbbCQwaHYr2sQTXvSWt1w4zA
 
-音樂#genre#
+音樂,#genre#
 Calm Piano,tvbus://4BZrm9GvTiXVmGkTLHbiiJuHHibgQmNTFnNE6VTBaZJK12rWhT
 Calm Piano,tvbus://4n9xE5bDcG15h3qH5rAycuge9kkpvMePavV17qHpRPr3HayJan
 Calm Piano,tvbus://4PZhm8JT7LRVdRFWffXU8tL2EEGCKxoZtFH4LJCusDEfVNTVv3
@@ -11932,7 +11932,7 @@ Tropical House2,tvbus://6S6wqZebAonCZL4TGYXvaJVVexAy6aBCJjCXBGmvgRCFfT8u9F6jctFH
 信大電視,tvbus://8fBoqTmEiAWqJQa7ujMAKacDMRVagtiKj8B34DhEZ9b8bFV4MH
 信大電視,tvbus://6bPwgKN3aYPfEt9psC2ndTuuytFqUoGTK6FJ6XbAZSe6XUnuegKJ86mSD6vXn
 
-NBA#genre#
+NBA,#genre#
 ESPN,tvbus://3gicURxa4aNgto1iDBYrkwYfgvW6vvisjcypNdVbv8zyGi64dG
 ESPN,tvbus://3ciNCkVdpgzkoeSQLEHbdrpLPdrV9M7Cu6ah5CYCXCdWD8n2oX
 ESPN,tvbus://3WMjh8m55hm7gcQDqLrzYsvoRWKUxoBVC1UskK5VtjDov4xvyP
@@ -11986,7 +11986,7 @@ NBA HD-US,tvbus://7Z4t4CT6JwKj7Sh8qj1ZSceoiv9Rg1RE1Kac94Yw42FTYWddS6
 NBA HD-US,tvbus://7tjqN8gPEEtXNtDvRZoHD28ucZ8LsgV7j1i8EjvRTS6jgaWkej
 NBA HD-US,tvbus://6d1YCNd6YNfT2aoHAR4srmcf34t2mc83WLUqRt8gqvbrcw1j1AhwHQoVvoSJJ
 
-新聞#genre#
+新聞,#genre#
 ABC News,tvbus://3CGfZ7DuX5rfEDuY9Dm9CxDN4mGaowGb9df9uFPumSB5Eokf3s
 ABC News,tvbus://4hqKnGTXNsuKUjZ49wQfA5x7zgbTijFiH7DAyL6vnviuWuC4Wj
 ABC News,tvbus://3V5Uue667YV1BRpYWXBEeXjvFFJLWkeTiETZnG2eAd2pK2pf4o
@@ -12469,7 +12469,7 @@ TVB無線新聞台,tvbus://5i136X2EMWpeRPdGXUkZV7oxGquN1vbCNk6RShawp6xeFGUCoeAjy
 鳳凰衛視資訊台,tvbus://7gEMFYkjtfMJCJHJkmZZUL4jYy2svpTFxcrD6vNv5cCTpmfEC5
 鳳凰衛視資訊台,tvbus://6YFFm7vqXMiiCW96DNXnN6vPVF9QWJFQYK6fuq4pG55UJ4n5cELsheLB13HKt
 
-AMC#genre#
+AMC,#genre#
 amc電影台,tvbus://3rqaffEy8K4LhuFaD2rUGF72BrNi9iWXWfi37qi3d8ezAUwsWh
 amc電影台,tvbus://3rwq6XpL4PAC2kvBgqT3QM3EqeacFH81sAGVguTzmCjYmdNjMb
 amc電影台,tvbus://4smaN9xg1gh1ALxD5PggYStWtxRHsoXrujkz2Cq65oifAJTukS
@@ -12861,7 +12861,7 @@ tvN Movies,tvbus://65rbBfLWWGrBHJGgVUF7XFKMWWMQwJ2gRQC9StH2zTykGs89H6MzvctUgMbQa
 靖天電影台,tvbus://7XredSEx5Pspy3i3pAWuSH3ajbT8cRnkxLL2eeGdoau3bQCXfd
 靖天電影台,tvbus://68iK6Sh4HRyJqK21ZMNKMcExjev4X9zyEophATjVt7AWZ6s4ffvwdCh6FrSZr
 
-紀實#genre#
+紀實,#genre#
 Animal Planet,tvbus://2zyD7VHU9X4PdCWXcJienRhDdhEkWBDEKoG7xYkgnkADBFYQtv
 Animal Planet,tvbus://41B4yAj9utSTmnSCaWX5usycefiVJkqUuDwE34rXR39mt2dcvr
 Animal Planet,tvbus://4VSbJiW2NkwUvbwRc7PNKfLEmaMNVfWFdpD5GqrF4u4mFak2ch
@@ -13188,7 +13188,7 @@ Techstorm,tvbus://5uAQfxevTvCkocVFaJEi89wSG2enFVSm7kbLiRa8PwLsaVcFSnKsEJW8ZqmYj
 靖天映畫,tvbus://7k2RgBz9SgrFmbAaH8u8FS7cD7fg4U3s7LpSZbwuK4YFH21XR1
 靖天映畫,tvbus://5cCtwtQgee6hQpo6pZ4EoHGyQwZY1xAbV1UNNmLxCD3WVnF37RVcTszbV45VE
 
-娛樂#genre#
+娛樂,#genre#
 Calm Piano,tvbus://4BZrm9GvTiXVmGkTLHbiiJuHHibgQmNTFnNE6VTBaZJK12rWhT
 Calm Piano,tvbus://4n9xE5bDcG15h3qH5rAycuge9kkpvMePavV17qHpRPr3HayJan
 Calm Piano,tvbus://4PZhm8JT7LRVdRFWffXU8tL2EEGCKxoZtFH4LJCusDEfVNTVv3
@@ -13515,7 +13515,7 @@ VH1,tvbus://7vQvUM4XJoqx9TvvjcBx6ZEtKrLgMwwBRaycLLEzXXvuojsxwV
 VH1,tvbus://7Aw3qtGgeavgKPwE3wo6GB3Su6qWf1Mi4MD4izajH7mgmmXtYb
 VH1,tvbus://5xNCRvYmgf5LMAu1srUGakt6HzSZiQsmQc4HDBy8RXxRi8GyAwryqzn5eyDQE
 
-美食#genre#
+美食,#genre#
 AFC,tvbus://4NDy4m1DoDXVy695aJVT4dK5g8SxpWqLepehjZfaubWU25kEbo
 AFC,tvbus://3W7hxvj1fAABt6nFAN6epvALazBe1KeXtVzWExnyHyLPD7xV5T
 AFC,tvbus://3N4dZNudppP7mprmnZFmczCP8tusEfT7EwNzBG4tbyCuKNRw8L
@@ -13595,7 +13595,7 @@ Food Network HD,tvbus://5xS1mLjz72EVFbGi3pu1YfKkskaKBKwzFQVMKkwVH5mfQJAcBWWUi5m6
 美食星球,tvbus://8RqKjxaG3W99R9gsefm8NcuruzPu7MojhbJDoNKofKK5HZPwt6
 美食星球,tvbus://6L23b4xRzfJQzVk4dtucpi4g2PQAYFkgqSpCBmd6gjbWppkFCgybgdCm2sgxB
 
-體育#genre#
+體育,#genre#
 ABC HD-US,tvbus://4m5berMwrgwXEdjqYyT2Wj8mMeYctrA697zK4gzb8doY6q9nR9
 ABC HD-US,tvbus://3CCeraHQYxpCmX4Z4EsB3jVoxgWUm8kxFg5yrVFzTveCMtZcio
 ABC HD-US,tvbus://4KNJrKZVAHnrmrP8ZMKbrqWX6z5muyKNMMLG516f7seo5ft7c5
@@ -15157,7 +15157,7 @@ WWE Superslam-GB,tvbus://63pDsWN8sKcYSQvES7eSozyb4d124Z3EDAnQjBtZUhKdSpLmueFnihD
 ＷＯＷＯＷシネマ,tvbus://7P5peMf8yBeVGEDFMCJ4iGwmbzju1jsGMA2Kzia4rfgxWnhZtf
 ＷＯＷＯＷシネマ,tvbus://5PrkwNAzXoNYNYJwKTVaAVDP4bFFDCBy2RviaHds2kUMDhygYBs7b31r3RLsN
 
-少兒#genre#
+少兒,#genre#
 ANIMAX,tvbus://2xpu6YoAS6G6Er9kF6Yt8TNyg2DRerG998vW3aoeunQ4f5EHkz
 ANIMAX,tvbus://4Fm8brgJa4ByR3xkrsN4d5odZmYAVpYnTkzeo1cCGKhdkh58LA
 ANIMAX,tvbus://4KsapgFJNrZ1sVSQ8WV5Y9pTETsNWfQJBQxBLYxyJDQMPq3iiz
