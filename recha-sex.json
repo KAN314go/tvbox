@@ -384,7 +384,7 @@
         "key": "Xhm",
         "name": "⏭小黃書",
         "type": 3,
-        "api": "https://down.nigx.cn/raw.githubusercontent.com/JJBJJ/PyramidStore/refs/heads/main/plugin/adult/Xhm.py",
+        "api": "./py/py_xhm.py",
         "searchable": 1,
         "quickSearch": 1,
         "filterable": 1,
