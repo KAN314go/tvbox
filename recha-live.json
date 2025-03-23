@@ -10,7 +10,7 @@
 			{"name":"4G-TV(777)","playerType":2,"url":"https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/live/4gtv.txt","epg":"http://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Taipei","logo":"https://epg.112114.xyz/logo/{name}.png","pass":true},		
 			{"name":"4G-TV(987)","type":0,"url":"https://raw.githubusercontent.com/shawn82/fm/main/lib/taiwan.m3u","playerType":2},	
 			{"name":"PIXMAN","type":0,"url":"https://tv.850930.xyz/pix.m3u","ua":"okhttp/3.15","epg":"https://epg.112114.xyz/?ch={name}&date={date}","logo":"https://epg.112114.xyz/logo/{name}.png"},
-			{"name":"RobYang","playerType":2,"url":"https://robyang.us.kg/VodLive/lb8ffa","epg":"http://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Taipei","logo":"https://epg.112114.xyz/logo/{name}.png","pass":true},	
+			{"name":"RobYang","playerType":2,"url":"https://robyang.ggff.net/VodLive/lb8ffa","epg":"http://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Taipei","logo":"https://epg.112114.xyz/logo/{name}.png","pass":true},	
 			{"name":"RobYang(備份)","type": 0,"url": "http://www1.RobYang.rr.nu/VodLive/lb8ffa","ua": "okhttp/4.12.0","timeout": 5,"epg":"http://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Taipei","logo":"https://epg.112114.xyz/logo/{name}.png","pass":true},	
 			{"name":"沐辰直播","type" : 0,"url" : "https://py.doube.eu.org/Sub?type=litv","epg" : "http://epg.112114.xyz/?ch={name}&date={date}","logo" : "https://epg.112114.xyz/logo/{name}.png"},
 			{"name":"kx2024","type": 0,"url": "http://ttkx.cc:55/lib/kx2024.txt","epg": "http://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Taipei","logo": "https://epg.112114.xyz/logo/{name}.png"},
