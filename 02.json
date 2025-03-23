@@ -3725,13 +3725,29 @@
       "ext": "./json/MTV.json"
     },
     {
+			"key":"MV_vod",
+			"name":"🎵｜MTV-2",
+			"type":1,
+			"api": "https://mv.wogg.link/mv/vod",
+			"searchable": 1,
+			"quickSearch": 0,
+			"changeable": 0
+		},
+    {
       "key": "ksxjj",
-      "name": "🎵｜KTV",
+      "name": "🎤｜KTV",
       "type": 4,
       "api": "http://120.53.102.254/dsp/",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1
+    },
+    { 
+      "key": "hipy_js_KTV歌厅[听]1", 
+      "name": "🎤｜KTV-2", 
+      "type": 3, 
+      "api": "http://kxrj.site:55/lib/drpy2.min.js", 
+      "ext": "http://kxrj.site:55/lib/js/KTV歌厅[听].js" 
     },
     {
       "key": "py_bilibili",
