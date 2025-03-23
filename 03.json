@@ -3,6 +3,19 @@
   "logo": "https://p3-pc.douyinpic.com/img/aweme-avatar/tos-cn-i-0813_6e2553f5708c414386eeca88b5f2674a~c5_300x300.jpeg?from=2956013662",
   "wallpaper": "https://tv.nxog.top/m//t/",
   "sites": [
+
+
+
+
+    {
+        "key": "Iktv",
+        "name": "🎤KTV┃音乐🎤",
+        "type": 3,
+        "api": "csp_WexIktvGuard",
+        "jar": "https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1742475704348/wex.txt;md5;a23612ed92591d24916fa0cab33fb3ac",
+        "searchable": 1,
+        "changeable": 0
+    },
     {
 			"key": "悠悠",
 			"name": "🥇｜悠悠｜高清◎秒播(無廣告+APP)",
@@ -3725,15 +3738,6 @@
       "ext": "./json/MTV.json"
     },
     {
-			"key":"MV_vod",
-			"name":"🎵｜MTV-2",
-			"type":1,
-			"api": "https://mv.wogg.link/mv/vod",
-			"searchable": 1,
-			"quickSearch": 0,
-			"changeable": 0
-		},
-    {
       "key": "ksxjj",
       "name": "🎤｜KTV",
       "type": 4,
@@ -3741,13 +3745,6 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1
-    },
-    { 
-      "key": "hipy_js_KTV歌厅[听]1", 
-      "name": "🎤｜KTV-2", 
-      "type": 3, 
-      "api": "http://kxrj.site:55/lib/drpy2.min.js", 
-      "ext": "http://kxrj.site:55/lib/js/KTV歌厅[听].js" 
     },
     {
       "key": "py_bilibili",
