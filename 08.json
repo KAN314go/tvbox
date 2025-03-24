@@ -21,7 +21,7 @@
       "主页url":"https://www.rebovod.com/",
       "数组":"class=\"swiper-slide vod_item\"&&</a>",
       "标题":"title=\">&&<",
-      "副标题":"class=\"vod_remarks\">&&</span>",
+      "副标题":"vod_remarks\">&&</span>",
       "图片":"data-original=\"&&\"",
       "状态": "状态：&&</div>",
       "主演": "演员：&&</div>",
