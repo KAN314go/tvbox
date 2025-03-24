@@ -578,7 +578,7 @@
         "quickSearch":0,
         "style":{"type":"rect","ratio":0.66},
         "api":"csp_GM",
-        "jar": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/jar1/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+        "jar": "./jar/GM.jar",
         "ext":{
               "userScript":"./js/gaze.user.js",
               "debug":false,
