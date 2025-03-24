@@ -3843,6 +3843,44 @@
       "logo": "https://epg.112114.xyz/logo/{name}.png"
     },
     {
+      "name": "LiTV",
+        "type": 0,
+        "url": "http://xg.52sw.top/iptv/litv.php",
+        "ua": "okhttp/3.15",
+        "epg": "http://iptv.52sw.top:668/?ch={name}&date={date}"
+    },
+    {
+        "name": "火星直播",
+        "type": 0,
+        "url": "http://xg.52sw.top/play/hxds/",
+        "ua": "okhttp/3.15",
+        "epg": "http://iptv.52sw.top:668/epg/?ch={name}&date={date}",
+        "header": {
+            "Referer": "https://www.kds.tw/"
+        }
+    },
+    {
+        "name": "焦点(Focus TV)",
+        "type": 0,
+        "url": "http://xg.52sw.top/jd/?ip=108.181.32.169",
+        "ua": "okhttp/3.15",
+        "epg": "http://iptv.52sw.top:668/?ch={name}&date={date}"
+    },
+    {
+        "name": "歐華(ouhua TV)",
+        "type": 0,
+        "url": "http://xg.52sw.top/iptv/欧华.m3u",
+        "ua": "okhttp/3.15",
+        "epg": "http://iptv.52sw.top:668/?ch={name}&date={date}"
+    },
+    {
+        "name": "歐飛[台湾节点]",
+        "type": 0,
+        "url": "http://xg.52sw.top/iptv/ofiii.m3u",
+        "ua": "okhttp/3.15",
+        "epg": "http://iptv.52sw.top:668/?ch={name}&date={date}"
+    },
+    {
       "name": "4G-TV(喵老師)",
       "type": 0,
       "url": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/live/iptv.txt",
