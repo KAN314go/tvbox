@@ -19,8 +19,8 @@
       "ext": {
         "主页url": "https://www.rebovod.com/",
         "数组": "data-key=\"&&</a>",
-        "标题": "<span class=\"vod_title\">&&</span>",
-        "副标题": "<span class=\"vod_remarks\">&&</span>",
+        "标题": "<div class=\"vod_name mdui-p-t-1\"><span class=\"vod_title\">&&</span>",
+        "副标题": "<div class=\"vod_pic_slide xxx_customer_item\"><span class=\"vod_remarks\">&&</span>",
         "图片": "data-src=\"&&\"",
         "状态": "状态：&&</div>",
         "主演": "演员：&&</div>",
