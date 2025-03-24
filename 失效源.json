@@ -1,3 +1,5 @@
+//114.03.24 檢查完畢
+
 {
     "spider": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/jar1/pg.jar;md5;60d0b94a00860a27e433ffe0e2fea2a0",
     "logo": "https://p3-pc.douyinpic.com/img/aweme-avatar/tos-cn-i-0813_6e2553f5708c414386eeca88b5f2674a~c5_300x300.jpeg?from=2956013662",
@@ -1182,39 +1184,6 @@
         "分类"   : "新旧番剧$1#蓝光无修$2#动漫剧场$3#欧美动漫$4"                         ,
         "分类url": "https://www.anfuns.org/type/{cateId}-{catePg}.html"
       }
-    },
-    {
-        "key": "csp_NyaFun动漫",
-        "name": "动漫｜妮亞一號工坊｜無法修",
-        "type": 3,
-        "api": "csp_XBPQ",
-        "jar": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/jar1/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-        "searchable": 1,
-        "quickSearch": 1,
-        "filterable": 1,
-        "ext": {
-          "请求头": "User-Agent$MOBILE_UA",
-          "编码": "UTF-8",
-          "主页url": "https://nyafun.cc/",
-          "二次截取": "class=\"hl-vod-list clearfix\"&&</ul>",
-          "数组": "hl-lazy\"&&</a>",
-          "标题": "title=\"&&\"",
-          "图片": "data-original=\"&&\"",
-          "副标题": "ft2\">&&</span>",
-          "链接": "href=\"&&\"",
-          "播放数组": "hl-plays-list hl-sort-list&&</ul>",
-          "播放列表": "<a&&a>",
-          "播放链接": "href=\"&&\"",
-          "播放标题": ">&&</",
-          "线路数组": "hl-tabs-btn hl-slide-swiper&&</a>",
-          "线路标题": "alt=\"&&\"",
-          "跳转播放链接": "var player_*\"url\":\"&&\"",
-          "分类url": "https://nyafun.cc/index.php/vod/show/area/{area}/by/{by}/class/{class}/id/{cateId}/letter/{letter}/page/{catePg}/year/{year}.html",
-          "分类": "TV动画$20#剧场版$21",
-          "类型": "日漫$23#国漫$24#美漫$25||空",
-          "剧情": "青春&战斗&恋爱&奇幻&热血&搞笑&萝莉&校园&冒险&动作&励志&动画&情感&玄幻&推理&机战&运动&战争&少年&少女&社会&原创&亲子&益智&小说改||日韩动漫&国产动漫&青春&战斗&恋爱&奇幻&热血&搞笑&萝莉&校园&冒险&动作&励志&动画&情感&玄幻&推理&机战&运动&战争&少年&少女&社会&原创&亲子&益智&小说改",
-          "剧情值": "*"
-        }
     },
     {
       "key": "csp_Mifun动漫",
