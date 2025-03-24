@@ -757,6 +757,29 @@
         "jar":"./jar1/PizazzGY.jar"
       },
       {
+        "key": "五五影视",
+        "name": "🥇｜呜呜｜無法修",
+        "type": 3,
+        "api": "csp_XBPQ",
+        "jar": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/jar1/xyqxbpq.jar",
+        "searchable": 1,
+        "quickSearch": 1,
+        "filterable": 1,
+        "ext":
+            {
+            "作者": "荷城茶秀",
+            "站名": "55影视",
+            "主页url": "https://www.5555kan.com/",
+            "简介": "+<p class=\"col-pd\"&&</p>",
+            "导演": "导演：&&</p>",
+            "主演": "主演：&&</p>",
+            "线路数组": "<h3 class=\"title\">&&/h3>",
+            "线路标题": ">&&<",
+            "分类url": "https://www.5555kan.com/show/{cateId}-{area}-{by}------{catePg}---{year}.html;;ak",
+            "分类": "电影$1#电视剧$2#综艺$3#动漫$4"
+            }
+    },
+      {
         "key": "csp_全民影院",
         "name": "🥉｜全民｜浮水印廣告(線路都不能用)",
         "type": 3,

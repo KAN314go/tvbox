@@ -567,8 +567,6 @@
         "filterable": 1,
         "ext": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/json_now/愛看影院.json"
       },
-
-//看到這
       {
         "key": "csp_GM_注视影视",
         "name": "🥇｜注视｜雷蒙｜0309-失效",
@@ -661,29 +659,6 @@
         "changeable": 1
       },
       {
-        "key": "五五影视",
-        "name": "🥇｜呜呜｜無法修",
-        "type": 3,
-        "api": "csp_XBPQ",
-        "jar": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/jar1/xyqxbpq.jar",
-        "searchable": 1,
-        "quickSearch": 1,
-        "filterable": 1,
-        "ext":
-            {
-            "作者": "荷城茶秀",
-            "站名": "55影视",
-            "主页url": "https://www.5555kan.com/",
-            "简介": "+<p class=\"col-pd\"&&</p>",
-            "导演": "导演：&&</p>",
-            "主演": "主演：&&</p>",
-            "线路数组": "<h3 class=\"title\">&&/h3>",
-            "线路标题": ">&&<",
-            "分类url": "https://www.5555kan.com/show/{cateId}-{area}-{by}------{catePg}---{year}.html;;ak",
-            "分类": "电影$1#电视剧$2#综艺$3#动漫$4"
-            }
-    },
-    {
         "key": "csp_看看影視",
         "name": "🥉｜看看影視｜無法修",
         "type": 3,
@@ -862,7 +837,7 @@
         "key": "py_quickvod",
         "name": "⏭｜QuickVod(PYTHON)｜線路不能用",
         "type": 3,
-        "api": "https://json.doube.eu.org/python/py_quickvod.py",
+        "api": "./py/py_quickvod-1.py",
         "searchable": 1,
         "quickSearch": 0,
         "filterable": 0,
