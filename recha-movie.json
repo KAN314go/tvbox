@@ -47,7 +47,7 @@
       "key": "py_APPV2",
       "name": "APPV2(T3)",
       "type": 3,
-      "api": "https://raw.githubusercontent.com/JJBJJ/PyramidStore/refs/heads/main/plugin/app/APPV2.py",
+      "api": "./py/APPV2.py",
       "searchable": 1,
       "filterable": 0,
       "changeable": 0
@@ -56,7 +56,7 @@
       "key": "py_hitvAPP",
       "name": "hitvAPP(T3)",
       "type": 3,
-      "api": "https://raw.githubusercontent.com/JJBJJ/PyramidStore/refs/heads/main/plugin/app/hitvAPP.py",
+      "api": "./py/hitvAPP.py",
       "searchable": 1,
       "filterable": 0,
       "changeable": 0
@@ -65,7 +65,7 @@
       "key": "py_三号动漫APP",
       "name": "三号动漫APP(T3)",
       "type": 3,
-      "api": "https://raw.githubusercontent.com/JJBJJ/PyramidStore/refs/heads/main/plugin/app/三号动漫APP.py",
+      "api": "./py/三号动漫APP.py",
       "searchable": 1,
       "filterable": 0,
       "changeable": 0
@@ -74,25 +74,17 @@
       "key": "py_光速APP",
       "name": "光速APP(T3)",
       "type": 3,
-      "api": "https://raw.githubusercontent.com/JJBJJ/PyramidStore/refs/heads/main/plugin/app/光速APP.py",
+      "api": "./py/光速APP.py",
       "searchable": 1,
       "filterable": 0,
       "changeable": 0
     },
-    {
-      "key": "py_剧多短剧APP",
-      "name": "剧多短剧APP(T3)",
-      "type": 3,
-      "api": "https://raw.githubusercontent.com/JJBJJ/PyramidStore/refs/heads/main/plugin/app/剧多短剧APP.py",
-      "searchable": 1,
-      "filterable": 0,
-      "changeable": 0
-    },
+
     {
       "key": "py_小苹果APP",
       "name": "小苹果APP(T3)",
       "type": 3,
-      "api": "https://raw.githubusercontent.com/JJBJJ/PyramidStore/refs/heads/main/plugin/app/小苹果APP.py",
+      "api": "./py/小苹果APP.py",
       "searchable": 1,
       "filterable": 0,
       "changeable": 0
@@ -101,7 +93,7 @@
       "key": "py_悠悠APP",
       "name": "悠悠APP(T3)",
       "type": 3,
-      "api": "https://raw.githubusercontent.com/JJBJJ/PyramidStore/refs/heads/main/plugin/app/悠悠APP.py",
+      "api": "./py/悠悠APP.py",
       "searchable": 1,
       "filterable": 0,
       "changeable": 0
@@ -110,7 +102,7 @@
       "key": "py_火车太顺APP",
       "name": "火车太顺APP(T3)",
       "type": 3,
-      "api": "https://raw.githubusercontent.com/JJBJJ/PyramidStore/refs/heads/main/plugin/app/火车太顺APP.py",
+      "api": "./py/火车太顺APP.py",
       "searchable": 1,
       "filterable": 0,
       "changeable": 0
@@ -119,7 +111,7 @@
       "key": "py_LIVES",
       "name": "LIVES(T3)",
       "type": 3,
-      "api": "https://raw.githubusercontent.com/JJBJJ/PyramidStore/refs/heads/main/plugin/html/LIVES.py",
+      "api": "./py/LIVES.py",
       "searchable": 1,
       "filterable": 0,
       "changeable": 0
@@ -128,25 +120,7 @@
       "key": "py_LREEOK",
       "name": "LREEOK(T3)",
       "type": 3,
-      "api": "https://raw.githubusercontent.com/JJBJJ/PyramidStore/refs/heads/main/plugin/html/LREEOK.py",
-      "searchable": 1,
-      "filterable": 0,
-      "changeable": 0
-    },
-    {
-      "key": "py_甜圈短剧",
-      "name": "甜圈短剧(T3)",
-      "type": 3,
-      "api": "https://raw.githubusercontent.com/JJBJJ/PyramidStore/refs/heads/main/plugin/html/甜圈短剧.py",
-      "searchable": 1,
-      "filterable": 0,
-      "changeable": 0
-    },
-    {
-      "key": "py_红果网页",
-      "name": "红果网页(T3)",
-      "type": 3,
-      "api": "https://raw.githubusercontent.com/JJBJJ/PyramidStore/refs/heads/main/plugin/html/红果网页.py",
+      "api": "./py/LREEOK.py",
       "searchable": 1,
       "filterable": 0,
       "changeable": 0
@@ -155,7 +129,7 @@
       "key": "py_绝对影视",
       "name": "绝对影视(T3)",
       "type": 3,
-      "api": "https://raw.githubusercontent.com/JJBJJ/PyramidStore/refs/heads/main/plugin/html/绝对影视.py",
+      "api": "./py/绝对影视.py",
       "searchable": 1,
       "filterable": 0,
       "changeable": 0
@@ -164,7 +138,7 @@
       "key": "py_金牌",
       "name": "金牌影院(T3)",
       "type": 3,
-      "api": "https://raw.githubusercontent.com/JJBJJ/PyramidStore/refs/heads/main/plugin/html/金牌.py",
+      "api": "./py/金牌.py",
       "searchable": 1,
       "filterable": 0,
       "changeable": 0
