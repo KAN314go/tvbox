@@ -16,27 +16,26 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": 
-           {
-      "主页url":"https://www.rebovod.com/",
-      "数组":"data-key=\"&&</a>",
-      "标题":"vod_title\">&&</span>",
-      "副标题":"vod_remarks\">&&</span>",
-      "图片":"data-original=\"&&\"",
-      "状态": "状态：&&</div>",
-      "主演": "演员：&&</div>",
-      "简介": "<p>&&</p>",
-      "类型": "类型：&&</div>",
-      "链接":"href=\"/index.php/vod/detail/&&.html\"",
-      "链接前缀":"https://www.rebovod.com/index.php/vod/play/",
-      "链接后缀":"/sid/1/nid/1.html",
-      "线路数组": "class=\"mdui-panel-item-header\"&&</i>",
-      "线路标题": "title\">&&</div",
-      "搜索url":"https://www.rebovod.com/index.php/vod/search.html?wd={wd}",
-      "分类url":"https://www.rebovod.com/index.php/vod/show/area/{area}/by/{by}/id/{cateId}/year/{year}.html",
-      "分类": "电影$1#电视剧$2#综艺$3#动漫$4",
-      "地区": "大陆&香港&台湾&美国&法国&英国&日本&韩国&德国&泰国&印度&意大利&西班牙&加拿大&其他||內地&香港&台湾&美国&法国&英国&日本&韩国&德国&泰国&新加坡&其他||內地&港台&日韩&欧美||国产&日本&欧美&其他"
-           }
+      "ext": {
+        "主页url": "https://www.rebovod.com/",
+        "数组": "data-key=\"&&</a>",
+        "标题": "vod_title\" title=\"&&\">",
+        "副标题": "vod_remarks\" title=\"[^\"]*\">&&</span>",
+        "图片": "data-src=\"&&\"",
+        "状态": "状态：&&</div>",
+        "主演": "演员：&&</div>",
+        "简介": "<p>&&</p>",
+        "类型": "类型：&&</div>",
+        "链接": "href=\"/index.php/vod/detail/&&.html\"",
+        "链接前缀": "https://www.rebovod.com/index.php/vod/play/",
+        "链接后缀": "/sid/1/nid/1.html",
+        "线路数组": "class=\"mdui-panel-item-header\"&&</i>",
+        "线路标题": "title\">&&</div",
+        "搜索url": "https://www.rebovod.com/index.php/vod/search.html?wd={wd}",
+        "分类url": "https://www.rebovod.com/index.php/vod/show/area/{area}/by/{by}/id/{cateId}/year/{year}.html",
+        "分类": "电影$1#电视剧$2#综艺$3#动漫$4",
+        "地区": "大陆&香港&台湾&美国&法国&英国&日本&韩国&德国&泰国&印度&意大利&西班牙&加拿大&其他||內地&香港&台湾&美国&法国&英国&日本&韩国&德国&泰国&新加坡&其他||內地&港台&日韩&欧美||国产&日本&欧美&其他"
+      }
     },
 
     {
