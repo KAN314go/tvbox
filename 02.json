@@ -19,7 +19,7 @@
       "ext": 
            {
       "主页url":"https://www.rebovod.com/",
-      "数组":"class=\"vod_item mdui-col&&</a>",
+      "数组":"data-key=\"&&</a>",
       "标题":"title=\"&&\"",
       "图片":"data-original=\"&&\"",
       "链接":"href=\"/index.php/vod/detail/&&.html\"",
