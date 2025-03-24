@@ -412,6 +412,8 @@
         "filterable": 1,
         "ext": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/json_now/全民影院.json"
     },
+    {"key": "vod_虎牙","name":"🧲｜虎牙｜浮水印廣告+轉圈","type":1,"api":"https://www.huyaapi.com/api.php/provide/vod/from/hym3u8","searchable":1,"quickSearch":1,"filterable":1},
+
     ],
     "parses": [
         {"name": "解析聚合", "type": 3, "url": "Demo"},
