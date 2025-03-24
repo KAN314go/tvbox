@@ -19,7 +19,7 @@
       "ext": 
            {
       "主页url":"https://www.rebovod.com/",
-      "数组":"class=\"swiper-slide vod_item=\"&&</a>",
+      "数组":"class=\"swiper-slide vod_item\"&&</a>",
       "标题":"title=\">&&<",
       "副标题":"class=\"vod_remarks\">&&</span>",
       "图片":"data-original=\"&&\"",
