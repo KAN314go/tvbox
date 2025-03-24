@@ -4,10 +4,6 @@
   "wallpaper": "https://tv.nxog.top/m//t/",
   "sites": [
 
-
-
-
-
     {
       "key": "豆瓣",
       "name": "🇹🇼【老王點播專區】🇹🇼",
@@ -2375,7 +2371,7 @@
     },
     {
       "key": "csp_JUMITV",
-      "name": "🎥｜劇TV｜普清◎順播(跑馬燈廣告+成人)",
+      "name": "🎥｜劇迷｜普清◎順播(跑馬燈廣告+成人)",
       "type": 3,
       "api": "csp_XBPQ",
       "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
@@ -2590,7 +2586,7 @@
     },
     {
       "key": "csp_4K影院",
-      "name": "🎥｜4K影院｜高清◎秒播(超多廣告)",
+      "name": "🎥｜四影｜高清◎秒播(超多廣告)",
       "type": 3,
       "api": "csp_XBPQ",
       "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
@@ -2775,7 +2771,7 @@
     },
     {
       "key": "vod_爱看",
-      "name": "🧲｜爱看機器人｜高清◎順播(全線路)",
+      "name": "🧲｜爱看機器人｜全線路",
       "type": 3,
       "api": "./drpy_libs/drpy2.min.js",
       "ext": "./drpy_js/ikanbot2.js"
@@ -3161,7 +3157,7 @@
     },
     {
       "key": "bilimd",
-      "name": "🎖︎｜bilbil",
+      "name": "🎖︎｜bilbil｜",
       "type": 3,
       "api": "csp_Bilimd",
       "jar": "./jar/xmbjm.jar",
@@ -3173,8 +3169,18 @@
       "timeout": 10
     },
     {
+      "key": "py_bilibili",
+      "name": "🎖︎｜bilibili｜PYTHON",
+      "type": 3,
+      "api": "./py/py_bilibili.py",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 0,
+      "changeable": 1
+    },
+    {
       "key": "bili",
-      "name": "🎖︎｜bilbil合集",
+      "name": "🎖︎｜bilbil合集｜",
       "type": 3,
       "api": "csp_Bili",
       "jar": "./jar/xmbjm.jar",
@@ -3315,7 +3321,7 @@
     },
     {
       "key": "drpyS_OmoFun[漫]",
-      "name": "动漫｜OmoFun[漫](DS)",
+      "name": "动漫｜OmoFun",
       "type": 4,
       "api": "http://drpys.aera.eu.org/api/OmoFun[漫]",
       "searchable": 2,
@@ -3484,7 +3490,7 @@
     },
     {
       "key": "hipy_js_次元城动漫[漫]",
-      "name": "动漫｜次元城｜T3",
+      "name": "动漫｜次元城",
       "type": 3,
       "api": "./drpy_libs/drpy2.min.js",
       "searchable": 1,
@@ -3677,16 +3683,6 @@
       "filterable": 1
     },
     {
-      "key": "py_bilibili",
-      "name": "㊙︎｜bilibili｜PYTHON",
-      "type": 3,
-      "api": "./py/py_bilibili.py",
-      "searchable": 1,
-      "quickSearch": 0,
-      "filterable": 0,
-      "changeable": 1
-    },
-    {
       "key": "直播转点播",
       "name": "㊙︎｜直播转点播",
       "type": 4,
@@ -3755,7 +3751,7 @@
     },
     {
       "key": "hipy_js_有声小说吧",
-      "name": "㊙︎｜听书吧｜T3",
+      "name": "㊙︎｜听书吧｜",
       "type": 3,
       "api": "./drpy_libs/drpy2.min.js",
       "searchable": 1,
@@ -3766,7 +3762,7 @@
     },
     {
       "key": "hipy_js_海洋听书[听]",
-      "name": "㊙︎｜海洋听书｜T3",
+      "name": "㊙︎｜海洋听书｜",
       "type": 3,
       "api": "./drpy_libs/drpy2.min.js",
       "searchable": 1,
@@ -3777,7 +3773,7 @@
     },
     {
       "key": "drpy2_酷我听书[听]",
-      "name": "㊙︎｜酷我听书｜T3",
+      "name": "㊙︎｜酷我听书｜",
       "type": 3,
       "api": "./drpy_libs/drpy2.min.js",
       "searchable": 2,
@@ -3787,7 +3783,7 @@
     },
     {
       "key": "hipy_js_六月听书[听]",
-      "name": "㊙︎｜六月听书｜T3",
+      "name": "㊙︎｜六月听书｜",
       "type": 3,
       "api": "./drpy_libs/drpy2.min.js",
       "searchable": 1,
