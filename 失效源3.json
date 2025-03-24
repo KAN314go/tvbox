@@ -572,52 +572,30 @@
       {
         "key": "csp_GM_注视影视",
         "name": "🥇｜注视｜雷蒙｜0309-失效",
-        "type": 3,
-        "searchable": 1,
-        "changeable": 1,
-        "quickSearch": 0,
-        "style": {
-          "type": "rect",
-          "ratio": 0.66
-        },
-        "api": "csp_GM",
-        "jar": "./jar/gm.jar;md5;3e59c9c3c50ea1d4609cec9dbee730c3",
-        "ext": {
-          "userScript": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/new_json/JS/gaze.user.js",
-          "debug": false,
-          "webViewSettings": {
-            "blockNetworkImage": true,
-            "blockList": [
-              "https://*.bytecdntp.com/cdn/expire-1-M/font-awesome/*",
-              "https://*.clarity.ms/*",
-              "https://gaze.run/visitorslog.php*",
-              "*.css*"
-            ]
-          },
-          "playUrlMatch": [
-            "https://dl-b.cloud.189.cn/corp/downloadFile.action?*",
-            "https://gaze.run/gaze_filey/pb/*.m3u8",
-            "https://*/obj/tos*"
-          ],
-          "spider": {
-            "homeContent": {
-              "loadUrl": "https://gaze.run/filter"
-            },
-            "categoryContent": {
-              "loadUrl": "https://gaze.run/filter"
-            },
-            "detailContent": {
-              "loadUrl": "https://gaze.run/play/${id}"
-            },
-            "playerContent": {
-              "loadUrl": "https://gaze.run/play/${mcid}#${path}"
-            },
-            "searchContent": {
-              "loadUrl": "https://gaze.run/filter"
-            }
-          }
-        }
-    },
+        "type":3,
+        "searchable":1,
+        "changeable":1,
+        "quickSearch":0,
+        "style":{"type":"rect","ratio":0.66},
+        "api":"csp_GM",
+        "jar": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/jar1/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+        "ext":{
+              "userScript":"./js/gaze.user.js",
+              "debug":false,
+              "webViewSettings":{
+                "blockNetworkImage":true,
+                "blockList":["https://*.bytecdntp.com/cdn/expire-1-M/font-awesome/*","https://*.clarity.ms/*","https://gaze.run/visitorslog.php*","*.css*"]},
+                "playUrlMatch":["https://dl-b.cloud.189.cn/corp/downloadFile.action?*","https://gaze.run/gaze_filey/pb/*.m3u8","https://*/obj/tos*"],
+                "spider":{
+                  "homeContent":{"loadUrl":"https://gaze.run/filter"},
+                  "categoryContent":{"loadUrl":"https://gaze.run/filter"},
+                  "detailContent":{"loadUrl":"https://gaze.run/play/${id}"},
+                  "playerContent":{"loadUrl":"https://gaze.run/play/${mcid}#${path}"},
+                  "searchContent":{"loadUrl":"https://gaze.run/filter"}
+                        }
+              }
+      },
+
 {
   "key": "csp_XBPQ_爱电",
   "name": "🥇｜爱电｜無法修",
