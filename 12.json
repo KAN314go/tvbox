@@ -19,7 +19,7 @@
       "ext": {
         "主页url": "https://www.rebovod.com/",
         "数组": "data-key=\"&&</a>",
-        "标题": "vod_title\" title=\"&&\">",
+        "标题": "vod_title\" title=\"&&\"",
         "副标题": "vod_remarks\" title=\"[^\"]*\">&&</span>",
         "图片": "data-src=\"&&\"",
         "状态": "状态：&&</div>",
