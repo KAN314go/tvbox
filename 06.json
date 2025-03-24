@@ -8,7 +8,15 @@
 
 
 
-
+    {
+      "key": "js_youyou",
+      "name": "悠悠视频(T3)",
+      "type": 3,
+      "api": "https://json.doube.eu.org/js/youyou.js",
+      "searchable": 1,
+      "filterable": 0,
+      "changeable": 0
+    },
     {
       "key": "js_youyou",
       "name": "悠悠视频(T3)",
