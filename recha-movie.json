@@ -3701,6 +3701,20 @@
       "logo": "https://epg.112114.xyz/logo/{name}.png"
     },
     {
+      "name": "金星直播",
+      "url": "file://tvbus/jx1.txt",
+      "epg":"https://diyp100.112114.xyz/?ch={name}&date={date}",
+      "logo": "https://epg.v1.mk/logo/{name}.png",
+      "core": {
+        "auth": "https://sgla.googlejt.com/v1/auth",
+        "name": "08a77819f9b7",
+        "pass": "1742653607661",
+        "sign": "163428eb20fa4b27",
+        "pkg": "com.yby.v11.singapore.tv",
+        "so": "file://tvbus/joy.so"
+              }
+    },
+    {
       "name": "4G-TV(喵老師)",
       "type": 0,
       "url": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/live/iptv.txt",
