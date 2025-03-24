@@ -581,9 +581,9 @@
           "ratio": 0.66
         },
         "api": "csp_GM",
-        "jar": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/jar1/gm.jar;md5;3e59c9c3c50ea1d4609cec9dbee730c3",
+        "jar": "./jar/gm.jar;md5;3e59c9c3c50ea1d4609cec9dbee730c3",
         "ext": {
-          "userScript": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/new_json/js/gaze.user.js",
+          "userScript": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/new_json/JS/gaze.user.js",
           "debug": false,
           "webViewSettings": {
             "blockNetworkImage": true,
