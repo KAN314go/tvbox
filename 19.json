@@ -25,7 +25,7 @@
         "状态": "状态：&&</div>",
         "主演": "演员：&&</div>",
         "简介": "<p>&&</p>",
-        "类型": "类型：&&</div>",
+        //"类型": "类型：&&</div>",
         "链接": "href=\"/index.php/vod/detail/&&.html\"",
         "链接前缀": "https://www.rebovod.com/index.php/vod/play/",
         "链接后缀": "/sid/1/nid/1.html",
