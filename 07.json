@@ -19,7 +19,7 @@
     },
     {
       "key": "js_youyou",
-      "name": "悠悠视频(T3)",
+      "name": "悠悠视频",
       "type": 3,
       "api": "./js/youyou.js",
       "searchable": 1,
