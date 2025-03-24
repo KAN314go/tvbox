@@ -19,8 +19,8 @@
       "ext": {
         "主页url": "https://www.rebovod.com/",
         "数组": "data-key=\"&&</a>",
-        "标题": "title=&&>",
-        "副标题": "vod_remarks\">&&</span>",
+        //"标题": "title=&&>",
+        //"副标题": "class=\"vod_douban_score\">&&</div>",
         "图片": "src=\"&&\"",
         "状态": "状态：&&</div>",
         "主演": "演员：&&</div>",
