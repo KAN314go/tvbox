@@ -3669,48 +3669,11 @@
     {
       "name": "沐辰直播",
       "type": 3,
+      "playerType": 2,
       "api": "https://json.doube.eu.org/python/py_litv.py",
       "ext": "",
       "epg": "http://epg.112114.xyz/?ch={name}&date={date}",
       "logo": "https://epg.112114.xyz/logo/{name}.png"
-    },
-    {
-      "name": "LiTV",
-        "type": 0,
-        "url": "http://xg.52sw.top/iptv/litv.php",
-        "ua": "okhttp/3.15",
-        "epg": "http://iptv.52sw.top:668/?ch={name}&date={date}"
-    },
-    {
-        "name": "火星直播",
-        "type": 0,
-        "url": "http://xg.52sw.top/play/hxds/",
-        "ua": "okhttp/3.15",
-        "epg": "http://iptv.52sw.top:668/epg/?ch={name}&date={date}",
-        "header": {
-            "Referer": "https://www.kds.tw/"
-        }
-    },
-    {
-        "name": "焦点(Focus TV)",
-        "type": 0,
-        "url": "http://xg.52sw.top/jd/?ip=108.181.32.169",
-        "ua": "okhttp/3.15",
-        "epg": "http://iptv.52sw.top:668/?ch={name}&date={date}"
-    },
-    {
-        "name": "歐華(ouhua TV)",
-        "type": 0,
-        "url": "http://xg.52sw.top/iptv/欧华.m3u",
-        "ua": "okhttp/3.15",
-        "epg": "http://iptv.52sw.top:668/?ch={name}&date={date}"
-    },
-    {
-        "name": "歐飛(ofiii TV)",
-        "type": 0,
-        "url": "http://xg.52sw.top/iptv/ofiii.m3u",
-        "ua": "okhttp/3.15",
-        "epg": "http://iptv.52sw.top:668/?ch={name}&date={date}"
     },
     {
       "name": "4G-TV(喵老師)",
@@ -3718,7 +3681,7 @@
       "url": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/live/iptv.txt",
       "epg": "https://epg.112114.eu.org/?ch={name}&date={date}",
       "logo": "https://epg.112114.eu.org/logo/{name}.png",
-      "playerType": 1
+      "playerType": 2
     },
     {
       "name": "4G-TV(嗅探)",
@@ -3740,7 +3703,8 @@
     },
     {
       "name": "4G-TV(M3U)",
-      "type": 0,
+      "type": 3,
+      "playerType": 2,
       "url": "https://tv.banye.tech:7777/4gtv.m3u",
       "epg": "http://epg.112114.xyz/?ch={name}&date={date}",
       "logo": "https://epg.112114.xyz/logo/{name}.png"
@@ -3755,13 +3719,16 @@
     },
     {
       "name": "4G-TV(987)",
-      "type": 0,
+      "type": 3,
       "url": "https://raw.githubusercontent.com/shawn82/fm/main/lib/taiwan.m3u",
+      "epg": "http://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Taipei",
+      "logo": "https://epg.112114.xyz/logo/{name}.png",
       "playerType": 2
     },
     {
         "name": "RobYang| http://RobYang.ggff.net",
         "type": 0,
+        "playerType": 2,
         "url": "http://www1.RobYang.ggff.net/VodLive/lb8ffa",
         "ua": "okhttp/4.12.0",
         "timeout": 5,
@@ -3771,6 +3738,7 @@
     {
       "name": "RobYang備1| http://RobYang.dpdns.org",
       "type": 0,
+      "playerType": 2,
       "url": "http://www1.RobYang.dpdns.org/VodLive/lb8ffa",
       "ua": "okhttp/4.12.0",
       "timeout": 5,
@@ -3780,6 +3748,7 @@
     {
       "name": "RobYang備2| http://RobYang.rr.nu",
       "type": 0,
+      "playerType": 2,
       "url": "http://RobYang.runasp.net/VodLive/lb8ffa",
       "ua": "okhttp/4.12.0",
       "timeout": 5,
@@ -3821,6 +3790,7 @@
       "name": "雷蒙直播",
       "type": 0,
       "url": "https://cors.isteed.cc/https://raw.githubusercontent.com/n3rddd/CTVLive/main/live.txt",
+      "playerType": 2,
       "ua": "okhttp/3.15",
       "epg": "http://epg.112114.xyz/?ch={name}&date={date}",
       "logo": "https://epg.112114.xyz/logo/{name}.png"
@@ -3828,6 +3798,7 @@
     {
       "name": "雷蒙精選",
       "type": 0,
+      "playerType": 2,
       "url": "https://cors.isteed.cc/https://raw.githubusercontent.com/n3rddd/CTVLive/main/litelive.m3u",
       "ua": "okhttp/3.15",
       "epg": "http://epg.112114.xyz/?ch={name}&date={date}",
@@ -3836,6 +3807,7 @@
     {
       "name": "收集者",
       "type": 0,
+      "playerType": 2,
       "url": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/live/otttv.txt",
       "ua": "okhttp/3.15",
       "epg": "http://epg.112114.xyz/?ch={name}&date={date}",
@@ -3853,7 +3825,6 @@
       "name": "歐華167",
       "playerType": 2,
       "url": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/live/175.txt",
-      "playerplayerType": 2,
       "ua": "okhttp/3.15",
       "timeout": 5,
       "epg": "https://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/taipei",
@@ -3863,7 +3834,6 @@
       "name": "Recha線路1",
       "playerType": 2,
       "url": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/live/king.txt",
-      "playerplayerType": 2,
       "ua": "okhttp/3.15",
       "timeout": 5,
       "epg": "https://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/taipei",
@@ -3880,6 +3850,7 @@
     {
       "name": "Stream",
       "type": 0,
+      "playerType": 2,
       "url": "https://www.stream-link.org/playlist.m3u?token=9e19d6d5-b804-443c-99ab-03689b657d26&hmac=bc1b85012072370e5b7997f2fcc539ce",
       "epg": "http://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Taipei",
       "logo": "https://epg.112114.xyz/logo/{name}.png",
@@ -3954,6 +3925,44 @@
       "ua": "okhttp/3",
       "epg": "https://epg.112114.eu.org/?ch={name}&date={date}",
       "logo": "https://epg.112114.eu.org/logo/{name}.png"
+    },
+    {
+      "name": "LiTV(故障)",
+        "type": 0,
+        "url": "http://xg.52sw.top/iptv/litv.php",
+        "ua": "okhttp/3.15",
+        "epg": "http://iptv.52sw.top:668/?ch={name}&date={date}"
+    },
+    {
+        "name": "火星直播(故障)",
+        "type": 0,
+        "url": "http://xg.52sw.top/play/hxds/",
+        "ua": "okhttp/3.15",
+        "epg": "http://iptv.52sw.top:668/epg/?ch={name}&date={date}",
+        "header": {
+            "Referer": "https://www.kds.tw/"
+        }
+    },
+    {
+        "name": "焦点(Focus TV)(故障)",
+        "type": 0,
+        "url": "http://xg.52sw.top/jd/?ip=108.181.32.169",
+        "ua": "okhttp/3.15",
+        "epg": "http://iptv.52sw.top:668/?ch={name}&date={date}"
+    },
+    {
+        "name": "歐華(ouhua TV)(故障)",
+        "type": 0,
+        "url": "http://xg.52sw.top/iptv/欧华.m3u",
+        "ua": "okhttp/3.15",
+        "epg": "http://iptv.52sw.top:668/?ch={name}&date={date}"
+    },
+    {
+        "name": "歐飛(ofiii TV)",
+        "type": 0,
+        "url": "http://xg.52sw.top/iptv/ofiii.m3u",
+        "ua": "okhttp/3.15",
+        "epg": "http://iptv.52sw.top:668/?ch={name}&date={date}"
     },
     {
       "name": "PIXMAN(故障)",
