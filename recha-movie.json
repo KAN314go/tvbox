@@ -3874,7 +3874,7 @@
         "epg": "http://iptv.52sw.top:668/?ch={name}&date={date}"
     },
     {
-        "name": "歐飛[台湾节点]",
+        "name": "歐飛",
         "type": 0,
         "url": "http://xg.52sw.top/iptv/ofiii.m3u",
         "ua": "okhttp/3.15",
