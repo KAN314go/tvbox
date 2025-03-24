@@ -3795,7 +3795,7 @@
   ],
   "lives": [
     {
-      "name": "小雲α台",
+      "name": "小雲1台",
       "url": "https://tang.hz.cz/so/xiaoyun.m3u",
       "core": {
         "auth": "local://tvbus",
@@ -3808,7 +3808,7 @@
       }
     },
     {
-      "name": "小雲β台",
+      "name": "小雲2台",
       "url": "./live/ueen2.txt",
       "core": {
         "auth": "local://tvbus",
@@ -3821,7 +3821,7 @@
       }
     },
     {
-      "name": "小雲γ台",
+      "name": "小雲測試專用(不要選)",
       "type": 0,
       "url": "./live/ueen.txt",
       "core": {
