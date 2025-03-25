@@ -6,25 +6,25 @@
   
 
         
-        {
-            "key": "csp_2077",
-            "name": "🥇｜2077｜高清◎秒播(無廣告)",
-            "type": 3,
-            "api": "csp_XBPQ",
-            "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "ext": {
-                "副标题": "module-item-note\">&&</div>",
-                "简介": "module-info-introduction-content\">&& ",
-                "线路数组": "class=\"swiper-slide module-tab-item tab-item\"&&</a>",
-                "线路标题": "线路\\s&&<small",
-                "跳转播放链接": "var player_*\"url\":\"&&\"",
-                "分类url": "https://www.m2077.com/vod-show/{cateId}-{area}-{by}------{catePg}---{year}/",
-                "分类": "电影$1#剧集$2#综艺$3#动漫$4#纪录片$5#体育录像$38#短剧爽剧$41"
-            }
-        },
+      {
+        "key": "csp_2077",
+        "name": "🥇｜2077｜高清◎秒播(無廣告)",
+        "type": 3,
+        "api": "csp_XBPQ",
+        "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+        "searchable": 1,
+        "quickSearch": 1,
+        "filterable": 1,
+        "ext": {
+            "副标题": "module-item-note\">&&</div>",
+            "简介": "module-info-introduction-content\">&& ",
+            "线路数组": "class=\"swiper-slide module-tab-item tab-item\"&&</small>",
+            "线路标题": ">&&<small",
+            "跳转播放链接": "var player_*\"url\":\"&&\"",
+            "分类url": "https://www.m2077.com/vod-show/{cateId}-{area}-{by}------{catePg}---{year}/",
+            "分类": "电影$1#剧集$2#综艺$3#动漫$4#纪录片$5#体育录像$38#短剧爽剧$41"
+        }
+    },
 
       {
         "key": "豆瓣",
