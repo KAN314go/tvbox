@@ -10,7 +10,7 @@
       "key": "短剧",
       "name": "短剧影视",
       "type": 3,
-      "jar": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/asdf1319964f/TV/master/PG/XBPQ.jar",
+      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
       "api": "csp_XBPQ",
       "ext": {
          "分类url": "https://www.nanf.cc/djshow/{cateId}--{by}-{class}-----{catePg}---.html",
