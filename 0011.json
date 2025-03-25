@@ -4,6 +4,19 @@
   "wallpaper": "https://tv.nxog.top/m//t/",
   "sites": [
 
+
+
+    {
+      "key": "短剧",
+      "name": "短剧影视",
+      "type": 3,
+      "jar": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/asdf1319964f/TV/master/PG/XBPQ.jar",
+      "api": "csp_XBPQ",
+      "ext": {
+         "分类url": "https://www.nanf.cc/djshow/{cateId}--{by}-{class}-----{catePg}---.html",
+          "分类": "古装穿越$2#甜宠虐恋$3#世纪重生$5#都市牛人$1#灵异惊悚$4#修仙玄幻$6#末世求生$7#海外短剧$8"
+     }
+    },
     {
       "key": "豆瓣",
       "name": "🇹🇼【老王點播專區】🇹🇼",
