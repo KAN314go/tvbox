@@ -96,15 +96,19 @@ class Spider(Spider):
         _area = extend.get('area', '')
         _year = extend.get('year', '')
 
-        # 處理年份範圍（例如 "1990,1999"）
-        if ',' in _year:
-            # 網站可能不直接支持範圍篩選，需特殊處理
-            # 這裡假設網站支持範圍格式，如果不支持，需進一步調整
-            _year = _year.replace(',', '-')  # 將 "1990,1999" 轉為 "1990-1999"
-        
-        # 構建篩選 URL，根據網站實際格式調整
-        # 假設網站格式為 /lm/{type}/sx---{year}----{area}--{page}.html
-        url = f'{self.host}/lm/{_type}/sx---{_year}----{_area}--{pg}.html'
+        # 構建篩選 URL，根據網站實際格式
+        # 基礎格式：/lm/{type}/sx---{year}-----{page}.html
+        # 如果有地區：/lm/{type}/sx------{area}--{page}.html
+        # 如果年份和地區同時存在：/lm/{type}/sx---{year}---{area}--{page}.html
+        if _year and _area:
+            url = f'{self.host}/lm/{_type}/sx---{_year}---{_area}--{pg}.html'
+        elif _year:
+            url = f'{self.host}/lm/{_type}/sx---{_year}-----{pg}.html'
+        elif _area:
+            url = f'{self.host}/lm/{_type}/sx------{_area}--{pg}.html'
+        else:
+            url = f'{self.host}/lm/{_type}/sx--------{pg}.html'
+
         print(f"篩選 URL: {url}")  # 調試用，確認 URL 是否正確
 
         data = self.getpq(url)
