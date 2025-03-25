@@ -57,7 +57,6 @@ class Spider(Spider):
             "電視劇": "2",
             "經典動漫": "3",
             "綜藝娛樂": "4",
-            "2022最新": "2022new"
         }
         classes = []
         filters = {}
@@ -307,9 +306,6 @@ class Spider(Spider):
         _year = extend.get('year', '')   # 年份
         
         # 構建 URL
-        if tid == '2022new':
-            url = f'{self.host}/ym/{tid}.html'
-        else:
             # 使用篩選格式：/lm/{type_id}/sx---{year}----{area}--{page}.html
             url = f'{self.host}/lm/{_type}/sx---{_year}----{_area}--{pg}.html'
         
@@ -406,7 +402,6 @@ class Spider(Spider):
                 'vod_name': i('.meta-title').text(),
                 'vod_pic': i('img').attr('data-original'),
                 'vod_remarks': i('.meta-post').text().replace('', '').strip(),
-                'style': {'ratio': 1.33, 'type': 'rect'}
             })
         return vlist
 
