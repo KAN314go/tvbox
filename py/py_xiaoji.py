@@ -95,7 +95,18 @@ class Spider(Spider):
         _type = extend.get('type', tid)
         _area = extend.get('area', '')
         _year = extend.get('year', '')
+
+        # 處理年份範圍（例如 "1990,1999"）
+        if ',' in _year:
+            # 網站可能不直接支持範圍篩選，需特殊處理
+            # 這裡假設網站支持範圍格式，如果不支持，需進一步調整
+            _year = _year.replace(',', '-')  # 將 "1990,1999" 轉為 "1990-1999"
+        
+        # 構建篩選 URL，根據網站實際格式調整
+        # 假設網站格式為 /lm/{type}/sx---{year}----{area}--{page}.html
         url = f'{self.host}/lm/{_type}/sx---{_year}----{_area}--{pg}.html'
+        print(f"篩選 URL: {url}")  # 調試用，確認 URL 是否正確
+
         data = self.getpq(url)
         vdata = self.getlist(data(".update_area_lists .i_list"))
         pagecount = 9999
@@ -224,7 +235,7 @@ class Spider(Spider):
                 'vod_id': i('a').attr('href'),
                 'vod_name': i('.meta-title').text(),
                 'vod_pic': i('img').attr('data-original'),
-                'vod_remarks': i('.meta-post').text().replace('', '').replace('', '').strip(),  # 與 detailContent 保持一致，移除亂碼
+                'vod_remarks': i('.meta-post').text().replace('', '').replace('', '').strip(),
             })
         return vlist
 
@@ -243,7 +254,6 @@ class Spider(Spider):
 if __name__ == '__main__':
     spider = Spider()
     spider.init()
-    detail = spider.detailContent(['http://www.minijj.com/xq/71800.html'])
-    print(json.dumps(detail, ensure_ascii=False, indent=2))
-    play = spider.playerContent('Minijj', 'http://www.minijj.com/bf/71800-0-1.html', [])
-    print(json.dumps(play, ensure_ascii=False, indent=2))
+    # 測試年份篩選
+    category = spider.categoryContent(tid='2', pg='1', filter=True, extend={'year': '2024'})
+    print(json.dumps(category, ensure_ascii=False, indent=2))
