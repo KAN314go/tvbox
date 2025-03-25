@@ -19,7 +19,7 @@ class Spider(Spider):
         pass
 
     def getName(self):
-        pass
+        return "minijj"
 
     def isVideoFormat(self, url):
         pass
@@ -54,92 +54,247 @@ class Spider(Spider):
     def homeContent(self, filter):
         result = {}
         cateManual = {
-            "4K": "/4k",
-            "国产": "two_click_/categories/chinese",
-            "最新": "/newest",
-            "最佳": "/best",
-            "频道": "/channels",
-            "类别": "/categories",
-            "明星": "/pornstars"
+            "電影": "1",
+            "電視劇": "2",
+            "經典動漫": "3",
+            "綜藝娛樂": "4",
+            "2022最新": "2022new"
         }
         classes = []
         filters = {}
+        
+        # 主分類
         for k in cateManual:
             classes.append({
                 'type_name': k,
                 'type_id': cateManual[k]
             })
-            if k !='4K':filters[cateManual[k]]=[{'key':'type','name':'类型','value':[{'n':'4K','v':'/4k'}]}]
+
+        # 篩選條件
+        filters = {
+            '1': [  # 電影
+                {
+                    'key': 'type',
+                    'name': '類型',
+                    'value': [
+                        {'n': '全部', 'v': ''},
+                        {'n': '動作片', 'v': '8'},
+                        {'n': '喜劇片', 'v': '9'},
+                        {'n': '愛情片', 'v': '10'},
+                        {'n': '科幻片', 'v': '11'},
+                        {'n': '恐怖片', 'v': '12'},
+                        {'n': '戰爭片', 'v': '13'},
+                        {'n': '劇情片', 'v': '14'}
+                    ]
+                },
+                {
+                    'key': 'year',
+                    'name': '時間',
+                    'value': [
+                        {'n': '全部', 'v': ''},
+                        {'n': '2024', 'v': '2024'},
+                        {'n': '2023', 'v': '2023'},
+                        {'n': '2022', 'v': '2022'},
+                        {'n': '2021', 'v': '2021'},
+                        {'n': '2020', 'v': '2020'},
+                        {'n': '2019', 'v': '2019'},
+                        {'n': '2018', 'v': '2018'},
+                        {'n': '2017', 'v': '2017'},
+                        {'n': '2016', 'v': '2016'},
+                        {'n': '2015', 'v': '2015'}
+                    ]
+                },
+                {
+                    'key': 'by',
+                    'name': '排序',
+                    'value': [
+                        {'n': '按時間', 'v': 'time'},
+                        {'n': '按人氣', 'v': 'hits'},
+                        {'n': '按評分', 'v': 'score'}
+                    ]
+                }
+            ],
+            '2': [  # 電視劇
+                {
+                    'key': 'type',
+                    'name': '類型',
+                    'value': [
+                        {'n': '全部', 'v': ''},
+                        {'n': '大陸劇', 'v': '15'},
+                        {'n': '香港劇', 'v': '16'},
+                        {'n': '台灣劇', 'v': '918'},
+                        {'n': '日劇', 'v': '18'},
+                        {'n': '韓劇', 'v': '915'},
+                        {'n': '美劇', 'v': '916'},
+                        {'n': '英劇', 'v': '923'},
+                        {'n': '歐美劇', 'v': '17'},
+                        {'n': '泰劇', 'v': '922'},
+                        {'n': '亞洲劇', 'v': '19'}
+                    ]
+                },
+                {
+                    'key': 'year',
+                    'name': '時間',
+                    'value': [
+                        {'n': '全部', 'v': ''},
+                        {'n': '2024', 'v': '2024'},
+                        {'n': '2023', 'v': '2023'},
+                        {'n': '2022', 'v': '2022'},
+                        {'n': '2021', 'v': '2021'},
+                        {'n': '2020', 'v': '2020'},
+                        {'n': '2019', 'v': '2019'},
+                        {'n': '2018', 'v': '2018'},
+                        {'n': '2017', 'v': '2017'},
+                        {'n': '2016', 'v': '2016'},
+                        {'n': '2015', 'v': '2015'}
+                    ]
+                },
+                {
+                    'key': 'by',
+                    'name': '排序',
+                    'value': [
+                        {'n': '按時間', 'v': 'time'},
+                        {'n': '按人氣', 'v': 'hits'},
+                        {'n': '按評分', 'v': 'score'}
+                    ]
+                }
+            ],
+            '3': [  # 經典動漫
+                {
+                    'key': 'type',
+                    'name': '類型',
+                    'value': [
+                        {'n': '全部', 'v': ''},
+                        {'n': '國漫', 'v': '906'},
+                        {'n': '日漫', 'v': '904'},
+                        {'n': '美漫', 'v': '905'},
+                        {'n': '其他動漫', 'v': '903'}
+                    ]
+                },
+                {
+                    'key': 'year',
+                    'name': '時間',
+                    'value': [
+                        {'n': '全部', 'v': ''},
+                        {'n': '2024', 'v': '2024'},
+                        {'n': '2023', 'v': '2023'},
+                        {'n': '2022', 'v': '2022'},
+                        {'n': '2021', 'v': '2021'},
+                        {'n': '2020', 'v': '2020'},
+                        {'n': '2019', 'v': '2019'},
+                        {'n': '2018', 'v': '2018'},
+                        {'n': '2017', 'v': '2017'},
+                        {'n': '2016', 'v': '2016'},
+                        {'n': '2015', 'v': '2015'}
+                    ]
+                },
+                {
+                    'key': 'by',
+                    'name': '排序',
+                    'value': [
+                        {'n': '按時間', 'v': 'time'},
+                        {'n': '按人氣', 'v': 'hits'},
+                        {'n': '按評分', 'v': 'score'}
+                    ]
+                }
+            ],
+            '4': [  # 綜藝娛樂
+                {
+                    'key': 'type',
+                    'name': '類型',
+                    'value': [
+                        {'n': '全部', 'v': ''},
+                        {'n': '大陸綜藝', 'v': '911'},
+                        {'n': '港台綜藝', 'v': '907'},
+                        {'n': '韓綜', 'v': '908'},
+                        {'n': '日綜', 'v': '912'},
+                        {'n': '泰綜', 'v': '913'},
+                        {'n': '歐美綜藝', 'v': '909'}
+                    ]
+                },
+                {
+                    'key': 'year',
+                    'name': '時間',
+                    'value': [
+                        {'n': '全部', 'v': ''},
+                        {'n': '2024', 'v': '2024'},
+                        {'n': '2023', 'v': '2023'},
+                        {'n': '2022', 'v': '2022'},
+                        {'n': '2021', 'v': '2021'},
+                        {'n': '2020', 'v': '2020'},
+                        {'n': '2019', 'v': '2019'},
+                        {'n': '2018', 'v': '2018'},
+                        {'n': '2017', 'v': '2017'},
+                        {'n': '2016', 'v': '2016'},
+                        {'n': '2015', 'v': '2015'}
+                    ]
+                },
+                {
+                    'key': 'by',
+                    'name': '排序',
+                    'value': [
+                        {'n': '按時間', 'v': 'time'},
+                        {'n': '按人氣', 'v': 'hits'},
+                        {'n': '按評分', 'v': 'score'}
+                    ]
+                }
+            ],
+            '2022new': [  # 2022最新
+                {
+                    'key': 'year',
+                    'name': '時間',
+                    'value': [
+                        {'n': '全部', 'v': ''},
+                        {'n': '2022', 'v': '2022'}
+                    ]
+                },
+                {
+                    'key': 'by',
+                    'name': '排序',
+                    'value': [
+                        {'n': '按時間', 'v': 'time'},
+                        {'n': '按人氣', 'v': 'hits'},
+                        {'n': '按評分', 'v': 'score'}
+                    ]
+                }
+            ]
+        }
+
         result['class'] = classes
         result['filters'] = filters
         return result
 
     def homeVideoContent(self):
         data = self.getpq()
-        return {'list': self.getlist(data(".thumb-list--sidebar .thumb-list__item"))}
+        return {'list': self.getlist(data(".update_area_lists .i_list"))}
 
     def categoryContent(self, tid, pg, filter, extend):
-        vdata = []
         result = {}
-        result['page'] = pg
-        result['pagecount'] = 9999
-        result['limit'] = 90
-        result['total'] = 999999
-        if tid in ['/4k', '/newest', '/best'] or 'two_click_' in tid:
-            if 'two_click_' in tid: tid = tid.split('click_')[-1]
-            data = self.getpq(f'{tid}{extend.get("type","")}/{pg}')
-            vdata = self.getlist(data(".thumb-list--sidebar .thumb-list__item"))
-        elif tid == '/channels':
-            data = self.getpq(f'{tid}/{pg}')
-            jsdata = self.getjsdata(data)
-            for i in jsdata['channels']:
-                vdata.append({
-                    'vod_id': f"two_click_" + i.get('channelURL'),
-                    'vod_name': i.get('channelName'),
-                    'vod_pic': i.get('siteLogoURL'),
-                    'vod_year': f'videos:{i.get("videoCount")}',
-                    'vod_tag': 'folder',
-                    'vod_remarks': f'subscribers:{i["subscriptionModel"].get("subscribers")}',
-                    'style': {'ratio': 1.33, 'type': 'rect'}
-                })
-        elif tid == '/categories':
-            result['pagecount'] = pg
-            data = self.getpq(tid)
-            self.cdata = self.getjsdata(data)
-            for i in self.cdata['layoutPage']['store']['popular']['assignable']:
-                vdata.append({
-                    'vod_id': "one_click_" + i.get('id'),
-                    'vod_name': i.get('name'),
-                    'vod_pic': '',
-                    'vod_tag': 'folder',
-                    'style': {'ratio': 1.33, 'type': 'rect'}
-                })
-        elif tid == '/pornstars':
-            data = self.getpq(f'{tid}/{pg}')
-            pdata = self.getjsdata(data)
-            for i in pdata['pagesPornstarsComponent']['pornstarListProps']['pornstars']:
-                vdata.append({
-                    'vod_id': f"two_click_" + i.get('pageURL'),
-                    'vod_name': i.get('name'),
-                    'vod_pic': i.get('imageThumbUrl'),
-                    'vod_remarks': i.get('translatedCountryName'),
-                    'vod_tag': 'folder',
-                    'style': {'ratio': 1.33, 'type': 'rect'}
-                })
-        elif 'one_click' in tid:
-            result['pagecount'] = pg
-            tid = tid.split('click_')[-1]
-            for i in self.cdata['layoutPage']['store']['popular']['assignable']:
-                if i.get('id') == tid:
-                    for j in i['items']:
-                        vdata.append({
-                            'vod_id': f"two_click_" + j.get('url'),
-                            'vod_name': j.get('name'),
-                            'vod_pic': j.get('thumb'),
-                            'vod_tag': 'folder',
-                            'style': {'ratio': 1.33, 'type': 'rect'}
-                        })
+        _type = extend.get('type', '')  # 子分類
+        _year = extend.get('year', '')  # 年份
+        _by = extend.get('by', '')      # 排序
+        
+        # 如果有子分類，使用子分類 ID；否則使用主分類 ID
+        type_id = _type if _type else tid
+        
+        # 構建 URL
+        if tid == '2022new':
+            url = f'{self.host}/ym/{tid}.html'
+        else:
+            url = f'{self.host}/lm/{type_id}/{pg}.html'
+        
+        # 如果有篩選條件，附加查詢參數（假設網站支持，需驗證）
+        if _year or _by:
+            url += f'?year={_year}&by={_by}'
+        
+        data = self.getpq(url)
+        vdata = self.getlist(data(".update_area_lists .i_list"))
+        
         result['list'] = vdata
+        result['page'] = pg
+        result['pagecount'] = 9999  # 假設總頁數未知
+        result['limit'] = 20        # 每頁顯示數量（根據 HTML 推測）
+        result['total'] = 999999    # 總數未知
         return result
 
     def detailContent(self, ids):
@@ -156,7 +311,7 @@ class Spider(Spider):
             'vod_name': vn,
             'vod_director': pdtitle,
             'vod_remarks': data('.rb-new__info').text(),
-            'vod_play_from': 'Xhamster',
+            'vod_play_from': 'Minijj',
             'vod_play_url': ''
         }
         try:
@@ -184,13 +339,13 @@ class Spider(Spider):
                         
         except Exception as e:
             plist = [f"{vn}${self.e64(f'{1}@@@@{ids[0]}')}"]
-            print(f"获取视频信息失败: {str(e)}")
+            print(f"獲取視頻信息失敗: {str(e)}")
         vod['vod_play_url'] = '#'.join(plist)
         return {'list': [vod]}
 
     def searchContent(self, key, quick, pg="1"):
-        data = self.getpq(f'/search/{key}?page={pg}')
-        return {'list': self.getlist(data(".thumb-list--sidebar .thumb-list__item")), 'page': pg}
+        data = self.getpq(f'/ss.html?wd={key}&page={pg}')
+        return {'list': self.getlist(data(".update_area_lists .i_list")), 'page': pg}
 
     def playerContent(self, flag, id, vipFlags):
         headers = {
@@ -217,11 +372,11 @@ class Spider(Spider):
 
     def gethost(self):
         try:
-            response = self.fetch('https://xhamster.com', headers=self.headers, allow_redirects=False)
-            return response.headers['Location']
+            response = self.fetch('https://www.minijj.com', headers=self.headers, allow_redirects=False)
+            return response.headers.get('Location', 'https://www.minijj.com')
         except Exception as e:
-            print(f"获取主页失败: {str(e)}")
-            return "https://zn.xhamster.com"
+            print(f"獲取主頁失敗: {str(e)}")
+            return "https://www.minijj.com"
 
     def e64(self, text):
         try:
@@ -229,7 +384,7 @@ class Spider(Spider):
             encoded_bytes = b64encode(text_bytes)
             return encoded_bytes.decode('utf-8')
         except Exception as e:
-            print(f"Base64编码错误: {str(e)}")
+            print(f"Base64編碼錯誤: {str(e)}")
             return ""
 
     def d64(self, encoded_text):
@@ -238,18 +393,17 @@ class Spider(Spider):
             decoded_bytes = b64decode(encoded_bytes)
             return decoded_bytes.decode('utf-8')
         except Exception as e:
-            print(f"Base64解码错误: {str(e)}")
+            print(f"Base64解碼錯誤: {str(e)}")
             return ""
 
     def getlist(self, data):
         vlist = []
         for i in data.items():
             vlist.append({
-                'vod_id': i('.role-pop').attr('href'),
-                'vod_name': i('.video-thumb-info a').text(),
-                'vod_pic': i('.role-pop img').attr('src'),
-                'vod_year': i('.video-thumb-info .video-thumb-views').text().split(' ')[0],
-                'vod_remarks': i('.role-pop div[data-role="video-duration"]').text(),
+                'vod_id': i('a').attr('href'),
+                'vod_name': i('.meta-title').text(),
+                'vod_pic': i('img').attr('data-original'),
+                'vod_remarks': i('.meta-post').text().replace('', '').strip(),
                 'style': {'ratio': 1.33, 'type': 'rect'}
             })
         return vlist
