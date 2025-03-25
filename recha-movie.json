@@ -444,14 +444,17 @@
       "ext": 
            {
            "主页url": "https://www.rebovod.com/",
+           "线路数组":"mdui-panel-item-title&&/div>",
+           "线路标题":">&&<",
+           "标题":"class=\"star-up-name mdui-p-t-1\">&&</span>",
+           "副标题":"title=\"*\">&&</span>",
+           "图片":"data-original=\"&&\"",
            "数组": "data-key=\"&&</a>",
            "主演": "演员：&&</div>",
            "简介": "<p>&&</p>",
            "链接": "href=\"/index.php/vod/detail/&&.html\"",
            "链接前缀": "https://www.rebovod.com/index.php/vod/play/",
            "链接后缀": "/sid/1/nid/1.html",
-           "线路数组": "class=\"mdui-panel-item-header\"&&</i>",
-           "线路标题": "title\">&&</div",
            "搜索url": "https://www.rebovod.com/index.php/vod/search.html?wd={wd}",
            "分类url": "https://www.rebovod.com/index.php/vod/show/area/{area}/by/{by}/id/{cateId}/page/{catePg}/year/{year}.html",
            "分类": "电影$1#电视剧$2#综艺$3#动漫$4",
@@ -929,13 +932,13 @@
       "filterable": 1
     },
     {
-			"key": "天天",
-			"name": "🥇｜天天｜高清◎秒播(無廣告+APP)",
-			"type": 3,
-			"api": "csp_AppRJGuard",
-			"jar": "./jar/mi-0319.jar;md5;b73ed98a0a285189794be3c8d9c3a335",
+	  "key": "天天",
+	  "name": "🥇｜天天｜高清◎秒播(無廣告+APP)",
+	  "type": 3,
+	  "api": "csp_AppRJGuard",
+	  "jar": "./jar/mi-0319.jar;md5;b73ed98a0a285189794be3c8d9c3a335",
       "ext": "sHR2rlsfjI4L3t4RXQMknxhunFUlA4159TKiKvIPpfcM1xianxebcSLajBbwFymqC+z9WoGzQYbh7FSvh8KdiC0BKF0CalaPaCEMOZm+ClGEeNzXAaR0FnrV04SiB2NK"
-		},
+	},
     {
       "key": "热播弹幕",
       "name": "🥇｜热播｜高清◎秒播(無廣告+APP)",

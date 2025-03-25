@@ -932,13 +932,13 @@
       "filterable": 1
     },
     {
-			"key": "天天",
-			"name": "🥇｜天天｜高清◎秒播(無廣告+APP)",
-			"type": 3,
-			"api": "csp_AppRJGuard",
-			"jar": "./jar/mi-0319.jar;md5;b73ed98a0a285189794be3c8d9c3a335",
+	  "key": "天天",
+	  "name": "🥇｜天天｜高清◎秒播(無廣告+APP)",
+	  "type": 3,
+	  "api": "csp_AppRJGuard",
+	  "jar": "./jar/mi-0319.jar;md5;b73ed98a0a285189794be3c8d9c3a335",
       "ext": "sHR2rlsfjI4L3t4RXQMknxhunFUlA4159TKiKvIPpfcM1xianxebcSLajBbwFymqC+z9WoGzQYbh7FSvh8KdiC0BKF0CalaPaCEMOZm+ClGEeNzXAaR0FnrV04SiB2NK"
-		},
+	},
     {
       "key": "热播弹幕",
       "name": "🥇｜热播｜高清◎秒播(無廣告+APP)",
@@ -948,7 +948,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": "aHR0cDovL3YucmJvdHYuY24="
+      "ext": {"danmu": true, "site": "aHR0cDovL3YucmJvdHYuY24="}
     },
     {
       "key": "星辉弹幕",
