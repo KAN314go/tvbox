@@ -18,16 +18,16 @@
       "ext": 
            {
            "主页url": "https://www.toule.top/",
-           //"标题":"<h3>&&</h3>",
-           //"副标题":"class=\"remarks light\">&&</span>",
+           "标题":"<h3>&&</h3>",
+           "副标题":"class=\"remarks light\">&&</span>",
            "图片":"src=\"&&\"",
-           //"数组": "class=\"item\"&&</li>",
+           "数组": "class=\"item\"&&</li>",
            "链接": "href=\"/index.php/vod/detail/&&.html\"",
            "链接前缀": "https://www.toule.top/index.php/vod/play/",
            "链接后缀": "/sid/1/nid/1.html",
            "搜索url": "https://www.toule.top/index.php/vod/search.html?wd={wd}",
-           "分类url": "https://www.toule.top/index.php/vod/show/class/{class}/id/1/page/{catePg}.html",
-           "剧情": "男频&女频&都市&赘婿&战神&古代言情&现代言情&历史&脑洞&玄幻&搞笑&网剧&喜剧&萌宝&神豪&致富"
+           "分类url": "https://www.toule.top/index.php/vod/show/class/{cateId}/id/1/page/{catePg}.html",
+           "分类": "男频&女频&都市&赘婿&战神&古代言情&现代言情&历史&脑洞&玄幻&搞笑&网剧&喜剧&萌宝&神豪&致富"
            }
     },
 
