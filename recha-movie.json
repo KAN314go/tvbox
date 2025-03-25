@@ -5,108 +5,6 @@
   "sites": [
 
 
-
-
-
-    {
-      "key": "花香采集资源",
-      "name": "花香 | 采集",
-      "type": 1,
-      "api": "https://naixxzy.com/api.php/provide/vod/",
-      "playerType": 1,
-      "searchable": 1,
-      "changeable": 1
-  },
-  {
-      "key": "卧龙采集资源",
-      "name": "卧龙 | 采集",
-      "type": 1,
-      "api": "https://collect.wolongzy.cc/api.php/provide/vod/",
-      "playerType": 1,
-      "searchable": 1,
-      "changeable": 1
-  },
-  {
-      "key": "极速采集资源",
-      "name": "极速 | 采集",
-      "type": 1,
-      "api": "https://jszyapi.com/api.php/provide/vod/",
-      "playerType": 1,
-      "searchable": 1,
-      "changeable": 1
-  },
-  {
-      "key": "华为采集资源",
-      "name": "华为吧 | 采集",
-      "type": 1,
-      "api": "https://huawei8.live/api.php/provide/vod/",
-      "playerType": 1,
-      "searchable": 1,
-      "changeable": 1
-  },
-  {
-      "key": "非凡采集资源",
-      "name": "非凡 | 采集",
-      "type": 1,
-      "api": "http://api.ffzyapi.com/api.php/provide/vod/",
-      "playerType": 1,
-      "searchable": 1,
-      "changeable": 1
-  },
-  {
-      "key": "旺旺采集资源",
-      "name": "旺旺短剧 | 采集",
-      "type": 1,
-      "api": "https://api.wwzy.tv/api.php/provide/vod/",
-      "playerType": 1,
-      "searchable": 1,
-      "changeable": 1
-  },
-  {
-      "key": "量子采集资源",
-      "name": "量子 | 采集",
-      "type": 1,
-      "api": "https://cj.lziapi.com/api.php/provide/vod/at/json/",
-      "playerType": 1,
-      "searchable": 1,
-      "changeable": 1
-  },
-  {
-      "key": "无忧采集资源",
-      "name": "无忧 | 采集",
-      "type": 1,
-      "api": "https://www.wyvod.com/api.php/provide/vod/",
-      "playerType": 1,
-      "searchable": 1,
-      "changeable": 1
-  },
-  {
-      "key": "如意采集资源",
-      "name": "如意 | 采集",
-      "type": 1,
-      "api": "https://cj.rycjapi.com/api.php/provide/vod/at/json/",
-      "playerType": 1,
-      "searchable": 1,
-      "changeable": 1
-  },
-  {
-      "key": "九零采集资源",
-      "name": "九零 | 采集",
-      "type": 1,
-      "api": "https://oknnews.com/api.php/provide/vod/",
-      "playerType": 1,
-      "searchable": 1,
-      "changeable": 1
-  },
-  {
-      "key": "魔抓采集资源",
-      "name": "魔抓 | 采集",
-      "type": 1,
-      "api": "https://mozhuazy.com/api.php/provide/vod/",
-      "playerType": 1,
-      "searchable": 1,
-      "changeable": 1
-  },
     {
       "key": "豆瓣",
       "name": "🇹🇼【老王點播專區】🇹🇼",
@@ -2830,6 +2728,61 @@
       "quickSearch": 1,
       "filterable": 1
     },
+
+  {
+      "key": "非凡采集资源",
+      "name": "🧲｜非凡｜待測",
+      "type": 1,
+      "api": "http://api.ffzyapi.com/api.php/provide/vod/",
+      "playerType": 1,
+      "searchable": 1,
+      "changeable": 1
+  },
+  {
+      "key": "量子采集资源",
+      "name": "🧲｜量子｜待測",
+      "type": 1,
+      "api": "https://cj.lziapi.com/api.php/provide/vod/at/json/",
+      "playerType": 1,
+      "searchable": 1,
+      "changeable": 1
+  },
+  {
+      "key": "无忧采集资源",
+      "name": "🧲｜无忧｜待測",
+      "type": 1,
+      "api": "https://www.wyvod.com/api.php/provide/vod/",
+      "playerType": 1,
+      "searchable": 1,
+      "changeable": 1
+  },
+  {
+      "key": "如意采集资源",
+      "name": "🧲｜如意｜待測",
+      "type": 1,
+      "api": "https://cj.rycjapi.com/api.php/provide/vod/at/json/",
+      "playerType": 1,
+      "searchable": 1,
+      "changeable": 1
+  },
+  {
+      "key": "九零采集资源",
+      "name": "🧲｜九零｜待測",
+      "type": 1,
+      "api": "https://oknnews.com/api.php/provide/vod/",
+      "playerType": 1,
+      "searchable": 1,
+      "changeable": 1
+  },
+  {
+      "key": "魔抓采集资源",
+      "name": "🧲｜魔抓｜待測",
+      "type": 1,
+      "api": "https://mozhuazy.com/api.php/provide/vod/",
+      "playerType": 1,
+      "searchable": 1,
+      "changeable": 1
+  },
     {
       "key": "vod_艾旦",
       "name": "🧲｜艾旦｜高清◎秒播(浮水印廣告+圖壞)",

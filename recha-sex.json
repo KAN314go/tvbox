@@ -2003,7 +2003,7 @@
         }
       },
       {
-        "key": "998资源(采集)🔞",
+        "key": "998资源(采集)",
         "name": "🔞998资源",
         "type": 1,
         "api": "https://api.998zy.com/api.php/provide/vod/at/json/",

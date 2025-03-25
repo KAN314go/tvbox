@@ -3,7 +3,8 @@
     "logo": "https://p3-pc.douyinpic.com/img/aweme-avatar/tos-cn-i-0813_6e2553f5708c414386eeca88b5f2674a~c5_300x300.jpeg?from=2956013662",
       "wallpaper": "https://tv.nxog.top/m//t/",
       "sites": [    
-    
+
+      
       {
         "key": "csp_HK_91短剧",
         "name": "🇹🇼【老王短劇專區】🇹🇼",
@@ -85,6 +86,15 @@
       "searchable": 1,
       "filterable": 0,
       "changeable": 0
+    },
+    {
+      "key": "旺旺采集资源",
+      "name": "📺｜旺旺短剧",
+      "type": 1,
+      "api": "https://api.wwzy.tv/api.php/provide/vod/",
+      "playerType": 1,
+      "searchable": 1,
+      "changeable": 1
     },
     {
         "key": "csp_AppXY",
