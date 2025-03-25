@@ -43,7 +43,7 @@ class Spider(Spider):
                 {'type_id': '2', 'type_name': '电视剧'},
                 {'type_id': '3', 'type_name': '综艺'},
                 {'type_id': '4', 'type_name': '动漫'},
-                {'type_id': '22', 'type_name': '短剧'}  # 修正為 22，與篩選頁面一致
+                {'type_id': '22', 'type_name': '短剧'}
             ],
             'filters': {
                 '1': [
@@ -159,36 +159,8 @@ class Spider(Spider):
     def homeVideoContent(self):
         d = []
         try:
-            res = requests.get(self.home_url, headers=self.headers, timeout=5)
-            res.encoding = 'utf-8'
-            root = etree.HTML(res.text)
-            data_list = root.xpath('//div[contains(@class, "swiper-slide")]')
-            for item in data_list[:10]:
-                vod_id = item.xpath('.//a/@href')[0].split('/')[-1].split('.')[0]
-                vod_name = item.xpath('.//div[contains(@class, "text-white")]/text()')[0].strip()
-                vod_pic = item.xpath('.//img/@src')[0]
-                vod_remarks = item.xpath('.//span[contains(@class, "rounded-sm")]/text()')[0].strip()
-                d.append({
-                    'vod_id': vod_id,
-                    'vod_name': vod_name,
-                    'vod_pic': vod_pic,
-                    'vod_remarks': vod_remarks
-                })
-            return {'list': d, 'parse': 0, 'jx': 0}
-        except Exception as e:
-            print(f"Error in homeVideoContent: {e}")
-            return {'list': d, 'parse': 0, 'jx': 0}
-
-    def categoryContent(self, cid, page, filter, ext):
-        by = ext.get('by', 'time')
-        class_filter = ext.get('class', '')
-        area = ext.get('area', '')
-        lang = ext.get('lang', '')
-        year = ext.get('year', '')
-        
-        url = f'{self.home_url}/api/vod/v1/vod/list?pageNum={page}&pageSize=12&tid={cid}&by={by}&class={class_filter}&area={area}&lang={lang}&year={year}'
-        d = []
-        try:
+            # 嘗試從首頁 API 獲取推薦數據
+            url = f'{self.home_url}/api/vod/v1/vod/list?pageNum=1&pageSize=10&tid=0&by=hits_day'
             res = requests.get(url, headers=self.headers, timeout=5)
             res.encoding = 'utf-8'
             response = res.json()
@@ -202,7 +174,54 @@ class Spider(Spider):
                 })
             return {'list': d, 'parse': 0, 'jx': 0}
         except Exception as e:
-            print(f"Error in categoryContent: {e}")
+            print(f"Error in homeVideoContent: {e}")
+            # 備用方案：從首頁 HTML 提取
+            try:
+                res = requests.get(self.home_url, headers=self.headers, timeout=5)
+                res.encoding = 'utf-8'
+                root = etree.HTML(res.text)
+                data_list = root.xpath('//div[contains(@class, "swiper-slide")]')
+                for item in data_list[:10]:
+                    vod_id = item.xpath('.//a/@href')[0].split('/')[-1].split('.')[0]
+                    vod_name = item.xpath('.//div[contains(@class, "text-white")]/text()')[0].strip()
+                    vod_pic = item.xpath('.//img/@src')[0]
+                    vod_remarks = item.xpath('.//span[contains(@class, "rounded-sm")]/text()')[0].strip()
+                    d.append({
+                        'vod_id': vod_id,
+                        'vod_name': vod_name,
+                        'vod_pic': vod_pic,
+                        'vod_remarks': vod_remarks
+                    })
+                return {'list': d, 'parse': 0, 'jx': 0}
+            except Exception as e2:
+                print(f"Backup Error in homeVideoContent: {e2}")
+                return {'list': d, 'parse': 0, 'jx': 0}
+
+    def categoryContent(self, cid, page, filter, ext):
+        by = ext.get('by', 'time')
+        class_filter = ext.get('class', '')
+        area = ext.get('area', '')
+        lang = ext.get('lang', '')
+        year = ext.get('year', '')
+        
+        url = f'{self.home_url}/api/vod/v1/vod/list?pageNum={page}&pageSize=12&tid={cid}&by={by}&class={class_filter}&area={area}&lang={lang}&year={year}'
+        d = []
+        try:
+            res = requests.get(url, headers=self.headers, timeout=5)
+            res.encoding = 'utf-8'
+            print(f"categoryContent Response: {res.text}")  # 調試輸出
+            response = res.json()
+            data = response['data']['List']
+            for item in data:
+                d.append({
+                    'vod_id': str(item['vod_id']),
+                    'vod_name': item['vod_name'],
+                    'vod_pic': item['vod_pic'],
+                    'vod_remarks': item['vod_remarks']
+                })
+            return {'list': d, 'parse': 0, 'jx': 0}
+        except Exception as e:
+            print(f"Error in categoryContent: {e}, Status Code: {res.status_code if 'res' in locals() else 'N/A'}, Response: {res.text if 'res' in locals() else 'N/A'}")
             return {'list': d, 'parse': 0, 'jx': 0}
 
     def detailContent(self, ids):
@@ -250,6 +269,7 @@ class Spider(Spider):
         try:
             res = requests.get(url, headers=self.headers, timeout=5)
             res.encoding = 'utf-8'
+            print(f"searchContent Response: {res.text}")  # 調試輸出
             response = res.json()
             data = response['data']['List']
             for item in data:
@@ -261,7 +281,7 @@ class Spider(Spider):
                 })
             return {'list': d, 'parse': 0, 'jx': 0}
         except Exception as e:
-            print(f"Error in searchContent: {e}")
+            print(f"Error in searchContent: {e}, Status Code: {res.status_code if 'res' in locals() else 'N/A'}, Response: {res.text if 'res' in locals() else 'N/A'}")
             return {'list': d, 'parse': 0, 'jx': 0}
 
     def playerContent(self, flag, pid, vipFlags):
@@ -293,7 +313,7 @@ class Spider(Spider):
 
 if __name__ == '__main__':
     spider = Spider()
-    spider.init()  # 確保調用 init
+    spider.init()
     print(json.dumps(spider.homeContent(True), ensure_ascii=False, indent=2))
     print(json.dumps(spider.homeVideoContent(), ensure_ascii=False, indent=2))
     print(json.dumps(spider.categoryContent('1', '1', True, {'by': 'hits_day', 'area': '大陸', 'year': '2024'}), ensure_ascii=False, indent=2))
