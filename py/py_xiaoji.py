@@ -121,7 +121,7 @@ class Spider(Spider):
             'vod_id': ids[0],
             'vod_name': vn,
             'vod_pic': data('.vod-pic').attr('data-original') or '',
-            'vod_remarks': data('.meta-post').eq(0).text().replace('', '').replace('', '').strip() or '',  # 移除多餘字符
+            'vod_remarks': data('.meta-post').eq(0).text().replace('', '').replace('', '').strip() or '',
             'vod_play_from': '',
             'vod_play_url': ''
         }
@@ -142,7 +142,7 @@ class Spider(Spider):
                 ep_name = link.text() or f"第 {len(episodes) + 1} 集"
                 ep_url = f"{self.host}{link.attr('href')}"
                 episodes.append(f"{ep_name}${ep_url}")
-            episodes.reverse()  # 倒序排列集數
+            episodes.reverse()
             play_url_list.append('#'.join(episodes))
 
         vod['vod_play_from'] = '$$$'.join(play_from_list)
@@ -176,6 +176,15 @@ class Spider(Spider):
             if not video_url.startswith('http'):
                 video_url = f"{self.host}{video_url}"
             return {'parse': 0, 'url': video_url, 'header': headers}
+        
+        scripts = data('script')
+        for script in scripts.items():
+            script_text = script.text()
+            if 'var player_data' in script_text or '.m3u8' in script_text or '.mp4' in script_text:
+                import re
+                urls = re.findall(r'(https?://[^\s\'"]+\.(m3u8|mp4))', script_text)
+                if urls:
+                    return {'parse': 0, 'url': urls[0][0], 'header': headers}
         
         return {'parse': 1, 'url': id, 'header': headers}
 
@@ -215,7 +224,7 @@ class Spider(Spider):
                 'vod_id': i('a').attr('href'),
                 'vod_name': i('.meta-title').text(),
                 'vod_pic': i('img').attr('data-original'),
-                'vod_remarks': i('.meta-post').text().replace('', '').strip(),
+                'vod_remarks': i('.meta-post').text().replace('', '').replace('', '').strip(),  # 與 detailContent 保持一致，移除亂碼
             })
         return vlist
 
