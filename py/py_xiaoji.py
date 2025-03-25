@@ -288,7 +288,7 @@ class Spider(Spider):
                         {'n': '更早', 'v': '1900,1980'}
                     ]
                 }
-            ],
+            ]
         }
 
         result['class'] = classes
@@ -305,9 +305,8 @@ class Spider(Spider):
         _area = extend.get('area', '')   # 地區
         _year = extend.get('year', '')   # 年份
         
-        # 構建 URL
-            # 使用篩選格式：/lm/{type_id}/sx---{year}----{area}--{page}.html
-            url = f'{self.host}/lm/{_type}/sx---{_year}----{_area}--{pg}.html'
+        # 構建 URL，使用篩選格式：/lm/{type_id}/sx---{year}----{area}--{page}.html
+        url = f'{self.host}/lm/{_type}/sx---{_year}----{_area}--{pg}.html'
         
         # 獲取頁面數據
         data = self.getpq(url)
