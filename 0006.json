@@ -17,11 +17,13 @@
       "filterable": 1,
       "ext": 
            {
-           "主页url": "https://www.toule.top/",
+           "请求头": "User-Agent$MOBILE_UA",
+           "编码": "UTF-8",
+           "主页url": "https://www.toule.top/index.php/label/rank.html",
            "标题":"<h3>&&</h3>",
            "副标题":"class=\"remarks light\">&&</span>",
            "图片":"src=\"&&\"",
-           "数组": "class=\"item\"&&</li>",
+           "数组": "class=\"image-line\"&&</li>",
            "链接": "href=\"/index.php/vod/detail/&&.html\"",
            "链接前缀": "https://www.toule.top/index.php/vod/play/",
            "链接后缀": "/sid/1/nid/1.html",
