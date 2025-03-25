@@ -61,234 +61,25 @@ class Spider(Spider):
         classes = []
         filters = {}
         
-        # 主分類
         for k in cateManual:
             classes.append({
                 'type_name': k,
                 'type_id': cateManual[k]
             })
 
-        # 篩選條件
         filters = {
-            '1': [  # 電影
-                {
-                    'key': 'type',
-                    'name': '類型',
-                    'value': [
-                        {'n': '全部', 'v': '1'},
-                        {'n': '動作片', 'v': '8'},
-                        {'n': '喜劇片', 'v': '9'},
-                        {'n': '愛情片', 'v': '10'},
-                        {'n': '科幻片', 'v': '11'},
-                        {'n': '恐怖片', 'v': '12'},
-                        {'n': '戰爭片', 'v': '13'},
-                        {'n': '劇情片', 'v': '14'}
-                    ]
-                },
-                {
-                    'key': 'area',
-                    'name': '地區',
-                    'value': [
-                        {'n': '全部', 'v': ''},
-                        {'n': '大陸', 'v': 'dalu'},
-                        {'n': '美國', 'v': 'meiguo'},
-                        {'n': '香港', 'v': 'xianggang'},
-                        {'n': '台灣', 'v': 'taiwan'},
-                        {'n': '韓國', 'v': 'hanguo'},
-                        {'n': '日本', 'v': 'riben'},
-                        {'n': '泰國', 'v': 'taiguo'},
-                        {'n': '新加坡', 'v': 'xinjiapo'},
-                        {'n': '馬來西亞', 'v': 'malaixiya'},
-                        {'n': '印度', 'v': 'yindu'},
-                        {'n': '英國', 'v': 'yingguo'},
-                        {'n': '法國', 'v': 'faguo'},
-                        {'n': '加拿大', 'v': 'jianada'}
-                    ]
-                },
-                {
-                    'key': 'year',
-                    'name': '年份',
-                    'value': [
-                        {'n': '全部', 'v': ''},
-                        {'n': '2025', 'v': '2025'},
-                        {'n': '2024', 'v': '2024'},
-                        {'n': '2023', 'v': '2023'},
-                        {'n': '2022', 'v': '2022'},
-                        {'n': '2021', 'v': '2021'},
-                        {'n': '2020', 'v': '2020'},
-                        {'n': '2019', 'v': '2019'},
-                        {'n': '2018', 'v': '2018'},
-                        {'n': '2017', 'v': '2017'},
-                        {'n': '2016', 'v': '2016'},
-                        {'n': '2015', 'v': '2015'},
-                        {'n': '2014', 'v': '2014'},
-                        {'n': '2013', 'v': '2013'},
-                        {'n': '90後', 'v': '1990,1999'},
-                        {'n': '80後', 'v': '1980,1989'},
-                        {'n': '更早', 'v': '1900,1980'}
-                    ]
-                }
-            ],
-            '2': [  # 電視劇
-                {
-                    'key': 'type',
-                    'name': '類型',
-                    'value': [
-                        {'n': '全部', 'v': '2'},
-                        {'n': '大陸劇', 'v': '15'},
-                        {'n': '香港劇', 'v': '16'},
-                        {'n': '台灣劇', 'v': '918'},
-                        {'n': '日劇', 'v': '18'},
-                        {'n': '韓劇', 'v': '915'},
-                        {'n': '美劇', 'v': '916'},
-                        {'n': '英劇', 'v': '923'},
-                        {'n': '歐美劇', 'v': '17'},
-                        {'n': '泰劇', 'v': '922'},
-                        {'n': '亞洲劇', 'v': '19'}
-                    ]
-                },
-                {
-                    'key': 'area',
-                    'name': '地區',
-                    'value': [
-                        {'n': '全部', 'v': ''},
-                        {'n': '大陸', 'v': 'dalu'},
-                        {'n': '美國', 'v': 'meiguo'},
-                        {'n': '香港', 'v': 'xianggang'},
-                        {'n': '台灣', 'v': 'taiwan'},
-                        {'n': '韓國', 'v': 'hanguo'},
-                        {'n': '日本', 'v': 'riben'},
-                        {'n': '泰國', 'v': 'taiguo'},
-                        {'n': '新加坡', 'v': 'xinjiapo'},
-                        {'n': '馬來西亞', 'v': 'malaixiya'},
-                        {'n': '印度', 'v': 'yindu'},
-                        {'n': '英國', 'v': 'yingguo'},
-                        {'n': '法國', 'v': 'faguo'},
-                        {'n': '加拿大', 'v': 'jianada'}
-                    ]
-                },
-                {
-                    'key': 'year',
-                    'name': '年份',
-                    'value': [
-                        {'n': '全部', 'v': ''},
-                        {'n': '2025', 'v': '2025'},
-                        {'n': '2024', 'v': '2024'},
-                        {'n': '2023', 'v': '2023'},
-                        {'n': '2022', 'v': '2022'},
-                        {'n': '2021', 'v': '2021'},
-                        {'n': '2020', 'v': '2020'},
-                        {'n': '2019', 'v': '2019'},
-                        {'n': '2018', 'v': '2018'},
-                        {'n': '2017', 'v': '2017'},
-                        {'n': '2016', 'v': '2016'},
-                        {'n': '2015', 'v': '2015'},
-                        {'n': '2014', 'v': '2014'},
-                        {'n': '2013', 'v': '2013'},
-                        {'n': '90後', 'v': '1990,1999'},
-                        {'n': '80後', 'v': '1980,1989'},
-                        {'n': '更早', 'v': '1900,1980'}
-                    ]
-                }
-            ],
-            '3': [  # 經典動漫
-                {
-                    'key': 'type',
-                    'name': '類型',
-                    'value': [
-                        {'n': '全部', 'v': '3'},
-                        {'n': '國漫', 'v': '906'},
-                        {'n': '日漫', 'v': '904'},
-                        {'n': '美漫', 'v': '905'},
-                        {'n': '其他動漫', 'v': '903'}
-                    ]
-                },
-                {
-                    'key': 'area',
-                    'name': '地區',
-                    'value': [
-                        {'n': '全部', 'v': ''},
-                        {'n': '大陸', 'v': 'dalu'},
-                        {'n': '美國', 'v': 'meiguo'},
-                        {'n': '日本', 'v': 'riben'}
-                    ]
-                },
-                {
-                    'key': 'year',
-                    'name': '年份',
-                    'value': [
-                        {'n': '全部', 'v': ''},
-                        {'n': '2025', 'v': '2025'},
-                        {'n': '2024', 'v': '2024'},
-                        {'n': '2023', 'v': '2023'},
-                        {'n': '2022', 'v': '2022'},
-                        {'n': '2021', 'v': '2021'},
-                        {'n': '2020', 'v': '2020'},
-                        {'n': '2019', 'v': '2019'},
-                        {'n': '2018', 'v': '2018'},
-                        {'n': '2017', 'v': '2017'},
-                        {'n': '2016', 'v': '2016'},
-                        {'n': '2015', 'v': '2015'},
-                        {'n': '2014', 'v': '2014'},
-                        {'n': '2013', 'v': '2013'},
-                        {'n': '90後', 'v': '1990,1999'},
-                        {'n': '80後', 'v': '1980,1989'},
-                        {'n': '更早', 'v': '1900,1980'}
-                    ]
-                }
-            ],
-            '4': [  # 綜藝娛樂
-                {
-                    'key': 'type',
-                    'name': '類型',
-                    'value': [
-                        {'n': '全部', 'v': '4'},
-                        {'n': '大陸綜藝', 'v': '911'},
-                        {'n': '港台綜藝', 'v': '907'},
-                        {'n': '韓綜', 'v': '908'},
-                        {'n': '日綜', 'v': '912'},
-                        {'n': '泰綜', 'v': '913'},
-                        {'n': '歐美綜藝', 'v': '909'}
-                    ]
-                },
-                {
-                    'key': 'area',
-                    'name': '地區',
-                    'value': [
-                        {'n': '全部', 'v': ''},
-                        {'n': '大陸', 'v': 'dalu'},
-                        {'n': '美國', 'v': 'meiguo'},
-                        {'n': '香港', 'v': 'xianggang'},
-                        {'n': '台灣', 'v': 'taiwan'},
-                        {'n': '韓國', 'v': 'hanguo'},
-                        {'n': '日本', 'v': 'riben'},
-                        {'n': '泰國', 'v': 'taiguo'}
-                    ]
-                },
-                {
-                    'key': 'year',
-                    'name': '年份',
-                    'value': [
-                        {'n': '全部', 'v': ''},
-                        {'n': '2025', 'v': '2025'},
-                        {'n': '2024', 'v': '2024'},
-                        {'n': '2023', 'v': '2023'},
-                        {'n': '2022', 'v': '2022'},
-                        {'n': '2021', 'v': '2021'},
-                        {'n': '2020', 'v': '2020'},
-                        {'n': '2019', 'v': '2019'},
-                        {'n': '2018', 'v': '2018'},
-                        {'n': '2017', 'v': '2017'},
-                        {'n': '2016', 'v': '2016'},
-                        {'n': '2015', 'v': '2015'},
-                        {'n': '2014', 'v': '2014'},
-                        {'n': '2013', 'v': '2013'},
-                        {'n': '90後', 'v': '1990,1999'},
-                        {'n': '80後', 'v': '1980,1989'},
-                        {'n': '更早', 'v': '1900,1980'}
-                    ]
-                }
-            ]
+            '1': [{'key': 'type', 'name': '類型', 'value': [{'n': '全部', 'v': '1'}, {'n': '動作片', 'v': '8'}, {'n': '喜劇片', 'v': '9'}, {'n': '愛情片', 'v': '10'}, {'n': '科幻片', 'v': '11'}, {'n': '恐怖片', 'v': '12'}, {'n': '戰爭片', 'v': '13'}, {'n': '劇情片', 'v': '14'}]},
+                  {'key': 'area', 'name': '地區', 'value': [{'n': '全部', 'v': ''}, {'n': '大陸', 'v': 'dalu'}, {'n': '美國', 'v': 'meiguo'}, {'n': '香港', 'v': 'xianggang'}, {'n': '台灣', 'v': 'taiwan'}, {'n': '韓國', 'v': 'hanguo'}, {'n': '日本', 'v': 'riben'}, {'n': '泰國', 'v': 'taiguo'}, {'n': '新加坡', 'v': 'xinjiapo'}, {'n': '馬來西亞', 'v': 'malaixiya'}, {'n': '印度', 'v': 'yindu'}, {'n': '英國', 'v': 'yingguo'}, {'n': '法國', 'v': 'faguo'}, {'n': '加拿大', 'v': 'jianada'}]},
+                  {'key': 'year', 'name': '年份', 'value': [{'n': '全部', 'v': ''}, {'n': '2025', 'v': '2025'}, {'n': '2024', 'v': '2024'}, {'n': '2023', 'v': '2023'}, {'n': '2022', 'v': '2022'}, {'n': '2021', 'v': '2021'}, {'n': '2020', 'v': '2020'}, {'n': '2019', 'v': '2019'}, {'n': '2018', 'v': '2018'}, {'n': '2017', 'v': '2017'}, {'n': '2016', 'v': '2016'}, {'n': '2015', 'v': '2015'}, {'n': '2014', 'v': '2014'}, {'n': '2013', 'v': '2013'}, {'n': '90後', 'v': '1990,1999'}, {'n': '80後', 'v': '1980,1989'}, {'n': '更早', 'v': '1900,1980'}]}],
+            '2': [{'key': 'type', 'name': '類型', 'value': [{'n': '全部', 'v': '2'}, {'n': '大陸劇', 'v': '15'}, {'n': '香港劇', 'v': '16'}, {'n': '台灣劇', 'v': '918'}, {'n': '日劇', 'v': '18'}, {'n': '韓劇', 'v': '915'}, {'n': '美劇', 'v': '916'}, {'n': '英劇', 'v': '923'}, {'n': '歐美劇', 'v': '17'}, {'n': '泰劇', 'v': '922'}, {'n': '亞洲劇', 'v': '19'}]},
+                  {'key': 'area', 'name': '地區', 'value': [{'n': '全部', 'v': ''}, {'n': '大陸', 'v': 'dalu'}, {'n': '美國', 'v': 'meiguo'}, {'n': '香港', 'v': 'xianggang'}, {'n': '台灣', 'v': 'taiwan'}, {'n': '韓國', 'v': 'hanguo'}, {'n': '日本', 'v': 'riben'}, {'n': '泰國', 'v': 'taiguo'}, {'n': '新加坡', 'v': 'xinjiapo'}, {'n': '馬來西亞', 'v': 'malaixiya'}, {'n': '印度', 'v': 'yindu'}, {'n': '英國', 'v': 'yingguo'}, {'n': '法國', 'v': 'faguo'}, {'n': '加拿大', 'v': 'jianada'}]},
+                  {'key': 'year', 'name': '年份', 'value': [{'n': '全部', 'v': ''}, {'n': '2025', 'v': '2025'}, {'n': '2024', 'v': '2024'}, {'n': '2023', 'v': '2023'}, {'n': '2022', 'v': '2022'}, {'n': '2021', 'v': '2021'}, {'n': '2020', 'v': '2020'}, {'n': '2019', 'v': '2019'}, {'n': '2018', 'v': '2018'}, {'n': '2017', 'v': '2017'}, {'n': '2016', 'v': '2016'}, {'n': '2015', 'v': '2015'}, {'n': '2014', 'v': '2014'}, {'n': '2013', 'v': '2013'}, {'n': '90後', 'v': '1990,1999'}, {'n': '80後', 'v': '1980,1989'}, {'n': '更早', 'v': '1900,1980'}]}],
+            '3': [{'key': 'type', 'name': '類型', 'value': [{'n': '全部', 'v': '3'}, {'n': '國漫', 'v': '906'}, {'n': '日漫', 'v': '904'}, {'n': '美漫', 'v': '905'}, {'n': '其他動漫', 'v': '903'}]},
+                  {'key': 'area', 'name': '地區', 'value': [{'n': '全部', 'v': ''}, {'n': '大陸', 'v': 'dalu'}, {'n': '美國', 'v': 'meiguo'}, {'n': '日本', 'v': 'riben'}]},
+                  {'key': 'year', 'name': '年份', 'value': [{'n': '全部', 'v': ''}, {'n': '2025', 'v': '2025'}, {'n': '2024', 'v': '2024'}, {'n': '2023', 'v': '2023'}, {'n': '2022', 'v': '2022'}, {'n': '2021', 'v': '2021'}, {'n': '2020', 'v': '2020'}, {'n': '2019', 'v': '2019'}, {'n': '2018', 'v': '2018'}, {'n': '2017', 'v': '2017'}, {'n': '2016', 'v': '2016'}, {'n': '2015', 'v': '2015'}, {'n': '2014', 'v': '2014'}, {'n': '2013', 'v': '2013'}, {'n': '90後', 'v': '1990,1999'}, {'n': '80後', 'v': '1980,1989'}, {'n': '更早', 'v': '1900,1980'}]}],
+            '4': [{'key': 'type', 'name': '類型', 'value': [{'n': '全部', 'v': '4'}, {'n': '大陸綜藝', 'v': '911'}, {'n': '港台綜藝', 'v': '907'}, {'n': '韓綜', 'v': '908'}, {'n': '日綜', 'v': '912'}, {'n': '泰綜', 'v': '913'}, {'n': '歐美綜藝', 'v': '909'}]},
+                  {'key': 'area', 'name': '地區', 'value': [{'n': '全部', 'v': ''}, {'n': '大陸', 'v': 'dalu'}, {'n': '美國', 'v': 'meiguo'}, {'n': '香港', 'v': 'xianggang'}, {'n': '台灣', 'v': 'taiwan'}, {'n': '韓國', 'v': 'hanguo'}, {'n': '日本', 'v': 'riben'}, {'n': '泰國', 'v': 'taiguo'}]},
+                  {'key': 'year', 'name': '年份', 'value': [{'n': '全部', 'v': ''}, {'n': '2025', 'v': '2025'}, {'n': '2024', 'v': '2024'}, {'n': '2023', 'v': '2023'}, {'n': '2022', 'v': '2022'}, {'n': '2021', 'v': '2021'}, {'n': '2020', 'v': '2020'}, {'n': '2019', 'v': '2019'}, {'n': '2018', 'v': '2018'}, {'n': '2017', 'v': '2017'}, {'n': '2016', 'v': '2016'}, {'n': '2015', 'v': '2015'}, {'n': '2014', 'v': '2014'}, {'n': '2013', 'v': '2013'}, {'n': '90後', 'v': '1990,1999'}, {'n': '80後', 'v': '1980,1989'}, {'n': '更早', 'v': '1900,1980'}]}]
         }
 
         result['class'] = classes
@@ -301,44 +92,60 @@ class Spider(Spider):
 
     def categoryContent(self, tid, pg, filter, extend):
         result = {}
-        _type = extend.get('type', tid)  # 子分類，默認為主分類
-        _area = extend.get('area', '')   # 地區
-        _year = extend.get('year', '')   # 年份
-        
-        # 構建 URL，使用篩選格式：/lm/{type_id}/sx---{year}----{area}--{page}.html
+        _type = extend.get('type', tid)
+        _area = extend.get('area', '')
+        _year = extend.get('year', '')
         url = f'{self.host}/lm/{_type}/sx---{_year}----{_area}--{pg}.html'
-        
-        # 獲取頁面數據
         data = self.getpq(url)
         vdata = self.getlist(data(".update_area_lists .i_list"))
-        
-        # 分頁信息
-        pagecount = 9999  # 默認未知
+        pagecount = 9999
         try:
             pagination = data('.pagination .page-numbers')
             last_page = pagination[-2].text if len(pagination) > 1 else '1'
             pagecount = int(last_page) if last_page.isdigit() else 9999
         except:
             pass
-        
         result['list'] = vdata
         result['page'] = pg
         result['pagecount'] = pagecount
-        result['limit'] = 24  # 每頁 24 條（根據 HTML 計算）
+        result['limit'] = 24
         result['total'] = pagecount * 24 if pagecount != 9999 else 999999
         return result
 
     def detailContent(self, ids):
         data = self.getpq(ids[0])
         vn = data('title').text().split(' - ')[0]  # 提取標題
+
         vod = {
             'vod_id': ids[0],
             'vod_name': vn,
-            'vod_pic': data('img').attr('data-original') or '',
-            'vod_remarks': data('.meta-post').text().replace('', '').strip() or '',
-            'vod_play_from': 'Minijj',
-            'vod_play_url': f"{vn}${self.host}{ids[0]}"  # 假設播放地址需進一步解析
+            'vod_pic': data('.vod-pic').attr('data-original') or '',
+            'vod_remarks': data('.meta-post').eq(0).text().replace('', '').strip() or '',  # 只取第一個，避免重複
+            'vod_play_from': '',
+            'vod_play_url': ''
         }
+
+        play_from_list = []
+        play_url_list = []
+        
+        tabs = data('#sea-tab li a')
+        for tab in tabs.items():
+            play_from = tab.text().strip().replace('\n', '').split('</span>')[-1]  # 提取播放來源名稱
+            play_from_list.append(play_from)
+        
+        tab_contents = data('#sea-tab-content .tab-pane')
+        for i, content in enumerate(tab_contents.items()):
+            episodes = []
+            play_links = content('.play-list a')
+            for link in play_links.items():
+                ep_name = link.text() or f"第 {len(episodes) + 1} 集"
+                ep_url = f"{self.host}{link.attr('href')}"
+                episodes.append(f"{ep_name}${ep_url}")
+            play_url_list.append('#'.join(episodes))
+
+        vod['vod_play_from'] = '$$$'.join(play_from_list)
+        vod['vod_play_url'] = '$$$'.join(play_url_list)
+
         return {'list': [vod]}
 
     def searchContent(self, key, quick, pg="1"):
@@ -348,20 +155,26 @@ class Spider(Spider):
     def playerContent(self, flag, id, vipFlags):
         headers = {
             'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.5410.0 Safari/537.36',
-            'pragma': 'no-cache',
-            'cache-control': 'no-cache',
-            'sec-ch-ua-platform': '"Windows"',
-            'sec-ch-ua': '"Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"',
-            'dnt': '1',
-            'sec-ch-ua-mobile': '?0',
-            'origin': self.host,
-            'sec-fetch-site': 'cross-site',
-            'sec-fetch-mode': 'cors',
-            'sec-fetch-dest': 'empty',
-            'referer': f'{self.host}/',
-            'accept-language': 'zh-CN,zh;q=0.9,en;q=0.8',
-            'priority': 'u=1, i',
+            'Referer': f'{self.host}/',
+            'Origin': self.host,
         }
+        
+        data = self.getpq(id)
+        
+        iframe_url = data('iframe').attr('src')
+        if iframe_url:
+            if not iframe_url.startswith('http'):
+                iframe_url = f"{self.host}{iframe_url}"
+            if iframe_url.endswith('.m3u8') or iframe_url.endswith('.mp4'):
+                return {'parse': 0, 'url': iframe_url, 'header': headers}
+            return {'parse': 1, 'url': iframe_url, 'header': headers}
+        
+        video_url = data('video source').attr('src')
+        if video_url:
+            if not video_url.startswith('http'):
+                video_url = f"{self.host}{video_url}"
+            return {'parse': 0, 'url': video_url, 'header': headers}
+        
         return {'parse': 1, 'url': id, 'header': headers}
 
     def localProxy(self, param):
@@ -406,9 +219,20 @@ class Spider(Spider):
 
     def getpq(self, path=''):
         h = '' if path.startswith('http') else self.host
-        response = self.session.get(f'{h}{path}').text
+        response = self.session.get(f'{h}{path}')
+        response.encoding = 'utf-8'  # 強制設置 UTF-8 編碼
+        text = response.text
         try:
-            return pq(response)
+            return pq(text)
         except Exception as e:
-            print(f"{str(e)}")
-            return pq(response.encode('utf-8'))
+            print(f"解析 HTML 失敗: {str(e)}")
+            return pq(text.encode('utf-8'))
+
+
+if __name__ == '__main__':
+    spider = Spider()
+    spider.init()
+    detail = spider.detailContent(['http://www.minijj.com/xq/71800.html'])
+    print(json.dumps(detail, ensure_ascii=False, indent=2))
+    play = spider.playerContent('Minijj', 'http://www.minijj.com/bf/71800-0-1.html', [])
+    print(json.dumps(play, ensure_ascii=False, indent=2))
