@@ -253,11 +253,3 @@ class Spider(Spider):
         except Exception as e:
             print(f"解析 HTML 失敗: {str(e)}")
             return pq(text.encode('utf-8'))
-
-
-if __name__ == '__main__':
-    spider = Spider()
-    spider.init()
-    # 測試年份篩選
-    category = spider.categoryContent(tid='2', pg='1', filter=True, extend={'year': '2024'})
-    print(json.dumps(category, ensure_ascii=False, indent=2))
