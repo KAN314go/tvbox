@@ -114,15 +114,14 @@ class Spider(Spider):
 
     def detailContent(self, ids):
         data = self.getpq(ids[0])
-        # 提取標題並清理，只保留核心名稱
-        full_title = data('title').text().split(' - ')[0]  # 例如 "紅色皮鞋線上觀看,紅色皮鞋手機播放"
-        vn = full_title.split('線上觀看')[0].split('手機播放')[0].rstrip(',')  # 清理後得到 "紅色皮鞋"
+        full_title = data('title').text().split(' - ')[0]
+        vn = full_title.split('線上觀看')[0].split('手機播放')[0].rstrip(',')
 
         vod = {
             'vod_id': ids[0],
             'vod_name': vn,
             'vod_pic': data('.vod-pic').attr('data-original') or '',
-            'vod_remarks': data('.meta-post').eq(0).text().replace('', '').strip() or '',
+            'vod_remarks': data('.meta-post').eq(0).text().replace('', '').replace('', '').strip() or '',  # 移除多餘字符
             'vod_play_from': '',
             'vod_play_url': ''
         }
@@ -143,8 +142,7 @@ class Spider(Spider):
                 ep_name = link.text() or f"第 {len(episodes) + 1} 集"
                 ep_url = f"{self.host}{link.attr('href')}"
                 episodes.append(f"{ep_name}${ep_url}")
-            # 倒序排列集數
-            episodes.reverse()
+            episodes.reverse()  # 倒序排列集數
             play_url_list.append('#'.join(episodes))
 
         vod['vod_play_from'] = '$$$'.join(play_from_list)
@@ -236,7 +234,7 @@ class Spider(Spider):
 if __name__ == '__main__':
     spider = Spider()
     spider.init()
-    detail = spider.detailContent(['http://www.minijj.com/xq/71800.html'])  # 測試用「我不害怕」，請替換為「紅色皮鞋」的 URL
+    detail = spider.detailContent(['http://www.minijj.com/xq/71800.html'])
     print(json.dumps(detail, ensure_ascii=False, indent=2))
     play = spider.playerContent('Minijj', 'http://www.minijj.com/bf/71800-0-1.html', [])
     print(json.dumps(play, ensure_ascii=False, indent=2))
