@@ -153,34 +153,6 @@
 			"ext": "caHR0cDovL2FwcC53dWlxLmNufOS8mOS8mOWFlHw0LjEuOA==",
 			"jar": "./jar/mi-0303.jar;md5;ec975f203099b42d6286751914e27fc9"
 		},
-        {
-            "key": "py_UpFuHn",
-            "name": "🥇｜嗨影｜高清◎秒播(無廣告)",
-            "type": 4,
-            "api": "https://py.doube.eu.org/spider?site=UpFuHn",
-            "searchable": 1,
-            "quickSearch": 0,
-            "filterable": 0,
-            "changeable": 1
-          },
-          {
-            "key": "py_hitv.py",
-            "name": "🥇｜嗨影｜高清◎秒播(無廣告)",
-            "type": 3,
-            "api": "https://git.acwing.com/ocean2025/ocean/-/raw/main/py/py_hitv.py",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1
-          },
-          {
-            "key": "py_hitvAPP",
-            "name": "🥇｜嗨影｜高清◎秒播(無廣告+APP)",
-            "type": 3,
-            "api": "./py/hitvAPP.py",
-            "searchable": 1,
-            "filterable": 0,
-            "changeable": 0
-          },
     {
       "key": "js_youyou",
       "name": "🥇｜悠悠｜高清◎秒播(無廣告+JS)",
@@ -199,24 +171,34 @@
       "filterable": 0,
       "changeable": 0
     },
-          {
-            "key": "csp_唐人街影视",
-            "name": "🥇｜唐街｜普清◎秒播(無廣告)",
-            "type": 3,
-            "api": "csp_XBPQ",
-            "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "ext": {
-              "线路数组": "class=\"hl-tabs-btn hl-slide-swiper\"&&</a>[排序:备线7>备线4>备线8>备线6>线路1]",
-              "线路标题": "</i>&&</a>[不包含:全球高清]",
-              "简介": "+hl-col-xs-12 blurb\">&&</li>",
-              "分类url": "https://www.chinatownfilm.com/vodshow/{cateId}-{area}-{by}------{catePg}---{year}.html",
-              "分类": "電影$1#電視劇$2#綜藝$3#動漫$4",
-              "地区": "大陆&香港&台湾&欧美&日本&韩国&新马&泰国&其它||大陆&韩国&香港&台湾&日本&欧美&新马&泰国&其它||大陆&韩国&香港&台湾&日本&欧美&泰国&其它||大陆&韩国&香港&台湾&日本&欧美&其它"
-            }
-          },
+    {
+        "key": "py_UpFuHn",
+        "name": "🥇｜嗨影｜高清◎秒播(無廣告)",
+        "type": 4,
+        "api": "https://py.doube.eu.org/spider?site=UpFuHn",
+        "searchable": 1,
+        "quickSearch": 0,
+        "filterable": 0,
+        "changeable": 1
+      },
+      {
+        "key": "py_hitv.py",
+        "name": "🥇｜嗨影｜高清◎秒播(無廣告)",
+        "type": 3,
+        "api": "https://git.acwing.com/ocean2025/ocean/-/raw/main/py/py_hitv.py",
+        "searchable": 1,
+        "quickSearch": 1,
+        "filterable": 1
+      },
+      {
+        "key": "py_hitvAPP",
+        "name": "🥇｜嗨影｜高清◎秒播(無廣告+APP)",
+        "type": 3,
+        "api": "./py/hitvAPP.py",
+        "searchable": 1,
+        "filterable": 0,
+        "changeable": 0
+      },
           {
             "key": "csp_GM_Hi视频",
             "name": "🥇｜嗨雷｜高清◎秒播(無廣告)",
@@ -413,7 +395,7 @@
           },
           {
             "key": "csp_低端",
-            "name": "🥇｜低端｜高清◎秒播(無廣告)",
+            "name": "🥈｜低端｜高清◎秒播(無廣告)",
             "type": 3,
             "api": "./drpy_libs/drpy2.min.js",
             "searchable": 1,
@@ -447,7 +429,7 @@
           },
           {
             "key": "csp_GimyTW",
-            "name": "🥇｜劇台｜高清◎秒播(浮水印廣告)",
+            "name": "🥈｜劇台｜高清◎秒播(浮水印廣告)",
             "type": 3,
             "api": "csp_XBPQ",
             "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
@@ -462,7 +444,7 @@
           },
           {
             "key": "csp_GimyCC",
-            "name": "🥇｜劇西｜高清◎秒播(浮水印廣告)",
+            "name": "🥈｜劇西｜高清◎秒播(浮水印廣告)",
             "type": 3,
             "api": "csp_XBPQ",
             "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
@@ -507,25 +489,8 @@
             "filterable": 1
           },
           {
-            "key": "csp_99i影城",
-            "name": "🥉｜99i｜高清◎龜速(浮水印廣告)",
-            "type": 3,
-            "api": "csp_XBPQ",
-            "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "ext": {
-              "线路数组": "href=\"\\#playlist&&</a>",
-              "线路标题": ">&&<[不包含:优质云]",
-              "分类url": "https://99itv.net/show/{cateId}-{area}-{by}------{catePg}---{year}.html",
-              "分类": "電影$movie#電視劇$drama#綜藝$variety#動漫$anime",
-              "地区": "美國&台灣&大陸&香港&日本&韓國&法國&英國&德國&泰國&印度&意大利&西班牙&俄羅斯&其他||台灣&韓國&日本&大陸&香港&美國&法國&英國&泰國&其他||大陸&香港&台灣&美國&日本&韓國||大陸&香港&台灣&美國&日本&韓國"
-            }
-          },
-          {
             "key": "csp_JUMITV",
-            "name": "🎥｜劇迷｜普清◎順播(跑馬燈廣告+成人)",
+            "name": "🥉｜劇迷｜普清◎順播(跑馬燈廣告+成人)",
             "type": 3,
             "api": "csp_XBPQ",
             "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
@@ -540,28 +505,8 @@
             }
           },
           {
-            "key": "py_火车太顺APP",
-            "name": "🥇｜火车太顺｜高清◎秒播(賭場廣告)",
-            "type": 3,
-            "api": "./py/火车太顺APP.py",
-            "searchable": 1,
-            "filterable": 0,
-            "changeable": 0
-          },
-          {
-            "key": "py_策驰影院",
-            "name": "🎥｜策驰｜高清◎秒播(賭場廣告)",
-            "type": 3,
-            "api": "./py/策驰影院.py",
-            "jar": "./jar/py.jar;md5;71d846866f2ceb9666ba114e5963983f",
-            "searchable": 1,
-            "quickSearch": 0,
-            "filterable": 0,
-            "changeable": 1
-          },
-          {
             "key": "csp_奥特影视(PRO)",
-            "name": "🎥｜奥普｜高清◎秒播(賭場廣告)",
+            "name": "🥉｜奥普｜高清◎秒播(賭場廣告)",
             "type": 3,
             "api": "csp_XBPQ",
             "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
@@ -583,7 +528,7 @@
           },
           {
             "key": "csp_奥特影视(CC)",
-            "name": "🎥｜奥悉｜高清◎秒播(賭場廣告)",
+            "name": "🥉｜奥悉｜高清◎秒播(賭場廣告)",
             "type": 3,
             "api": "csp_XBPQ",
             "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
@@ -605,7 +550,7 @@
           },
           {
             "key": "csp_奥特影视(COM)",
-            "name": "🎥｜奥康｜高清◎秒播(賭場廣告)",
+            "name": "🥉｜奥康｜高清◎秒播(賭場廣告)",
             "type": 3,
             "api": "csp_XBPQ",
             "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
@@ -627,7 +572,7 @@
           },
           {
             "key": "csp_lreeok",
-            "name": "🎥｜Lree｜高清◎秒播(賭場廣告)",
+            "name": "🥉｜Lree｜高清◎秒播(賭場廣告)",
             "type": 3,
             "api": "./py/py_lreeok.py",
             "searchable": 1,
@@ -635,19 +580,8 @@
             "filterable": 1
           },
           {
-            "key": "csp_AppYsV2_奴娜影视",
-            "name": "🎥｜奴娜｜高清◎秒播(賭場廣告)",
-            "type": 3,
-            "api": "csp_AppYsV2",
-            "jar": "./jar/dokilwss.jar;md5;145277452362fe4b1371e8968b414ed1",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "ext": "https://www.nntv.in/api.php/v1.vod"
-          },
-          {
             "key": "csp_人人影視",
-            "name": "🎥｜人人｜高清◎秒播(賭場廣告)",
+            "name": "🥉｜人人｜高清◎秒播(賭場廣告)",
             "type": 3,
             "api": "csp_XBPQ",
             "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
@@ -667,18 +601,8 @@
             }
           },
           {
-            "key": "hipy_js_无忧影视",
-            "name": "🎥｜無憂｜高清◎漫播(賭場廣告)",
-            "type": 3,
-            "api": "./drpy_libs/drpy2.min.js",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "ext": "./drpy_js/无忧影视.js"
-          },
-          {
             "key": "csp_nyys",
-            "name": "🎥｜纽约｜高清◎秒播(賭場廣告)",
+            "name": "🥉｜纽约｜高清◎秒播(賭場廣告)",
             "type": 3,
             "api": "csp_XBPQ",
             "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
@@ -689,7 +613,7 @@
           },
           {
             "key": "csp_獨播庫",
-            "name": "🎥｜偽獨｜低清◎龜速(超多廣告)",
+            "name": "🥉｜偽獨｜低清◎龜速(超多廣告)",
             "type": 3,
             "api": "csp_XBPQ",
             "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
@@ -712,7 +636,7 @@
           },
           {
             "key": "csp_楓林網",
-            "name": "🎥｜楓花｜高清◎龜速(跑馬燈廣告)",
+            "name": "🥉｜楓花｜高清◎龜速(跑馬燈廣告)",
             "type": 3,
             "api": "csp_XBPQ",
             "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
@@ -723,7 +647,7 @@
           },
           {
             "key": "csp_Imaple8TV",
-            "name": "🎥｜楓月｜高清◎龜速(成人太多)",
+            "name": "🥉｜楓月｜高清◎龜速(成人太多)",
             "type": 3,
             "api": "csp_XBPQ",
             "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
@@ -745,7 +669,7 @@
           },
           {
             "key": "csp_考拉TV",
-            "name": "🎥｜考拉｜低清◎龜速(超多廣告)",
+            "name": "🥉｜考拉｜低清◎龜速(超多廣告)",
             "type": 3,
             "api": "csp_XBPQ",
             "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
@@ -758,35 +682,8 @@
             }
           },
           {
-            "key": "csp_CN影院",
-            "name": "🎥｜CN｜高清◎秒播(超多廣告+無圖)",
-            "type": 3,
-            "api": "csp_XBPQ",
-            "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "timeout": 120,
-            "ext": {
-              "请求头": "User-Agent$MOBILE_UA",
-              "主页url": "https://cnys.tv/",
-              "数组": "class=\"public-list-exp\"&&</div>",
-              "标题": "title=\"&&\"",
-              "副标题": "public-list-prb hide ft2\">&&</span>",
-              "图片": "https://cnys.tv/+data-src=\"/&&\"",
-              "搜索url": "https://cnys.tv/vodsearch-wd-{wd}.html",
-              "搜索模式": "1",
-              "倒序": "0",
-              "线路数组": "i class=\"fa ds-dianying\"&&</span>",
-              "线路标题": "</i>&&<span",
-              "分类url": "https://cnys.tv/vodshow-{cateId}/area/{area}/by/{by}/page/{catePg}/year/{year}.html[https://cnys.tv/vodtype-{cateId}.html]",
-              "分类": "電影$1#電視劇$2#綜藝$3#動漫$4",
-              "地区": "内地&香港&台湾&美国&法国&英国&日本&韩国&德国&泰国&印度&意大利&西班牙&加拿大&其他||内地&韩国&香港&台湾&日本&美国&泰国&英国&新加坡&其他||内地&港台&日韩&欧美||国产&日本&欧美&其他"
-            }
-          },
-          {
             "key": "csp_NIVODvip",
-            "name": "🎥｜泥視頻｜高清◎秒播(黑木耳廣告)",
+            "name": "🥉｜泥視頻｜高清◎秒播(黑木耳廣告)",
             "type": 3,
             "api": "csp_XBPQ",
             "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
