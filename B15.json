@@ -18,7 +18,7 @@
         "ext": {
             "副标题": "module-item-note\">&&</div>",
             "简介": "module-info-introduction-content\">&& ",
-            "线路数组": "data-hash\"&&</div>",
+            "线路数组": "class=\"swiper-slide module-tab-item tab-item\"&&</a>",
             "线路标题": ">&&\"",
             "跳转播放链接": "var player_*\"url\":\"&&\"",
             "分类url": "https://www.m2077.com/vod-show/{cateId}-{area}-{by}------{catePg}---{year}/",
