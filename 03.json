@@ -19,9 +19,10 @@
         "filterable": 1,
         "ext": {
           "简介": "content_desc context clearfix\">&&</span>",
+          "地区": "大陆&香港&台湾&日本&韩国&欧美&泰国&新马&印度&其它",
+          "数组": "class=\"size-full absolute inset-0\"&&</a>",
           "分类url": "https://light-ios.yiys04.com/vod/show/by/{by}/id/{cateId}/area/{area}/year/{year}",
-          "分类": "電影$1#電視劇$2#綜藝$3#動漫$4#短劇$22",
-          "地区": "大陆&香港&台湾&日本&韩国&欧美&泰国&新马&印度&其它"
+          "分类": "電影$1#電視劇$2#綜藝$3#動漫$4#短劇$22"
         }
       },
 
