@@ -2734,7 +2734,7 @@
 
   {
       "key": "非凡采集资源",
-      "name": "🧲｜非凡｜待測",
+      "name": "🧲｜非凡｜高清◎速播(賭場廣告+成人)",
       "type": 1,
       "api": "http://api.ffzyapi.com/api.php/provide/vod/",
       "playerType": 1,
@@ -2743,7 +2743,7 @@
   },
   {
       "key": "量子采集资源",
-      "name": "🧲｜量子｜待測",
+      "name": "🧲｜量子｜高清◎秒播(賭場廣告+成人)",
       "type": 1,
       "api": "https://cj.lziapi.com/api.php/provide/vod/at/json/",
       "playerType": 1,
@@ -2752,7 +2752,7 @@
   },
   {
       "key": "无忧采集资源",
-      "name": "🧲｜无忧｜待測",
+      "name": "🧲｜无忧｜高清◎秒播(賭場廣告+成人)",
       "type": 1,
       "api": "https://www.wyvod.com/api.php/provide/vod/",
       "playerType": 1,
@@ -2761,7 +2761,7 @@
   },
   {
       "key": "如意采集资源",
-      "name": "🧲｜如意｜待測",
+      "name": "🧲｜如意｜高清◎秒播(賭場廣告+成人)",
       "type": 1,
       "api": "https://cj.rycjapi.com/api.php/provide/vod/at/json/",
       "playerType": 1,
@@ -2770,7 +2770,7 @@
   },
   {
       "key": "九零采集资源",
-      "name": "🧲｜九零｜待測",
+      "name": "🧲｜九零｜高清◎秒播(賭場廣告)",
       "type": 1,
       "api": "https://oknnews.com/api.php/provide/vod/",
       "playerType": 1,
@@ -2779,7 +2779,7 @@
   },
   {
       "key": "魔抓采集资源",
-      "name": "🧲｜魔抓｜待測",
+      "name": "🧲｜魔抓｜高清◎龜速(賭場廣告)",
       "type": 1,
       "api": "https://mozhuazy.com/api.php/provide/vod/",
       "playerType": 1,
@@ -3760,20 +3760,6 @@
       "logo": "https://epg.112114.xyz/logo/{name}.png"
     },
     {
-      "name": "金星直播",
-      "url": "file://tvbus/jx1.txt",
-      "epg":"https://diyp100.112114.xyz/?ch={name}&date={date}",
-      "logo": "https://epg.v1.mk/logo/{name}.png",
-      "core": {
-        "auth": "https://sgla.googlejt.com/v1/auth",
-        "name": "08a77819f9b7",
-        "pass": "1742653607661",
-        "sign": "163428eb20fa4b27",
-        "pkg": "com.yby.v11.singapore.tv",
-        "so": "file://tvbus/joy.so"
-              }
-    },
-    {
       "name": "4G-TV(喵老師)",
       "type": 0,
       "url": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/live/iptv.txt",
@@ -3920,6 +3906,44 @@
       "pass": true
     },
     {
+      "name": "LiTV",
+        "type": 0,
+        "url": "http://xg.52sw.top/iptv/litv.php",
+        "ua": "okhttp/3.15",
+        "epg": "http://iptv.52sw.top:668/?ch={name}&date={date}"
+    },
+    {
+        "name": "火星直播",
+        "type": 0,
+        "url": "http://xg.52sw.top/play/hxds/",
+        "ua": "okhttp/3.15",
+        "epg": "http://iptv.52sw.top:668/epg/?ch={name}&date={date}",
+        "header": {
+            "Referer": "https://www.kds.tw/"
+        }
+    },
+    {
+        "name": "焦点(Focus TV)",
+        "type": 0,
+        "url": "http://xg.52sw.top/jd/?ip=108.181.32.169",
+        "ua": "okhttp/3.15",
+        "epg": "http://iptv.52sw.top:668/?ch={name}&date={date}"
+    },
+    {
+        "name": "歐華(ouhua TV)",
+        "type": 0,
+        "url": "http://xg.52sw.top/iptv/欧华.m3u",
+        "ua": "okhttp/3.15",
+        "epg": "http://iptv.52sw.top:668/?ch={name}&date={date}"
+    },
+    {
+        "name": "歐飛(ofiii TV)",
+        "type": 0,
+        "url": "http://xg.52sw.top/iptv/ofiii.m3u",
+        "ua": "okhttp/3.15",
+        "epg": "http://iptv.52sw.top:668/?ch={name}&date={date}"
+    },
+    {
       "name": "歐華167",
       "playerType": 2,
       "url": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/live/175.txt",
@@ -4023,44 +4047,6 @@
       "ua": "okhttp/3",
       "epg": "https://epg.112114.eu.org/?ch={name}&date={date}",
       "logo": "https://epg.112114.eu.org/logo/{name}.png"
-    },
-    {
-      "name": "LiTV(故障)",
-        "type": 0,
-        "url": "http://xg.52sw.top/iptv/litv.php",
-        "ua": "okhttp/3.15",
-        "epg": "http://iptv.52sw.top:668/?ch={name}&date={date}"
-    },
-    {
-        "name": "火星直播(故障)",
-        "type": 0,
-        "url": "http://xg.52sw.top/play/hxds/",
-        "ua": "okhttp/3.15",
-        "epg": "http://iptv.52sw.top:668/epg/?ch={name}&date={date}",
-        "header": {
-            "Referer": "https://www.kds.tw/"
-        }
-    },
-    {
-        "name": "焦点(Focus TV)(故障)",
-        "type": 0,
-        "url": "http://xg.52sw.top/jd/?ip=108.181.32.169",
-        "ua": "okhttp/3.15",
-        "epg": "http://iptv.52sw.top:668/?ch={name}&date={date}"
-    },
-    {
-        "name": "歐華(ouhua TV)(故障)",
-        "type": 0,
-        "url": "http://xg.52sw.top/iptv/欧华.m3u",
-        "ua": "okhttp/3.15",
-        "epg": "http://iptv.52sw.top:668/?ch={name}&date={date}"
-    },
-    {
-        "name": "歐飛(ofiii TV)",
-        "type": 0,
-        "url": "http://xg.52sw.top/iptv/ofiii.m3u",
-        "ua": "okhttp/3.15",
-        "epg": "http://iptv.52sw.top:668/?ch={name}&date={date}"
     },
     {
       "name": "PIXMAN(故障)",
