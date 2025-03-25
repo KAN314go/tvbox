@@ -6,6 +6,26 @@
 
 
 
+
+
+    {
+        "key": "csp_壹影視",
+        "name": "🥇｜壹影視｜",
+        "type": 3,
+        "api": "csp_XBPQ",
+        "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+        "searchable": 1,
+        "quickSearch": 1,
+        "filterable": 1,
+        "ext": {
+          "简介": "content_desc context clearfix\">&&</span>",
+          "分类url": "https://light-ios.yiys04.com/vod/show/by/{by}/id/{cateId}/area/{area}/year/{year}",
+          "分类": "電影$1#電視劇$2#綜藝$3#動漫$4#短劇$22",
+          "地区": "大陆&香港&台湾&日本&韩国&欧美&泰国&新马&印度&其它"
+        }
+      },
+
+
     {
       "key": "py_壹影視",
       "name": "🥇｜壹影視｜",
