@@ -290,16 +290,6 @@ class Spider(Spider):
                     ]
                 }
             ],
-            '2022new': [  # 2022最新
-                {
-                    'key': 'year',
-                    'name': '年份',
-                    'value': [
-                        {'n': '全部', 'v': ''},
-                        {'n': '2022', 'v': '2022'}
-                    ]
-                }
-            ]
         }
 
         result['class'] = classes
