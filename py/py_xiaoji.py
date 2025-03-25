@@ -16,7 +16,6 @@ class Spider(Spider):
         self.headers['referer'] = f'{self.host}/'
         self.session = Session()
         self.session.headers.update(self.headers)
-        pass
 
     def getName(self):
         return "minijj"
@@ -77,7 +76,7 @@ class Spider(Spider):
                     'key': 'type',
                     'name': '類型',
                     'value': [
-                        {'n': '全部', 'v': ''},
+                        {'n': '全部', 'v': '1'},
                         {'n': '動作片', 'v': '8'},
                         {'n': '喜劇片', 'v': '9'},
                         {'n': '愛情片', 'v': '10'},
@@ -88,8 +87,28 @@ class Spider(Spider):
                     ]
                 },
                 {
+                    'key': 'area',
+                    'name': '地區',
+                    'value': [
+                        {'n': '全部', 'v': ''},
+                        {'n': '大陸', 'v': 'dalu'},
+                        {'n': '美國', 'v': 'meiguo'},
+                        {'n': '香港', 'v': 'xianggang'},
+                        {'n': '台灣', 'v': 'taiwan'},
+                        {'n': '韓國', 'v': 'hanguo'},
+                        {'n': '日本', 'v': 'riben'},
+                        {'n': '泰國', 'v': 'taiguo'},
+                        {'n': '新加坡', 'v': 'xinjiapo'},
+                        {'n': '馬來西亞', 'v': 'malaixiya'},
+                        {'n': '印度', 'v': 'yindu'},
+                        {'n': '英國', 'v': 'yingguo'},
+                        {'n': '法國', 'v': 'faguo'},
+                        {'n': '加拿大', 'v': 'jianada'}
+                    ]
+                },
+                {
                     'key': 'year',
-                    'name': '時間',
+                    'name': '年份',
                     'value': [
                         {'n': '全部', 'v': ''},
                         {'n': '2024', 'v': '2024'},
@@ -101,16 +120,12 @@ class Spider(Spider):
                         {'n': '2018', 'v': '2018'},
                         {'n': '2017', 'v': '2017'},
                         {'n': '2016', 'v': '2016'},
-                        {'n': '2015', 'v': '2015'}
-                    ]
-                },
-                {
-                    'key': 'by',
-                    'name': '排序',
-                    'value': [
-                        {'n': '按時間', 'v': 'time'},
-                        {'n': '按人氣', 'v': 'hits'},
-                        {'n': '按評分', 'v': 'score'}
+                        {'n': '2015', 'v': '2015'},
+                        {'n': '2014', 'v': '2014'},
+                        {'n': '2013', 'v': '2013'},
+                        {'n': '90後', 'v': '1990,1999'},
+                        {'n': '80後', 'v': '1980,1989'},
+                        {'n': '更早', 'v': '1900,1980'}
                     ]
                 }
             ],
@@ -119,7 +134,7 @@ class Spider(Spider):
                     'key': 'type',
                     'name': '類型',
                     'value': [
-                        {'n': '全部', 'v': ''},
+                        {'n': '全部', 'v': '2'},
                         {'n': '大陸劇', 'v': '15'},
                         {'n': '香港劇', 'v': '16'},
                         {'n': '台灣劇', 'v': '918'},
@@ -133,8 +148,28 @@ class Spider(Spider):
                     ]
                 },
                 {
+                    'key': 'area',
+                    'name': '地區',
+                    'value': [
+                        {'n': '全部', 'v': ''},
+                        {'n': '大陸', 'v': 'dalu'},
+                        {'n': '美國', 'v': 'meiguo'},
+                        {'n': '香港', 'v': 'xianggang'},
+                        {'n': '台灣', 'v': 'taiwan'},
+                        {'n': '韓國', 'v': 'hanguo'},
+                        {'n': '日本', 'v': 'riben'},
+                        {'n': '泰國', 'v': 'taiguo'},
+                        {'n': '新加坡', 'v': 'xinjiapo'},
+                        {'n': '馬來西亞', 'v': 'malaixiya'},
+                        {'n': '印度', 'v': 'yindu'},
+                        {'n': '英國', 'v': 'yingguo'},
+                        {'n': '法國', 'v': 'faguo'},
+                        {'n': '加拿大', 'v': 'jianada'}
+                    ]
+                },
+                {
                     'key': 'year',
-                    'name': '時間',
+                    'name': '年份',
                     'value': [
                         {'n': '全部', 'v': ''},
                         {'n': '2024', 'v': '2024'},
@@ -146,16 +181,12 @@ class Spider(Spider):
                         {'n': '2018', 'v': '2018'},
                         {'n': '2017', 'v': '2017'},
                         {'n': '2016', 'v': '2016'},
-                        {'n': '2015', 'v': '2015'}
-                    ]
-                },
-                {
-                    'key': 'by',
-                    'name': '排序',
-                    'value': [
-                        {'n': '按時間', 'v': 'time'},
-                        {'n': '按人氣', 'v': 'hits'},
-                        {'n': '按評分', 'v': 'score'}
+                        {'n': '2015', 'v': '2015'},
+                        {'n': '2014', 'v': '2014'},
+                        {'n': '2013', 'v': '2013'},
+                        {'n': '90後', 'v': '1990,1999'},
+                        {'n': '80後', 'v': '1980,1989'},
+                        {'n': '更早', 'v': '1900,1980'}
                     ]
                 }
             ],
@@ -164,7 +195,7 @@ class Spider(Spider):
                     'key': 'type',
                     'name': '類型',
                     'value': [
-                        {'n': '全部', 'v': ''},
+                        {'n': '全部', 'v': '3'},
                         {'n': '國漫', 'v': '906'},
                         {'n': '日漫', 'v': '904'},
                         {'n': '美漫', 'v': '905'},
@@ -172,8 +203,18 @@ class Spider(Spider):
                     ]
                 },
                 {
+                    'key': 'area',
+                    'name': '地區',
+                    'value': [
+                        {'n': '全部', 'v': ''},
+                        {'n': '大陸', 'v': 'dalu'},
+                        {'n': '美國', 'v': 'meiguo'},
+                        {'n': '日本', 'v': 'riben'}
+                    ]
+                },
+                {
                     'key': 'year',
-                    'name': '時間',
+                    'name': '年份',
                     'value': [
                         {'n': '全部', 'v': ''},
                         {'n': '2024', 'v': '2024'},
@@ -185,16 +226,12 @@ class Spider(Spider):
                         {'n': '2018', 'v': '2018'},
                         {'n': '2017', 'v': '2017'},
                         {'n': '2016', 'v': '2016'},
-                        {'n': '2015', 'v': '2015'}
-                    ]
-                },
-                {
-                    'key': 'by',
-                    'name': '排序',
-                    'value': [
-                        {'n': '按時間', 'v': 'time'},
-                        {'n': '按人氣', 'v': 'hits'},
-                        {'n': '按評分', 'v': 'score'}
+                        {'n': '2015', 'v': '2015'},
+                        {'n': '2014', 'v': '2014'},
+                        {'n': '2013', 'v': '2013'},
+                        {'n': '90後', 'v': '1990,1999'},
+                        {'n': '80後', 'v': '1980,1989'},
+                        {'n': '更早', 'v': '1900,1980'}
                     ]
                 }
             ],
@@ -203,7 +240,7 @@ class Spider(Spider):
                     'key': 'type',
                     'name': '類型',
                     'value': [
-                        {'n': '全部', 'v': ''},
+                        {'n': '全部', 'v': '4'},
                         {'n': '大陸綜藝', 'v': '911'},
                         {'n': '港台綜藝', 'v': '907'},
                         {'n': '韓綜', 'v': '908'},
@@ -213,8 +250,22 @@ class Spider(Spider):
                     ]
                 },
                 {
+                    'key': 'area',
+                    'name': '地區',
+                    'value': [
+                        {'n': '全部', 'v': ''},
+                        {'n': '大陸', 'v': 'dalu'},
+                        {'n': '美國', 'v': 'meiguo'},
+                        {'n': '香港', 'v': 'xianggang'},
+                        {'n': '台灣', 'v': 'taiwan'},
+                        {'n': '韓國', 'v': 'hanguo'},
+                        {'n': '日本', 'v': 'riben'},
+                        {'n': '泰國', 'v': 'taiguo'}
+                    ]
+                },
+                {
                     'key': 'year',
-                    'name': '時間',
+                    'name': '年份',
                     'value': [
                         {'n': '全部', 'v': ''},
                         {'n': '2024', 'v': '2024'},
@@ -226,35 +277,22 @@ class Spider(Spider):
                         {'n': '2018', 'v': '2018'},
                         {'n': '2017', 'v': '2017'},
                         {'n': '2016', 'v': '2016'},
-                        {'n': '2015', 'v': '2015'}
-                    ]
-                },
-                {
-                    'key': 'by',
-                    'name': '排序',
-                    'value': [
-                        {'n': '按時間', 'v': 'time'},
-                        {'n': '按人氣', 'v': 'hits'},
-                        {'n': '按評分', 'v': 'score'}
+                        {'n': '2015', 'v': '2015'},
+                        {'n': '2014', 'v': '2014'},
+                        {'n': '2013', 'v': '2013'},
+                        {'n': '90後', 'v': '1990,1999'},
+                        {'n': '80後', 'v': '1980,1989'},
+                        {'n': '更早', 'v': '1900,1980'}
                     ]
                 }
             ],
             '2022new': [  # 2022最新
                 {
                     'key': 'year',
-                    'name': '時間',
+                    'name': '年份',
                     'value': [
                         {'n': '全部', 'v': ''},
                         {'n': '2022', 'v': '2022'}
-                    ]
-                },
-                {
-                    'key': 'by',
-                    'name': '排序',
-                    'value': [
-                        {'n': '按時間', 'v': 'time'},
-                        {'n': '按人氣', 'v': 'hits'},
-                        {'n': '按評分', 'v': 'score'}
                     ]
                 }
             ]
@@ -270,77 +308,48 @@ class Spider(Spider):
 
     def categoryContent(self, tid, pg, filter, extend):
         result = {}
-        _type = extend.get('type', '')  # 子分類
-        _year = extend.get('year', '')  # 年份
-        _by = extend.get('by', '')      # 排序
-        
-        # 如果有子分類，使用子分類 ID；否則使用主分類 ID
-        type_id = _type if _type else tid
+        _type = extend.get('type', tid)  # 子分類，默認為主分類
+        _area = extend.get('area', '')   # 地區
+        _year = extend.get('year', '')   # 年份
         
         # 構建 URL
         if tid == '2022new':
             url = f'{self.host}/ym/{tid}.html'
         else:
-            url = f'{self.host}/lm/{type_id}/{pg}.html'
+            # 使用篩選格式：/lm/{type_id}/sx---{year}----{area}--{page}.html
+            url = f'{self.host}/lm/{_type}/sx---{_year}----{_area}--{pg}.html'
         
-        # 如果有篩選條件，附加查詢參數（假設網站支持，需驗證）
-        if _year or _by:
-            url += f'?year={_year}&by={_by}'
-        
+        # 獲取頁面數據
         data = self.getpq(url)
         vdata = self.getlist(data(".update_area_lists .i_list"))
         
+        # 分頁信息
+        pagecount = 9999  # 默認未知
+        try:
+            pagination = data('.pagination .page-numbers')
+            last_page = pagination[-2].text if len(pagination) > 1 else '1'
+            pagecount = int(last_page) if last_page.isdigit() else 9999
+        except:
+            pass
+        
         result['list'] = vdata
         result['page'] = pg
-        result['pagecount'] = 9999  # 假設總頁數未知
-        result['limit'] = 20        # 每頁顯示數量（根據 HTML 推測）
-        result['total'] = 999999    # 總數未知
+        result['pagecount'] = pagecount
+        result['limit'] = 24  # 每頁 24 條（根據 HTML 計算）
+        result['total'] = pagecount * 24 if pagecount != 9999 else 999999
         return result
 
     def detailContent(self, ids):
         data = self.getpq(ids[0])
-        djs = self.getjsdata(data)
-        vn = data('meta[property="og:title"]').attr('content')
-        dtext = data('#video-tags-list-container')
-        href = dtext('a').attr('href')
-        title = dtext('span[class*="body-bold-"]').eq(0).text()
-        pdtitle = ''
-        if href:
-            pdtitle = '[a=cr:' + json.dumps({'id': 'two_click_' + href, 'name': title}) + '/]' + title + '[/a]'
+        vn = data('title').text().split(' - ')[0]  # 提取標題
         vod = {
+            'vod_id': ids[0],
             'vod_name': vn,
-            'vod_director': pdtitle,
-            'vod_remarks': data('.rb-new__info').text(),
+            'vod_pic': data('img').attr('data-original') or '',
+            'vod_remarks': data('.meta-post').text().replace('', '').strip() or '',
             'vod_play_from': 'Minijj',
-            'vod_play_url': ''
+            'vod_play_url': f"{vn}${self.host}{ids[0]}"  # 假設播放地址需進一步解析
         }
-        try:
-            plist = []
-            d = djs['xplayerSettings']['sources']
-            f = d.get('standard')
-            def custom_sort_key(url):
-                quality = url.split('$')[0]
-                number = ''.join(filter(str.isdigit, quality))
-                number = int(number) if number else 0
-                return -number, quality
-                
-            if f:
-                for key, value in f.items():
-                    if isinstance(value, list):
-                        for info in value:
-                            id = self.e64(f'{0}@@@@{info.get("url") or info.get("fallback")}')
-                            plist.append(f"{info.get('label') or info.get('quality')}${id}")
-            plist.sort(key=custom_sort_key)
-            if d.get('hls'):
-                for format_type, info in d['hls'].items():
-                    if url := info.get('url'):
-                        encoded = self.e64(f'{0}@@@@{url}')
-                        plist.append(f"{format_type}${encoded}")
-                        
-        except Exception as e:
-            plist = [f"{vn}${self.e64(f'{1}@@@@{ids[0]}')}"]
-            print(f"獲取視頻信息失敗: {str(e)}")
-        vod['vod_play_url'] = '#'.join(plist)
         return {'list': [vod]}
 
     def searchContent(self, key, quick, pg="1"):
@@ -364,8 +373,7 @@ class Spider(Spider):
             'accept-language': 'zh-CN,zh;q=0.9,en;q=0.8',
             'priority': 'u=1, i',
         }
-        ids = self.d64(id).split('@@@@')
-        return {'parse': int(ids[0]), 'url': ids[1], 'header': headers}
+        return {'parse': 1, 'url': id, 'header': headers}
 
     def localProxy(self, param):
         pass
@@ -416,8 +424,3 @@ class Spider(Spider):
         except Exception as e:
             print(f"{str(e)}")
             return pq(response.encode('utf-8'))
-
-    def getjsdata(self, data):
-        vhtml = data("script[id='initials-script']").text()
-        jst = json.loads(vhtml.split('initials=')[-1][:-1])
-        return jst
