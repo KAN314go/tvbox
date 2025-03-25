@@ -135,6 +135,17 @@
         "ext": "./json/NUU短剧.json"
     },
     {
+      "key": "csp_偷樂",
+      "name": "📺｜偷樂短剧",
+      "type": 3,
+      "api": "csp_XBPQ",
+      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "./json/偷樂短劇.json"
+    },
+    {
         "key": "麦田影院",
         "name": "📺｜麦田短剧",
         "type": 3,
