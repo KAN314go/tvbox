@@ -5,60 +5,6 @@
   "sites": [
 
 
-
-    {
-      "key": "csp_开心影院",
-      "name": "🥇｜麥田｜藍光◎秒播(賭場廣告)",
-      "type": 3,
-      "api": "csp_XBPQ",
-      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": 
-          {
-          "请求头": "User-Agent$MOBILE_UA",
-          "编码": "UTF-8",
-          "图片代理": "0",
-          "直接播放": "",
-          "播放请求头": "User-Agent$MOBILE_UA",
-          "主页url": "https://mtyy1.com/",
-          "首页": "120",
-          "起始页": "1",
-          "分类url": "https://mtyy1.com/vodshow/{cateId}-{area}-{by}------{catePg}---{year}.html",                    
-          "分类": "电影$1#电视剧$2#综艺$3#动漫$4#纪录片$24#少儿$25#短剧$26",
-          "数组": "class=\"public-list-exp\"&&</div>",
-          "标题": "title=\"&&\"",
-          "图片": "data-src=\"&&\"",
-          "副标题": "ft2\">&&<",
-          "链接": "href=\"&&\"",
-          "影片年代": "年份&&</span>",
-          "影片地区": "ds-shoucang fa\">*<span>&&<span",
-          "影片类型": "this-desc-tags\">&&</div>",
-          "导演": "导演:&&</div[替换:<i>，</i>>>空]",
-          "主演": "演员:&&</div[替换:<i>，</i>>>空]",
-          "简介": "描述:&&</div>",
-          "线路二次截取": "br\">&&</div>",
-          "线路数组": "<a&&</a>[排序:LZ源>FF源>YZ源]",
-          "线路标题": "</i>&&<",
-          "播放数组": "list-play size&&</ul>",
-          "播放列表": "<a&&/a>",
-          "播放标题": ">&&<",
-          "播放链接": "href=\"&&\"",
-          "解析": "",
-          "跳转播放链接": "var player_*\"url\":\"&&\"",
-          "跳转解析": "",
-          "搜索请求头": "User-Agent$MOBILE_UA",
-          "搜索url": "/index.php/ajax/suggest?mid=1&wd={wd}&page={pg}&limit=30",
-          "搜索模式": "1",
-          "搜索数组": "list",
-          "搜索标题": "name",
-          "搜索图片": "pic",
-          "搜索副标题": "en",
-          "搜索链接": "'/voddetail/'+id+'.html'"
-          }
-        },
-
     {
       "key": "豆瓣",
       "name": "🇹🇼【老王點播專區】🇹🇼",
@@ -1042,7 +988,18 @@
       "ext": "sHR2rlsfjI4L3t4RXQMkn97hxHYaEbu5lFfPUXOxEzpAZL11z+ayZEbLSb3vs/v8ZS0i6U3Oh/aCVpUdIeZzRgc5TQyB2k7aC0UwqxoW281lBnRyLoSPb+ejqJ92E4RYuH9BABywIr8NA9Bn0Ndnl5c+AJCGNVdUwDUcd6fmGzQoQ+VuzRpX5xfgCbnpjcTp56dL50nhDb7IIe7CtKv7pA=="
     },
     {
-      "key": "csp_观影台",
+      "key": "csp_麥田影院",
+      "name": "🥇｜麥田｜高清◎秒播(無廣告)",
+      "type": 3,
+      "api": "csp_XBPQ",
+      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "./json/麥田影院.json"     
+    },
+    {
+      "key": "csp_觀影台",
       "name": "🥇｜觀影｜高清◎順播(無廣告)",
       "type": 3,
       "api": "csp_XBPQ",
