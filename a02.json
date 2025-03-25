@@ -27,7 +27,7 @@
           "起始页": "1",
           "分类url": "https://mtyy1.com/vodshow/{cateId}-{area}-{by}------{catePg}---{year}.html",                    
           "分类": "电影$1#电视剧$2#综艺$3#动漫$4#纪录片$24#少儿$25#短剧$26",
-          "数组": "class=\"public-list-box public-pic-a\"&&</div>",
+          "数组": "class=\"public-list-exp\"&&</div>",
           "标题": "title=\"&&</a>",
           "图片": "data-src=\"&&\"",
           "副标题": "ft2\">&&<",
