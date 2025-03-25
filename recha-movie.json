@@ -3093,7 +3093,7 @@
       "key": "py_animal3",
       "name": "动漫｜3號動漫",
       "type": 3,
-      "api": "./py/py_xhm.py",
+      "api": "./py/py_animal3",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
