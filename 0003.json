@@ -18,8 +18,8 @@
       "ext": 
            {
            "主页url": "https://www.toule.top/",
-           "标题":"<h3>&&</h3>",
-           "副标题":"class=\"remarks light\">&&</span>",
+           //"标题":"<h3>&&</h3>",
+           //"副标题":"class=\"remarks light\">&&</span>",
            "图片":"src=\"&&\"",
            "数组": "class=\"item\"&&</li>",
            "链接": "href=\"/index.php/vod/detail/&&.html\"",
