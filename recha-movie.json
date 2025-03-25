@@ -2471,16 +2471,6 @@
       "ext": "./json/紐約影院.json"
     },
     {
-      "key": "py_HeiMuEr",
-      "name": "🎥｜黑耳｜高清◎秒播(賭場廣告)",
-      "type": 4,
-      "api": "https://spider.doube.eu.org/spider?site=HeiMuEr",
-      "searchable": 1,
-      "quickSearch": 0,
-      "filterable": 0,
-      "changeable": 1
-    },
-    {
       "key": "csp_獨播庫",
       "name": "🎥｜偽獨｜低清◎龜速(超多廣告)",
       "type": 3,
