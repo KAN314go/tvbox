@@ -18,8 +18,9 @@ class Spider(Spider):
         self.headers = {
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
             "Referer": "https://yiyiyi.tv/",
-            "Accept": "application/json, text/plain, */*",
+            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
             "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
+            "Connection": "keep-alive",
         }
         self.image_domain = "https://img.bfzypic.com"
         self.default_play_url = 'https://sf1-cdn-tos.huoshanstatic.com/obj/media-fe/xgplayer_doc_video/mp4/xgplayer-demo-720p.mp4'
@@ -161,17 +162,19 @@ class Spider(Spider):
     def homeVideoContent(self):
         d = []
         try:
-            # 模擬從分類頁面提取熱門數據作為首頁推薦
-            url = f'{self.home_url}/vod/type/id/1/page/1.html'
-            res = requests.get(url, headers=self.headers, timeout=5)
+            url = f'{self.home_url}/vod/type/id/1.html'  # 電影分類頁
+            res = requests.get(url, headers=self.headers, timeout=10)
             res.encoding = 'utf-8'
+            print(f"homeVideoContent URL: {url}")
+            print(f"homeVideoContent Response: {res.text[:500]}")  # 打印前500字元響應
             root = etree.HTML(res.text)
-            items = root.xpath('//div[contains(@class, "module-items")]//div[contains(@class, "module-item")]')
+            items = root.xpath('//ul[contains(@class, "myui-vodlist")]//li')
+            print(f"homeVideoContent Items Found: {len(items)}")
             for item in items[:10]:
-                vod_id = item.xpath('.//a/@href')[0].split('/')[-1].split('.')[0]
-                vod_name = item.xpath('.//div[contains(@class, "module-item-title")]/text()')[0].strip()
-                vod_pic = item.xpath('.//img/@data-original')[0]
-                vod_remarks = item.xpath('.//div[contains(@class, "module-item-text")]/text()')[0].strip()
+                vod_id = item.xpath('.//a/@href')[0].split('/')[-1].replace('.html', '')
+                vod_name = item.xpath('.//a/@title')[0].strip()
+                vod_pic = item.xpath('.//a/@data-original')[0]
+                vod_remarks = item.xpath('.//span[contains(@class, "pic-text")]/text()')[0].strip()
                 d.append({
                     'vod_id': vod_id,
                     'vod_name': vod_name,
@@ -180,7 +183,7 @@ class Spider(Spider):
                 })
             return {'list': d, 'parse': 0, 'jx': 0}
         except Exception as e:
-            print(f"Error in homeVideoContent: {e}")
+            print(f"Error in homeVideoContent: {str(e)}")
             return {'list': d, 'parse': 0, 'jx': 0}
 
     def categoryContent(self, cid, page, filter, ext):
@@ -190,21 +193,23 @@ class Spider(Spider):
         lang = ext.get('lang', '')
         year = ext.get('year', '')
         
-        # 使用 HTML 頁面代替 API
-        url = f'{self.home_url}/vod/type/id/{cid}/page/{page}.html'
+        url = f'{self.home_url}/vod/show/id/{cid}/page/{page}.html'
         if by or class_filter or area or lang or year:
             url = f'{self.home_url}/vod/show/by/{by}/id/{cid}/page/{page}/class/{class_filter}/area/{area}/lang/{lang}/year/{year}.html'
         d = []
         try:
-            res = requests.get(url, headers=self.headers, timeout=5)
+            res = requests.get(url, headers=self.headers, timeout=10)
             res.encoding = 'utf-8'
+            print(f"categoryContent URL: {url}")
+            print(f"categoryContent Response: {res.text[:500]}")  # 打印前500字元響應
             root = etree.HTML(res.text)
-            items = root.xpath('//div[contains(@class, "module-items")]//div[contains(@class, "module-item")]')
+            items = root.xpath('//ul[contains(@class, "myui-vodlist")]//li')
+            print(f"categoryContent Items Found: {len(items)}")
             for item in items:
-                vod_id = item.xpath('.//a/@href')[0].split('/')[-1].split('.')[0]
-                vod_name = item.xpath('.//div[contains(@class, "module-item-title")]/text()')[0].strip()
-                vod_pic = item.xpath('.//img/@data-original')[0]
-                vod_remarks = item.xpath('.//div[contains(@class, "module-item-text")]/text()')[0].strip()
+                vod_id = item.xpath('.//a/@href')[0].split('/')[-1].replace('.html', '')
+                vod_name = item.xpath('.//a/@title')[0].strip()
+                vod_pic = item.xpath('.//a/@data-original')[0]
+                vod_remarks = item.xpath('.//span[contains(@class, "pic-text")]/text()')[0].strip()
                 d.append({
                     'vod_id': vod_id,
                     'vod_name': vod_name,
@@ -213,61 +218,62 @@ class Spider(Spider):
                 })
             return {'list': d, 'parse': 0, 'jx': 0}
         except Exception as e:
-            print(f"Error in categoryContent: {e}")
+            print(f"Error in categoryContent: {str(e)}")
             return {'list': d, 'parse': 0, 'jx': 0}
 
     def detailContent(self, ids):
         d = []
         for vod_id in ids:
             try:
-                url = f"{self.home_url}/vod/play/id/{vod_id}/nid/1"
-                res = requests.get(url, headers=self.headers, timeout=5)
+                url = f"{self.home_url}/vod/detail/id/{vod_id}.html"
+                res = requests.get(url, headers=self.headers, timeout=10)
                 res.encoding = 'utf-8'
                 doc = etree.HTML(res.text)
                 
                 detail = {'vod_id': vod_id}
-                detail['vod_name'] = doc.xpath('//div[contains(@class, "vod-episode-list")]//span[contains(@class, "text-lg")]/text()')[0].strip()
-                year_genres = doc.xpath('//div[contains(@class, "vod-episode-list")]//div[contains(@class, "text-sm") and contains(@class, "py-1")][1]/text()')[0].strip()
-                detail['vod_year'] = year_genres.split()[0]
-                detail['type_name'] = ', '.join(year_genres.split()[1:])
-                detail['vod_remarks'] = doc.xpath('//div[contains(@class, "vod-episode-list")]//div[contains(@class, "text-sm") and contains(@class, "py-1")]/text()')[0].split()[0]
+                detail['vod_name'] = doc.xpath('//h1[contains(@class, "title")]/text()')[0].strip()
+                info = doc.xpath('//div[contains(@class, "myui-content__detail")]//p/text()')[0].strip()
+                detail['vod_year'] = info.split('年份：')[-1].split()[0]
+                detail['type_name'] = info.split('分类：')[-1].split()[0]
+                detail['vod_remarks'] = doc.xpath('//span[contains(@class, "text-muted")]/text()')[-1].strip()
                 
-                play_sources = [x.strip() for x in doc.xpath('//div[contains(@class, "whitespace-nowrap") and contains(@class, "text-sm")]/text()')]
+                play_sources = [x.strip() for x in doc.xpath('//ul[contains(@class, "myui-content__list")]//a/text()')]
                 detail['vod_play_from'] = '$$$'.join(play_sources)
                 
                 episodes = []
-                for a in doc.xpath('//div[contains(@class, "vod-episode-list")]//ul//div//a'):
-                    name = a.xpath('.//li//label//div/text()')[0].strip()
+                for a in doc.xpath('//ul[contains(@class, "myui-content__list")]//li/a'):
+                    name = a.xpath('./text()')[0].strip()
                     href = a.xpath('./@href')[0]
                     episodes.append({'name': name, 'href': href})
                 
                 play_urls = []
                 for source in play_sources:
                     key = self.play_map.get(source, '')
-                    line_episodes = ['%s$%s%s' % (ep['name'], self.home_url, ep['href'].replace(ep['href'].split('/')[-1], key)) for ep in episodes]
+                    line_episodes = ['%s$%s%s' % (ep['name'], self.home_url, ep['href']) for ep in episodes]
                     play_urls.append('#'.join(line_episodes))
                 detail['vod_play_url'] = '$$$'.join(play_urls)
                 
-                detail['vod_barrage'] = 'https://v.qq.com/x/cover/mzc00200gtvxu1j/n4100tc9165.html'
-                
                 d.append(detail)
             except Exception as e:
-                print(f"Error in detailContent: {e}")
+                print(f"Error in detailContent: {str(e)}")
         return {'list': d, 'parse': 0, 'jx': 0}
 
     def searchContent(self, key, quick, page='1'):
         d = []
         url = f'{self.home_url}/vod/search/page/{page}/wd/{key}.html'
         try:
-            res = requests.get(url, headers=self.headers, timeout=5)
+            res = requests.get(url, headers=self.headers, timeout=10)
             res.encoding = 'utf-8'
+            print(f"searchContent URL: {url}")
+            print(f"searchContent Response: {res.text[:500]}")  # 打印前500字元響應
             root = etree.HTML(res.text)
-            items = root.xpath('//div[contains(@class, "module-items")]//div[contains(@class, "module-item")]')
+            items = root.xpath('//ul[contains(@class, "myui-vodlist")]//li')
+            print(f"searchContent Items Found: {len(items)}")
             for item in items:
-                vod_id = item.xpath('.//a/@href')[0].split('/')[-1].split('.')[0]
-                vod_name = item.xpath('.//div[contains(@class, "module-item-title")]/text()')[0].strip()
-                vod_pic = item.xpath('.//img/@data-original')[0]
-                vod_remarks = item.xpath('.//div[contains(@class, "module-item-text")]/text()')[0].strip()
+                vod_id = item.xpath('.//a/@href')[0].split('/')[-1].replace('.html', '')
+                vod_name = item.xpath('.//a/@title')[0].strip()
+                vod_pic = item.xpath('.//a/@data-original')[0]
+                vod_remarks = item.xpath('.//span[contains(@class, "pic-text")]/text()')[0].strip()
                 d.append({
                     'vod_id': vod_id,
                     'vod_name': vod_name,
@@ -276,7 +282,7 @@ class Spider(Spider):
                 })
             return {'list': d, 'parse': 0, 'jx': 0}
         except Exception as e:
-            print(f"Error in searchContent: {e}")
+            print(f"Error in searchContent: {str(e)}")
             return {'list': d, 'parse': 0, 'jx': 0}
 
     def playerContent(self, flag, pid, vipFlags):
@@ -284,7 +290,7 @@ class Spider(Spider):
             if not pid.startswith('http'):
                 url = f"{self.home_url}/api/playurl"
                 data = {'urlEncode': pid, 'sourceCode': self.play_map.get(flag, '')}
-                res = requests.post(url, json=data, headers=self.headers, timeout=5)
+                res = requests.post(url, json=data, headers=self.headers, timeout=10)
                 response = res.json()
                 real_url = response.get('data', {}).get('url', self.default_play_url)
             else:
@@ -294,7 +300,7 @@ class Spider(Spider):
                 return {'parse': 0, 'playUrl': '', 'url': real_url, 'header': json.dumps(self.headers)}
             return {'parse': 1, 'playUrl': '', 'url': real_url, 'header': json.dumps(self.headers)}
         except Exception as e:
-            print(f"Error in playerContent: {e}")
+            print(f"Error in playerContent: {str(e)}")
             return {'parse': 0, 'playUrl': '', 'url': self.default_play_url, 'header': json.dumps(self.headers)}
 
     def localProxy(self, params):
