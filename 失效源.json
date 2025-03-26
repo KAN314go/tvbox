@@ -264,28 +264,6 @@
   "ext": "w7TClcK8w5rDrcKYwoPCmcKkw57ClcK0wpvCnF9SwoPCmcOtw5jDj8Orw6ZValLCmMOtw6fDqsOswrRiX8KdacOcw57CrMKxw6DCqmbCnmPDpsKow6XCsMKywpRhYMKUwqfDl8Ozw7LDtGVewpPCn8Omwq3Cr8KvwrJsX8KRwqDDosKhw6rDocOqVVxSecOnw5zDrsOQw6nCpcKUUmrCm8KVwqbCm8OuwpzCoFJqwpvDjuWHv+mFoeaQn+WQllzlhpzkvYflkbDCreW/q+iov+i2vua7g+esicKNUsKlwpXCu8Oew61+wpXCqVLCs8KVw57DssOzwq3CpMKmwpHDqcOcw5vDqcOqwqzCqcKUwqPCm8KfwpzCusOfwqZ5wqZSwrPClcOew7LDs8KtwqTCpsKRw6nDnMObw6nDqsKswqnClMKjwpvDsA=="
 },
 {
-  "key": "云播影视",
-  "name": "🥇｜云播(APP)｜無法修",
-  "type": 3,
-  "api": "csp_AppGetApp",
-  "jar":"./jar/PizazzGY.jar",
-  "searchable": 1,
-  "quickSearch": 0,
-  "filterable": 0,
-  "ext": "w7TCmsK8w5rDrcKYwoPCmcKkw57CmsK0wpnCoVpcUFfDjMOcw67DnsOPwqXCnFdqwpnCmsOiw63DrsKjal9fw6DDmMOuw5rDqsKjXsKkwqbDssOVw5vDqcOqYcKTwp/CncKow5TDqsOiwqjCo8KYwqBXwqXCk8Khw4LDqMKcwqTCh8Kfw6vDl8KhwrPCmlrCmcKewpnDrcOJwqvCqsKzWlxQV8Otw5zDqsKgwrRTV8KL5Ya16YWh5pCY5ZGdwqXlh6bkvYrlkKdq5b6h6Ki/6La35ryK562Sw5daXFBXwrrDmMOtw4TDn8KsV2pQwqDDoMOjw5zDpWVkZWjDpsOcw53DpMKsZ2VoV8KlwpPCocK6w5/CpnnCplfCs8KTwqHDpsOjwpbCm2Jkwq7Cq8Onw6LDncKeYmRlwrHCmsKmwpnCocKbwpXCkcKUw57DpcOtwqDCtFPCq1fCpcOsw5jDrMKmw5vCmsKVwp7CpMKgwq3CmsKgw4fCosKqwpnCnMOlw5TCqcKuwqhjUFjCh8Oiw6HDnsOow7HCplB+woTCmcKkwqrCp8KqblDCh8KZw6fCqcKuwrTCmsKrZmRZwpnCtMOqw6nDpsKYwofClcKSw4TDnMOuwqjCr2ZnXmPCr8KTwqLDhMOCwod9fFzCmcOfw6PDpMOfU3fClcKTw6TDosKjwpnCvcKbwqLCn8Kdw57CosKrwqrCrGFgXmDCp8KjwprDjMObwpnCkcKiwpnCqMKowq3CsMKoZmZXXMKZwprDm8Olw6bCosKnc8Kiw6jDpsOtw4nDrMKiwqTCn8KTw6jDn8OMw57DnsKcwqLClcKTw63DpsKhwrPCmsKHwqLCpcKVw7bCn8KawqDDnsKYwpPCosKpw6nDp8OFw57Ds1pqUFfDssOUw6nDsMObwqHCl2BhwqvCqcKhw7Y="
-},
-{
-  "key": "雨滴",
-  "name": "🥇｜雨滴(App)｜無法修",
-  "type": 3,
-  "api": "csp_Xdai",
-  "jar":"./jar/spider.jar;md5;b836384ede14d319c1dcbf257a264eda",
-  "searchable": 1,
-  "quickSearch": 1,
-  "filterable": 1,
-  "ext": "jaHR0cDovL2M4dzJvdjd1NXdnMnoxbzhwMjFjLmFsaXl1bmNzLmNsaWNrfGs5bzNwMmM4YjdtM3owbzh8azlvM3AyYzhiN20zejBvOHwxMDA="
-},
-{
   "key": "csp_嬉戲影院",
   "name": "🥉｜嬉戲｜網站失效",
   "type": 3,
@@ -392,15 +370,6 @@
       "quickSearch": 1
     },
     {
-      "key": "小米尘落",
-      "name": "🥇｜尘落｜APP｜無法修(線路都不能用)",
-      "type": 3,
-      "api": "csp_Wetv",
-      "jar":"https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/jar1/PizazzGY.jar",
-      "searchable": 1,
-      "quickSearch": 1
-    },
-    {
       "key": "小米小猫",
       "name": "🥇｜小猫(APP)｜無法修",
       "type": 3,
@@ -453,8 +422,6 @@
         "地区":"中国大陆&中国香港&中国台湾&美国&法国&英国&日本&韩国&德国&泰国&印度&義大利&西班牙||中国大陆&中国台湾&中国香港&韩国&日本&美国&泰国&英国&新加坡&其他||内地&港台&日韩&欧美||中国大陆&日本&欧美&其他"
       }
     },
-
-
       {
         "key":"闹闹",
         "name":"🥇｜闹闹(APP)｜無法修",
@@ -529,17 +496,6 @@
         "changeable": 1,
         "filterable": 1,
         "ext": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/json_now/流光.json"
-      },
-      {
-        "key": "csp_XBPQ_火火",
-        "name": "🎥｜火火｜網站失效",
-        "type": 3,
-        "api": "csp_XBPQ",
-        "jar": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/jar1/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-        "searchable": 1,
-        "quickSearch": 1,
-        "filterable": 1,
-        "ext": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/json_now/火火.json"
       },
       {
         "key": "csp_华乐影院",
@@ -1198,27 +1154,6 @@
         "filterable": 1,
         "ext": "caHR0cHM6Ly9qaWVrb3UtMTMxNDA1NDY5OS5jb3MuYXAtY2hvbmdxaW5nLm15cWNsb3VkLmNvbS9qaWVrb3UudHh0fEY1MUY1RDUyRDIzQ0JGMjd8RjUxRjVENTJEMjNDQkYyN3wxOTE="
       },
-      {
-          "key": "新可可影视③",
-          "name": "🎥｜可可③｜無法修",
-          "type": 3,
-          "api": "csp_XBPQ",
-          "jar": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/jar1/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "ext": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/json_now/新可可影視3.json"
-      },
-      {
-        "key": "韩小圈",
-        "name": "📺｜韩小圈(APP)｜無法修",
-        "type": 3,
-        "api": "csp_HanXiaoQuan",
-        "jar":"https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/jar1/spider.jar",
-        "searchable": 1,
-        "quickSearch": 1,
-        "filterable": 1
-    },
     {
       "key": "无忧短剧",
       "name": "📺｜无忧短剧｜無法修",

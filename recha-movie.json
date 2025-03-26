@@ -155,7 +155,7 @@
       "api": "csp_WexquickvodGuard",
       "jar": "./jar/wex.txt",
       "searchable": 0,
-      "changeable": 0
+      "changeable": 1
     },
     {
       "key": "Wexzxzj",
@@ -163,7 +163,7 @@
       "type": 3,
       "api": "csp_WexzxzjGuard",
       "jar": "./jar/wex.txt",
-      "searchable": 1,
+      "searchable": 0,
       "changeable": 1
     },
     {
@@ -172,7 +172,7 @@
       "type": 3,
       "api": "csp_WexbaozitvGuard",
       "jar": "./jar/wex.txt",
-      "searchable": 1,
+      "searchable": 0,
       "changeable": 1
     },
   {
@@ -181,7 +181,7 @@
       "type": 3,
       "api": "csp_WexNmysGuard",
       "jar": "./jar/wex.txt",
-      "searchable": 1,
+      "searchable": 0,
       "changeable": 1
     
     },
@@ -191,7 +191,7 @@
       "type": 3,
       "api": "csp_WexDiduanysGuard",
       "jar": "./jar/wex.txt",
-      "searchable": 1,
+      "searchable": 0,
       "changeable": 1
     },
   {
@@ -200,7 +200,7 @@
       "type": 3,
       "api": "csp_WexBDysGuard",
       "jar": "./jar/wex.txt",
-      "searchable": 1,
+      "searchable": 0,
       "changeable": 1
     },
   {
@@ -209,7 +209,7 @@
       "type": 3,
       "api": "csp_WexF4kvmGuard",
       "jar": "./jar/wex.txt",
-      "searchable": 1,
+      "searchable": 0,
       "changeable": 1
     },
     {
@@ -357,6 +357,28 @@
       "searchable": 1,
       "filterable": 0,
       "changeable": 0
+    },
+    {
+      "key": "云播影视",
+      "name": "🥇｜云播｜高清◎秒播(無廣告+APP)",
+      "type": 3,
+      "api": "csp_AppGetApp",
+      "jar":"./jar/PizazzGY.jar",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 0,
+      "ext": "w7TCmsK8w5rDrcKYwoPCmcKkw57CmsK0wpnCoVpcUFfDjMOcw67DnsOPwqXCnFdqwpnCmsOiw63DrsKjal9fw6DDmMOuw5rDqsKjXsKkwqbDssOVw5vDqcOqYcKTwp/CncKow5TDqsOiwqjCo8KYwqBXwqXCk8Khw4LDqMKcwqTCh8Kfw6vDl8KhwrPCmlrCmcKewpnDrcOJwqvCqsKzWlxQV8Otw5zDqsKgwrRTV8KL5Ya16YWh5pCY5ZGdwqXlh6bkvYrlkKdq5b6h6Ki/6La35ryK562Sw5daXFBXwrrDmMOtw4TDn8KsV2pQwqDDoMOjw5zDpWVkZWjDpsOcw53DpMKsZ2VoV8KlwpPCocK6w5/CpnnCplfCs8KTwqHDpsOjwpbCm2Jkwq7Cq8Onw6LDncKeYmRlwrHCmsKmwpnCocKbwpXCkcKUw57DpcOtwqDCtFPCq1fCpcOsw5jDrMKmw5vCmsKVwp7CpMKgwq3CmsKgw4fCosKqwpnCnMOlw5TCqcKuwqhjUFjCh8Oiw6HDnsOow7HCplB+woTCmcKkwqrCp8KqblDCh8KZw6fCqcKuwrTCmsKrZmRZwpnCtMOqw6nDpsKYwofClcKSw4TDnMOuwqjCr2ZnXmPCr8KTwqLDhMOCwod9fFzCmcOfw6PDpMOfU3fClcKTw6TDosKjwpnCvcKbwqLCn8Kdw57CosKrwqrCrGFgXmDCp8KjwprDjMObwpnCkcKiwpnCqMKowq3CsMKoZmZXXMKZwprDm8Olw6bCosKnc8Kiw6jDpsOtw4nDrMKiwqTCn8KTw6jDn8OMw57DnsKcwqLClcKTw63DpsKhwrPCmsKHwqLCpcKVw7bCn8KawqDDnsKYwpPCosKpw6nDp8OFw57Ds1pqUFfDssOUw6nDsMObwqHCl2BhwqvCqcKhw7Y="
+    },
+    {
+      "key": "雨滴",
+      "name": "🥇｜雨滴｜高清◎秒播(無廣告+APP)",
+      "type": 3,
+      "api": "csp_Xdai",
+      "jar":"./jar/spider.jar;md5;b836384ede14d319c1dcbf257a264eda",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "jaHR0cDovL2M4dzJvdjd1NXdnMnoxbzhwMjFjLmFsaXl1bmNzLmNsaWNrfGs5bzNwMmM4YjdtM3owbzh8azlvM3AyYzhiN20zejBvOHwxMDA="
     },
     {
       "key": "py_jieyingshi",
@@ -672,6 +694,17 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": "./json/七味影院.json"
+    },
+    {
+      "key": "新可可影视③",
+      "name": "🥇｜可可③｜高清◎秒播(浮水印廣告)",
+      "type": 3,
+      "api": "csp_XBPQ",
+      "jar": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/jar1/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/json_now/新可可影視3.json"
     },
     {
       "key": "csp_GimyTW",
