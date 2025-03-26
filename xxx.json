@@ -94,33 +94,7 @@
        "searchable": 1,
        "changeable": 0
      },
-     {
-       "key": "Wexduanjuvip",
-       "name": "🍉短剧┃免费🍉",
-       "type": 3,
-       "api": "csp_WexduanjuvipGuard",
-       "jar": "./jar/wex.txt",
-       "searchable": 1,
-       "changeable": 1
-     },	
-     {
-       "key": "Wexvipduanju",
-       "name": "🍉短剧┃综合🍉",
-       "type": 3,
-       "api": "csp_WexvipduanjuGuard",
-       "jar": "./jar/wex.txt",
-       "searchable": 1,
-       "changeable": 1
-     },		
-     {
-       "key": "Wexduanju001",
-       "name": "🍉短剧┃极品🍉",
-       "type": 3,
-       "api": "csp_Wexduanju001Guard",
-       "jar": "./jar/wex.txt",
-       "searchable": 1,
-       "changeable": 1
-     },
+
    {
        "key": "Wexlaobaitingshu",
        "name": "🎃‍白兔┃听书🎃",

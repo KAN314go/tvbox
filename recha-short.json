@@ -26,10 +26,37 @@
       },
       {
         "key": "csp_AppXY",
-        "name": "📺｜星牙短剧",
+        "name": "📺｜星芽短劇",
         "type": 3,
         "jar":"./jar/PandaQ250227c.jar;md5;ceda5421cdce5fad2a2f6d8c71ae4311",
         "api": "csp_AppXY"
+      },
+      {
+        "key": "Wexduanjuvip",
+        "name": "📺｜牛多短劇",
+        "type": 3,
+        "api": "csp_WexduanjuvipGuard",
+        "jar": "./jar/wex.txt",
+        "searchable": 1,
+        "changeable": 1
+      },	
+      {
+        "key": "Wexvipduanju",
+        "name": "📺｜牛综短剧",
+        "type": 3,
+        "api": "csp_WexvipduanjuGuard",
+        "jar": "./jar/wex.txt",
+        "searchable": 1,
+        "changeable": 1
+      },		
+      {
+        "key": "Wexduanju001",
+        "name": "📺｜牛极短剧",
+        "type": 3,
+        "api": "csp_Wexduanju001Guard",
+        "jar": "./jar/wex.txt",
+        "searchable": 1,
+        "changeable": 1
       },
       {
       "key": "py_红果网页",
