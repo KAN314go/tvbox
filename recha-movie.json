@@ -3303,20 +3303,13 @@
     },
     {
       "key": "py_爱",
-      "name": "🎖︎｜爱奇異｜PYTHON",
+      "name": "🎖︎｜爱奇異｜備用",
       "type": 3,
       "api": "./py/py_爱.py",
       "searchable": 1,
       "quickSearch": 0,
       "filterable": 0,
       "changeable": 0
-    },
-    {
-      "key": "爱奇艺弹幕",
-      "name": "🎖︎｜愛奇異｜備用",
-      "type": 3,
-      "api": "./drpy_libs/drpy2.min.js",
-      "ext": "https://gitee.com/PizazzXS/another-d/raw/master/movie/js/AQYDM.js"
     },
     {
       "key": "drpy_js_百忙无果",
@@ -3329,20 +3322,13 @@
     },
     {
       "key": "py_芒",
-      "name": "🎖︎｜芒果｜PYTHON",
+      "name": "🎖︎｜芒果｜備用",
       "type": 3,
       "api": "./py/py_芒.py",
       "searchable": 1,
       "quickSearch": 0,
       "filterable": 0,
       "changeable": 0
-    },
-    {
-      "key": "芒果弹幕",
-      "name": "🎖︎｜芒果｜備用",
-      "type": 3,
-      "api": "./drpy_libs/drpy2.min.js",
-      "ext": "https://gitee.com/PizazzXS/another-d/raw/master/movie/js/MGDM.js"
     },
     {
       "key": "drpy_js_腾云驾雾",
@@ -3355,29 +3341,13 @@
     },
     {
       "key": "py_腾",
-      "name": "🎖︎｜腾訊｜PYTHON",
+      "name": "🎖︎｜腾訊｜備用",
       "type": 3,
       "api": "./py/py_腾.py",
       "searchable": 1,
       "quickSearch": 0,
       "filterable": 0,
       "changeable": 0
-    },
-    {
-      "key": "腾讯弹幕",
-      "name": "🎖︎｜腾讯｜備用",
-      "type": 3,
-      "api": "./drpy_libs/drpy2.min.js",
-      "ext": "https://gitee.com/PizazzXS/another-d/raw/master/movie/js/TXDM.js"
-    },
-    {
-      "key": "drpy_js_菜狗",
-      "name": "🎖︎｜搜狗｜官源",
-      "type": 3,
-      "searchable": 1,
-      "quickSearch": 1,
-      "api": "./drpy_libs/drpy2.min.js",
-      "ext": "./drpy_js/菜狗[官].js"
     },
     {
       "key": "drpy_js_优酷",
@@ -3390,7 +3360,7 @@
     },
     {
       "key": "py_优",
-      "name": "🎖︎｜优酷｜PYTHON",
+      "name": "🎖︎｜优酷｜備用",
       "type": 3,
       "api": "./py/py_芒.py",
       "searchable": 1,
@@ -3399,11 +3369,13 @@
       "changeable": 0
     },
     {
-      "key": "优酷弹幕",
-      "name": "🎖︎｜优酷｜備用",
+      "key": "drpy_js_菜狗",
+      "name": "🎖︎｜搜狗｜官源",
       "type": 3,
+      "searchable": 1,
+      "quickSearch": 1,
       "api": "./drpy_libs/drpy2.min.js",
-      "ext": "https://gitee.com/PizazzXS/another-d/raw/master/movie/js/YKDM.js"
+      "ext": "./drpy_js/菜狗[官].js"
     },
     {
       "key": "bilimd",

@@ -278,28 +278,6 @@
       "ext": "./json/美柏影視.json"
     },
     {
-        "key": "云播影视",
-        "name": "🥇｜云播(APP)｜無法修",
-        "type": 3,
-        "api": "csp_AppGetApp",
-        "jar":"./jar1/PizazzGY.jar",
-        "searchable": 1,
-        "quickSearch": 0,
-        "filterable": 0,
-        "ext": "w7TCmsK8w5rDrcKYwoPCmcKkw57CmsK0wpnCoVpcUFfDjMOcw67DnsOPwqXCnFdqwpnCmsOiw63DrsKjal9fw6DDmMOuw5rDqsKjXsKkwqbDssOVw5vDqcOqYcKTwp/CncKow5TDqsOiwqjCo8KYwqBXwqXCk8Khw4LDqMKcwqTCh8Kfw6vDl8KhwrPCmlrCmcKewpnDrcOJwqvCqsKzWlxQV8Otw5zDqsKgwrRTV8KL5Ya16YWh5pCY5ZGdwqXlh6bkvYrlkKdq5b6h6Ki/6La35ryK562Sw5daXFBXwrrDmMOtw4TDn8KsV2pQwqDDoMOjw5zDpWVkZWjDpsOcw53DpMKsZ2VoV8KlwpPCocK6w5/CpnnCplfCs8KTwqHDpsOjwpbCm2Jkwq7Cq8Onw6LDncKeYmRlwrHCmsKmwpnCocKbwpXCkcKUw57DpcOtwqDCtFPCq1fCpcOsw5jDrMKmw5vCmsKVwp7CpMKgwq3CmsKgw4fCosKqwpnCnMOlw5TCqcKuwqhjUFjCh8Oiw6HDnsOow7HCplB+woTCmcKkwqrCp8KqblDCh8KZw6fCqcKuwrTCmsKrZmRZwpnCtMOqw6nDpsKYwofClcKSw4TDnMOuwqjCr2ZnXmPCr8KTwqLDhMOCwod9fFzCmcOfw6PDpMOfU3fClcKTw6TDosKjwpnCvcKbwqLCn8Kdw57CosKrwqrCrGFgXmDCp8KjwprDjMObwpnCkcKiwpnCqMKowq3CsMKoZmZXXMKZwprDm8Olw6bCosKnc8Kiw6jDpsOtw4nDrMKiwqTCn8KTw6jDn8OMw57DnsKcwqLClcKTw63DpsKhwrPCmsKHwqLCpcKVw7bCn8KawqDDnsKYwpPCosKpw6nDp8OFw57Ds1pqUFfDssOUw6nDsMObwqHCl2BhwqvCqcKhw7Y="
-    },
-    {
-        "key": "雨滴",
-        "name": "🥇｜雨滴(App)｜無法修",
-        "type": 3,
-        "api": "csp_Xdai",
-        "jar":"./jar1/spider.jar;md5;b836384ede14d319c1dcbf257a264eda",
-        "searchable": 1,
-        "quickSearch": 1,
-        "filterable": 1,
-        "ext": "jaHR0cDovL2M4dzJvdjd1NXdnMnoxbzhwMjFjLmFsaXl1bmNzLmNsaWNrfGs5bzNwMmM4YjdtM3owbzh8azlvM3AyYzhiN20zejBvOHwxMDA="
-    },
-    {
       "key": "csp_先生",
       "name": "🥉｜先生｜高清◎秒播(浮水印廣告)",
       "type": 3,
@@ -343,7 +321,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": "./json_now/追劇資源.json"
+      "ext": "./json/追劇資源.json"
     },
     {
       "key": "csp_即看影视",
@@ -354,7 +332,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": "./json_now/即看.json"
+      "ext": "./json/即看.json"
     },
     {
       "key": "小米电影",
@@ -396,7 +374,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": "./json_now/利伍影视.json"
+      "ext": "./json/利伍影视.json"
     },
     {
       "key": "csp_皮皮影院",
@@ -423,7 +401,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": "./json_now/萬博劇院.json"
+      "ext": "./json/萬博劇院.json"
     },
     {
         "key": "csp_海兔影院",
@@ -578,17 +556,6 @@
         }
       },
       {
-        "key": "站长影视",
-        "name": "🥇｜站長｜高清◎秒播(無法修)",
-        "type": 3,
-        "api": "csp_AppGetApp",
-        "jar":"./jar1/spider.jar;md5;b836384ede14d319c1dcbf257a264eda",
-        "searchable": 1,
-        "quickSearch": 0,
-        "filterable": 0,
-        "ext": "w7TClcK8w5rDrcKYwoPCmcKkw57ClcK0wpvCnF9SwoPCmcOtw5jDj8Orw6ZValLCmMOtw6fDqsOswrRiX8KdacOcw57CrMKxw6DCqmbCnmPDpsKow6XCsMKywpRhYMKUwqfDl8Ozw7LDtGVewpPCn8Omwq3Cr8KvwrJsX8KRwqDDosKhw6rDocOqVVxSecOnw5zDrsOQw6nCpcKUUmrCm8KVwqbCm8OuwpzCoFJqwpvDjuWHv+mFoeaQn+WQllzlhpzkvYflkbDCreW/q+iov+i2vua7g+esicKNUsKlwpXCu8Oew61+wpXCqVLCs8KVw57DssOzwq3CpMKmwpHDqcOcw5vDqcOqwqzCqcKUwqPCm8KfwpzCusOfwqZ5wqZSwrPClcOew7LDs8KtwqTCpsKRw6nDnMObw6nDqsKswqnClMKjwpvDsA=="
-      },
-      {
         "key": "csp_暖影院",
         "name": "🥉｜暖影｜高清◎慢播(浮水印廣告)",
         "type": 3,
@@ -713,16 +680,7 @@
         "quickSearch": 1,
         "filterable": 1,
         "timeout": 120,
-        "ext": "./json_now/片庫網.json"
-      },
-      {
-        "key": "小米麻花",
-        "name": "🥇｜麻花(APP)｜無法修",
-        "type": 3,
-        "searchable": 1,
-        "quickSearch": 1,
-        "api": "csp_MaHuaApp",
-        "jar":"./jar1/PizazzGY.jar"
+        "ext": "./json/片庫網.json"
       },
       {
         "key": "五五影视",
@@ -756,8 +714,50 @@
         "searchable": 1,
         "quickSearch": 1,
         "filterable": 1,
-        "ext": "./json_now/全民影院.json"
+        "ext": "./json/全民影院.json"
     },
+    {
+      "key": "小米麻花",
+      "name": "🥇｜麻花(APP)｜無法修",
+      "type": 3,
+      "searchable": 1,
+      "quickSearch": 1,
+      "api": "csp_MaHuaApp",
+      "jar":"./jar1/PizazzGY.jar"
+    },
+    {
+      "key": "站长影视",
+      "name": "🥇｜站長(APP)｜高清◎秒播(無法修)",
+      "type": 3,
+      "api": "csp_AppGetApp",
+      "jar":"./jar1/spider.jar;md5;b836384ede14d319c1dcbf257a264eda",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 0,
+      "ext": "w7TClcK8w5rDrcKYwoPCmcKkw57ClcK0wpvCnF9SwoPCmcOtw5jDj8Orw6ZValLCmMOtw6fDqsOswrRiX8KdacOcw57CrMKxw6DCqmbCnmPDpsKow6XCsMKywpRhYMKUwqfDl8Ozw7LDtGVewpPCn8Omwq3Cr8KvwrJsX8KRwqDDosKhw6rDocOqVVxSecOnw5zDrsOQw6nCpcKUUmrCm8KVwqbCm8OuwpzCoFJqwpvDjuWHv+mFoeaQn+WQllzlhpzkvYflkbDCreW/q+iov+i2vua7g+esicKNUsKlwpXCu8Oew61+wpXCqVLCs8KVw57DssOzwq3CpMKmwpHDqcOcw5vDqcOqwqzCqcKUwqPCm8KfwpzCusOfwqZ5wqZSwrPClcOew7LDs8KtwqTCpsKRw6nDnMObw6nDqsKswqnClMKjwpvDsA=="
+    },
+    {
+      "key": "云播影视",
+      "name": "🥇｜云播(APP)｜無法修",
+      "type": 3,
+      "api": "csp_AppGetApp",
+      "jar":"./jar1/PizazzGY.jar",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 0,
+      "ext": "w7TCmsK8w5rDrcKYwoPCmcKkw57CmsK0wpnCoVpcUFfDjMOcw67DnsOPwqXCnFdqwpnCmsOiw63DrsKjal9fw6DDmMOuw5rDqsKjXsKkwqbDssOVw5vDqcOqYcKTwp/CncKow5TDqsOiwqjCo8KYwqBXwqXCk8Khw4LDqMKcwqTCh8Kfw6vDl8KhwrPCmlrCmcKewpnDrcOJwqvCqsKzWlxQV8Otw5zDqsKgwrRTV8KL5Ya16YWh5pCY5ZGdwqXlh6bkvYrlkKdq5b6h6Ki/6La35ryK562Sw5daXFBXwrrDmMOtw4TDn8KsV2pQwqDDoMOjw5zDpWVkZWjDpsOcw53DpMKsZ2VoV8KlwpPCocK6w5/CpnnCplfCs8KTwqHDpsOjwpbCm2Jkwq7Cq8Onw6LDncKeYmRlwrHCmsKmwpnCocKbwpXCkcKUw57DpcOtwqDCtFPCq1fCpcOsw5jDrMKmw5vCmsKVwp7CpMKgwq3CmsKgw4fCosKqwpnCnMOlw5TCqcKuwqhjUFjCh8Oiw6HDnsOow7HCplB+woTCmcKkwqrCp8KqblDCh8KZw6fCqcKuwrTCmsKrZmRZwpnCtMOqw6nDpsKYwofClcKSw4TDnMOuwqjCr2ZnXmPCr8KTwqLDhMOCwod9fFzCmcOfw6PDpMOfU3fClcKTw6TDosKjwpnCvcKbwqLCn8Kdw57CosKrwqrCrGFgXmDCp8KjwprDjMObwpnCkcKiwpnCqMKowq3CsMKoZmZXXMKZwprDm8Olw6bCosKnc8Kiw6jDpsOtw4nDrMKiwqTCn8KTw6jDn8OMw57DnsKcwqLClcKTw63DpsKhwrPCmsKHwqLCpcKVw7bCn8KawqDDnsKYwpPCosKpw6nDp8OFw57Ds1pqUFfDssOUw6nDsMObwqHCl2BhwqvCqcKhw7Y="
+  },
+  {
+      "key": "雨滴",
+      "name": "🥇｜雨滴(App)｜無法修",
+      "type": 3,
+      "api": "csp_Xdai",
+      "jar":"./jar1/spider.jar;md5;b836384ede14d319c1dcbf257a264eda",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "jaHR0cDovL2M4dzJvdjd1NXdnMnoxbzhwMjFjLmFsaXl1bmNzLmNsaWNrfGs5bzNwMmM4YjdtM3owbzh8azlvM3AyYzhiN20zejBvOHwxMDA="
+  },
     {"key": "vod_虎牙","name":"🧲｜虎牙｜浮水印廣告+轉圈","type":1,"api":"https://www.huyaapi.com/api.php/provide/vod/from/hym3u8","searchable":1,"quickSearch":1,"filterable":1}
 
     ],
