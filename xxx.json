@@ -2,15 +2,6 @@
   "spider": "./jar/pg.jar",
    "sites": [
 
-     {
-       "key": "賤賤",
-       "name": "💥賤片┃p2p💥",
-       "type": 3,
-       "api": "csp_WexJianpianGuard",
-       "jar": "./jar/wex.txt",
-       "searchable": 1,
-       "changeable": 1
-     },
    {
        "key": "WexkuihuatvGuard",
        "name": "💥葵花┃影视💥",
