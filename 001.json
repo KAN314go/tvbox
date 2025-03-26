@@ -97,24 +97,6 @@
     "playerType": 2
 },
 {
-    "key": "木头",
-    "name": "木头｜APP",
-    "type": 3,
-    "api": "csp_Shark",
-    "jar": "./jar/spider.png",
-    "playerType": 1,
-    "ext": "saHR0cDovL21pdG8ubWlub3R2LmNuL3xhYXNzZGR3d3h4bGxzeDF4fGJic3NxZGJic3NsbDI1c3g="
-},
-{
-    "key": "星河",
-    "name": "星河｜APP",
-    "type": 3,
-    "api": "csp_Muou",
-    "jar": "./jar/spider.png",
-    "playerType": 2,
-    "ext": "caHR0cDovL2EubXVxaXhoLnRvcDo1NjIzfOW5leWQr+aYn+ays3w0LjEuOA=="
-},
-{
     "key": "龙虾",
     "name": "龙虾｜APP",
     "type": 3,
@@ -228,15 +210,6 @@
     "quickSearch": 0,
     "filterable": 0,
     "ext": "w7TCmsK8w5rDrcKYwoPCmcKkw57CmsK0wpnCoVpcUFfDgsOhw6PDrcORwqLCosKUV8KzwpPCocOiw6jCnMKkwoZhwqrCrMKhwqXCmlrCpMKZwqDCoMKtwprCoMOV5Ya46YSY5o+V5ZCTwqXlh5/kvpHlkbDCtOW+pOintui1tOa7gOetksOQwqHCpcKaWnHClcKjw4TDmMOzwqDCtFNXdMKow7DCvMOtw63DrMKXwofCksKJw6nDlcOmw7DDqFpcUFfCusOYw63DgsOwWmpQV8K9w6vDscOCw63Cp8KiwpTCh8Obw4zDqsObw6bCqsKeV1zCmcKaw43DosOuwpjChcKiwpzCoMKtwprCoMOiwqfCpMKgasKowqLCq8KuwrBhYmJlwqfCpsKqwqfCsGhqZWXCr8KpwqnDmsOqwpxewqDCmMOpwprCpsKZwqHCl8KVwpPCosOyw6PDrsOEw5/CrFdqUMKgw6zDm8Oow7HClMKewpdgwqrCpcKwwqDDtw=="
-},
-{
-    "key": "小米尘落",
-    "name": "尘落｜APP",
-    "type": 3,
-    "api": "csp_Wetv",
-    "jar": "./jar/spider.png",
-    "searchable": 1,
-    "quickSearch": 1
 },
 {
     "key": "小米电影",
