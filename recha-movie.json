@@ -3294,7 +3294,7 @@
     },
     {
       "key": "hipy_js_奇珍异兽[官]",
-      "name": "🎖︎｜愛奇藝｜官源",
+      "name": "🎖︎｜愛奇異｜官源",
       "type": 3,
       "searchable": 1,
       "quickSearch": 1,
@@ -3313,7 +3313,7 @@
     },
     {
       "key": "爱奇艺弹幕",
-      "name": "🎖︎｜愛奇藝｜備用",
+      "name": "🎖︎｜愛奇異｜備用",
       "type": 3,
       "api": "./drpy_libs/drpy2.min.js",
       "ext": "https://gitee.com/PizazzXS/another-d/raw/master/movie/js/AQYDM.js"
