@@ -33,7 +33,7 @@
       },
       {
         "key": "Wexvipduanju",
-        "name": "📺｜牛综短剧",
+        "name": "📺｜牛二短剧",
         "type": 3,
         "api": "csp_WexvipduanjuGuard",
         "jar": "./jar/wex.txt",
