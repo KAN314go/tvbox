@@ -4053,7 +4053,9 @@
       "playerType": "2",
       "api": "csp_BookTing",
       "jar": "./jar/PandaQ250227c.jar;md5;ceda5421cdce5fad2a2f6d8c71ae4311",
-      "searchable": 0,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
       "ext": "https://m.ting275.com",
       "style": {"type": "rect", "ratio": 1.333}
     },

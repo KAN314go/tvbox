@@ -215,17 +215,6 @@
       }
     },
     {
-      "key": "HG影视",
-      "name": "🥉｜HG｜普清◎龜速(浮水印廣告)",
-      "type": 3,
-      "api": "csp_AppYsV2",
-      "jar": "./jar/PandaQ250227c.jar;md5;ceda5421cdce5fad2a2f6d8c71ae4311",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": "https://cs.hgyx.vip/api2/api.php/app/"
-    },
-    {
       "key": "csp_神马影视",
       "name": "🥉｜18YS｜普清◎龜速(浮水印廣告)",
       "type": 3,
