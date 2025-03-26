@@ -25,6 +25,22 @@
           "changeable": 0
       },
       {
+        "key": "csp_AppXY",
+        "name": "📺｜星牙短剧",
+        "type": 3,
+        "jar":"./jar/PandaQ250227c.jar;md5;ceda5421cdce5fad2a2f6d8c71ae4311",
+        "api": "csp_AppXY"
+      },
+      {
+      "key": "py_红果网页",
+      "name": "📺｜红果短劇",
+      "type": 3,
+      "api": "./py/红果网页.py",
+      "searchable": 1,
+      "filterable": 0,
+      "changeable": 0
+      },
+      {
         "key": "河马短剧",
         "name": "📺｜河马短剧",
         "type": 3,
@@ -95,15 +111,6 @@
       "changeable": 0
     },
     {
-      "key": "py_红果网页",
-      "name": "📺｜红果短劇",
-      "type": 3,
-      "api": "./py/红果网页.py",
-      "searchable": 1,
-      "filterable": 0,
-      "changeable": 0
-    },
-    {
       "key": "旺旺采集资源",
       "name": "📺｜旺旺短剧",
       "type": 1,
@@ -113,13 +120,6 @@
       "changeable": 1
     },
     {
-        "key": "csp_AppXY",
-        "name": "📺｜星牙短剧",
-        "type": 3,
-        "jar":"./jar/PandaQ250227c.jar;md5;ceda5421cdce5fad2a2f6d8c71ae4311",
-        "api": "csp_AppXY"
-    },
-     {
         "key": "VIP",
         "name": "📺｜短剧VIP",
         "type": 3,
@@ -129,7 +129,7 @@
         "quickSearch": 0,
         "filterable": 0
     },
-     {
+    {
         "key": "NUU短剧",
         "name": "📺｜NUU短剧",
         "type": 3,
