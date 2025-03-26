@@ -2998,7 +2998,7 @@
     },
     {
       "key": "drpy_js_360影视",
-      "name": "🎖︎｜360｜",
+      "name": "🎖︎｜360｜官源",
       "type": 3,
       "searchable": 1,
       "quickSearch": 1,
@@ -3007,7 +3007,7 @@
     },
     {
       "key": "hipy_js_奇珍异兽[官]",
-      "name": "🎖︎｜愛奇异｜",
+      "name": "🎖︎｜愛奇藝｜官源",
       "type": 3,
       "searchable": 1,
       "quickSearch": 1,
@@ -3015,8 +3015,15 @@
       "ext": "./drpy_js/奇珍异兽[官].js"
     },
     {
+      "key": "爱奇艺弹幕",
+      "name": "🎖︎｜愛奇藝｜備用",
+      "type": 3,
+      "api": "./drpy_libs/drpy2.min.js",
+      "ext": "https://gitee.com/PizazzXS/another-d/raw/master/movie/js/AQYDM.js"
+    },
+    {
       "key": "drpy_js_百忙无果",
-      "name": "🎖︎｜芒果｜",
+      "name": "🎖︎｜芒果｜官源",
       "type": 3,
       "searchable": 1,
       "quickSearch": 1,
@@ -3024,8 +3031,15 @@
       "ext": "./drpy_js/百忙无果[官].js"
     },
     {
+      "key": "芒果弹幕",
+      "name": "🎖︎｜芒果｜備用",
+      "type": 3,
+      "api": "./drpy_libs/drpy2.min.js",
+      "ext": "https://gitee.com/PizazzXS/another-d/raw/master/movie/js/MGDM.js"
+    },
+    {
       "key": "drpy_js_腾云驾雾",
-      "name": "🎖︎｜腾讯｜",
+      "name": "🎖︎｜腾讯｜官源",
       "type": 3,
       "searchable": 1,
       "quickSearch": 1,
@@ -3033,8 +3047,15 @@
       "ext": "./drpy_js/腾云驾雾[官].js"
     },
     {
+      "key": "腾讯弹幕",
+      "name": "🎖︎｜腾讯｜備用",
+      "type": 3,
+      "api": "./drpy_libs/drpy2.min.js",
+      "ext": "https://gitee.com/PizazzXS/another-d/raw/master/movie/js/TXDM.js"
+    },
+    {
       "key": "drpy_js_菜狗",
-      "name": "🎖︎｜搜狗｜",
+      "name": "🎖︎｜搜狗｜官源",
       "type": 3,
       "searchable": 1,
       "quickSearch": 1,
@@ -3043,7 +3064,7 @@
     },
     {
       "key": "drpy_js_优酷",
-      "name": "🎖︎｜优酷｜",
+      "name": "🎖︎｜优酷｜官源",
       "type": 3,
       "searchable": 1,
       "quickSearch": 1,
@@ -3051,8 +3072,15 @@
       "ext": "./drpy_js/优酷[官].js"
     },
     {
+      "key": "优酷弹幕",
+      "name": "🎖︎｜优酷｜備用",
+      "type": 3,
+      "api": "./drpy_libs/drpy2.min.js",
+      "ext": "https://gitee.com/PizazzXS/another-d/raw/master/movie/js/YKDM.js"
+    },
+    {
       "key": "bilimd",
-      "name": "🎖︎｜bilbil｜",
+      "name": "🎖︎｜bilbil｜官源",
       "type": 3,
       "api": "csp_Bilimd",
       "jar": "./jar/xmbjm.jar",

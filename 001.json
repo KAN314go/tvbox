@@ -91,34 +91,7 @@
           "danmu": true
       }
   },
-  {
-      "key": "腾讯弹幕",
-      "name": "腾讯｜弹幕",
-      "type": 3,
-      "api": "./drpy_libs/drpy2.min.js",
-      "ext": "https://gitee.com/PizazzXS/another-d/raw/master/movie/js/TXDM.js"
-  },
-  {
-      "key": "优酷弹幕",
-      "name": "优酷｜弹幕",
-      "type": 3,
-      "api": "./drpy_libs/drpy2.min.js",
-      "ext": "https://gitee.com/PizazzXS/another-d/raw/master/movie/js/YKDM.js"
-  },
-  {
-      "key": "芒果弹幕",
-      "name": "芒果｜弹幕",
-      "type": 3,
-      "api": "./drpy_libs/drpy2.min.js",
-      "ext": "https://gitee.com/PizazzXS/another-d/raw/master/movie/js/MGDM.js"
-  },
-  {
-      "key": "爱奇艺弹幕",
-      "name": "爱奇艺｜弹幕",
-      "type": 3,
-      "api": "./drpy_libs/drpy2.min.js",
-      "ext": "https://gitee.com/PizazzXS/another-d/raw/master/movie/js/AQYDM.js"
-  },
+
   {
       "key": "米兔弹幕",
       "name": "米兔｜弹幕",
