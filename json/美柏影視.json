@@ -25,5 +25,7 @@
 "分类数组": "<li&&</li>",
 "分类标题": ">&&</a",
 "分类ID": "href=\"/dy/hd&&.html\"",
-"分类url": "https://www.mp4be.com/gaojisousuo/{cateId}-{area}-{by}-{class}-----{catePg}---{year}.html"
+"分类url": "https://www.mp4be.com/gaojisousuo/{cateId}-{area}-{by}------{catePg}---{year}.html",
+"分类": "电影$79#电视剧$38#综艺$40#动漫$90#短剧$97",
+"地區": "大陆&香港&台湾&美国&欧美&韩国&日本&泰国&新加坡&马来西亚&印度&英国&法国&加拿大&西班牙&俄罗斯&其它"
 }
