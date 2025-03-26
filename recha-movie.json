@@ -826,7 +826,7 @@
     {
       "key": "洽洽影视",
       "name": "🥇｜洽洽｜高清◎秒播(無廣告+APP)",
-      "jar": "./jar/PizazzGY.jar",
+      "jar": "./jar/PizazzGY.jar;md5;912aca622048f595aca9ec9abdfaabd2",
       "type": 3,
       "api": "csp_AppGZ",
       "searchable": 1,
@@ -2211,7 +2211,7 @@
       "name": "🥉｜二三｜高清◎龜速(無廣告+APP)",
       "type": 3,
       "api": "csp_Muou",
-      "jar": "./jar/PizazzGY.jar",
+      "jar": "./jar/PizazzGY.jar;md5;912aca622048f595aca9ec9abdfaabd2",
       "playerType": 2,
       "ext": "caHR0cHM6Ly8xMjN5c3cuY29tfDIz5b2x6KeGfDQuMS44"
     },
