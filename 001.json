@@ -6,7 +6,16 @@
 
 
 
-
+    {
+      "key": "韩小圈",
+      "name": "韩小圈｜APP",
+      "type": 3,
+      "api": "csp_HanXiaoQuan",
+      "jar": "./jar/spider.png",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+  },
   {
       "key": "天天弹幕",
       "name": "天天｜弹幕",
@@ -163,49 +172,6 @@
           "danmu": true
       }
   },
-  {
-    "key": "星芽短剧",
-    "name": "星芽｜短剧",
-    "type": 3,
-    "api": "csp_AppXY",
-    "jar": "./jar/spider.png",
-    "searchable": 1,
-    "quickSearch": 0,
-    "filterable": 0
-},
-{
-    "key": "河马短剧",
-    "name": "河马｜短剧",
-    "type": 3,
-    "api": "csp_AppHMDJ",
-    "jar": "./jar/spider.png",
-    "searchable": 1,
-    "quickSearch": 0,
-    "filterable": 0,
-    "ext": "KhY021WelCEl+6MsvwnzaPussky/EAoc9z7C4keyHaEQ+sKbXhMKd83VjTL7Ls6+m7XDIcGdziOxPv79y/h4QCvmOEJmZ1VD6dopzAVxkFzEFw=="
-},
-{
-    "key": "爱看短剧",
-    "name": "爱看｜短剧",
-    "type": 3,
-    "api": "https://gitee.com/PizazzXS/another-d/raw/master/movie/py/AKDJ.py",
-    "jar": "./jar/spider.png",
-    "searchable": 1,
-    "changeable": 1,
-    "quickSearch": 1,
-    "filterable": 1,
-    "playerType": 2
-},
-{
-    "key": "韩小圈",
-    "name": "韩小圈｜APP",
-    "type": 3,
-    "api": "csp_HanXiaoQuan",
-    "jar": "./jar/spider.png",
-    "searchable": 1,
-    "quickSearch": 1,
-    "filterable": 1
-},
 {
     "key": "HG影视",
     "name": "HG影视｜APP",

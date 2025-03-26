@@ -15,6 +15,7 @@
         "filterable": 1,
         "ext": "./json/91duanju.json"
       },
+      
       {
           "key": "短剧go",
           "name": "📺｜短剧go",
@@ -23,6 +24,39 @@
           "searchable": 1,
           "quickSearch": 0,
           "changeable": 0
+      },
+      {
+        "key": "星芽短剧",
+        "name": "星芽短剧",
+        "type": 3,
+        "api": "csp_AppXY",
+        "jar": "./jar/spider.png",
+        "searchable": 1,
+        "quickSearch": 0,
+        "filterable": 0
+      },
+      {
+        "key": "河马短剧",
+        "name": "河马短剧",
+        "type": 3,
+        "api": "csp_AppHMDJ",
+        "jar": "./jar/spider.png",
+        "searchable": 1,
+        "quickSearch": 0,
+        "filterable": 0,
+        "ext": "KhY021WelCEl+6MsvwnzaPussky/EAoc9z7C4keyHaEQ+sKbXhMKd83VjTL7Ls6+m7XDIcGdziOxPv79y/h4QCvmOEJmZ1VD6dopzAVxkFzEFw=="
+      },
+      {
+        "key": "爱看短剧",
+        "name": "爱看短剧",
+        "type": 3,
+        "api": "https://gitee.com/PizazzXS/another-d/raw/master/movie/py/AKDJ.py",
+        "jar": "./jar/spider.png",
+        "searchable": 1,
+        "changeable": 1,
+        "quickSearch": 1,
+        "filterable": 1,
+        "playerType": 2
       },
       {
         "key":"csp_XBPQ_短剧4",
@@ -63,13 +97,6 @@
       "changeable": 0
     },
     {
-      "key": "csp_AppXY",
-      "name": "📺｜上头短剧",
-      "type": 3,
-      "jar": "./jar/mi-0319.jar;md5;b73ed98a0a285189794be3c8d9c3a335",
-      "api": "csp_AppXYGuard"
-    },
-    {
       "key": "py_甜圈短剧",
       "name": "📺｜甜圈短剧",
       "type": 3,
@@ -102,17 +129,6 @@
         "type": 3,
         "jar":"./jar/PandaQ250227c.jar;md5;ceda5421cdce5fad2a2f6d8c71ae4311",
         "api": "csp_AppXY"
-    },
-    {
-        "key": "河马短剧",
-        "name": "📺｜河马秒播",
-        "type": 3,
-        "jar": "./jar/short.jar",
-        "api": "csp_AppHMDJ",
-        "searchable": 1,
-        "quickSearch": 0,
-        "filterable": 0,
-        "ext": "KhY021WelCEl+6MsvwnzaPussky/EAoc9z7C4keyHaEQ+sKbXhMKd83VjTL7Ls6+m7XDIcGdziOxPv79y/h4QCvmOEJmZ1VD6dopzAVxkFzEFw=="
     },
      {
         "key": "VIP",
