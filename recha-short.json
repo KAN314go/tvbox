@@ -32,15 +32,6 @@
         "api": "csp_AppXY"
       },
       {
-        "key": "Wexduanjuvip",
-        "name": "📺｜牛多短劇",
-        "type": 3,
-        "api": "csp_WexduanjuvipGuard",
-        "jar": "./jar/wex.txt",
-        "searchable": 1,
-        "changeable": 1
-      },	
-      {
         "key": "Wexvipduanju",
         "name": "📺｜牛综短剧",
         "type": 3,
