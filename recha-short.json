@@ -15,7 +15,6 @@
         "filterable": 1,
         "ext": "./json/91duanju.json"
       },
-      
       {
           "key": "短剧go",
           "name": "📺｜短剧go",
@@ -26,18 +25,8 @@
           "changeable": 0
       },
       {
-        "key": "星芽短剧",
-        "name": "星芽短剧",
-        "type": 3,
-        "api": "csp_AppXY",
-        "jar": "./jar/spider.png",
-        "searchable": 1,
-        "quickSearch": 0,
-        "filterable": 0
-      },
-      {
         "key": "河马短剧",
-        "name": "河马短剧",
+        "name": "📺｜河马短剧",
         "type": 3,
         "api": "csp_AppHMDJ",
         "jar": "./jar/spider.png",
@@ -48,7 +37,7 @@
       },
       {
         "key": "爱看短剧",
-        "name": "爱看短剧",
+        "name": "📺｜爱看短剧",
         "type": 3,
         "api": "https://gitee.com/PizazzXS/another-d/raw/master/movie/py/AKDJ.py",
         "jar": "./jar/spider.png",
@@ -89,7 +78,7 @@
     },
     {
       "key": "py_剧多短剧APP",
-      "name": "📺｜剧多短剧｜APP",
+      "name": "📺｜剧多短剧",
       "type": 3,
       "api": "./py/剧多短剧APP.py",
       "searchable": 1,
