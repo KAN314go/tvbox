@@ -120,7 +120,7 @@
       "name": "🥇｜獨牛｜高清◎秒播(無廣告)",
       "type": 3,
       "api": "csp_WexdubokuGuard",
-      "jar": "./jar/wex.jar",
+      "jar": "./jar/wex.txt",
       "searchable": 0,
       "changeable": 1
     },
