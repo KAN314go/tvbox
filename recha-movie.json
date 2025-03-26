@@ -121,7 +121,7 @@
       "type": 3,
       "api": "csp_WexdubokuGuard",
       "jar": "./jar/wex.jar",
-      "searchable": 1,
+      "searchable": 0,
       "changeable": 1
     },
     {
@@ -218,8 +218,8 @@
       "type": 3,
       "api": "csp_WexXb6vGuard",
       "jar": "./jar/wex.txt",
-      "searchable": 1,
-      "changeable": 0
+      "searchable": 0,
+      "changeable": 1
     },
     {
       "key": "csp_SaoHuo",
