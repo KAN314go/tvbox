@@ -106,19 +106,7 @@
       "api": "./drpy_libs/drpy2.min.js",
       "ext": "https://gitee.com/PizazzXS/another-d/raw/master/movie/js/ZJDM.js"
   },
-  {
-      "key": "三六零弹幕",
-      "name": "三六零｜弹幕",
-      "type": 3,
-      "api": "csp_Sp360",
-      "jar": "./jar/spider.png",
-      "searchable": 1,
-      "filterable": 1,
-      "changeable": 1,
-      "ext": {
-          "danmu": true
-      }
-  },
+
   {
       "key": "机器人弹幕",
       "name": "机器人｜弹幕",

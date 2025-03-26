@@ -3006,6 +3006,19 @@
       "ext": "./drpy_js/360影视[官].js"
     },
     {
+      "key": "三六零弹幕",
+      "name": "🎖︎｜360｜備用",
+      "type": 3,
+      "api": "csp_Sp360",
+      "jar": "./jar/spider.png",
+      "searchable": 1,
+      "filterable": 1,
+      "changeable": 1,
+      "ext": {
+          "danmu": true
+      }
+    },
+    {
       "key": "hipy_js_奇珍异兽[官]",
       "name": "🎖︎｜愛奇藝｜官源",
       "type": 3,
