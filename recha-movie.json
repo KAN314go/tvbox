@@ -3944,28 +3944,8 @@
       "changeable": 0
     },
     {
-      "key": "直播转点播1",
-      "name": "㊙︎｜直播转点播[V2]",
-      "type": 3,
-      "searchable": 1,
-      "timeout": 60,
-      "api": "https://zhangqun66.com/zq/cat/live2vod.js",
-      "ext": "https://zhangqun66.com/zq/cat/feimaolive.json",
-      "jar": "./jar/fm.jar;md5;41c87635d7592069884a5dafa12acabe",
-      "style": {"type": "list", "ratio": 1.1}
-    },
-    {
-      "key": "直播转点播",
-      "name": "㊙︎｜直播转点播[V3]",
-      "type": 3,
-      "style": {"type": "oval"},
-      "api": "https://raw.githubusercontent.com/sqspot/tac/main/lib/live2cms.js",
-      "ext": "https://raw.githubusercontent.com/sqspot/tac/main/live2tv_sq.txt",
-      "jar": "./jar/panda1123.jar;md5;d9004aa2e16f60b04baed361713fb710"
-    },
-    {
-      "key": "直播转点播2",
-      "name": "㊙︎｜直播转点播[V4]",
+      "key": "直播转点播vod",
+      "name": "㊙︎｜直播转点播[vod]",
       "type": 3,
       "searchable": 1,
       "api": "https://raw.githubusercontent.com/sqspot/tac/main/lib/live2vod.js",
@@ -3974,20 +3954,11 @@
     },
     {
       "key": "直播转点播s",
-      "name": "㊙︎｜直播转点播[V5]",
+      "name": "㊙︎｜直播转点播[cms]",
       "type": 3,
       "style": {"type": "oval"},
       "api": "https://raw.githubusercontent.com/sqspot/tac/main/lib/live2cms.js",
       "ext": "https://raw.githubusercontent.com/sqspot/tac/main/live2tv_sq_s.txt",
-      "jar": "./jar/panda1123.jar;md5;d9004aa2e16f60b04baed361713fb710"
-    },
-    {
-      "key": "直播转点播s2",
-      "name": "㊙︎｜直播转点播[V6]",
-      "type": 3,
-      "searchable": 1,
-      "api": "https://raw.githubusercontent.com/sqspot/tac/main/lib/live2vod.js",
-      "ext": "https://raw.githubusercontent.com/sqspot/tac/main/live2tv_sq_s.m3u",
       "jar": "./jar/panda1123.jar;md5;d9004aa2e16f60b04baed361713fb710"
     },
     {
