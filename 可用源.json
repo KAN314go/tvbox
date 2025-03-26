@@ -7,45 +7,22 @@
     "sites": [ 
 
     {
-        "key": "py_芒",
-        "name": "⏭｜芒果｜PYTHON",
-        "type": 3,
-        "api": "./py/py_芒.py",
-        "searchable": 1,
-        "quickSearch": 0,
-        "filterable": 0,
-        "changeable": 0
-    },
-    {
-      "key": "py_优",
-      "name": "⏭｜优酷｜PYTHON",
+      "key": "csp_飄花電影網",
+      "name": "🥉｜飄花(汰除)｜普清◎龜速(浮水印廣告)",
       "type": 3,
-      "api": "./py/py_芒.py",
+      "api": "csp_XBPQ",
+      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
       "searchable": 1,
-      "quickSearch": 0,
-      "filterable": 0,
-      "changeable": 0
-  },
-  {
-    "key": "py_腾",
-    "name": "⏭｜腾訊｜PYTHON",
-    "type": 3,
-    "api": "./py/py_芒.py",
-    "searchable": 1,
-    "quickSearch": 0,
-    "filterable": 0,
-    "changeable": 0
-},
-{
-  "key": "py_爱",
-  "name": "⏭｜爱奇異｜PYTHON",
-  "type": 3,
-  "api": "./py/py_爱.py",
-  "searchable": 1,
-  "quickSearch": 0,
-  "filterable": 0,
-  "changeable": 0
-},
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": {
+        "线路数组": "class=\"stui-pannel-box b playlist mb\">&&</div>",
+        "简介": "display: none;\">&&</span>",
+        "分类url": "https://www.kahlercom.com/vodshow/{cateId}-{area}-{by}------{catePg}---{year}.html",
+        "分类": "電影$1#電視劇$2#綜藝$3#動漫$4",
+        "地区": "大陆&香港&台湾&美国&法国&英国&日本&韩国&德国&泰国&印度&意大利&西班牙&加拿大&其他||內地&韩国&香港&台湾&日本&美国&泰国&英国&新加坡&其他||内地&港台&日韩&欧美||国产&日本&欧美&其他"
+      }
+    },
     {
       "key": "csp_4K影院",
       "name": "🎥｜四影｜高清◎秒播(超多廣告)",

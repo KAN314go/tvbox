@@ -154,8 +154,8 @@
       "type": 3,
       "api": "csp_WexquickvodGuard",
       "jar": "./jar/wex.txt",
-      "searchable": 1,
-      "changeable": 1
+      "searchable": 0,
+      "changeable": 0
     },
     {
       "key": "Wexzxzj",
@@ -2457,23 +2457,6 @@
       }
     },
     {
-      "key": "csp_飄花電影網",
-      "name": "🥉｜飄花｜普清◎龜速(浮水印廣告)",
-      "type": 3,
-      "api": "csp_XBPQ",
-      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": {
-        "线路数组": "class=\"stui-pannel-box b playlist mb\">&&</div>",
-        "简介": "display: none;\">&&</span>",
-        "分类url": "https://www.kahlercom.com/vodshow/{cateId}-{area}-{by}------{catePg}---{year}.html",
-        "分类": "電影$1#電視劇$2#綜藝$3#動漫$4",
-        "地区": "大陆&香港&台湾&美国&法国&英国&日本&韩国&德国&泰国&印度&意大利&西班牙&加拿大&其他||內地&韩国&香港&台湾&日本&美国&泰国&英国&新加坡&其他||内地&港台&日韩&欧美||国产&日本&欧美&其他"
-      }
-    },
-    {
       "key": "csp_咕咚電影網",
       "name": "🥉｜咕咚｜普清◎秒播(浮水印廣告)",
       "type": 3,
@@ -3319,6 +3302,16 @@
       "ext": "./drpy_js/奇珍异兽[官].js"
     },
     {
+      "key": "py_爱",
+      "name": "🎖︎｜爱奇異｜PYTHON",
+      "type": 3,
+      "api": "./py/py_爱.py",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 0,
+      "changeable": 0
+    },
+    {
       "key": "爱奇艺弹幕",
       "name": "🎖︎｜愛奇藝｜備用",
       "type": 3,
@@ -3335,6 +3328,16 @@
       "ext": "./drpy_js/百忙无果[官].js"
     },
     {
+      "key": "py_芒",
+      "name": "🎖︎｜芒果｜PYTHON",
+      "type": 3,
+      "api": "./py/py_芒.py",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 0,
+      "changeable": 0
+    },
+    {
       "key": "芒果弹幕",
       "name": "🎖︎｜芒果｜備用",
       "type": 3,
@@ -3349,6 +3352,16 @@
       "quickSearch": 1,
       "api": "./drpy_libs/drpy2.min.js",
       "ext": "./drpy_js/腾云驾雾[官].js"
+    },
+    {
+      "key": "py_腾",
+      "name": "🎖︎｜腾訊｜PYTHON",
+      "type": 3,
+      "api": "./py/py_腾.py",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 0,
+      "changeable": 0
     },
     {
       "key": "腾讯弹幕",
@@ -3374,6 +3387,16 @@
       "quickSearch": 1,
       "api": "./drpy_libs/drpy2.min.js",
       "ext": "./drpy_js/优酷[官].js"
+    },
+    {
+      "key": "py_优",
+      "name": "🎖︎｜优酷｜PYTHON",
+      "type": 3,
+      "api": "./py/py_芒.py",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 0,
+      "changeable": 0
     },
     {
       "key": "优酷弹幕",
