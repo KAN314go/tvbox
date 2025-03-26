@@ -32,93 +32,11 @@
       }
   },
   {
-      "key": "热播弹幕",
-      "name": "热播｜弹幕",
-      "type": 3,
-      "api": "csp_TianTian",
-      "jar": "./jar/spider.png",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "playerType": 1,
-      "ext": {
-          "danmu": true,
-          "site": "aHR0cDovL3YucmJvdHYuY24="
-      }
-  },
-  {
-      "key": "浪酷弹幕",
-      "name": "浪酷｜弹幕",
-      "type": 3,
-      "api": "csp_TianTian",
-      "jar": "./jar/spider.png",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "playerType": 1,
-      "ext": {
-          "danmu": true,
-          "site": "aHR0cDovL3YubGt1eXMuY24="
-      }
-  },
-  {
-      "key": "文才弹幕",
-      "name": "文才｜弹幕",
-      "type": 3,
-      "api": "csp_Jpys",
-      "jar": "./jar/spider.png",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": {
-          "danmu": true
-      }
-  },
-  {
-      "key": "立播弹幕",
-      "name": "立播｜弹幕",
-      "type": 3,
-      "api": "csp_Libvio",
-      "jar": "./jar/spider.png",
-      "searchable": 1,
-      "filterable": 1,
-      "changeable": 1,
-      "ext": {
-          "token": "http://127.0.0.1:9978/file/TVBox/token.txt",
-          "cookie": "http://127.0.0.1:9978/file/TVBox/quark.txt",
-          "uc_cookie": "http://127.0.0.1:9978/file/TVBox/uc.txt",
-          "site": "https://www.libvio.cc",
-          "danmu": true
-      }
-  },
-
-  {
-      "key": "米兔弹幕",
-      "name": "米兔｜弹幕",
-      "type": 3,
-      "api": "./drpy_libs/drpy2.min.js",
-      "ext": "https://gitee.com/PizazzXS/another-d/raw/master/movie/js/MTDM.js"
-  },
-  {
       "key": "追剧弹幕",
       "name": "追剧｜弹幕",
       "type": 3,
       "api": "./drpy_libs/drpy2.min.js",
       "ext": "https://gitee.com/PizazzXS/another-d/raw/master/movie/js/ZJDM.js"
-  },
-
-  {
-      "key": "机器人弹幕",
-      "name": "机器人｜弹幕",
-      "type": 3,
-      "api": "csp_Ikanbot",
-      "jar": "./jar/spider.png",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": {
-          "danmu": true
-      }
   },
   {
       "key": "小苹果弹幕",
@@ -145,18 +63,6 @@
     "ext": "https://cs.hgyx.vip/api2/api.php/app/"
 },
 {
-    "key": "光速影视",
-    "name": "光速｜APP",
-    "type": 3,
-    "api": "https://gitee.com/PizazzXS/another-d/raw/master/movie/py/GSYS.py",
-    "jar": "./jar/spider.png",
-    "searchable": 1,
-    "changeable": 1,
-    "quickSearch": 1,
-    "filterable": 1,
-    "playerType": 2
-},
-{
     "key": "火车影视",
     "name": "火车｜APP",
     "type": 3,
@@ -172,8 +78,7 @@
     "key": "美帕影视",
     "name": "美帕｜APP",
     "type": 3,
-    "api": "https://gitee.com/PizazzXS/another-d/raw/master/movie/py/MPYS.py",
-    "jar": "./jar/spider.png",
+    "api": "./py/美帕APP.py",
     "searchable": 1,
     "changeable": 1,
     "quickSearch": 1,
@@ -184,22 +89,12 @@
     "key": "嗨皮影视",
     "name": "嗨皮｜APP",
     "type": 3,
-    "api": "https://gitee.com/PizazzXS/another-d/raw/master/movie/py/HPYS.py",
-    "jar": "./jar/spider.png",
+    "api": "./py/嗨皮APP.py",
     "searchable": 1,
     "changeable": 1,
     "quickSearch": 1,
     "filterable": 1,
     "playerType": 2
-},
-{
-    "key": "巧技",
-    "name": "巧技｜APP",
-    "type": 3,
-    "api": "csp_qiao2",
-    "jar": "./jar/spider.png",
-    "playerType": 2,
-    "ext": "https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1740038979341/cksp.txt"
 },
 {
     "key": "木头",
@@ -218,15 +113,6 @@
     "jar": "./jar/spider.png",
     "playerType": 2,
     "ext": "caHR0cDovL2EubXVxaXhoLnRvcDo1NjIzfOW5leWQr+aYn+ays3w0LjEuOA=="
-},
-{
-    "key": "油条",
-    "name": "油条｜APP",
-    "type": 3,
-    "api": "csp_Muou",
-    "jar": "./jar/spider.png",
-    "playerType": 2,
-    "ext": "caHR0cDovL2FwcC53dWlxLmNufOS8mOS8mOWFlHw0LjEuOA=="
 },
 {
     "key": "龙虾",
@@ -310,15 +196,6 @@
     "ext": "saHR0cDovLzExMy40NS4yNDMuMjMzL211eWUudHh0fFJ1TjlMUnZ3VFJncFFucEt8UnVOOUxSdndUUmdwUW5wS3w1NDc="
 },
 {
-    "key": "蝴蝶",
-    "name": "蝴蝶｜APP",
-    "type": 3,
-    "api": "csp_Hudie",
-    "jar": "./jar/spider.png",
-    "playerType": 2,
-    "ext": "eaHR0cHM6Ly9kLmRjbW92aWUudG9w"
-},
-{
     "key": "快看",
     "name": "快看｜APP",
     "type": 3,
@@ -351,17 +228,6 @@
     "quickSearch": 0,
     "filterable": 0,
     "ext": "w7TCmsK8w5rDrcKYwoPCmcKkw57CmsK0wpnCoVpcUFfDgsOhw6PDrcORwqLCosKUV8KzwpPCocOiw6jCnMKkwoZhwqrCrMKhwqXCmlrCpMKZwqDCoMKtwprCoMOV5Ya46YSY5o+V5ZCTwqXlh5/kvpHlkbDCtOW+pOintui1tOa7gOetksOQwqHCpcKaWnHClcKjw4TDmMOzwqDCtFNXdMKow7DCvMOtw63DrMKXwofCksKJw6nDlcOmw7DDqFpcUFfCusOYw63DgsOwWmpQV8K9w6vDscOCw63Cp8KiwpTCh8Obw4zDqsObw6bCqsKeV1zCmcKaw43DosOuwpjChcKiwpzCoMKtwprCoMOiwqfCpMKgasKowqLCq8KuwrBhYmJlwqfCpsKqwqfCsGhqZWXCr8KpwqnDmsOqwpxewqDCmMOpwprCpsKZwqHCl8KVwpPCosOyw6PDrsOEw5/CrFdqUMKgw6zDm8Oow7HClMKewpdgwqrCpcKwwqDDtw=="
-},
-{
-    "key": "洽洽影视",
-    "name": "洽洽｜APP",
-    "type": 3,
-    "api": "csp_AppGZ",
-    "jar": "./jar/spider.png",
-    "searchable": 1,
-    "quickSearch": 1,
-    "filterable": 1,
-    "ext": "KhY021WelCEl+6MsvwnzaPussky6FQJcpCjT9V7/D61ft9vQAhNEPOYSMZVJSODd/JOOSOwUzim+9qfvgpNz7SvUPpAkXAweyrp76WY8s5EBwW7DBMY="
 },
 {
     "key": "小米尘落",
