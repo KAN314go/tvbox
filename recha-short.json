@@ -41,15 +41,6 @@
         "changeable": 1
       },		
       {
-        "key": "Wexduanju001",
-        "name": "📺｜牛极短剧",
-        "type": 3,
-        "api": "csp_Wexduanju001Guard",
-        "jar": "./jar/wex.txt",
-        "searchable": 1,
-        "changeable": 1
-      },
-      {
       "key": "py_红果网页",
       "name": "📺｜红果短劇",
       "type": 3,
