@@ -1,58 +1,7 @@
 {
   "spider": "./jar/pg.jar",
- 
- 
-   "wallpaper": "https://牛逼.王二小放牛娃.xyz/",
-   "logo": "https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1716818643045/wexfnw.gif",
    "sites": [
-     {
-     "key":"Douban",
-     "name":"🐮【公众号：王二小放牛娃】🐮",
-     "type": 3, 
-     "api": "csp_DoubanGuard",
-     "jar": "./jar/wex.txt",
-     "searchable": 0,
-     "quickSearch": 0,
-     "filterable": 0,
-       "ext": "https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1729769265800/douban.json"
-   },
-     {
-     "key":"Doubana",
-     "name":"⬇️【网盘类先扫码】⬇️",
-     "type": 3, 
-     "api": "csp_DoubanGuard",
-     "searchable": 0,
-     "quickSearch": 0,
-     "filterable": 0,
-       "ext": "https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1729769265800/douban.json"
-   },
-   {
-       "key": "Wexconfig",
-       "name": "🐮通用类型┃配置中心🐮",
-       "type": 3,
-       "api": "csp_WexconfigGuard",
-       "searchable": 0,
-       "changeable": 0,
-     "indexs": 0
-     },
-   {
-       "key": "Wexokconfig",
-       "name": "🐮影视专用┃配置中心🐮",
-       "type": 3,
-       "api": "csp_WexokconfigGuard",
-       "searchable": 0,
-       "changeable": 0,
-     "indexs": 0
-     },
-   {
-       "key": "Wexhanxiaoquan",
-       "name": "💥韩剧┃弹幕💥",
-       "type": 3,
-       "api": "csp_WexhanxiaoquanGuard",
-       "jar": "./jar/wex.txt",
-       "searchable": 1,
-       "changeable": 1
-     },
+
      {
        "key": "賤賤",
        "name": "💥賤片┃p2p💥",
@@ -150,15 +99,6 @@
        "name": "🎇大鼻涕┃秒播🎇",
        "type": 3,
        "api": "csp_WexbttwoGuard",
-       "jar": "./jar/wex.txt",
-       "searchable": 1,
-       "changeable": 1
-     },
-   {
-       "key": "WexikanbotGuard",
-       "name": "🎇爱看┃采集🎇",
-       "type": 3,
-       "api": "csp_WexikanbotGuard",
        "jar": "./jar/wex.txt",
        "searchable": 1,
        "changeable": 1
