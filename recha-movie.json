@@ -16,6 +16,16 @@
       "changeable": 1
     },
     {
+			"key": "豆瓣2",
+			"name": "🇹🇼【老王點播專區(可選站)】🇹🇼",
+			"type": 3,
+			"api": "csp_Douban",
+			"searchable": 0,
+			"changeable": 1,
+			"indexs":1,
+			"ext": "./lib/tokenm.json$$$./lib/douban.json"
+		},
+    {
       "key": "网盘配置",
       "name": "Youtube、网盘、弹幕配置",
       "type": 3,
