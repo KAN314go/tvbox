@@ -69,8 +69,8 @@
       "type": 3,
       "api": "csp_Auete",
       "timeout": 15,
-      "searchable": 0,
-      "quickSearch": 0,
+      "searchable": 1,
+      "quickSearch": 1,
       "changeable": 1,
       "ext": "https://auete.pro/",
       "jar": "./jar/fan.txt;md5;8851819289f80deae32319080028db3b"
