@@ -18,7 +18,7 @@
       "name": "🇹🇼｜點播搜索｜可選站",
       "type": 3,
       "api": "csp_Douban",
-      "searchable": 0,
+      "searchable": 1,
       "changeable": 1,
       "indexs": 1,
       "ext": "./lib/tokenm.json$$$./lib/douban.json"
@@ -28,7 +28,7 @@
       "name": "🇹🇼｜Youtube、网盘、弹幕配置",
       "type": 3,
       "api": "csp_Config",
-      "searchable": 0,
+      "searchable": 1,
       "changeable": 0,
       "ext": "./json/tokenm.json",
       "style": {"type": "rect", "ratio": 1.5}
@@ -119,7 +119,7 @@
       "type": 3,
       "api": "csp_WexdubokuGuard",
       "jar": "./jar/wex.txt",
-      "searchable": 0,
+      "searchable": 1,
       "changeable": 1
     },
     {
@@ -270,7 +270,7 @@
       "type": 3,
       "api": "csp_WexXb6vGuard",
       "jar": "./jar/wex.txt",
-      "searchable": 0,
+      "searchable": 1,
       "changeable": 1
     },
     {
@@ -279,7 +279,7 @@
       "type": 3,
       "api": "csp_WexquickvodGuard",
       "jar": "./jar/wex.txt",
-      "searchable": 0,
+      "searchable": 1,
       "changeable": 1
     },
     {
@@ -288,7 +288,7 @@
       "type": 3,
       "api": "csp_WexzxzjGuard",
       "jar": "./jar/wex.txt",
-      "searchable": 0,
+      "searchable": 1,
       "changeable": 1
     },
     {
@@ -297,7 +297,7 @@
       "type": 3,
       "api": "csp_WexbaozitvGuard",
       "jar": "./jar/wex.txt",
-      "searchable": 0,
+      "searchable": 1,
       "changeable": 1
     },
     {
@@ -306,7 +306,7 @@
       "type": 3,
       "api": "csp_WexNmysGuard",
       "jar": "./jar/wex.txt",
-      "searchable": 0,
+      "searchable": 1,
       "changeable": 1
     },
     {
@@ -315,7 +315,7 @@
       "type": 3,
       "api": "csp_WexDiduanysGuard",
       "jar": "./jar/wex.txt",
-      "searchable": 0,
+      "searchable": 1,
       "changeable": 1
     },
     {
@@ -324,7 +324,7 @@
       "type": 3,
       "api": "csp_WexBDysGuard",
       "jar": "./jar/wex.txt",
-      "searchable": 0,
+      "searchable": 1,
       "changeable": 1
     },
     {
@@ -1098,7 +1098,7 @@
       "type": 3,
       "api": "csp_WexF4kvmGuard",
       "jar": "./jar/wex.txt",
-      "searchable": 0,
+      "searchable": 1,
       "changeable": 1
     },
     {
