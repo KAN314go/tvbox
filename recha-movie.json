@@ -118,7 +118,7 @@
       "type": 3,
       "api": "csp_WexdubokuGuard",
       "jar": "./jar/wex.txt;md5;6237e73e89cd1cc8ed815ad7712c6b65;md5;6237e73e89cd1cc8ed815ad7712c6b65",
-      "searchable": 0,
+      "searchable": 1,
       "changeable": 1
     },
     {
@@ -282,19 +282,19 @@
       "changeable": 1
     },
     {
-      "key": "Wexzxzj",
-      "name": "🥇｜外剧｜高清◎秒播(無廣告)",
+      "key": "Wexbaozitv",
+      "name": "🥇｜包子｜高清◎秒播(無廣告)",
       "type": 3,
-      "api": "csp_WexzxzjGuard",
+      "api": "csp_WexbaozitvGuard",
       "jar": "./jar/wex.txt;md5;6237e73e89cd1cc8ed815ad7712c6b65",
       "searchable": 0,
       "changeable": 1
     },
     {
-      "key": "Wexbaozitv",
-      "name": "🥇｜包子｜高清◎秒播(無廣告)",
+      "key": "Wexzxzj",
+      "name": "🥇｜外剧｜高清◎秒播(無廣告)",
       "type": 3,
-      "api": "csp_WexbaozitvGuard",
+      "api": "csp_WexzxzjGuard",
       "jar": "./jar/wex.txt;md5;6237e73e89cd1cc8ed815ad7712c6b65",
       "searchable": 0,
       "changeable": 1
@@ -4051,7 +4051,7 @@
       "type": 3,
       "api": "csp_WexlaobaitingshuGuard",
       "jar": "./jar/wex.txt;md5;6237e73e89cd1cc8ed815ad7712c6b65",
-      "searchable": 0,
+      "searchable": 1,
       "changeable": 1
     },
     {
@@ -4060,7 +4060,7 @@
       "type": 3,
       "api": "csp_Wex275tingshuGuard",
       "jar": "./jar/wex.txt;md5;6237e73e89cd1cc8ed815ad7712c6b65",
-      "searchable": 0,
+      "searchable": 1,
       "changeable": 1
     },
     {
@@ -4673,7 +4673,10 @@
     {
       "name": "Cloudflare",
       "url": "https://cloudflare-dns.com/dns-query",
-      "ips": ["1.1.1.1", "1.0.0.1", "2606:4700:4700::1111","2606:4700:4700::1001"]
+      "ips": [
+        "1.1.1.1"             , "1.0.0.1"             , "2606:4700:4700::1111",
+        "2606:4700:4700::1001"
+      ]
     },
     {
       "name": "AdGuard",
@@ -4715,7 +4718,11 @@
         {"category": 4, "name": "enable-accurate-seek", "value": "0"},
         {"category": 4, "name": "mediacodec", "value": "0"},
         {"category": 4, "name": "mediacodec-auto-rotate", "value": "0"},
-        {"category": 4, "name": "mediacodec-handle-resolution-change","value": "0"},
+        {
+          "category": 4,
+          "name": "mediacodec-handle-resolution-change",
+          "value": "0"
+        },
         {"category": 4, "name": "mediacodec-hevc", "value": "0"},
         {"category": 1, "name": "dns_cache_timeout", "value": "600000000"}
       ]
@@ -4735,7 +4742,10 @@
         {"category": 4, "name": "enable-accurate-seek", "value": "0"},
         {"category": 4, "name": "mediacodec", "value": "1"},
         {"category": 4, "name": "mediacodec-auto-rotate", "value": "1"},
-        {"category": 4, "name": "mediacodec-handle-resolution-change","value": "1"
+        {
+          "category": 4,
+          "name": "mediacodec-handle-resolution-change",
+          "value": "1"
         },
         {"category": 4, "name": "mediacodec-hevc", "value": "1"},
         {"category": 1, "name": "dns_cache_timeout", "value": "600000000"}
