@@ -237,10 +237,7 @@
       "api": "csp_Xdai",
       "jar": "./jar/PizazzGY.jar",
       "playerType": 1,
-      "ext": {
-        "danmu": true,
-        "site": "jaHR0cDovL3BweC5iangzNjUudG9wfHBpcGl4aWEyMTc1MjIzMjR8cGlwaXhpYTIxNzUyMjMyNHw1MDY="
-        }
+      "ext": "jaHR0cDovL3BweC5iangzNjUudG9wfHBpcGl4aWEyMTc1MjIzMjR8cGlwaXhpYTIxNzUyMjMyNHw1MDY="
   },
     {
       "key": "光速",
@@ -249,10 +246,7 @@
       "api": "csp_Xdai",
       "jar": "./jar/PizazzGY.jar",
       "playerType": 1,
-      "ext": {
-        "danmu": true,
-        "site": "jaHR0cDovLzU5LjE1My4xNjcuMTM3Ojg4OTl8NGQ4M2I4N2M0YzVlYTExMXw0ZDgzYjg3YzRjNWVhMTExfDQ2Mg=="
-        }
+      "ext": "jaHR0cDovLzU5LjE1My4xNjcuMTM3Ojg4OTl8NGQ4M2I4N2M0YzVlYTExMXw0ZDgzYjg3YzRjNWVhMTExfDQ2Mg=="
   },
   {
     "key": "玉米",
@@ -261,10 +255,7 @@
     "api": "csp_Xdai",
     "jar": "./jar/PizazzGY.jar",
     "playerType": 1,
-    "ext": {
-      "danmu": true,
-      "site": "jaHR0cHM6Ly93d3cuempjLmFwcC98YWI0ZTlhNDIxNjc1ZjE0YnxhYjRlOWE0MjE2NzVmMTRifDQ0Mg=="
-      }
+    "ext": "site": "jaHR0cHM6Ly93d3cuempjLmFwcC98YWI0ZTlhNDIxNjc1ZjE0YnxhYjRlOWE0MjE2NzVmMTRifDQ0Mg=="
 },
 {
   "key": "py_悠悠APP",
