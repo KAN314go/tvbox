@@ -117,7 +117,7 @@
       "name": "🥇｜獨牛｜藍光◎秒播(無廣告)",
       "type": 3,
       "api": "csp_WexdubokuGuard",
-      "jar": "./jar/wex.txt",
+      "jar": "./jar/wex.txt;md5;6237e73e89cd1cc8ed815ad7712c6b65;md5;6237e73e89cd1cc8ed815ad7712c6b65",
       "searchable": 1,
       "changeable": 1
     },
@@ -268,7 +268,7 @@
       "name": "🥇｜6V｜藍光◎秒播(無廣告)",
       "type": 3,
       "api": "csp_WexXb6vGuard",
-      "jar": "./jar/wex.txt",
+      "jar": "./jar/wex.txt;md5;6237e73e89cd1cc8ed815ad7712c6b65",
       "searchable": 1,
       "changeable": 1
     },
@@ -277,7 +277,7 @@
       "name": "🥇｜美剧｜高清◎秒播(無廣告)",
       "type": 3,
       "api": "csp_WexquickvodGuard",
-      "jar": "./jar/wex.txt",
+      "jar": "./jar/wex.txt;md5;6237e73e89cd1cc8ed815ad7712c6b65",
       "searchable": 1,
       "changeable": 1
     },
@@ -286,7 +286,7 @@
       "name": "🥇｜外剧｜高清◎秒播(無廣告)",
       "type": 3,
       "api": "csp_WexzxzjGuard",
-      "jar": "./jar/wex.txt",
+      "jar": "./jar/wex.txt;md5;6237e73e89cd1cc8ed815ad7712c6b65",
       "searchable": 1,
       "changeable": 1
     },
@@ -295,7 +295,7 @@
       "name": "🥇｜包子｜高清◎秒播(無廣告)",
       "type": 3,
       "api": "csp_WexbaozitvGuard",
-      "jar": "./jar/wex.txt",
+      "jar": "./jar/wex.txt;md5;6237e73e89cd1cc8ed815ad7712c6b65",
       "searchable": 1,
       "changeable": 1
     },
@@ -304,7 +304,7 @@
       "name": "🥇｜伯伯｜高清◎秒播(無廣告)",
       "type": 3,
       "api": "csp_WexNmysGuard",
-      "jar": "./jar/wex.txt",
+      "jar": "./jar/wex.txt;md5;6237e73e89cd1cc8ed815ad7712c6b65",
       "searchable": 1,
       "changeable": 1
     },
@@ -313,7 +313,7 @@
       "name": "🥇｜深渊｜高清◎秒播(無廣告)",
       "type": 3,
       "api": "csp_WexDiduanysGuard",
-      "jar": "./jar/wex.txt",
+      "jar": "./jar/wex.txt;md5;6237e73e89cd1cc8ed815ad7712c6b65",
       "searchable": 1,
       "changeable": 1
     },
@@ -322,7 +322,7 @@
       "name": "🥇｜滴滴｜高清◎秒播(無廣告)",
       "type": 3,
       "api": "csp_WexBDysGuard",
-      "jar": "./jar/wex.txt",
+      "jar": "./jar/wex.txt;md5;6237e73e89cd1cc8ed815ad7712c6b65",
       "searchable": 1,
       "changeable": 1
     },
@@ -1093,7 +1093,7 @@
       "name": "🥈｜纯享｜高清◎秒播(部分廣告)",
       "type": 3,
       "api": "csp_WexF4kvmGuard",
-      "jar": "./jar/wex.txt",
+      "jar": "./jar/wex.txt;md5;6237e73e89cd1cc8ed815ad7712c6b65",
       "searchable": 1,
       "changeable": 1
     },
@@ -4065,7 +4065,7 @@
       "name": "‍㊙︎｜白兔听书｜",
       "type": 3,
       "api": "csp_WexlaobaitingshuGuard",
-      "jar": "./jar/wex.txt",
+      "jar": "./jar/wex.txt;md5;6237e73e89cd1cc8ed815ad7712c6b65",
       "searchable": 1,
       "changeable": 1
     },
@@ -4074,7 +4074,7 @@
       "name": "‍㊙︎｜极品听书｜",
       "type": 3,
       "api": "csp_Wex275tingshuGuard",
-      "jar": "./jar/wex.txt",
+      "jar": "./jar/wex.txt;md5;6237e73e89cd1cc8ed815ad7712c6b65",
       "searchable": 1,
       "changeable": 1
     },
