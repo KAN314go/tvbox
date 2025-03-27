@@ -4673,10 +4673,7 @@
     {
       "name": "Cloudflare",
       "url": "https://cloudflare-dns.com/dns-query",
-      "ips": [
-        "1.1.1.1"             , "1.0.0.1"             , "2606:4700:4700::1111",
-        "2606:4700:4700::1001"
-      ]
+      "ips": ["1.1.1.1", "1.0.0.1", "2606:4700:4700::1111","2606:4700:4700::1001"]
     },
     {
       "name": "AdGuard",
@@ -4738,7 +4735,8 @@
         {"category": 4, "name": "enable-accurate-seek", "value": "0"},
         {"category": 4, "name": "mediacodec", "value": "1"},
         {"category": 4, "name": "mediacodec-auto-rotate", "value": "1"},
-        {"category": 4, "name": "mediacodec-handle-resolution-change","value": "1"},
+        {"category": 4, "name": "mediacodec-handle-resolution-change","value": "1"
+        },
         {"category": 4, "name": "mediacodec-hevc", "value": "1"},
         {"category": 1, "name": "dns_cache_timeout", "value": "600000000"}
       ]
