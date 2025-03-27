@@ -69,8 +69,8 @@
       "type": 3,
       "api": "csp_Auete",
       "timeout": 15,
-      "searchable": 1,
-      "quickSearch": 1,
+      "searchable": 0,
+      "quickSearch": 0,
       "changeable": 1,
       "ext": "https://auete.pro/",
       "jar": "./jar/fan.txt;md5;8851819289f80deae32319080028db3b"
@@ -107,7 +107,6 @@
       "name": "🥇｜獨播｜藍光◎秒播(無廣告)",
       "type": 4,
       "api": "https://tang.hz.cz/power/duboku?token=647c28ca",
-      "jar": "./jar/custom_QJ.jar;md5;6bd68323863c83157d6bf539faccacd4",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
@@ -183,7 +182,7 @@
       "name": "🥇｜現代｜藍光◎秒播(無廣告+APP)",
       "type": 3,
       "api": "csp_Xdai",
-      "jar": "./jar/QJ.jar;md5;6bd68323863c83157d6bf539faccacd4;md5;eb7676582d076a5505be5f23530e4f4d",
+      "jar": "./jar/PizazzGY.jar",
       "playerType": 1,
       "ext": "caHR0cHM6Ly94ZHlzLnZpcC9nZXRhcHAudHh0fHN6ZGp3ZGFwcHdjbm1kaGJ8c3pkandkYXBwd2NubWRoYnwxMTQ="
     },
@@ -391,7 +390,6 @@
       "name": "🥇｜歐唐｜高清◎秒播(無廣告)",
       "type": 4,
       "api": "https://tang.hz.cz/power/olelive?token=647c28ca",
-      "jar": "./jar/custom_QJ.jar;md5;6bd68323863c83157d6bf539faccacd4",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
@@ -653,7 +651,6 @@
       "name": "🥇｜安博｜高清◎秒播(無廣告)",
       "type": 4,
       "api": "https://tang.hz.cz/power/ub18?token=647c28ca",
-      "jar": "./jar/custom_QJ.jar;md5;6bd68323863c83157d6bf539faccacd4",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
@@ -933,7 +930,7 @@
     {
       "key": "洽洽影视",
       "name": "🥇｜洽洽｜高清◎秒播(無廣告+APP)",
-      "jar": "./jar/PizazzGY.jar;md5;912aca622048f595aca9ec9abdfaabd2",
+      "jar": "./jar/PizazzGY.jar",
       "type": 3,
       "api": "csp_AppGZ",
       "searchable": 1,
@@ -957,7 +954,7 @@
       "name": "🥇｜主角｜高清◎秒播(無廣告+APP)",
       "type": 3,
       "api": "csp_Muou",
-      "jar": "./jar/QJ.jar;md5;6bd68323863c83157d6bf539faccacd4",
+      "jar": "./jar/PizazzGY.jar",
       "playerType": 2,
       "ext": "caHR0cHM6Ly9tdW91Lmxpbmd1dHYuY2586L+95Ymn5b2x6ZmifDQuMS44"
     },
@@ -995,7 +992,7 @@
       "name": "🥇｜热播｜高清◎秒播(無廣告+APP)",
       "type": 3,
       "api": "csp_TianTian",
-      "jar": "./jar/QJ.jar;md5;6bd68323863c83157d6bf539faccacd4",
+      "jar": "./jar/PizazzGY.jar",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
@@ -1017,7 +1014,7 @@
       "name": "🥇｜苹果｜高清◎秒播(無廣告)",
       "type": 3,
       "api": "csp_Xpg",
-      "jar": "./jar/QJ.jar;md5;6bd68323863c83157d6bf539faccacd4;md5;eb7676582d076a5505be5f23530e4f4d",
+      "jar": "./jar/PizazzGY.jar",
       "searchable": 1,
       "quickSearch": 1,
       "changeable": 1
@@ -1085,7 +1082,6 @@
       "name": "🥈｜黑耳｜高清◎秒播(超多廣告)",
       "type": 4,
       "api": "https://tang.hz.cz/power/hme?token=647c28ca",
-      "jar": "./jar/custom_QJ.jar;md5;6bd68323863c83157d6bf539faccacd4",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
@@ -1214,7 +1210,7 @@
       "name": "🥈｜剧评｜普清◎秒播(無廣告)",
       "type": 3,
       "api": "csp_Jpys",
-      "jar": "./jar/QJ.jar;md5;6bd68323863c83157d6bf539faccacd4;md5;eb7676582d076a5505be5f23530e4f4d",
+      "jar": "./jar/PizazzGY.jar",
       "playerType": 1,
       "ext": "caHR0cHM6Ly93d3cuY2Zrajg2LmNvbQ=="
     },
@@ -1281,7 +1277,7 @@
       "name": "🥈｜浪酷｜高清◎秒播(跑馬燈廣告+APP)",
       "type": 3,
       "api": "csp_TianTian",
-      "jar": "./jar/QJ.jar;md5;6bd68323863c83157d6bf539faccacd4",
+      "jar": "./jar/PizazzGY.jar",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
@@ -2562,7 +2558,7 @@
       "name": "🎥｜二三｜高清◎龜速(無廣告+APP)",
       "type": 3,
       "api": "csp_Muou",
-      "jar": "./jar/PizazzGY.jar;md5;912aca622048f595aca9ec9abdfaabd2",
+      "jar": "./jar/PizazzGY.jar",
       "playerType": 2,
       "ext": "caHR0cHM6Ly8xMjN5c3cuY29tfDIz5b2x6KeGfDQuMS44"
     },
@@ -2571,7 +2567,7 @@
       "name": "🎥｜热播｜高清◎龜速(無廣+APP)",
       "type": 3,
       "api": "csp_TianTian",
-      "jar": "./jar/QJ.jar;md5;6bd68323863c83157d6bf539faccacd4;md5;eb7676582d076a5505be5f23530e4f4d",
+      "jar": "./jar/PizazzGY.jar",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
@@ -4614,6 +4610,15 @@
     {"name": "nnxv", "type": 0, "url": "https://jx.nnxv.cn/tv.php?url="}
   ],
   "rules": [
+    {
+      "name": "ofiii[台湾节点]",
+      "hosts": [
+          "www.ofiii.com"
+      ],
+      "script": [
+          "const play=document.getElementsByClassName(\"play_icon\")[0];const event=new MouseEvent(\"click\",{bubbles:!0,cancelable:!0,view:window,screenX:100,screenY:100,clientX:50,clientY:50,button:0,shiftKey:!1,ctrlKey:!1,altKey:!1,metaKey:!1,modifierState:0});play.dispatchEvent(event);"
+                ]
+    },
     {
       "name": "量子非凡广告",
       "hosts": [
