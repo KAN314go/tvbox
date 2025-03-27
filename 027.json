@@ -282,21 +282,21 @@
       "changeable": 1
     },
     {
-      "key": "Wexzxzj",
-      "name": "🥇｜外剧｜高清◎秒播(無廣告)",
-      "type": 3,
-      "api": "csp_WexzxzjGuard",
-      "jar": "./jar/wex.txt;md5;6237e73e89cd1cc8ed815ad7712c6b65",
-      "searchable": 1,
-      "changeable": 1
-    },
-    {
       "key": "Wexbaozitv",
       "name": "🥇｜包子｜高清◎秒播(無廣告)",
       "type": 3,
       "api": "csp_WexbaozitvGuard",
       "jar": "./jar/wex.txt;md5;6237e73e89cd1cc8ed815ad7712c6b65",
       "searchable": 0,
+      "changeable": 1
+    },
+    {
+      "key": "Wexzxzj",
+      "name": "🥇｜外剧｜高清◎秒播(無廣告)",
+      "type": 3,
+      "api": "csp_WexzxzjGuard",
+      "jar": "./jar/wex.txt;md5;6237e73e89cd1cc8ed815ad7712c6b65",
+      "searchable": 1,
       "changeable": 1
     },
     {
