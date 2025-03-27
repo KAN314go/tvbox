@@ -296,7 +296,7 @@
       "type": 3,
       "api": "csp_WexzxzjGuard",
       "jar": "./jar/wex.txt;md5;6237e73e89cd1cc8ed815ad7712c6b65",
-      "searchable": 1,
+      "searchable": 0,
       "changeable": 1
     },
     {
@@ -314,7 +314,7 @@
       "type": 3,
       "api": "csp_WexDiduanysGuard",
       "jar": "./jar/wex.txt;md5;6237e73e89cd1cc8ed815ad7712c6b65",
-      "searchable": 0,
+      "searchable": 1,
       "changeable": 1
     },
     {
