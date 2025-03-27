@@ -23,7 +23,7 @@
       "filterable": 1,
       "ext": {
           //"二次截取":"<ul class=\"row&&</ul",
-          //"数组":"class=\"col-xs-4&&</li",
+          "数组":"data-swiper-slide-index=\"&&</li>",
           //"标题":"title=\"&&\"",
           //"副标题":"item-status text-overflow\">&&</p",
           //"图片":"data-original=\"&&\"",
