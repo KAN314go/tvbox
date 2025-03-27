@@ -235,7 +235,7 @@
       "name": "🥇｜龍蝦｜藍光◎秒播(無廣告+APP)",
       "type": 3,
       "api": "csp_Xdai",
-      "jar": "./jar/spider.png",
+      "jar": "./jar/PizazzGY.jar",
       "playerType": 1,
       "ext": {
         "danmu": true,
@@ -247,7 +247,7 @@
       "name": "🥇｜光速｜藍光◎秒播(無廣告+APP)",
       "type": 3,
       "api": "csp_Xdai",
-      "jar": "./jar/spider.png",
+      "jar": "./jar/PizazzGY.jar",
       "playerType": 1,
       "ext": {
         "danmu": true,
@@ -259,7 +259,7 @@
     "name": "🥇｜玉米｜藍光◎秒播(無廣告+APP)",
     "type": 3,
     "api": "csp_Xdai",
-    "jar": "./jar/spider.png",
+    "jar": "./jar/PizazzGY.jar",
     "playerType": 1,
     "ext": {
       "danmu": true,
