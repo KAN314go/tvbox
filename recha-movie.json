@@ -117,7 +117,7 @@
       "name": "🥇｜獨牛｜藍光◎秒播(無廣告)",
       "type": 3,
       "api": "csp_WexdubokuGuard",
-      "jar": "./jar/wex.txt;md5;6237e73e89cd1cc8ed815ad7712c6b65;md5;6237e73e89cd1cc8ed815ad7712c6b65",
+      "jar": "./jar/wex.txt;md5;6237e73e89cd1cc8ed815ad7712c6b65",
       "searchable": 1,
       "changeable": 1
     },
@@ -2410,42 +2410,6 @@
       "changeable": 1
     },
     {
-      "key": "yfsp",
-      "name": "🥉｜愛帆｜普清◎順播(無廣告)",
-      "type": 3,
-      "searchable": 1,
-      "changeable": 1,
-      "quickSearch": 1,
-      "style": {"type": "rect", "ratio": 0.75},
-      "jar": "./jar/gm.jar;md5;3e59c9c3c50ea1d4609cec9dbee730c3;md5;3e59c9c3c50ea1d4609cec9dbee730c3",
-      "api": "csp_GM",
-      "ext": {
-        "userScript": "./drpy_js/ysfp.user.js",
-        "debug": false,
-        "webViewSettings": {
-          "blockNetworkImage": true,
-          "blockList": [
-            "*.png*"                          ,
-            "*.mp3*"                          ,
-            "*.css*"                          ,
-            "https://*.googletagmanager.com/*",
-            "https://*.google-analytics.com/*"
-          ]
-        },
-        "spider": {
-          "homeContent": {"loadUrl": "https://m.yfsp.tv/"},
-          "categoryContent": {
-            "loadUrl": "https://m.yfsp.tv/list/${tid}?type=${index-0:-0}${index-1:-,0}${index-2:-,0}${index-3:-,0}${index-4:-,0}${index-5:-}"
-          },
-          "detailContent": {"loadUrl": "https://m.yfsp.tv/play/${id}"},
-          "playerContent": {
-            "loadUrl": "https://m.yfsp.tv/play/${mediaKey}?id=${episodeKey}"
-          },
-          "searchContent": {"loadUrl": "https://m.yfsp.tv/search"}
-        }
-      }
-    },
-    {
       "key": "csp_追影影视",
       "name": "🥉｜追影｜普清◎順播(無廣告)",
       "type": 3,
@@ -3339,6 +3303,42 @@
       "filterable": 1,
       "changeable": 1,
       "ext": {"danmu": true}
+    },
+    {
+      "key": "yfsp",
+      "name": "🎖︎｜愛壹帆｜官源",
+      "type": 3,
+      "searchable": 1,
+      "changeable": 1,
+      "quickSearch": 1,
+      "style": {"type": "rect", "ratio": 0.75},
+      "jar": "./jar/GM.jar;md5;3e59c9c3c50ea1d4609cec9dbee730c3",
+      "api": "csp_GM",
+      "ext": {
+        "userScript": "./drpy_js/ysfp.user.js",
+        "debug": false,
+        "webViewSettings": {
+          "blockNetworkImage": true,
+          "blockList": [
+            "*.png*"                          ,
+            "*.mp3*"                          ,
+            "*.css*"                          ,
+            "https://*.googletagmanager.com/*",
+            "https://*.google-analytics.com/*"
+          ]
+        },
+        "spider": {
+          "homeContent": {"loadUrl": "https://m.yfsp.tv/"},
+          "categoryContent": {
+            "loadUrl": "https://m.yfsp.tv/list/${tid}?type=${index-0:-0}${index-1:-,0}${index-2:-,0}${index-3:-,0}${index-4:-,0}${index-5:-}"
+          },
+          "detailContent": {"loadUrl": "https://m.yfsp.tv/play/${id}"},
+          "playerContent": {
+            "loadUrl": "https://m.yfsp.tv/play/${mediaKey}?id=${episodeKey}"
+          },
+          "searchContent": {"loadUrl": "https://m.yfsp.tv/search"}
+        }
+      }
     },
     {
       "key": "hipy_js_奇珍异兽[官]",
