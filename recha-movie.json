@@ -234,7 +234,7 @@
       "type": 3,
       "api": "csp_Xdai",
       "jar": "./jar/spider.png",
-      "playerType": 1,
+      "playerType": 2,
       "ext": "jaHR0cDovL3BweC5iangzNjUudG9wfHBpcGl4aWEyMTc1MjIzMjR8cGlwaXhpYTIxNzUyMjMyNHw1MDY="
     },
     {
@@ -243,7 +243,7 @@
       "type": 3,
       "api": "csp_Xdai",
       "jar": "./jar/spider.png",
-      "playerType": 1,
+      "playerType": 2,
       "ext": "jaHR0cDovLzU5LjE1My4xNjcuMTM3Ojg4OTl8NGQ4M2I4N2M0YzVlYTExMXw0ZDgzYjg3YzRjNWVhMTExfDQ2Mg=="
     },
     {
@@ -252,7 +252,7 @@
       "type": 3,
       "api": "csp_Xdai",
       "jar": "./jar/spider.png",
-      "playerType": 1,
+      "playerType": 2,
       "ext": "jaHR0cHM6Ly93d3cuempjLmFwcC98YWI0ZTlhNDIxNjc1ZjE0YnxhYjRlOWE0MjE2NzVmMTRifDQ0Mg=="
     },
     {
