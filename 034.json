@@ -278,7 +278,7 @@
       "type": 3,
       "api": "csp_WexquickvodGuard",
       "jar": "./jar/wex.txt;md5;6237e73e89cd1cc8ed815ad7712c6b65",
-      "searchable": 0,
+      "searchable": 1,
       "changeable": 1
     },
     {
@@ -287,7 +287,7 @@
       "type": 3,
       "api": "csp_WexbaozitvGuard",
       "jar": "./jar/wex.txt;md5;6237e73e89cd1cc8ed815ad7712c6b65",
-      "searchable": 0,
+      "searchable": 1,
       "changeable": 1
     },
     {
@@ -314,7 +314,7 @@
       "type": 3,
       "api": "csp_WexDiduanysGuard",
       "jar": "./jar/wex.txt;md5;6237e73e89cd1cc8ed815ad7712c6b65",
-      "searchable": 0,
+      "searchable": 1,
       "changeable": 1
     },
     {
@@ -323,7 +323,7 @@
       "type": 3,
       "api": "csp_WexBDysGuard",
       "jar": "./jar/wex.txt;md5;6237e73e89cd1cc8ed815ad7712c6b65",
-      "searchable": 0,
+      "searchable": 1,
       "changeable": 1
     },
     {
@@ -1079,7 +1079,7 @@
       "type": 3,
       "api": "csp_WexF4kvmGuard",
       "jar": "./jar/wex.txt;md5;6237e73e89cd1cc8ed815ad7712c6b65",
-      "searchable": 0,
+      "searchable": 1,
       "changeable": 1
     },
     {
