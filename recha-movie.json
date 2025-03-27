@@ -1435,18 +1435,6 @@
       "ext": "./json/利伍影视.json"
     },
     {
-      "key": "csp_奈飞TV",
-      "name": "🥈｜奈何｜高清◎秒播(浮水印廣告)",
-      "type": 3,
-      "changeable": 1,
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "api": "csp_XBPQ",
-      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-      "ext": "./json/奈飛tv.json"
-    },
-    {
       "key": "csp_星辰影院GY",
       "name": "🥈｜星辰｜高清◎秒播(浮水印廣告)",
       "type": 3,
