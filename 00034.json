@@ -32,7 +32,7 @@
         "副标题": "pic-text\">&&</span>",
         "链接": "href=\"&&\"",
         "线路数组": "stui-pannel__head bottom-line active clearfix&&</div>",
-        "线路标题": "/>&&</h3>",
+        "线路标题": "<h3 class=\"title\">&&</h3>",
         "跳转播放链接": "var player_*\"url\":\"&&\"",
         "主页url": "https://www.szhsjsj.com/",
         "分类url": "https://www.szhsjsj.com/show/{cateId}-{area}-{by}-{class}-----{catePg}---{year}.html",
