@@ -10,7 +10,7 @@
       "key": "py_gimy.cc",
       "name": "🥇｜gimy.cc｜藍光◎秒播(無廣告+PY)",
       "type": 3,
-      "api": "./py/py_gimy.py",
+      "api": "https://gitlab.com/newrecha/tvbox/-/raw/main/py/py_gimy.py",
       "searchable": 1,
       "filterable": 0,
       "changeable": 0
