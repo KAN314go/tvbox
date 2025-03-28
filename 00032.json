@@ -29,7 +29,7 @@
         "数组": "lazyload\"&&</li>",
         "标题": "title=\"&&\"",
         "图片": "data-original=\"&&\"",
-        "副标题": "pic-text\">&&</span>",
+        "副标题": "pic-text\"&&</span>",
         "链接": "href=\"&&\"",
         "线路数组": "stui-pannel__head bottom-line active clearfix&&</div>",
         "线路标题": "<img src=\">&&</h3>",
