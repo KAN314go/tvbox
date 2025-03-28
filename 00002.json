@@ -31,7 +31,7 @@
         "数组": "stui-vodlist__box\"&&</li>",
         "标题": "title=\"&&\"",
         "图片": "data-original=\"&&\"",
-        "副标题": "text-right\">&&</span>",
+        "副标题": "class=\"pic-text text-right\">&&</span>",
         "链接": "href=\"&&\"",
         "播放数组": "list sort-list clearfix&&</ul>",
         "播放列表": "<a&&a>",
