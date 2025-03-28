@@ -10,7 +10,6 @@
 
 
 
-
     {
       "key": "csp_开心影院",
       "name": "🥇｜銅影｜高清◎秒播(無廣告)",
@@ -31,8 +30,8 @@
         "图片": "data-original=\"&&\"",
         "副标题": "pic-text\">&&</span>",
         "链接": "href=\"&&\"",
-        "线路数组": "stui-pannel__head bottom-line active clearfix&&</div>",
-        "线路标题": "<h3 class=\"title\">&&</h3>",
+        "线路数组": "stui-pannel__head bottom-line active clearfix&&<ul class=\"stui-content__playlist clearfix\">",
+        "线路标题": "<img[^>]*\/?>&&</h3>",
         "跳转播放链接": "var player_*\"url\":\"&&\"",
         "主页url": "https://www.szhsjsj.com/",
         "分类url": "https://www.szhsjsj.com/show/{cateId}-{area}-{by}-{class}-----{catePg}---{year}.html",
