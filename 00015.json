@@ -36,7 +36,7 @@
         "播放列表": "<a&&</a>",
         "播放链接": "href=\"&&\"",
         "播放标题": ">&&<",
-        "线路数组": "stui-pannel stui-pannel-bg clearfix&&</h3>",
+        "线路数组": "stui-pannel-box b playlist mb&&</div>",
         "线路标题": "<h3 class=\"title\">&&</h3>",
         "主页url": "https://www.szhsjsj.com/",
         "分类url": "https://www.szhsjsj.com/show/{cateId}-{area}-{by}-{class}-----{catePg}---{year}.html",            
