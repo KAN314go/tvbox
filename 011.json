@@ -25,8 +25,8 @@
       "ext": {
         "线路数组": "class=\"fa ds-dianying\"&&</a>[排序:量子云>>]",
         "线路标题": "/i>&nbsp;&&<",
-        "播放数组": "class=\"box border\"&&</li>",
-        "分类url": "https://gimy.cc/filter/{cateId}-{area}-{year}-{by}/page/{catePg}.html",
+        //"播放数组": "class=\"box border\"&&</li>",
+        "分类url": "https://gimy.la/filter/area/{area}/by/{by}/id/{cateId}/page/{catePg}/year/{year}.html",
         "分类": "電影$1#電視劇$2#綜藝$3#動漫$4",
         "地区": "中國&香港&台灣&美国&法國&英國&日本&韓國&德國&泰國&印度&意大利&西班牙&加拿大&其他"
       }
