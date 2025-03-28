@@ -4,7 +4,15 @@
   "wallpaper": "https://tv.nxog.top/m//t/",
   "sites": [
 
-
+    {
+      "key": "py_gimy.cc",
+      "name": "🥇｜劇西｜(PY)",
+      "type": 3,
+      "api": "./py/py_gimycc.py",
+      "searchable": 1,
+      "filterable": 0,
+      "changeable": 0
+    },
     {
       "key": "csp_GimyCC",
       "name": "🥈｜劇西｜高清◎秒播(浮水印廣告)",
@@ -17,7 +25,7 @@
       "ext": {
         "线路数组": "class=\"fa ds-dianying\"&&</a>[排序:量子云>>]",
         "线路标题": "/i>&nbsp;&&<",
-        "播放数组": "class=\"box border \"&&</li>",
+        "播放数组": "class=\"box border\"&&</li>",
         "分类url": "https://gimy.cc/filter/{cateId}-{area}-{year}-{by}/page/{catePg}.html",
         "分类": "電影$1#電視劇$2#綜藝$3#動漫$4",
         "地区": "中國&香港&台灣&美国&法國&英國&日本&韓國&德國&泰國&印度&意大利&西班牙&加拿大&其他"
