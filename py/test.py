@@ -1,5 +1,5 @@
 # coding=utf-8
-# !/usr/bin/python
+#!/usr/bin/python
 
 import sys
 import requests
@@ -21,6 +21,8 @@ class Spider(Spider):
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
             "Referer": "https://gimy.la/"
         }
+        # 可選：添加代理
+        self.proxies = {"http": "http://127.0.0.1:7890", "https": "http://127.0.0.1:7890"}
 
     def getDependence(self):
         print("調用 getDependence")
@@ -47,17 +49,21 @@ class Spider(Spider):
             'filters': {
                 '1': [
                     {'key': 'area', 'name': '地區', 'value': [
-                        {'n': '全部', 'v': ''}, {'n': '中國', 'v': '中國'}, {'n': '香港', 'v': '香港'}, {'n': '台灣', 'v': '台灣'}, {'n': '美国', 'v': '美国'}]},
+                        {'n': '全部', 'v': ''}, {'n': '中國', 'v': '中國'}, {'n': '香港', 'v': '香港'}, 
+                        {'n': '台灣', 'v': '台灣'}, {'n': '美国', 'v': '美国'}]},
                     {'key': 'year', 'name': '時間', 'value': [
-                        {'n': '全部', 'v': ''}, {'n': '2025', 'v': '2025'}, {'n': '2024', 'v': '2024'}, {'n': '2023', 'v': '2023'}]},
+                        {'n': '全部', 'v': ''}, {'n': '2025', 'v': '2025'}, {'n': '2024', 'v': '2024'}, 
+                        {'n': '2023', 'v': '2023'}]},
                     {'key': 'by', 'name': '排序', 'value': [
                         {'n': '按時間', 'v': 'time'}, {'n': '按熱度', 'v': 'hits'}]}
                 ],
                 '2': [
                     {'key': 'area', 'name': '地區', 'value': [
-                        {'n': '全部', 'v': ''}, {'n': '中國', 'v': '中國'}, {'n': '香港', 'v': '香港'}, {'n': '台灣', 'v': '台灣'}, {'n': '日本', 'v': '日本'}]},
+                        {'n': '全部', 'v': ''}, {'n': '中國', 'v': '中國'}, {'n': '香港', 'v': '香港'}, 
+                        {'n': '台灣', 'v': '台灣'}, {'n': '日本', 'v': '日本'}]},
                     {'key': 'year', 'name': '時間', 'value': [
-                        {'n': '全部', 'v': ''}, {'n': '2025', 'v': '2025'}, {'n': '2024', 'v': '2024'}, {'n': '2023', 'v': '2023'}]},
+                        {'n': '全部', 'v': ''}, {'n': '2025', 'v': '2025'}, {'n': '2024', 'v': '2024'}, 
+                        {'n': '2023', 'v': '2023'}]},
                     {'key': 'by', 'name': '排序', 'value': [
                         {'n': '按時間', 'v': 'time'}, {'n': '按熱度', 'v': 'hits'}]}
                 ]
@@ -87,7 +93,7 @@ class Spider(Spider):
             res.raise_for_status()
             root = etree.HTML(res.text)
 
-            vod_name = root.xpath('//h3[@class="slide-info-title"]/text()')
+            vod_name = root.xpath('//a[@class="fed-play-btn fed-btns-info fed-rims-info"]/@title')
             vod_name = vod_name[0].strip() if vod_name else '未知名稱'
 
             play_from_list = root.xpath('//div[contains(@class, "anthology-tab")]//a/text()')
