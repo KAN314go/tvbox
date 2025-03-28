@@ -5,8 +5,8 @@
   "sites": [
 
     {
-      "key": "py_gimy.cc",
-      "name": "🥇｜劇西｜(PY)",
+      "key": "py_gimy.la",
+      "name": "🥇｜劇菈｜(PY)",
       "type": 3,
       "api": "./py/py_gimycc.py",
       "searchable": 1,
@@ -14,8 +14,8 @@
       "changeable": 0
     },
     {
-      "key": "csp_GimyCC",
-      "name": "🥈｜劇西｜高清◎秒播(浮水印廣告)",
+      "key": "csp_Gimy.la",
+      "name": "🥈｜劇拉｜高清◎秒播(浮水印廣告)",
       "type": 3,
       "api": "csp_XBPQ",
       "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
