@@ -1,15 +1,17 @@
 # -*- coding: utf-8 -*-
-# @Author  : Adapted from Doubebly's LreeOk by Grok
+# @Author  : Adapted from Doubebly's LreeOk by Grok, optimized with XBPQ and Selenium logic
 # @Time    : 2025/3/28
 # @Purpose : Spider for gimy.la to use in CatVod
 
 import sys
 import requests
-import hashlib
-import time
 import json
 import re
 from lxml import etree
+try:
+    from requests_html import HTMLSession
+except ImportError:
+    HTMLSession = None
 
 sys.path.append('..')
 from base.spider import Spider
@@ -27,7 +29,7 @@ class Spider(Spider):
         }
 
     def getDependence(self):
-        return []
+        return ['requests_html'] if HTMLSession else []
 
     def isVideoFormat(self, url):
         video_extensions = ['.mp4', '.m3u8', '.flv', '.avi', '.mkv']
@@ -45,76 +47,40 @@ class Spider(Spider):
                 {'type_id': '4', 'type_name': '動漫'}
             ],
             'filters': {
-                '1': [  # 電影
-                    {'key': 'class', 'name': '類型', 'value': [
-                        {'n': '全部', 'v': ''}, {'n': '動作', 'v': '動作'}, {'n': '喜劇', 'v': '喜劇'}, 
-                        {'n': '愛情', 'v': '愛情'}, {'n': '科幻', 'v': '科幻'}, {'n': '恐怖', 'v': '恐怖'}]},
-                    {'key': 'area', 'name': '地區', 'value': [
-                        {'n': '全部', 'v': ''}, {'n': '中國', 'v': '中國'}, {'n': '香港', 'v': '香港'}, 
-                        {'n': '台灣', 'v': '台灣'}, {'n': '美國', 'v': '美國'}, {'n': '日本', 'v': '日本'}]},
-                    {'key': 'year', 'name': '年份', 'value': [
-                        {'n': '全部', 'v': ''}, {'n': '2025', 'v': '2025'}, {'n': '2024', 'v': '2024'}, 
-                        {'n': '2023', 'v': '2023'}, {'n': '2022', 'v': '2022'}, {'n': '2021', 'v': '2021'}]},
-                    {'key': 'by', 'name': '排序', 'value': [
-                        {'n': '按最新', 'v': 'time'}, {'n': '按最熱', 'v': 'hits'}]}
-                ],
-                '2': [  # 劇集
-                    {'key': 'class', 'name': '類型', 'value': [
-                        {'n': '全部', 'v': ''}, {'n': '古裝', 'v': '古裝'}, {'n': '偶像', 'v': '偶像'}, 
-                        {'n': '家庭', 'v': '家庭'}, {'n': '懸疑', 'v': '懸疑'}, {'n': '奇幻', 'v': '奇幻'}]},
-                    {'key': 'area', 'name': '地區', 'value': [
-                        {'n': '全部', 'v': ''}, {'n': '中國', 'v': '中國'}, {'n': '香港', 'v': '香港'}, 
-                        {'n': '台灣', 'v': '台灣'}, {'n': '日本', 'v': '日本'}, {'n': '韓國', 'v': '韓國'}]},
-                    {'key': 'year', 'name': '年份', 'value': [
-                        {'n': '全部', 'v': ''}, {'n': '2025', 'v': '2025'}, {'n': '2024', 'v': '2024'}, 
-                        {'n': '2023', 'v': '2023'}, {'n': '2022', 'v': '2022'}, {'n': '2021', 'v': '2021'}]},
-                    {'key': 'by', 'name': '排序', 'value': [
-                        {'n': '按最新', 'v': 'time'}, {'n': '按最熱', 'v': 'hits'}]}
-                ],
-                '3': [  # 綜藝
-                    {'key': 'area', 'name': '地區', 'value': [
-                        {'n': '全部', 'v': ''}, {'n': '中國', 'v': '中國'}, {'n': '香港', 'v': '香港'}, 
-                        {'n': '台灣', 'v': '台灣'}, {'n': '日本', 'v': '日本'}, {'n': '韓國', 'v': '韓國'}]},
-                    {'key': 'year', 'name': '年份', 'value': [
-                        {'n': '全部', 'v': ''}, {'n': '2025', 'v': '2025'}, {'n': '2024', 'v': '2024'}, 
-                        {'n': '2023', 'v': '2023'}, {'n': '2022', 'v': '2022'}, {'n': '2021', 'v': '2021'}]},
-                    {'key': 'by', 'name': '排序', 'value': [
-                        {'n': '按最新', 'v': 'time'}, {'n': '按最熱', 'v': 'hits'}]}
-                ],
-                '4': [  # 動漫
-                    {'key': 'area', 'name': '地區', 'value': [
-                        {'n': '全部', 'v': ''}, {'n': '中國', 'v': '中國'}, {'n': '日本', 'v': '日本'}, 
-                        {'n': '美國', 'v': '美國'}]},
-                    {'key': 'year', 'name': '年份', 'value': [
-                        {'n': '全部', 'v': ''}, {'n': '2025', 'v': '2025'}, {'n': '2024', 'v': '2024'}, 
-                        {'n': '2023', 'v': '2023'}, {'n': '2022', 'v': '2022'}, {'n': '2021', 'v': '2021'}]},
-                    {'key': 'by', 'name': '排序', 'value': [
-                        {'n': '按最新', 'v': 'time'}, {'n': '按最熱', 'v': 'hits'}]}
-                ]
+                '1': [{'key': 'area', 'name': '地區', 'value': [{'n': '中國', 'v': '中國'}, {'n': '香港', 'v': '香港'}, {'n': '台灣', 'v': '台灣'}, {'n': '美国', 'v': '美国'}, {'n': '日本', 'v': '日本'}, {'n': '韓國', 'v': '韓國'}]},
+                      {'key': 'year', 'name': '年份', 'value': [{'n': '全部', 'v': ''}, {'n': '2025', 'v': '2025'}, {'n': '2024', 'v': '2024'}, {'n': '2023', 'v': '2023'}]},
+                      {'key': 'by', 'name': '排序', 'value': [{'n': '按最新', 'v': 'time'}, {'n': '按最熱', 'v': 'hits'}]}],
+                '2': [{'key': 'area', 'name': '地區', 'value': [{'n': '中國', 'v': '中國'}, {'n': '香港', 'v': '香港'}, {'n': '台灣', 'v': '台灣'}, {'n': '日本', 'v': '日本'}, {'n': '韓國', 'v': '韓國'}]},
+                      {'key': 'year', 'name': '年份', 'value': [{'n': '全部', 'v': ''}, {'n': '2025', 'v': '2025'}, {'n': '2024', 'v': '2024'}, {'n': '2023', 'v': '2023'}]},
+                      {'key': 'by', 'name': '排序', 'value': [{'n': '按最新', 'v': 'time'}, {'n': '按最熱', 'v': 'hits'}]}],
+                '3': [{'key': 'area', 'name': '地區', 'value': [{'n': '中國', 'v': '中國'}, {'n': '香港', 'v': '香港'}, {'n': '台灣', 'v': '台灣'}, {'n': '日本', 'v': '日本'}, {'n': '韓國', 'v': '韓國'}]},
+                      {'key': 'year', 'name': '年份', 'value': [{'n': '全部', 'v': ''}, {'n': '2025', 'v': '2025'}, {'n': '2024', 'v': '2024'}, {'n': '2023', 'v': '2023'}]},
+                      {'key': 'by', 'name': '排序', 'value': [{'n': '按最新', 'v': 'time'}, {'n': '按最熱', 'v': 'hits'}]}],
+                '4': [{'key': 'area', 'name': '地區', 'value': [{'n': '中國', 'v': '中國'}, {'n': '日本', 'v': '日本'}, {'n': '美国', 'v': '美国'}]},
+                      {'key': 'year', 'name': '年份', 'value': [{'n': '全部', 'v': ''}, {'n': '2025', 'v': '2025'}, {'n': '2024', 'v': '2024'}, {'n': '2023', 'v': '2023'}]},
+                      {'key': 'by', 'name': '排序', 'value': [{'n': '按最新', 'v': 'time'}, {'n': '按最熱', 'v': 'hits'}]}]
             }
         }
         return result
 
     def homeVideoContent(self):
-        d = []
         try:
-            res = requests.get(self.home_url, headers=self.headers, timeout=10)
-            res.encoding = 'utf-8'
-            res.raise_for_status()
-            root = etree.HTML(res.text)
-            # gimy.la 的首頁推薦結構
-            data_list = root.xpath('//div[contains(@class, "public-list-exp")]')
-            if not data_list:
-                # 嘗試備用路徑
-                data_list = root.xpath('//div[contains(@class, "fed-list-item")]') or root.xpath('//ul[contains(@class, "vodlist")]/li')
-                if not data_list:
-                    print("未找到首頁推薦內容，網站結構可能已改變")
-                    print("前 500 字元 HTML:", res.text[:500])
+            if HTMLSession:
+                session = HTMLSession()
+                res = session.get(self.home_url, headers=self.headers, timeout=10)
+                res.html.render(timeout=20)
+                root = etree.HTML(res.html.html)
+            else:
+                res = requests.get(self.home_url, headers=self.headers, timeout=10)
+                res.encoding = 'utf-8'
+                root = etree.HTML(res.text)
+            data_list = root.xpath('//div[@class="public-list-exp"]')
+            d = []
             for i in data_list:
                 vod_id = i.xpath('.//a/@href')[0].split('/')[-1].split('.')[0] if i.xpath('.//a/@href') else ''
-                vod_name = i.xpath('.//a/@title')[0] if i.xpath('.//a/@title') else i.xpath('.//a/text()')[0] if i.xpath('.//a/text()') else ''
-                vod_pic = i.xpath('.//img/@data-src')[0] if i.xpath('.//img/@data-src') else i.xpath('.//img/@src')[0] if i.xpath('.//img/@src') else ''
-                vod_remarks = i.xpath('.//span[contains(@class, "ft2")]/text()')[0] if i.xpath('.//span[contains(@class, "ft2")]/text()') else ''
+                vod_name = i.xpath('.//a/@title')[0].strip() if i.xpath('.//a/@title') else ''
+                vod_pic = i.xpath('.//img/@data-src')[0] if i.xpath('.//img/@data-src') else ''
+                vod_remarks = i.xpath('.//span[@class="ft2"]/text()')[0] if i.xpath('.//span[@class="ft2"]/text()') else ''
                 if vod_id and vod_name:
                     d.append({
                         'vod_id': vod_id,
@@ -137,17 +103,23 @@ class Spider(Spider):
             'page': page
         }
         url = f'{self.home_url}filter/area/{payload["area"]}/by/{payload["by"]}/id/{cid}/page/{page}/year/{payload["year"]}.html'
-        d = []
         try:
-            res = requests.get(url, headers=self.headers, timeout=10)
-            res.raise_for_status()
-            root = etree.HTML(res.text)
-            data_list = root.xpath('//div[contains(@class, "public-list-exp")]')
+            if HTMLSession:
+                session = HTMLSession()
+                res = session.get(url, headers=self.headers, timeout=10)
+                res.html.render(timeout=20)
+                root = etree.HTML(res.html.html)
+            else:
+                res = requests.get(url, headers=self.headers, timeout=10)
+                res.encoding = 'utf-8'
+                root = etree.HTML(res.text)
+            data_list = root.xpath('//div[@class="public-list-exp"]')
+            d = []
             for i in data_list:
                 vod_id = i.xpath('.//a/@href')[0].split('/')[-1].split('.')[0] if i.xpath('.//a/@href') else ''
-                vod_name = i.xpath('.//a/@title')[0] if i.xpath('.//a/@title') else i.xpath('.//a/text()')[0] if i.xpath('.//a/text()') else ''
-                vod_pic = i.xpath('.//img/@data-src')[0] if i.xpath('.//img/@data-src') else i.xpath('.//img/@src')[0] if i.xpath('.//img/@src') else ''
-                vod_remarks = i.xpath('.//span[contains(@class, "ft2")]/text()')[0] if i.xpath('.//span[contains(@class, "ft2")]/text()') else ''
+                vod_name = i.xpath('.//a/@title')[0].strip() if i.xpath('.//a/@title') else ''
+                vod_pic = i.xpath('.//img/@data-src')[0] if i.xpath('.//img/@data-src') else ''
+                vod_remarks = i.xpath('.//span[@class="ft2"]/text()')[0] if i.xpath('.//span[@class="ft2"]/text()') else ''
                 if vod_id and vod_name:
                     d.append({
                         'vod_id': vod_id,
@@ -167,8 +139,17 @@ class Spider(Spider):
         try:
             res = requests.get(f'{self.home_url}detail/{ids}.html', headers=self.headers, timeout=10)
             res.raise_for_status()
+            res.encoding = 'utf-8'
+            print("detailContent 前 3000 字元 HTML:", res.text[:3000])
             root = etree.HTML(res.text)
-            vod_play_from = '$$$'.join([name.strip() for name in root.xpath('//div[contains(@class, "anthology-tab")]//a/text()') if name.strip()]) or '量子雲$$$索尼雲$$$快捷雲'
+
+            # 提取播放線路
+            vod_play_from_list = [name.strip().replace('\xa0', '') for name in root.xpath('//div[contains(@class, "anthology-tab")]//a/text()') if name.strip()]
+            vod_play_from_order = ['量子雲', '索尼雲', '快捷雲', '無限雲', '閃電雲', '小牛雲', '速播雲', '優酷雲']
+            vod_play_from_sorted = sorted(vod_play_from_list, key=lambda x: vod_play_from_order.index(x) if x in vod_play_from_order else len(vod_play_from_order))
+            vod_play_from = '$$$'.join(vod_play_from_sorted) if vod_play_from_sorted else '量子雲$$$索尼雲$$$快捷雲'
+
+            # 提取播放列表
             play_list = root.xpath('//div[contains(@class, "anthology-list-box")]//ul[contains(@class, "anthology-list-play")]')
             vod_play_url = []
             for i in play_list:
@@ -181,18 +162,28 @@ class Spider(Spider):
                 play_url = '#'.join([f"{name.strip()}${self.home_url.rstrip('/')}{url}" for name, url in zip(name_list, url_list) if name.strip()])
                 if play_url:
                     vod_play_url.append(play_url)
-            
-            vod_name = root.xpath('//h1[@class="fed-part-eone"]/text()')[0] if root.xpath('//h1[@class="fed-part-eone"]/text()') else '未知名稱'
+
+            # 提取影片信息
+            vod_name = (root.xpath('//h3[@class="slide-info-title"]/text()')[0] if root.xpath('//h3[@class="slide-info-title"]/text()') else 
+                       root.xpath('//title/text()')[0].split(' - ')[0] if root.xpath('//title/text()') else '未知名稱').strip()
+            vod_year_match = re.search(r'年份 :(\d{4})', res.text) or re.search(r'更新 :.*?(\d{4})', res.text)
+            vod_area_match = re.search(r'地區 :([^<]+)', res.text) or ''.join(root.xpath('//div[contains(@class, "slide-info") and contains(., "地區")]//text()')).strip()
+            vod_remarks_match = re.search(r'備注 :(.+?)</div>', res.text)
+            vod_director = ','.join([d.strip() for d in root.xpath('//div[contains(@class, "slide-info") and contains(., "導演")]//a/text()') if d.strip()]) or ''
+            vod_actor = ','.join([a.strip() for a in root.xpath('//div[contains(@class, "slide-info") and contains(., "演員")]//a/text()') if a.strip()]) or ''
+            vod_content = root.xpath('//meta[@name="description"]/@content')[0].strip() if root.xpath('//meta[@name="description"]/@content') else ''.join(root.xpath('//div[@id="height_limit"]/text()')).strip()
+            vod_pic_match = re.search(r'data-src="([^"]+)"', res.text)
+
             video_list.append({
                 'vod_id': ids,
                 'vod_name': vod_name,
-                'vod_pic': root.xpath('//img[@class="fed-part-thumb fed-lazy"]/@data-original')[0] if root.xpath('//img[@class="fed-part-thumb fed-lazy"]/@data-original') else '',
-                'vod_remarks': root.xpath('//span[contains(@class, "fed-text-orange")]/text()')[0] if root.xpath('//span[contains(@class, "fed-text-orange")]/text()') else '',
-                'vod_year': root.xpath('//li[contains(text(), "年份")]/a/text()')[0] if root.xpath('//li[contains(text(), "年份")]/a/text()') else '',
-                'vod_area': root.xpath('//li[contains(text(), "地區")]/a/text()')[0] if root.xpath('//li[contains(text(), "地區")]/a/text()') else '',
-                'vod_actor': root.xpath('//li[contains(text(), "主演")]/a/text()')[0] if root.xpath('//li[contains(text(), "主演")]/a/text()') else '',
-                'vod_director': root.xpath('//li[contains(text(), "導演")]/a/text()')[0] if root.xpath('//li[contains(text(), "導演")]/a/text()') else '',
-                'vod_content': root.xpath('//span[contains(@class, "sketch")]/text()')[0] if root.xpath('//span[contains(@class, "sketch")]/text()') else '',
+                'vod_pic': vod_pic_match.group(1) if vod_pic_match else '',
+                'vod_remarks': re.sub(r'</?\w+[^>]*>', '', vod_remarks_match.group(1)).strip() if vod_remarks_match else '',
+                'vod_year': vod_year_match.group(1).strip() if vod_year_match else '',
+                'vod_area': vod_area_match if isinstance(vod_area_match, str) else vod_area_match.group(1).strip() if vod_area_match else '',
+                'vod_actor': vod_actor,
+                'vod_director': vod_director,
+                'vod_content': vod_content,
                 'vod_play_from': vod_play_from,
                 'vod_play_url': '$$$'.join(vod_play_url) if vod_play_url else ''
             })
@@ -206,20 +197,29 @@ class Spider(Spider):
         d = []
         url = f'{self.home_url}search.html?wd={key}&page={page}'
         try:
-            res = requests.get(url, headers=self.headers, timeout=10)
-            res.raise_for_status()
-            root = etree.HTML(res.text)
-            data_list = root.xpath('//div[contains(@class, "public-list-box")]')
+            if HTMLSession:
+                session = HTMLSession()
+                res = session.get(url, headers=self.headers, timeout=10)
+                res.html.render(timeout=20)
+                root = etree.HTML(res.html.html)
+            else:
+                res = requests.get(url, headers=self.headers, timeout=10)
+                res.raise_for_status()
+                res.encoding = 'utf-8'
+                root = etree.HTML(res.text)
+            print("searchContent 前 3000 字元 HTML:", res.text[:3000] if not HTMLSession else res.html.html[:3000])
+            data_list = root.xpath('//div[@class="public-list-box"]') or root.xpath('//li[contains(@class, "box border")]') or root.xpath('//li[contains(@class, "search-item")]') or root.xpath('//div[contains(@class, "search-list")]')
             for i in data_list:
-                vod_id = i.xpath('.//a/@href')[0].split('/')[-1].split('.')[0] if i.xpath('.//a/@href') else ''
-                vod_name = i.xpath('.//a/@title')[0] if i.xpath('.//a/@title') else i.xpath('.//a/text()')[0] if i.xpath('.//a/text()') else ''
-                vod_pic = i.xpath('.//img/@data-src')[0] if i.xpath('.//img/@data-src') else i.xpath('.//img/@src')[0] if i.xpath('.//img/@src') else ''
-                vod_remarks = i.xpath('.//span[contains(@class, "ft2")]/text()')[0] if i.xpath('.//span[contains(@class, "ft2")]/text()') else ''
-                if vod_id and vod_name:
+                vod_id_match = re.search(r'href="/detail/(\d+).html"', etree.tostring(i, encoding='unicode'))
+                vod_id = vod_id_match.group(1) if vod_id_match else ''
+                vod_name = i.xpath('.//a/@title')[0].strip() if i.xpath('.//a/@title') else i.xpath('.//a/text()')[0].strip() if i.xpath('.//a/text()') else '未知'
+                vod_pic_match = re.search(r'(?:src|data-src)="([^"]+)"', etree.tostring(i, encoding='unicode'))
+                vod_remarks = i.xpath('.//span/text()')[0].strip() if i.xpath('.//span/text()') else ''
+                if vod_id and vod_name != '未知':
                     d.append({
                         'vod_id': vod_id,
                         'vod_name': vod_name,
-                        'vod_pic': vod_pic,
+                        'vod_pic': vod_pic_match.group(1) if vod_pic_match else '',
                         'vod_remarks': vod_remarks
                     })
             print(f"searchContent 提取到 {len(d)} 個結果")
@@ -266,7 +266,6 @@ class Spider(Spider):
         return '正在Destroy'
 
     def get_data(self, payload):
-        # gimy.la 不使用 API，直接留空
         return []
 
 if __name__ == '__main__':
