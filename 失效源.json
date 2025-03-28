@@ -36,18 +36,7 @@
         "filterable": 1,
         "ext": "./json/新可可影視3.json"
       },
-      {
-        "key": "csp_奈飞TV",
-        "name": "🥈｜奈何(網站死)｜高清◎秒播(浮水印廣告)",
-        "type": 3,
-        "changeable": 1,
-        "searchable": 1,
-        "quickSearch": 1,
-        "filterable": 1,
-        "api": "csp_XBPQ",
-        "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-        "ext": "./json/奈飛tv.json"
-      },
+
     {
         "key": "瓜籽儿影院",
         "name": "🥇｜瓜籽(加了CK驗證)｜高清◎秒播(無廣告)",
@@ -499,20 +488,6 @@
         "searchable": 1,
         "quickSearch": 1,
         "changeable": 1
-      },
-      {
-        "key": "csp_XBiu廠長影院",
-        "name": "🥈｜廠長｜網站失效",
-        "type": 3,
-        "api": "csp_XBPQ",
-        "jar": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/jar1/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-        "searchable": 1,
-        "quickSearch": 1,
-        "filterable": 1,
-        "ext": {
-          "分类url": "https://www.tz2yj.com/list/{cateId}___{year}__addtime_{catePg}.html",
-          "分类": "電視劇$dianshiju#電影$dianying#動漫$dongman#綜藝$zongyi#微電影$weidianying"
-        }
       },
       {
         "key": "csp_流光",
