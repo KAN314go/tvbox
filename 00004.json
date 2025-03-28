@@ -25,8 +25,6 @@
         "規則名":"開心影院",
         "規則作者":"老王叔叔",
         "規則日期":"113.12.04",
-        "请求头": "User-Agent$MOBILE_UA",
-        "编码": "UTF-8",
         "二次截取": "myui-vodlist clearfix\">&&</ul>",
         "数组": "stui-vodlist__box\"&&</li>",
         "标题": "title=\"&&\"",
