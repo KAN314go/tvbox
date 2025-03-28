@@ -20,17 +20,16 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": 
-      {
+      "ext": {
         "規則名": "開心影院",
         "規則作者": "老王叔叔",
         "規則日期": "113.12.04",
         "请求头": "User-Agent$MOBILE_UA",
         "编码": "UTF-8",
-        "数组": "lazyload\"&&</li>",
+        "数组": "<li class=\"col-md-6 col-sm-4 col-xs-3\">&&</li>",
         "标题": "title=\"&&\"",
         "图片": "data-original=\"&&\"",
-        "副标题": "pic-text\">&&</span>",
+        "副标题": "pic-text text-right\">&&</span>",
         "链接": "href=\"&&\"",
         "播放数组": "stui-content__playlist clearfix&&</ul>",
         "播放列表": "<a&&</a>",
@@ -39,7 +38,7 @@
         "线路数组": "stui-pannel__head bottom-line active clearfix&&</div>",
         "线路标题": "icon_30.png\" />&&</h3>",
         "主页url": "https://www.szhsjsj.com/",
-        "分类url": "https://www.szhsjsj.com/show/{cateId}-{area}-{by}-{class}-----{catePg}---{year}.html",            
+        "分类url": "https://www.szhsjsj.com/show/{cateId}-{area}-{by}-{class}-----{catePg}---{year}.html",
         "分类": "电影$1#电视剧$2#综艺$3#动漫$4",
         "类型": "动作片$7#喜剧片$8#爱情片$9#科幻片$10#恐怖片$11#剧情片$12#犯罪片$29#战争片$13||国产剧$14#港剧$15#台湾剧$16#韩剧$17#日剧$18#泰剧$31#欧美剧$19#海外剧$20||大陆综艺$21#日韩综艺$22||国产动漫$25#日本动漫$26#欧美动漫$27#海外动漫$28"
       }
