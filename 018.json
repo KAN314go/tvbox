@@ -35,7 +35,7 @@
         "影片类型": "備注 :&&</div>",
         "导演": "導演 :&&</div>",
         "主演": "演員 :&&</div>",
-        "简介": "id=\"height_limit\">\"&&</div>",
+        "简介": "id=\"height_limit\">講述&&</div>",
         "搜索模式": "1",
         "搜索url": "https://gimy.la/search.html?wd={wd}",
         "搜索数组": "class=\"public-list-box\"&&</i",
