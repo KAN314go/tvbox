@@ -4,6 +4,7 @@
 import sys
 import requests
 from lxml import etree
+import re  # 添加 re 模組
 sys.path.append('..')
 from base.spider import Spider
 
@@ -87,9 +88,13 @@ class Spider(Spider):
             res.raise_for_status()
             root = etree.HTML(res.text)
 
-            # 提取基本資訊
+            # 修復 vod_name 提取，增加備用路徑
             vod_name = root.xpath('//h3[@class="slide-info-title"]/text()')
-            vod_name = vod_name[0].strip() if vod_name else '未知名稱'
+            if not vod_name:
+                vod_name = root.xpath('//title/text()')
+                vod_name = vod_name[0].split(' - ')[0].strip() if vod_name else '未知名稱'
+            else:
+                vod_name = vod_name[0].strip()
 
             # 提取播放線路和集數
             play_from_list = root.xpath('//div[contains(@class, "anthology-tab")]//a/text()')
@@ -138,22 +143,28 @@ class Spider(Spider):
             res = requests.get(play_url, headers=self.headers, timeout=10)
             res.raise_for_status()
             root = etree.HTML(res.text)
-            # 嘗試提取 iframe（如果有）
+
+            # 優先提取 iframe
             iframe_urls = root.xpath('//iframe/@src')
             if iframe_urls:
+                print(f"找到 iframe 地址: {iframe_urls[0]}")
                 return {'url': iframe_urls[0], 'parse': 1, 'jx': 0}
+
             # 嘗試提取 m3u8
             script_content = ''.join(root.xpath('//script/text()'))
             m3u8_url = re.search(r"url:\s*['\"](https?://[^'\"]+?\.m3u8)['\"]", script_content)
             if m3u8_url:
+                print(f"找到 m3u8 地址: {m3u8_url.group(1)}")
                 return {'url': m3u8_url.group(1), 'parse': 0, 'jx': 0}
-            # 後備測試地址
-            return {'url': 'https://gitee.com/dobebly/my_img/raw/c1977fa6134aefb8e5a34dabd731a4d186c84a4d/x.mp4', 
-                    'parse': 0, 'jx': 0, 'msg': '未找到播放地址，使用測試鏈接'}
+
+            # 如果都失敗，返回測試地址
+            test_url = 'https://gitee.com/dobebly/my_img/raw/c1977fa6134aefb8e5a34dabd731a4d186c84a4d/x.mp4'
+            print("未找到播放地址，使用測試鏈接")
+            return {'url': test_url, 'parse': 0, 'jx': 0, 'msg': '未找到播放地址，使用測試鏈接'}
         except requests.RequestException as e:
             print(f"playerContent 錯誤: {str(e)}")
-            return {'url': 'https://gitee.com/dobebly/my_img/raw/c1977fa6134aefb8e5a34dabd731a4d186c84a4d/x.mp4', 
-                    'parse': 0, 'jx': 0, 'msg': f"Error: {str(e)}"}
+            test_url = 'https://gitee.com/dobebly/my_img/raw/c1977fa6134aefb8e5a34dabd731a4d186c84a4d/x.mp4'
+            return {'url': test_url, 'parse': 0, 'jx': 0, 'msg': f"Error: {str(e)}"}
 
     def localProxy(self, params):
         pass
