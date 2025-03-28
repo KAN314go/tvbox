@@ -23,7 +23,7 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": {
-        "数组": "class=\"public-list-div public-list-bj\"&&</div>",
+        "数组": "class=\"public-list-exp\"&&</div>",
         "线路数组": "class=\"fa ds-dianying\"&&</a>[排序:量子云>>]",
         "线路标题": "/i>&nbsp;&&<",
         "分类url": "https://gimy.la/filter/area/{area}/by/{by}/id/{cateId}/page/{catePg}/year/{year}.html",
