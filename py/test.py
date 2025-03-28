@@ -4,30 +4,29 @@
 import sys
 import requests
 from lxml import etree
-import re  # 添加 re 模組
+import re
 sys.path.append('..')
 from base.spider import Spider
 
 class Spider(Spider):
     def getName(self):
+        print("調用 getName")
         return "GimyCC"
 
     def init(self, extend):
+        print("調用 init: extend={}".format(extend))
         self.home_url = 'https://gimy.la'
         self.headers = {
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+            "Referer": "https://gimy.la/"  # 添加 Referer
         }
 
     def getDependence(self):
+        print("調用 getDependence")
         return []
 
-    def isVideoFormat(self, url):
-        pass
-
-    def manualVideoCheck(self):
-        pass
-
     def homeContent(self, filter):
+        print("調用 homeContent: filter={}".format(filter))
         return {
             'class': [
                 {'type_id': '1', 'type_name': '電影'},
@@ -68,10 +67,12 @@ class Spider(Spider):
         }
 
     def homeVideoContent(self):
+        print("調用 homeVideoContent")
         data = self.get_data(self.home_url)
         return {'list': data, 'parse': 0, 'jx': 0}
 
     def categoryContent(self, cid, page, filter, ext):
+        print("調用 categoryContent: cid={}, page={}, filter={}, ext={}".format(cid, page, filter, ext))
         _area = ext.get('area', '')
         _year = ext.get('year', '')
         _by = ext.get('by', '')
@@ -81,6 +82,7 @@ class Spider(Spider):
 
     def detailContent(self, did):
         ids = did[0] if isinstance(did, list) else did
+        print("調用 detailContent: ids={}".format(ids))
         video_list = []
         try:
             url = f'{self.home_url}/detail/{ids}.html'
@@ -88,7 +90,6 @@ class Spider(Spider):
             res.raise_for_status()
             root = etree.HTML(res.text)
 
-            # 修復 vod_name 提取，增加備用路徑
             vod_name = root.xpath('//h3[@class="slide-info-title"]/text()')
             if not vod_name:
                 vod_name = root.xpath('//title/text()')
@@ -96,7 +97,6 @@ class Spider(Spider):
             else:
                 vod_name = vod_name[0].strip()
 
-            # 提取播放線路和集數
             play_from_list = root.xpath('//div[contains(@class, "anthology-tab")]//a/text()')
             vod_play_from = '$$$'.join([name.strip().replace('\xa0', '') for name in play_from_list if name.strip()]) or '默認線路'
 
@@ -127,19 +127,23 @@ class Spider(Spider):
                 'vod_play_url': '$$$'.join(vod_play_url) if vod_play_url else ''
             }
             video_list.append(video_item)
+            print("detailContent 成功返回: {}".format(vod_name))
             return {"list": video_list, 'parse': 0, 'jx': 0}
         except requests.RequestException as e:
             print(f"detailContent 錯誤: {str(e)}")
             return {'list': [], 'parse': 0, 'jx': 0, 'msg': f"Error: {str(e)}"}
 
     def searchContent(self, key, quick, page='1'):
+        print("調用 searchContent: key={}, quick={}, page={}".format(key, quick, page))
         url = f'{self.home_url}/search.html?wd={key}&page={page}'
         data = self.get_data(url)
         return {'list': data, 'parse': 0, 'jx': 0}
 
     def playerContent(self, flag, pid, vipFlags):
+        print("調用 playerContent: flag={}, pid={}, vipFlags={}".format(flag, pid, vipFlags))
         try:
             play_url = f'{self.home_url}{pid}'
+            print(f"正在請求播放頁面: {play_url}")
             res = requests.get(play_url, headers=self.headers, timeout=10)
             res.raise_for_status()
             root = etree.HTML(res.text)
@@ -147,32 +151,58 @@ class Spider(Spider):
             # 優先提取 iframe
             iframe_urls = root.xpath('//iframe/@src')
             if iframe_urls:
-                print(f"找到 iframe 地址: {iframe_urls[0]}")
-                return {'url': iframe_urls[0], 'parse': 1, 'jx': 0}
+                iframe_url = iframe_urls[0]
+                print(f"找到 iframe 地址: {iframe_url}")
+                return {
+                    'url': iframe_url,
+                    'header': json.dumps(self.headers),  # 傳遞頭部資訊
+                    'parse': 1,
+                    'jx': 0
+                }
 
             # 嘗試提取 m3u8
             script_content = ''.join(root.xpath('//script/text()'))
             m3u8_url = re.search(r"url:\s*['\"](https?://[^'\"]+?\.m3u8)['\"]", script_content)
             if m3u8_url:
                 print(f"找到 m3u8 地址: {m3u8_url.group(1)}")
-                return {'url': m3u8_url.group(1), 'parse': 0, 'jx': 0}
+                return {
+                    'url': m3u8_url.group(1),
+                    'header': json.dumps(self.headers),  # 添加頭部資訊
+                    'parse': 0,
+                    'jx': 0
+                }
 
             # 如果都失敗，返回測試地址
             test_url = 'https://gitee.com/dobebly/my_img/raw/c1977fa6134aefb8e5a34dabd731a4d186c84a4d/x.mp4'
             print("未找到播放地址，使用測試鏈接")
-            return {'url': test_url, 'parse': 0, 'jx': 0, 'msg': '未找到播放地址，使用測試鏈接'}
+            return {
+                'url': test_url,
+                'header': json.dumps(self.headers),
+                'parse': 0,
+                'jx': 0,
+                'msg': '未找到播放地址，使用測試鏈接'
+            }
         except requests.RequestException as e:
             print(f"playerContent 錯誤: {str(e)}")
             test_url = 'https://gitee.com/dobebly/my_img/raw/c1977fa6134aefb8e5a34dabd731a4d186c84a4d/x.mp4'
-            return {'url': test_url, 'parse': 0, 'jx': 0, 'msg': f"Error: {str(e)}"}
+            return {
+                'url': test_url,
+                'header': json.dumps(self.headers),
+                'parse': 0,
+                'jx': 0,
+                'msg': f"Error: {str(e)}"
+            }
 
     def localProxy(self, params):
+        print("調用 localProxy: params={}".format(params))
         pass
 
     def destroy(self):
+        print("調用 destroy")
         return '正在Destroy'
 
     def get_data(self, url):
+        print("調用 get_data: url={}".format(url))
         data = []
         try:
             res = requests.get(url, headers=self.headers, timeout=10)
@@ -183,7 +213,7 @@ class Spider(Spider):
                 vod_id = i.xpath('./a/@href')[0].split('/')[-1].split('.')[0] if i.xpath('./a/@href') else ''
                 vod_name = i.xpath('./a/@title')[0] if i.xpath('./a/@title') else ''
                 vod_pic = i.xpath('./a/img/@src')[0] if i.xpath('./a/img/@src') else ''
-                vod_remarks = i.xpath('./span/text()')[0] if i.xpath('./span/text') else ''
+                vod_remarks = i.xpath('./span/text()')[0] if i.xpath('./span/text()') else ''
                 data.append({
                     'vod_id': vod_id,
                     'vod_name': vod_name,
@@ -195,10 +225,10 @@ class Spider(Spider):
         return data
 
 if __name__ == "__main__":
+    import json
     spider = Spider()
     spider.init({})
     result = spider.detailContent(['260933'])
-    import json
     print(json.dumps(result, ensure_ascii=False, indent=2))
     play_result = spider.playerContent("測試線路", "/play/260933-1-1.html", [])
     print(json.dumps(play_result, ensure_ascii=False, indent=2))
