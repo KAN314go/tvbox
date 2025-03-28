@@ -5,6 +5,7 @@ import sys
 import requests
 from lxml import etree
 import re
+import json
 sys.path.append('..')
 from base.spider import Spider
 
@@ -18,12 +19,23 @@ class Spider(Spider):
         self.home_url = 'https://gimy.la'
         self.headers = {
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
-            "Referer": "https://gimy.la/"  # 添加 Referer
+            "Referer": "https://gimy.la/"
         }
 
     def getDependence(self):
         print("調用 getDependence")
         return []
+
+    def isVideoFormat(self, url):
+        # 簡單實現：檢查 URL 是否包含常見視頻格式
+        print(f"調用 isVideoFormat: url={url}")
+        video_extensions = ['.mp4', '.m3u8', '.flv', '.avi', '.mkv']
+        return any(url.lower().endswith(ext) for ext in video_extensions)
+
+    def manualVideoCheck(self):
+        # 簡單實現：返回 False，表示不觸發手動檢查
+        print("調用 manualVideoCheck")
+        return False
 
     def homeContent(self, filter):
         print("調用 homeContent: filter={}".format(filter))
@@ -155,7 +167,7 @@ class Spider(Spider):
                 print(f"找到 iframe 地址: {iframe_url}")
                 return {
                     'url': iframe_url,
-                    'header': json.dumps(self.headers),  # 傳遞頭部資訊
+                    'header': json.dumps(self.headers),
                     'parse': 1,
                     'jx': 0
                 }
@@ -167,7 +179,7 @@ class Spider(Spider):
                 print(f"找到 m3u8 地址: {m3u8_url.group(1)}")
                 return {
                     'url': m3u8_url.group(1),
-                    'header': json.dumps(self.headers),  # 添加頭部資訊
+                    'header': json.dumps(self.headers),
                     'parse': 0,
                     'jx': 0
                 }
@@ -195,7 +207,7 @@ class Spider(Spider):
 
     def localProxy(self, params):
         print("調用 localProxy: params={}".format(params))
-        pass
+        return None  # 根據基類要求，返回 None 表示不使用本地代理
 
     def destroy(self):
         print("調用 destroy")
@@ -225,7 +237,6 @@ class Spider(Spider):
         return data
 
 if __name__ == "__main__":
-    import json
     spider = Spider()
     spider.init({})
     result = spider.detailContent(['260933'])
