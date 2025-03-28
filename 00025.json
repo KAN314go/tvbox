@@ -29,14 +29,14 @@
         "数组": "<li class=\"col-md-6 col-sm-4 col-xs-3\">&&</li>",
         "标题": "title=\"&&\"",
         "图片": "data-original=\"&&\"",
-        "副标题": "pic-text text-right\">&&</span>[抢先版:PRE][正片:FULL][HD:HD][更新至第:EP][已完结:END][第:EP]",
+        "副标题": "pic-text text-right\">&&</span>",
         "链接": "href=\"&&\"",
         "播放数组": "stui-content__playlist clearfix&&</ul>",
         "播放列表": "<a&&</a>",
         "播放链接": "href=\"&&\"",
         "播放标题": ">&&<",
-        //"线路数组": "stui-pannel__head bottom-line active clearfix&&</div>",
-        //"线路标题": ">&&</h3>"
+        "线路数组": "stui-pannel__head bottom-line active clearfix&&</div>",
+        "线路标题": ">&&</h3>"
       }
     },
 
