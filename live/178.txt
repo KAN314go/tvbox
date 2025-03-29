@@ -23,7 +23,6 @@
 松视1台,http://107.167.16.226:8880/live/wLmJEuYw32hs/75X2WAcaeJexPFiZ/476365.m3u8
 松视1台,http://104.194.10.200:25461/live/271871095922/006886711863/5.m3u8?token=SRVZVERZGl8UCA4FVw9TAlQFBQRQWgAEDlIGDlYBAQcCAAIEDwMIAA4SGhZFTRdVVl1rWwYaXAMbE0FLBERmClYVCxcABhpJFERfWVMbXwAbEkRbBhpcEAYDAw5RFBVBV09FUEVfWQlpVFNCX1oAEg1eQV4OFERdWW5QXQxXVwcQDRMFFR0aDEVAFA5YTAlcGxJWWxZKB0ZSEw4aUwQOUxAbE1ZYRFYRREkUDhRsNhIbElFKFl0IQV5eWhpbFFRQRw8TGRVYSzpEVUVARFwEXVJCFghACEQeFVxVQD5VVg1cUlJBXl5WFhQKFA0PAFwSGxJZXQxREl1FbkRRBRQDQQAEAQUDE0U=
 松视1台,http://z3.ubtvfans.com/live/rx3/402/733039a795cd903623dd9c87385ee32b/index.m3u8
-松视1台,http://lc.aacalive.com:26789/i/ghjnvq5o/8c855fdf/index.m3u8
 
 松视2台(小雲),http://18.svi-studio.com:80/live/176844830209/558261845324/6.m3u8
 松視2台(小雲),http://18.svi-studio.com:801/live/055613148424/758984796805/6.m3u8
@@ -73,6 +72,7 @@
 
 麻豆直播,http://276868.cloud/7584899480166fb05d86da7b61a0940e/a342fa9e5e11747f731a4832e31e0e7d/57c97d9bd28f87f9ee79891f2496dc99/index.m3u8
 麻豆直播,p3p://173.208.176.178:31809/63fd56ec000b5f0d26d4fe1b07963493
+麻豆直播,p3p://173.208.176.178:31809/606271190002a1266f75aaee0463186a
 麻豆直播,https://epg.pw/stream/e5cc080f8b849ce451705d59802c6d1605c643995772f60896098fd840b10255.m3u8
 
 大番號直播,http://lc.aacalive.com:26789/i/ghjnvq5o/sajdxxzc/index.m3u8
@@ -81,6 +81,8 @@
 彩虹E台,http://276868.cloud/304eb151795fdb6f46fb2e7131899aa4/a342fa9e5e11747f731a4832e31e0e7d/8f9bc18b7f6567180e5f3444818aaa9c/index.m3u8
 彩虹E台,https://epg.pw/stream/39d8f414d724fb9b7c2b1d6ae39871850ff5cf78d9db0ef0a2b8eea8ed84a39a.m3u8
 彩虹E台,http://ali.hlspull.yximgs.com/live/fc2149516cf4b11feacb3deff665fb30.flv
+彩虹E台,http://276868.cloud/b9b937de9424c9c8aa5abba4956cb971/a342fa9e5e11747f731a4832e31e0e7d/795b980acf178c28b340245c217ed848/index.m3u8
+彩虹E台,http://lc.aacalive.com:26789/i/ghjnvq5o/8c855daa/index.m3u8
 
 彩虹K台,http://jaz9.my.to:2390/udp/224.1.4.175:11111
 彩虹K台,http://ali.hlspull.yximgs.com/live/8e965f80be61b5bee081846aa9a0a7f1.flv
@@ -160,8 +162,46 @@
 驚艷臺,http://ali.hlspull.yximgs.com/live/9663ea3c5f5a81b533de8c546c1329f5.flv
 驚艷臺,http://ali.hlspull.yximgs.com/live/4629abfefeb84a6ae624143368299f09.flv
 
+HAPPY,p3p://173.208.176.178:31809/616b79be000a35b17ab2f7b84c325eeb
+HAPPY,http://jaz9.my.to:2390/udp/224.1.4.186:11111
+HAPPY,http://ali.hlspull.yximgs.com/live/dd66a1fb532611a4942181a95f5931a1.flv
 
 
+一本道,https://2.ddyunbo.com/20190904/ZnGN7sEl/index.m3u8 
+
+
+高清LIVE,http://lc.aacalive.com:26789/i/ghjnvq5o/mdfdc123/index.m3u8
+高清LIVE,http://lc.aacalive.com:26789/i/ghjnvq5o/asdm3134/index.m3u8
+
+
+玩家频道,http://276868.cloud/29215331c8ac206fd4c2c27b1572324a/a342fa9e5e11747f731a4832e31e0e7d/a3f6b7e3e4f163b355c280020920de17/index.m3u8
+
+
+极限电影台,https://2.ddyunbo.com/20190918/7mkn1AhN/index.m3u8 
+极限电影台,http://jaz9.my.to:2390/udp/230.1.2.152:11111
+极限电影台,p3p://173.208.176.178:31809/6109e9bb0005fd87fd9ce5ea2c1f18d3
+极限电影台,https://epg.pw/stream/a4a9b7e7603d96e605468df45eb0d14be5b022328f927957290b981f8c7f7a6c.m3u8
+极限电影台,http://ali.hlspull.yximgs.com/live/bcdf6089e51c0106e39c233ed584f95e.flv
+极限电影台,http://ali.hlspull.yximgs.com/live/c4559a900cb808925162c053af606dd2.flv
+
+
+
+💋歐美,#genre#
+松视1欧美版,http://live.redtraffic.xyz:80/interracial.m3u8
+松视1欧美版,https://2.ddyunbo.com/20190914/dSIYelxz/index.m3u8 
+松视1欧美版,http://live.redtraffic.xyz:80/fetish.m3u8
+松视1欧美版,http://live.redtraffic.xyz:80/fetish.m3u8
+松视2欧美版,http://live.redtraffic.xyz:80/bigtits.m3u8
+松视3欧美版,http://live.redtraffic.xyz:80/bigdick.m3u8
+松视3欧美版,mitv://generationnexxxt.com:19806/4f855e073cb74c4ba33494f3c5feab03
+玩美欧美版,http://live.redtraffic.xyz:80/pov.m3u8
+HOT欧美版,http://live.redtraffic.xyz:80/hardcore.m3u8
+香蕉台欧美版,http://live.redtraffic.xyz:80/milf.m3u8
+pigoo,http://s.mrw.so/7DlB
+奧視2,http://125.227.210.55:55643/VideoInput/play.ts
+奧视3,http://125.227.210.55:8917/VideoInput/play.ts
+Mainu臺,http://125.227.210.55:51359/VideoInput/play.ts
+Sex Girl,http://125.227.210.55:62698/VideoInput/play.ts
 vividtv(小雲),http://18.svi-studio.com:801/live/055613148424/758984796805/101427.m3u8
 vividtv(小雲),http://18.svi-studio.com:80/live/176844830209/558261845324/101427.m3u8
 vividtv(小雲),http://18.svi-studio.com:801/live/055613148424/758984796805/101427.m3u8
@@ -239,54 +279,6 @@ vividtv(小雲),http://18.svi-studio.com:80/live/346356153167/782875691212/10142
 vividtv(小雲),http://18.svi-studio.com:80/live/875994180836/930699661147/101427.m3u8
 vividtv(小雲),http://18.svi-studio.com:80/live/917952932058/953281067271/101427.m3u8
 vividtv(小雲),http://18.svi-studio.com:80/live/426804892399/739490745427/101427.m3u8
-
-
-
-
-
-
-
-
-pigoo,http://s.mrw.so/7DlB
-
-奧視2,http://125.227.210.55:55643/VideoInput/play.ts
-奧视3,http://125.227.210.55:8917/VideoInput/play.ts
-
-Mainu臺,http://125.227.210.55:51359/VideoInput/play.ts
-Sex Girl,http://125.227.210.55:62698/VideoInput/play.ts
-LOOK,p3p://173.208.176.178:31809/606271190002a1266f75aaee0463186a
-高清LIVE,http://lc.aacalive.com:26789/i/ghjnvq5o/mdfdc123/index.m3u8
-高清LIVE,http://lc.aacalive.com:26789/i/ghjnvq5o/asdm3134/index.m3u8
-玩家频道,http://276868.cloud/29215331c8ac206fd4c2c27b1572324a/a342fa9e5e11747f731a4832e31e0e7d/a3f6b7e3e4f163b355c280020920de17/index.m3u8
-一本道,https://2.ddyunbo.com/20190904/ZnGN7sEl/index.m3u8 
-
-HAPPY,p3p://173.208.176.178:31809/616b79be000a35b17ab2f7b84c325eeb
-HAPPY,http://jaz9.my.to:2390/udp/224.1.4.186:11111
-HAPPY,http://ali.hlspull.yximgs.com/live/dd66a1fb532611a4942181a95f5931a1.flv
-
-极限电影台,https://2.ddyunbo.com/20190918/7mkn1AhN/index.m3u8 
-极限电影台,http://jaz9.my.to:2390/udp/230.1.2.152:11111
-极限电影台,p3p://173.208.176.178:31809/6109e9bb0005fd87fd9ce5ea2c1f18d3
-极限电影台,https://epg.pw/stream/a4a9b7e7603d96e605468df45eb0d14be5b022328f927957290b981f8c7f7a6c.m3u8
-极限电影台,http://ali.hlspull.yximgs.com/live/bcdf6089e51c0106e39c233ed584f95e.flv
-极限电影台,http://ali.hlspull.yximgs.com/live/c4559a900cb808925162c053af606dd2.flv
-
-HOT,http://276868.cloud/b9b937de9424c9c8aa5abba4956cb971/a342fa9e5e11747f731a4832e31e0e7d/795b980acf178c28b340245c217ed848/index.m3u8
-HOT,http://lc.aacalive.com:26789/i/ghjnvq5o/8c855daa/index.m3u8
-
-
-
-松视1欧美版,http://live.redtraffic.xyz:80/interracial.m3u8
-松视1欧美版,https://2.ddyunbo.com/20190914/dSIYelxz/index.m3u8 
-松视1欧美版,http://live.redtraffic.xyz:80/fetish.m3u8
-松视1欧美版,http://live.redtraffic.xyz:80/fetish.m3u8
-松视2欧美版,http://live.redtraffic.xyz:80/bigtits.m3u8
-松视3欧美版,http://live.redtraffic.xyz:80/bigdick.m3u8
-松视3欧美版,mitv://generationnexxxt.com:19806/4f855e073cb74c4ba33494f3c5feab03
-玩美欧美版,http://live.redtraffic.xyz:80/pov.m3u8
-HOT欧美版,http://live.redtraffic.xyz:80/hardcore.m3u8
-香蕉台欧美版,http://live.redtraffic.xyz:80/milf.m3u8
-
 
 💋點播,#genre#
 JUX-362親父の女KAORI,http://18.svi-studio.com:801/movie/055613148424/758984796805/77454.mp4
