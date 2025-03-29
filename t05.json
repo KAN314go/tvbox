@@ -42,7 +42,7 @@
          "简介" :"class=\"video-info-item video-info-content vod_content\">&&</span>",
          "嗅探词": "m3u8#.m3u8#.mp4#freeok.mp4#/obj/",
          "线路数组": "class=\"module-tab-item tab-item\"&&</div>[排序:FF线路>HW线路>ME线路>YZ线路]",
-         "线路标题": "<span>&&</small>",
+         "线路标题": "<span>&&</small>[替换:</span><small>>>(共]+集)]",
          "搜索url": "https://www.haituu.tv/vodsearch/{wd}-------------.html",
          "分类": "电影$1#电视剧$2#综艺$3#动漫$4#短劇$42",
          "分类url": "https://www.haitu.xyz/vodshow/{cateId}-{area}-{by}------{catePg}---{year}.html",
