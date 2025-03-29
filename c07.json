@@ -18,7 +18,7 @@
         "标题": "title=\"&&\"",
         "简介": "class=\"sketch content\"&&</span>",
         //"数组": "lazyload\"&&</li>",
-        "线路数组": "class=\"nav nav-tabs active\"&&</div>",
+        "线路数组": "class=\"myui-panel__head active&&</div>",
         "线路标题": "data-toggle=\">&&</a",
         "分类url": "https://www.duboku.tv/vodshow/{cateId}-{area}-{by}------{catePg}---{year}.html",
         "分类": "电影$1#剧集$2#综艺$3#动漫$4",
