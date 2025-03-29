@@ -4184,30 +4184,6 @@
       "ads": ["static-mozai.4gtv.tv", "s3t3d2y8.afcdn.net"]
     },
     {
-      "name": "4G-TV(M3U)",
-      "type": 3,
-      "playerType": 2,
-      "url": "https://tv.banye.tech:7777/4gtv.m3u",
-      "epg": "http://epg.112114.xyz/?ch={name}&date={date}",
-      "logo": "https://epg.112114.xyz/logo/{name}.png"
-    },
-    {
-      "name": "4G-TV(777)",
-      "playerType": 2,
-      "url": "./live/4gtv.txt",
-      "epg": "http://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Taipei",
-      "logo": "https://epg.112114.xyz/logo/{name}.png",
-      "pass": true
-    },
-    {
-      "name": "4G-TV(987)",
-      "type": 3,
-      "url": "https://raw.githubusercontent.com/shawn82/fm/main/lib/taiwan.m3u",
-      "epg": "http://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Taipei",
-      "logo": "https://epg.112114.xyz/logo/{name}.png",
-      "playerType": 2
-    },
-    {
       "name": "RobYang| http://RobYang.ggff.net",
       "type": 0,
       "playerType": 2,
@@ -4366,18 +4342,18 @@
       "pass": true
     },
     {
-      "name": "Stream",
-      "type": 0,
-      "playerType": 2,
-      "url": "https://www.stream-link.org/playlist.m3u?token=9e19d6d5-b804-443c-99ab-03689b657d26&hmac=bc1b85012072370e5b7997f2fcc539ce",
-      "epg": "http://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Taipei",
-      "logo": "https://epg.112114.xyz/logo/{name}.png",
-      "pass": true
-    },
-    {
       "name": "新AKTV港台",
       "type": 0,
       "url": "http://aktv.top/live.m3u",
+      "playerType": 2,
+      "ua": "okhttp/3",
+      "epg": "https://epg.112114.eu.org/?ch={name}&date={date}",
+      "logo": "https://epg.112114.eu.org/logo/{name}.png"
+    },
+    {
+      "name": "猫TV线路",
+      "type": 0,
+      "url": "http://rihou.cc:567/gggg.nzk",
       "playerType": 2,
       "ua": "okhttp/3",
       "epg": "https://epg.112114.eu.org/?ch={name}&date={date}",
@@ -4391,16 +4367,6 @@
       "ua": "okhttp/3",
       "epg": "https://epg.112114.eu.org/?ch={name}&date={date}&serverTimeZone=Asia/Taipei",
       "logo": "https://epg.112114.eu.org/logo/{name}.png"
-    },
-    {
-      "name": "备用虎牙",
-      "type": 0,
-      "url": "http://www.52sw.top:678/iptv/huya.m3u"
-    },
-    {
-      "name": "备用斗鱼",
-      "type": 0,
-      "url": "http://www.52sw.top:678/iptv/douyu.m3u"
     },
     {
       "name": "小武哥(18+)",
@@ -4434,15 +4400,6 @@
       "timeout": 5,
       "epg": "https://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/taipei",
       "logo": "https://epg.112114.xyz/logo/{name}.png"
-    },
-    {
-      "name": "猫TV线路(故障)",
-      "type": 0,
-      "url": "http://rihou.cc:567/gggg.nzk",
-      "playerType": 2,
-      "ua": "okhttp/3",
-      "epg": "https://epg.112114.eu.org/?ch={name}&date={date}",
-      "logo": "https://epg.112114.eu.org/logo/{name}.png"
     },
     {
       "name": "PIXMAN(故障)",
