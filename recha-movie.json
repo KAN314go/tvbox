@@ -11,17 +11,7 @@
 
 
 
-  {
-      "key": "金星影视",
-      "name": "🥇｜金星｜高清◎順播(無廣告)",
-      "type": 3,
-      "api": "csp_WebJP",
-      "jar":"./jar/tvkj.jar",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": "KhY021WelCEl+6MsvwnzaPusskysEhxc/i3d/FHwReBTtZTeDEVZJbQKKez3K+OxlrjAIMdUpAUxP8fGystYn0Hss098UFVR69Qm2ARgmeZN86q8Ww=="
-  },
+
 
     {
       "key": "豆瓣",
@@ -358,13 +348,17 @@
       "changeable": 1
     },
     {
-      "key": "csp_Nmys",
-      "name": "🥇｜伯伯｜高清◎秒播(無廣告)",
+      "key": "糯米弹幕",
+      "name": "糯米｜弹幕",
       "type": 3,
-      "api": "csp_WexNmysGuard",
-      "jar": "./jar/wex.txt;md5;6237e73e89cd1cc8ed815ad7712c6b65",
-      "searchable": 0,
-      "changeable": 1
+      "api": "csp_Nmys",
+      "jar": "./jar/PizazzGY.jar;md5;6bcb3de5f0d7c9b3d4f19cfe9a314ab2",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": {
+          "danmu": true
+      }
     },
     {
       "key": "Diduanys",
@@ -1052,6 +1046,17 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": "./json/即看.json"
+    },
+    {
+      "key": "金星影视",
+      "name": "🥇｜金星｜高清◎秒播(無廣告)",
+      "type": 3,
+      "api": "csp_WebJP",
+      "jar":"./jar/tvkj.jar",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "KhY021WelCEl+6MsvwnzaPusskysEhxc/i3d/FHwReBTtZTeDEVZJbQKKez3K+OxlrjAIMdUpAUxP8fGystYn0Hss098UFVR69Qm2ARgmeZN86q8Ww=="
     },
     {
       "key": "csp_可可",
@@ -4279,6 +4284,15 @@
       "logo": "https://epg.112114.xyz/logo/{name}.png",
       "pass": true
     },
+    {
+      "name": "Freeman.TW友情贊助的線路",
+      "playerType": 1,
+      "url": "https://freeman.neocities.org/Live-TV520.txt",
+      "epg": "http://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Taipei",
+      "logo": "https://epg.112114.xyz/logo/{name}.png",
+      "pass": true
+    },
+    
     {
       "name": "LiTV",
       "type": 0,
