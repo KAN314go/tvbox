@@ -4438,7 +4438,7 @@
     },
     {
       "name": "私密線路(18+)",
-      "playerType": 2,
+      "playerType": 1,
       "url": "./live/178.txt",
       "epg": "http://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Taipei",
       "ua": "Lavf/58.12.100",
