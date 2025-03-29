@@ -24,7 +24,7 @@
   },
   {
     "key": "海兔",
-    "name": "海兔|秒播",
+    "name": "🥇｜海兔|",
     "type": 3,
     "api": "csp_XBPQ",
     "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
@@ -40,27 +40,37 @@
          "标题": "title=\"&&\"",
          "链接": "",
          "简介" :"class=\"video-info-item video-info-content vod_content\">&&</span>",
+         "嗅探词": "m3u8#.m3u8#.mp4#freeok.mp4#/obj/",
          "线路数组": "class=\"module-tab-item tab-item\"&&</div>",
          "线路标题": "<span>&&</small>[替换:</span><small>>>(共]+集)",
          "搜索url": "https://www.haituu.tv/vodsearch/{wd}-------------.html",
-         "分类": "电影$1#电视剧$2#动漫$4#综艺$3",
-         "分类url": "https://www.haituu.tv/vodshow/{cateId}--------{catePg}---.html",
-         "嗅探词": "m3u8#.m3u8#.mp4#freeok.mp4#/obj/"
+         "分类": "电影$1#电视剧$2#综艺$3#动漫$4#短劇$42",
+         "分类url": "https://www.haitu.xyz/vodshow/{cateId}-{area}-{by}------{catePg}---{year}.html",
+         "地区": "大陆&香港&台湾&美国&法国&英国&日本&韩国&德国&泰国&印度&意大利&西班牙&加拿大&其他||大陆&韩国&香港&台湾&日本&美国&泰国&英国&其他||大陆&韩国&香港&台湾&日本&美国&泰国&英国&其他||国产&日本&欧美&港台&韩国&其他||空"                               
          }
   },
   {
-    "key": "csp_XBPQ_fxzcjy",
-    "name": "🍃柴姬影视",
-    "type": 3,
-    "api": "csp_XBPQ",
-    "searchable": 1,
-    "quickSearch": 1,
-    "filterable": 1,
-    "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-    "ext": "https://git.acwing.com/xcz/xcz/-/raw/master/lib/分享caiji.json"
-  },	
-
-
+    "key":"XBPQ_fxzcjy",
+    "name":"🥇｜柴姬|",
+      "jar":"./jar/tvkj.jar",
+      "type": 3,
+      "api": "csp_Xpg",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "",
+      "timeout": 10
+    },
+    {
+      "key": "真心影视",
+      "name": "🥇｜真心┃蓝光",
+      "type": 3,
+      "api": "csp_WebGZ",
+      "jar": "./jar/配置中心.jar",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+  },
 
 
 
