@@ -2358,8 +2358,8 @@
         "搜索模式": "0",
         "搜索后缀": "/detail/",
         "搜索url": "/search/-/?wd={wd}",
-        "线路数组": "<span class=\"hl-from&&</li>",
-        "线路标题": ">&&</span>[不包含:线路2(高速)]",
+        "线路数组": "<span class=\"hl-from&&</li>[排序:线路1(高速)>线路4(高速)>线路3(超清,中国专线)>线路2(高速)]",
+        "线路标题": ">&&</span>",
         "分类url": "https://www.feitu.tv/filter/{cateId}/by/{by}/page/{catePg}/year/{year}/",
         "分类": "电影$1#剧集$2#动漫$4#综艺$3"
       }
