@@ -4,10 +4,10 @@
   "wallpaper": "https://tv.nxog.top/m//t/",
   "sites": [
 
-    {"key":"热播弹幕版","name":"🥇｜热播｜待測","type": 3,"api":"csp_TianTianGuard","jar": "./jar/ok-0330.png;md5;9a6df6d8b0df8d388f0c1e33ea6f7d9a","searchable":1,"quickSearch":1,"filterable":1,"ext": {"danmu": true, "site": 0}, "timeout": 10},
-    {"key":"天天弹幕版","name":"🥇｜天天｜待測","type": 3,"api":"csp_TianTianGuard","jar": "./jar/ok-0330.png;md5;9a6df6d8b0df8d388f0c1e33ea6f7d9a","searchable":1,"quickSearch":1,"filterable":1,"ext": {"danmu": true, "site": 1}, "timeout": 10},
-    {"key":"糯米","name":"🥇｜糯米｜待測","type": 3,"jar": "./jar/ok-0330.png;md5;9a6df6d8b0df8d388f0c1e33ea6f7d9a","api":"csp_NmysGuard","searchable":1,"quickSearch":1,"filterable":1,"ext": {"danmu": true}, "timeout": 10},
-    {"key":"浪酷弹幕版","name":"🥇｜浪酷｜待測","type": 3,"api":"csp_TianTianGuard","jar": "./jar/ok-0330.png;md5;9a6df6d8b0df8d388f0c1e33ea6f7d9a","searchable":1,"quickSearch":1,"filterable":1,"ext": {"danmu": true, "site": 2}, "timeout": 10},
+    {"key":"热播弹幕版","name":"🥇｜热播｜待測","type": 3,"api":"csp_TianTianGuard","jar": "./jar/ok-0330.png","searchable":1,"quickSearch":1,"filterable":1,"ext": {"danmu": true, "site": 0}, "timeout": 10},
+    {"key":"天天弹幕版","name":"🥇｜天天｜待測","type": 3,"api":"csp_TianTianGuard","jar": "./jar/ok-0330.png","searchable":1,"quickSearch":1,"filterable":1,"ext": {"danmu": true, "site": 1}, "timeout": 10},
+    {"key":"糯米","name":"🥇｜糯米｜待測","type": 3,"jar": "./jar/ok-0330.png","api":"csp_NmysGuard","searchable":1,"quickSearch":1,"filterable":1,"ext": {"danmu": true}, "timeout": 10},
+    {"key":"浪酷弹幕版","name":"🥇｜浪酷｜待測","type": 3,"api":"csp_TianTianGuard","jar": "./jar/ok-0330.png","searchable":1,"quickSearch":1,"filterable":1,"ext": {"danmu": true, "site": 2}, "timeout": 10},
 
 
 
