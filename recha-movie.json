@@ -270,6 +270,8 @@
         "图片": "data-original=\"&&\"",
         "副标题": "text-right\">&&</span>",
         "链接": "href=\"&&\"",
+        "搜索模式": "1",
+        "搜索url": "https://www.szhsjsj.com/search/-------------.html?wd={wd}",
         "播放数组": "list sort-list clearfix&&</ul>",
         "播放列表": "<a&&a>",
         "播放链接": "href=\"&&\"",
