@@ -17,7 +17,7 @@
         "图片": "data-original=\"&&\"",
         "标题": "title=\"&&\"",
         "简介": "class=\"sketch content\"&&</span>",
-        "数组": "lazyload\"&&</li>",
+        "数组": "class=\"myui-vodlist__box\"&&</li>",
         "线路数组": "class=\"myui-panel__head active&&</div>",
         "线路标题": "class=\"title titlego\">&&</h3",
         "分类url": "https://www.duboku.tv/vodshow/{cateId}-{area}-{by}------{catePg}---{year}.html",
