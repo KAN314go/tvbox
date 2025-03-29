@@ -52,6 +52,7 @@
     "直接播放": "0",
     "主页url": "http://v.xlys.ltd.ua",
     "分类url": "https://v.xlys.ltd.ua/s/{class}/{catePg}?type={cateId}&area={area}&year={year}",
+    "地区": "中国大陆&中国香港&中国台湾&美国&英国&日本&韩国&法国&印度&德国&西班牙&意大利&澳大利亚&比利时&瑞典&荷兰&丹麦&加拿大&俄罗斯",
     "分类": "電影$0#電視劇$1",
     "剧情": "动作$dongzuo#爱情$aiqing#喜剧$xiju#科幻$kehuan#恐怖$kongbu#战争$zhanzheng#武侠$wuxia#魔幻$mohuan#剧情$juqing#动画$donghua#惊悚$jingsong#灾难$zainan#悬疑$xuanyi#警匪$jingfei#文艺$wenyi#青春$qingchun#冒险$maoxian#犯罪$fanzui#纪录$jilu#古装$guzhuang#奇幻$qihuan#国语$guoyu#综艺$zongyi#历史$lishi#运动$yundong#原创压制$yuanchuang#美剧$meiju#韩剧$hanju#国产电视剧$guoju#日剧$riju#英剧$yingju#德剧$deju#俄剧$eju#巴剧$baju#加剧$jiaju#西剧$spanish#意大利剧$yidaliju#泰剧$taiju#港台剧$gangtaiju#法剧$faju#澳剧$aoju",
     "数组": "card-link&&/h3>",
