@@ -4,10 +4,10 @@
   "wallpaper": "https://tv.nxog.top/m//t/",
   "sites": [
 
-    {"key":"热播弹幕版","name":"🥇｜热播｜待測","type": 3,"api":"csp_TianTianGuard","jar": "https://fs-im-kefu.7moor-fs2.com/im/2768a390-5474-11ea-afc9-7b323e3e16c0/BAHu5Q70.png;md5;9a6df6d8b0df8d388f0c1e33ea6f7d9a","searchable":1,"quickSearch":1,"filterable":1,"ext": {"danmu": true, "site": 0}, "timeout": 10},
-    {"key":"天天弹幕版","name":"🥇｜天天｜待測","type": 3,"api":"csp_TianTianGuard","jar": "https://fs-im-kefu.7moor-fs2.com/im/2768a390-5474-11ea-afc9-7b323e3e16c0/BAHu5Q70.png;md5;9a6df6d8b0df8d388f0c1e33ea6f7d9a","searchable":1,"quickSearch":1,"filterable":1,"ext": {"danmu": true, "site": 1}, "timeout": 10},
-    {"key":"糯米","name":"🥇｜糯米｜待測","type": 3,"jar": "https://fs-im-kefu.7moor-fs2.com/im/2768a390-5474-11ea-afc9-7b323e3e16c0/BAHu5Q70.png;md5;9a6df6d8b0df8d388f0c1e33ea6f7d9a","api":"csp_NmysGuard","searchable":1,"quickSearch":1,"filterable":1,"ext": {"danmu": true}, "timeout": 10},
-    {"key":"浪酷弹幕版","name":"🥇｜浪酷｜待測","type": 3,"api":"csp_TianTianGuard","jar": "https://fs-im-kefu.7moor-fs2.com/im/2768a390-5474-11ea-afc9-7b323e3e16c0/BAHu5Q70.png;md5;9a6df6d8b0df8d388f0c1e33ea6f7d9a","searchable":1,"quickSearch":1,"filterable":1,"ext": {"danmu": true, "site": 2}, "timeout": 10},
+    {"key":"热播弹幕版","name":"🥇｜热播｜待測","type": 3,"api":"csp_TianTianGuard","spider": "https://fs-im-kefu.7moor-fs2.com/im/2768a390-5474-11ea-afc9-7b323e3e16c0/BAHu5Q70.png;md5;9a6df6d8b0df8d388f0c1e33ea6f7d9a","searchable":1,"quickSearch":1,"filterable":1,"ext": {"danmu": true, "site": 0}, "timeout": 10},
+    {"key":"天天弹幕版","name":"🥇｜天天｜待測","type": 3,"api":"csp_TianTianGuard","spider": "https://fs-im-kefu.7moor-fs2.com/im/2768a390-5474-11ea-afc9-7b323e3e16c0/BAHu5Q70.png;md5;9a6df6d8b0df8d388f0c1e33ea6f7d9a","searchable":1,"quickSearch":1,"filterable":1,"ext": {"danmu": true, "site": 1}, "timeout": 10},
+    {"key":"糯米","name":"🥇｜糯米｜待測","type": 3,"api":"csp_NmysGuard","spider": "https://fs-im-kefu.7moor-fs2.com/im/2768a390-5474-11ea-afc9-7b323e3e16c0/BAHu5Q70.png;md5;9a6df6d8b0df8d388f0c1e33ea6f7d9a","searchable":1,"quickSearch":1,"filterable":1,"ext": {"danmu": true}, "timeout": 10},
+    {"key":"浪酷弹幕版","name":"🥇｜浪酷｜待測","type": 3,"api":"csp_TianTianGuard","spider": "https://fs-im-kefu.7moor-fs2.com/im/2768a390-5474-11ea-afc9-7b323e3e16c0/BAHu5Q70.png;md5;9a6df6d8b0df8d388f0c1e33ea6f7d9a","searchable":1,"quickSearch":1,"filterable":1,"ext": {"danmu": true, "site": 2}, "timeout": 10},
 
 
 
