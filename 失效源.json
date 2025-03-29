@@ -6,6 +6,36 @@
     "wallpaper": "https://picsum.photos/1080/",
     "sites": [ 
       {
+        "key": "T4-欧乐",
+        "name": "🥇｜歐唐｜高清◎秒播(無廣告+唐三網站被查封)",
+        "type": 4,
+        "api": "https://tang.hz.cz/power/olelive?token=647c28ca",
+        "searchable": 1,
+        "quickSearch": 1,
+        "filterable": 1,
+        "changeable": 1
+      },
+      {
+        "key": "T4-独播库",
+        "name": "🥇｜獨播｜藍光◎秒播(無廣告+唐三網站被查封)",
+        "type": 4,
+        "api": "https://tang.hz.cz/power/duboku?token=647c28ca",
+        "searchable": 1,
+        "quickSearch": 1,
+        "filterable": 1,
+        "changeable": 1
+      },
+      {
+        "key": "T4-安博",
+        "name": "🥇｜安博｜高清◎秒播(無廣告)",
+        "type": 4,
+        "api": "https://tang.hz.cz/power/ub18?token=647c28ca",
+        "searchable": 1,
+        "quickSearch": 1,
+        "filterable": 1,
+        "changeable": 1
+      },
+    {
         "key": "py_素白白.py",
         "name": "🥉｜素白｜高清◎順播(無廣告)",
         "type": 3,
