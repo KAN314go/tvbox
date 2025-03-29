@@ -3,6 +3,26 @@
   "logo": "https://p3-pc.douyinpic.com/img/aweme-avatar/tos-cn-i-0813_6e2553f5708c414386eeca88b5f2674a~c5_300x300.jpeg?from=2956013662",
   "wallpaper": "https://tv.nxog.top/m//t/",
   "sites": [
+
+
+
+
+
+
+
+
+  {
+      "key": "金星影视",
+      "name": "🥇｜金星｜高清◎順播(無廣告)",
+      "type": 3,
+      "api": "csp_WebJP",
+      "jar":"./jar/tvkj.jar",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "KhY021WelCEl+6MsvwnzaPusskysEhxc/i3d/FHwReBTtZTeDEVZJbQKKez3K+OxlrjAIMdUpAUxP8fGystYn0Hss098UFVR69Qm2ARgmeZN86q8Ww=="
+  },
+
     {
       "key": "豆瓣",
       "name": "🇹🇼｜熱播排行榜｜自動切換",
@@ -76,15 +96,16 @@
       "jar": "./jar/fan.txt;md5;8851819289f80deae32319080028db3b"
     },
     {
-      "key": "csp_开心影院",
-      "name": "🥇｜銅影｜高清◎秒播(無廣告)",
-      "type": 3,
-      "api": "csp_XBPQ",
-      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": "./json/開心影院.json"
+      "key":"XBPQ_fxzcjy",
+      "name":"🥇｜銅影|高清◎秒播(無廣告)",
+        "jar":"./jar/tvkj.jar",
+        "type": 3,
+        "api": "csp_Xpg",
+        "searchable": 1,
+        "quickSearch": 1,
+        "filterable": 1,
+        "ext": "",
+        "timeout": 10
     },
     {
       "key": "csp_歐樂影院ORG",
@@ -228,6 +249,41 @@
       }
     },
     {
+      "key": "csp_开心影院",
+      "name": "🥇｜开心｜高清◎秒播(無廣告)",
+      "type": 3,
+      "api": "csp_XBPQ",
+      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": 
+      {
+        "規則名":"開心影院",
+        "規則作者":"老王叔叔",
+        "規則日期":"113.12.04",
+        "请求头": "User-Agent$MOBILE_UA",
+        "编码": "UTF-8",
+        "二次截取": "myui-vodlist clearfix\">&&</ul>",
+        "数组": "stui-vodlist__box\"&&</li>",
+        "标题": "title=\"&&\"",
+        "图片": "data-original=\"&&\"",
+        "副标题": "text-right\">&&</span>",
+        "链接": "href=\"&&\"",
+        "播放数组": "list sort-list clearfix&&</ul>",
+        "播放列表": "<a&&a>",
+        "播放链接": "href=\"&&\"",
+        "播放标题": "第+>&&</+集",
+        "线路数组": "href=\"\\#playlist&&li>",
+        "线路标题": "tab\">&&</a>",
+        "跳转播放链接": "var player_*\"url\":\"&&\"",
+        "主页url": "https://www.szhsjsj.com/",
+        "分类url": "https://www.szhsjsj.com/show/{cateId}-{area}-{by}-{class}-----{catePg}---{year}.html",            
+        "分类": "电影$1#电视剧$2#综艺$3#动漫$4",
+        "类型": "动作片$7#喜剧片$8#爱情片$9#科幻片$10#恐怖片$11#剧情片$12#犯罪片$29#战争片$13||国产剧$14#港剧$15#台湾剧$16#韩剧$17#日剧$18#泰剧$31#欧美剧$19#海外剧$20||大陆综艺$21#日韩综艺$22||国产动漫$25#日本动漫$26#欧美动漫$27#海外动漫$28"
+        }
+    },
+    {
       "key": "龙虾",
       "name": "🥇｜龍蝦｜藍光◎秒播(無廣告+APP)",
       "type": 3,
@@ -272,6 +328,16 @@
       "searchable": 0,
       "changeable": 1
     },
+    {
+      "key": "真心影视",
+      "name": "🥇｜真心｜藍光◎龜速(無廣告)",
+      "type": 3,
+      "api": "csp_WebGZ",
+      "jar": "./jar/配置中心.jar",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+  },
     {
       "key": "WexquickvodGuard",
       "name": "🥇｜美剧｜高清◎秒播(無廣告)",
@@ -1419,32 +1485,6 @@
       "filterable": 1
     },
     {
-      "key": "csp_奈飞TV",
-      "name": "🥈｜奈何｜高清◎秒播(浮水印廣告)",
-      "type": 3,
-      "changeable": 1,
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "api": "csp_XBPQ",
-      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-      "ext": "./json/奈飛tv.json"
-    },
-    {
-      "key": "csp_XBiu廠長影院",
-      "name": "🥈｜廠長｜高清◎秒播(浮水印廣告)",
-      "type": 3,
-      "api": "csp_XBPQ",
-      "jar": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/jar1/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": {
-        "分类url": "https://www.tz2yj.com/list/{cateId}___{year}__addtime_{catePg}.html",
-        "分类": "電視劇$dianshiju#電影$dianying#動漫$dongman#綜藝$zongyi#微電影$weidianying"
-      }
-    },
-    {
       "key": "csp_琥珀影院",
       "name": "🥈｜琥珀｜高清◎秒播(浮水印廣告)",
       "type": 3,
@@ -2358,8 +2398,8 @@
         "搜索模式": "0",
         "搜索后缀": "/detail/",
         "搜索url": "/search/-/?wd={wd}",
-        "线路数组": "<span class=\"hl-from&&</li>[排序:线路1(高速)>线路4(高速)>线路3(超清,中国专线)>线路2(高速)]",
-        "线路标题": ">&&</span>",
+        "线路数组": "<span class=\"hl-from&&</li>",
+        "线路标题": ">&&</span>[不包含:线路2(高速)]",
         "分类url": "https://www.feitu.tv/filter/{cateId}/by/{by}/page/{catePg}/year/{year}/",
         "分类": "电影$1#剧集$2#动漫$4#综艺$3"
       }
@@ -2396,6 +2436,15 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": "./json/觀影台.json"
+    },
+    {
+      "key": "py_素白白.py",
+      "name": "🥉｜素白｜高清◎順播(無廣告)",
+      "type": 3,
+      "api": "./py/素白白.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
     },
     {
       "key": "csp_中畅影院",
