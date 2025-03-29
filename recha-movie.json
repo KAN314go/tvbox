@@ -4139,6 +4139,7 @@
     {
       "name": "小雲1台",
       "url": "https://tang.hz.cz/so/xiaoyun.m3u",
+      "playerType": 2,
       "core": {
         "auth": "local://tvbus",
         "name": "123",
@@ -4152,6 +4153,7 @@
     {
       "name": "小雲2台",
       "url": "./live/ueen2.txt",
+      "playerType": 2,
       "core": {
         "auth": "local://tvbus",
         "name": "123",
@@ -4438,7 +4440,7 @@
     },
     {
       "name": "私密線路(18+)",
-      "playerType": 1,
+      "playerType": 2,
       "url": "./live/178.txt",
       "epg": "http://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Taipei",
       "ua": "Lavf/58.12.100",
