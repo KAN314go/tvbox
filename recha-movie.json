@@ -3722,6 +3722,39 @@
       }
     },
     {
+      "key": "58动漫网",
+      "name": "动漫｜58动漫网",
+      "type": 3,
+      "api": "csp_XBPQ",
+      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": {
+        "简介"   : "简介：&&</p>"                                    ,
+        "搜索url": "https://dbwyt.com/search.php?searchword={wd}" ,
+        "分类url": "https://dbwyt.com/wuba/{cateId}-{catePg}.html",
+        "分类"   : "国产动漫$1#日本动漫$2#欧美动漫$47#海外动漫$3#动漫电影$4"
+      }
+    },
+    {
+      "key": "动漫大全",
+      "name": "动漫｜动漫大全",
+      "type": 3,
+      "api": "csp_XBPQ",
+      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": {
+        "简介"   : "简介：&&</p>"                                         ,
+        "线路数组" : "<aclass=\"hl-tabs-btnhl-slide-swiper\"&&</a>"      ,
+        "线路标题" : "</i>&nbsp;&&</a>+集"                                ,
+        "分类url": "https://dingdingdm.com/list/{cateId}-{catePg}.html",
+        "分类"   : "动漫电影$1#国产动漫$3#日本动漫$2#欧美动漫$4#短剧$20"
+      }
+    },
+    {
       "key": "csp_饼干动漫",
       "name": "动漫｜饼干",
       "type": 3,

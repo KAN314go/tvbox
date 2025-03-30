@@ -449,12 +449,20 @@
         }
       },
       {
-          "key": "短剧网",
+          "key": "短剧网(瀟灑)",
           "name": "📺｜短剧网(瀟灑)",
           "type": 3,
           "api": "csp_XBPQ",
           "jar":"./jar/spider.jar;md5;b836384ede14d319c1dcbf257a264eda",
           "ext": "./new_json/XBPQ/短剧网.json"
+      },
+      {
+        "key": "短剧网(摸魚)",
+        "name": "📺｜短剧网(摸魚ㄦ)",
+        "type": 3,
+        "api": "csp_XBPQ",
+        "jar": "https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1742873207924/摸鱼PizazzGY.jar",
+        "ext": "http://我不是.摸鱼儿.com/api/moyu.php?file=短剧网"
       },
       {
         "key": "河马短剧",
