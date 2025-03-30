@@ -16,7 +16,7 @@
       "filterable": 1,
       "ext": 
     {
-      "数组":"class=\"hover-card__Content-sc-696d1253-0 gzPwfz\"&&</a>",
+      //"数组":"class=\"hover-card__Content-sc-696d1253-0 gzPwfz\"&&</a>",
       //"播放请求头":"User-Agent$Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36",
       "图片":"src=\"&&\"",
       "标题":"title\"<span>&&</span>",
