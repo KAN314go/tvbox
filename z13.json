@@ -15,6 +15,17 @@
       "ext": "./js/雲騰.js"
     },
     {
+      "key": "云腾酷酷3",
+      "name": "雲騰2-4K",
+      "type": 3,
+      "searchable": 1,
+      "quickSearch": 1,
+      "order_num": 0,
+      "changeable": 0,
+      "api": "./drpy_libs/drpy2.min.js",
+      "ext": "./js/影視大全.js"
+    },
+    {
       "key": "芒果自家2",
       "name": "芒果4K",
       "type": 3,
@@ -26,17 +37,7 @@
       "changeable": 0,
       "ext": "./js/芒果.js"
     },
-    {
-      "key": "云腾酷酷3",
-      "name": "雲騰2-4K",
-      "type": 3,
-      "searchable": 1,
-      "quickSearch": 1,
-      "order_num": 0,
-      "changeable": 0,
-      "api": "./drpy_libs/drpy2.min.js",
-      "ext": "./js/雲騰-2.js"
-    },
+
     {
       "key": "py_萝卜app",
       "name": "py_萝卜",
