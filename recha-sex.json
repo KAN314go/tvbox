@@ -237,7 +237,7 @@
         "filterable": 1
       },      {
         "key": "py_phb.py",
-        "name": "⏭｜phb｜PYTHON",
+        "name": "⏭｜phb-s｜PYTHON",
         "type": 3,
         "api": "./py/phb-s.py",
         "searchable": 1,
@@ -245,7 +245,7 @@
         "filterable": 1
       },      {
         "key": "py_xvd.py",
-        "name": "⏭｜xvd｜PYTHON",
+        "name": "⏭｜xvd-s｜PYTHON",
         "type": 3,
         "api": "./py/xvd-s.py",
         "searchable": 1,
