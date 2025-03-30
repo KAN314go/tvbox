@@ -467,7 +467,7 @@
 			"api": "csp_XPathMacFilter",
 			"searchable": 1,
 			"changeable": 0,
-			"ext": "./lib/duboku.json$$$proxy"
+			"ext": "./lib/duboku.json"
 		},
 		{
 			"key": "haiwaikan",
