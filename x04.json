@@ -8,7 +8,7 @@
 
     {
       "key": "SP33",
-      "name": "📺蜗牛┃解析",
+      "name": "🇹🇼｜蝸牛｜待測",
       "type": 3,
       "api": "csp_SP33",
       "jar": "./jar/蝸牛-0330.jar",
@@ -18,8 +18,8 @@
       "changeable": 0
     },
     {
-      "key": "dianyiPQ",
-      "name": "💭蜗牛专享┃秒播",
+      "key": "csp_電影先生",
+      "name": "🇹🇼｜片庫｜待測",
       "type": 3,
       "api": "csp_XBPQ",
       "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
@@ -27,26 +27,16 @@
       "filterable": 1,
       "quickSearch": 1,
       "ext": {
-        "分类url": "https://xn--44qz85a01qpc.com/pianku-{cateId}-{class}-{by}-{area}-{lang}----{catePg}---{year}.html",
+        "分类url": "https://xn--44qz85a01qpc.com/pianku-{cateId}-{area}-{by}------{catePg}---{year}.html",
         "分类": "电视剧$dianshiju#电影$dianying#综艺$zongyi#动漫$dongman",
+        "地区": "中国大陆&中国香港&中国台湾&中国澳门&美国&法国&英国&日本&韩国&德国&泰国&新加坡&马来西亚&印度&意大利&西班牙&加拿大&俄罗斯&澳大利亚&其他",
         "影片年代": "<div class=\"module-info-tag\">&&</div>",
         "影片类型": "module-info-tag\">&&立即播放",
         "搜索url": "https://xn--44qz85a01qpc.com/search--------------.html?wd={wd}",
-        "简介": "【蜗牛科技仓】提醒🔺勿信广告，避免受骗🔺+style=\"line-height: 20px;\"&&</div>",
-        "线路数组": "data-dropdown-value=&&</div>[不包含:QI节点#QT节点#KU节点]",
-        "线路标题": "【蜗牛科技仓】💠+<span>&&</span>[排序:TK>HD>XS>YI>DI>]"
+        "简介": "style=\"line-height: 20px;\"&&</div>",
+        "线路数组": "data-dropdown-value=&&</div>",
+        "线路标题": "<span>&&</span>[排序:TK>HD>XS>YI>DI>]"
       }
-    },
-    {
-      "key": "速播",
-      "name": "⏮️速播┃多线",
-      "type": 3,
-      "api": "csp_AppSx",
-      "jar": "./jar/fan.txt;md5;8851819289f80deae32319080028db3b",
-      "searchable": 1,
-      "quickSearch": 1,
-      "changeable": 1,
-      "ext": "FbjDcUxPqpfNr0QF4QvE6sExbdBHCJkQSzBQt+vmhxkUAtbepC6RjQjA6r70U2OrZ3mJyX4hh2AsXS8mTp9pKB8="
     },
 
 
