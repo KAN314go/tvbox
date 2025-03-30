@@ -4535,7 +4535,7 @@
         "pkg": "com.yby.v11.singapore.tv",
         "so": "./live/gold/joy.so"
       }
-    }
+    },
     {
       "name": "焦点(Focus TV)",
       "type": 0,
@@ -4555,7 +4555,7 @@
       "type": 0,
       "url": "./live/ofiii.m3u",
       "ua": "okhttp/3.15",
-      "logo": "https://epg.112114.xyz/logo/{name}.png",
+      "logo": "https://epg.112114.xyz/logo/{name}.png"
     },
     {
       "name": "歐華167",
