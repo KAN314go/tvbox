@@ -4,15 +4,8 @@
   "wallpaper": "https://tv.nxog.top/m//t/",
   "sites": [
     {
-      "key": "豆瓣2",
-      "name": "📢🔥关注公众号┃趣看app",
-      "type": 3,
-      "api": "csp_Douban",
-      "searchable": 0
-    },
-    {
       "key": "云腾酷酷1",
-      "name": "趣看┃趣看4k",
+      "name": "趣看4k",
       "type": 3,
       "searchable": 1,
       "quickSearch": 1,
@@ -23,7 +16,7 @@
     },
     {
       "key": "芒果自家2",
-      "name": "趣看┃圣芒4K",
+      "name": "圣芒4K",
       "type": 3,
       "api": "http://wang.qijiyun.vip/yunzc/drpy_libs/drpy2.min.js",
       "searchable": 1,
@@ -35,7 +28,7 @@
     },
     {
       "key": "云腾酷酷3",
-      "name": "趣看┃腾云4K",
+      "name": "腾云4K",
       "type": 3,
       "searchable": 1,
       "quickSearch": 1,
@@ -45,29 +38,8 @@
       "ext": "http://47.108.190.232:666/lib/3.js"
     },
     {
-      "key": "py_皮皮虾影视",
-      "name": "py_皮皮虾┃繁华影视📽️",
-      "type": 3,
-      "changeable": 1,
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "api": "https://9071.kstore.vip/py/%E7%9A%AE%E7%9A%AE%E8%99%BEAPP%281%29.py"
-    },
-    {
-      "key": "py_皮皮虾影视",
-      "name": "py_皮皮虾┃繁华影视📽️",
-      "type": 3,
-      "changeable": 1,
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "api": "py_皮皮虾影视",
-      "ext": "https://9071.kstore.vip/py/%E7%9A%AE%E7%9A%AE%E8%99%BEAPP%281%29.py"
-    },
-    {
       "key": "py_萝卜app",
-      "name": "py_萝卜┃繁华影视📽️",
+      "name": "py_萝卜",
       "type": 3,
       "changeable": 1,
       "searchable": 1,
@@ -77,7 +49,7 @@
     },
     {
       "key": "py_萝卜app",
-      "name": "py_萝卜┃繁华影视📽️",
+      "name": "py_萝卜",
       "type": 3,
       "changeable": 1,
       "searchable": 1,
@@ -111,15 +83,6 @@
       "ext": "maHR0cHM6Ly93d3cuc3ViYWliYWkuY29tLw=="
     },
     {
-      "key": "瓜子",
-      "name": "瓜子｜影视",
-      "type": 3,
-      "api": "csp_Gz360",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1
-    },
-    {
       "key": "圣农极光┃蓝光",
       "name": "圣农┃蓝光",
       "type": 3,
@@ -132,6 +95,7 @@
       "name": "巧巧┃蓝光",
       "type": 3,
       "api": "csp_qiao2",
+      "jar": "https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1743202722568/肥猫.jar",
       "playerType": 2,
       "ext": "https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1740038979341/cksp.txt"
     },
@@ -154,6 +118,7 @@
       "name": "火火┃繁华",
       "type": 3,
       "api": "csp_SaoHuo",
+      "jar": "https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1743202722568/肥猫.jar",
       "playerType": 2,
       "ext": "https://shdy5.us"
     },
@@ -236,13 +201,9 @@
     },
     {
       "key": "qq",
-      "name": "悟空💯┃繁华影视📽️",
+      "name": "悟空💯",
       "type": 3,
-           "api": "csp_XBPQ",
- "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-
-      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-      "playerType": 2,
+           "api": "csp_XBPQ",      "playerType": 2,
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
@@ -295,13 +256,9 @@
     },
     {
       "key": "sjj",
-      "name": "水晶💯┃繁华影视📽️",
+      "name": "水晶💯",
       "type": 3,
-           "api": "csp_XBPQ",
- "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-
-      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-      "playerType": 2,
+           "api": "csp_XBPQ",      "playerType": 2,
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
@@ -351,13 +308,9 @@
     },
     {
       "key": "lkg",
-      "name": "午夜💯┃繁华影视📽️",
+      "name": "午夜💯",
       "type": 3,
-           "api": "csp_XBPQ",
- "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-
-      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-      "playerType": 2,
+           "api": "csp_XBPQ",      "playerType": 2,
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
@@ -427,11 +380,9 @@
     },
     {
       "key": "ling",
-      "name": "飞快💯┃繁华影视📽️",
+      "name": "飞快💯",
       "type": 3,
            "api": "csp_XBPQ",
- "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-
       "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
       "playerType": 2,
       "searchable": 1,
@@ -469,11 +420,9 @@
     },
     {
       "key": "ZTYY",
-      "name": "姿态💯┃繁华影视📽️",
+      "name": "姿态💯",
       "type": 3,
            "api": "csp_XBPQ",
- "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-
       "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
       "playerType": 2,
       "searchable": 1,
@@ -511,17 +460,14 @@
     },
     {
       "key": "NOsp",
-      "name": "NO视频💯┃繁华影视📽️",
+      "name": "NO视频💯",
       "type": 3,
            "api": "csp_XBPQ",
- "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-
       "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
       "playerType": 2,
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "jar": "https://9071.kstore.vip/1_xbpq0614.jar",
       "ext": {
         "作者": "繁华",
         "站名": "NO视频📽️本资源来源于网络🚓侵权请联系删除",
@@ -553,11 +499,9 @@
     },
     {
       "key": "LKDB",
-      "name": "来看💯┃繁华影视📽️",
+      "name": "来看💯",
       "type": 3,
            "api": "csp_XBPQ",
- "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-
       "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
       "playerType": 2,
       "searchable": 1,
@@ -595,11 +539,9 @@
     },
     {
       "key": "MTYY",
-      "name": "MTYY💯┃繁华影视📽️",
+      "name": "MTYY💯",
       "type": 3,
            "api": "csp_XBPQ",
- "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-
       "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
       "playerType": 2,
       "searchable": 1,
@@ -637,11 +579,9 @@
     },
     {
       "key": "03yh",
-      "name": "03影院💯┃繁华影视📽️",
+      "name": "03影院💯",
       "type": 3,
            "api": "csp_XBPQ",
- "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-
       "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
       "playerType": 2,
       "searchable": 1,
@@ -679,11 +619,9 @@
     },
     {
       "key": "HNtv",
-      "name": "海纳💯┃繁华影视📽️",
+      "name": "海纳💯",
       "type": 3,
            "api": "csp_XBPQ",
- "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-
       "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
       "playerType": 2,
       "searchable": 1,
@@ -720,11 +658,9 @@
     },
     {
       "key": "WYtv",
-      "name": "微云💯┃繁华影视📽️",
+      "name": "微云💯",
       "type": 3,
            "api": "csp_XBPQ",
- "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-
       "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
       "playerType": 2,
       "searchable": 1,
@@ -763,11 +699,9 @@
     },
     {
       "key": "XSJYY",
-      "name": "新视觉💯┃繁华影视📽️",
+      "name": "新视觉💯",
       "type": 3,
            "api": "csp_XBPQ",
- "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-
       "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
       "playerType": 2,
       "searchable": 1,
@@ -805,11 +739,9 @@
     },
     {
       "key": "GQJC",
-      "name": "高清剧场💯┃繁华影视📽️",
+      "name": "高清剧场💯",
       "type": 3,
            "api": "csp_XBPQ",
- "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-
       "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
       "playerType": 2,
       "searchable": 1,
@@ -846,11 +778,9 @@
     },
     {
       "key": "PKW",
-      "name": "片库网💯┃繁华影视📽️",
+      "name": "片库网💯",
       "type": 3,
            "api": "csp_XBPQ",
- "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-
       "playerType": 2,
       "searchable": 1,
       "quickSearch": 1,
@@ -886,11 +816,9 @@
     },
     {
       "key": "DDYS",
-      "name": "多多💯┃繁华影视📽️",
+      "name": "多多💯",
       "type": 3,
            "api": "csp_XBPQ",
- "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-
       "playerType": 2,
       "searchable": 1,
       "quickSearch": 1,
@@ -929,8 +857,6 @@
       "name": "🧿大师┃影视",
       "type": 3,
            "api": "csp_XBPQ",
- "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-
       "ext": {
         "分类url": "https://www.dsxysproo.com/dqvodshow/{cateId}-{area}--{class}-----{catePg}---{year}.html",
         "分类": "电视剧$2#电影$1#动漫$4#综艺$3"
@@ -1076,7 +1002,7 @@
     },
     {
       "key": "py_河马",
-      "name": "py_河马短剧┃繁华影视📽️",
+      "name": "py_河马短剧",
       "type": 3,
       "changeable": 1,
       "searchable": 1,
@@ -1086,7 +1012,7 @@
     },
     {
       "key": "py_河马",
-      "name": "py_河马短剧┃繁华影视📽️",
+      "name": "py_河马短剧",
       "type": 3,
       "changeable": 1,
       "searchable": 1,
@@ -1110,8 +1036,6 @@
       "name": "🍇剧网┃短剧┃热推",
       "type": 3,
            "api": "csp_XBPQ",
- "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-
       "jar": "https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1742873207924/摸鱼PizazzGY.jar",
       "ext": "http://我不是.摸鱼儿.com/api/moyu.php?file=短剧网"
     },
@@ -1131,8 +1055,6 @@
       "name": "✨毒舌短剧✨",
       "type": 3,
            "api": "csp_XBPQ",
- "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
@@ -1217,8 +1139,6 @@
       "name": "🤣之家┃动漫",
       "type": 3,
            "api": "csp_XBPQ",
- "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
@@ -1234,8 +1154,6 @@
       "name": "🤣大全┃动漫",
       "type": 3,
            "api": "csp_XBPQ",
- "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
