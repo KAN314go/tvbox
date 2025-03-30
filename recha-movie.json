@@ -4308,7 +4308,17 @@
       "filterable": 1,
       "order_num": 0,
       "ext": "./drpy_js/六月听书[听].js"
-    }
+    },
+    {
+      "key": "ting",
+      "name": "㊙︎｜海盜听书",
+      "type": 3,
+      "api": "csp_BookTing",
+      "jar": "./jar/white.jar;md5;c6c0527f9a28aede231ccf50ef4fe898",
+      "searchable": 1,
+      "changeable": 0,
+      "ext": "https://m.365ting.com#公众号#影视资源站"
+  }
   ],
   "lives": [
     {
