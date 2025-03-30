@@ -5,20 +5,20 @@
   "sites": [
     {
       "key": "云腾酷酷1",
-      "name": "趣看4k",
+      "name": "雲騰1-4k",
       "type": 3,
       "searchable": 1,
       "quickSearch": 1,
       "order_num": 0,
       "changeable": 0,
-      "api": "./drpy_libs//drpy2.min.js",
+      "api": "./drpy_libs/drpy2.min.js",
       "ext": "http://47.108.190.232:666/lib/10086.js"
     },
     {
       "key": "芒果自家2",
-      "name": "圣芒4K",
+      "name": "芒果4K",
       "type": 3,
-      "api": "./drpy_libs//drpy2.min.js",
+      "api": "./drpy_libs/drpy2.min.js",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
@@ -28,13 +28,13 @@
     },
     {
       "key": "云腾酷酷3",
-      "name": "腾云4K",
+      "name": "雲騰2-4K",
       "type": 3,
       "searchable": 1,
       "quickSearch": 1,
       "order_num": 0,
       "changeable": 0,
-      "api": "./drpy_libs//drpy2.min.js",
+      "api": "./drpy_libs/drpy2.min.js",
       "ext": "http://47.108.190.232:666/lib/3.js"
     },
     {
@@ -46,17 +46,6 @@
       "quickSearch": 1,
       "filterable": 1,
       "api": "https://9071.kstore.vip/py/%E8%90%9D%E5%8D%9Capp.py"
-    },
-    {
-      "key": "py_萝卜app",
-      "name": "py_萝卜",
-      "type": 3,
-      "changeable": 1,
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "api": "py_萝卜",
-      "ext": "https://9071.kstore.vip/py/%E8%90%9D%E5%8D%9Capp.py"
     },
     {
       "key": "csp_sbb",
@@ -92,7 +81,6 @@
       "name": "1905｜影视",
       "type": 3,
       "api": "csp_Web1905",
-      "jar": "./jar/PandaQ250227c.jar;md5;ceda5421cdce5fad2a2f6d8c71ae4311",
       "searchable": 1,
       "quickSearch": 0,
       "filterable": 0
@@ -164,7 +152,7 @@
         "跳转播放链接": "<iframe*src=\"&&\"",
         "搜索模式": "1",
         "搜索请求头": "User-Agent@Mozilla/5.0 (Linux；； Android 12；； PEHM00 Build/SKQ1.210216.001；； wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/133.0.6943.122 Mobile Safari/537.36",
-        "搜索url": "/index.php/ajax/suggest?mid=1&wd={wd}&page={pg}",
+        "搜索url": "https://www.daboedu.com/index.php/ajax/suggest?mid=1&wd={wd}&page={pg}",
         "筛选": "1",
         "类型": "动作片$dongzuopian#喜剧片$xijupian#爱情片$aiqingpian#科幻片$kehuanpian#恐怖片$kongbupian#战争片$zhanzhengpian#剧情片$juqingpian||国产剧$guochanju#欧美剧$oumeiju#日韩剧$rihanju#港台剧$gangtaiju#其他剧$qitaju||空||空||",
         "地区": "中国大陆&中国香港&中国台湾&美国&法国&英国&日本&韩国&德国&泰国&印度&其它",
@@ -188,7 +176,7 @@
         "主页url": "http://www.shuijingyy1.com",
         "首页": "200",
         "起始页": "1",
-        "分类url": "/s/{cateId}/area/{area}/by/{by}/class/{class}/lang/{lang}/letter/{letter}/page/{catePg}/year/{year}.html;;mrcRA",
+        "分类url": "http://www.shuijingyy1.com/s/{cateId}/area/{area}/by/{by}/class/{class}/lang/{lang}/letter/{letter}/page/{catePg}/year/{year}.html;;mrcRA",
         "分类": "电影$dianying#连续剧$lianxuju#综艺$zongyi#动漫$dongman",
         "数组": "item-container&&/div></div",
         "图片": "data-original=\"&&\"",
@@ -211,7 +199,7 @@
         "跳转播放链接": "<iframe*src=\"&&\"",
         "搜索请求头": "User-Agent$MOBILE_UA",
         "搜索模式": "1",
-        "搜索url": "/index.php/ajax/suggest?mid=1&wd={wd}&page={pg}&limit=30",
+        "搜索url": "http://www.shuijingyy1.com/index.php/ajax/suggest?mid=1&wd={wd}&page={pg}&limit=30",
         "搜索二次截取": "list\":\\[&&\\]",
         "搜索数组": "{&&}",
         "搜索标题": "name\":\"&&\"",
@@ -287,7 +275,7 @@
         "类型": "动作片$5#喜剧片$6#爱情片$7#科幻片$8#恐怖片$9#剧情片$10#战争片$11#悬疑片$12#犯罪片$13#魔幻片$42#惊悚片$14#冒险片$15&纪录片$16#动画片$17#微影视$18#其他片$19||国产剧$20#港台剧$21#日韩剧$22#欧美剧$23#短剧$43#其他剧$24||国产动漫$25#日韩动漫$26#欧美动漫$27#其他动漫$28#成人动漫$41||大陆综艺$29#日韩综艺$30#港台综艺$31#欧美综艺$32||自然纪录$34#人文记录$35",
         "地区": "大陆&香港&台湾&美国&法国&英国&日本&韩国&德国&泰国&印度&新加坡&其他||大陆&香港&台湾&美国&法国&英国&日本&韩国&德国&泰国&印度&新加坡&其他||大陆&香港&台湾&美国&法国&英国&日本&韩国&德国&泰国&印度&新加坡&其他||大陆&香港&台湾&美国&法国&英国&日本&韩国&德国&泰国&印度&新加坡&其他||大陆&香港&台湾&美国&法国&英国&日本&韩国&德国&泰国&印度&新加坡&其他",
         "地区值": "*",
-        "年份": "2007-2024",
+        "年份": "2007-2025",
         "年份值": "*",
         "语言": "",
         "语言值": "*",
@@ -313,7 +301,7 @@
         "编码": "UTF-8",
         "图片代理": "0",
         "主页url": "https://feikuai.tv",
-        "搜索url": "/vodsearch/{wd}----------{pg}---.html",
+        "搜索url": "https://feikuai.tv/vodsearch/{wd}----------{pg}---.html",
         "数组": "<a&&</div></div></a>",
         "链接": "href=\"&&\"",
         "图片": "data-original=\"&&\"",
@@ -331,7 +319,7 @@
         "起始页": "1",
         "直接播放": "0",
         "嗅探词": ".mp4#.m3u8",
-        "分类url": "/vodshow/{cateId}--------{catePg}---{year}.html;;mrcd0",
+        "分类url": "https://feikuai.tv/vodshow/{cateId}--------{catePg}---{year}.html;;mrcd0",
         "分类": "電影&連續劇&綜藝&動畫",
         "分类值": "1&2&3&4"
       }
@@ -352,7 +340,7 @@
         "编码": "UTF-8",
         "图片代理": "0",
         "主页url": "https://www.zt86.com",
-        "搜索url": "/vodsearch/{wd}----------{pg}---.html",
+        "搜索url": "https://www.zt86.com/vodsearch/{wd}----------{pg}---.html",
         "数组": "class=\"stui-vodlist__thumb&&</a>",
         "链接": "href=\"&&\"",
         "图片": "data-original=\"&&\"",
@@ -370,7 +358,7 @@
         "起始页": "1",
         "直接播放": "0",
         "嗅探词": ".mp4#.m3u8",
-        "分类url": "/vodshow/{cateId}--------{catePg}---{year}.html;;mrcd0",
+        "分类url": "https://www.zt86.com/vodshow/{cateId}--------{catePg}---{year}.html;;mrcd0",
         "分类": "電影&繁华电视剧🌠&綜藝&動畫",
         "分类值": "1&2&3&4"
       }
@@ -391,7 +379,7 @@
         "编码": "UTF-8",
         "图片代理": "0",
         "主页url": "https://www.dgjiawu.com",
-        "搜索url": "/se-1zxgt/{wd}-{pg}",
+        "搜索url": "https://www.dgjiawu.com/se-1zxgt/{wd}-{pg}",
         "数组": "class=\"stui-vodlist__thumb&&</a>",
         "链接": "href=\"&&\"",
         "图片": "data-original=\"&&\"",
@@ -408,7 +396,7 @@
         "起始页": "1",
         "直接播放": "0",
         "嗅探词": ".mp4#.m3u8",
-        "分类url": "/{cateId}/0/0/0/0/{catePg}[https://www.dgjiawu.com/{cateId}];;mrcd0",
+        "分类url": "https://www.dgjiawu.com/{cateId}/0/0/0/0/{catePg}[https://www.dgjiawu.com/{cateId}];;mrcd0",
         "分类": "電影&連續劇&綜藝&動畫",
         "分类值": "mo-1zxgt/5738/1&mo-1zxgt/5749/1&mo-1zxgt/5758/1&mo-1zxgt/5767/1"
       }
@@ -429,7 +417,7 @@
         "编码": "UTF-8",
         "图片代理": "0",
         "主页url": "https://lkvod.me",
-        "搜索url": "/nk/{wd}----------{pg}---.html",
+        "搜索url": "https://lkvod.me/nk/{wd}----------{pg}---.html",
         "数组": "class=\"lazy lazy1&&</div></div>",
         "链接": "href=\"&&\"",
         "图片": "data-src=\"&&\"",
@@ -447,7 +435,7 @@
         "起始页": "1",
         "直接播放": "0",
         "嗅探词": ".mp4#.m3u8",
-        "分类url": "/show/{cateId}--------{catePg}---{year}.html;;mrcd0",
+        "分类url": "https://lkvod.me/show/{cateId}--------{catePg}---{year}.html;;mrcd0",
         "分类": "電影&連續劇&綜藝&動畫",
         "分类值": "1&2&3&4"
       }
@@ -468,7 +456,7 @@
         "编码": "UTF-8",
         "图片代理": "0",
         "主页url": "https://www.mtyy1.com",
-        "搜索url": "/vodsearch/{wd}----------{pg}---.html",
+        "搜索url": "https://www.mtyy1.com/vodsearch/{wd}----------{pg}---.html",
         "数组": "class=\"public-list-exp&&</a>",
         "链接": "href=\"&&\"",
         "图片": "data-src=\"&&\"",
@@ -486,7 +474,7 @@
         "起始页": "1",
         "直接播放": "0",
         "嗅探词": ".mp4#.m3u8",
-        "分类url": "/vodshow/{cateId}--------{catePg}---{year}.html;;mrcd0",
+        "分类url": "https://www.mtyy1.com/vodshow/{cateId}--------{catePg}---{year}.html;;mrcd0",
         "分类": "連續劇&電影&綜藝&動畫&短劇&繁华记录🌠",
         "分类值": "1&2&3&4&5&6"
       }
@@ -507,7 +495,7 @@
         "编码": "UTF-8",
         "图片代理": "0",
         "主页url": "https://www.03yy.cyou",
-        "搜索url": "/search.php?page={pg}&searchword={wd}&searchtype=",
+        "搜索url": "https://www.03yy.cyou/search.php?page={pg}&searchword={wd}&searchtype=",
         "数组": "class=\"m-pic-l&&</div>",
         "链接": "href=\"&&\"",
         "图片": "src=\"&&\"",
@@ -525,47 +513,9 @@
         "起始页": "1",
         "直接播放": "0",
         "嗅探词": ".mp4#.m3u8",
-        "分类url": "/type/index{cateId}-{catePg}.html;;mrcd0",
+        "分类url": "https://www.03yy.cyou/type/index{cateId}-{catePg}.html;;mrcd0",
         "分类": "電影&連續劇&動畫&綜藝",
         "分类值": "1&2&4&3"
-      }
-    },
-    {
-      "key": "HNtv",
-      "name": "海纳",
-      "type": 3,
-      "api": "csp_XBPQ",
-      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-      "playerType": 2,
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": {
-        "站名": "海纳TV",
-        "请求头": "User-Agent$Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 Edg/128.0.0.0",
-        "编码": "UTF-8",
-        "图片代理": "0",
-        "主页url": "https://hainatv.net",
-        "搜索url": "/index.php/vod/search/page/{pg}/wd/{wd}.html",
-        "数组": "class=\"hl-item-thumb&&</a>",
-        "链接": "href=\"&&\"",
-        "图片": "data-original=\"&&\"",
-        "标题": "title=\"&&\"",
-        "副标题": "remarks\">&&<",
-        "线路数组": "hl-icon-shipin\">&&</div>",
-        "线路标题": ">&&</a>",
-        "播放数组": "class=\"hl-plays-list&&</ul>",
-        "播放标题": ">&&</a>",
-        "简介": "简介：</em>&&</li>",
-        "导演": "",
-        "主演": "",
-        "首页": "20",
-        "起始页": "1",
-        "直接播放": "0",
-        "嗅探词": ".mp4#.m3u8",
-        "分类url": "/index.php/vod/show/id/{cateId}/page/{catePg}/year/{year}.html;;mrcd0",
-        "分类": "電影&連續劇&綜藝&動畫&短劇",
-        "分类值": "1&2&3&4&59"
       }
     },
     {
@@ -584,7 +534,7 @@
         "编码": "UTF-8",
         "图片代理": "0",
         "主页url": "https://www.weiyuntv.com",
-        "搜索url": "/vodsearch/{wd}----------{pg}---.html",
+        "搜索url": "https://www.weiyuntv.com/vodsearch/{wd}----------{pg}---.html",
         "数组": "class=\"hl-item-thumb&&</a>",
         "链接": "href=\"&&\"",
         "图片": "data-original=\"&&\"",
@@ -603,7 +553,7 @@
         "起始页": "1",
         "直接播放": "0",
         "嗅探词": ".mp4#.m3u8",
-        "分类url": "/vodshow/{cateId}--------{catePg}---{year}.html;;mrcd0",
+        "分类url": "https://www.weiyuntv.com/vodshow/{cateId}--------{catePg}---{year}.html;;mrcd0",
         "分类": "電影&連續劇&短劇&綜藝&動畫&體育",
         "分类值": "dianying&lianxuju&duanju&zongyi&dongman&tiyu"
       }
@@ -624,7 +574,7 @@
         "编码": "UTF-8",
         "图片代理": "0",
         "主页url": "https://www.niubiys.com",
-        "搜索url": "/search.php?page={pg}&searchword={wd}&searchtype=",
+        "搜索url": "https://www.niubiys.com/search.php?page={pg}&searchword={wd}&searchtype=",
         "数组": "class=\"stui-vodlist__thumb&&</li>",
         "链接": "href=\"&&\"",
         "图片": "data-original=\"&&\"",
@@ -642,7 +592,7 @@
         "起始页": "1",
         "直接播放": "0",
         "嗅探词": ".mp4#.m3u8",
-        "分类url": "/{cateId}/index{catePg}.html[https://www.niubiys.com/{cateId}/index.html];;mrcd0",
+        "分类url": "https://www.niubiys.com/{cateId}/index{catePg}.html[https://www.niubiys.com/{cateId}/index.html];;mrcd0",
         "分类": "電影&連續劇&動畫&綜藝&短劇",
         "分类值": "dianying&tv&anime&zongyi&dtv"
       }
@@ -663,7 +613,7 @@
         "编码": "UTF-8",
         "图片代理": "0",
         "主页url": "https://www.kanbd.com",
-        "搜索url": "/search/{wd}----------{pg}---.html",
+        "搜索url": "https://www.kanbd.com/search/{wd}----------{pg}---.html",
         "数组": "hl-lazy\"&&</a>",
         "链接": "href=\"&&\"",
         "图片": "data-original=\"&&\"",
@@ -680,7 +630,7 @@
         "起始页": "1",
         "直接播放": "0",
         "嗅探词": ".mp4#.m3u8",
-        "分类url": "/s/{cateId}--------{catePg}---{year}.html;;mrcd0",
+        "分类url": "https://www.kanbd.com/s/{cateId}--------{catePg}---{year}.html;;mrcd0",
         "分类": "電影&連續劇&綜藝&動畫&紀錄&動畫&解說&短劇&體育",
         "分类值": "movie&series&variety&anime&documentary&animation&jieshuo&skit&sports"
       }
@@ -701,7 +651,7 @@
         "编码": "UTF-8",
         "图片代理": "0",
         "主页url": "http://kongtiao4.com",
-        "搜索url": "/kovodsearch/{wd}----------{pg}---.html",
+        "搜索url": "http://kongtiao4.com/kovodsearch/{wd}----------{pg}---.html",
         "数组": "class=\"module-item-pic&&</div>",
         "链接": "href=\"&&\"",
         "图片": "data-src=\"&&\"",
@@ -739,7 +689,7 @@
         "编码": "UTF-8",
         "图片代理": "0",
         "主页url": "https://www.ddhqw.com",
-        "搜索url": "/ddcz{wd}/page/{pg}.html",
+        "搜索url": "https://www.ddhqw.com/ddcz{wd}/page/{pg}.html",
         "数组": "class=\"stui-vodlist__thumb&&</a>",
         "链接": "href=\"&&\"",
         "图片": "data-original=\"&&\"",
@@ -756,7 +706,7 @@
         "起始页": "1",
         "直接播放": "0",
         "嗅探词": ".mp4#.m3u8",
-        "分类url": "/list/{cateId}/page/{catePg}/year/{year}.html;;mrcd0",
+        "分类url": "https://www.ddhqw.com/list/{cateId}/page/{catePg}/year/{year}.html;;mrcd0",
         "分类": "電影&連續劇&綜藝&動畫&紀錄",
         "分类值": "dianying&dianshiju&zongyi&dongmna&jilupian"
       }
