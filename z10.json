@@ -56,7 +56,7 @@
       "playerType": 2,
       "quickSearch": 1,
       "filterable": 0,
-      "jar": "https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1742010424920/巧记.jar",
+      "jar": "./jar/巧记.jar;md5;9d8407a76b2abeeaabdd147b1b93799f",
       "ext": "maHR0cHM6Ly93d3cuc3ViYWliYWkuY29tLw=="
     },
     {
@@ -714,18 +714,6 @@
       }
     },
     {
-      "key": "瓜子2",
-      "name": "瓜子",
-      "type": 3,
-      "api": "csp_GuaziGuard",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "jar": "https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1742081743494/ok猫.jar",
-      "ext": {"danmu": true},
-      "timeout": 10
-    },
-    {
       "key": "小苹果弹幕",
       "name": "小苹果",
       "type": 3,
@@ -740,7 +728,7 @@
       "key": "csp_Tvyb",
       "name": "云播",
       "type": 3,
-      "jar": "https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1737765180601/feimao0125.jar",
+      "jar": "./jar/PandaQ250227c.jar;md5;ceda5421cdce5fad2a2f6d8c71ae4311",
       "api": "csp_Tvyb"
     },
     {
@@ -758,7 +746,6 @@
       "name": "🦛河马┃短剧┃热推",
       "type": 3,
       "api": "csp_AppHMDJ",
-      "jar": "https://9071.kstore.vip/jar/moyu%E5%BC%B9%E5%B9%95%E6%8C%82%E8%BD%BD.jar",
       "searchable": 1,
       "quickSearch": 0,
       "filterable": 0,
@@ -773,7 +760,7 @@
       "quickSearch": 1,
       "filterable": 1,
       "api": "py_河马短剧",
-      "ext": "https://9071.kstore.vip/py/%E6%B2%B3%E9%A9%ACAPP.py"
+      "ext": "./py/河马APP.py"
     },
     {
       "key": "短剧网",
@@ -788,7 +775,7 @@
       "name": "短剧屋",
       "type": 3,
       "api": "csp_XYQHiker",
-      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+      "jar": "https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1742873207924/摸鱼PizazzGY.jar",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
