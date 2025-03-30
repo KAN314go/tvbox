@@ -12,7 +12,7 @@
       "order_num": 0,
       "changeable": 0,
       "api": "./drpy_libs/drpy2.min.js",
-      "ext": "http://47.108.190.232:666/lib/10086.js"
+      "ext": "./js/雲騰.js"
     },
     {
       "key": "芒果自家2",
@@ -24,7 +24,7 @@
       "filterable": 1,
       "order_num": 0,
       "changeable": 0,
-      "ext": "http://47.108.190.232:666/lib/2.js"
+      "ext": "./js/芒果.js"
     },
     {
       "key": "云腾酷酷3",
@@ -35,7 +35,7 @@
       "order_num": 0,
       "changeable": 0,
       "api": "./drpy_libs/drpy2.min.js",
-      "ext": "http://47.108.190.232:666/lib/3.js"
+      "ext": "./js/雲騰-2.js"
     },
     {
       "key": "py_萝卜app",
@@ -45,7 +45,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "api": "https://9071.kstore.vip/py/%E8%90%9D%E5%8D%9Capp.py"
+      "api": "./py/py_羅波.py"
     },
     {
       "key": "csp_sbb",
@@ -56,7 +56,7 @@
       "playerType": 1,
       "quickSearch": 1,
       "filterable": 0,
-      "jar": "https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1742010424920/巧记.jar",
+      "jar": "./jar/lem0318.jar;md5;626cd9f34ad3d3899bb2de54b1bc0a25",
       "ext": "maHR0cHM6Ly93d3cuc3ViYWliYWkuY29tLw=="
     },
     {
@@ -64,7 +64,7 @@
       "name": "圣农┃蓝光",
       "type": 3,
       "api": "csp_Wwys",
-      "jar": "http://110.42.45.218:520/yunfensi/jar/0226.jar",
+      "jar": "./jar/PandaQ250227c.jar;md5;ceda5421cdce5fad2a2f6d8c71ae4311",
       "ext": "https://www.wwgz.cn"
     },
     {
