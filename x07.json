@@ -66,9 +66,8 @@
       }
     },
     {
-      "jar": "./jar/gm.jar",
       "key": "csp_GM_注视影视",
-      "name": "雷蒙影视 | 🐵注视影视(SCRIPT)",
+      "name": "🇹🇼｜注視影視(修)",
       "type": 3,
       "searchable": 1,
       "changeable": 1,
@@ -78,8 +77,9 @@
         "ratio": 0.66
       },
       "api": "csp_GM",
+      "jar": "./jar/gm.jar",
       "ext": {
-        "userScript": "./EXT/userScripts/gaze.user.js",
+        "userScript": "./js/gaze.user.js",
         "debug": false,
         "webViewSettings": {
           "blockNetworkImage": true,
@@ -114,7 +114,53 @@
         }
       }
     },
-
+    {
+      "key": "csp_GM_麻雀视频",
+      "name": "🇹🇼｜麻雀視頻视频(修)",
+      "type": 3,
+      "searchable": 1,
+      "changeable": 1,
+      "quickSearch": 0,
+      "style": {
+        "type": "rect",
+        "ratio": 0.71
+      },
+      "api": "csp_GM",
+      "jar": "./jar/gm.jar",
+      "ext": {
+        "userScript": "./js/mqtv.user.js",
+        "debug": false,
+        "webViewSettings": {
+          "blockNetworkImage": true,
+          "blockList": [
+            "https://hm.baidu.com/*",
+            "https://*.n3f2.cn/*"
+          ]
+        },
+        "playUrlMatch": [
+          "https://*/obj/tos-*",
+          "*://*/*.mp4*",
+          "*://*/*.m3u8*"
+        ],
+        "spider": {
+          "homeContent": {
+            "loadUrl": "https://www.mqtv.cc/"
+          },
+          "categoryContent": {
+            "loadUrl": "https://www.mqtv.cc/type/${tid}"
+          },
+          "detailContent": {
+            "loadUrl": "https://www.mqtv.cc${id}"
+          },
+          "playerContent": {
+            "loadUrl": "https://www.mqtv.cc${url}#${anchor}"
+          },
+          "searchContent": {
+            "loadUrl": "https://www.mqtv.cc/search/${key}"
+          }
+        }
+      }
+    },
 
 
 
