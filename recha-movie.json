@@ -316,7 +316,7 @@
       "name": "🥇｜真心｜藍光◎龜速(無廣告)",
       "type": 3,
       "api": "csp_WebGZ",
-      "jar": "./jar/配置中心.jar",
+      "jar": "./jar/PandaQ250227c.jar;md5;ceda5421cdce5fad2a2f6d8c71ae4311",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1
@@ -1374,7 +1374,7 @@
       "name": "🥈｜洽洽｜高清◎秒播(無廣告+分類錯誤)",
       "type": 3,
       "api": "csp_AppGZ",
-      "jar": "./jar/配置中心.jar;md5;94c57abab7936ad18d0873b6717498ef",
+      "jar": "./jar/PandaQ250227c.jar;md5;ceda5421cdce5fad2a2f6d8c71ae4311",
       "searchable": 1,
       "quickSearch": 0,
       "filterable": 1
