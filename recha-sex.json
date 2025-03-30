@@ -225,6 +225,54 @@
       }
     ],
     "sites": [
+
+
+      {
+        "key": "py_51吸瓜.py",
+        "name": "⏭｜51吸瓜｜PYTHON",
+        "type": 3,
+        "api": "./py/51吸瓜.py",
+        "searchable": 1,
+        "quickSearch": 1,
+        "filterable": 1
+      },      {
+        "key": "py_phb.py",
+        "name": "⏭｜phb｜PYTHON",
+        "type": 3,
+        "api": "./py/lav.py",
+        "searchable": 1,
+        "quickSearch": 1,
+        "filterable": 1
+      },      {
+        "key": "py_xvd.py",
+        "name": "⏭｜xvd｜PYTHON",
+        "type": 3,
+        "api": "./py/lav.py",
+        "searchable": 1,
+        "quickSearch": 1,
+        "filterable": 1
+      },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       {
         "key": "麻豆",
         "name": "🇹🇼【老王成人專區】🇹🇼",
