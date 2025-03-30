@@ -42,6 +42,7 @@
       "name": "⏮️速播┃多线",
       "type": 3,
       "api": "csp_AppSx",
+      "jar": "./jar/蝸牛-0330.jar",
       "searchable": 1,
       "quickSearch": 1,
       "changeable": 1,
