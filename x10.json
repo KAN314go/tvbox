@@ -8,7 +8,16 @@
 
 
 
-
+    {
+      "key": "py_金牌.py",
+      "name": "🇹🇼｜金牌影院.py｜待測",
+      "type": 3,
+      "api": "./py/金牌.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": {"site": "https://www.vv3nwjk.com,https://www.jpyy2.com,https://www.cfkj86.com"}
+    },
     {
       "key": "py_魔方影视APP",
       "name": "🇹🇼｜魔方影視APP｜待測",
