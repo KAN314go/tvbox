@@ -4321,15 +4321,15 @@
   "lives": [
   {
     "name": "金星",
-    "url": "./live/gold/jx.txt",
+    "url": "./live/gold/金星3.txt",
     "epg":"https://diyp100.112114.xyz/?ch={name}&date={date}",
     "logo": "https://epg.v1.mk/logo/{name}.png",
     "core": {
-      //"auth": "https://sgla.googlejt.com/v1/auth",
-      "auth": "local://tvbus",
+      "auth": "https://sgla.googlejt.com/v1/auth",
       "name": "08a77819f9b7",
       "pass": "1742653607661",
       "sign": "163428eb20fa4b27",
+      "resp": "{\"result_code\":\"0\",\"result\":\"ok\",\"keys\":{\"user_id\":\"08a77819f9b7\",\"peer_id\":\"1742653607661\",\"session_key\":\"163428eb20fa4b27\"}}",
       "pkg": "com.yby.v11.singapore.tv",
       "so": "./live/gold/joy.so"
     }
