@@ -4,10 +4,25 @@
   "wallpaper": "https://tv.nxog.top/m//t/",
   "sites": [
 
-
+    {
+      "key": "csp_Kugou_FM",
+      "name": "🇹🇼｜酷狗聽歌",
+      "type": 3,
+      "api": "csp_Kugou",
+      "jar": "./jar/lem0318.jar;md5;626cd9f34ad3d3899bb2de54b1bc0a25",
+      "playerType": 2,
+      "ext": {
+        "classes": [
+          {
+            "type_name": "酷狗",
+            "type_id": "kugou"
+          }
+        ]
+      }
+    },
     {
       "key": "csp_LaoBaiBook_FM",
-      "name": "🇹🇼|老白聽書",
+      "name": "🇹🇼｜老白聽書",
       "type": 3,
       "playerType": 2,
       "api": "csp_LaoBaiBook",
