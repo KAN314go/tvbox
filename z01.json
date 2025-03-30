@@ -1,0 +1,1611 @@
+{
+  "spider": "./jar/pg.jar;md5;3d7366987f27631444e98cde17418a57",
+  "logo": "https://p3-pc.douyinpic.com/img/aweme-avatar/tos-cn-i-0813_6e2553f5708c414386eeca88b5f2674a~c5_300x300.jpeg?from=2956013662",
+  "wallpaper": "https://tv.nxog.top/m//t/",
+  "sites": [
+    {
+      "key": "豆瓣2",
+      "name": "📢🔥关注公众号┃趣看app",
+      "type": 3,
+      "api": "csp_Douban",
+      "searchable": 0
+    },
+    {
+      "key": "云腾酷酷1",
+      "name": "趣看┃趣看4k",
+      "type": 3,
+      "searchable": 1,
+      "quickSearch": 1,
+      "order_num": 0,
+      "changeable": 0,
+      "api": "http://wang.qijiyun.vip/yunzc/drpy_libs/drpy2.min.js",
+      "ext": "http://47.108.190.232:666/lib/10086.js"
+    },
+    {
+      "key": "芒果自家2",
+      "name": "趣看┃圣芒4K",
+      "type": 3,
+      "api": "http://wang.qijiyun.vip/yunzc/drpy_libs/drpy2.min.js",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "order_num": 0,
+      "changeable": 0,
+      "ext": "http://47.108.190.232:666/lib/2.js"
+    },
+    {
+      "key": "云腾酷酷3",
+      "name": "趣看┃腾云4K",
+      "type": 3,
+      "searchable": 1,
+      "quickSearch": 1,
+      "order_num": 0,
+      "changeable": 0,
+      "api": "http://wang.qijiyun.vip/yunzc/drpy_libs/drpy2.min.js",
+      "ext": "http://47.108.190.232:666/lib/3.js"
+    },
+    {
+      "key": "py_皮皮虾影视",
+      "name": "py_皮皮虾┃繁华影视📽️",
+      "type": 3,
+      "changeable": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "api": "https://9071.kstore.vip/py/%E7%9A%AE%E7%9A%AE%E8%99%BEAPP%281%29.py"
+    },
+    {
+      "key": "py_皮皮虾影视",
+      "name": "py_皮皮虾┃繁华影视📽️",
+      "type": 3,
+      "changeable": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "api": "py_皮皮虾影视",
+      "ext": "https://9071.kstore.vip/py/%E7%9A%AE%E7%9A%AE%E8%99%BEAPP%281%29.py"
+    },
+    {
+      "key": "py_萝卜app",
+      "name": "py_萝卜┃繁华影视📽️",
+      "type": 3,
+      "changeable": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "api": "https://9071.kstore.vip/py/%E8%90%9D%E5%8D%9Capp.py"
+    },
+    {
+      "key": "py_萝卜app",
+      "name": "py_萝卜┃繁华影视📽️",
+      "type": 3,
+      "changeable": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "api": "py_萝卜",
+      "ext": "https://9071.kstore.vip/py/%E8%90%9D%E5%8D%9Capp.py"
+    },
+    {
+      "key": "csp_xlys",
+      "name": "修罗┃直连",
+      "type": 3,
+      "api": "csp_Bdys01",
+      "searchable": 1,
+      "playerType": 1,
+      "quickSearch": 1,
+      "jar": "https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1742010424920/巧记.jar",
+      "filterable": 0,
+      "ext": "maHR0cHM6Ly93d3cueGx5czAyLmNvbQ=="
+    },
+    {
+      "key": "csp_sbb",
+      "name": "布布┃直连",
+      "type": 3,
+      "api": "csp_Czsapp",
+      "searchable": 1,
+      "playerType": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "jar": "https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1742010424920/巧记.jar",
+      "ext": "maHR0cHM6Ly93d3cuc3ViYWliYWkuY29tLw=="
+    },
+    {
+      "key": "瓜子",
+      "name": "瓜子｜影视",
+      "type": 3,
+      "api": "csp_Gz360",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "圣农极光┃蓝光",
+      "name": "圣农┃蓝光",
+      "type": 3,
+      "api": "csp_Wwys",
+      "jar": "http://110.42.45.218:520/yunfensi/jar/0226.jar",
+      "ext": "https://www.wwgz.cn"
+    },
+    {
+      "key": "巧技",
+      "name": "巧巧┃蓝光",
+      "type": 3,
+      "api": "csp_qiao2",
+      "playerType": 2,
+      "ext": "https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1740038979341/cksp.txt"
+    },
+    {
+      "key": "csp_Jpys",
+      "name": "金牌┃繁华",
+      "type": 3,
+      "jar": "https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1743202722568/肥猫.jar",
+      "api": "csp_Jpys"
+    },
+    {
+      "key": "csp_Siren",
+      "name": "私人┃繁华",
+      "type": 3,
+      "jar": "https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1743202722568/肥猫.jar",
+      "api": "csp_Siren"
+    },
+    {
+      "key": "csp_SaoHuo",
+      "name": "火火┃繁华",
+      "type": 3,
+      "api": "csp_SaoHuo",
+      "playerType": 2,
+      "ext": "https://shdy5.us"
+    },
+    {
+      "key": "永夜",
+      "name": "永夜┃繁华",
+      "type": 3,
+      "api": "csp_Xdai",
+      "playerType": 2,
+      "jar": "./jar/pizza.jar;md5;6bcb3de5f0d7c9b3d4f19cfe9a314ab2",
+      "ext": "caHR0cHM6Ly9yeHlzeXlkcy5vc3MtY24tY2hlbmdkdS5hbGl5dW5jcy5jb20vZ2V0YXBwLnR4dHxlYmFkM2YxYTU4YjEzOTMzfGViYWQzZjFhNThiMTM5MzN8MTAw"
+    },
+    {
+      "key": "主角",
+      "name": "主角┃繁华",
+      "type": 3,
+      "api": "csp_Xdai",
+      "jar": "./jar/pizza.jar;md5;6bcb3de5f0d7c9b3d4f19cfe9a314ab2",
+      "playerType": 2,
+      "ext": "caHR0cHM6Ly9kdHltLnpqeXkuY2MvZ2ctZ2V0YXBwL2dldC1nZy50eHR8UE1LYVprQXY0UXA1M0VXbnxQTUthWmtBdjRRcDUzRVdufDQyNQ=="
+    },
+    {
+      "key": "韩小圈",
+      "name": "韩小｜影视",
+      "type": 3,
+      "api": "csp_HanXiaoQuan",
+      "jar": "./jar/pizza.jar;md5;6bcb3de5f0d7c9b3d4f19cfe9a314ab2",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "移动",
+      "name": "移动｜影视",
+      "type": 3,
+      "api": "csp_YDjisu",
+      "jar": "./jar/PandaQ250227c.jar;md5;ceda5421cdce5fad2a2f6d8c71ae4311",
+      "searchable": 1,
+      "changeable": 1
+    },
+    {
+      "key": "真心",
+      "name": "真心｜影视",
+      "type": 3,
+      "api": "csp_WebGZ",
+      "jar": "./jar/PandaQ250227c.jar;md5;ceda5421cdce5fad2a2f6d8c71ae4311",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "1905",
+      "name": "1905｜影视",
+      "type": 3,
+      "api": "csp_Web1905",
+      "jar": "./jar/PandaQ250227c.jar;md5;ceda5421cdce5fad2a2f6d8c71ae4311",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 0
+    },
+    {
+      "key": "低端",
+      "name": "低端｜影视",
+      "type": 3,
+      "api": "csp_Ddys",
+      "jar": "./jar/PandaQ250227c.jar;md5;ceda5421cdce5fad2a2f6d8c71ae4311",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "快看",
+      "name": "快看｜影视",
+      "type": 3,
+      "api": "csp_Kuaikan",
+      "jar": "./jar/PandaQ250227c.jar;md5;ceda5421cdce5fad2a2f6d8c71ae4311",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "qq",
+      "name": "悟空💯┃繁华影视📽️",
+      "type": 3,
+           "api": "csp_XBPQ",
+ "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+
+      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+      "playerType": 2,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": {
+        "作者": "繁华",
+        "站名": "悟空电影",
+        "请求头": "User-Agent$MOBILE_UA",
+        "编码": "UTF-8",
+        "图片代理": "",
+        "直接播放": "0",
+        "播放请求头": "",
+        "嗅探词": ".mp4#.m3u8#.flv",
+        "过滤词": "",
+        "主页url": "https://www.daboedu.com",
+        "首页": "120",
+        "起始页": "1",
+        "分类url": "https://www.daboedu.com/s/{cateId}/area/{area}/page/{catePg}/year/{year}.html",
+        "分类": "电影$dianying#电视剧$lianxuju#综艺$zongyi#动漫$dongman",
+        "二次截取": "默认--pic\">&&</body>||搜索--list\":\\[&&\\]",
+        "数组": "默认--data-original=&&</li>||搜索--{&&}",
+        "标题": "默认--alt=\"&&\"||搜索--name\":\"&&\"",
+        "图片": "默认--\"&&\"||搜索--pic\":\"&&\"",
+        "副标题": "",
+        "链接": "默认--href=\"&&\"||搜索--/v/+id\":&&,+.html",
+        "影片年代": "年代:&&</p>",
+        "影片地区": "地区:&&</p>",
+        "影片类型": "类型:&&</p>",
+        "状态": "更新：&&</div>",
+        "导演": "导演:&&</p>",
+        "主演": "主演:&&</p>",
+        "简介": "✨繁华为您介绍剧情👉请不要相信视频中的广告！+<h2>&&悟空",
+        "跳转数组": "juhe&&</p>",
+        "跳转链接": "href=\"&&\"",
+        "线路数组": "<p&&</p>",
+        "线路标题": "✨繁华推荐✨线路",
+        "播放数组": "id=\"dx&&</ul>",
+        "播放列表": "<a&&/a>",
+        "播放标题": "✨+>&&<",
+        "播放链接": "play&&\">[替换:(>>-#,>>-#);>>.html]",
+        "播放链接前缀": "https://www.daboedu.com/p/+/p/&&-1-1.html",
+        "跳转播放链接": "<iframe*src=\"&&\"",
+        "搜索模式": "1",
+        "搜索请求头": "User-Agent@Mozilla/5.0 (Linux；； Android 12；； PEHM00 Build/SKQ1.210216.001；； wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/133.0.6943.122 Mobile Safari/537.36",
+        "搜索url": "/index.php/ajax/suggest?mid=1&wd={wd}&page={pg}",
+        "筛选": "1",
+        "类型": "动作片$dongzuopian#喜剧片$xijupian#爱情片$aiqingpian#科幻片$kehuanpian#恐怖片$kongbupian#战争片$zhanzhengpian#剧情片$juqingpian||国产剧$guochanju#欧美剧$oumeiju#日韩剧$rihanju#港台剧$gangtaiju#其他剧$qitaju||空||空||",
+        "地区": "中国大陆&中国香港&中国台湾&美国&法国&英国&日本&韩国&德国&泰国&印度&其它",
+        "地区值": "*"
+      }
+    },
+    {
+      "key": "sjj",
+      "name": "水晶💯┃繁华影视📽️",
+      "type": 3,
+           "api": "csp_XBPQ",
+ "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+
+      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+      "playerType": 2,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": {
+        "作者": "繁华",
+        "站名": "水晶影院",
+        "编码": "UTF-8",
+        "请求头": "User-Agent$MOBILE_UA",
+        "主页url": "http://www.shuijingyy1.com",
+        "首页": "200",
+        "起始页": "1",
+        "分类url": "/s/{cateId}/area/{area}/by/{by}/class/{class}/lang/{lang}/letter/{letter}/page/{catePg}/year/{year}.html;;mrcRA",
+        "分类": "电影$dianying#连续剧$lianxuju#综艺$zongyi#动漫$dongman",
+        "数组": "item-container&&/div></div",
+        "图片": "data-original=\"&&\"",
+        "标题": "title=\"&&\"",
+        "副标题": "cover-text\">&&<",
+        "链接": "href='&&'[替换:/p/>>/v/#-1-1.html>>.html]",
+        "影片年代": "年份：&&</dd",
+        "影片地区": "地区：&&</dd",
+        "影片类型": "类型：&&</dd",
+        "状态": "状态：&&</dd+时间：&&</dd",
+        "导演": "导演：&&</dd",
+        "主演": "主演：&&</dd",
+        "简介": "请不要相信任何广告！！！祝您观影愉快！繁华为您介绍剧情👉-+tjuqing\">&&</div",
+        "线路数组": "playlist_&&</div",
+        "线路标题": "<h*>&&-",
+        "播放数组": "<div class=\"video_list&&</div",
+        "播放列表": "<a&&/a",
+        "播放标题": ">&&<",
+        "播放链接": "href=\"&&\"",
+        "跳转播放链接": "<iframe*src=\"&&\"",
+        "搜索请求头": "User-Agent$MOBILE_UA",
+        "搜索模式": "1",
+        "搜索url": "/index.php/ajax/suggest?mid=1&wd={wd}&page={pg}&limit=30",
+        "搜索二次截取": "list\":\\[&&\\]",
+        "搜索数组": "{&&}",
+        "搜索标题": "name\":\"&&\"",
+        "搜索图片": "pic\":\"&&\"",
+        "搜索副标题": "en\":\"&&\"",
+        "搜索链接": "/v/+id\":&&,+.html",
+        "筛选": "1",
+        "类型": "喜剧片$xijupian#动作片$dongzuopian#爱情片$aiqingpian#科幻片$kehuanpian#恐怖片$kongbupian#剧情片$juqingpian#战争片$zhanzhengpian||国产剧$guochanju#欧美剧$oumeiju#其他剧$qitaju||空||空",
+        "地区": "中国大陆&中国香港&中国台湾&美国&法国&英国&日本&韩国&德国&泰国&印度&其它",
+        "地区值": "*"
+      }
+    },
+    {
+      "key": "lkg",
+      "name": "午夜💯┃繁华影视📽️",
+      "type": 3,
+           "api": "csp_XBPQ",
+ "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+
+      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+      "playerType": 2,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": {
+        "作者": "繁华",
+        "站名": "午夜剧场",
+        "请求头": "User-Agent$MOBILE_UA",
+        "编码": "UTF-8",
+        "图片代理": "0",
+        "主页url": "https://wyjc.tv",
+        "首页": "120",
+        "起始页": "1",
+        "分类url": "https://wyjc.tv/vod/cid/{cateId}/area/{area}/page/{catePg}/year/{year}/sort/{by}.html;;mrcd0;;mrcd0",
+        "分类": "电影&剧集&综艺&动漫&纪录片",
+        "分类值": "1&2&4&3&33",
+        "二次截取": "",
+        "数组": "fed-part-2by3\"&&</span></li>",
+        "标题": "🔥+title=\"&&\"",
+        "图片": "data-src=\"&&\"",
+        "副标题": "fed-text-center\">&&</span>",
+        "链接": "href=\"&&\"",
+        "影片年代": "年份：&&</a>",
+        "影片地区": "地区：&&</li>",
+        "影片类型": "类型：&&</li>",
+        "状态": "",
+        "导演": "导演：&&</li>",
+        "主演": "主演：&&</li>",
+        "简介": "繁华为您剧情🔥+简介：&&</div>",
+        "线路二次截取": "nav-tabs&&</ul>",
+        "线路数组": "javascript:\"&&</a>",
+        "线路标题": "🔥+>&&</a>",
+        "播放二次截取": "",
+        "播放数组": "sort-list clearfix\"&&</ul>",
+        "播放列表": "<a&&/a>",
+        "播放标题": ">&&</a>",
+        "播放链接": "href=\"&&\"",
+        "解析": "",
+        "直接播放": "0",
+        "播放请求头": "",
+        "嗅探词": ".mp4#.m3u8",
+        "过滤词": "",
+        "跳转播放链接": "",
+        "跳转解析": "",
+        "搜索请求头": "User-Agent$MOBILE_UA",
+        "搜索url": "https://wyjc.tv/search.html?key={wd}={pg}",
+        "搜索模式": "1",
+        "搜索后缀": "",
+        "搜索二次截取": "",
+        "搜索数组": "fed-list-item fed-padding&&</li>",
+        "搜索标题": "title=\"&&\"",
+        "搜索图片": "data-src=\"&&\"",
+        "搜索副标题": "fed-text-center\">&&<",
+        "搜索链接": "href=\"&&\"",
+        "筛选": "1",
+        "类型": "动作片$5#喜剧片$6#爱情片$7#科幻片$8#恐怖片$9#剧情片$10#战争片$11#悬疑片$12#犯罪片$13#魔幻片$42#惊悚片$14#冒险片$15&纪录片$16#动画片$17#微影视$18#其他片$19||国产剧$20#港台剧$21#日韩剧$22#欧美剧$23#短剧$43#其他剧$24||国产动漫$25#日韩动漫$26#欧美动漫$27#其他动漫$28#成人动漫$41||大陆综艺$29#日韩综艺$30#港台综艺$31#欧美综艺$32||自然纪录$34#人文记录$35",
+        "地区": "大陆&香港&台湾&美国&法国&英国&日本&韩国&德国&泰国&印度&新加坡&其他||大陆&香港&台湾&美国&法国&英国&日本&韩国&德国&泰国&印度&新加坡&其他||大陆&香港&台湾&美国&法国&英国&日本&韩国&德国&泰国&印度&新加坡&其他||大陆&香港&台湾&美国&法国&英国&日本&韩国&德国&泰国&印度&新加坡&其他||大陆&香港&台湾&美国&法国&英国&日本&韩国&德国&泰国&印度&新加坡&其他",
+        "地区值": "*",
+        "年份": "2007-2024",
+        "年份值": "*",
+        "语言": "",
+        "语言值": "*",
+        "字母": "A&B&C&D&E&F&G&H&I&J&K&L&M&N&O&P&Q&R&S&T&U&V&W&X&Y&Z&0-9",
+        "字母值": "*",
+        "排序": "时间&人气&评分",
+        "排序值": "time&hits&score"
+      }
+    },
+    {
+      "key": "ling",
+      "name": "飞快💯┃繁华影视📽️",
+      "type": 3,
+           "api": "csp_XBPQ",
+ "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+
+      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+      "playerType": 2,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": {
+        "作者": "繁华",
+        "站名": "飞快tv📽️本资源来源于网络🚓侵权请联系删除",
+        "请求头": "User-Agent$Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 Edg/128.0.0.0",
+        "编码": "UTF-8",
+        "图片代理": "0",
+        "主页url": "https://feikuai.tv",
+        "搜索url": "/vodsearch/{wd}----------{pg}---.html",
+        "数组": "<a&&</div></div></a>",
+        "链接": "href=\"&&\"",
+        "图片": "data-original=\"&&\"",
+        "标题": "title=\"&&\"",
+        "副标题": "繁华▶️+module-item-note\">&&<",
+        "线路二次截取": "class=\"module-tab-items-box&&</div></div>",
+        "线路数组": "class=\"module-tab-item&&</small>",
+        "线路标题": "📽️繁华👉+<span>&&</span>",
+        "播放数组": "class=\"module-play-list-content&&</div>",
+        "播放标题": "✨繁华👉+>&&</span>",
+        "简介": "繁华🎉为您介绍剧情📢本资源来源于网络🚓侵权请联系删除👉+introduction-content\"><p>&&</p>",
+        "导演": "",
+        "主演": "",
+        "首页": "20",
+        "起始页": "1",
+        "直接播放": "0",
+        "嗅探词": ".mp4#.m3u8",
+        "分类url": "/vodshow/{cateId}--------{catePg}---{year}.html;;mrcd0",
+        "分类": "繁华电影🌠&繁华剧集🌠&繁华综艺🌠&繁华动漫🌠",
+        "分类值": "1&2&3&4"
+      }
+    },
+    {
+      "key": "ZTYY",
+      "name": "姿态💯┃繁华影视📽️",
+      "type": 3,
+           "api": "csp_XBPQ",
+ "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+
+      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+      "playerType": 2,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": {
+        "作者": "繁华",
+        "站名": "姿态影院📽️本资源来源于网络🚓侵权请联系删除",
+        "请求头": "User-Agent$Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 Edg/128.0.0.0",
+        "编码": "UTF-8",
+        "图片代理": "0",
+        "主页url": "https://www.zt86.com",
+        "搜索url": "/vodsearch/{wd}----------{pg}---.html",
+        "数组": "class=\"stui-vodlist__thumb&&</a>",
+        "链接": "href=\"&&\"",
+        "图片": "data-original=\"&&\"",
+        "标题": "title=\"&&\"",
+        "副标题": "繁华▶️+pic-text text-right\">&&<",
+        "线路二次截取": "class=\"nore&&播放地址",
+        "线路数组": "<h3&&h3>",
+        "线路标题": "📽️繁华👉+title\">&&</",
+        "播放数组": "class=\"stui-content__playlist&&</ul>",
+        "播放标题": "✨繁华👉+>&&</a>",
+        "简介": "繁华🎉为您介绍剧情📢本资源来源于网络🚓侵权请联系删除👉+ class=detail-sketch\">&&</span>",
+        "导演": "",
+        "主演": "",
+        "首页": "20",
+        "起始页": "1",
+        "直接播放": "0",
+        "嗅探词": ".mp4#.m3u8",
+        "分类url": "/vodshow/{cateId}--------{catePg}---{year}.html;;mrcd0",
+        "分类": "繁华电影🌠&繁华电视剧🌠&繁华综艺🌠&繁华动漫🌠",
+        "分类值": "1&2&3&4"
+      }
+    },
+    {
+      "key": "NOsp",
+      "name": "NO视频💯┃繁华影视📽️",
+      "type": 3,
+           "api": "csp_XBPQ",
+ "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+
+      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+      "playerType": 2,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "jar": "https://9071.kstore.vip/1_xbpq0614.jar",
+      "ext": {
+        "作者": "繁华",
+        "站名": "NO视频📽️本资源来源于网络🚓侵权请联系删除",
+        "请求头": "User-Agent$Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 Edg/128.0.0.0",
+        "编码": "UTF-8",
+        "图片代理": "0",
+        "主页url": "https://www.dgjiawu.com",
+        "搜索url": "/se-1zxgt/{wd}-{pg}",
+        "数组": "class=\"stui-vodlist__thumb&&</a>",
+        "链接": "href=\"&&\"",
+        "图片": "data-original=\"&&\"",
+        "标题": "title=\"&&\"",
+        "副标题": "繁华▶️+text-right\">&&<",
+        "线路数组": "href=\"javascript&&a>",
+        "线路标题": "📽️繁华👉+>&&</",
+        "播放数组": "dow-app-box\"&&</div>",
+        "播放标题": "✨繁华👉+>&&</a>",
+        "简介": "繁华🎉为您介绍剧情📢本资源来源于网络🚓侵权请联系删除👉+剧情简介：</span><p>&&</p>",
+        "导演": "",
+        "主演": "",
+        "首页": "20",
+        "起始页": "1",
+        "直接播放": "0",
+        "嗅探词": ".mp4#.m3u8",
+        "分类url": "/{cateId}/0/0/0/0/{catePg}[https://www.dgjiawu.com/{cateId}];;mrcd0",
+        "分类": "繁华电影🌠&繁华剧集🌠&繁华综艺🌠&繁华动漫🌠",
+        "分类值": "mo-1zxgt/5738/1&mo-1zxgt/5749/1&mo-1zxgt/5758/1&mo-1zxgt/5767/1"
+      }
+    },
+    {
+      "key": "LKDB",
+      "name": "来看💯┃繁华影视📽️",
+      "type": 3,
+           "api": "csp_XBPQ",
+ "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+
+      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+      "playerType": 2,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": {
+        "作者": "繁华",
+        "站名": "来看点播📽️本资源来源于网络🚓侵权请联系删除",
+        "请求头": "User-Agent$Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 Edg/128.0.0.0",
+        "编码": "UTF-8",
+        "图片代理": "0",
+        "主页url": "https://lkvod.me",
+        "搜索url": "/nk/{wd}----------{pg}---.html",
+        "数组": "class=\"lazy lazy1&&</div></div>",
+        "链接": "href=\"&&\"",
+        "图片": "data-src=\"&&\"",
+        "标题": "title=\"&&\"",
+        "副标题": "繁华▶️+cor5 hide ft2\">&&</div>",
+        "线路二次截取": "class=\"anthology-tab&&</div>",
+        "线路数组": "<a&&/a>[排序:量子资源>暴风资源>非凡资源]",
+        "线路标题": "📽️繁华👉+</i>&&<",
+        "播放数组": "class=\"anthology-list-play&&</ul>",
+        "播放标题": "✨繁华👉+>&&</a>",
+        "简介": "繁华🎉为您介绍剧情📢本资源来源于网络🚓侵权请联系删除👉+text cor3\">&&</div>",
+        "导演": "",
+        "主演": "",
+        "首页": "20",
+        "起始页": "1",
+        "直接播放": "0",
+        "嗅探词": ".mp4#.m3u8",
+        "分类url": "/show/{cateId}--------{catePg}---{year}.html;;mrcd0",
+        "分类": "繁华电影🌠&繁华剧集🌠&繁华综艺🌠&繁华动漫🌠",
+        "分类值": "1&2&3&4"
+      }
+    },
+    {
+      "key": "MTYY",
+      "name": "MTYY💯┃繁华影视📽️",
+      "type": 3,
+           "api": "csp_XBPQ",
+ "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+
+      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+      "playerType": 2,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": {
+        "作者": "繁华",
+        "站名": "MTYY📽️本资源来源于网络🚓侵权请联系删除",
+        "请求头": "User-Agent$Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 Edg/128.0.0.0",
+        "编码": "UTF-8",
+        "图片代理": "0",
+        "主页url": "https://www.mtyy1.com",
+        "搜索url": "/vodsearch/{wd}----------{pg}---.html",
+        "数组": "class=\"public-list-exp&&</a>",
+        "链接": "href=\"&&\"",
+        "图片": "data-src=\"&&\"",
+        "标题": "title=\"&&\"",
+        "副标题": "繁华▶️+ft2\">&&<",
+        "线路二次截取": "class=\"anthology-tab&&</div>",
+        "线路数组": "<a&&</a>",
+        "线路标题": "📽️繁华👉+</i>&&<",
+        "播放数组": "class=\"anthology-list-play&&</ul>",
+        "播放标题": "✨繁华👉+>&&</a>",
+        "简介": "繁华🎉为您介绍剧情📢本资源来源于网络🚓侵权请联系删除👉+描述:</strong>&&</div>",
+        "导演": "",
+        "主演": "",
+        "首页": "20",
+        "起始页": "1",
+        "直接播放": "0",
+        "嗅探词": ".mp4#.m3u8",
+        "分类url": "/vodshow/{cateId}--------{catePg}---{year}.html;;mrcd0",
+        "分类": "繁华剧集🌠&繁华电影🌠&繁华综艺🌠&繁华动漫🌠&繁华短剧🌠&繁华记录🌠",
+        "分类值": "1&2&3&4&5&6"
+      }
+    },
+    {
+      "key": "03yh",
+      "name": "03影院💯┃繁华影视📽️",
+      "type": 3,
+           "api": "csp_XBPQ",
+ "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+
+      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+      "playerType": 2,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": {
+        "作者": "繁华",
+        "站名": "03影院📽️本资源来源于网络🚓侵权请联系删除",
+        "请求头": "User-Agent$Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 Edg/128.0.0.0",
+        "编码": "UTF-8",
+        "图片代理": "0",
+        "主页url": "https://www.03yy.cyou",
+        "搜索url": "/search.php?page={pg}&searchword={wd}&searchtype=",
+        "数组": "class=\"m-pic-l&&</div>",
+        "链接": "href=\"&&\"",
+        "图片": "src=\"&&\"",
+        "标题": "title=\"&&\"",
+        "副标题": "繁华▶️+<span>&&</span>",
+        "线路数组": "setTab&&/li>",
+        "线路标题": "📽️繁华👉+>&&<",
+        "播放二次截取": "class=\"play_list active&&class=\"m-intro",
+        "播放数组": "<ul>&&</ul>",
+        "播放标题": "✨繁华👉+>&&</a>",
+        "简介": "繁华🎉为您介绍剧情📢本资源来源于网络🚓侵权请联系删除👉+剧情简介</h4>&&</p>",
+        "导演": "",
+        "主演": "",
+        "首页": "20",
+        "起始页": "1",
+        "直接播放": "0",
+        "嗅探词": ".mp4#.m3u8",
+        "分类url": "/type/index{cateId}-{catePg}.html;;mrcd0",
+        "分类": "繁华电影🌠&繁华剧集🌠&繁华动漫🌠&繁华综艺🌠",
+        "分类值": "1&2&4&3"
+      }
+    },
+    {
+      "key": "HNtv",
+      "name": "海纳💯┃繁华影视📽️",
+      "type": 3,
+           "api": "csp_XBPQ",
+ "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+
+      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+      "playerType": 2,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": {
+        "作者": "繁华",
+        "站名": "海纳TV📽️本资源来源于网络🚓侵权请联系删除",
+        "请求头": "User-Agent$Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 Edg/128.0.0.0",
+        "编码": "UTF-8",
+        "图片代理": "0",
+        "主页url": "https://hainatv.net",
+        "搜索url": "/index.php/vod/search/page/{pg}/wd/{wd}.html",
+        "数组": "class=\"hl-item-thumb&&</a>",
+        "链接": "href=\"&&\"",
+        "图片": "data-original=\"&&\"",
+        "标题": "title=\"&&\"",
+        "副标题": "繁华▶️+remarks\">&&<",
+        "线路数组": "hl-icon-shipin\">&&</div>",
+        "线路标题": "📽️繁华👉+>&&</a>",
+        "播放数组": "class=\"hl-plays-list&&</ul>",
+        "播放标题": "✨繁华👉+>&&</a>",
+        "简介": "繁华🎉为您介绍剧情📢本资源来源于网络🚓侵权请联系删除👉+简介：</em>&&</li>",
+        "导演": "",
+        "主演": "",
+        "首页": "20",
+        "起始页": "1",
+        "直接播放": "0",
+        "嗅探词": ".mp4#.m3u8",
+        "分类url": "/index.php/vod/show/id/{cateId}/page/{catePg}/year/{year}.html;;mrcd0",
+        "分类": "繁华电影🌠&繁华剧集🌠&繁华综艺🌠&繁华动漫🌠&繁华短剧🌠",
+        "分类值": "1&2&3&4&59"
+      }
+    },
+    {
+      "key": "WYtv",
+      "name": "微云💯┃繁华影视📽️",
+      "type": 3,
+           "api": "csp_XBPQ",
+ "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+
+      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+      "playerType": 2,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": {
+        "作者": "繁华",
+        "站名": "微云TV📽️本资源来源于网络🚓侵权请联系删除",
+        "请求头": "User-Agent$Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 Edg/128.0.0.0",
+        "编码": "UTF-8",
+        "图片代理": "0",
+        "主页url": "https://www.weiyuntv.com",
+        "搜索url": "/vodsearch/{wd}----------{pg}---.html",
+        "数组": "class=\"hl-item-thumb&&</a>",
+        "链接": "href=\"&&\"",
+        "图片": "data-original=\"&&\"",
+        "标题": "title=\"&&\"",
+        "副标题": "繁华▶️+remarks\">&&<",
+        "线路数组": "hl-icon-laiyuan\">&&/span>",
+        "线路标题": "📽️繁华👉+</i>&&<",
+        "播放数组": "class=\"hl-plays-list&&</ul>",
+        "播放标题": "✨繁华👉+>&&</a>",
+        "跳转播放链接": "var player_*url\":\"&&\"",
+        "跳转播放解析": "📽️繁华👉爱奇艺$https://www.shandianbf.com/m3u8/?url=#📽️繁华👉优酷$https://vip.vipuuvip.com/?url=",
+        "简介": "繁华🎉为您介绍剧情📢本资源来源于网络🚓侵权请联系删除👉+简介：</em>&&</li>",
+        "导演": "",
+        "主演": "",
+        "首页": "20",
+        "起始页": "1",
+        "直接播放": "0",
+        "嗅探词": ".mp4#.m3u8",
+        "分类url": "/vodshow/{cateId}--------{catePg}---{year}.html;;mrcd0",
+        "分类": "繁华电影🌠&繁华剧集🌠&繁华短剧🌠&繁华综艺🌠&繁华动漫🌠&繁华体育🌠",
+        "分类值": "dianying&lianxuju&duanju&zongyi&dongman&tiyu"
+      }
+    },
+    {
+      "key": "XSJYY",
+      "name": "新视觉💯┃繁华影视📽️",
+      "type": 3,
+           "api": "csp_XBPQ",
+ "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+
+      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+      "playerType": 2,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": {
+        "作者": "繁华",
+        "站名": "新视觉影院📽️本资源来源于网络🚓侵权请联系删除",
+        "请求头": "User-Agent$Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 Edg/128.0.0.0",
+        "编码": "UTF-8",
+        "图片代理": "0",
+        "主页url": "https://www.niubiys.com",
+        "搜索url": "/search.php?page={pg}&searchword={wd}&searchtype=",
+        "数组": "class=\"stui-vodlist__thumb&&</li>",
+        "链接": "href=\"&&\"",
+        "图片": "data-original=\"&&\"",
+        "标题": "title=\"&&\"",
+        "副标题": "繁华▶️+text-right\">&&<",
+        "线路二次截取": "end 详情&&end 播放列表",
+        "线路数组": "<h3&&h3>",
+        "线路标题": "📽️繁华👉+>&&<",
+        "播放数组": "class=\"stui-content__playlist&&</ul>",
+        "播放标题": "✨繁华👉+>&&</a>",
+        "简介": "繁华🎉为您介绍剧情📢本资源来源于网络🚓侵权请联系删除👉+简介：</span>&&</p>",
+        "导演": "",
+        "主演": "",
+        "首页": "20",
+        "起始页": "1",
+        "直接播放": "0",
+        "嗅探词": ".mp4#.m3u8",
+        "分类url": "/{cateId}/index{catePg}.html[https://www.niubiys.com/{cateId}/index.html];;mrcd0",
+        "分类": "繁华电影🌠&繁华剧集🌠&繁华动漫🌠&繁华综艺🌠&繁华短剧🌠",
+        "分类值": "dianying&tv&anime&zongyi&dtv"
+      }
+    },
+    {
+      "key": "GQJC",
+      "name": "高清剧场💯┃繁华影视📽️",
+      "type": 3,
+           "api": "csp_XBPQ",
+ "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+
+      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+      "playerType": 2,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": {
+        "作者": "繁华",
+        "站名": "高清剧场📽️本资源来源于网络🚓侵权请联系删除",
+        "请求头": "User-Agent$Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 Edg/128.0.0.0",
+        "编码": "UTF-8",
+        "图片代理": "0",
+        "主页url": "https://www.kanbd.com",
+        "搜索url": "/search/{wd}----------{pg}---.html",
+        "数组": "hl-lazy\"&&</a>",
+        "链接": "href=\"&&\"",
+        "图片": "data-original=\"&&\"",
+        "标题": "title=\"&&\"",
+        "副标题": "繁华▶️+remarks\">&&<",
+        "线路数组": "class=\"hl-tabs-btn&&/a>",
+        "线路标题": "📽️繁华👉+</i>&&<",
+        "播放数组": "class=\"hl-plays-list&&</ul>",
+        "播放标题": "✨繁华👉+>&&</a>",
+        "简介": "繁华🎉为您介绍剧情📢本资源来源于网络🚓侵权请联系删除👉+简介：</em>&&</li>",
+        "导演": "",
+        "主演": "",
+        "首页": "20",
+        "起始页": "1",
+        "直接播放": "0",
+        "嗅探词": ".mp4#.m3u8",
+        "分类url": "/s/{cateId}--------{catePg}---{year}.html;;mrcd0",
+        "分类": "繁华电影🌠&繁华剧集🌠&繁华综艺🌠&繁华动漫🌠&繁华纪录🌠&繁华动画🌠&繁华解说🌠&繁华短剧🌠&繁华体育🌠",
+        "分类值": "movie&series&variety&anime&documentary&animation&jieshuo&skit&sports"
+      }
+    },
+    {
+      "key": "PKW",
+      "name": "片库网💯┃繁华影视📽️",
+      "type": 3,
+           "api": "csp_XBPQ",
+ "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+
+      "playerType": 2,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": {
+        "作者": "繁华",
+        "站名": "片库网📽️本资源来源于网络🚓侵权请联系删除",
+        "请求头": "User-Agent$Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 Edg/128.0.0.0",
+        "编码": "UTF-8",
+        "图片代理": "0",
+        "主页url": "http://kongtiao4.com",
+        "搜索url": "/kovodsearch/{wd}----------{pg}---.html",
+        "数组": "class=\"module-item-pic&&</div>",
+        "链接": "href=\"&&\"",
+        "图片": "data-src=\"&&\"",
+        "标题": "title=\"&&\"",
+        "副标题": "繁华▶️+module-item-text\">&&</div>",
+        "线路数组": "data-dropdown-value&&/span>",
+        "线路标题": "📽️繁华👉+<span>&&<",
+        "播放数组": "class=\"sort-item&&</div>",
+        "播放标题": "✨繁华👉+>&&</span>",
+        "简介": "繁华🎉为您介绍剧情📢本资源来源于网络🚓侵权请联系删除👉+</b>&&</span>",
+        "导演": "",
+        "主演": "",
+        "首页": "20",
+        "起始页": "1",
+        "直接播放": "0",
+        "嗅探词": ".mp4#.m3u8",
+        "分类url": "/kovodshow/{cateId}--------{catePg}---{year}.html;;mrcd0",
+        "分类": "繁华剧集🌠&繁华综艺🌠&繁华动漫🌠&繁华电影🌠",
+        "分类值": "2&3&4&1"
+      }
+    },
+    {
+      "key": "DDYS",
+      "name": "多多💯┃繁华影视📽️",
+      "type": 3,
+           "api": "csp_XBPQ",
+ "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+
+      "playerType": 2,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": {
+        "作者": "繁华",
+        "站名": "多多影视📽️本资源来源于网络🚓侵权请联系删除",
+        "请求头": "User-Agent$Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 Edg/128.0.0.0",
+        "编码": "UTF-8",
+        "图片代理": "0",
+        "主页url": "https://www.ddhqw.com",
+        "搜索url": "/ddcz{wd}/page/{pg}.html",
+        "数组": "class=\"stui-vodlist__thumb&&</a>",
+        "链接": "href=\"&&\"",
+        "图片": "data-original=\"&&\"",
+        "标题": "title=\"&&\"",
+        "副标题": "繁华▶️+text-right\">&&<",
+        "线路数组": "class=\"stui-pannel__head bottom-line&&</div>",
+        "线路标题": "📽️繁华👉+>&&</h3>",
+        "播放数组": "class=\"stui-content__playlist&&</ul>",
+        "播放标题": "✨繁华👉+>&&</a>",
+        "简介": "繁华🎉为您介绍剧情📢+col-pd\">&&</p>",
+        "导演": "",
+        "主演": "",
+        "首页": "20",
+        "起始页": "1",
+        "直接播放": "0",
+        "嗅探词": ".mp4#.m3u8",
+        "分类url": "/list/{cateId}/page/{catePg}/year/{year}.html;;mrcd0",
+        "分类": "繁华电影🌠&繁华剧集🌠&繁华综艺🌠&繁华动漫🌠&繁华纪录🌠",
+        "分类值": "dianying&dianshiju&zongyi&dongmna&jilupian"
+      }
+    },
+    {
+      "key": "大师兄",
+      "name": "🧿大师┃影视",
+      "type": 3,
+           "api": "csp_XBPQ",
+ "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+
+      "ext": {
+        "分类url": "https://www.dsxysproo.com/dqvodshow/{cateId}-{area}--{class}-----{catePg}---{year}.html",
+        "分类": "电视剧$2#电影$1#动漫$4#综艺$3"
+      }
+    },
+    {
+      "key": "天天弹幕",
+      "name": "💘天天｜弹幕",
+      "type": 3,
+      "api": "csp_TianTian",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "jar": "https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1742079848140/ou1.jar",
+      "ext": {
+        "danmu": true,
+        "site": "1"
+      }
+    },
+    {
+      "key": "热播弹幕",
+      "name": "💘热播｜弹幕",
+      "type": 3,
+      "api": "csp_TianTian",
+      "jar": "./jar/pizza.jar;md5;6bcb3de5f0d7c9b3d4f19cfe9a314ab2",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": {
+        "danmu": true,
+        "site": "aHR0cDovL3YucmJvdHYuY24="
+      }
+    },
+    {
+      "key": "浪酷弹幕",
+      "name": "💘浪酷｜弹幕",
+      "type": 3,
+      "api": "csp_TianTian",
+      "jar": "./jar/pizza.jar;md5;6bcb3de5f0d7c9b3d4f19cfe9a314ab2",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": {
+        "danmu": true,
+        "site": "aHR0cDovL3YubGt1eXMuY24="
+      }
+    },
+    {
+      "key": "文才弹幕",
+      "name": "💘文才┃弹幕",
+      "type": 3,
+      "api": "csp_Jpys",
+      "jar": "./jar/pizza.jar;md5;6bcb3de5f0d7c9b3d4f19cfe9a314ab2",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": {
+        "danmu": true
+      }
+    },
+    {
+      "key": "瓜子2",
+      "name": "🍉瓜子┃弹幕",
+      "type": 3,
+      "api": "csp_GuaziGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "jar": "https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1742081743494/ok猫.jar",
+      "ext": {
+        "danmu": true
+      },
+      "timeout": 10
+    },
+    {
+      "key": "三六零弹幕",
+      "name": "💘三六┃弹幕",
+      "type": 3,
+      "api": "csp_Sp360",
+      "jar": "./jar/pizza.jar;md5;6bcb3de5f0d7c9b3d4f19cfe9a314ab2",
+      "searchable": 1,
+      "filterable": 1,
+      "changeable": 1,
+      "ext": {
+        "danmu": true
+      }
+    },
+    {
+      "key": "小苹果弹幕",
+      "name": "🔥小苹果┃xs弹幕",
+      "type": 3,
+      "api": "csp_Xpg",
+      "jar": "./jar/pizza.jar;md5;6bcb3de5f0d7c9b3d4f19cfe9a314ab2",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": {
+        "danmu": true
+      }
+    },
+    {
+      "key": "立播弹幕",
+      "name": "❤立播┃弹幕",
+      "type": 3,
+      "api": "csp_Libvio",
+      "searchable": 1,
+      "filterable": 1,
+      "changeable": 1,
+      "ext": {
+        "token": "http://127.0.0.1:9978/file/TV/token.txt",
+        "cookie": "http://127.0.0.1:9978/file/TV/.quark",
+        "uc_cookie": "http://127.0.0.1:9978/file/TV/.uc",
+        "danmu": true
+      }
+    },
+    {
+      "key": "csp_Tvyb",
+      "name": "云播┃影视",
+      "type": 3,
+      "jar": "https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1737765180601/feimao0125.jar",
+      "api": "csp_Tvyb"
+    },
+    {
+      "key": "快看影视",
+      "name": "快看┃蓝光",
+      "type": 3,
+      "api": "csp_Kuaikan",
+      "jar": "./jar/pizza.jar;md5;6bcb3de5f0d7c9b3d4f19cfe9a314ab2",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "河马短剧",
+      "name": "🦛河马┃短剧┃热推",
+      "type": 3,
+      "api": "csp_AppHMDJ",
+      "jar": "https://9071.kstore.vip/jar/moyu%E5%BC%B9%E5%B9%95%E6%8C%82%E8%BD%BD.jar",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 0,
+      "ext": "KhY021WelCEl+6MsvwnzaPussky/EAoc9z7C4keyHaEQ+sKbXhMKd83VjTL7Ls6+m7XDIcGdziOxPv79y/h4QCvmOEJmZ1VD6dopzAVxkFzEFw=="
+    },
+    {
+      "key": "py_河马",
+      "name": "py_河马短剧┃繁华影视📽️",
+      "type": 3,
+      "changeable": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "api": "https://9071.kstore.vip/py/%E6%B2%B3%E9%A9%ACAPP.py"
+    },
+    {
+      "key": "py_河马",
+      "name": "py_河马短剧┃繁华影视📽️",
+      "type": 3,
+      "changeable": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "api": "py_河马短剧",
+      "ext": "https://9071.kstore.vip/py/%E6%B2%B3%E9%A9%ACAPP.py"
+    },
+    {
+      "key": "星芽短剧",
+      "name": "🌟星芽┃短剧┃热推",
+      "type": 3,
+      "api": "csp_AppXY",
+      "jar": "https://9071.kstore.vip/jar/moyu%E5%BC%B9%E5%B9%95%E6%8C%82%E8%BD%BD.jar",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 0
+    },
+    {
+      "key": "短剧网",
+      "name": "🍇剧网┃短剧┃热推",
+      "type": 3,
+           "api": "csp_XBPQ",
+ "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+
+      "jar": "https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1742873207924/摸鱼PizazzGY.jar",
+      "ext": "http://我不是.摸鱼儿.com/api/moyu.php?file=短剧网"
+    },
+    {
+      "key": "短剧屋",
+      "name": "🍄剧屋┃短剧┃热推",
+      "type": 3,
+      "api": "csp_XYQHiker",
+      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "http://我不是.摸鱼儿.com/api/moyu.php?file=短剧屋"
+    },
+    {
+      "key": "✨毒舌短剧✨",
+      "name": "✨毒舌短剧✨",
+      "type": 3,
+           "api": "csp_XBPQ",
+ "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "http://box.ufuzi.com/tv/qq/%E7%9F%AD%E5%89%A7%E9%A2%91%E9%81%93/json/毒舌短剧.json"
+    },
+    {
+      "key": "哔哩弹幕",
+      "name": "🅱哔哩｜弹幕",
+      "type": 3,
+      "api": "csp_Bilimd",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "style": {
+        "type": "rect",
+        "ratio": 1.433
+      },
+      "ext": {
+        "cookie": "http://127.0.0.1:9978/file/TVBox/bilibili.txt"
+      },
+      "timeout": 10
+    },
+    {
+      "key": "稀饭动漫",
+      "name": "🍚稀饭┃动漫┃蓝光",
+      "type": 3,
+      "api": "csp_AppGetApp",
+      //"jar": "https://9071.kstore.vip/jar/moyu%E5%BC%B9%E5%B9%95%E6%8C%82%E8%BD%BD.jar",
+      "jar": "./jar/pizza.jar;md5;6bcb3de5f0d7c9b3d4f19cfe9a314ab2",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 0,
+      "ext": "w7TClcK8w5rDrcKYwoPCmcKkw57ClcK0wpvDosKnwqTCoMKjwrPCosKpw7HDoMKUwqDCoF3CqsKmwqrCrsKtbGBgZsKuwqHDncOow61hwpHCoF3DoMOow5vDp8Ohwq3CmMKfwqXCp8Ogw7PDqsOdwp/Cn8KlwpTCp8OWw6nDpsKpwprClcKkwpHDqcOjwqjDrcOywqdSXFLDgsOhw6PDrcORwqLCosKUUsKzwpXCnMKlwpzCp8KZwqBSwrPClcOV5Ye+6YWi5o+Y5ZCTXOWGnOS+kOWRqsK05b+q6KmA6LW35ruA56yJwo3Cm8KfwpzCusOfwqZ7wpXCqcKbwq3CnMKqw7PCjWLCg8Kgw6fCrMOlw6vDqMKtwoZ7wp/CvMKVwqbCm8K7wpjCo3nCpsKbwq3CnMKqw7PCjWLCg8Kgw6fCrMOlw6vDqMKtwoZ7wp/CvMKVwqbCm8ONwpzCpMKVwoXDq8OfwpzCs8KcVcKt"
+    },
+    {
+      "key": "csp_Ysj",
+      "name": "💫异界┃动漫┃蓝光",
+      "type": 3,
+      "api": "csp_Ysj",
+      //"jar": "https://9071.kstore.vip/jar/%E6%91%B8%E9%B1%BCspider.jar",
+      "jar": "./jar/pizza.jar;md5;6bcb3de5f0d7c9b3d4f19cfe9a314ab2",
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 1
+    },
+    {
+      "key": "csp_Anime1",
+      "name": "📖日漫┃动漫┃蓝光",
+      "type": 3,
+      "api": "csp_Anime1",
+      //"jar": "https://9071.kstore.vip/jar/%E6%91%B8%E9%B1%BCspider.jar",
+      "jar": "./jar/pizza.jar;md5;6bcb3de5f0d7c9b3d4f19cfe9a314ab2",
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 1
+    },
+    {
+      "key": "曼波动漫",
+      "name": "🤣曼波｜动漫",
+      "type": 3,
+      "api": "csp_AppGetApp",
+      "jar": "./jar/pizza.jar;md5;6bcb3de5f0d7c9b3d4f19cfe9a314ab2",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 0,
+      "ext": "w7TClcK8w5rDrcKYwoPCmcKkw57ClcK0wpvCnF9SwoPCmcOtw5jDj8Orw6ZValLCmMOtw6fDqsOswrRiX8KRwqDDqcKhw6nDpsOpwpnCpcKeYcKnw6fDqcOpwqnClMKgwplew6nDm8OqwpvCplXCpMKZwqDCm8KtwpzDlOWHv+mEm+aPleWQk1zlh6XkvorlkbHCs+W/q+inuei1tOa7gOesicOWwpXCpsKbwrvCmMKje8KVw7LClcK0wpvCsGnClMKTY8KpwqzDncObw5/CmMKTwpFkwq7Cp8KcwqXCnHTClcKjecOvwpXCtMKbwrBpwpTCk2PCqcKsw53Dm8OfwpjCk8KRZMKuwqfCnMO2"
+    },
+    {
+      "key": "稀饭动漫",
+      "name": "🤣稀饭｜动漫",
+      "type": 3,
+      "api": "csp_AppGetApp",
+      "jar": "./jar/pizza.jar;md5;6bcb3de5f0d7c9b3d4f19cfe9a314ab2",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 0,
+      "ext": "w7TClcK8w5rDrcKYwoPCmcKkw57ClcK0wpvDosKnwqTCoMKjwrPCosKpw7HDoMKUwqDCoF3CqsKmwqrCrsKtbGBgZsKuwqHDncOow61hwpHCoF3DoMOow5vDp8Ohwq3CmMKfwqXCp8Ogw7PDqsOdwp/Cn8KlwpTCp8OWw6nDpsKpwprClcKkwpHDqcOjwqjDrcOywqdSXFLDgsOhw6PDrcORwqLCosKUUsKzwpXCnMKlwpzCp8KZwqBSwrPClcOV5Ye+6YWi5o+Y5ZCTXOWGnOS+kOWRqsK05b+q6KmA6LW35ruA56yJwo3Cm8KfwpzCusOfwqZ7wpXCqcKbwq3CnMKqw7PCjWLCg8Kgw6fCrMOlw6vDqMKtwoZ7wp/CvMKVwqbCm8K7wpjCo3nCpsKbwq3CnMKqw7PCjWLCg8Kgw6fCrMOlw6vDqMKtwoZ7wp/CvMKVwqbCm8ONwpzCpMKVwoXDq8OfwpzCs8KcVcKt"
+    },
+
+    {
+      "key": "58动漫网",
+      "name": "🤣之家┃动漫",
+      "type": 3,
+           "api": "csp_XBPQ",
+ "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": {
+        "简介": "⚠️繁华特别提醒您⚠️请勿相信影片中的广告，以免上当受骗。+简介：&&</p>",
+        "搜索url": "https://dbwyt.com/search.php?searchword={wd}",
+        "分类url": "https://dbwyt.com/wuba/{cateId}-{catePg}.html",
+        "分类": "国产动漫$1#日本动漫$2#欧美动漫$47#海外动漫$3#动漫电影$4"
+      }
+    },
+    {
+      "key": "动漫大全",
+      "name": "🤣大全┃动漫",
+      "type": 3,
+           "api": "csp_XBPQ",
+ "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": {
+        "简介": "⚠️繁华特别提醒您⚠️请勿相信影片中的广告，以免上当受骗。+简介：&&</p>",
+        "线路数组": "<aclass=\"hl-tabs-btnhl-slide-swiper\"&&</a>",
+        "线路标题": "</i>&nbsp;&&</a>+集",
+        "分类url": "https://dingdingdm.com/list/{cateId}-{catePg}.html",
+        "分类": "动漫电影$1#国产动漫$3#日本动漫$2#欧美动漫$4#短剧$20"
+      }
+    },
+    {
+      "key": "魔都资源",
+      "name": "🤣魔都┃动漫",
+      "type": 1,
+      "api": "https://caiji.moduapi.cc/api.php/provide/vod/?ac=list",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    }
+  ],
+
+  "parses": [
+    {"name": "七智", "type": 3, "url": "https://jx.2s0.cn/player/?url="},
+    {
+      "name": "技巧1",
+      "type": 1,
+      "url": "http://pan.qiaoji8.com/tvbox/gouzi.php?url=",
+      "ext": {
+        "flag": [
+          "qq"      , "腾讯"      , "腾云驾雾"    , "腾 讯"     , "qiyi"    ,
+          "爱奇艺"     , "爱 奇 艺"   , "奇艺"      , "youku"   , "优酷"      ,
+          "优 酷"     , "mgtv"    , "芒果"      , "芒 果T V"  , "imgo"    ,
+          "letv"    , "乐视"      , "乐 视"     , "咪 咕 视 频" , "pptv"    ,
+          "PPTV"    , "C N T V" , "sohu"    , "bilibili", "哔哩哔哩"    ,
+          "哔 哩 哔 哩" , "哔哩"
+        ]
+      }
+    },
+    {
+      "name": "巧技2",
+      "type": 1,
+      "url": "https://zy.qiaoji8.com/neibu.php?url=",
+      "ext": {
+        "flag": [
+          "qq"      , "腾讯"      , "腾云驾雾"    , "腾 讯"     , "qiyi"    ,
+          "爱奇艺"     , "爱 奇 艺"   , "奇艺"      , "youku"   , "优酷"      ,
+          "优 酷"     , "mgtv"    , "芒果"      , "芒 果T V"  , "imgo"    ,
+          "letv"    , "乐视"      , "乐 视"     , "咪 咕 视 频" , "pptv"    ,
+          "PPTV"    , "C N T V" , "sohu"    , "bilibili", "哔哩哔哩"    ,
+          "哔 哩 哔 哩" , "哔哩"
+        ]
+      }
+    },
+    {"name": "巧技3", "type": 1, "url": "https://zy.qiaoji8.com/gouzi.php?url="},
+    {"name": "虾米1", "type": 0, "url": "https://jx.xmflv.cc/?url="},
+    {"name": "虾米2", "type": 0, "url": "https://jx.xmflv.com/?url="},
+    {
+      "name": "虾米3",
+      "type": 0,
+      "url": "https://jx.xmflv.com/?url=",
+      "ext": {
+        "header": {
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.57"
+        }
+      }
+    },
+    {"name": "豆瓣", "type": 3, "url": "https://www.dbjiexi.com:966/jx/?url="},
+    {
+      "name": "去插播",
+      "type": 3,
+      "url": "http://18.mp8.top/000bofangqi/qushuiyin/?url="
+    },
+    {
+      "name": "臻享",
+      "type": "1",
+      "url": "https://zy.qiaoji8.com/gouzi.php?url=",
+      "ext": {
+        "flag": [
+          "qq"      , "腾讯"      , "qiyi"    , "爱奇艺"     , "奇艺"      ,
+          "youku"   , "优酷"      , "sohu"    , "搜狐"      , "letv"    ,
+          "乐视"      , "mgtv"    , "芒果"      , "tnmb"    , "seven"   ,
+          "bilibili", "1905"
+        ],
+        "header": {"User-Agent": "okhttp/4.9.1"}
+      }
+    },
+    {
+      "name": "优选",
+      "type": 1,
+      "url": "http://1.94.221.189:88/algorithm.php?url=",
+      "ext": {
+        "flag": [
+          "qq"      , "腾讯"      , "qiyi"    , "爱奇艺"     , "奇艺"      ,
+          "youku"   , "优酷"      , "sohu"    , "搜狐"      , "letv"    ,
+          "乐视"      , "mgtv"    , "芒果"      , "tnmb"    , "seven"   ,
+          "bilibili", "1905"
+        ],
+        "header": {"User-Agent": "okhttp/4.9.1"}
+      }
+    },
+    {
+      "name": "至臻",
+      "type": 1,
+      "url": "http://yunhai.qijiyun.vip/home/api?type=ys&uid=177259&key=dijnouxKNOQSTUWXY5&url=",
+      "ext": {
+        "flag": [
+          "qq"      , "腾讯"      , "qiyi"    , "爱奇艺"     , "奇艺"      ,
+          "youku"   , "优酷"      , "sohu"    , "搜狐"      , "letv"    ,
+          "乐视"      , "mgtv"    , "芒果"      , "tnmb"    , "seven"   ,
+          "bilibili", "1905"
+        ],
+        "header": {"User-Agent": "okhttp/4.9.1"}
+      }
+    },
+    {
+      "name": "无双",
+      "type": 1,
+      "url": "http://1.94.221.189:88/algorithm.php?url=",
+      "ext": { "flag": ["hgvip"], "header": {"User-Agent": "okhttp/4.9.1"} }
+    },
+    {
+      "name": "皮皮虾",
+      "type": "1",
+      "url": "http://jiexi.52ppx.top/lxjson.php?url=",
+      "ext": { "flag": ["PPXLG", "皮皮虾4K"] }
+    },
+    {"name": "8090", "type": 0, "url": "https://www.8090g.cn/?url="},
+    {"name": "m3u8", "type": 0, "url": "https://jx.m3u8.tv/jiexi/?url="},
+    {
+      "name": "ckplayer",
+      "type": 0,
+      "url": "https://www.ckplayer.vip/jiexi/?url="
+    },
+    {"name": "ik9", "type": 0, "url": "https://yparse.ik9.cc/index.php?url="},
+    {"name": "bd", "type": 0, "url": "https://bd.jx.cn/?url="},
+    {
+      "name": "yparse",
+      "type": 0,
+      "url": "https://jx.yparse.com/index.php?url="
+    },
+    {"name": "hls", "type": 0, "url": "https://jx.hls.one/?url="},
+    {
+      "name": "a6club",
+      "type": 0,
+      "url": "https://pl.a6club.com/player/analysis.php?v="
+    },
+    {"name": "nnxv", "type": 0, "url": "https://jx.nnxv.cn/tv.php?url="}
+  ],
+  "rules": [
+    {
+      "name": "ofiii[台湾节点]",
+      "hosts": [
+          "www.ofiii.com"
+      ],
+      "script": [
+          "const play=document.getElementsByClassName(\"play_icon\")[0];const event=new MouseEvent(\"click\",{bubbles:!0,cancelable:!0,view:window,screenX:100,screenY:100,clientX:50,clientY:50,button:0,shiftKey:!1,ctrlKey:!1,altKey:!1,metaKey:!1,modifierState:0});play.dispatchEvent(event);"
+                ]
+    },
+    {
+      "name": "量子非凡广告",
+      "hosts": [
+        "lz"      , "vip.lz"  , "v.cdnlz" , "hd.lz"   , "ffzy"    , "vip.ffzy",
+        "hd.ffzy"
+      ],
+      "regex": [
+        "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:6.666667,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+        "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:6.600000,[\\s\\S]*?#EXT-X-DISCONTINUITY"
+      ]
+    },
+    {
+      "name": "索尼广告",
+      "hosts": ["suonizy", "qrssv.com"],
+      "regex": ["15.1666", "15.2666"]
+    },
+    { "name": "乐视广告", "hosts": ["leshiyun"], "regex": ["15.92"] },
+    {
+      "name": "优质广告",
+      "hosts": ["yzzy", "playback"],
+      "regex": ["16.63", "18.66", "17.66", "19.13"]
+    },
+    {
+      "name": "快看广告",
+      "hosts": ["kuaikan", "vip.kuaikan"],
+      "regex": ["15.32", "15.231", "18.066"]
+    },
+    {
+      "name": "360广告",
+      "hosts": ["lyhuicheng"],
+      "regex": [
+        "#EXTINF.*?\\s+.*?hrz8QcR9.*?\\.ts\\s+"               ,
+        "#EXT-X-KEY:METHOD=NONE[\\s\\S]*?#EXT-X-DISCONTINUITY"
+      ]
+    },
+    {
+      "name": "开源棋牌",
+      "hosts": ["askzycdn", "jkunbf", "bfikuncdn", "bfaskcdn"],
+      "regex": [
+        "#EXT-X-KEY:METHOD=NONE\\r*\\n*#EXTINF:5,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+        "#EXT-X-KEY:METHOD=AES-128,URI=\"[^\"]+\"\\r*\\n*#EXTINF:3.333,[\\s\\S]*?#EXT-X-DISCONTINUITY"
+      ]
+    },
+    {
+      "name": "暴风广告",
+      "hosts": ["bfengbf.com", "bfzy", "c1"],
+      "regex": [
+        "#EXTINF.*?\\s+.*?adjump.*?\\.ts\\s+"                               ,
+        "#EXT-X-DISCONTINUITY\r*\n*#EXTINF:3,[\\s\\S]*?#EXT-X-DISCONTINUITY"
+      ]
+    },
+    {
+      "name": "磁力广告",
+      "hosts": ["magnet"],
+      "regex": [
+        "更多"     , "请访问"    , "example", "社 區"    , "x u u"  , "直 播"    ,
+        "更 新"    , "社 区"    , "有趣"     , "有 趣"    , "英皇体育"   , "全中文AV在线",
+        "澳门皇冠赌场" , "哥哥快来"   , "美女荷官"   , "裸聊"     , "新片首发"   , "UUE29"
+      ]
+    }
+  ],
+  "doh": [
+    {
+      "name": "Google",
+      "url": "https://dns.google/dns-query",
+      "ips": ["8.8.4.4", "8.8.8.8"]
+    },
+    {
+      "name": "Cloudflare",
+      "url": "https://cloudflare-dns.com/dns-query",
+      "ips": [
+        "1.1.1.1"             , "1.0.0.1"             , "2606:4700:4700::1111",
+        "2606:4700:4700::1001"
+      ]
+    },
+    {
+      "name": "AdGuard",
+      "url": "https://dns.adguard.com/dns-query",
+      "ips": ["94.140.14.140", "94.140.14.141"]
+    },
+    {
+      "name": "DNSWatch",
+      "url": "https://resolver2.dns.watch/dns-query",
+      "ips": ["84.200.69.80", "84.200.70.40"]
+    },
+    {
+      "name": "Quad9",
+      "url": "https://dns.quad9.net/dns-quer",
+      "ips": ["9.9.9.9", "149.112.112.112"]
+    }
+  ],
+  "flags": [
+    "youku"   , "优酷"      , "优 酷"     , "优酷视频"    , "qq"      , "腾讯"      ,
+    "腾 讯"     , "腾讯视频"    , "iqiyi"   , "qiyi"    , "奇艺"      , "爱奇艺"     ,
+    "爱 奇 艺"   , "m1905"   , "xigua"   , "letv"    , "leshi"   , "乐视"      ,
+    "乐 视"     , "sohu"    , "搜狐"      , "搜 狐"     , "搜狐视频"    , "tudou"   ,
+    "pptv"    , "mgtv"    , "芒果"      , "imgo"    , "芒果TV"    , "芒 果 T V" ,
+    "bilibili", "哔 哩"     , "哔 哩 哔 哩"
+  ],
+  "ijk": [
+    {
+      "group": "软解码",
+      "options": [
+        {"category": 4, "name": "opensles", "value": "0"},
+        {"category": 4, "name": "overlay-format", "value": "842225234"},
+        {"category": 4, "name": "framedrop", "value": "1"},
+        {"category": 4, "name": "soundtouch", "value": "1"},
+        {"category": 4, "name": "start-on-prepared", "value": "1"},
+        {"category": 1, "name": "http-detect-range-support", "value": "0"},
+        {"category": 1, "name": "fflags", "value": "fastseek"},
+        {"category": 2, "name": "skip_loop_filter", "value": "48"},
+        {"category": 4, "name": "reconnect", "value": "1"},
+        {"category": 4, "name": "enable-accurate-seek", "value": "0"},
+        {"category": 4, "name": "mediacodec", "value": "0"},
+        {"category": 4, "name": "mediacodec-auto-rotate", "value": "0"},
+        {
+          "category": 4,
+          "name": "mediacodec-handle-resolution-change",
+          "value": "0"
+        },
+        {"category": 4, "name": "mediacodec-hevc", "value": "0"},
+        {"category": 1, "name": "dns_cache_timeout", "value": "600000000"}
+      ]
+    },
+    {
+      "group": "硬解码",
+      "options": [
+        {"category": 4, "name": "opensles", "value": "0"},
+        {"category": 4, "name": "overlay-format", "value": "842225234"},
+        {"category": 4, "name": "framedrop", "value": "1"},
+        {"category": 4, "name": "soundtouch", "value": "1"},
+        {"category": 4, "name": "start-on-prepared", "value": "1"},
+        {"category": 1, "name": "http-detect-range-support", "value": "0"},
+        {"category": 1, "name": "fflags", "value": "fastseek"},
+        {"category": 2, "name": "skip_loop_filter", "value": "48"},
+        {"category": 4, "name": "reconnect", "value": "1"},
+        {"category": 4, "name": "enable-accurate-seek", "value": "0"},
+        {"category": 4, "name": "mediacodec", "value": "1"},
+        {"category": 4, "name": "mediacodec-auto-rotate", "value": "1"},
+        {
+          "category": 4,
+          "name": "mediacodec-handle-resolution-change",
+          "value": "1"
+        },
+        {"category": 4, "name": "mediacodec-hevc", "value": "1"},
+        {"category": 1, "name": "dns_cache_timeout", "value": "600000000"}
+      ]
+    }
+  ],
+  "ads": [
+    "ae01.alicdn.com",
+    "c.cnzz.com",
+    "cdn.bootcss.com",
+    "cdnjs.hnfenxun.com",
+    "cms.qdwght.com",
+    "cnzz.mmstat.com",
+    "cnzz.hhttm.top",
+    "ehwe.yhdtns.com",
+    "f5w.as12df.top",
+    "hd.youyhn.com",
+    "hm.baidu.com",
+    "img.mosflower.cn",
+    "img.xunzhuo123.com",
+    "iqiyi.hbuioo.com",
+    "k.jinxiuzhilv.com",
+    "k.wudejia.com",
+    "mav.mavuz.com",
+    "mc.usihnbcq.cn",
+    "mg.g1mm3d.cn",
+    "mimg.0c1q0l.cn",
+    "mscs.svaeuzh.cn",
+    "ppl.xunzhuo123.com",
+    "qiu.xixiqiu.com",
+    "q11.cnzz.com",
+    "s4.cnzz.com",
+    "s9.cnzz.com",
+    "s13.cnzz.com",
+    "s19.cnzz.com",
+    "s23.cnzz.com",
+    "s96.cnzz.com",
+    "sp.chemacid.cn",
+    "stj.v1vo.top",
+    "thy.dacedsfa.cn",
+    "tips.gamevvip.com",
+    "tj.tianwenhu.com",
+    "tp.vinuxhome.com",
+    "um.cavuc.com",
+    "vip.ffzyad.com",
+    "vivovip.mmszxc.top",
+    "wofwk.aoidf3.com",
+    "www.92424.cn",
+    "www.baihuillq.com",
+    "www.googletagmanager.com",
+    "www.google-analytics.com",
+    "www.jixunkyy.cn",
+    "xc.hubeijieshikj.cn",
+    "xdn.cqqc3.com",
+    "xg.gars57.cn",
+    "xg.huataisangao.cn",
+    "xg.whsbpw.cn",
+    "xomk.jiangjunmh.top",
+    "z1.cnzz.com",
+    "z2.cnzz.com",
+    "z3.cnzz.com",
+    "z5.cnzz.com",
+    "z6.cnzz.com",
+    "z7.cnzz.com",
+    "z8.cnzz.com",
+    "wan.51img1.com",
+    "iqiyi.hbuioo.com",
+    "vip.ffzyad.com",
+    "https://lf1-cdn-tos.bytegoofy.com/obj/tos-cn-i-dy/455ccf9e8ae744378118e4bd289288dd"
+  ]
+}
