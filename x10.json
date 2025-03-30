@@ -4523,6 +4523,20 @@
       "header": {"Referer": "https://www.kds.tw/"}
     },
     {
+      "name": "金星直播",
+      "url": "./live/gold/jx.txt",
+      "epg":"https://diyp100.112114.xyz/?ch={name}&date={date}",
+      "logo": "https://epg.v1.mk/logo/{name}.png",
+      "core": {
+        "auth": "https://sgla.googlejt.com/v1/auth",
+        "name": "08a77819f9b7",
+        "pass": "1742653607661",
+        "sign": "163428eb20fa4b27",
+        "pkg": "com.yby.v11.singapore.tv",
+        "so": "./live/gold/joy.so"
+      }
+    }
+    {
       "name": "焦点(Focus TV)",
       "type": 0,
       "url": "http://xg.52sw.top/jd/?ip=108.181.32.169",
@@ -4539,9 +4553,9 @@
     {
       "name": "歐飛(ofiii TV)",
       "type": 0,
-      "url": "http://xg.52sw.top/iptv/ofiii.m3u",
+      "url": "./live/ofiii.m3u",
       "ua": "okhttp/3.15",
-      "epg": "http://iptv.52sw.top:668/?ch={name}&date={date}"
+      "logo": "https://epg.112114.xyz/logo/{name}.png",
     },
     {
       "name": "歐華167",
