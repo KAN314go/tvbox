@@ -6,199 +6,6 @@
 
 
 
-
-
-    {
-      "key": "py_金牌.py",
-      "name": "🇹🇼｜金牌影院.py｜待測",
-      "type": 3,
-      "api": "./py/金牌.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": {"site": "https://www.vv3nwjk.com,https://www.jpyy2.com,https://www.cfkj86.com"}
-    },
-    {
-      "key": "py_魔方影视APP",
-      "name": "🇹🇼｜魔方影視APP｜待測",
-      "type": 3,
-      "api": "./py/魔方影视APP.py",
-      "searchable": 1,
-      "quickSearch": 0,
-      "filterable": 0,
-      "changeable": 0
-    },
-    {
-      "key": "py_若惜追剧APP",
-      "name": "🇹🇼｜若惜追劇APP｜待測",
-      "type": 3,
-      "api": "./py/若惜追剧APP.py",
-      "searchable": 1,
-      "quickSearch": 0,
-      "filterable": 0,
-      "changeable": 0
-    },
-    {
-      "key": "py_哇哇APP",
-      "name": "🇹🇼｜哇哇APP｜待測",
-      "type": 3,
-      "api": "./py/哇哇APP.py",
-      "searchable": 1,
-      "quickSearch": 0,
-      "filterable": 0,
-      "changeable": 0
-    },
-    {
-      "key": "py_云端APP",
-      "name": "🇹🇼｜雲端APP｜待測",
-      "type": 3,
-      "api": "./py/云端APP.py",
-      "searchable": 1,
-      "quickSearch": 0,
-      "filterable": 0,
-      "changeable": 0
-    },
-
-    {
-      "key": "SP33",
-      "name": "🇹🇼｜蝸牛｜高清◎秒播(無廣告)",
-      "type": 3,
-      "api": "csp_SP33",
-      "jar": "./jar/蝸牛-0330.jar",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "changeable": 0
-    },
-    {
-      "key": "csp_電影先生",
-      "name": "🇹🇼｜片庫｜待測",
-      "type": 3,
-      "api": "csp_XBPQ",
-      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-      "searchable": 1,
-      "filterable": 1,
-      "quickSearch": 1,
-      "ext": {
-        "分类url": "https://xn--44qz85a01qpc.com/pianku-{cateId}-{area}-{by}------{catePg}---{year}.html",
-        "分类": "电视剧$dianshiju#电影$dianying#综艺$zongyi#动漫$dongman",
-        "地区": "中国大陆&中国香港&中国台湾&中国澳门&美国&法国&英国&日本&韩国&德国&泰国&新加坡&马来西亚&印度&意大利&西班牙&加拿大&俄罗斯&澳大利亚&其他",
-        "影片年代": "<div class=\"module-info-tag\">&&</div>",
-        "影片类型": "module-info-tag\">&&立即播放",
-        "搜索url": "https://xn--44qz85a01qpc.com/search--------------.html?wd={wd}",
-        "简介": "style=\"line-height: 20px;\"&&</div>",
-        "线路数组": "data-dropdown-value=&&</div>",
-        "线路标题": "<span>&&</span>[排序:TK>HD>XS>YI>DI>]"
-      }
-    },
-    {
-      "key": "csp_GM_注视影视",
-      "name": "🇹🇼｜注視影視(修)｜待測",
-      "type": 3,
-      "searchable": 1,
-      "changeable": 1,
-      "quickSearch": 0,
-      "style": {
-        "type": "rect",
-        "ratio": 0.66
-      },
-      "api": "csp_GM",
-      "jar": "./jar/gm.jar",
-      "ext": {
-        "userScript": "./js/gaze.user.js",
-        "debug": false,
-        "webViewSettings": {
-          "blockNetworkImage": true,
-          "blockList": [
-            "https://*.bytecdntp.com/cdn/expire-1-M/font-awesome/*",
-            "https://*.clarity.ms/*",
-            "https://gaze.run/visitorslog.php*",
-            "*.css*"
-          ]
-        },
-        "playUrlMatch": [
-          "https://dl-b.cloud.189.cn/corp/downloadFile.action?*",
-          "https://gaze.run/gaze_filey/pb/*.m3u8",
-          "https://*/obj/tos*"
-        ],
-        "spider": {
-          "homeContent": {
-            "loadUrl": "https://gaze.run/filter"
-          },
-          "categoryContent": {
-            "loadUrl": "https://gaze.run/filter"
-          },
-          "detailContent": {
-            "loadUrl": "https://gaze.run/play/${id}"
-          },
-          "playerContent": {
-            "loadUrl": "https://gaze.run/play/${mcid}#${path}"
-          },
-          "searchContent": {
-            "loadUrl": "https://gaze.run/filter"
-          }
-        }
-      }
-    },
-    {
-      "key": "csp_GM_麻雀视频",
-      "name": "🇹🇼｜麻雀視頻(修)｜待測",
-      "type": 3,
-      "searchable": 1,
-      "changeable": 1,
-      "quickSearch": 0,
-      "style": {
-        "type": "rect",
-        "ratio": 0.71
-      },
-      "api": "csp_GM",
-      "jar": "./jar/gm.jar",
-      "ext": {
-        "userScript": "./js/mqtv.user.js",
-        "debug": false,
-        "webViewSettings": {
-          "blockNetworkImage": true,
-          "blockList": [
-            "https://hm.baidu.com/*",
-            "https://*.n3f2.cn/*"
-          ]
-        },
-        "playUrlMatch": [
-          "https://*/obj/tos-*",
-          "*://*/*.mp4*",
-          "*://*/*.m3u8*"
-        ],
-        "spider": {
-          "homeContent": {
-            "loadUrl": "https://www.mqtv.cc/"
-          },
-          "categoryContent": {
-            "loadUrl": "https://www.mqtv.cc/type/${tid}"
-          },
-          "detailContent": {
-            "loadUrl": "https://www.mqtv.cc${id}"
-          },
-          "playerContent": {
-            "loadUrl": "https://www.mqtv.cc${url}#${anchor}"
-          },
-          "searchContent": {
-            "loadUrl": "https://www.mqtv.cc/search/${key}"
-          }
-        }
-      }
-    },
-
-
-
-
-
-
-
-
-
-
-
-
     {
       "key": "豆瓣",
       "name": "🇹🇼｜熱播排行榜｜自動切換",
@@ -497,6 +304,16 @@
       "changeable": 1
     },
     {
+      "key": "py_魔方影视APP",
+      "name": "🥇｜魔方影視APP｜藍光◎秒播(無廣告+部分線路有廣告)",
+      "type": 3,
+      "api": "./py/魔方影视APP.py",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 0,
+      "changeable": 0
+    },
+    {
       "key": "真心影视",
       "name": "🥇｜真心｜藍光◎龜速(無廣告)",
       "type": 3,
@@ -505,7 +322,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1
-  },
+    },
     {
       "key": "WexquickvodGuard",
       "name": "🥇｜美剧｜高清◎秒播(無廣告)",
@@ -590,6 +407,16 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1
+    },
+        {
+      "key": "py_金牌.py",
+      "name": "🥇｜金牌｜高清◎秒播(無廣告)",
+      "type": 3,
+      "api": "./py/金牌.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": {"site": "https://www.vv3nwjk.com,https://www.jpyy2.com,https://www.cfkj86.com"}
     },
     {
       "key": "py_jinpai",
@@ -1252,6 +1079,68 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1
+    },
+    {
+      "key": "py_若惜追剧APP",
+      "name": "🥇｜若惜追劇APP｜高清◎秒播(無廣告)",
+      "type": 3,
+      "api": "./py/若惜追剧APP.py",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 0,
+      "changeable": 0
+    },
+    {
+      "key": "py_哇哇APP",
+      "name": "🥇｜哇哇APP｜高清◎秒播(無廣告)",
+      "type": 3,
+      "api": "./py/哇哇APP.py",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 0,
+      "changeable": 0
+    },
+    {
+      "key": "py_云端APP",
+      "name": "🥇｜雲端APP｜高清◎秒播(無廣告)",
+      "type": 3,
+      "api": "./py/云端APP.py",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 0,
+      "changeable": 0
+    },
+    {
+      "key": "SP33",
+      "name": "🥇｜蝸牛｜高清◎秒播(無廣告)",
+      "type": 3,
+      "api": "csp_SP33",
+      "jar": "./jar/蝸牛-0330.jar",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "changeable": 0
+    },
+    {
+      "key": "csp_電影先生",
+      "name": "🥇｜片庫｜高清◎秒播(WU、YI線路無廣)",
+      "type": 3,
+      "api": "csp_XBPQ",
+      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+      "searchable": 1,
+      "filterable": 1,
+      "quickSearch": 1,
+      "ext": {
+        "分类url": "https://xn--44qz85a01qpc.com/pianku-{cateId}-{area}-{by}------{catePg}---{year}.html",
+        "分类": "电视剧$dianshiju#电影$dianying#综艺$zongyi#动漫$dongman",
+        "地区": "中国大陆&中国香港&中国台湾&中国澳门&美国&法国&英国&日本&韩国&德国&泰国&新加坡&马来西亚&印度&意大利&西班牙&加拿大&俄罗斯&澳大利亚&其他",
+        "影片年代": "<div class=\"module-info-tag\">&&</div>",
+        "影片类型": "module-info-tag\">&&立即播放",
+        "搜索url": "https://xn--44qz85a01qpc.com/search--------------.html?wd={wd}",
+        "简介": "style=\"line-height: 20px;\"&&</div>",
+        "线路数组": "data-dropdown-value=&&</div>",
+        "线路标题": "<span>&&</span>[排序:TK>HD>XS>YI>DI>]"
+      }
     },
     {
       "key": "csp_熱播之家",
@@ -3075,6 +2964,102 @@
       "ext": "./json/泥視頻VIP.json"
     },
     {
+      "key": "csp_GM_注视影视",
+      "name": "🥇｜注視影視｜高清◎卡頓(無廣告)",
+      "type": 3,
+      "searchable": 1,
+      "changeable": 1,
+      "quickSearch": 0,
+      "style": {
+        "type": "rect",
+        "ratio": 0.66
+      },
+      "api": "csp_GM",
+      "jar": "./jar/gm.jar",
+      "ext": {
+        "userScript": "./js/gaze.user.js",
+        "debug": false,
+        "webViewSettings": {
+          "blockNetworkImage": true,
+          "blockList": [
+            "https://*.bytecdntp.com/cdn/expire-1-M/font-awesome/*",
+            "https://*.clarity.ms/*",
+            "https://gaze.run/visitorslog.php*",
+            "*.css*"
+          ]
+        },
+        "playUrlMatch": [
+          "https://dl-b.cloud.189.cn/corp/downloadFile.action?*",
+          "https://gaze.run/gaze_filey/pb/*.m3u8",
+          "https://*/obj/tos*"
+        ],
+        "spider": {
+          "homeContent": {
+            "loadUrl": "https://gaze.run/filter"
+          },
+          "categoryContent": {
+            "loadUrl": "https://gaze.run/filter"
+          },
+          "detailContent": {
+            "loadUrl": "https://gaze.run/play/${id}"
+          },
+          "playerContent": {
+            "loadUrl": "https://gaze.run/play/${mcid}#${path}"
+          },
+          "searchContent": {
+            "loadUrl": "https://gaze.run/filter"
+          }
+        }
+      }
+    },
+    {
+      "key": "csp_GM_麻雀视频",
+      "name": "🥇｜麻雀視頻｜高清◎順播(賭場廣告)",
+      "type": 3,
+      "searchable": 1,
+      "changeable": 1,
+      "quickSearch": 0,
+      "style": {
+        "type": "rect",
+        "ratio": 0.71
+      },
+      "api": "csp_GM",
+      "jar": "./jar/gm.jar",
+      "ext": {
+        "userScript": "./js/mqtv.user.js",
+        "debug": false,
+        "webViewSettings": {
+          "blockNetworkImage": true,
+          "blockList": [
+            "https://hm.baidu.com/*",
+            "https://*.n3f2.cn/*"
+          ]
+        },
+        "playUrlMatch": [
+          "https://*/obj/tos-*",
+          "*://*/*.mp4*",
+          "*://*/*.m3u8*"
+        ],
+        "spider": {
+          "homeContent": {
+            "loadUrl": "https://www.mqtv.cc/"
+          },
+          "categoryContent": {
+            "loadUrl": "https://www.mqtv.cc/type/${tid}"
+          },
+          "detailContent": {
+            "loadUrl": "https://www.mqtv.cc${id}"
+          },
+          "playerContent": {
+            "loadUrl": "https://www.mqtv.cc${url}#${anchor}"
+          },
+          "searchContent": {
+            "loadUrl": "https://www.mqtv.cc/search/${key}"
+          }
+        }
+      }
+    },
+    {
       "key": "vod_爱看",
       "name": "🧲｜爱看機器人｜全線路",
       "type": 3,
@@ -4521,20 +4506,6 @@
       "ua": "okhttp/3.15",
       "epg": "http://iptv.52sw.top:668/epg/?ch={name}&date={date}",
       "header": {"Referer": "https://www.kds.tw/"}
-    },
-    {
-      "name": "金星直播",
-      "url": "./live/gold/jx.txt",
-      "epg":"https://diyp100.112114.xyz/?ch={name}&date={date}",
-      "logo": "https://epg.v1.mk/logo/{name}.png",
-      "core": {
-        "auth": "https://sgla.googlejt.com/v1/auth",
-        "name": "08a77819f9b7",
-        "pass": "1742653607661",
-        "sign": "163428eb20fa4b27",
-        "pkg": "com.yby.v11.singapore.tv",
-        "so": "./live/gold/joy.so"
-      }
     },
     {
       "name": "焦点(Focus TV)",

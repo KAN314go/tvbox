@@ -6,13 +6,6 @@
 
 
 
-
-
-
-
-
-
-
     {
       "key": "豆瓣",
       "name": "🇹🇼｜熱播排行榜｜自動切換",
@@ -64,7 +57,7 @@
     },
     {
       "key": "金牌影视",
-      "name": "🥇｜金影｜高清◎秒播(無廣告)",
+      "name": "🏆｜金影｜高清◎秒播(無廣告)",
       "type": 3,
       "api": "csp_Jpys",
       "jar": "./jar/PandaQ250227c.jar;md5;ceda5421cdce5fad2a2f6d8c71ae4311",
@@ -75,7 +68,7 @@
     },
     {
       "key": "Auete",
-      "name": "🥇｜銀影｜高清◎秒播(無廣告)",
+      "name": "🏆｜銀影｜高清◎秒播(無廣告)",
       "type": 3,
       "api": "csp_Auete",
       "timeout": 15,
@@ -87,7 +80,7 @@
     },
     {
       "key":"XBPQ_fxzcjy",
-      "name":"🥇｜銅影|高清◎秒播(無廣告)",
+      "name":"🏆｜銅影|高清◎秒播(無廣告)",
         "jar":"./jar/tvkj.jar",
         "type": 3,
         "api": "csp_Xpg",
@@ -99,7 +92,7 @@
     },
     {
       "key": "csp_歐樂影院ORG",
-      "name": "🥇｜鐵影｜高清◎秒播(無廣告)",
+      "name": "🏆｜鐵影｜高清◎秒播(無廣告)",
       "type": 3,
       "api": "csp_XBPQ",
       "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
@@ -115,7 +108,7 @@
     },
     {
       "key": "Wexduboku",
-      "name": "🥇｜獨播｜藍光◎秒播(無廣告)",
+      "name": "🏆｜獨播｜藍光◎秒播(無廣告)",
       "type": 3,
       "api": "csp_WexdubokuGuard",
       "jar": "./jar/wex.txt;md5;6237e73e89cd1cc8ed815ad7712c6b65",
@@ -192,7 +185,7 @@
       "name": "🥇｜優視｜藍光◎秒播(無廣告)",
       "type": 3,
       "api": "csp_Uvod",
-      "jar": "./jar/lem0118.jar;md5;62323c9be4e0c82d00fe1094a2978ca6",
+      "jar": "./jar/lem0318.jar;md5;626cd9f34ad3d3899bb2de54b1bc0a25",
       "searchable": 1,
       "quickSearch": 1,
       "changeable": 1
@@ -311,6 +304,16 @@
       "changeable": 1
     },
     {
+      "key": "py_魔方影视APP",
+      "name": "🥇｜魔方影視APP｜藍光◎秒播(無廣告+部分線路有廣告)",
+      "type": 3,
+      "api": "./py/魔方影视APP.py",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 0,
+      "changeable": 0
+    },
+    {
       "key": "真心影视",
       "name": "🥇｜真心｜藍光◎龜速(無廣告)",
       "type": 3,
@@ -319,7 +322,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1
-  },
+    },
     {
       "key": "WexquickvodGuard",
       "name": "🥇｜美剧｜高清◎秒播(無廣告)",
@@ -404,6 +407,16 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1
+    },
+        {
+      "key": "py_金牌.py",
+      "name": "🥇｜金牌｜高清◎秒播(無廣告)",
+      "type": 3,
+      "api": "./py/金牌.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": {"site": "https://www.vv3nwjk.com,https://www.jpyy2.com,https://www.cfkj86.com"}
     },
     {
       "key": "py_jinpai",
@@ -1068,6 +1081,68 @@
       "filterable": 1
     },
     {
+      "key": "py_若惜追剧APP",
+      "name": "🥇｜若惜追劇APP｜高清◎秒播(無廣告)",
+      "type": 3,
+      "api": "./py/若惜追剧APP.py",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 0,
+      "changeable": 0
+    },
+    {
+      "key": "py_哇哇APP",
+      "name": "🥇｜哇哇APP｜高清◎秒播(無廣告)",
+      "type": 3,
+      "api": "./py/哇哇APP.py",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 0,
+      "changeable": 0
+    },
+    {
+      "key": "py_云端APP",
+      "name": "🥇｜雲端APP｜高清◎秒播(無廣告)",
+      "type": 3,
+      "api": "./py/云端APP.py",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 0,
+      "changeable": 0
+    },
+    {
+      "key": "SP33",
+      "name": "🥇｜蝸牛｜高清◎秒播(無廣告)",
+      "type": 3,
+      "api": "csp_SP33",
+      "jar": "./jar/蝸牛-0330.jar",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "changeable": 0
+    },
+    {
+      "key": "csp_電影先生",
+      "name": "🥇｜片庫｜高清◎秒播(WU、YI線路無廣)",
+      "type": 3,
+      "api": "csp_XBPQ",
+      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+      "searchable": 1,
+      "filterable": 1,
+      "quickSearch": 1,
+      "ext": {
+        "分类url": "https://xn--44qz85a01qpc.com/pianku-{cateId}-{area}-{by}------{catePg}---{year}.html",
+        "分类": "电视剧$dianshiju#电影$dianying#综艺$zongyi#动漫$dongman",
+        "地区": "中国大陆&中国香港&中国台湾&中国澳门&美国&法国&英国&日本&韩国&德国&泰国&新加坡&马来西亚&印度&意大利&西班牙&加拿大&俄罗斯&澳大利亚&其他",
+        "影片年代": "<div class=\"module-info-tag\">&&</div>",
+        "影片类型": "module-info-tag\">&&立即播放",
+        "搜索url": "https://xn--44qz85a01qpc.com/search--------------.html?wd={wd}",
+        "简介": "style=\"line-height: 20px;\"&&</div>",
+        "线路数组": "data-dropdown-value=&&</div>",
+        "线路标题": "<span>&&</span>[排序:TK>HD>XS>YI>DI>]"
+      }
+    },
+    {
       "key": "csp_熱播之家",
       "name": "🥈｜熱播之家｜高清◎秒播(浮水印廣告)",
       "type": 3,
@@ -1456,7 +1531,7 @@
       "name": "🥈｜PTT｜高清◎秒播(浮水印廣告+成人動畫)",
       "type": 3,
       "api": "csp_PTT",
-      "jar": "./jar/lem0118.jar",
+      "jar": "./jar/lem0318.jar;md5;626cd9f34ad3d3899bb2de54b1bc0a25",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1
@@ -2889,6 +2964,102 @@
       "ext": "./json/泥視頻VIP.json"
     },
     {
+      "key": "csp_GM_注视影视",
+      "name": "🥇｜注視影視｜高清◎卡頓(無廣告)",
+      "type": 3,
+      "searchable": 1,
+      "changeable": 1,
+      "quickSearch": 0,
+      "style": {
+        "type": "rect",
+        "ratio": 0.66
+      },
+      "api": "csp_GM",
+      "jar": "./jar/gm.jar",
+      "ext": {
+        "userScript": "./js/gaze.user.js",
+        "debug": false,
+        "webViewSettings": {
+          "blockNetworkImage": true,
+          "blockList": [
+            "https://*.bytecdntp.com/cdn/expire-1-M/font-awesome/*",
+            "https://*.clarity.ms/*",
+            "https://gaze.run/visitorslog.php*",
+            "*.css*"
+          ]
+        },
+        "playUrlMatch": [
+          "https://dl-b.cloud.189.cn/corp/downloadFile.action?*",
+          "https://gaze.run/gaze_filey/pb/*.m3u8",
+          "https://*/obj/tos*"
+        ],
+        "spider": {
+          "homeContent": {
+            "loadUrl": "https://gaze.run/filter"
+          },
+          "categoryContent": {
+            "loadUrl": "https://gaze.run/filter"
+          },
+          "detailContent": {
+            "loadUrl": "https://gaze.run/play/${id}"
+          },
+          "playerContent": {
+            "loadUrl": "https://gaze.run/play/${mcid}#${path}"
+          },
+          "searchContent": {
+            "loadUrl": "https://gaze.run/filter"
+          }
+        }
+      }
+    },
+    {
+      "key": "csp_GM_麻雀视频",
+      "name": "🥇｜麻雀視頻｜高清◎順播(賭場廣告)",
+      "type": 3,
+      "searchable": 1,
+      "changeable": 1,
+      "quickSearch": 0,
+      "style": {
+        "type": "rect",
+        "ratio": 0.71
+      },
+      "api": "csp_GM",
+      "jar": "./jar/gm.jar",
+      "ext": {
+        "userScript": "./js/mqtv.user.js",
+        "debug": false,
+        "webViewSettings": {
+          "blockNetworkImage": true,
+          "blockList": [
+            "https://hm.baidu.com/*",
+            "https://*.n3f2.cn/*"
+          ]
+        },
+        "playUrlMatch": [
+          "https://*/obj/tos-*",
+          "*://*/*.mp4*",
+          "*://*/*.m3u8*"
+        ],
+        "spider": {
+          "homeContent": {
+            "loadUrl": "https://www.mqtv.cc/"
+          },
+          "categoryContent": {
+            "loadUrl": "https://www.mqtv.cc/type/${tid}"
+          },
+          "detailContent": {
+            "loadUrl": "https://www.mqtv.cc${id}"
+          },
+          "playerContent": {
+            "loadUrl": "https://www.mqtv.cc${url}#${anchor}"
+          },
+          "searchContent": {
+            "loadUrl": "https://www.mqtv.cc/search/${key}"
+          }
+        }
+      }
+    },
+    {
       "key": "vod_爱看",
       "name": "🧲｜爱看機器人｜全線路",
       "type": 3,
@@ -3967,6 +4138,22 @@
       "ext": "./drpy_js/58动漫.js"
     },
     {
+      "key": "csp_Kugou_FM",
+      "name": "🎧｜酷狗聽歌",
+      "type": 3,
+      "api": "csp_Kugou",
+      "jar": "./jar/lem0318.jar;md5;626cd9f34ad3d3899bb2de54b1bc0a25",
+      "playerType": 2,
+      "ext": {
+        "classes": [
+          {
+            "type_name": "酷狗",
+            "type_id": "kugou"
+          }
+        ]
+      }
+    },
+    {
       "key": "MTV",
       "name": "🎵｜MTV",
       "type": 3,
@@ -4034,6 +4221,19 @@
       "api": "https://raw.githubusercontent.com/sqspot/tac/main/lib/live2cms.js",
       "ext": "https://raw.githubusercontent.com/sqspot/tac/main/live2tv_sq_s.txt",
       "jar": "./jar/panda1123.jar;md5;d9004aa2e16f60b04baed361713fb710"
+    },
+    {
+      "key": "csp_LaoBaiBook_FM",
+      "name": "㊙︎｜老白聽書｜",
+      "type": 3,
+      "playerType": 2,
+      "api": "csp_LaoBaiBook",
+      "jar": "./jar/lem0318.jar;md5;626cd9f34ad3d3899bb2de54b1bc0a25",
+      "searchable": 0,
+      "style": {
+        "type": "rect",
+        "ratio": 1.333
+      }
     },
     {
       "key": "Wexlaobaitingshu",
@@ -4324,9 +4524,9 @@
     {
       "name": "歐飛(ofiii TV)",
       "type": 0,
-      "url": "http://xg.52sw.top/iptv/ofiii.m3u",
+      "url": "./live/ofiii.m3u",
       "ua": "okhttp/3.15",
-      "epg": "http://iptv.52sw.top:668/?ch={name}&date={date}"
+      "logo": "https://epg.112114.xyz/logo/{name}.png"
     },
     {
       "name": "歐華167",
