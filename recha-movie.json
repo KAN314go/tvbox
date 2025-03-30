@@ -5,7 +5,6 @@
   "sites": [
 
 
-
     {
       "key": "豆瓣",
       "name": "🇹🇼｜熱播排行榜｜自動切換",
@@ -4495,7 +4494,7 @@
       "pass": true
     },
     {
-      "name": "Freeman.TW友情贊助的線路",
+      "name": "FreeTV",
       "playerType": 1,
       "url": "https://freeman.neocities.org/Live-TV520.txt",
       "epg": "http://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Taipei",
