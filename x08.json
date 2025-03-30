@@ -4,6 +4,75 @@
   "wallpaper": "https://tv.nxog.top/m//t/",
   "sites": [
 
+
+
+
+
+    {
+      "key": "py_花都",
+      "name": "🇹🇼｜花都｜待測",
+      "type": 3,
+      "api": "./py/花都.py",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 0,
+      "changeable": 0
+    },
+    {
+      "key": "py_魔方影视APP",
+      "name": "🇹🇼｜魔方影視APP｜待測",
+      "type": 3,
+      "api": "./py/魔方影视APP.py",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 0,
+      "changeable": 0
+    },
+    {
+      "key": "py_若惜追剧APP",
+      "name": "🇹🇼｜若惜追劇APP｜待測",
+      "type": 3,
+      "api": "./py/若惜追剧APP.py",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 0,
+      "changeable": 0
+    },
+    {
+      "key": "py_皮皮虾APP",
+      "name": "🇹🇼｜皮皮蝦APP｜待測",
+      "type": 3,
+      "api": "./py/皮皮虾APP.py",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 0,
+      "changeable": 0
+    },
+    {
+      "key": "py_哇哇APP",
+      "name": "🇹🇼｜哇哇APP｜待測",
+      "type": 3,
+      "api": "./py/哇哇APP.py",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 0,
+      "changeable": 0
+    },
+    {
+      "key": "py_云端APP",
+      "name": "🇹🇼｜雲端APP｜待測",
+      "type": 3,
+      "api": "./py/云端APP.py",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 0,
+      "changeable": 0
+    },
+
+
+
+
+
     {
       "key": "csp_Kugou_FM",
       "name": "🇹🇼｜酷狗聽歌",
