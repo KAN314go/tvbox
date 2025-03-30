@@ -50,7 +50,7 @@
     },
     {
       "key": "csp_sbb",
-      "name": "布布",
+      "name": "布布(不穩)",
       "type": 3,
       "api": "csp_Czsapp",
       "searchable": 1,
@@ -589,7 +589,7 @@
     },
     {
       "key": "大师兄",
-      "name": "大师",
+      "name": "大师兄",
       "type": 3,
       "api": "csp_XBPQ",
       "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
