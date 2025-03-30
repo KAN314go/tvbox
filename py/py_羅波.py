@@ -117,13 +117,13 @@ class Spider(Spider):
 
     def homeContent(self, filter):
         result = {}
-        result = {"class": [{"type_id": "1", "type_name": "电影🌠"},
-                            {"type_id": "2", "type_name": "剧集🌠"},
-                            {"type_id": "3", "type_name": "综艺🌠"},
-                            {"type_id": "4", "type_name": "动漫🌠"},
-                            {"type_id": "31", "type_name": "动画🌠"},
-                            {"type_id": "32", "type_name": "解说🌠"},
-                            {"type_id": "49", "type_name": "短剧🌠"}],
+        result = {"class": [{"type_id": "1", "type_name": "电影"},
+                            {"type_id": "2", "type_name": "剧集"},
+                            {"type_id": "3", "type_name": "综艺"},
+                            {"type_id": "4", "type_name": "动漫"},
+                            {"type_id": "31", "type_name": "动画"},
+                            {"type_id": "32", "type_name": "解说"},
+                            {"type_id": "49", "type_name": "短剧"}],
                   "list": [],
                   "filters": {"1": [{"key": "年代",
                                      "name": "年代",
