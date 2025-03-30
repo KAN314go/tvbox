@@ -139,14 +139,13 @@
       "key": "qq",
       "name": "悟空",
       "type": 3,
-      "api": "csp_XBPQ",      
+      "api": "csp_XBPQ",
       "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
       "playerType": 2,
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
       "ext": {
-        "作者": "繁华",
         "站名": "悟空电影",
         "请求头": "User-Agent$MOBILE_UA",
         "编码": "UTF-8",
@@ -196,14 +195,13 @@
       "key": "sjj",
       "name": "水晶",
       "type": 3,
-           "api": "csp_XBPQ",      
-           "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-           "playerType": 2,
+      "api": "csp_XBPQ",
+      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+      "playerType": 2,
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
       "ext": {
-        "作者": "繁华",
         "站名": "水晶影院",
         "编码": "UTF-8",
         "请求头": "User-Agent$MOBILE_UA",
@@ -250,14 +248,13 @@
       "key": "lkg",
       "name": "午夜",
       "type": 3,
-      "api": "csp_XBPQ",      
+      "api": "csp_XBPQ",
       "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
       "playerType": 2,
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
       "ext": {
-        "作者": "繁华",
         "站名": "午夜剧场",
         "请求头": "User-Agent$MOBILE_UA",
         "编码": "UTF-8",
@@ -324,14 +321,13 @@
       "key": "ling",
       "name": "飞快",
       "type": 3,
-           "api": "csp_XBPQ",
+      "api": "csp_XBPQ",
       "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
       "playerType": 2,
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
       "ext": {
-        "作者": "繁华",
         "站名": "飞快tv",
         "请求头": "User-Agent$Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 Edg/128.0.0.0",
         "编码": "UTF-8",
@@ -364,14 +360,13 @@
       "key": "ZTYY",
       "name": "姿态",
       "type": 3,
-           "api": "csp_XBPQ",
+      "api": "csp_XBPQ",
       "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
       "playerType": 2,
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
       "ext": {
-        "作者": "繁华",
         "站名": "姿态影院",
         "请求头": "User-Agent$Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 Edg/128.0.0.0",
         "编码": "UTF-8",
@@ -404,14 +399,13 @@
       "key": "NOsp",
       "name": "NO视频",
       "type": 3,
-           "api": "csp_XBPQ",
+      "api": "csp_XBPQ",
       "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
       "playerType": 2,
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
       "ext": {
-        "作者": "繁华",
         "站名": "NO视频",
         "请求头": "User-Agent$Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 Edg/128.0.0.0",
         "编码": "UTF-8",
@@ -443,14 +437,13 @@
       "key": "LKDB",
       "name": "来看",
       "type": 3,
-           "api": "csp_XBPQ",
+      "api": "csp_XBPQ",
       "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
       "playerType": 2,
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
       "ext": {
-        "作者": "繁华",
         "站名": "来看点播",
         "请求头": "User-Agent$Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 Edg/128.0.0.0",
         "编码": "UTF-8",
@@ -483,14 +476,13 @@
       "key": "MTYY",
       "name": "MTYY",
       "type": 3,
-           "api": "csp_XBPQ",
+      "api": "csp_XBPQ",
       "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
       "playerType": 2,
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
       "ext": {
-        "作者": "繁华",
         "站名": "MTYY",
         "请求头": "User-Agent$Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 Edg/128.0.0.0",
         "编码": "UTF-8",
@@ -523,14 +515,13 @@
       "key": "03yh",
       "name": "03影院",
       "type": 3,
-           "api": "csp_XBPQ",
+      "api": "csp_XBPQ",
       "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
       "playerType": 2,
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
       "ext": {
-        "作者": "繁华",
         "站名": "03影院",
         "请求头": "User-Agent$Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 Edg/128.0.0.0",
         "编码": "UTF-8",
@@ -563,14 +554,13 @@
       "key": "HNtv",
       "name": "海纳",
       "type": 3,
-           "api": "csp_XBPQ",
+      "api": "csp_XBPQ",
       "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
       "playerType": 2,
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
       "ext": {
-        "作者": "繁华",
         "站名": "海纳TV",
         "请求头": "User-Agent$Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 Edg/128.0.0.0",
         "编码": "UTF-8",
@@ -602,14 +592,13 @@
       "key": "WYtv",
       "name": "微云",
       "type": 3,
-           "api": "csp_XBPQ",
+      "api": "csp_XBPQ",
       "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
       "playerType": 2,
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
       "ext": {
-        "作者": "繁华",
         "站名": "微云TV",
         "请求头": "User-Agent$Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 Edg/128.0.0.0",
         "编码": "UTF-8",
@@ -643,14 +632,13 @@
       "key": "XSJYY",
       "name": "新视觉",
       "type": 3,
-           "api": "csp_XBPQ",
+      "api": "csp_XBPQ",
       "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
       "playerType": 2,
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
       "ext": {
-        "作者": "繁华",
         "站名": "新视觉影院",
         "请求头": "User-Agent$Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 Edg/128.0.0.0",
         "编码": "UTF-8",
@@ -683,14 +671,13 @@
       "key": "GQJC",
       "name": "高清剧场",
       "type": 3,
-           "api": "csp_XBPQ",
+      "api": "csp_XBPQ",
       "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
       "playerType": 2,
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
       "ext": {
-        "作者": "繁华",
         "站名": "高清剧场",
         "请求头": "User-Agent$Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 Edg/128.0.0.0",
         "编码": "UTF-8",
@@ -722,14 +709,13 @@
       "key": "PKW",
       "name": "片库网",
       "type": 3,
-           "api": "csp_XBPQ",
-           "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+      "api": "csp_XBPQ",
+      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
       "playerType": 2,
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
       "ext": {
-        "作者": "繁华",
         "站名": "片库网",
         "请求头": "User-Agent$Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 Edg/128.0.0.0",
         "编码": "UTF-8",
@@ -761,14 +747,13 @@
       "key": "DDYS",
       "name": "多多",
       "type": 3,
-           "api": "csp_XBPQ",
-           "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+      "api": "csp_XBPQ",
+      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
       "playerType": 2,
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
       "ext": {
-        "作者": "繁华",
         "站名": "多多影视",
         "请求头": "User-Agent$Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 Edg/128.0.0.0",
         "编码": "UTF-8",
@@ -800,67 +785,11 @@
       "key": "大师兄",
       "name": "🧿大师┃影视",
       "type": 3,
-           "api": "csp_XBPQ",
-           "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-
+      "api": "csp_XBPQ",
+      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
       "ext": {
         "分类url": "https://www.dsxysproo.com/dqvodshow/{cateId}-{area}--{class}-----{catePg}---{year}.html",
         "分类": "电视剧$2#电影$1#动漫$4#综艺$3"
-      }
-    },
-    {
-      "key": "天天弹幕",
-      "name": "💘天天｜弹幕",
-      "type": 3,
-      "api": "csp_TianTian",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "jar": "https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1742079848140/ou1.jar",
-      "ext": {
-        "danmu": true,
-        "site": "1"
-      }
-    },
-    {
-      "key": "热播弹幕",
-      "name": "💘热播｜弹幕",
-      "type": 3,
-      "api": "csp_TianTian",
-      "jar": "./jar/pizza.jar;md5;6bcb3de5f0d7c9b3d4f19cfe9a314ab2",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": {
-        "danmu": true,
-        "site": "aHR0cDovL3YucmJvdHYuY24="
-      }
-    },
-    {
-      "key": "浪酷弹幕",
-      "name": "💘浪酷｜弹幕",
-      "type": 3,
-      "api": "csp_TianTian",
-      "jar": "./jar/pizza.jar;md5;6bcb3de5f0d7c9b3d4f19cfe9a314ab2",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": {
-        "danmu": true,
-        "site": "aHR0cDovL3YubGt1eXMuY24="
-      }
-    },
-    {
-      "key": "文才弹幕",
-      "name": "💘文才┃弹幕",
-      "type": 3,
-      "api": "csp_Jpys",
-      "jar": "./jar/pizza.jar;md5;6bcb3de5f0d7c9b3d4f19cfe9a314ab2",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": {
-        "danmu": true
       }
     },
     {
@@ -872,23 +801,8 @@
       "quickSearch": 1,
       "filterable": 1,
       "jar": "https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1742081743494/ok猫.jar",
-      "ext": {
-        "danmu": true
-      },
+      "ext": {"danmu": true},
       "timeout": 10
-    },
-    {
-      "key": "三六零弹幕",
-      "name": "💘三六┃弹幕",
-      "type": 3,
-      "api": "csp_Sp360",
-      "jar": "./jar/pizza.jar;md5;6bcb3de5f0d7c9b3d4f19cfe9a314ab2",
-      "searchable": 1,
-      "filterable": 1,
-      "changeable": 1,
-      "ext": {
-        "danmu": true
-      }
     },
     {
       "key": "小苹果弹幕",
@@ -899,24 +813,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": {
-        "danmu": true
-      }
-    },
-    {
-      "key": "立播弹幕",
-      "name": "❤立播┃弹幕",
-      "type": 3,
-      "api": "csp_Libvio",
-      "searchable": 1,
-      "filterable": 1,
-      "changeable": 1,
-      "ext": {
-        "token": "http://127.0.0.1:9978/file/TV/token.txt",
-        "cookie": "http://127.0.0.1:9978/file/TV/.quark",
-        "uc_cookie": "http://127.0.0.1:9978/file/TV/.uc",
-        "danmu": true
-      }
+      "ext": {"danmu": true}
     },
     {
       "key": "csp_Tvyb",
@@ -954,34 +851,14 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "api": "https://9071.kstore.vip/py/%E6%B2%B3%E9%A9%ACAPP.py"
-    },
-    {
-      "key": "py_河马",
-      "name": "py_河马短剧",
-      "type": 3,
-      "changeable": 1,
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
       "api": "py_河马短剧",
       "ext": "https://9071.kstore.vip/py/%E6%B2%B3%E9%A9%ACAPP.py"
-    },
-    {
-      "key": "星芽短剧",
-      "name": "🌟星芽┃短剧┃热推",
-      "type": 3,
-      "api": "csp_AppXY",
-      "jar": "https://9071.kstore.vip/jar/moyu%E5%BC%B9%E5%B9%95%E6%8C%82%E8%BD%BD.jar",
-      "searchable": 1,
-      "quickSearch": 0,
-      "filterable": 0
     },
     {
       "key": "短剧网",
       "name": "🍇剧网┃短剧┃热推",
       "type": 3,
-           "api": "csp_XBPQ",
+      "api": "csp_XBPQ",
       "jar": "https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1742873207924/摸鱼PizazzGY.jar",
       "ext": "http://我不是.摸鱼儿.com/api/moyu.php?file=短剧网"
     },
@@ -997,131 +874,39 @@
       "ext": "http://我不是.摸鱼儿.com/api/moyu.php?file=短剧屋"
     },
     {
-      "key": "✨毒舌短剧✨",
-      "name": "✨毒舌短剧✨",
-      "type": 3,
-           "api": "csp_XBPQ",
-           "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": "http://box.ufuzi.com/tv/qq/%E7%9F%AD%E5%89%A7%E9%A2%91%E9%81%93/json/毒舌短剧.json"
-    },
-    {
-      "key": "哔哩弹幕",
-      "name": "🅱哔哩｜弹幕",
-      "type": 3,
-      "api": "csp_Bilimd",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "style": {
-        "type": "rect",
-        "ratio": 1.433
-      },
-      "ext": {
-        "cookie": "http://127.0.0.1:9978/file/TVBox/bilibili.txt"
-      },
-      "timeout": 10
-    },
-    {
-      "key": "稀饭动漫",
-      "name": "🍚稀饭┃动漫┃蓝光",
-      "type": 3,
-      "api": "csp_AppGetApp",
-      "jar": "./jar/PandaQ250227c.jar;md5;ceda5421cdce5fad2a2f6d8c71ae4311",
-      "searchable": 1,
-      "quickSearch": 0,
-      "filterable": 0,
-      "ext": "w7TClcK8w5rDrcKYwoPCmcKkw57ClcK0wpvDosKnwqTCoMKjwrPCosKpw7HDoMKUwqDCoF3CqsKmwqrCrsKtbGBgZsKuwqHDncOow61hwpHCoF3DoMOow5vDp8Ohwq3CmMKfwqXCp8Ogw7PDqsOdwp/Cn8KlwpTCp8OWw6nDpsKpwprClcKkwpHDqcOjwqjDrcOywqdSXFLDgsOhw6PDrcORwqLCosKUUsKzwpXCnMKlwpzCp8KZwqBSwrPClcOV5Ye+6YWi5o+Y5ZCTXOWGnOS+kOWRqsK05b+q6KmA6LW35ruA56yJwo3Cm8KfwpzCusOfwqZ7wpXCqcKbwq3CnMKqw7PCjWLCg8Kgw6fCrMOlw6vDqMKtwoZ7wp/CvMKVwqbCm8K7wpjCo3nCpsKbwq3CnMKqw7PCjWLCg8Kgw6fCrMOlw6vDqMKtwoZ7wp/CvMKVwqbCm8ONwpzCpMKVwoXDq8OfwpzCs8KcVcKt"
-    },
-    {
-      "key": "csp_Ysj",
-      "name": "💫异界┃动漫┃蓝光",
-      "type": 3,
-      "api": "csp_Ysj",
-      "jar": "./jar/PandaQ250227c.jar;md5;ceda5421cdce5fad2a2f6d8c71ae4311",
-      "searchable": 1,
-      "quickSearch": 1,
-      "changeable": 1
-    },
-    {
-      "key": "csp_Anime1",
-      "name": "📖日漫┃动漫┃蓝光",
-      "type": 3,
-      "api": "csp_Anime1",
-      "jar": "./jar/PandaQ250227c.jar;md5;ceda5421cdce5fad2a2f6d8c71ae4311",
-      "searchable": 1,
-      "quickSearch": 1,
-      "changeable": 1
-    },
-    {
-      "key": "曼波动漫",
-      "name": "🤣曼波｜动漫",
-      "type": 3,
-      "api": "csp_AppGetApp",
-      "jar": "./jar/PandaQ250227c.jar;md5;ceda5421cdce5fad2a2f6d8c71ae4311",
-      "searchable": 1,
-      "quickSearch": 0,
-      "filterable": 0,
-      "ext": "w7TClcK8w5rDrcKYwoPCmcKkw57ClcK0wpvCnF9SwoPCmcOtw5jDj8Orw6ZValLCmMOtw6fDqsOswrRiX8KRwqDDqcKhw6nDpsOpwpnCpcKeYcKnw6fDqcOpwqnClMKgwplew6nDm8OqwpvCplXCpMKZwqDCm8KtwpzDlOWHv+mEm+aPleWQk1zlh6XkvorlkbHCs+W/q+inuei1tOa7gOesicOWwpXCpsKbwrvCmMKje8KVw7LClcK0wpvCsGnClMKTY8KpwqzDncObw5/CmMKTwpFkwq7Cp8KcwqXCnHTClcKjecOvwpXCtMKbwrBpwpTCk2PCqcKsw53Dm8OfwpjCk8KRZMKuwqfCnMO2"
-    },
-    {
-      "key": "稀饭动漫",
-      "name": "🤣稀饭｜动漫",
-      "type": 3,
-      "api": "csp_AppGetApp",
-      "jar": "./jar/PandaQ250227c.jar;md5;ceda5421cdce5fad2a2f6d8c71ae4311",
-      "searchable": 1,
-      "quickSearch": 0,
-      "filterable": 0,
-      "ext": "w7TClcK8w5rDrcKYwoPCmcKkw57ClcK0wpvDosKnwqTCoMKjwrPCosKpw7HDoMKUwqDCoF3CqsKmwqrCrsKtbGBgZsKuwqHDncOow61hwpHCoF3DoMOow5vDp8Ohwq3CmMKfwqXCp8Ogw7PDqsOdwp/Cn8KlwpTCp8OWw6nDpsKpwprClcKkwpHDqcOjwqjDrcOywqdSXFLDgsOhw6PDrcORwqLCosKUUsKzwpXCnMKlwpzCp8KZwqBSwrPClcOV5Ye+6YWi5o+Y5ZCTXOWGnOS+kOWRqsK05b+q6KmA6LW35ruA56yJwo3Cm8KfwpzCusOfwqZ7wpXCqcKbwq3CnMKqw7PCjWLCg8Kgw6fCrMOlw6vDqMKtwoZ7wp/CvMKVwqbCm8K7wpjCo3nCpsKbwq3CnMKqw7PCjWLCg8Kgw6fCrMOlw6vDqMKtwoZ7wp/CvMKVwqbCm8ONwpzCpMKVwoXDq8OfwpzCs8KcVcKt"
-    },
-
-    {
       "key": "58动漫网",
       "name": "🤣之家┃动漫",
       "type": 3,
-           "api": "csp_XBPQ",
-           "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+      "api": "csp_XBPQ",
+      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
       "ext": {
-        "简介": "简介：&&</p>",
-        "搜索url": "https://dbwyt.com/search.php?searchword={wd}",
+        "简介"   : "简介：&&</p>"                                    ,
+        "搜索url": "https://dbwyt.com/search.php?searchword={wd}" ,
         "分类url": "https://dbwyt.com/wuba/{cateId}-{catePg}.html",
-        "分类": "国产动漫$1#日本动漫$2#欧美动漫$47#海外动漫$3#动漫电影$4"
+        "分类"   : "国产动漫$1#日本动漫$2#欧美动漫$47#海外动漫$3#动漫电影$4"
       }
     },
     {
       "key": "动漫大全",
       "name": "🤣大全┃动漫",
       "type": 3,
-           "api": "csp_XBPQ",
-           "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+      "api": "csp_XBPQ",
+      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
       "ext": {
-        "简介": "简介：&&</p>",
-        "线路数组": "<aclass=\"hl-tabs-btnhl-slide-swiper\"&&</a>",
-        "线路标题": "</i>&nbsp;&&</a>+集",
+        "简介"   : "简介：&&</p>"                                         ,
+        "线路数组" : "<aclass=\"hl-tabs-btnhl-slide-swiper\"&&</a>"      ,
+        "线路标题" : "</i>&nbsp;&&</a>+集"                                ,
         "分类url": "https://dingdingdm.com/list/{cateId}-{catePg}.html",
-        "分类": "动漫电影$1#国产动漫$3#日本动漫$2#欧美动漫$4#短剧$20"
+        "分类"   : "动漫电影$1#国产动漫$3#日本动漫$2#欧美动漫$4#短剧$20"
       }
-    },
-    {
-      "key": "魔都资源",
-      "name": "🤣魔都┃动漫",
-      "type": 1,
-      "api": "https://caiji.moduapi.cc/api.php/provide/vod/?ac=list",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1
     }
   ],
-
   "parses": [
     {"name": "七智", "type": 3, "url": "https://jx.2s0.cn/player/?url="},
     {
@@ -1252,12 +1037,10 @@
   "rules": [
     {
       "name": "ofiii[台湾节点]",
-      "hosts": [
-          "www.ofiii.com"
-      ],
+      "hosts": ["www.ofiii.com"],
       "script": [
-          "const play=document.getElementsByClassName(\"play_icon\")[0];const event=new MouseEvent(\"click\",{bubbles:!0,cancelable:!0,view:window,screenX:100,screenY:100,clientX:50,clientY:50,button:0,shiftKey:!1,ctrlKey:!1,altKey:!1,metaKey:!1,modifierState:0});play.dispatchEvent(event);"
-                ]
+        "const play=document.getElementsByClassName(\"play_icon\")[0];const event=new MouseEvent(\"click\",{bubbles:!0,cancelable:!0,view:window,screenX:100,screenY:100,clientX:50,clientY:50,button:0,shiftKey:!1,ctrlKey:!1,altKey:!1,metaKey:!1,modifierState:0});play.dispatchEvent(event);"
+      ]
     },
     {
       "name": "量子非凡广告",

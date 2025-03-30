@@ -54,12 +54,12 @@
       "style": {"type": "rect", "ratio": 1.77}
     },
     {
-      "key": "金牌影视",
+      "key": "文才影视",
       "name": "🏆｜金影｜高清◎秒播(無廣告)",
       "type": 3,
       "api": "csp_Jpys",
       "jar": "./jar/PandaQ250227c.jar;md5;ceda5421cdce5fad2a2f6d8c71ae4311",
-      "playerType": 1,
+      "playerType": 2,
       "searchable": 1,
       "quickSearch": 1,
       "changeable": 1
@@ -2622,11 +2622,11 @@
       "ext": "caHR0cHM6Ly8xMjN5c3cuY29tfDIz5b2x6KeGfDQuMS44"
     },
     {
-      "key": "热播弹幕",
-      "name": "🎥｜热播｜高清◎龜速(無廣+APP)",
+      "key": "天天弹幕",
+      "name": "🎥｜天天｜高清◎龜速(無廣+APP)",
       "type": 3,
       "api": "csp_TianTian",
-      "jar": "./jar/pizza.jar;md5;6bcb3de5f0d7c9b3d4f19cfe9a314ab2",
+      "jar": "./jar/tvkj.jar",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
