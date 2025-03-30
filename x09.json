@@ -8,16 +8,7 @@
 
 
 
-    {
-      "key": "py_花都",
-      "name": "🇹🇼｜花都｜待測",
-      "type": 3,
-      "api": "./py/花都.py",
-      "searchable": 1,
-      "quickSearch": 0,
-      "filterable": 0,
-      "changeable": 0
-    },
+
     {
       "key": "py_魔方影视APP",
       "name": "🇹🇼｜魔方影視APP｜待測",
@@ -33,16 +24,6 @@
       "name": "🇹🇼｜若惜追劇APP｜待測",
       "type": 3,
       "api": "./py/若惜追剧APP.py",
-      "searchable": 1,
-      "quickSearch": 0,
-      "filterable": 0,
-      "changeable": 0
-    },
-    {
-      "key": "py_皮皮虾APP",
-      "name": "🇹🇼｜皮皮蝦APP｜待測",
-      "type": 3,
-      "api": "./py/皮皮虾APP.py",
       "searchable": 1,
       "quickSearch": 0,
       "filterable": 0,
@@ -69,39 +50,6 @@
       "changeable": 0
     },
 
-
-
-
-
-    {
-      "key": "csp_Kugou_FM",
-      "name": "🇹🇼｜酷狗聽歌",
-      "type": 3,
-      "api": "csp_Kugou",
-      "jar": "./jar/lem0318.jar;md5;626cd9f34ad3d3899bb2de54b1bc0a25",
-      "playerType": 2,
-      "ext": {
-        "classes": [
-          {
-            "type_name": "酷狗",
-            "type_id": "kugou"
-          }
-        ]
-      }
-    },
-    {
-      "key": "csp_LaoBaiBook_FM",
-      "name": "🇹🇼｜老白聽書",
-      "type": 3,
-      "playerType": 2,
-      "api": "csp_LaoBaiBook",
-      "jar": "./jar/lem0318.jar;md5;626cd9f34ad3d3899bb2de54b1bc0a25",
-      "searchable": 0,
-      "style": {
-        "type": "rect",
-        "ratio": 1.333
-      }
-    },
     {
       "key": "SP33",
       "name": "🇹🇼｜蝸牛｜高清◎秒播(無廣告)",
@@ -136,7 +84,7 @@
     },
     {
       "key": "csp_GM_注视影视",
-      "name": "🇹🇼｜注視影視(修)",
+      "name": "🇹🇼｜注視影視(修)｜待測",
       "type": 3,
       "searchable": 1,
       "changeable": 1,
@@ -185,7 +133,7 @@
     },
     {
       "key": "csp_GM_麻雀视频",
-      "name": "🇹🇼｜麻雀視頻视频(修)",
+      "name": "🇹🇼｜麻雀視頻视频(修)｜待測",
       "type": 3,
       "searchable": 1,
       "changeable": 1,
@@ -293,7 +241,7 @@
     },
     {
       "key": "金牌影视",
-      "name": "🥇｜金影｜高清◎秒播(無廣告)",
+      "name": "🏆｜金影｜高清◎秒播(無廣告)",
       "type": 3,
       "api": "csp_Jpys",
       "jar": "./jar/PandaQ250227c.jar;md5;ceda5421cdce5fad2a2f6d8c71ae4311",
@@ -304,7 +252,7 @@
     },
     {
       "key": "Auete",
-      "name": "🥇｜銀影｜高清◎秒播(無廣告)",
+      "name": "🏆｜銀影｜高清◎秒播(無廣告)",
       "type": 3,
       "api": "csp_Auete",
       "timeout": 15,
@@ -316,7 +264,7 @@
     },
     {
       "key":"XBPQ_fxzcjy",
-      "name":"🥇｜銅影|高清◎秒播(無廣告)",
+      "name":"🏆｜銅影|高清◎秒播(無廣告)",
         "jar":"./jar/tvkj.jar",
         "type": 3,
         "api": "csp_Xpg",
@@ -328,7 +276,7 @@
     },
     {
       "key": "csp_歐樂影院ORG",
-      "name": "🥇｜鐵影｜高清◎秒播(無廣告)",
+      "name": "🏆｜鐵影｜高清◎秒播(無廣告)",
       "type": 3,
       "api": "csp_XBPQ",
       "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
@@ -344,7 +292,7 @@
     },
     {
       "key": "Wexduboku",
-      "name": "🥇｜獨播｜藍光◎秒播(無廣告)",
+      "name": "🏆｜獨播｜藍光◎秒播(無廣告)",
       "type": 3,
       "api": "csp_WexdubokuGuard",
       "jar": "./jar/wex.txt;md5;6237e73e89cd1cc8ed815ad7712c6b65",
@@ -4196,6 +4144,22 @@
       "ext": "./drpy_js/58动漫.js"
     },
     {
+      "key": "csp_Kugou_FM",
+      "name": "🎧｜酷狗聽歌",
+      "type": 3,
+      "api": "csp_Kugou",
+      "jar": "./jar/lem0318.jar;md5;626cd9f34ad3d3899bb2de54b1bc0a25",
+      "playerType": 2,
+      "ext": {
+        "classes": [
+          {
+            "type_name": "酷狗",
+            "type_id": "kugou"
+          }
+        ]
+      }
+    },
+    {
       "key": "MTV",
       "name": "🎵｜MTV",
       "type": 3,
@@ -4263,6 +4227,19 @@
       "api": "https://raw.githubusercontent.com/sqspot/tac/main/lib/live2cms.js",
       "ext": "https://raw.githubusercontent.com/sqspot/tac/main/live2tv_sq_s.txt",
       "jar": "./jar/panda1123.jar;md5;d9004aa2e16f60b04baed361713fb710"
+    },
+    {
+      "key": "csp_LaoBaiBook_FM",
+      "name": "㊙︎｜老白聽書｜",
+      "type": 3,
+      "playerType": 2,
+      "api": "csp_LaoBaiBook",
+      "jar": "./jar/lem0318.jar;md5;626cd9f34ad3d3899bb2de54b1bc0a25",
+      "searchable": 0,
+      "style": {
+        "type": "rect",
+        "ratio": 1.333
+      }
     },
     {
       "key": "Wexlaobaitingshu",

@@ -74,6 +74,16 @@
         "ext": "https://raw.githubusercontent.com/fish2018/lib/refs/heads/main/json/feimaolive.json"
       },
       {
+        "key": "py_花都",
+        "name": "🇹🇼｜花都｜待測",
+        "type": 3,
+        "api": "./py/花都.py",
+        "searchable": 1,
+        "quickSearch": 0,
+        "filterable": 0,
+        "changeable": 0
+      },
+      {
         "key": "py_lav.py",
         "name": "⏭｜LAV｜PYTHON",
         "type": 3,
