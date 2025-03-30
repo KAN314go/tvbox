@@ -5,10 +5,22 @@
   "sites": [
 
 
-
+    {
+      "key": "csp_LaoBaiBook_FM",
+      "name": "雷蒙影视 | 📚老白(SP)",
+      "type": 3,
+      "playerType": 2,
+      "api": "csp_LaoBaiBook",
+      "jar": "./jar/lem0318.jar;md5;626cd9f34ad3d3899bb2de54b1bc0a25",
+      "searchable": 0,
+      "style": {
+        "type": "rect",
+        "ratio": 1.333
+      }
+    },
     {
       "key": "SP33",
-      "name": "🇹🇼｜蝸牛｜待測",
+      "name": "🇹🇼｜蝸牛｜高清◎秒播(無廣告)",
       "type": 3,
       "api": "csp_SP33",
       "jar": "./jar/蝸牛-0330.jar",
@@ -231,7 +243,7 @@
       "name": "🥇｜優視｜藍光◎秒播(無廣告)",
       "type": 3,
       "api": "csp_Uvod",
-      "jar": "./jar/lem0118.jar;md5;62323c9be4e0c82d00fe1094a2978ca6",
+      "jar": "./jar/lem0318.jar;md5;626cd9f34ad3d3899bb2de54b1bc0a25",
       "searchable": 1,
       "quickSearch": 1,
       "changeable": 1
@@ -1495,7 +1507,7 @@
       "name": "🥈｜PTT｜高清◎秒播(浮水印廣告+成人動畫)",
       "type": 3,
       "api": "csp_PTT",
-      "jar": "./jar/lem0118.jar",
+      "jar": "./jar/lem0318.jar;md5;626cd9f34ad3d3899bb2de54b1bc0a25",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1
