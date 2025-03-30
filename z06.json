@@ -102,7 +102,6 @@
       "name": "低端｜影视",
       "type": 3,
       "api": "csp_Ddys",
-      "jar": "./jar/PandaQ240913.jar",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1
@@ -112,7 +111,6 @@
       "name": "快看｜影视",
       "type": 3,
       "api": "csp_Kuaikan",
-      "jar": "./jar/PandaQ240913.jar",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1
