@@ -239,7 +239,7 @@
         "key": "py_phb.py",
         "name": "⏭｜phb｜PYTHON",
         "type": 3,
-        "api": "./py/lav.py",
+        "api": "./py/phb.py",
         "searchable": 1,
         "quickSearch": 1,
         "filterable": 1
@@ -247,7 +247,7 @@
         "key": "py_xvd.py",
         "name": "⏭｜xvd｜PYTHON",
         "type": 3,
-        "api": "./py/lav.py",
+        "api": "./py/xvd.py",
         "searchable": 1,
         "quickSearch": 1,
         "filterable": 1
