@@ -23,7 +23,7 @@
       "order_num": 0,
       "changeable": 0,
       "api": "./drpy_libs/drpy2.min.js",
-      "ext": "./js/影視大全2.js"
+      "ext": "./js/影視大全.js"
     },
     {
       "key": "芒果自家2",
