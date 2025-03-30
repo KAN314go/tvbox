@@ -4564,7 +4564,7 @@
       "epg": "http://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Taipei"
     },
     {
-      "name": "小雲1台",
+      "name": "小雲1台(停用)",
       "url": "./live/ueen.txt",
       "playerType": 2,
       "core": {
@@ -4578,7 +4578,7 @@
       }
     },
     {
-      "name": "小雲2台",
+      "name": "小雲2台(停用)",
       "url": "./live/ueen2.txt",
       "playerType": 2,
       "core": {
