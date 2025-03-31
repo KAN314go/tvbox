@@ -7,48 +7,8 @@
 
 
 
+
   {
-    "key": "py_a云速影视",
-    "name": "🥇｜云速影视｜高清◎秒播(無廣告)",
-    "type": 3,
-    "api": "./py/云速影视APP.py",
-    "searchable": 1,
-    "quickSearch": 0,
-    "filterable": 0,
-    "changeable": 1
-  },
-  {
-    "key": "py_恋鱼影视",
-    "name": "🥇｜恋鱼影视｜高清◎秒播(無廣告)",
-    "type": 3,
-    "api": "./py/恋鱼影视APP.py",
-    "searchable": 1,
-    "quickSearch": 0,
-    "filterable": 0,
-    "changeable": 1
-  },
-  {
-    "key": "py_边缘影视",
-    "name": "🥇｜边缘影视APP｜高清◎秒播(無廣告)",
-    "type": 3,
-    "api": "./py/边缘影视APP.py",
-    "searchable": 1,
-    "quickSearch": 0,
-    "filterable": 0,
-    "changeable": 1
-  },
-  {
-    "key": "py_aiguatv",
-    "name": "🥇｜愛瓜｜高清◎秒播(無廣告)",
-    "type": 3,
-    "api": "./py/CliCli动漫APP.py",
-    "searchable": 1,
-    "quickSearch": 0,
-    "filterable": 0,
-    "changeable": 1
-  },
-  
-    {
       "key": "csp_sbb",
       "name": "布布(不穩)",
       "type": 3,
@@ -70,15 +30,7 @@
       "jar": "./jar/pizza.jar;md5;6bcb3de5f0d7c9b3d4f19cfe9a314ab2",
       "ext": "caHR0cHM6Ly9yeHlzeXlkcy5vc3MtY24tY2hlbmdkdS5hbGl5dW5jcy5jb20vZ2V0YXBwLnR4dHxlYmFkM2YxYTU4YjEzOTMzfGViYWQzZjFhNThiMTM5MzN8MTAw"
     },
-    {
-      "key": "低端",
-      "name": "低端",
-      "type": 3,
-      "api": "csp_Ddys",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1
-    },
+
     {
       "key": "NOsp",
       "name": "NO视频",
@@ -275,7 +227,7 @@
     },
     {
       "key": "PKW",
-      "name": "片库网",
+      "name": "🥇｜片库｜高清◎秒播(無廣告)",
       "type": 3,
       "api": "csp_XBPQ",
       "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
@@ -310,63 +262,11 @@
         "分类": "連續劇&綜藝&動畫&電影",
         "分类值": "2&3&4&1"
       }
-    },
-    {
-      "key": "DDYS",
-      "name": "多多",
-      "type": 3,
-      "api": "csp_XBPQ",
-      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-      "playerType": 2,
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": {
-        "站名": "多多影视",
-        "请求头": "User-Agent$Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 Edg/128.0.0.0",
-        "编码": "UTF-8",
-        "图片代理": "0",
-        "主页url": "https://www.ddhqw.com",
-        "搜索url": "https://www.ddhqw.com/ddcz{wd}/page/{pg}.html",
-        "数组": "class=\"stui-vodlist__thumb&&</a>",
-        "链接": "href=\"&&\"",
-        "图片": "data-original=\"&&\"",
-        "标题": "title=\"&&\"",
-        "副标题": "text-right\">&&<",
-        "线路数组": "class=\"stui-pannel__head bottom-line&&</div>",
-        "线路标题": ">&&</h3>",
-        "播放数组": "class=\"stui-content__playlist&&</ul>",
-        "播放标题": ">&&</a>",
-        "简介": "解說col-pd\">&&</p>",
-        "导演": "",
-        "主演": "",
-        "首页": "20",
-        "起始页": "1",
-        "直接播放": "0",
-        "嗅探词": ".mp4#.m3u8",
-        "分类url": "https://www.ddhqw.com/list/{cateId}/page/{catePg}/year/{year}.html;;mrcd0",
-        "分类": "電影&連續劇&綜藝&動畫&紀錄",
-        "分类值": "dianying&dianshiju&zongyi&dongmna&jilupian"
-      }
-    },
-
-    {
-      "key": "csp_Tvyb",
-      "name": "云播",
-      "type": 3,
-      "jar": "./jar/PandaQ250227c.jar;md5;ceda5421cdce5fad2a2f6d8c71ae4311",
-      "api": "csp_Tvyb"
-    },
-    {
-      "key": "快看影视",
-      "name": "快看",
-      "type": 3,
-      "api": "csp_Kuaikan",
-      "jar": "./jar/pizza.jar;md5;6bcb3de5f0d7c9b3d4f19cfe9a314ab2",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1
     }
+
+
+
+
   ],
   "parses": [
     {"name": "七智", "type": 3, "url": "https://jx.2s0.cn/player/?url="},
