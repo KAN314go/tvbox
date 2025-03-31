@@ -220,6 +220,28 @@
       }
     },
     {
+      "key": "云腾酷酷1",
+      "name": "🥇｜雲騰｜藍光◎秒播(開頭廣告)",
+      "type": 3,
+      "searchable": 1,
+      "quickSearch": 1,
+      "order_num": 0,
+      "changeable": 0,
+      "api": "./drpy_libs/drpy2.min.js",
+      "ext": "./js/雲騰.js"
+    },
+    {
+      "key": "影視大全",
+      "name": "🥇｜影視大全｜藍光◎秒播(開頭廣告)",
+      "type": 3,
+      "searchable": 1,
+      "quickSearch": 1,
+      "order_num": 0,
+      "changeable": 0,
+      "api": "./drpy_libs/drpy2.min.js",
+      "ext": "./js/影視大全.js"
+    },
+    {
       "key": "csp_开心影院",
       "name": "🥇｜开心｜高清◎秒播(無廣告)",
       "type": 3,
@@ -387,6 +409,16 @@
       "searchable": 1,
       "filterable": 0,
       "changeable": 0
+    },
+    {
+      "key": "py_萝卜app",
+      "name": "py_萝卜｜高清◎秒播(無廣告)",
+      "type": 3,
+      "changeable": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "api": "./py/py_羅波.py"
     },
     {
       "key": "csp_Wwys",
@@ -693,6 +725,18 @@
       "quickSearch": 0,
       "filterable": 0,
       "changeable": 1
+    },
+    {
+      "key": "ling",
+      "name": "🥇｜飞快｜高清◎秒播(無廣告)",
+      "type": 3,
+      "api": "csp_XBPQ",
+      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+      "playerType": 2,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "./json/飛快tv.json"
     },
     {
       "key": "csp_GM_Hi视频",
@@ -1120,6 +1164,18 @@
       "changeable": 0
     },
     {
+      "key": "WYtv",
+      "name": "🥇微云｜高清◎秒播(無廣告)",
+      "type": 3,
+      "api": "csp_XBPQ",
+      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+      "playerType": 2,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "./json/微雲TV.json"
+    },
+    {
       "key": "csp_新電影先生",
       "name": "🥇｜片庫｜高清◎秒播(WU、YI線路無廣)",
       "type": 3,
@@ -1139,6 +1195,23 @@
         "线路数组": "data-dropdown-value=&&</div>",
         "线路标题": "<span>&&</span>[排序:TK>HD>XS>YI>DI>]"
       }
+    },
+    {
+      "key": "圣农极光",
+      "name": "🥈｜聖農｜高清◎秒播(片頭廣告)",
+      "type": 3,
+      "api": "csp_Wwys",
+      "jar": "./jar/PandaQ250227c.jar;md5;ceda5421cdce5fad2a2f6d8c71ae4311",
+      "ext": "https://www.wwgz.cn"
+    },
+    {
+      "key": "快看",
+      "name": "🥈｜快看｜高清◎秒播(浮水印廣告)",
+      "type": 3,
+      "api": "csp_Kuaikan",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
     },
     {
       "key": "csp_熱播之家",
@@ -3526,6 +3599,18 @@
       "quickSearch": 1,
       "api": "./drpy_libs/drpy2.min.js",
       "ext": "./drpy_js/百忙无果[官].js"
+    },
+    {
+      "key": "芒果自家2",
+      "name": "🎖︎｜芒果｜解析要換「巧技2」",
+      "type": 3,
+      "api": "./drpy_libs/drpy2.min.js",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "order_num": 0,
+      "changeable": 0,
+      "ext": "./js/芒果.js"
     },
     {
       "key": "py_芒",
