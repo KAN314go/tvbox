@@ -3720,6 +3720,26 @@
       "timeout": 240
     },
     {
+      "key": "py_CliCli动漫",
+      "name": "动漫｜CliCli动漫｜PYTHON",
+      "type": 3,
+      "api": "./py/CliCli动漫APP.py",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 0,
+      "changeable": 1
+    },
+    {
+      "key": "py_MiFun",
+      "name": "动漫｜MiFun｜PYTHON",
+      "type": 3,
+      "api": "./py/MiFunAPP.py",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 0,
+      "changeable": 1
+    },
+    {
       "key": "py_dm84",
       "name": "动漫｜动漫巴士(沐辰)｜PYTHON",
       "type": 3,

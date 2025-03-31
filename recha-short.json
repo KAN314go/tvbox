@@ -385,8 +385,15 @@
         "filterable": 1,
         "ext": "./json/一个短剧.json"
     },
-    
-    
+    {
+      "key": "py_lm",
+      "name": "蓝莓短剧",
+      "type": 3,
+      "api": "./py/py_蓝莓短剧.py",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 0
+    },  
     {
         "key": "电影100影院",
         "name": "📺｜电影100短剧",

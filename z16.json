@@ -5,35 +5,8 @@
   "sites": [
 
 
-    {
-      "key": "py_lm",
-      "name": "蓝莓短剧",
-      "type": 3,
-      "api": "https://slink.ltd/https://raw.githubusercontent.com/fish2018/lib/refs/heads/main/py/py_蓝莓短剧.py",
-      "searchable": 1,
-      "quickSearch": 0,
-      "filterable": 0
-  },
-  {
-    "key": "py_CliCli动漫",
-    "name": "🥇｜CliCli动漫｜高清◎秒播(無廣告)",
-    "type": 3,
-    "api": "./py/CliCli动漫APP.py",
-    "searchable": 1,
-    "quickSearch": 0,
-    "filterable": 0,
-    "changeable": 1
-  },
-  {
-    "key": "py_MiFun",
-    "name": "🥇｜MiFun｜高清◎秒播(無廣告)",
-    "type": 3,
-    "api": "./py/MiFunAPP.py",
-    "searchable": 1,
-    "quickSearch": 0,
-    "filterable": 0,
-    "changeable": 1
-  },
+
+
   {
     "key": "py_a云速影视",
     "name": "🥇｜云速影视｜高清◎秒播(無廣告)",
