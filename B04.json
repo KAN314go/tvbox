@@ -54,26 +54,6 @@
       "style": {"type": "rect", "ratio": 1.77}
     },
     {
-      "key": "hitv_emby",
-      "name": "🇹🇼｜hitv_emby",
-      "type": 3,
-      "api": "./py/hitv_emby.py",
-      "searchable": 1,
-      "quickSearch": 0,
-      "filterable": 0,
-      "changeable": 0
-    },
-    {
-      "key": "net_emby",
-      "name": "🇹🇼｜net_emby",
-      "type": 3,
-      "api": "./py/net_emby.py",
-      "searchable": 1,
-      "quickSearch": 0,
-      "filterable": 0,
-      "changeable": 0
-    },
-    {
       "key": "文才影视",
       "name": "🏆｜金影｜高清◎秒播(無廣告)",
       "type": 3,
@@ -760,6 +740,16 @@
       "type": 3,
       "api": "./py/hitvAPP.py",
       "searchable": 1,
+      "filterable": 0,
+      "changeable": 0
+    },
+    {
+      "key": "hitv_emby",
+      "name": "🥇｜嗨影｜高清◎秒播(無廣告+emby)",
+      "type": 3,
+      "api": "./py/hitv_emby.py",
+      "searchable": 1,
+      "quickSearch": 0,
       "filterable": 0,
       "changeable": 0
     },
