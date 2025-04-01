@@ -7,10 +7,10 @@
 
 
     {
-      "key": "netflav",
-      "name": "🇹🇼｜netflav",
+      "key": "YouKu",
+      "name": "🇹🇼｜YouKu",
       "type": 3,
-      "api": "netflav",
+      "api": "csp_YouKu",
       "searchable": 0,
       "quickSearch": 0,
       "changeable": 1
