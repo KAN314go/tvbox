@@ -6,38 +6,25 @@
     "网页编码格式":"UTF-8",
     "图片是否需要代理":"0",
     "是否开启获取首页数据":"1",
-	 //首页推荐数据获取链接
     "首页推荐链接": "https://njavtv.com/dm291/today-hot",
-    //首页推荐列表数组截取。
     "首页列表数组规则": ".grid.grid-cols-2",
-    //首页推荐片单列表数组定位。
     "首页片单列表数组规则": ".thumbnail.group",
-    //首页推荐片单信息jsoup与正则截取写法切换，只作用于html网页，1为jsoup写法(默认)，0为正则截取写法
     "首页片单是否Jsoup写法":"1",
-    //下面这六个首页数据如果不填将调用分类那截取的配置（片单写法需一致且取值也得一致）。
-    //首页片单标题
     "首页片单标题": ".text-secondary&&Text",
-    //首页推荐片单链接
     "首页片单链接": "a&&href",
-    //首页推荐片单图片，支持自定义图片链接
     "首页片单图片": "img&&data-src",
-    //首页推荐片单副标题
     "首页片单副标题":"a,1&&Text+' ⏱️'+.bg-gray-800&&Text",
-    //首页推荐片单链接补前缀  
     "首页片单链接加前缀": "",
-    //首页推荐片单链接补后缀
     "首页片单链接加后缀": "",
     "分类起始页码": "1",
-    //"分类链接": "https://www.l0l.tv/index.php/vod/show/id/{cateId}/page/{catePg}.html",
 	"分类链接": "https://njavtv.com/{cateId}?page={catePg}",
     "分类名称": "中文字幕&日本AV▽&素人&无码影片&国产AV&更多分类",
     "分类名称替换词": "dm265/cn/chinese-subtitle&dm514/cn/new&dm23/cn/siro&dm621/cn/uncensored-leak&dm34/cn/madou&dm94/cn/genres/%E9%AB%98%E6%B8%85",
-    //"筛选数据":{},
     "分类截取模式": "1",
     "分类列表数组规则": ".grid.grid-cols-2&&.thumbnail.group",
     "分类片单是否Jsoup写法":"1",
     "分类片单标题": ".text-secondary&&Text",
-    "分类片单链接": "a&&href",//替换规则
+    "分类片单链接": "a&&href",
     "分类片单图片": "img&&data-src",
     "分类片单副标题":"a,1&&Text+' ⏱️'+a,2&&Text",
     "分类片单链接加前缀": "",
