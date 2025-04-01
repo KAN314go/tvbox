@@ -3,48 +3,6 @@
   "logo": "https://p3-pc.douyinpic.com/img/aweme-avatar/tos-cn-i-0813_6e2553f5708c414386eeca88b5f2674a~c5_300x300.jpeg?from=2956013662",
   "wallpaper": "https://tv.nxog.top/m//t/",
   "sites": [
-    {
-      "key": "T4-heimuer",
-      "name": "唐黑",
-      "type": 4,
-      "api": "https://tang.hz.cz/power/hme?token=155d14a3",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "changeable": 0,
-      "ext": false
-    },
-    {
-      "key": "hitv_emby",
-      "name": "🇹🇼｜公益站-嗨TV｜備用",
-      "type": 3,
-      "api": "./py/hitv_emby.py",
-      "searchable": 1,
-      "quickSearch": 0,
-      "filterable": 0,
-      "changeable": 0
-    },
-    {
-      "key": "new_emby",
-      "name": "🇹🇼｜公益站-新片｜備用",
-      "type": 3,
-      "api": "./py/emby_new.py",
-      "searchable": 1,
-      "quickSearch": 0,
-      "filterable": 0,
-      "changeable": 0
-    },
-    {
-      "key": "net_emby",
-      "name": "🇹🇼｜公益站-net｜備用",
-      "type": 3,
-      "api": "./py/py_爱.py",
-      "searchable": 1,
-      "quickSearch": 0,
-      "filterable": 0,
-      "changeable": 0
-    },
-
 
     {
       "key": "豆瓣",
@@ -94,6 +52,26 @@
         "proxy": ""
       },
       "style": {"type": "rect", "ratio": 1.77}
+    },
+    {
+      "key": "hitv_emby",
+      "name": "🇹🇼｜hitv_emby",
+      "type": 3,
+      "api": "./py/hitv_emby.py",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 0,
+      "changeable": 0
+    },
+    {
+      "key": "net_emby",
+      "name": "🇹🇼｜net_emby",
+      "type": 3,
+      "api": "./py/net_emby.py",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 0,
+      "changeable": 0
     },
     {
       "key": "文才影视",
@@ -358,6 +336,7 @@
       },
       "timeout": 20
     },
+    
     {
       "key": "星辉弹幕",
       "name": "🥇｜星辉｜藍光◎秒播(無廣告+APP)",
@@ -1593,6 +1572,17 @@
         "线路数组": "data-dropdown-value=&&</div>[排序:WU节点>YI节点>>]",
         "线路标题": "<span>&&</span>[不包含:高清线路]"
       }
+    },
+    {
+      "key": "T4-heimuer",
+      "name": "🥇｜唐黑｜高清◎秒播(？廣告？)",
+      "type": 4,
+      "api": "https://tang.hz.cz/power/hme?token=155d14a3",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "changeable": 0,
+      "ext": true
     },
     {
       "key": "圣农极光",
