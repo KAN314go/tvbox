@@ -7,7 +7,7 @@
     "图片是否需要代理":"0",
     "是否开启获取首页数据":"1",
 	 //首页推荐数据获取链接
-    "首页推荐链接": "https://www.njav.com/zh/new-release",
+    "首页推荐链接": "https://www.njav.com/zh/new-release/",
     //首页推荐列表数组截取。
     "首页列表数组规则": ".box-item-list",
     //首页推荐片单列表数组定位。
@@ -68,7 +68,7 @@
     "演员详情": ".content&&.detail-item&&span,7&&Text",
     "简介详情": ".mr-3&&h1&&Text",
     //"线路列表数组规则": ".dropdown-menu",
-    "线路标题": "a&&Text[替换:English=>njav]",
+    //"线路标题": "a&&Text[替换:English=>njav]",
     //"播放列表数组规则": ".dropdown-menu",
     "选集列表数组规则": "a",
     "选集标题链接是否Jsoup写法":"1",
