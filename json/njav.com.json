@@ -31,7 +31,7 @@
     //"分类链接": "https://www.l0l.tv/index.php/vod/show/id/{cateId}/page/{catePg}.html",
 	"分类链接": "https://www.njav.com/zh/{cateId}?page={catePg}",
     "分类名称": "推薦&素人&無碼",
-    "分类名称替换词": "recent-update&tags/siro&uncensored",
+    "分类名称替换词": "recent-update/&tags/siro&uncensored",
     //"筛选数据":{},
     "分类截取模式": "1",
     "分类列表数组规则": ".box-item-list&&.box-item",
@@ -83,7 +83,7 @@
     "手动嗅探视频链接过滤词":".html#=http",
 	
 	"筛选数据":{
-"recent-update":[
+"recent-update/":[
   {"key":"cateId","name":"分类","value":[
 {"v":"recent-update/","n":"最近更新"},
 {"v":"new-release/","n":"全新上市"},
