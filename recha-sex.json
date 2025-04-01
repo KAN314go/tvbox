@@ -254,17 +254,23 @@
         "style": {"type": "rect", "ratio": 1.6}
       },
       {
-        "key": "csp_XYQHiker_njav.com",
-        "name": "🔞Njav.com(點選點播才有東西)",
-        "type": 3,
-        "api": "csp_XYQHiker",
-        "jar": "./jar/xyqxbpq.jar",
+        "key":"csp_XYQHiker_njavtv.com",
+        "name": "🔞Njavtv.com",
+        "type": 3,"api": "csp_XYQHiker",
+        "searchable": 1,"quickSearch": 0,
+        "filterable": 0,
+        "ext": "./json/njavtv.json",
+        "style": {"type": "rect","ratio": 1.6}
+      },   
+      {
+        "key":"csp_XYQHiker_njav.com",
+        "name": "🔞Njav.com",
+        "type": 3,"api": "csp_XYQHiker",
         "searchable": 1,
         "quickSearch": 0,
         "filterable": 0,
-        "click": "document.querySelector(\"#playleft iframe\").contentWindow.document.querySelector(\"#start\").click();",
-        "ext": "./json/njav.json",
-        "style": {"type": "rect", "ratio": 1.6}
+        "ext": "./json/njav.com.json",
+        "style": {"type": "rect","ratio": 1.6}
       },
       {
         "key": "csp_JavBus",
