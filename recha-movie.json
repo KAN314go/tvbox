@@ -12,16 +12,7 @@
 
 
 
-    {
-      "key": "py_愛瓜.py",
-      "name": "🎖︎｜愛瓜｜測試",
-      "type": 3,
-      "api": "./py/爱瓜TVAPP.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "changeable": 1
-    },
+
 
 
 
@@ -816,8 +807,18 @@
       "changeable": 1
     },
     {
+        "key": "py_愛瓜app.py",
+        "name": "🥇｜愛瓜｜高清◎秒播(無廣告+嗷嗚版)",
+        "type": 3,
+        "api": "./py/爱瓜TVAPP.py",
+        "searchable": 1,
+        "quickSearch": 1,
+        "filterable": 0,
+        "changeable": 1
+      },
+    {
       "key": "py_aiguatv",
-      "name": "🥇｜愛瓜｜高清◎秒播(無廣告)",
+      "name": "🥇｜愛瓜｜高清◎秒播(無廣告+沐辰版)",
       "type": 3,
       "api": "./py/py_aigua.py",
       "searchable": 1,
