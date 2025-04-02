@@ -14,7 +14,7 @@
         "filterable": 1,
         "recordable": 0,
         "api": "csp_Netflav",
-        "jar": "./jar/netflav.jar.jar",
+        "jar": "./jar/netflav.jar",
         "ext": "proxy",
         "timeout":60
       },
