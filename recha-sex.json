@@ -5,15 +5,16 @@
     "sites": [
 
       {
-        "key": "netflav",
-        "name": "netflav｜測試 ",
+        "key": "Netflav",
+        "name": "Netflav｜測試 ",
         "type": 3,
         "searchable": 1,
         "changeable": 1,
         "quickSearch": 1,
         "filterable": 1,
         "recordable": 0,
-        "api": "csp_netflav",
+        "api": "csp_Netflav",
+        "spider": "./jar/pg.jar",
         "jar": "./jar/pg.jar",
         "ext": "proxy",
         "timeout":60
