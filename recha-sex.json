@@ -15,7 +15,7 @@
         "recordable": 0,
         "api": "csp_netflav",
         "jar": "./jar/pg.jar",
-        "ext": "proxy"
+        "ext": "proxy",
         "timeout":60
       },
 
