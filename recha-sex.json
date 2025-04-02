@@ -14,8 +14,7 @@
         "filterable": 1,
         "recordable": 0,
         "api": "csp_Netflav",
-        "spider": "./jar/pg.jar",
-        "jar": "./jar/pg.jar",
+        "jar": "./jar/netflav.jar.jar",
         "ext": "proxy",
         "timeout":60
       },
