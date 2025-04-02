@@ -4,18 +4,7 @@
     "wallpaper": "https://picsum.photos/1080/",
     "sites": [
 
-      {
-        "key": "Zuise",
-        "name": "最色",
-        "type": 3,
-        "api": "csp_Zuise",
-        "jar": "./jar/pg.jar",
-        "quickSearch": 1,
-        "changeable": 1,
-        "filterable": 1,
-        "timeout": 60,
-        "ext": "proxy"
-    },
+
 
       {
         "key": "麻豆",
@@ -191,9 +180,10 @@
       },
       {
         "key": "Zuise",
-        "name": "⏭最色",
+        "name": "⏭｜最色",
         "type": 3,
         "api": "csp_Zuise",
+        "jar": "./jar/pg.jar",
         "quickSearch": 1,
         "changeable": 1,
         "filterable": 1,

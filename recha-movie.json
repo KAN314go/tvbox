@@ -3,6 +3,31 @@
   "logo": "https://p3-pc.douyinpic.com/img/aweme-avatar/tos-cn-i-0813_6e2553f5708c414386eeca88b5f2674a~c5_300x300.jpeg?from=2956013662",
   "wallpaper": "https://tv.nxog.top/m//t/",
   "sites": [
+
+
+
+
+
+
+
+
+
+    {
+      "key": "py_愛瓜.py",
+      "name": "🎖︎｜愛瓜｜測試",
+      "type": 3,
+      "api": "./py/爱瓜TVAPP.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1
+    },
+
+
+
+
+
+
     {
       "key": "note1",
       "name": "🇹🇼｜老王被禁言了｜",
