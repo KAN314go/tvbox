@@ -4796,6 +4796,21 @@
   ],
   "lives": [
     {
+      "name": "HappyTV",
+      "playerType": 2,
+      "url": "./live/HappyTv.txt",
+      "epg": "http://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Taipei"
+    },
+    {
+      "name": "瑪斯特",
+      "playerType": 2,
+      "url": "./live/must.txt",
+      "ua": "okhttp/3.15",
+      "timeout": 5,
+      "epg": "https://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/taipei",
+      "logo": "https://epg.112114.xyz/logo/{name}.png"
+    },
+    {
       "name": "小雲1台",
       "url": "./live/ueen.txt",
       "playerType": 2,
@@ -5067,6 +5082,12 @@
       "epg": "http://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Taipei"
     },
     {
+      "name": "A喵台(18+)",
+      "playerType": 2,
+      "url": "./live/A喵台.txt",
+      "epg": "http://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Taipei"
+    },
+    {
       "name": "私密線路(18+)",
       "playerType": 2,
       "url": "./live/178.txt",
@@ -5082,16 +5103,6 @@
       "url": "./live/10.txt",
       "ua": "okhttp/4.12",
       "epg": "http://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Taipei"
-    },
-    {
-      "name": "野火(故障)",
-      "playerType": 2,
-      "url": "./live/starfire.txt",
-      "playerplayerType": 2,
-      "ua": "okhttp/3.15",
-      "timeout": 5,
-      "epg": "https://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/taipei",
-      "logo": "https://epg.112114.xyz/logo/{name}.png"
     },
     {
       "name": "PIXMAN(故障)",
