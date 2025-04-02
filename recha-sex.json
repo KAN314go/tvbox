@@ -4,6 +4,20 @@
     "wallpaper": "https://picsum.photos/1080/",
     "sites": [
 
+      {
+        "key": "netflav",
+        "name": "netflav｜測試 ",
+        "type": 3,
+        "searchable": 1,
+        "changeable": 1,
+        "quickSearch": 1,
+        "filterable": 1,
+        "recordable": 0,
+        "api": "csp_netflav",
+        "jar": "./jar/pg.jar",
+        "ext": "proxy"
+        "timeout":60
+      },
 
       {
         "key": "麻豆",
