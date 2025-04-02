@@ -1,5 +1,5 @@
 
-😸喵喵星-清明福利😸,#genre#
+喵喵星-福利,#genre#
 玩家频道,http://58.99.33.2:1935/liveedge2/obaOZJic_401_1/chunklist_w.m3u8?checkCode=37050688asdfsdfsadf&aa=1229999&as=2018&dr=&mmmm=
 HAPPY频道,http://58.99.33.2:1935/liveedge2/obaOZJic_402_1/chunklist_w.m3u8?checkCode=37050688asdfsdfsadf&aa=1229999&as=2018&dr=&mmmm=
 HOT 频道,http://58.99.33.2:1935/liveedge2/obaOZJic_403_1/chunklist_w.m3u8?checkCode=37050688asdfsdfsadf&aa=1229999&as=2018&dr=&mmmm=
@@ -13,7 +13,7 @@ HOT 频道,http://58.99.33.2:1935/liveedge2/obaOZJic_403_1/chunklist_w.m3u8?chec
 潘朵拉粉红台,http://58.99.33.2:1935/liveedge2/obaOZJic_412_1/chunklist_w.m3u8?checkCode=37050688asdfsdfsadf&aa=1229999&as=2018&dr=&mmmm=
 惊艳台,http://58.99.33.2:1935/liveedge2/obaOZJic_413_1/chunklist_w.m3u8?checkCode=37050688asdfsdfsadf&aa=1229999&as=2018&dr=&mmmm=
 香蕉台,http://58.99.33.2:1935/liveedge2/obaOZJic_414_1/chunklist_w.m3u8?checkCode=37050688asdfsdfsadf&aa=1229999&as=2018&dr=&mmmm=
-以上需翻墙
+
 #EXTM3U
 #EXTINF:-1 tvg-id="96baab859897df33529676db991e3f7a" tvg-chno="2",頻道總表
 http://jaz9.my.to:9981/stream/channelid/95140502?profile=pass
@@ -361,4 +361,3 @@ http://jaz9.my.to:9981/stream/channelid/1050777996?profile=pass
 http://jaz9.my.to:9981/stream/channelid/809294219?profile=pass
 #EXTINF:-1 tvg-id="ea835b3ae7bfeda9414d16a58f857deb" tvg-chno="755",FRANCE24F
 http://jaz9.my.to:9981/stream/channelid/979076074?profile=pass
-以上需要翻墙
