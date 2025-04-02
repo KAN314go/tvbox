@@ -4848,6 +4848,12 @@
       "logo": "https://epg.112114.xyz/logo/{name}.png"
     },
     {
+      "name": "大街TV(喵老師)",
+      "playerType": 2,
+      "url": "./live/A喵台.txt",
+      "epg": "http://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Taipei"
+    },
+    {
       "name": "4G-TV(喵老師)",
       "type": 0,
       "url": "./live/iptv.txt",
@@ -5079,12 +5085,6 @@
       "name": "小武哥(18+)",
       "playerType": 2,
       "url": "https://qu.ax/PEHy.txt",
-      "epg": "http://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Taipei"
-    },
-    {
-      "name": "A喵台(18+)",
-      "playerType": 2,
-      "url": "./live/A喵台.txt",
       "epg": "http://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Taipei"
     },
     {
