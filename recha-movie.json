@@ -3,7 +3,36 @@
   "logo": "https://p3-pc.douyinpic.com/img/aweme-avatar/tos-cn-i-0813_6e2553f5708c414386eeca88b5f2674a~c5_300x300.jpeg?from=2956013662",
   "wallpaper": "https://tv.nxog.top/m//t/",
   "sites": [
-
+    {
+      "key": "note1",
+      "name": "🇹🇼｜老王被禁言了｜",
+      "type": 3,
+      "api": "",
+      "ext": "",
+      "searchable": 0,
+      "quickSearch": 0,
+      "changeable": 1
+    },
+    {
+      "key": "note2",
+      "name": "🇹🇼｜老王被禁言了｜",
+      "type": 3,
+      "api": "",
+      "ext": "",
+      "searchable": 0,
+      "quickSearch": 0,
+      "changeable": 1
+    },
+    {
+      "key": "note1",
+      "name": "🇹🇼｜老王被禁言了｜",
+      "type": 3,
+      "api": "",
+      "ext": "",
+      "searchable": 0,
+      "quickSearch": 0,
+      "changeable": 1
+    },
     {
       "key": "豆瓣",
       "name": "🇹🇼｜熱播排行榜｜自動切換",
