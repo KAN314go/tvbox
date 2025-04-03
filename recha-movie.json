@@ -5,50 +5,6 @@
   "sites": [
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    {
-      "key": "note1",
-      "name": "🇹🇼｜老王被禁言了｜",
-      "type": 3,
-      "api": "",
-      "ext": "",
-      "searchable": 0,
-      "quickSearch": 0,
-      "changeable": 1
-    },
-    {
-      "key": "note2",
-      "name": "🇹🇼｜老王被禁言了｜",
-      "type": 3,
-      "api": "",
-      "ext": "",
-      "searchable": 0,
-      "quickSearch": 0,
-      "changeable": 1
-    },
-    {
-      "key": "note3",
-      "name": "🇹🇼｜老王被禁言了｜",
-      "type": 3,
-      "api": "",
-      "ext": "",
-      "searchable": 0,
-      "quickSearch": 0,
-      "changeable": 1
-    },
     {
       "key": "豆瓣",
       "name": "🇹🇼｜熱播排行榜｜自動切換",
