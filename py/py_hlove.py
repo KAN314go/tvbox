@@ -16,6 +16,7 @@ class Spider(Spider):
         self.headers = {
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
             "Referer": "https://hlove.tv/",
+            "Accept": "text/html,application/xhtml+xml,application/json;q=0.9,*/*;q=0.8",
         }
 
     def init(self, extend):
@@ -34,36 +35,57 @@ class Spider(Spider):
         pass
 
     def homeContent(self, filter):
-        result = {
-            'class': [
-                {'type_id': 'movie', 'type_name': '电影'},
-                {'type_id': 'drama', 'type_name': '连续剧'},
-                {'type_id': 'animation', 'type_name': '动漫'},
-                {'type_id': 'variety', 'type_name': '综艺'},
-                {'type_id': 'children', 'type_name': '儿童'},
-                {'type_id': 'documentary', 'type_name': '纪录片'},
-                {'type_id': 'sports', 'type_name': '体育'},
-                {'type_id': 'live', 'type_name': '电视直播'}
-            ],
-            # filters 可根據需要添加，暫留空
-        }
-        return result
+        try:
+            res = requests.get(self.home_url, headers=self.headers, timeout=10)
+            res.encoding = 'utf-8'
+            print(f"Debug: homeContent response status = {res.status_code}")
+            # 這裡假設首頁有推薦分類，實際需根據網站結構調整
+            result = {
+                'class': [
+                    {'type_id': 'movie', 'type_name': '电影'},
+                    {'type_id': 'drama', 'type_name': '连续剧'},
+                    {'type_id': 'animation', 'type_name': '动漫'},
+                    {'type_id': 'variety', 'type_name': '综艺'},
+                    {'type_id': 'children', 'type_name': '儿童'},
+                    {'type_id': 'documentary', 'type_name': '纪录片'},
+                    {'type_id': 'sports', 'type_name': '体育'},
+                    {'type_id': 'live', 'type_name': '电视直播'}
+                ]
+            }
+            return result
+        except Exception as e:
+            print(f"Error in homeContent: {e}")
+            return {'class': []}
 
     def homeVideoContent(self):
-        # 可根據需要實現首頁推薦內容，暫留空
-        return {'list': []}
+        try:
+            res = requests.get(self.home_url, headers=self.headers, timeout=10)
+            res.encoding = 'utf-8'
+            print(f"Debug: homeVideoContent response status = {res.status_code}, length = {len(res.text)}")
+            # 假設首頁有推薦影片，需根據實際結構解析
+            next_data = re.search(r'<script id="__NEXT_DATA__" type="application/json">(.*?)</script>', res.text)
+            if next_data:
+                next_json = json.loads(next_data.group(1))
+                print(f"Debug: homeVideoContent __NEXT_DATA__ found, keys = {list(next_json.keys())}")
+                # 這裡需根據實際數據結構提取推薦內容
+                return {'list': []}  # 暫時返回空列表，需完善
+            return {'list': []}
+        except Exception as e:
+            print(f"Error in homeVideoContent: {e}")
+            return {'list': []}
 
     def categoryContent(self, cid, page, filter, ext):
-        # 可根據需要實現分類內容，暫留空
+        # 待實現，根據分類 ID 返回內容
         return {'list': []}
 
     def detailContent(self, did):
-        ids = did[0]  # 假設傳入的是 /vod/detail/se4pnjL1IF6D
+        ids = did[0]  # 如 /vod/detail/se4pnjL1IF6D
         video_list = []
         detail_url = f"{self.home_url}{ids}"
         try:
             res = requests.get(detail_url, headers=self.headers, timeout=10)
             res.encoding = 'utf-8'
+            print(f"Debug: detailContent URL = {detail_url}, status = {res.status_code}, length = {len(res.text)}")
             next_data = re.search(r'<script id="__NEXT_DATA__" type="application/json">(.*?)</script>', res.text)
             
             if not next_data:
@@ -71,7 +93,11 @@ class Spider(Spider):
                 return {'list': [], 'msg': '__NEXT_DATA__ not found'}
             
             next_json = json.loads(next_data.group(1))
-            collection_info = next_json['props']['pageProps']['collectionInfo']
+            print(f"Debug: detailContent __NEXT_DATA__ keys = {list(next_json.keys())}")
+            collection_info = next_json['props']['pageProps'].get('collectionInfo', {})
+            if not collection_info:
+                print("Error: collectionInfo not found in __NEXT_DATA__")
+                return {'list': [], 'msg': 'collectionInfo missing'}
             
             vod_name = collection_info.get('name', '')
             vod_year = collection_info.get('time', '')
@@ -83,36 +109,24 @@ class Spider(Spider):
             vod_pic = collection_info.get('imgUrl', 'https://image.tmdb.org/t/p/w600_and_h900_bestv2/placeholder.jpg')
             is_movie = collection_info.get('isMovie', False)
             
-            # 提取播放線路和集數
             play_from = []
             play_url = []
-            for group in collection_info['videosGroup']:
+            for group in collection_info.get('videosGroup', []):
                 if not group.get('videos'):
                     print(f"Debug: Skipping empty group['name'] = {group.get('name', 'N/A')}")
                     continue
                 print(f"Debug: group['name'] = {group.get('name', 'N/A')}, videos count = {len(group['videos'])}")
                 if is_movie:
-                    # 電影只取第一個有效線路的第一個視頻
                     video = group['videos'][0]
                     play_from.append(group.get('name', '线路1'))
                     play_url.append(f"{vod_name}${video['purl']}")
-                    break  # 電影只取一條線路
+                    break
                 else:
-                    # 連續劇處理多集
                     episodes = []
                     for video in group['videos']:
                         ep_name = f"第{video['eporder']}集" if video.get('eporder') else vod_name
                         ep_url = video['purl']
-                        # 可選：驗證 URL 有效性
-                        try:
-                            response = requests.head(ep_url, headers=self.headers, timeout=5)
-                            if response.status_code == 200:
-                                episodes.append(f"{ep_name}${ep_url}")
-                            else:
-                                print(f"Warning: Invalid URL {ep_url}, status code: {response.status_code}")
-                        except requests.RequestException as e:
-                            print(f"Warning: Failed to validate URL {ep_url}: {e}")
-                            episodes.append(f"{ep_name}${ep_url}")  # 仍保留，留給播放器處理
+                        episodes.append(f"{ep_name}${ep_url}")
                     if episodes:
                         play_from.append(group.get('name', '线路1'))
                         play_url.append('#'.join(episodes))
@@ -140,29 +154,26 @@ class Spider(Spider):
             return {'list': [], 'msg': str(e)}
 
     def searchContent(self, key, quick, page='1'):
-        # 可根據需要實現搜索功能，暫留空
         return {'list': []}
 
     def playerContent(self, flag, pid, vipFlags):
         try:
-            # pid 格式為 "第X集$https://m3u8.heimuertv.com/play/xxx.m3u8" 或單純 URL
             if '$' in pid:
-                play_url = pid.split('$')[1]  # 提取 URL 部分
+                play_url = pid.split('$')[1]
             else:
                 play_url = pid
             print(f"Debug: Playing URL = {play_url}")
             return {
                 'url': play_url,
                 'header': json.dumps(self.headers),
-                'parse': 0,  # 不需要額外解析
-                'jx': 0      # 不需要解密
+                'parse': 0,
+                'jx': 0
             }
         except Exception as e:
             print(f"Error in playerContent: {e}")
             return {'url': '', 'parse': 0, 'jx': 0}
 
     def localProxy(self, params):
-        # 可根據需要實現本地代理，暫留空
         pass
 
     def destroy(self):
@@ -170,11 +181,10 @@ class Spider(Spider):
 
 if __name__ == '__main__':
     spider = Spider()
-    # 測試連續劇 detailContent
+    print("Testing homeContent:")
+    print(json.dumps(spider.homeContent(False), ensure_ascii=False, indent=2))
+    print("Testing homeVideoContent:")
+    print(json.dumps(spider.homeVideoContent(), ensure_ascii=False, indent=2))
+    print("Testing detailContent:")
     result = spider.detailContent(['/vod/detail/se4pnjL1IF6D'])
     print(json.dumps(result, ensure_ascii=False, indent=2))
-    
-    # 測試 playerContent
-    test_pid = "第1集$https://m3u8.heimuertv.com/play/b5c8a93425774120a42a860021e072b5.m3u8"
-    play_result = spider.playerContent("线路1", test_pid, [])
-    print(json.dumps(play_result, ensure_ascii=False, indent=2))
