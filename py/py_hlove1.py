@@ -17,6 +17,7 @@ class Spider(Spider):
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
             "Referer": "https://hlove.tv/",
         }
+        self.placeholder_pic = 'https://image.tmdb.org/t/p/w600_and_h900_bestv2/placeholder.jpg'
 
     def init(self, extend):
         pass
@@ -133,8 +134,8 @@ class Spider(Spider):
                 vod_name = i.xpath('.//div[contains(@class, "h-film-listall_name__Gyb9x")]/text()')[0].strip()
                 vod_id = i.get('href', '')
                 vod_pic = i.xpath('.//img[contains(@class, "h-film-listall_img__jiamS")]/@src')[0]
-                if vod_pic == '/api/images/init':
-                    vod_pic = 'https://image.tmdb.org/t/p/w600_and_h900_bestv2/placeholder.jpg'
+                if vod_pic == '/api/images/init' or not vod_pic:
+                    vod_pic = self.placeholder_pic
                 d.append({
                     'vod_id': vod_id,
                     'vod_name': vod_name,
@@ -150,12 +151,20 @@ class Spider(Spider):
         _tag = ext.get('tag', 'all')
         _area = ext.get('area', 'all')
         _year = ext.get('year', 'all')
-        # 根據華視界的 URL 結構調整
+        # 修復篩選參數名稱（假設網站使用 'category' 而非 'tag'，需根據實際情況調整）
         url = f"{self.home_url}/{cid}"
-        if _tag != 'all' or _area != 'all' or _year != 'all':
-            url += f"?year={_year}&tag={_tag}&area={_area}"
+        params = []
+        if _year != 'all':
+            params.append(f"year={_year}")
+        if _tag != 'all':
+            params.append(f"category={_tag}")  # 改用 'category'，若不正確請調整
+        if _area != 'all':
+            params.append(f"area={_area}")
         if page != '1':
-            url += f"&page={page}" if "?" in url else f"?page={page}"
+            params.append(f"page={page}")
+        if params:
+            url += '?' + '&'.join(params)
+        
         d = []
         try:
             res = requests.get(url, headers=self.headers)
@@ -171,8 +180,12 @@ class Spider(Spider):
                 for i, card in enumerate(data_list):
                     vod_name = card.xpath('.//div[contains(@class, "h-film-listall_name__Gyb9x")]/text()')[0].strip()
                     vod_id = card.get('href', '')
-                    vod_pic = init_cards[i]['img'] if i < len(init_cards) and init_cards[i]['img'] else 'https://image.tmdb.org/t/p/w600_and_h900_bestv2/placeholder.jpg'
-                    vod_remarks = init_cards[i]['countStr'] if i < len(init_cards) else ''
+                    # 優先從 init_cards 提取圖片，否則從 HTML 提取
+                    vod_pic = init_cards[i]['img'] if i < len(init_cards) and 'img' in init_cards[i] else \
+                              card.xpath('.//img[contains(@class, "h-film-listall_img__jiamS")]/@src')[0] if card.xpath('.//img[contains(@class, "h-film-listall_img__jiamS")]/@src') else self.placeholder_pic
+                    if vod_pic == '/api/images/init' or not vod_pic:
+                        vod_pic = self.placeholder_pic
+                    vod_remarks = init_cards[i]['countStr'] if i < len(init_cards) and 'countStr' in init_cards[i] else ''
                     d.append({
                         'vod_id': vod_id,
                         'vod_name': vod_name,
@@ -186,7 +199,7 @@ class Spider(Spider):
             return {'list': d, 'page': int(page), 'pagecount': 999, 'limit': 24, 'total': 0}
 
     def detailContent(self, did):
-        ids = did[0]  # 假設傳入的是 /vod/detail/xxx 或 /vod/play-thrid/xxx/x
+        ids = did[0]
         video_list = []
         detail_url = f"{self.home_url}{ids}"
         try:
@@ -205,24 +218,21 @@ class Spider(Spider):
                 vod_remarks = collection_info.get('countStr', '')
                 vod_actor = ', '.join([actor['name'] for actor in collection_info.get('actor', [])])
                 vod_director = ', '.join([director['name'] for director in collection_info.get('director', [])])
-                vod_pic = collection_info.get('imgUrl', 'https://image.tmdb.org/t/p/w600_and_h900_bestv2/placeholder.jpg')
+                vod_pic = collection_info.get('imgUrl', self.placeholder_pic)
                 is_movie = collection_info.get('isMovie', False)
                 
-                # 提取播放線路和集數
                 play_from = []
                 play_url = []
                 for group in collection_info['videosGroup']:
-                    if not group.get('videos'):  # 跳過無視頻的線路
+                    if not group.get('videos'):
                         continue
                     line_name = group.get('name', '线路1')
                     if is_movie:
-                        # 電影只取第一個有效線路的第一個視頻
                         video = group['videos'][0]
                         play_from.append(line_name)
                         play_url.append(f"{vod_name}${video['purl']}")
-                        break  # 只取第一個線路
+                        break
                     else:
-                        # 劇集、動畫等處理多集
                         episodes = []
                         for video in group['videos']:
                             ep_name = f"第{video['eporder']}集"
@@ -230,7 +240,7 @@ class Spider(Spider):
                             episodes.append(f"{ep_name}${ep_url}")
                         play_from.append(line_name)
                         play_url.append('#'.join(episodes))
-                        break  # 只取第一個線路（可根據需求改進為多線路）
+                        break
                 
                 video_list.append({
                     'vod_id': ids,
@@ -262,8 +272,8 @@ class Spider(Spider):
                 vod_name = i.xpath('.//div[contains(@class, "h-film-listall_name__Gyb9x")]/text()')[0].strip()
                 vod_id = i.get('href', '')
                 vod_pic = i.xpath('.//img[contains(@class, "h-film-listall_img__jiamS")]/@src')[0]
-                if vod_pic == '/api/images/init':
-                    vod_pic = 'https://image.tmdb.org/t/p/w600_and_h900_bestv2/placeholder.jpg'
+                if vod_pic == '/api/images/init' or not vod_pic:
+                    vod_pic = self.placeholder_pic
                 d.append({
                     'vod_id': vod_id,
                     'vod_name': vod_name,
@@ -276,9 +286,8 @@ class Spider(Spider):
             return {'list': [], 'parse': 0, 'jx': 0}
 
     def playerContent(self, flag, pid, vipFlags):
-        # pid 格式為 "https://m3u8.heimuertv.com/play/xxx.m3u8"
         try:
-            play_url = pid  # 直接使用 URL，不拆分
+            play_url = pid
             return {
                 'url': play_url,
                 'header': json.dumps(self.headers),
@@ -297,6 +306,9 @@ class Spider(Spider):
 
 if __name__ == '__main__':
     spider = Spider()
-    # 測試連續劇 detailContent
+    # 測試連續劇詳情
     result = spider.detailContent(['/vod/play-thrid/9b1169e9b7c04/1'])
+    print(json.dumps(result, ensure_ascii=False, indent=2))
+    # 測試篩選功能
+    result = spider.categoryContent('drama', '1', True, {'tag': 'xuanyi', 'area': 'us', 'year': '2025'})
     print(json.dumps(result, ensure_ascii=False, indent=2))

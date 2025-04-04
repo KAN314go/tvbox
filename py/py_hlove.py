@@ -150,9 +150,12 @@ class Spider(Spider):
         _tag = ext.get('tag', 'all')
         _area = ext.get('area', 'all')
         _year = ext.get('year', 'all')
-        url = f"{self.home_url}/{cid}/{_year}/{_tag}/{_area}"
+        # 根據華視界的 URL 結構調整
+        url = f"{self.home_url}/{cid}"
+        if _tag != 'all' or _area != 'all' or _year != 'all':
+            url += f"?year={_year}&tag={_tag}&area={_area}"
         if page != '1':
-            url += f"?page={page}"
+            url += f"&page={page}" if "?" in url else f"?page={page}"
         d = []
         try:
             res = requests.get(url, headers=self.headers)
@@ -163,8 +166,8 @@ class Spider(Spider):
             total = 0
             if next_data:
                 next_json = json.loads(next_data.group(1))
-                init_cards = next_json['props']['pageProps']['initCard']
-                total = next_json['props']['pageProps']['total']
+                init_cards = next_json['props']['pageProps'].get('initCard', [])
+                total = next_json['props']['pageProps'].get('total', 0)
                 for i, card in enumerate(data_list):
                     vod_name = card.xpath('.//div[contains(@class, "h-film-listall_name__Gyb9x")]/text()')[0].strip()
                     vod_id = card.get('href', '')
@@ -183,7 +186,7 @@ class Spider(Spider):
             return {'list': d, 'page': int(page), 'pagecount': 999, 'limit': 24, 'total': 0}
 
     def detailContent(self, did):
-        ids = did[0]  # 假設傳入的是 /vod/detail/VICsHCoQYhFl
+        ids = did[0]  # 假設傳入的是 /vod/detail/xxx 或 /vod/play-thrid/xxx/x
         video_list = []
         detail_url = f"{self.home_url}{ids}"
         try:
@@ -211,23 +214,23 @@ class Spider(Spider):
                 for group in collection_info['videosGroup']:
                     if not group.get('videos'):  # 跳過無視頻的線路
                         continue
-                    print(f"Debug: group['name'] = {group.get('name', 'N/A')}, videos count = {len(group['videos'])}, first video line = {group['videos'][0].get('line', 'N/A')}")
+                    line_name = group.get('name', '线路1')
                     if is_movie:
                         # 電影只取第一個有效線路的第一個視頻
                         video = group['videos'][0]
-                        play_from.append("线路1")  # 強制設為 "线路1"
+                        play_from.append(line_name)
                         play_url.append(f"{vod_name}${video['purl']}")
                         break  # 只取第一個線路
                     else:
-                        # 劇集處理多集
+                        # 劇集、動畫等處理多集
                         episodes = []
                         for video in group['videos']:
                             ep_name = f"第{video['eporder']}集"
                             ep_url = video['purl']
                             episodes.append(f"{ep_name}${ep_url}")
-                        play_from.append("线路1")  # 強制設為 "线路1"
+                        play_from.append(line_name)
                         play_url.append('#'.join(episodes))
-                        break  # 只取第一個線路
+                        break  # 只取第一個線路（可根據需求改進為多線路）
                 
                 video_list.append({
                     'vod_id': ids,
@@ -294,6 +297,6 @@ class Spider(Spider):
 
 if __name__ == '__main__':
     spider = Spider()
-    # 測試 detailContent
-    result = spider.detailContent(['/vod/detail/VICsHCoQYhFl'])
+    # 測試連續劇 detailContent
+    result = spider.detailContent(['/vod/play-thrid/9b1169e9b7c04/1'])
     print(json.dumps(result, ensure_ascii=False, indent=2))
