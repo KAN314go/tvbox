@@ -11,15 +11,18 @@ sys.path.append('..')
 from base.spider import Spider
 
 class Spider(Spider):
-    def getName(self):
-        return "華視頻"
-
-    def init(self, extend):
+    def __init__(self):
         self.home_url = 'https://hlove.tv'
         self.headers = {
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
             "Referer": "https://hlove.tv/",
         }
+
+    def init(self, extend):  # 添加 init 方法以滿足基類要求
+        pass  # 如果 extend 未使用，可以留空；否則在此處理 extend
+
+    def getName(self):
+        return "華視頻"
 
     def getDependence(self):
         return []
@@ -38,9 +41,9 @@ class Spider(Spider):
                 {'type_id': 'animation', 'type_name': '动漫'},
                 {'type_id': 'variety', 'type_name': '综艺'},
                 {'type_id': 'children', 'type_name': '儿童'},
-                {'type_id': 'documentary', 'type_name': '纪录片'},  # 新增紀錄片
-                {'type_id': 'sports', 'type_name': '体育'},  # 新增體育
-                {'type_id': 'live', 'type_name': '电视直播'}  # 新增電視直播
+                {'type_id': 'documentary', 'type_name': '纪录片'},
+                {'type_id': 'sports', 'type_name': '体育'},
+                {'type_id': 'live', 'type_name': '电视直播'}
             ],
             'filters': {
                 'movie': [
@@ -180,13 +183,12 @@ class Spider(Spider):
             return {'list': d, 'page': int(page), 'pagecount': 999, 'limit': 24, 'total': 0}
 
     def detailContent(self, did):
-        ids = did[0]  # 假設傳入的是 /vod/detail/se4pnjL1IF6D
+        ids = did[0]  # 假設傳入的是 /vod/detail/VICsHCoQYhFl
         video_list = []
         detail_url = f"{self.home_url}{ids}"
         try:
             res = requests.get(detail_url, headers=self.headers)
             res.encoding = 'utf-8'
-            root = etree.HTML(res.text)
             next_data = re.search(r'<script id="__NEXT_DATA__" type="application/json">(.*?)</script>', res.text)
             
             if next_data:
@@ -201,6 +203,7 @@ class Spider(Spider):
                 vod_actor = ', '.join([actor['name'] for actor in collection_info.get('actor', [])])
                 vod_director = ', '.join([director['name'] for director in collection_info.get('director', [])])
                 vod_pic = collection_info.get('imgUrl', 'https://image.tmdb.org/t/p/w600_and_h900_bestv2/placeholder.jpg')
+                is_movie = collection_info.get('isMovie', False)
                 
                 # 提取所有播放線路和集數
                 play_from = []
@@ -208,11 +211,19 @@ class Spider(Spider):
                 for group in collection_info['videosGroup']:
                     if group['videos']:  # 只處理有視頻的線路
                         episodes = []
-                        for video in group['videos']:
-                            ep_name = f"第{video['eporder']}集"
-                            ep_url = f"{video['purl']}#{video['eporder']}"  # 直接使用 purl，避免額外請求
+                        if is_movie:
+                            # 電影只取第一個播放地址
+                            video = group['videos'][0]
+                            ep_name = vod_name  # 電影使用標題作為集數名稱
+                            ep_url = f"{video['purl']}#1"
                             episodes.append(f"{ep_name}${ep_url}")
-                        play_from.append(group['name'])
+                        else:
+                            # 劇集處理多集
+                            for video in group['videos']:
+                                ep_name = f"第{video['eporder']}集"
+                                ep_url = f"{video['purl']}#{video['eporder']}"
+                                episodes.append(f"{ep_name}${ep_url}")
+                        play_from.append(group['name'])  # 確保使用線路名稱，如 "线路1"
                         play_url.append('#'.join(episodes))
                 
                 video_list.append({
@@ -259,7 +270,7 @@ class Spider(Spider):
             return {'list': [], 'parse': 0, 'jx': 0}
 
     def playerContent(self, flag, pid, vipFlags):
-        # pid 格式為 "https://m3u8.heimuertv.com/play/b5c8a93425774120a42a860021e072b5.m3u8#1"
+        # pid 格式為 "https://m3u8.heimuertv.com/play/xxx.m3u8#1"
         try:
             play_url, ep = pid.split('#')
             return {
@@ -279,4 +290,7 @@ class Spider(Spider):
         return '正在Destroy'
 
 if __name__ == '__main__':
-    pass
+    spider = Spider()
+    # 測試 detailContent
+    result = spider.detailContent(['/vod/detail/VICsHCoQYhFl'])
+    print(json.dumps(result, ensure_ascii=False, indent=2))
