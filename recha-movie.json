@@ -4,7 +4,20 @@
   "wallpaper": "https://tv.nxog.top/m//t/",
   "sites": [
 
-
+{
+            "key": "華視頻",
+            "name": "華視頻|測試",
+            "type": 3,
+            "api": "csp_XBPQ",
+            "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "ext": {
+                "分类url": "https://hlove.tv/vodshow/{cateId}/area/{area}/by/{by}/class/{class}/page/{catePg}/year/{year}.html",
+                "分类": "电影$1#电视剧$2#动漫$3#综艺$4#电视直播$5#儿童$6"
+            }
+        },
     {
       "key": "豆瓣",
       "name": "🇹🇼｜熱播排行榜｜自動切換",
