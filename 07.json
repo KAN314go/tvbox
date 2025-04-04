@@ -15,7 +15,7 @@
             "filterable": 1,
             "ext": {
               "数组": "h-film-listall_cardList___IXsY\"&&</a>",
-              "图片": "<img\"src=\"&&\"",
+              "图片": "src=\"&&\"",
                 "分类url": "https://hlove.tv/{cateId}/{year}/{class}/{area}",
                 "分类": "电影$movie#电视剧$drama#动漫$animation#综艺$variety#儿童$children",
                 "剧情": "劇情$juqing#喜劇$xiju",
