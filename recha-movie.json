@@ -14,7 +14,7 @@
             "quickSearch": 1,
             "filterable": 1,
             "ext": {
-                "分类url": "https://hlove.tv/{cateId}/{year}/{class}/{area}/",
+                "分类url": "https://hlove.tv/{cateId}/{year}/{class}/{area}",
                 "分类": "电影$movie#电视剧$drama#动漫$animation#综艺$variety#电视直播$5#儿童$children"
             }
         },
