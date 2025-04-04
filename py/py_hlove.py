@@ -18,8 +18,8 @@ class Spider(Spider):
             "Referer": "https://hlove.tv/",
         }
 
-    def init(self, extend):  # 添加 init 方法以滿足基類要求
-        pass  # 如果 extend 未使用，可以留空；否則在此處理 extend
+    def init(self, extend):
+        pass
 
     def getName(self):
         return "華視頻"
@@ -205,26 +205,29 @@ class Spider(Spider):
                 vod_pic = collection_info.get('imgUrl', 'https://image.tmdb.org/t/p/w600_and_h900_bestv2/placeholder.jpg')
                 is_movie = collection_info.get('isMovie', False)
                 
-                # 提取所有播放線路和集數
+                # 提取播放線路和集數
                 play_from = []
                 play_url = []
                 for group in collection_info['videosGroup']:
-                    if group['videos']:  # 只處理有視頻的線路
+                    if not group.get('videos'):  # 跳過無視頻的線路
+                        continue
+                    print(f"Debug: group['name'] = {group.get('name', 'N/A')}, videos count = {len(group['videos'])}, first video line = {group['videos'][0].get('line', 'N/A')}")
+                    if is_movie:
+                        # 電影只取第一個有效線路的第一個視頻
+                        video = group['videos'][0]
+                        play_from.append("线路1")  # 強制設為 "线路1"
+                        play_url.append(f"{vod_name}${video['purl']}")
+                        break  # 只取第一個線路
+                    else:
+                        # 劇集處理多集
                         episodes = []
-                        if is_movie:
-                            # 電影只取第一個播放地址
-                            video = group['videos'][0]
-                            ep_name = vod_name  # 電影使用標題作為集數名稱
-                            ep_url = f"{video['purl']}#1"
+                        for video in group['videos']:
+                            ep_name = f"第{video['eporder']}集"
+                            ep_url = video['purl']
                             episodes.append(f"{ep_name}${ep_url}")
-                        else:
-                            # 劇集處理多集
-                            for video in group['videos']:
-                                ep_name = f"第{video['eporder']}集"
-                                ep_url = f"{video['purl']}#{video['eporder']}"
-                                episodes.append(f"{ep_name}${ep_url}")
-                        play_from.append(group['name'])  # 確保使用線路名稱，如 "线路1"
+                        play_from.append("线路1")  # 強制設為 "线路1"
                         play_url.append('#'.join(episodes))
+                        break  # 只取第一個線路
                 
                 video_list.append({
                     'vod_id': ids,
@@ -270,9 +273,9 @@ class Spider(Spider):
             return {'list': [], 'parse': 0, 'jx': 0}
 
     def playerContent(self, flag, pid, vipFlags):
-        # pid 格式為 "https://m3u8.heimuertv.com/play/xxx.m3u8#1"
+        # pid 格式為 "https://m3u8.heimuertv.com/play/xxx.m3u8"
         try:
-            play_url, ep = pid.split('#')
+            play_url = pid  # 直接使用 URL，不拆分
             return {
                 'url': play_url,
                 'header': json.dumps(self.headers),
