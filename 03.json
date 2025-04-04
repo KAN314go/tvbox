@@ -14,7 +14,7 @@
             "quickSearch": 1,
             "filterable": 1,
             "ext": {
-              "数组": "class=\"h-film-listall_cardList___IXsY\"&&</a>",
+              "数组": "class=\"h-film-listall_imgs__TusdR\"&&</a>",
               "图片": "src=\"&&\"",
                 "分类url": "https://hlove.tv/{cateId}/{year}/{class}/{area}",
                 "分类": "电影$movie#电视剧$drama#动漫$animation#综艺$variety#儿童$children",
