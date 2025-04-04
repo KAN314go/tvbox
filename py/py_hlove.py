@@ -37,18 +37,21 @@ class Spider(Spider):
                 {'type_id': 'drama', 'type_name': '连续剧'},
                 {'type_id': 'animation', 'type_name': '动漫'},
                 {'type_id': 'variety', 'type_name': '综艺'},
-                {'type_id': 'children', 'type_name': '儿童'}
+                {'type_id': 'children', 'type_name': '儿童'},
+                {'type_id': 'documentary', 'type_name': '纪录片'},  # 新增紀錄片
+                {'type_id': 'sports', 'type_name': '体育'},  # 新增體育
+                {'type_id': 'live', 'type_name': '电视直播'}  # 新增電視直播
             ],
             'filters': {
                 'movie': [
                     {'name': '分类', 'key': 'tag', 'value': [
                         {'n': '全部', 'v': 'all'}, {'n': '动作', 'v': 'dongzuo'}, {'n': '喜剧', 'v': 'xiju'},
                         {'n': '爱情', 'v': 'aiqing'}, {'n': '科幻', 'v': 'kehuan'}, {'n': '恐怖', 'v': 'kongbu'},
-                        {'n': '剧情', 'v': 'juqing'}, {'n': '战争', 'v': 'zhanzheng'}]},
+                        {'n': '剧情', 'v': 'juqing'}, {'n': '战争', 'v': 'zhanzheng'}, {'n': '罪案', 'v': 'zuian'}]},
                     {'name': '地区', 'key': 'area', 'value': [
                         {'n': '全部', 'v': 'all'}, {'n': '中国大陆', 'v': 'cn'}, {'n': '美国', 'v': 'us'},
                         {'n': '韩国', 'v': 'kr'}, {'n': '香港', 'v': 'hk'}, {'n': '台湾', 'v': 'tw'},
-                        {'n': '日本', 'v': 'jp'}, {'n': '英国', 'v': 'gb'}]},
+                        {'n': '日本', 'v': 'jp'}, {'n': '英国', 'v': 'gb'}, {'n': '泰国', 'v': 'th'}]},
                     {'name': '年份', 'key': 'year', 'value': [
                         {'n': '全部', 'v': 'all'}, {'n': '2025', 'v': '2025'}, {'n': '2024', 'v': '2024'},
                         {'n': '2023', 'v': '2023'}, {'n': '2022', 'v': '2022'}, {'n': '2021', 'v': '2021'},
@@ -57,7 +60,8 @@ class Spider(Spider):
                 'drama': [
                     {'name': '分类', 'key': 'tag', 'value': [
                         {'n': '全部', 'v': 'all'}, {'n': '古装', 'v': 'guzhuang'}, {'n': '偶像', 'v': 'ouxiang'},
-                        {'n': '家庭', 'v': 'jiating'}, {'n': '悬疑', 'v': 'xuanyi'}, {'n': '都市', 'v': 'dushi'}]},
+                        {'n': '家庭', 'v': 'jiating'}, {'n': '悬疑', 'v': 'xuanyi'}, {'n': '都市', 'v': 'dushi'},
+                        {'n': '罪案', 'v': 'zuian'}]},
                     {'name': '地区', 'key': 'area', 'value': [
                         {'n': '全部', 'v': 'all'}, {'n': '中国大陆', 'v': 'cn'}, {'n': '美国', 'v': 'us'},
                         {'n': '韩国', 'v': 'kr'}, {'n': '香港', 'v': 'hk'}, {'n': '台湾', 'v': 'tw'},
@@ -96,6 +100,17 @@ class Spider(Spider):
                     {'name': '地区', 'key': 'area', 'value': [
                         {'n': '全部', 'v': 'all'}, {'n': '中国大陆', 'v': 'cn'}, {'n': '美国', 'v': 'us'},
                         {'n': '日本', 'v': 'jp'}]},
+                    {'name': '年份', 'key': 'year', 'value': [
+                        {'n': '全部', 'v': 'all'}, {'n': '2025', 'v': '2025'}, {'n': '2024', 'v': '2024'},
+                        {'n': '2023', 'v': '2023'}]}
+                ],
+                'documentary': [
+                    {'name': '分类', 'key': 'tag', 'value': [
+                        {'n': '全部', 'v': 'all'}, {'n': '历史', 'v': 'lishi'}, {'n': '自然', 'v': 'ziran'},
+                        {'n': '科学', 'v': 'kexue'}, {'n': '传记', 'v': 'zhuanji'}]},
+                    {'name': '地区', 'key': 'area', 'value': [
+                        {'n': '全部', 'v': 'all'}, {'n': '中国大陆', 'v': 'cn'}, {'n': '美国', 'v': 'us'},
+                        {'n': '英国', 'v': 'gb'}]},
                     {'name': '年份', 'key': 'year', 'value': [
                         {'n': '全部', 'v': 'all'}, {'n': '2025', 'v': '2025'}, {'n': '2024', 'v': '2024'},
                         {'n': '2023', 'v': '2023'}]}
@@ -168,7 +183,6 @@ class Spider(Spider):
         ids = did[0]  # 假設傳入的是 /vod/detail/se4pnjL1IF6D
         video_list = []
         detail_url = f"{self.home_url}{ids}"
-        play_url_base = f"{self.home_url}/vod/play-thrid{ids.split('/detail')[1]}"  # 轉換為播放頁基礎 URL
         try:
             res = requests.get(detail_url, headers=self.headers)
             res.encoding = 'utf-8'
@@ -188,19 +202,18 @@ class Spider(Spider):
                 vod_director = ', '.join([director['name'] for director in collection_info.get('director', [])])
                 vod_pic = collection_info.get('imgUrl', 'https://image.tmdb.org/t/p/w600_and_h900_bestv2/placeholder.jpg')
                 
-                # 提取播放列表
+                # 提取所有播放線路和集數
                 play_from = []
                 play_url = []
                 for group in collection_info['videosGroup']:
-                    if group['name'] == '线路1':  # 僅使用线路1
+                    if group['videos']:  # 只處理有視頻的線路
                         episodes = []
                         for video in group['videos']:
                             ep_name = f"第{video['eporder']}集"
-                            ep_url = f"{play_url_base}/{video['eporder']}"
+                            ep_url = f"{video['purl']}#{video['eporder']}"  # 直接使用 purl，避免額外請求
                             episodes.append(f"{ep_name}${ep_url}")
-                        play_from.append('華視頻')
+                        play_from.append(group['name'])
                         play_url.append('#'.join(episodes))
-                        break
                 
                 video_list.append({
                     'vod_id': ids,
@@ -246,37 +259,15 @@ class Spider(Spider):
             return {'list': [], 'parse': 0, 'jx': 0}
 
     def playerContent(self, flag, pid, vipFlags):
-        url = f"{self.home_url}{pid}"  # pid 為 /vod/play-thrid/se4pnjL1IF6D/1
+        # pid 格式為 "https://m3u8.heimuertv.com/play/b5c8a93425774120a42a860021e072b5.m3u8#1"
         try:
-            res = requests.get(url, headers=self.headers)
-            res.encoding = 'utf-8'
-            root = etree.HTML(res.text)
-            next_data = re.search(r'<script id="__NEXT_DATA__" type="application/json">(.*?)</script>', res.text)
-            
-            if next_data:
-                next_json = json.loads(next_data.group(1))
-                videos_group = next_json['props']['pageProps']['collectionInfo']['videosGroup']
-                ep = int(pid.split('/')[-1])  # 提取集數
-                for group in videos_group:
-                    if group['name'] == '线路1':  # 僅使用线路1
-                        for video in group['videos']:
-                            if video['eporder'] == ep:
-                                return {
-                                    'url': video['purl'],
-                                    'header': json.dumps(self.headers),
-                                    'parse': 0,
-                                    'jx': 0
-                                }
-            # 如果未找到，直接從 video 標籤提取
-            play_url = root.xpath('//video[@id="hlove-player"]/@src')
-            if play_url:
-                return {
-                    'url': play_url[0],
-                    'header': json.dumps(self.headers),
-                    'parse': 0,
-                    'jx': 0
-                }
-            return {'url': '', 'parse': 0, 'jx': 0}
+            play_url, ep = pid.split('#')
+            return {
+                'url': play_url,
+                'header': json.dumps(self.headers),
+                'parse': 0,
+                'jx': 0
+            }
         except Exception as e:
             print(f"Error in playerContent: {e}")
             return {'url': '', 'parse': 0, 'jx': 0}
