@@ -4,16 +4,7 @@
   "wallpaper": "https://tv.nxog.top/m//t/",
   "sites": [
 
-    {
-      "key": "py_NIVOD.CC",
-      "name": "🎖︎｜泥視頻.CC｜高清◎秒播(各種廣告)",
-        "type": 3,
-        "api": "./py/py_nivod_cc.py",
-        "searchable": 1,
-        "quickSearch": 1,
-        "filterable": 1,
-        "changeable": 1
-      },
+
     {
       "key": "py_華視界",
       "name": "🎖︎｜華視界｜測試",
@@ -1610,6 +1601,16 @@
       "quickSearch": 0,
       "filterable": 0,
       "changeable": 1
+    },
+    {
+      "key": "py_NIVOD.CC",
+      "name": "🎖︎｜泥視頻｜高清◎秒播(各種廣告+py)",
+        "type": 3,
+        "api": "./py/py_nivod_cc.py",
+        "searchable": 1,
+        "quickSearch": 1,
+        "filterable": 1,
+        "changeable": 1
     },
     {
       "key": "PKW",
