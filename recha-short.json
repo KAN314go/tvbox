@@ -35,6 +35,16 @@
         "changeable": 0
       },
       {
+        "key": "py_好帅短剧.py",
+        "name": "📺｜好帅短剧",
+        "type": 3,
+        "api": "./py/好帅短剧.py",
+       "searchable": 1,
+       "quickSearch": 1,
+        "filterable": 1,
+        "changeable": 0
+      },
+      {
         "key": "csp_AppXY",
         "name": "📺｜星芽短劇",
         "type": 3,
