@@ -5,6 +5,34 @@
   "sites": [
 
     {
+      "key": "csp_NIVOD.CC",
+      "name": "🎥｜泥視頻.CC｜高清◎秒播(黑木耳廣告)",
+      "type": 3,
+      "api": "csp_XBPQ",
+      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": 
+      {
+        "規則名": "泥視頻VIP",
+        "規則作者": "老王叔叔",
+        "規則日期": "113.11.29",
+        "ua":"Mozilla/5.0(WindowsNT10.0;Win64;x64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/108.0.0.0Safari/537.36",
+        "编码": "UTF-8",
+        "嗅探词": ".m3u8?#play.mtle.cn#.m3u8#.mp4",
+        "搜索url": "https://www.nivod.vip/s/{wd}-------------",
+        "影片类型": "module-info-tag\">&&立即播放",
+        "播放数组": "div class=\"module-play-list-content&&</div>",
+        "简介":"video-info-item video-info-content vod_content\">&&</span>",
+        "分类url":"https://www.nivod.cc/filter.html?channel={cateId}&region={area}&showtype={class}&year={year}&page={catePg}",
+        "分类": "電視劇$tv#電影$movie#綜藝$show#動漫$anime",
+        "剧情": "冒险$mao-xian#剧情$ju-qing#动作$dong-zuo#同性$tong-xing#喜剧$xi-ju#奇幻$qi-huan#恐怖$kong-bu#悬疑$xuan-yi#惊悚$jing-song#战争$zhan-zheng#歌舞$ge-wu#灾难$zai-nan#爱情$ai-qing#犯罪$fan-zui#科幻$ke-huan||剧情$ju-qing#动作$dong-zuo#历史$li-shi#历险$mao-xian#古装$gu-zhuang#同性$tong-xing#喜剧$xi-ju#奇幻$qi-huan#家庭$jia-ting#悬疑$xuan-yi#惊悚$zhan-zheng#战争$zhan-zheng#武侠$wu-xia#爱情$ai-qing#科幻$ke-huan#罪案$zui-an||搞笑$gao-xiao#音乐$yin-yue#真人秀$zhen-ren-xiu#脱口秀$tuo-kou-xiu||冒险$mao-xian#动画电影$movie#推理$tui-li#校园$xiao-yuan#治愈$zhi-yu#泡面$pao-mian#热血$re-xue#科幻$ke-huan#魔幻$mo-huan",
+        "地区": "大陆$cn#香港$hk#台湾$tw#欧美$west#泰国$th#新马$sg-my#其他$other||大陆$cn#香港$hk#台湾$tw#日本$jp#韩国$kr#欧美$west#泰国$th#新马$sg-my||大陆$cn#韩国$ke#欧美$west#其它$other||大陆$cn#日本$jp#欧美$west",
+    }
+""}},
+
+    {
       "key": "py_華視界",
       "name": "🎖︎｜華視界｜測試",
       "type": 3,
