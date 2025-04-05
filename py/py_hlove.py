@@ -35,11 +35,10 @@ class Spider(Spider):
         pass
 
     def homeContent(self, filter):
-        # 從 ext 中動態生成分類和篩選選項
         categories = "电影$movie#电视剧$drama#动漫$animation#综艺$variety#儿童$children"
-        classes = "全部$all#劇情$juqing#喜劇$xiju#懸疑$xuanyi#都市$dushi#罪案$zuian"  # 根據需求擴展
-        areas = "全部$all#大陸$cn#美國$us#韓國$kr#日本$jp#臺灣$tw#香港$hk#英國$gb"
-        years = "all&2025&2024&2023&2022&2021&2020&2010&2000&1990&1980&1970"
+        classes = "全部$all#動畫$animation#教育$education#益智$yizhi"  # 為兒童調整分類
+        areas = "全部$all#大陸$cn#美國$us#日本$jp#臺灣$tw"
+        years = "all&2025&2024&2023&2022&2021&2020"
 
         class_list = [{'type_id': v.split('$')[1], 'type_name': v.split('$')[0]} for v in categories.split('#')]
         filters = {
@@ -64,7 +63,7 @@ class Spider(Spider):
                 {'name': '年份', 'key': 'year', 'value': [{'n': v, 'v': v} for v in years.split('&')]}
             ],
             'children': [
-                {'name': '剧情', 'key': 'class', 'value': [{'n': v.split('$')[0], 'v': v.split('$')[1]} for v in classes.split('#')]},
+                {'name': '类型', 'key': 'class', 'value': [{'n': v.split('$')[0], 'v': v.split('$')[1]} for v in classes.split('#')]},
                 {'name': '地区', 'key': 'area', 'value': [{'n': v.split('$')[0], 'v': v.split('$')[1]} for v in areas.split('#')]},
                 {'name': '年份', 'key': 'year', 'value': [{'n': v, 'v': v} for v in years.split('&')]}
             ]
@@ -97,9 +96,8 @@ class Spider(Spider):
 
     def categoryContent(self, cid, page, filter, ext):
         _year = ext.get('year', 'all')
-        _class = ext.get('class', 'all')  # 使用 'class' 代替 'tag'，與配置一致
+        _class = ext.get('class', 'all')
         _area = ext.get('area', 'all')
-        # 使用分段 URL 格式
         url = f"{self.home_url}/{cid}/{_year}/{_class}/{_area}"
         if page != '1':
             url += f"?page={page}"
@@ -121,11 +119,9 @@ class Spider(Spider):
             for i, card in enumerate(data_list):
                 vod_name = card.xpath('.//div[contains(@class, "h-film-listall_name__Gyb9x")]/text()')[0].strip()
                 vod_id = card.get('href', '')
-                # 優先從 HTML 提取圖片
                 vod_pic_list = card.xpath('.//img[contains(@class, "h-film-listall_img__jiamS")]/@src')
                 vod_pic = vod_pic_list[0] if vod_pic_list else None
                 if not vod_pic or vod_pic == '/api/images/init':
-                    # 若 HTML 失敗，從 init_cards 提取
                     vod_pic = init_cards[i]['img'] if i < len(init_cards) and 'img' in init_cards[i] else self.placeholder_pic
                 vod_remarks = init_cards[i]['countStr'] if i < len(init_cards) and 'countStr' in init_cards[i] else ''
                 d.append({
@@ -169,12 +165,11 @@ class Spider(Spider):
                 for group in collection_info['videosGroup']:
                     if not group.get('videos'):
                         continue
-                    line_name = group.get('name', '线路1')
+                    line_name = group.get('name', '线路1')  # 獲取線路名稱，例如 "線路1"、"線路2"
                     if is_movie:
                         video = group['videos'][0]
                         play_from.append(line_name)
                         play_url.append(f"{vod_name}${video['purl']}")
-                        break
                     else:
                         episodes = []
                         for video in group['videos']:
@@ -183,7 +178,6 @@ class Spider(Spider):
                             episodes.append(f"{ep_name}${ep_url}")
                         play_from.append(line_name)
                         play_url.append('#'.join(episodes))
-                        break
                 
                 video_list.append({
                     'vod_id': ids,
@@ -203,31 +197,6 @@ class Spider(Spider):
             print(f"Error in detailContent: {e}")
             return {'list': [], 'msg': str(e)}
 
-    def searchContent(self, key, quick, page='1'):
-        url = f"{self.home_url}/search?q={key}&page={page}"
-        d = []
-        try:
-            res = requests.get(url, headers=self.headers)
-            res.encoding = 'utf-8'
-            root = etree.HTML(res.text)
-            data_list = root.xpath('//div[contains(@class, "h-film-listall_cardList___IXsY")]/a')
-            for i in data_list:
-                vod_name = i.xpath('.//div[contains(@class, "h-film-listall_name__Gyb9x")]/text()')[0].strip()
-                vod_id = i.get('href', '')
-                vod_pic = i.xpath('.//img[contains(@class, "h-film-listall_img__jiamS")]/@src')[0] if i.xpath('.//img[contains(@class, "h-film-listall_img__jiamS")]/@src') else self.placeholder_pic
-                if vod_pic == '/api/images/init':
-                    vod_pic = self.placeholder_pic
-                d.append({
-                    'vod_id': vod_id,
-                    'vod_name': vod_name,
-                    'vod_pic': vod_pic,
-                    'vod_remarks': ''
-                })
-            return {'list': d, 'parse': 0, 'jx': 0}
-        except Exception as e:
-            print(f"Error in searchContent: {e}")
-            return {'list': [], 'parse': 0, 'jx': 0}
-
     def playerContent(self, flag, pid, vipFlags):
         try:
             play_url = pid
@@ -241,6 +210,53 @@ class Spider(Spider):
             print(f"Error in playerContent: {e}")
             return {'url': '', 'parse': 0, 'jx': 0}
 
+    def generate_children_html(self, vod_id):
+        # 獲取視頻詳情
+        detail = self.detailContent([vod_id])
+        if not detail['list']:
+            return "<h1>無法加載內容</h1>"
+        
+        vod = detail['list'][0]
+        vod_name = vod['vod_name']
+        play_url = vod['vod_play_url'].split('$$$')[0].split('#')[0].split('$')[1]  # 取第一個播放地址
+        
+        # 生成適合兒童的簡單 HTML
+        html = f"""
+        <!DOCTYPE html>
+        <html lang="zh-CN">
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>{vod_name} - 兒童播放</title>
+            <style>
+                body {{ font-family: Arial, sans-serif; background-color: #f0f8ff; text-align: center; }}
+                h1 {{ color: #ff4500; }}
+                video {{ width: 100%; max-width: 600px; margin: 20px auto; }}
+            </style>
+        </head>
+        <body>
+            <h1>{vod_name}</h1>
+            <video controls controlsList="nodownload" oncontextmenu="return false;">
+                <source src="{play_url}" type="application/x-mpegURL">
+                您的瀏覽器不支持視頻播放。
+            </video>
+            <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+            <script>
+                var video = document.querySelector('video');
+                var videoSrc = '{play_url}';
+                if (Hls.isSupported()) {{
+                    var hls = new Hls();
+                    hls.loadSource(videoSrc);
+                    hls.attachMedia(video);
+                }} else if (video.canPlayType('application/vnd.apple.mpegurl')) {{
+                    video.src = videoSrc;
+                }}
+            </script>
+        </body>
+        </html>
+        """
+        return html
+
     def localProxy(self, params):
         pass
 
@@ -249,9 +265,8 @@ class Spider(Spider):
 
 if __name__ == '__main__':
     spider = Spider()
-    # 測試連續劇詳情
-    result = spider.detailContent(['/vod/play-thrid/9b1169e9b7c04/1'])
-    print(json.dumps(result, ensure_ascii=False, indent=2))
-    # 測試篩選功能
-    result = spider.categoryContent('drama', '1', True, {'year': '2025', 'class': 'xuanyi', 'area': 'us'})
-    print(json.dumps(result, ensure_ascii=False, indent=2))
+    # 測試兒童播放頁面
+    html = spider.generate_children_html('/vod/play-thrid/9b1169e9b7c04/1')
+    with open("children_player.html", "w", encoding="utf-8") as f:
+        f.write(html)
+    print("已生成 children_player.html")
