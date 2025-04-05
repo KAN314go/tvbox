@@ -7,6 +7,7 @@ import requests
 from lxml import etree
 import json
 import re
+import time
 from urllib.parse import urlencode
 sys.path.append('..')
 from base.spider import Spider
@@ -110,7 +111,6 @@ class Spider(Spider):
         _year = ext.get('year', '')
         _class = ext.get('class', '')
         _area = ext.get('area', '')
-        # 修正 URL，使用 urlencode 確保參數正確
         params = {
             'channel': tid,
             'region': _area,
@@ -137,11 +137,7 @@ class Spider(Spider):
                 print(f"First item HTML: {etree.tostring(data_list[0], encoding='unicode')[:200]}")
             
             limit = 20
-            start = (int(pg) - 1) * limit
-            end = start + limit
-            page_data = data_list[start:end]
-            
-            for i in page_data:
+            for i in data_list:
                 vod_id = i.xpath('.//a/@href')[0] if i.xpath('.//a/@href') else ''
                 name_nodes = i.xpath('.//a/@title')
                 vod_name = name_nodes[0].strip() if name_nodes else "未知"
@@ -165,14 +161,54 @@ class Spider(Spider):
                     'vod_remarks': vod_remarks
                 })
             
+            # 動態檢測總頁數
+            total_pages = self._get_total_pages(tid, _area, _class, _year)
+            
             result['page'] = int(pg)
-            result['pagecount'] = (len(data_list) + limit - 1) // limit
+            result['pagecount'] = total_pages
             result['limit'] = limit
-            result['total'] = len(data_list)
+            result['total'] = total_pages * limit  # 假設每頁 20 項，可根據實際情況調整
         except Exception as e:
             print(f"Error in categoryContent: {e}")
         
         return result
+
+    def _get_total_pages(self, channel, region, class_, year):
+        """動態檢測總頁數"""
+        page = 1
+        max_pages = 1
+        while True:
+            params = {
+                'channel': channel,
+                'region': region,
+                'class': class_,
+                'year': year,
+                'page': page
+            }
+            url = f"{self.home_url}/filter.html?{urlencode(params)}"
+            try:
+                res = requests.get(url, headers=self.headers)
+                res.encoding = 'utf-8'
+                root = etree.HTML(res.text)
+                data_list = root.xpath('//li[contains(@class, "qy-mod-li")]')
+                
+                if not data_list:  # 如果當前頁面沒有數據，假設已到達最後一頁
+                    break
+                
+                max_pages = page
+                page += 1
+                
+                # 添加一個合理上限，避免無限循環
+                if page > 100:
+                    break
+                
+                # 添加延遲，避免過快請求被封禁
+                time.sleep(1)
+            except Exception as e:
+                print(f"Error detecting total pages at page {page}: {e}")
+                break
+        
+        return max_pages
 
     def detailContent(self, array):
         result = {'list': []}
@@ -313,3 +349,12 @@ class Spider(Spider):
 
     def destroy(self):
         pass
+
+# 測試代碼（可選）
+if __name__ == "__main__":
+    spider = Spider()
+    result = spider.categoryContent('tv', '5', True, {'area': 'cn', 'year': '2024'})
+    print(f"Page: {result['page']}")
+    print(f"Page Count: {result['pagecount']}")
+    print(f"Total Items: {result['total']}")
+    print(f"Items in Current Page: {len(result['list'])}")
