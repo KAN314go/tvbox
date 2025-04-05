@@ -26,7 +26,7 @@
         "主演": "主演：&&</div>",
         "导演": "导演：&&</div>",
         "倒序": "1",
-        "播放数组": "href=\"/vodplay&&</a>",
+        //"播放数组": "href=\"/vodplay&&</a>",
         //"播放标题": "class=\"item\">&&</div>",
         "分类url":"https://www.nivod.cc/filter.html?channel={cateId}&region={area}&showtype={class}&year={year}&page={catePg}",
         "分类": "電影$movie#電視劇$tv#綜藝$show#動漫$anime",
