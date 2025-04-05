@@ -69,17 +69,15 @@ class Spider(Spider):
             res = requests.get(self.home_url, headers=self.headers)
             res.encoding = 'utf-8'
             root = etree.HTML(res.text)
-            # 嘗試多種 XPath 匹配推薦內容
-            data_list = root.xpath('//div[contains(@class, "qy-mod-link-wrap")]/a')
-            if not data_list:
-                data_list = root.xpath('//a[contains(@class, "qy-mod-link")]')
+            data_list = root.xpath('//div[contains(@class, "qy-mod-link-wrap")]/a') or root.xpath('//a[contains(@class, "qy-mod-link")]')
             
             for i in data_list:
-                # 改進標題提取：嘗試多種可能路徑
+                # 改進標題提取：過濾空白字符並嘗試更精確的路徑
                 name_nodes = (i.xpath('.//span[contains(@class, "qy-mod-text")]/text()') or 
                               i.xpath('.//div[contains(@class, "title")]/text()') or 
+                              i.xpath('.//span[@class="qy-mod-title"]/text()') or 
                               i.xpath('.//text()'))
-                vod_name = name_nodes[0].strip() if name_nodes else "未知"
+                vod_name = next((n.strip() for n in name_nodes if n.strip()), "未知")
                 vod_id = i.get('href', '')
                 pic_nodes = i.xpath('.//img/@src')
                 vod_pic = pic_nodes[0] if pic_nodes else self.placeholder_pic
@@ -93,7 +91,7 @@ class Spider(Spider):
                     'vod_pic': vod_pic,
                     'vod_remarks': vod_remarks
                 })
-            result['list'] = result['list'][:10]  # 限制為前10項
+            result['list'] = result['list'][:10]
         except Exception as e:
             print(f"Error in homeVideoContent: {e}")
         return result
@@ -109,13 +107,14 @@ class Spider(Spider):
             res = requests.get(url, headers=self.headers)
             res.encoding = 'utf-8'
             root = etree.HTML(res.text)
-            data_list = root.xpath('//a[contains(@class, "qy-mod-link")]')
+            # 調整 XPath 以匹配篩選頁結構
+            data_list = root.xpath('//div[contains(@class, "qy-vod-list")]/div/a') or root.xpath('//a[contains(@class, "qy-mod-link")]')
             for i in data_list:
-                # 改進標題提取：與 homeVideoContent 保持一致
                 name_nodes = (i.xpath('.//span[contains(@class, "qy-mod-text")]/text()') or 
                               i.xpath('.//div[contains(@class, "title")]/text()') or 
+                              i.xpath('.//span[@class="qy-mod-title"]/text()') or 
                               i.xpath('.//text()'))
-                vod_name = name_nodes[0].strip() if name_nodes else "未知"
+                vod_name = next((n.strip() for n in name_nodes if n.strip()), "未知")
                 vod_id = i.get('href', '')
                 pic_nodes = i.xpath('.//img/@src')
                 vod_pic = pic_nodes[0] if pic_nodes else self.placeholder_pic
@@ -130,7 +129,7 @@ class Spider(Spider):
                     'vod_remarks': vod_remarks
                 })
             result['page'] = int(pg)
-            result['pagecount'] = 999  # 暫時保留，後續可根據實際頁數調整
+            result['pagecount'] = 999
             result['limit'] = 24
             result['total'] = len(data_list)
         except Exception as e:
@@ -157,7 +156,6 @@ class Spider(Spider):
             if vod_pic.startswith('/'):
                 vod_pic = self.home_url + vod_pic
             
-            # 提取播放列表並獲取多線路
             episodes = root.xpath('//div[@id="list-jj"]/a')
             if not episodes:
                 print("未找到播放列表，可能頁面結構不匹配")
@@ -236,8 +234,9 @@ class Spider(Spider):
             for item in data_list:
                 name_nodes = (item.xpath('.//span[contains(@class, "qy-mod-text")]/text()') or 
                               item.xpath('.//div[contains(@class, "title")]/text()') or 
+                              item.xpath('.//span[@class="qy-mod-title"]/text()') or 
                               item.xpath('.//text()'))
-                vod_name = name_nodes[0].strip() if name_nodes else "未知"
+                vod_name = next((n.strip() for n in name_nodes if n.strip()), "未知")
                 vod_id = item.get('href', '')
                 pic_nodes = item.xpath('.//img/@src')
                 vod_pic = pic_nodes[0] if pic_nodes else self.placeholder_pic
@@ -277,22 +276,13 @@ class Spider(Spider):
 
 if __name__ == '__main__':
     spider = Spider()
-    # 測試 homeContent
     home = spider.homeContent(True)
     print("homeContent:", json.dumps(home, ensure_ascii=False, indent=2))
-    
-    # 測試 homeVideoContent
     home_video = spider.homeVideoContent()
     print("homeVideoContent:", json.dumps(home_video, ensure_ascii=False, indent=2))
-    
-    # 測試 categoryContent
     category = spider.categoryContent('tv', '1', True, {'year': '2025', 'class': 'ju-qing', 'area': 'cn'})
     print("categoryContent:", json.dumps(category, ensure_ascii=False, indent=2))
-    
-    # 測試 detailContent
     detail = spider.detailContent(['/voddetail/202552243'])
     print("detailContent:", json.dumps(detail, ensure_ascii=False, indent=2))
-    
-    # 測試 playerContent
     player = spider.playerContent("ikzy", "第15集$https://bfikuncdn.com/20250405/chbDASk8/index.m3u8", None)
     print("playerContent:", json.dumps(player, ensure_ascii=False, indent=2))
