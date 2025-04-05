@@ -72,11 +72,10 @@ class Spider(Spider):
             data_list = root.xpath('//div[contains(@class, "qy-mod-link-wrap")]/a') or root.xpath('//a[contains(@class, "qy-mod-link")]')
             
             for i in data_list:
-                # 改進標題提取：過濾空白字符並嘗試更精確的路徑
-                name_nodes = (i.xpath('.//span[contains(@class, "qy-mod-text")]/text()') or 
+                # 優先提取標題，排除集數
+                name_nodes = (i.xpath('.//span[@class="qy-mod-title"]/text()') or 
                               i.xpath('.//div[contains(@class, "title")]/text()') or 
-                              i.xpath('.//span[@class="qy-mod-title"]/text()') or 
-                              i.xpath('.//text()'))
+                              i.xpath('.//span[contains(@class, "qy-mod-text") and not(contains(@class, "qy-mod-label"))]/text()'))
                 vod_name = next((n.strip() for n in name_nodes if n.strip()), "未知")
                 vod_id = i.get('href', '')
                 pic_nodes = i.xpath('.//img/@src')
@@ -101,7 +100,8 @@ class Spider(Spider):
         _year = ext.get('year', '')
         _class = ext.get('class', '')
         _area = ext.get('area', '')
-        url = f"{self.home_url}/filter.html?channel={tid}region={_area}&showtype={_class}&year={_year}&page={pg}"
+        # 修正參數名稱：®ion -> region，showtype -> class
+        url = f"{self.home_url}/filter.html?channel={tid}&region={_area}&class={_class}&year={_year}&page={pg}"
         
         try:
             res = requests.get(url, headers=self.headers)
@@ -110,10 +110,9 @@ class Spider(Spider):
             # 調整 XPath 以匹配篩選頁結構
             data_list = root.xpath('//div[contains(@class, "qy-vod-list")]/div/a') or root.xpath('//a[contains(@class, "qy-mod-link")]')
             for i in data_list:
-                name_nodes = (i.xpath('.//span[contains(@class, "qy-mod-text")]/text()') or 
+                name_nodes = (i.xpath('.//span[@class="qy-mod-title"]/text()') or 
                               i.xpath('.//div[contains(@class, "title")]/text()') or 
-                              i.xpath('.//span[@class="qy-mod-title"]/text()') or 
-                              i.xpath('.//text()'))
+                              i.xpath('.//span[contains(@class, "qy-mod-text") and not(contains(@class, "qy-mod-label"))]/text()'))
                 vod_name = next((n.strip() for n in name_nodes if n.strip()), "未知")
                 vod_id = i.get('href', '')
                 pic_nodes = i.xpath('.//img/@src')
