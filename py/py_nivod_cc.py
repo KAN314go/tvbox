@@ -19,6 +19,8 @@ class Spider(Spider):
             "Referer": "https://www.nivod.cc/",
             "X-Requested-With": "XMLHttpRequest",
             "Accept": "application/json, text/javascript, */*; q=0.01",
+            "Accept-Language": "zh-CN,zh;q=0.9",
+            "Connection": "keep-alive",
         }
         self.placeholder_pic = 'https://image.tmdb.org/t/p/w600_and_h900_bestv2/placeholder.jpg'
 
@@ -78,15 +80,12 @@ class Spider(Spider):
                 print(f"First item HTML: {etree.tostring(data_list[0], encoding='unicode')}")
             
             for i in data_list:
-                # 從 <img> 的 alt 屬性提取標題
                 name_nodes = i.xpath('.//picture[@class="video-item-preview-img"]/img/@alt')
                 vod_name = name_nodes[0].strip() if name_nodes else None
-                # 備用方案：從 <a> 的 title 屬性提取
                 if not vod_name:
                     vod_name = i.xpath('./@title')
                     vod_name = vod_name[0].strip() if vod_name else "未知"
                 vod_id = i.get('href', '')
-                # 從 <img> 的 src 提取圖片
                 pic_nodes = i.xpath('.//picture[@class="video-item-preview-img"]/img/@src')
                 vod_pic = pic_nodes[0] if pic_nodes else self.placeholder_pic
                 if vod_pic.startswith('/'):
@@ -99,7 +98,7 @@ class Spider(Spider):
                     'vod_pic': vod_pic,
                     'vod_remarks': vod_remarks
                 })
-            result['list'] = result['list'][:10]  # 限制為前10個
+            result['list'] = result['list'][:10]
         except Exception as e:
             print(f"Error in homeVideoContent: {e}")
         return result
@@ -125,15 +124,12 @@ class Spider(Spider):
                 print(f"First item HTML: {etree.tostring(data_list[0], encoding='unicode')}")
             
             for i in data_list:
-                # 從 <img> 的 alt 屬性提取標題
                 name_nodes = i.xpath('.//picture[@class="video-item-preview-img"]/img/@alt')
                 vod_name = name_nodes[0].strip() if name_nodes else None
-                # 備用方案：從 <a> 的 title 屬性提取
                 if not vod_name:
                     vod_name = i.xpath('./@title')
                     vod_name = vod_name[0].strip() if vod_name else "未知"
                 vod_id = i.get('href', '')
-                # 從 <img> 的 src 提取圖片
                 pic_nodes = i.xpath('.//picture[@class="video-item-preview-img"]/img/@src')
                 vod_pic = pic_nodes[0] if pic_nodes else self.placeholder_pic
                 if vod_pic.startswith('/'):
