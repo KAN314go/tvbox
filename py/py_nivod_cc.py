@@ -106,7 +106,7 @@ class Spider(Spider):
         _year = ext.get('year', '')
         _class = ext.get('class', '')
         _area = ext.get('area', '')
-        url = f"{self.home_url}/filter.html?channel={tid}region={_area}&class={_class}&year={_year}&page={pg}"
+        url = f"{self.home_url}/filter.html?channel={tid}&region={_area}&class={_class}&year={_year}&page={pg}"
         
         try:
             res = requests.get(url, headers=self.headers)
