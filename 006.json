@@ -3,11 +3,9 @@
   "logo": "https://p3-pc.douyinpic.com/img/aweme-avatar/tos-cn-i-0813_6e2553f5708c414386eeca88b5f2674a~c5_300x300.jpeg?from=2956013662",
   "wallpaper": "https://tv.nxog.top/m//t/",
   "sites": [
-    {"key":"csp_XBiuNBYY","name":"👑泥視頻CC","type":3,"api":"csp_XBPQ","jar":"./jar/xyqxbpq.jar","searchable":1,"quickSearch":1,"filterable":1,"ext":{"简介":"video-info-item video-info-content vod_content\">&&</span>","分类url":"https://www.nbyy.cc/filter.html?channel={cateId}&year={year}","分类": "電視劇$tv#電影$movie#動漫$anime#綜藝$show"}},
-
     {
       "key": "csp_NIVOD.CC",
-      "name": "🎥｜泥視頻.CC｜高清◎秒播(黑木耳廣告)",
+      "name": "🎥｜泥視頻.CC｜高清◎秒播(各種廣告)",
       "type": 3,
       "api": "csp_XBPQ",
       "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
@@ -22,6 +20,7 @@
         "ua":"Mozilla/5.0(WindowsNT10.0;Win64;x64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/108.0.0.0Safari/537.36",
         "编码": "UTF-8",
         "数组": "class=\"qy-mod-link-wrap\"&&</li>",
+        "图片": "https://www.nivod.cc+data-original=\"&&\"",
         "嗅探词": ".m3u8?#play.mtle.cn#.m3u8#.mp4",
         "搜索url": "https://www.nivod.cc/search_x.html?keyword={wd}",
         "简介":"描述：&&</div>",
