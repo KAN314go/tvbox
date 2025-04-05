@@ -15,23 +15,6 @@
       "changeable": 0
     },
     {
-      "key": "華視界",
-      "name": "🎖︎｜華視界|測試",
-      "type": 3,
-      "api": "csp_XBPQ",
-      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": {
-          "分类url": "https://hlove.tv/{cateId}/{year}/{class}/{area}",
-          "分类": "电影$movie#电视剧$drama#动漫$animation#综艺$variety#儿童$children",
-          "剧情": "全部$all#劇情$juqing#喜劇$xiju",
-          "地区": "全部$all#大陸$cn#美國$us#韓國$kr#日本$jp#臺灣$tw#香港$hk#英國$gb",
-          "年份": "all&2025&2024&2023&2022&2021&2020&2010&2000&1990&1980&1970"
-      }
-    },
-    {
       "key": "豆瓣",
       "name": "🇹🇼｜熱播排行榜｜自動切換",
       "type": 3,
