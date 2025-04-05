@@ -7,7 +7,6 @@ import requests
 from lxml import etree
 import json
 import re
-import time
 from urllib.parse import urlencode
 sys.path.append('..')
 from base.spider import Spider
@@ -71,17 +70,8 @@ class Spider(Spider):
         try:
             res = requests.get(self.home_url, headers=self.headers)
             res.encoding = 'utf-8'
-            print(f"homeVideoContent Response Headers: {res.headers}")
-            print(f"homeVideoContent HTML length: {len(res.text)}")
-            print(f"homeVideoContent HTML snippet: {res.text[:500]}")
-            
             root = etree.HTML(res.text)
             data_list = root.xpath('//div[contains(@class, "qy-mod-link-wrap")]/a')
-            
-            print(f"homeVideoContent data_list length: {len(data_list)}")
-            if data_list:
-                print(f"First item HTML: {etree.tostring(data_list[0], encoding='unicode')}")
-            
             for i in data_list:
                 name_nodes = i.xpath('.//picture[@class="video-item-preview-img"]/img/@alt')
                 vod_name = name_nodes[0].strip() if name_nodes else None
@@ -125,16 +115,10 @@ class Spider(Spider):
             res.encoding = 'utf-8'
             print(f"categoryContent URL: {url}")
             print(f"categoryContent Response Status: {res.status_code}")
-            print(f"categoryContent Response Headers: {res.headers}")
             print(f"categoryContent HTML length: {len(res.text)}")
-            print(f"categoryContent HTML snippet: {res.text[:500]}")
             
             root = etree.HTML(res.text)
             data_list = root.xpath('//li[contains(@class, "qy-mod-li")]')
-            
-            print(f"categoryContent data_list length: {len(data_list)}")
-            if data_list:
-                print(f"First item HTML: {etree.tostring(data_list[0], encoding='unicode')[:200]}")
             
             for i in data_list:
                 vod_id = i.xpath('.//a/@href')[0] if i.xpath('.//a/@href') else ''
@@ -160,24 +144,26 @@ class Spider(Spider):
                     'vod_remarks': vod_remarks
                 })
             
-            # 獲取總頁數和總項目數
-            total_pages, total_items = self._get_total_pages_and_items(tid, _area, _class, _year)
+            # 獲取總頁數和總項目數，傳入當前頁
+            total_pages, total_items = self._get_total_pages_and_items(tid, _area, _class, _year, int(pg))
             
             result['page'] = int(pg)
             result['pagecount'] = total_pages
-            result['limit'] = len(data_list)  # 使用當前頁面的實際項目數
+            result['limit'] = len(data_list)
             result['total'] = total_items
         except Exception as e:
             print(f"Error in categoryContent: {e}")
         
         return result
 
-    def _get_total_pages_and_items(self, channel, region, class_, year):
-        """動態檢測總頁數和總項目數"""
+    def _get_total_pages_and_items(self, channel, region, class_, year, current_pg):
+        """動態檢測總頁數和總項目數，限制最多 6 頁"""
         page = 1
         total_pages = 1
         total_items = 0
-        while True:
+        max_pages = 6  # 假設總頁數不超過 6
+        
+        while page <= max_pages:
             params = {
                 'channel': channel,
                 'region': region,
@@ -199,12 +185,9 @@ class Spider(Spider):
                 total_pages = page
                 page += 1
                 
-                # 添加一個合理上限，避免無限循環
-                if page > 100:
+                # 如果當前頁已經是請求頁，且後續頁無需檢測，可以提前結束
+                if page > current_pg and len(data_list) < 48:  # 假設每頁最多 48 個項目
                     break
-                
-                # 添加延遲，避免過快請求被封禁
-                time.sleep(1)
             except Exception as e:
                 print(f"Error detecting total pages at page {page}: {e}")
                 break
@@ -218,10 +201,6 @@ class Spider(Spider):
         try:
             res = requests.get(detail_url, headers=self.headers)
             res.encoding = 'utf-8'
-            print(f"detailContent Response Status: {res.status_code}")
-            print(f"detailContent Response Headers: {res.headers}")
-            print(f"detailContent HTML snippet: {res.text[:500]}")
-            
             root = etree.HTML(res.text)
             vod_name = root.xpath('//div[@class="right-title"]/text()')[0].strip() if root.xpath('//div[@class="right-title"]') else "未知"
             vod_year = root.xpath('//div[@id="postYear"]/text()')[0].strip() if root.xpath('//div[@id="postYear"]') else ""
@@ -307,7 +286,6 @@ class Spider(Spider):
             res.encoding = 'utf-8'
             root = etree.HTML(res.text)
             data_list = root.xpath('//a[contains(@class, "qy-mod-link")]')
-            
             for item in data_list:
                 name_nodes = item.xpath('.//picture[@class="video-item-preview-img"]/img/@alt')
                 vod_name = name_nodes[0].strip() if name_nodes else None
@@ -354,7 +332,11 @@ class Spider(Spider):
 # 測試代碼
 if __name__ == "__main__":
     spider = Spider()
+    import time
+    start = time.time()
     result = spider.categoryContent('tv', '5', True, {'area': 'cn', 'year': '2024'})
+    end = time.time()
+    print(f"Time taken: {end - start:.2f} seconds")
     print(f"Page: {result['page']}")
     print(f"Page Count: {result['pagecount']}")
     print(f"Total Items: {result['total']}")
