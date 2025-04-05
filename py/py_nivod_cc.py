@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Author  : Adapted for 泥視頻.CC with Multi-Source Support
+# @Author  : 老王叔叔 for 泥視頻.CC with Multi-Source Support
 # @Time    : 2025/04/06
 
 import sys
@@ -146,7 +146,7 @@ class Spider(Spider):
             
             # 假設每頁 48 個項目，根據當前頁數據推算總頁數
             current_items = len(data_list)
-            total_pages = 10  # 默認最大頁數
+            total_pages = 6  # 默認最大頁數
             if current_items < 48:  # 如果當前頁項目少於 48，假設是最後一頁
                 total_pages = int(pg)
             total_items = (int(pg) - 1) * 48 + current_items if total_pages == int(pg) else total_pages * 48
@@ -294,16 +294,3 @@ class Spider(Spider):
 
     def destroy(self):
         pass
-
-# 測試代碼
-if __name__ == "__main__":
-    spider = Spider()
-    import time
-    start = time.time()
-    result = spider.categoryContent('tv', '5', True, {'area': 'cn', 'year': '2024'})
-    end = time.time()
-    print(f"Time taken: {end - start:.2f} seconds")
-    print(f"Page: {result['page']}")
-    print(f"Page Count: {result['pagecount']}")
-    print(f"Total Items: {result['total']}")
-    print(f"Items in Current Page: {len(result['list'])}")
