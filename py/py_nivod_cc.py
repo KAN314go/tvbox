@@ -72,22 +72,25 @@ class Spider(Spider):
             root = etree.HTML(res.text)
             data_list = root.xpath('//div[contains(@class, "qy-mod-link-wrap")]/a')
             
-            # 調試：打印 HTML 和提取的節點數
             print(f"homeVideoContent HTML length: {len(res.text)}")
             print(f"homeVideoContent data_list length: {len(data_list)}")
             if data_list:
                 print(f"First item HTML: {etree.tostring(data_list[0], encoding='unicode')}")
             
             for i in data_list:
-                # 嘗試主 XPath 提取標題
-                name_nodes = i.xpath('.//div[@class="title-wrap"]/p[@class="main"]/a/span/text()')
+                # 從 <img> 的 alt 屬性提取標題
+                name_nodes = i.xpath('.//picture[@class="video-item-preview-img"]/img/@alt')
                 vod_name = name_nodes[0].strip() if name_nodes else None
-                # 如果失敗，嘗試從 <a> 的 title 屬性提取
+                # 備用方案：從 <a> 的 title 屬性提取
                 if not vod_name:
                     vod_name = i.xpath('./@title')
                     vod_name = vod_name[0].strip() if vod_name else "未知"
                 vod_id = i.get('href', '')
-                vod_pic = self.placeholder_pic
+                # 從 <img> 的 src 提取圖片
+                pic_nodes = i.xpath('.//picture[@class="video-item-preview-img"]/img/@src')
+                vod_pic = pic_nodes[0] if pic_nodes else self.placeholder_pic
+                if vod_pic.startswith('/'):
+                    vod_pic = self.home_url + vod_pic
                 remark_nodes = i.xpath('.//span[contains(@class, "qy-mod-label")]/text()')
                 vod_remarks = remark_nodes[0].strip() if remark_nodes else ''
                 result['list'].append({
@@ -114,32 +117,27 @@ class Spider(Spider):
             root = etree.HTML(res.text)
             data_list = root.xpath('//div[contains(@class, "qy-mod-link-wrap")]/a')
             
-            # 調試：打印 HTML 和提取的節點數
             print(f"categoryContent URL: {url}")
             print(f"categoryContent HTML length: {len(res.text)}")
+            print(f"categoryContent response: {res.text}")
             print(f"categoryContent data_list length: {len(data_list)}")
             if data_list:
                 print(f"First item HTML: {etree.tostring(data_list[0], encoding='unicode')}")
             
             for i in data_list:
-                # 嘗試主 XPath 提取標題
-                name_nodes = i.xpath('.//div[@class="title-wrap"]/p[@class="main"]/a/span/text()')
+                # 從 <img> 的 alt 屬性提取標題
+                name_nodes = i.xpath('.//picture[@class="video-item-preview-img"]/img/@alt')
                 vod_name = name_nodes[0].strip() if name_nodes else None
-                # 如果失敗，嘗試從 <a> 的 title 屬性提取
+                # 備用方案：從 <a> 的 title 屬性提取
                 if not vod_name:
                     vod_name = i.xpath('./@title')
                     vod_name = vod_name[0].strip() if vod_name else "未知"
                 vod_id = i.get('href', '')
-                # 提取圖片
-                style_nodes = i.xpath('.//div[contains(@class, "qy-mod-cover")]/@style')
-                vod_pic = self.placeholder_pic
-                if style_nodes:
-                    style = style_nodes[0]
-                    match = re.search(r'url\((.*?)\)', style)
-                    if match:
-                        vod_pic = match.group(1).strip()
-                        if vod_pic.startswith('/'):
-                            vod_pic = self.home_url + vod_pic
+                # 從 <img> 的 src 提取圖片
+                pic_nodes = i.xpath('.//picture[@class="video-item-preview-img"]/img/@src')
+                vod_pic = pic_nodes[0] if pic_nodes else self.placeholder_pic
+                if vod_pic.startswith('/'):
+                    vod_pic = self.home_url + vod_pic
                 remark_nodes = i.xpath('.//span[contains(@class, "qy-mod-label")]/text()')
                 vod_remarks = remark_nodes[0].strip() if remark_nodes else ''
                 result['list'].append({
@@ -149,7 +147,7 @@ class Spider(Spider):
                     'vod_remarks': vod_remarks
                 })
             result['page'] = int(pg)
-            result['pagecount'] = 999  # 假設值，待完善
+            result['pagecount'] = 999  # 假設值
             result['limit'] = 24
             result['total'] = len(data_list)
         except Exception as e:
@@ -251,21 +249,16 @@ class Spider(Spider):
             data_list = root.xpath('//a[contains(@class, "qy-mod-link")]')
             
             for item in data_list:
-                name_nodes = item.xpath('.//div[@class="title-wrap"]/p[@class="main"]/a/span/text()')
+                name_nodes = item.xpath('.//picture[@class="video-item-preview-img"]/img/@alt')
                 vod_name = name_nodes[0].strip() if name_nodes else None
                 if not vod_name:
                     vod_name = item.xpath('./@title')
                     vod_name = vod_name[0].strip() if vod_name else "未知"
                 vod_id = item.get('href', '')
-                style_nodes = item.xpath('.//div[contains(@class, "qy-mod-cover")]/@style')
-                vod_pic = self.placeholder_pic
-                if style_nodes:
-                    style = style_nodes[0]
-                    match = re.search(r'url\((.*?)\)', style)
-                    if match:
-                        vod_pic = match.group(1).strip()
-                        if vod_pic.startswith('/'):
-                            vod_pic = self.home_url + vod_pic
+                pic_nodes = item.xpath('.//picture[@class="video-item-preview-img"]/img/@src')
+                vod_pic = pic_nodes[0] if pic_nodes else self.placeholder_pic
+                if vod_pic.startswith('/'):
+                    vod_pic = self.home_url + vod_pic
                 vod_remarks = ''
                 result['list'].append({
                     'vod_id': vod_id,
