@@ -40,8 +40,8 @@ class Spider(Spider):
         class_list = [{'type_id': v.split('$')[1], 'type_name': v.split('$')[0]} for v in categories.split('#')]
 
         # 電影篩選條件
-        movie_classes = "全部$all#剧情$juqing#喜剧$xiju#动作$dongzuo#惊悚$jingsong#爱情$aiqing#恐怖$kongbu#犯罪$fanzui#冒险$maoxian#奇幻$qihuan#悬疑$xuanyi#科幻$kehuan#家庭$jiating#动画$donghua#历史$lishi#战争$zhanzheng#音乐$yinle#动漫$dongman#电视电影$dianshidian conflictingying#西部$xibu#网络电影$wangluodianying#纪录$jilu#同性$tongxing#歌舞$gewu#灾难$zainan#动作冒险$dongzuomaoxian#战争政治$zhanzhengzhengzhi"
-        movie_areas = "全部$all#中国大陆$cn#美国$us#韩国$kr#香港$hk#台湾$tw#日本$jp#英国$gb#泰国$th#西班牙$sp#加拿大$ca#法国$fr#印度$in#澳大利亚$au#其他地区$others"
+        movie_classes = "全部$all#剧情$juqing#喜剧$xiju#动作$dongzuo#惊悚$jingsong#爱情$aiqing#恐怖$kongbu#犯罪$fanzui#冒险$maoxian#奇幻$qihuan#悬疑$xuanyi#科幻$kehuan#家庭$jiating#动画$donghua#历史$lishi#战争$zhanzheng#音乐$yinle#动漫$dongman#电视电影$dianshidianying#西部$xibu#网络电影$wangluodianying#纪录$jilu#同性$tongxing#歌舞$gewu#灾难$zainan#动作冒险$dongzuomaoxian#战争政治$zhanzhengzhengzhi"
+        movie_areas = "全部$all#中国大陆$cn#美国 Lacan$us#韩国$kr#香港$hk#台湾$tw#日本$jp#英国$gb#泰国$th#西班牙$sp#加拿大$ca#法国$fr#印度$in#澳大利亚$au#其他地区$others"
         movie_years = "全部$all#2025$2025#2024$2024#2023$2023#2022$2022#2021$2021#2020$2020#2019-2010$2010#2009-2000$2000#90年代$1990#80年代$1980#更早$1970"
 
         # 電視劇篩選條件
@@ -220,6 +220,38 @@ class Spider(Spider):
         except Exception as e:
             print(f"Error in detailContent: {e}")
             return {'list': [], 'msg': str(e)}
+
+    def searchContent(self, key, quick):
+        """
+        搜索內容
+        :param key: 搜索關鍵詞
+        :param quick: 是否快速搜索（可選參數）
+        :return: 搜索結果列表
+        """
+        try:
+            search_url = f"{self.home_url}/search?q={key}"
+            res = requests.get(search_url, headers=self.headers)
+            res.encoding = 'utf-8'
+            root = etree.HTML(res.text)
+            data_list = root.xpath('//div[contains(@class, "h-film-listall_cardList___IXsY")]/a')
+            
+            result = []
+            for item in data_list:
+                vod_name = item.xpath('.//div[contains(@class, "h-film-listall_name__Gyb9x")]/text()')[0].strip()
+                vod_id = item.get('href', '')
+                vod_pic = item.xpath('.//img[contains(@class, "h-film-listall_img__jiamS")]/@src')[0] if item.xpath('.//img[contains(@class, "h-film-listall_img__jiamS")]/@src') else self.placeholder_pic
+                if vod_pic == '/api/images/init':
+                    vod_pic = self.placeholder_pic
+                result.append({
+                    'vod_id': vod_id,
+                    'vod_name': vod_name,
+                    'vod_pic': vod_pic,
+                    'vod_remarks': ''
+                })
+            return {'list': result}
+        except Exception as e:
+            print(f"Error in searchContent: {e}")
+            return {'list': []}
 
     def playerContent(self, flag, pid, vipFlags):
         try:
