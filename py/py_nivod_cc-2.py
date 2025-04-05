@@ -136,6 +136,7 @@ class Spider(Spider):
             if data_list:
                 print(f"First item HTML: {etree.tostring(data_list[0], encoding='unicode')[:200]}")
             
+            limit = 20
             for i in data_list:
                 vod_id = i.xpath('.//a/@href')[0] if i.xpath('.//a/@href') else ''
                 name_nodes = i.xpath('.//a/@title')
@@ -160,23 +161,22 @@ class Spider(Spider):
                     'vod_remarks': vod_remarks
                 })
             
-            # 獲取總頁數和總項目數
-            total_pages, total_items = self._get_total_pages_and_items(tid, _area, _class, _year)
+            # 動態檢測總頁數
+            total_pages = self._get_total_pages(tid, _area, _class, _year)
             
             result['page'] = int(pg)
             result['pagecount'] = total_pages
-            result['limit'] = len(data_list)  # 使用當前頁面的實際項目數
-            result['total'] = total_items
+            result['limit'] = limit
+            result['total'] = total_pages * limit  # 假設每頁 20 項，可根據實際情況調整
         except Exception as e:
             print(f"Error in categoryContent: {e}")
         
         return result
 
-    def _get_total_pages_and_items(self, channel, region, class_, year):
-        """動態檢測總頁數和總項目數"""
+    def _get_total_pages(self, channel, region, class_, year):
+        """動態檢測總頁數"""
         page = 1
-        total_pages = 1
-        total_items = 0
+        max_pages = 1
         while True:
             params = {
                 'channel': channel,
@@ -195,8 +195,7 @@ class Spider(Spider):
                 if not data_list:  # 如果當前頁面沒有數據，假設已到達最後一頁
                     break
                 
-                total_items += len(data_list)
-                total_pages = page
+                max_pages = page
                 page += 1
                 
                 # 添加一個合理上限，避免無限循環
@@ -209,7 +208,7 @@ class Spider(Spider):
                 print(f"Error detecting total pages at page {page}: {e}")
                 break
         
-        return total_pages, total_items
+        return max_pages
 
     def detailContent(self, array):
         result = {'list': []}
@@ -351,7 +350,7 @@ class Spider(Spider):
     def destroy(self):
         pass
 
-# 測試代碼
+# 測試代碼（可選）
 if __name__ == "__main__":
     spider = Spider()
     result = spider.categoryContent('tv', '5', True, {'area': 'cn', 'year': '2024'})
