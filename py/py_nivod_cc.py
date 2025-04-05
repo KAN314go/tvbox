@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Author  : Adapted for 泥視頻.CC as CatVod Interface
+# @Author  : Adapted for 泥視頻.CC as CatVod Interface with Multi-Source Support
 # @Time    : 2025/04/05
 
 import sys
@@ -94,7 +94,7 @@ class Spider(Spider):
         _year = ext.get('year', '')
         _class = ext.get('class', '')
         _area = ext.get('area', '')
-        url = f"{self.home_url}/filter.html?channel={tid}&region={_area}&showtype={_class}&year={_year}&page={pg}"
+        url = f"{self.home_url}/filter.html?channel={tid}®ion={_area}&showtype={_class}&year={_year}&page={pg}"
         
         try:
             res = requests.get(url, headers=self.headers)
@@ -113,7 +113,7 @@ class Spider(Spider):
                     'vod_remarks': vod_remarks
                 })
             result['page'] = int(pg)
-            result['pagecount'] = 999  # 假設最大頁數，實際可根據網站調整
+            result['pagecount'] = 999
             result['limit'] = 24
             result['total'] = len(data_list)
         except Exception as e:
@@ -141,30 +141,56 @@ class Spider(Spider):
             vod_director = root.xpath('//div[@id="director"]/text()')[0].strip() if root.xpath('//div[@id="director"]') else ""
             vod_pic = root.xpath('//img[@class="left-img"]/@src')[0] if root.xpath('//img[@class="left-img"]') else self.placeholder_pic
             
-            # 提取播放列表
-            play_from = ["泥視頻"]
-            play_url = []
+            # 提取播放列表並獲取多線路
             episodes = root.xpath('//div[@id="list-jj"]/a')
             if not episodes:
                 print("未找到播放列表，可能頁面結構不匹配")
-            for ep in episodes[::-1]:
-                ep_name = ep.xpath('.//div[@class="item"]/text()')[0].strip() if ep.xpath('.//div[@class="item"]') else "未知"
-                ep_url = self.home_url + ep.get('href', '')
-                play_url.append(f"{ep_name}${ep_url}")
+                play_from = ["泥視頻"]
+                play_url = ["第1集$https://www.nivod.cc/vodplay/202552243/ep1"]
+            else:
+                play_from = []
+                play_urls = {}
+                episode_names = []
+                
+                # 獲取所有集數名稱
+                for ep in episodes[::-1]:
+                    ep_name = ep.xpath('.//div[@class="item"]/text()')[0].strip() if ep.xpath('.//div[@class="item"]') else "未知"
+                    ep_url = self.home_url + ep.get('href', '')
+                    episode_names.append(ep_name)
+                
+                # 獲取每集的多線路
+                for ep in episodes[::-1]:
+                    ep_name = ep.xpath('.//div[@class="item"]/text()')[0].strip() if ep.xpath('.//div[@class="item"]') else "未知"
+                    ep_url = self.home_url + ep.get('href', '')
+                    xhr_url = f"{self.home_url}/xhr_playinfo/{ids.split('/')[2]}-{ep_url.split('/')[-1]}"
+                    res = requests.get(xhr_url, headers=self.headers)
+                    res.encoding = 'utf-8'
+                    data = res.json()
+                    if 'pdatas' in data and data['pdatas']:
+                        for source in data['pdatas']:
+                            source_name = source['from']
+                            if source_name not in play_from:
+                                play_from.append(source_name)
+                                play_urls[source_name] = []
+                            play_urls[source_name].append(f"{ep_name}${source['playurl']}")
+            
+            # 構建 vod_play_from 和 vod_play_url
+            vod_play_from = '$$$'.join(play_from)
+            vod_play_url = '$$$'.join(['#'.join(play_urls[source]) for source in play_from])
             
             vod = {
                 'vod_id': ids,
                 'vod_name': vod_name,
                 'vod_pic': vod_pic,
-                'type_name': '',  # 可根據實際分類填充
+                'type_name': '',
                 'vod_year': vod_year,
                 'vod_area': vod_area,
                 'vod_remarks': vod_remarks,
                 'vod_actor': vod_actor,
                 'vod_director': vod_director,
                 'vod_content': vod_content,
-                'vod_play_from': '$$$'.join(play_from),
-                'vod_play_url': '$$$'.join(play_url) if play_url else ""
+                'vod_play_from': vod_play_from,
+                'vod_play_url': vod_play_url
             }
             result['list'].append(vod)
         except Exception as e:
@@ -205,14 +231,21 @@ class Spider(Spider):
     def playerContent(self, flag, id, vipFlags):
         result = {}
         try:
-            if '/vodplay' not in id:
-                raise Exception("無效的播放 URL")
-            
-            parsed_url = urlparse(id)
-            path_parts = parsed_url.path.split('/')
-            vod_id = path_parts[2]  # "202552243"
-            ep_id = path_parts[3]   # "ep15"
-            xhr_url = f"{self.home_url}/xhr_playinfo/{vod_id}-{ep_id}"
+            if '$' not in id:  # 如果 id 是原始 URL，需轉換
+                parsed_url = urlparse(id)
+                path_parts = parsed_url.path.split('/')
+                vod_id = path_parts[2]
+                ep_id = path_parts[3]
+                xhr_url = f"{self.home_url}/xhr_playinfo/{vod_id}-{ep_id}"
+            else:  # 如果 id 已包含播放地址
+                play_url = id.split('$')[1]
+                result = {
+                    'url': play_url,
+                    'header': json.dumps(self.headers),
+                    'parse': 0,
+                    'playUrl': ''
+                }
+                return result
             
             print(f"正在請求播放信息: {xhr_url}")
             res = requests.get(xhr_url, headers=self.headers)
@@ -226,13 +259,12 @@ class Spider(Spider):
             if 'pdatas' not in data or not data['pdatas']:
                 raise Exception("未找到播放數據")
             
-            # 返回第一條線路的播放地址
             play_url = data['pdatas'][0]['playurl']
             result = {
                 'url': play_url,
                 'header': json.dumps(self.headers),
-                'parse': 0,  # 直接播放 .m3u8，不需解析
-                'playUrl': ''  # 若需要代理播放，可在此設置
+                'parse': 0,
+                'playUrl': ''
             }
         except Exception as e:
             print(f"Error in playerContent: {e}")
