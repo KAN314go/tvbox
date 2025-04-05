@@ -110,6 +110,7 @@ class Spider(Spider):
         _year = ext.get('year', '')
         _class = ext.get('class', '')
         _area = ext.get('area', '')
+        # 修正 URL，使用 urlencode 確保參數正確
         params = {
             'channel': tid,
             'region': _area,
@@ -124,6 +125,7 @@ class Spider(Spider):
             res.encoding = 'utf-8'
             print(f"categoryContent URL: {url}")
             print(f"categoryContent Response Status: {res.status_code}")
+            print(f"categoryContent Response Headers: {res.headers}")
             print(f"categoryContent HTML length: {len(res.text)}")
             print(f"categoryContent HTML snippet: {res.text[:500]}")
             
@@ -134,26 +136,10 @@ class Spider(Spider):
             if data_list:
                 print(f"First item HTML: {etree.tostring(data_list[0], encoding='unicode')[:200]}")
             
-            # 檢測總頁數
-            page_nodes = root.xpath('//ul[@class="pagination"]/li/a/text()')
-            total_pages = 1
-            if page_nodes:
-                page_numbers = [int(n) for n in page_nodes if n.isdigit()]
-                total_pages = max(page_numbers) if page_numbers else 1
-            
-            # 檢測總條目數（如果有）
-            total_items_nodes = root.xpath('//span[contains(text(), "共")]/text()')
-            total_items = 0
-            if total_items_nodes:
-                match = re.search(r'共\s*(\d+)\s*條', total_items_nodes[0])
-                total_items = int(match.group(1)) if match else len(data_list) * total_pages
-            else:
-                total_items = len(data_list) * total_pages  # 估算總數
-            
             limit = 20
             start = (int(pg) - 1) * limit
             end = start + limit
-            page_data = data_list[start:end] if start < len(data_list) else data_list
+            page_data = data_list[start:end]
             
             for i in page_data:
                 vod_id = i.xpath('.//a/@href')[0] if i.xpath('.//a/@href') else ''
@@ -180,9 +166,9 @@ class Spider(Spider):
                 })
             
             result['page'] = int(pg)
-            result['pagecount'] = total_pages
+            result['pagecount'] = (len(data_list) + limit - 1) // limit
             result['limit'] = limit
-            result['total'] = total_items
+            result['total'] = len(data_list)
         except Exception as e:
             print(f"Error in categoryContent: {e}")
         
@@ -327,16 +313,3 @@ class Spider(Spider):
 
     def destroy(self):
         pass
-
-if __name__ == '__main__':
-    spider = Spider()
-    home = spider.homeContent(True)
-    print("homeContent:", json.dumps(home, ensure_ascii=False, indent=2))
-    home_video = spider.homeVideoContent()
-    print("homeVideoContent:", json.dumps(home_video, ensure_ascii=False, indent=2))
-    category = spider.categoryContent('tv', '1', True, {'year': '2025', 'class': 'ju-qing', 'area': 'cn'})
-    print("categoryContent:", json.dumps(category, ensure_ascii=False, indent=2))
-    detail = spider.detailContent(['/voddetail/202552243'])
-    print("detailContent:", json.dumps(detail, ensure_ascii=False, indent=2))
-    player = spider.playerContent("ikzy", "第15集$https://bfikuncdn.com/20250405/chbDASk8/index.m3u8", None)
-    print("playerContent:", json.dumps(player, ensure_ascii=False, indent=2))
