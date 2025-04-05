@@ -7,7 +7,7 @@ import requests
 from lxml import etree
 import json
 import re
-from urllib.parse import urlparse
+from urllib.parse import urlencode
 sys.path.append('..')
 from base.spider import Spider
 
@@ -110,12 +110,21 @@ class Spider(Spider):
         _year = ext.get('year', '')
         _class = ext.get('class', '')
         _area = ext.get('area', '')
-        url = f"{self.home_url}/filter.html?channel={tid}®ion={_area}&class={_class}&year={_year}&page={pg}"
+        # 修正 URL，使用 urlencode 確保參數正確
+        params = {
+            'channel': tid,
+            'region': _area,
+            'class': _class,
+            'year': _year,
+            'page': pg
+        }
+        url = f"{self.home_url}/filter.html?{urlencode(params)}"
         
         try:
             res = requests.get(url, headers=self.headers)
             res.encoding = 'utf-8'
             print(f"categoryContent URL: {url}")
+            print(f"categoryContent Response Status: {res.status_code}")
             print(f"categoryContent Response Headers: {res.headers}")
             print(f"categoryContent HTML length: {len(res.text)}")
             print(f"categoryContent HTML snippet: {res.text[:500]}")
@@ -172,6 +181,7 @@ class Spider(Spider):
         try:
             res = requests.get(detail_url, headers=self.headers)
             res.encoding = 'utf-8'
+            print(f"detailContent Response Status: {res.status_code}")
             print(f"detailContent Response Headers: {res.headers}")
             print(f"detailContent HTML snippet: {res.text[:500]}")
             
