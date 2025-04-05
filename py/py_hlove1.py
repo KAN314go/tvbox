@@ -274,13 +274,13 @@ class Spider(Spider):
         vod = detail['list'][0]
         vod_name = vod['vod_name']
         
-        # 獲取所有線路並排序，將 "herumi" 放在最前面
+        # 獲取所有線路並排序，將 "heimuer" 放在最前面
         play_from = vod['vod_play_from'].split('$$$')
         play_url = vod['vod_play_url'].split('$$$')
         lines = list(zip(play_from, play_url))  # 將線路名稱和 URL 配對
-        sorted_lines = sorted(lines, key=lambda x: x[0] != 'herumi')  # 按名稱排序，"herumi" 優先
+        sorted_lines = sorted(lines, key=lambda x: x[0] != 'heimuer')  # 按名稱排序，"heimuer" 優先
         
-        # 取第一條線路（排序後的 "herumi" 或其他第一條）
+        # 取第一條線路（排序後的 "heimuer" 或其他第一條）
         selected_play_url = sorted_lines[0][1].split('#')[0].split('$')[1] if sorted_lines else ''
         
         html = f"""
