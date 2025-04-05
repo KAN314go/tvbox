@@ -144,55 +144,21 @@ class Spider(Spider):
                     'vod_remarks': vod_remarks
                 })
             
-            # 獲取總頁數和總項目數，傳入當前頁
-            total_pages, total_items = self._get_total_pages_and_items(tid, _area, _class, _year, int(pg))
+            # 假設每頁 48 個項目，根據當前頁數據推算總頁數
+            current_items = len(data_list)
+            total_pages = 10  # 默認最大頁數
+            if current_items < 48:  # 如果當前頁項目少於 48，假設是最後一頁
+                total_pages = int(pg)
+            total_items = (int(pg) - 1) * 48 + current_items if total_pages == int(pg) else total_pages * 48
             
             result['page'] = int(pg)
             result['pagecount'] = total_pages
-            result['limit'] = len(data_list)
+            result['limit'] = current_items
             result['total'] = total_items
         except Exception as e:
             print(f"Error in categoryContent: {e}")
         
         return result
-
-    def _get_total_pages_and_items(self, channel, region, class_, year, current_pg):
-        """動態檢測總頁數和總項目數，限制最多 6 頁"""
-        page = 1
-        total_pages = 1
-        total_items = 0
-        max_pages = 6  # 假設總頁數不超過 6
-        
-        while page <= max_pages:
-            params = {
-                'channel': channel,
-                'region': region,
-                'class': class_,
-                'year': year,
-                'page': page
-            }
-            url = f"{self.home_url}/filter.html?{urlencode(params)}"
-            try:
-                res = requests.get(url, headers=self.headers)
-                res.encoding = 'utf-8'
-                root = etree.HTML(res.text)
-                data_list = root.xpath('//li[contains(@class, "qy-mod-li")]')
-                
-                if not data_list:  # 如果當前頁面沒有數據，假設已到達最後一頁
-                    break
-                
-                total_items += len(data_list)
-                total_pages = page
-                page += 1
-                
-                # 如果當前頁已經是請求頁，且後續頁無需檢測，可以提前結束
-                if page > current_pg and len(data_list) < 48:  # 假設每頁最多 48 個項目
-                    break
-            except Exception as e:
-                print(f"Error detecting total pages at page {page}: {e}")
-                break
-        
-        return total_pages, total_items
 
     def detailContent(self, array):
         result = {'list': []}
