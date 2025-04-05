@@ -108,7 +108,7 @@ class Spider(Spider):
         _year = ext.get('year', '')
         _class = ext.get('class', '')
         _area = ext.get('area', '')
-        url = f"{self.home_url}/filter.html?channel={tid}&region={_area}&class={_class}&year={_year}&page={pg}"
+        url = f"{self.home_url}/filter.html?channel={tid}®ion={_area}&class={_class}&year={_year}&page={pg}"
         
         try:
             res = requests.get(url, headers=self.headers)
@@ -118,29 +118,21 @@ class Spider(Spider):
             
             print(f"categoryContent URL: {url}")
             print(f"categoryContent HTML length: {len(res.text)}")
-            print(f"categoryContent response: {res.text[:500]}")  # 打印前500字符
+            print(f"categoryContent response: {res.text[:500]}")
             print(f"categoryContent data_list length: {len(data_list)}")
             if data_list:
                 print(f"First item HTML: {etree.tostring(data_list[0], encoding='unicode')}")
             
             for i in data_list:
-                # 增強標題提取
-                name_nodes = i.xpath('.//picture[@class="video-item-preview-img"]/img/@alt')
-                vod_name = name_nodes[0].strip() if name_nodes else None
-                if not vod_name:
-                    name_nodes = i.xpath('.//span[@class="qy-mod-title"]/text()')  # 備用方案1
-                    vod_name = name_nodes[0].strip() if name_nodes else None
-                if not vod_name:
-                    name_nodes = i.xpath('.//div[contains(@class, "qy-mod-info")]/text()')  # 備用方案2
-                    vod_name = name_nodes[0].strip() if name_nodes else None
-                if not vod_name:
-                    name_nodes = i.xpath('.//p[contains(@class, "title")]/text()')  # 備用方案3
-                    vod_name = name_nodes[0].strip() if name_nodes else None
-                if not vod_name:
-                    vod_name = i.xpath('./@title')  # 備用方案4
-                    vod_name = vod_name[0].strip() if vod_name else "未知"
-                
                 vod_id = i.get('href', '')
+                
+                # 從詳情頁獲取標題
+                detail_url = f"{self.home_url}{vod_id}"
+                detail_res = requests.get(detail_url, headers=self.headers)
+                detail_res.encoding = 'utf-8'
+                detail_root = etree.HTML(detail_res.text)
+                name_nodes = detail_root.xpath('//div[@class="right-title"]/text()')
+                vod_name = name_nodes[0].strip() if name_nodes else "未知"
                 
                 # 圖片提取（已生效）
                 pic_nodes = i.xpath('.//picture[@class="video-item-preview-img"]/img/@src')
@@ -317,7 +309,7 @@ if __name__ == '__main__':
     home_video = spider.homeVideoContent()
     print("homeVideoContent:", json.dumps(home_video, ensure_ascii=False, indent=2))
     category = spider.categoryContent('tv', '1', True, {'year': '2025', 'class': 'ju-qing', 'area': 'cn'})
-    print("categoryContent:", json.dumps(category, little, ensure_ascii=False, indent=2))
+    print("categoryContent:", json.dumps(category, ensure_ascii=False, indent=2))
     detail = spider.detailContent(['/voddetail/202552243'])
     print("detailContent:", json.dumps(detail, ensure_ascii=False, indent=2))
     player = spider.playerContent("ikzy", "第15集$https://bfikuncdn.com/20250405/chbDASk8/index.m3u8", None)
