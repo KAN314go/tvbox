@@ -11,7 +11,7 @@
       "key": "py_華視界",
       "name": "🎖︎｜華視界｜測試",
       "type": 3,
-      "api": "./py/py_hlove2.py",
+      "api": "./py/py_hlove1.py",
       "searchable": 1,
       "quickSearch": 0,
       "filterable": 0,
