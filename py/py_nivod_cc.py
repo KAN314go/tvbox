@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Author  : 老王叔叔 for 泥視頻.CC with Multi-Source Support
+# @Author  : Adapted for 泥視頻.CC with Multi-Source Support
 # @Time    : 2025/04/06
 
 import sys
@@ -110,6 +110,14 @@ class Spider(Spider):
         }
         url = f"{self.home_url}/filter.html?{urlencode(params)}"
         
+        # 如果頁碼超過 5，直接返回空結果
+        if int(pg) > 5:
+            result['page'] = int(pg)
+            result['pagecount'] = 5
+            result['limit'] = 0
+            result['total'] = 240
+            return result
+        
         try:
             res = requests.get(url, headers=self.headers)
             res.encoding = 'utf-8'
@@ -144,9 +152,9 @@ class Spider(Spider):
                     'vod_remarks': vod_remarks
                 })
             
-            # 假設每頁 48 個項目，根據當前頁數據推算總頁數
+            # 假設每頁最多 48 個項目，網站分頁上限為 5 頁
             current_items = len(data_list)
-            total_pages = 6  # 默認最大頁數
+            total_pages = 5  # 網站分頁上限為 5
             if current_items < 48:  # 如果當前頁項目少於 48，假設是最後一頁
                 total_pages = int(pg)
             total_items = (int(pg) - 1) * 48 + current_items if total_pages == int(pg) else total_pages * 48
@@ -294,3 +302,18 @@ class Spider(Spider):
 
     def destroy(self):
         pass
+
+# 測試代碼
+if __name__ == "__main__":
+    spider = Spider()
+    import time
+    for pg in range(1, 7):
+        start = time.time()
+        result = spider.categoryContent('tv', str(pg), True, {'area': 'cn', 'year': '2024'})
+        end = time.time()
+        print(f"Page {pg} - Time taken: {end - start:.2f} seconds")
+        print(f"Page: {result['page']}")
+        print(f"Page Count: {result['pagecount']}")
+        print(f"Total Items: {result['total']}")
+        print(f"Items in Current Page: {len(result['list'])}")
+        print("---")
