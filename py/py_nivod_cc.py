@@ -302,18 +302,3 @@ class Spider(Spider):
 
     def destroy(self):
         pass
-
-# 測試代碼
-if __name__ == "__main__":
-    spider = Spider()
-    import time
-    for pg in range(1, 7):
-        start = time.time()
-        result = spider.categoryContent('tv', str(pg), True, {'area': 'cn', 'year': '2024'})
-        end = time.time()
-        print(f"Page {pg} - Time taken: {end - start:.2f} seconds")
-        print(f"Page: {result['page']}")
-        print(f"Page Count: {result['pagecount']}")
-        print(f"Total Items: {result['total']}")
-        print(f"Items in Current Page: {len(result['list'])}")
-        print("---")
