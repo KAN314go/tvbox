@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
-# @Author  : Adapted for 泥視頻.CC as CatVod Interface with Multi-Source Support
-# @Time    : 2025/04/05
+# @Author  : Adapted for 泥視頻.CC with Multi-Source Support
+# @Time    : 2025/04/06
 
 import sys
 import requests
@@ -14,7 +14,7 @@ class Spider(Spider):
     def __init__(self):
         self.home_url = 'https://www.nivod.cc'
         self.headers = {
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
             "Referer": "https://www.nivod.cc/",
             "X-Requested-With": "XMLHttpRequest",
             "Accept": "application/json, text/javascript, */*; q=0.01",
@@ -61,11 +61,7 @@ class Spider(Spider):
                 {'key': 'year', 'name': '年份', 'value': [{'n': v, 'v': v} for v in ["2025", "2024", "2023", "2022", "2021", "2020", "2019-2015", "2014-2010", "2009-2000", "90年代", "80年代", "更早"]]}
             ]
         }
-        result = {
-            'class': class_list,
-            'filters': filters if filter else {}
-        }
-        return result
+        return {'class': class_list, 'filters': filters if filter else {}}
 
     def homeVideoContent(self):
         result = {'list': []}
@@ -73,16 +69,23 @@ class Spider(Spider):
             res = requests.get(self.home_url, headers=self.headers)
             res.encoding = 'utf-8'
             root = etree.HTML(res.text)
+            # 更新 XPath 以匹配「泥視頻」推薦頁結構
             data_list = root.xpath('//div[contains(@class, "qy-mod-link-wrap")]/a')
+            if not data_list:  # 若無匹配，嘗試其他可能結構
+                data_list = root.xpath('//a[contains(@class, "qy-mod-link")]')
+            
             for i in data_list:
-                vod_name = i.xpath('.//text()')[0].strip() if i.xpath('.//text()') else "未知"
+                vod_name = i.xpath('.//span[contains(@class, "qy-mod-text")]/text()')[0].strip() if i.xpath('.//span[contains(@class, "qy-mod-text")]') else "未知"
                 vod_id = i.get('href', '')
-                vod_pic = self.placeholder_pic
+                vod_pic = i.xpath('.//img/@src')[0] if i.xpath('.//img/@src') else self.placeholder_pic
+                if vod_pic.startswith('/'):
+                    vod_pic = self.home_url + vod_pic
+                vod_remarks = i.xpath('.//span[contains(@class, "qy-mod-label")]/text()')[0] if i.xpath('.//span[contains(@class, "qy-mod-label")]') else ''
                 result['list'].append({
                     'vod_id': vod_id,
                     'vod_name': vod_name,
                     'vod_pic': vod_pic,
-                    'vod_remarks': ''
+                    'vod_remarks': vod_remarks
                 })
             result['list'] = result['list'][:10]
         except Exception as e:
@@ -105,6 +108,8 @@ class Spider(Spider):
                 vod_name = i.xpath('.//span[contains(@class, "qy-mod-text")]/text()')[0].strip() if i.xpath('.//span[contains(@class, "qy-mod-text")]') else "未知"
                 vod_id = i.get('href', '')
                 vod_pic = i.xpath('.//img/@src')[0] if i.xpath('.//img/@src') else self.placeholder_pic
+                if vod_pic.startswith('/'):
+                    vod_pic = self.home_url + vod_pic
                 vod_remarks = i.xpath('.//span[contains(@class, "qy-mod-label")]/text()')[0] if i.xpath('.//span[contains(@class, "qy-mod-label")]') else ''
                 result['list'].append({
                     'vod_id': vod_id,
@@ -127,9 +132,6 @@ class Spider(Spider):
         try:
             res = requests.get(detail_url, headers=self.headers)
             res.encoding = 'utf-8'
-            if not res.ok:
-                raise Exception(f"HTTP 請求失敗，狀態碼: {res.status_code}")
-            
             root = etree.HTML(res.text)
             
             vod_name = root.xpath('//div[@class="right-title"]/text()')[0].strip() if root.xpath('//div[@class="right-title"]') else "未知"
@@ -140,58 +142,64 @@ class Spider(Spider):
             vod_actor = root.xpath('//div[@id="actors"]/text()')[0].strip() if root.xpath('//div[@id="actors"]') else ""
             vod_director = root.xpath('//div[@id="director"]/text()')[0].strip() if root.xpath('//div[@id="director"]') else ""
             vod_pic = root.xpath('//img[@class="left-img"]/@src')[0] if root.xpath('//img[@class="left-img"]') else self.placeholder_pic
+            if vod_pic.startswith('/'):
+                vod_pic = self.home_url + vod_pic
             
             # 提取播放列表並獲取多線路
             episodes = root.xpath('//div[@id="list-jj"]/a')
             if not episodes:
                 print("未找到播放列表，可能頁面結構不匹配")
-                play_from = ["泥視頻"]
-                play_url = ["第1集$https://www.nivod.cc/vodplay/202552243/ep1"]
+                vod = {
+                    'vod_id': ids,
+                    'vod_name': vod_name,
+                    'vod_pic': vod_pic,
+                    'type_name': '',
+                    'vod_year': vod_year,
+                    'vod_area': vod_area,
+                    'vod_remarks': vod_remarks,
+                    'vod_actor': vod_actor,
+                    'vod_director': vod_director,
+                    'vod_content': vod_content,
+                    'vod_play_from': '泥視頻',
+                    'vod_play_url': '第1集$https://www.nivod.cc/vodplay/202552243/ep1'
+                }
             else:
-                play_from = []
+                play_from = set()
                 play_urls = {}
-                episode_names = []
-                
-                # 獲取所有集數名稱
                 for ep in episodes[::-1]:
                     ep_name = ep.xpath('.//div[@class="item"]/text()')[0].strip() if ep.xpath('.//div[@class="item"]') else "未知"
                     ep_url = self.home_url + ep.get('href', '')
-                    episode_names.append(ep_name)
-                
-                # 獲取每集的多線路
-                for ep in episodes[::-1]:
-                    ep_name = ep.xpath('.//div[@class="item"]/text()')[0].strip() if ep.xpath('.//div[@class="item"]') else "未知"
-                    ep_url = self.home_url + ep.get('href', '')
-                    xhr_url = f"{self.home_url}/xhr_playinfo/{ids.split('/')[2]}-{ep_url.split('/')[-1]}"
+                    vod_id = ids.split('/')[2]
+                    ep_id = ep_url.split('/')[-1]
+                    xhr_url = f"{self.home_url}/xhr_playinfo/{vod_id}-{ep_id}"
                     res = requests.get(xhr_url, headers=self.headers)
                     res.encoding = 'utf-8'
                     data = res.json()
                     if 'pdatas' in data and data['pdatas']:
                         for source in data['pdatas']:
                             source_name = source['from']
-                            if source_name not in play_from:
-                                play_from.append(source_name)
+                            play_from.add(source_name)
+                            if source_name not in play_urls:
                                 play_urls[source_name] = []
                             play_urls[source_name].append(f"{ep_name}${source['playurl']}")
-            
-            # 構建 vod_play_from 和 vod_play_url
-            vod_play_from = '$$$'.join(play_from)
-            vod_play_url = '$$$'.join(['#'.join(play_urls[source]) for source in play_from])
-            
-            vod = {
-                'vod_id': ids,
-                'vod_name': vod_name,
-                'vod_pic': vod_pic,
-                'type_name': '',
-                'vod_year': vod_year,
-                'vod_area': vod_area,
-                'vod_remarks': vod_remarks,
-                'vod_actor': vod_actor,
-                'vod_director': vod_director,
-                'vod_content': vod_content,
-                'vod_play_from': vod_play_from,
-                'vod_play_url': vod_play_url
-            }
+                
+                vod_play_from = '$$$'.join(play_from)
+                vod_play_url = '$$$'.join(['#'.join(play_urls[source]) for source in play_from])
+                
+                vod = {
+                    'vod_id': ids,
+                    'vod_name': vod_name,
+                    'vod_pic': vod_pic,
+                    'type_name': '',
+                    'vod_year': vod_year,
+                    'vod_area': vod_area,
+                    'vod_remarks': vod_remarks,
+                    'vod_actor': vod_actor,
+                    'vod_director': vod_director,
+                    'vod_content': vod_content,
+                    'vod_play_from': vod_play_from,
+                    'vod_play_url': vod_play_url
+                }
             result['list'].append(vod)
         except Exception as e:
             print(f"Error in detailContent: {e}")
@@ -217,6 +225,8 @@ class Spider(Spider):
                 vod_name = item.xpath('.//span[contains(@class, "qy-mod-text")]/text()')[0].strip() if item.xpath('.//span[contains(@class, "qy-mod-text")]') else "未知"
                 vod_id = item.get('href', '')
                 vod_pic = item.xpath('.//img/@src')[0] if item.xpath('.//img/@src') else self.placeholder_pic
+                if vod_pic.startswith('/'):
+                    vod_pic = self.home_url + vod_pic
                 vod_remarks = ''
                 result['list'].append({
                     'vod_id': vod_id,
@@ -231,35 +241,8 @@ class Spider(Spider):
     def playerContent(self, flag, id, vipFlags):
         result = {}
         try:
-            if '$' not in id:  # 如果 id 是原始 URL，需轉換
-                parsed_url = urlparse(id)
-                path_parts = parsed_url.path.split('/')
-                vod_id = path_parts[2]
-                ep_id = path_parts[3]
-                xhr_url = f"{self.home_url}/xhr_playinfo/{vod_id}-{ep_id}"
-            else:  # 如果 id 已包含播放地址
-                play_url = id.split('$')[1]
-                result = {
-                    'url': play_url,
-                    'header': json.dumps(self.headers),
-                    'parse': 0,
-                    'playUrl': ''
-                }
-                return result
-            
-            print(f"正在請求播放信息: {xhr_url}")
-            res = requests.get(xhr_url, headers=self.headers)
-            res.encoding = 'utf-8'
-            if not res.ok:
-                print(f"響應內容: {res.text}")
-                raise Exception(f"播放信息請求失敗，狀態碼: {res.status_code}")
-            
-            data = res.json()
-            print(f"播放信息返回數據: {json.dumps(data, ensure_ascii=False)}")
-            if 'pdatas' not in data or not data['pdatas']:
-                raise Exception("未找到播放數據")
-            
-            play_url = data['pdatas'][0]['playurl']
+            # 直接使用 detailContent 提供的播放地址
+            play_url = id.split('$')[1] if '$' in id else id
             result = {
                 'url': play_url,
                 'header': json.dumps(self.headers),
@@ -283,10 +266,14 @@ if __name__ == '__main__':
     home = spider.homeContent(True)
     print("homeContent:", json.dumps(home, ensure_ascii=False, indent=2))
     
+    # 測試 homeVideoContent
+    home_video = spider.homeVideoContent()
+    print("homeVideoContent:", json.dumps(home_video, ensure_ascii=False, indent=2))
+    
     # 測試 detailContent
     detail = spider.detailContent(['/voddetail/202552243'])
     print("detailContent:", json.dumps(detail, ensure_ascii=False, indent=2))
     
     # 測試 playerContent
-    player = spider.playerContent("泥視頻", "https://www.nivod.cc/vodplay/202552243/ep15", None)
+    player = spider.playerContent("ikzy", "第15集$https://bfikuncdn.com/20250405/chbDASk8/index.m3u8", None)
     print("playerContent:", json.dumps(player, ensure_ascii=False, indent=2))
