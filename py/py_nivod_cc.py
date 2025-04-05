@@ -49,7 +49,7 @@ class Spider(Spider):
                 {'key': 'year', 'name': '年份', 'value': [{'n': v, 'v': v} for v in ["2025", "2024", "2023", "2022", "2021", "2020", "2019-2010", "2009-2000", "90年代", "80年代", "更早"]]}
             ],
             'tv': [
-                {'key': 'class', 'name': '剧情', 'value': [{'n': v.split('$')[0], 'v': v.split('$')[1]} for v in "剧情$ju-qing#动作$dong-zuo#历史$li-shi#历险$mao-xian#古装$gu-zhuang#同性$tong-xing#喜剧$xi-ju#奇幻$qi-huan#家庭$jia-ting#悬疑$xuan-yi#惊悚$zhan-zheng#战争$zhan-zheng#武侠$wu-xia#爱情$ai-qing#科幻$ke-huan#罪案$zui-an".split('#')]},
+                {'key': 'class', 'name': '剧情', 'value': [{'n': v.split('$')[0], 'v': v.split('$')[1]} for v in "剧情$ju-qing#动作$dong-zuo#历史$li-shi#历险$mao-xian#古装$gu-zhuang#同性$tong-xing#喜剧$xi-ju#奇幻$qi-huan#家庭$jia-ting#悬疑$xuan-yi#惊悚$jing-song#战争$zhan-zheng#武侠$wu-xia#爱情$ai-qing#科幻$ke-huan#罪案$zui-an".split('#')]},
                 {'key': 'area', 'name': '地区', 'value': [{'n': v.split('$')[0], 'v': v.split('$')[1]} for v in "大陆$cn#香港$hk#台湾$tw#日本$jp#韩国$kr#欧美$west#泰国$th#新马$sg-my".split('#')]},
                 {'key': 'year', 'name': '年份', 'value': [{'n': v, 'v': v} for v in ["2025", "2024", "2023", "2022", "2021", "2020", "2019-2015", "2014-2010", "2009-2000", "90年代", "80年代", "更早"]]}
             ],
@@ -114,41 +114,41 @@ class Spider(Spider):
             res = requests.get(url, headers=self.headers)
             res.encoding = 'utf-8'
             root = etree.HTML(res.text)
-            data_list = root.xpath('//div[contains(@class, "qy-mod-link-wrap")]/a')
+            data_list = root.xpath('//li[@class="qy-mod-li"]')
             
             print(f"categoryContent URL: {url}")
             print(f"categoryContent HTML length: {len(res.text)}")
-            print(f"categoryContent response: {res.text[:500]}")
             print(f"categoryContent data_list length: {len(data_list)}")
             if data_list:
-                print(f"First item HTML: {etree.tostring(data_list[0], encoding='unicode')}")
+                print(f"First item HTML: {etree.tostring(data_list[0], encoding='unicode')[:200]}")
             
-            for i in data_list:
-                vod_id = i.get('href', '')
+            # 分頁處理：每頁 20 項
+            limit = 20
+            start = (int(pg) - 1) * limit
+            end = start + limit
+            page_data = data_list[start:end]
+            
+            for i in page_data:
+                vod_id = i.xpath('.//a/@href')[0] if i.xpath('.//a/@href') else ''
                 
-                # 從詳情頁獲取標題
-                detail_url = f"{self.home_url}{vod_id}"
-                detail_res = requests.get(detail_url, headers=self.headers)
-                detail_res.encoding = 'utf-8'
-                detail_root = etree.HTML(detail_res.text)
-                name_nodes = detail_root.xpath('//div[@class="right-title"]/text()')
+                # 標題
+                name_nodes = i.xpath('.//a/@title')
                 vod_name = name_nodes[0].strip() if name_nodes else "未知"
                 
-                # 圖片提取（已生效）
-                pic_nodes = i.xpath('.//picture[@class="video-item-preview-img"]/img/@src')
-                vod_pic = pic_nodes[0] if pic_nodes else None
-                if not vod_pic:
-                    pic_nodes = i.xpath('.//div[contains(@class, "qy-mod-cover")]/@style')
-                    if pic_nodes:
-                        style = pic_nodes[0]
-                        match = re.search(r'url\((.*?)\)', style)
-                        vod_pic = match.group(1).strip() if match else None
+                # 圖片
+                pic_nodes = i.xpath('.//div[@class="qy-mod-cover"]/@style')
+                vod_pic = None
+                if pic_nodes:
+                    style = pic_nodes[0]
+                    match = re.search(r'url\((.*?)\)', style)
+                    vod_pic = match.group(1).strip() if match else None
                 if not vod_pic:
                     vod_pic = self.placeholder_pic
-                if vod_pic and vod_pic.startswith('/'):
+                if vod_pic.startswith('/'):
                     vod_pic = self.home_url + vod_pic
                 
-                remark_nodes = i.xpath('.//span[contains(@class, "qy-mod-label")]/text()')
+                # 更新狀態
+                remark_nodes = i.xpath('.//span[@class="qy-mod-label"]/text()')
                 vod_remarks = remark_nodes[0].strip() if remark_nodes else ''
                 
                 result['list'].append({
@@ -157,12 +157,14 @@ class Spider(Spider):
                     'vod_pic': vod_pic,
                     'vod_remarks': vod_remarks
                 })
+            
             result['page'] = int(pg)
-            result['pagecount'] = 999  # 假設值
-            result['limit'] = 24
+            result['pagecount'] = (len(data_list) + limit - 1) // limit  # 總頁數
+            result['limit'] = limit
             result['total'] = len(data_list)
         except Exception as e:
             print(f"Error in categoryContent: {e}")
+        
         return result
 
     def detailContent(self, array):
