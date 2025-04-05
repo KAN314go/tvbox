@@ -41,7 +41,7 @@ class Spider(Spider):
 
         # 電影篩選條件
         movie_classes = "全部$all#剧情$juqing#喜剧$xiju#动作$dongzuo#惊悚$jingsong#爱情$aiqing#恐怖$kongbu#犯罪$fanzui#冒险$maoxian#奇幻$qihuan#悬疑$xuanyi#科幻$kehuan#家庭$jiating#动画$donghua#历史$lishi#战争$zhanzheng#音乐$yinle#动漫$dongman#电视电影$dianshidianying#西部$xibu#网络电影$wangluodianying#纪录$jilu#同性$tongxing#歌舞$gewu#灾难$zainan#动作冒险$dongzuomaoxian#战争政治$zhanzhengzhengzhi"
-        movie_areas = "全部$all#中国大陆$cn#美国$us#韩国$kr#香港$hk#台湾$tw#日本$jp#英国$gb#泰国$th#西班牙$sp#加拿大$ca#法国$fr#印度$in#澳大利亚$au#其他地区$others"
+        movie_areas = "全部$all#中国大陆$cn#美国 Lacan$us#韩国$kr#香港$hk#台湾$tw#日本$jp#英国$gb#泰国$th#西班牙$sp#加拿大$ca#法国$fr#印度$in#澳大利亚$au#其他地区$others"
         movie_years = "全部$all#2025$2025#2024$2024#2023$2023#2022$2022#2021$2021#2020$2020#2019-2010$2010#2009-2000$2000#90年代$1990#80年代$1980#更早$1970"
 
         # 電視劇篩選條件
@@ -184,11 +184,6 @@ class Spider(Spider):
                 vod_pic = collection_info.get('imgUrl', self.placeholder_pic)
                 is_movie = collection_info.get('isMovie', False)
                 
-                # 獲取原始線路列表
-                videos_group = collection_info['videosGroup']
-                # 將 "herumi" 線路移到最前面
-                sorted_videos_group = sorted(videos_group, key=lambda x: x.get('name', '') != 'heimuer')
-
                 play_from = []
                 play_url = []
                 for group in collection_info['videosGroup']:
@@ -226,6 +221,38 @@ class Spider(Spider):
             print(f"Error in detailContent: {e}")
             return {'list': [], 'msg': str(e)}
 
+    def searchContent(self, key, quick):
+        """
+        搜索內容
+        :param key: 搜索關鍵詞
+        :param quick: 是否快速搜索（可選參數）
+        :return: 搜索結果列表
+        """
+        try:
+            search_url = f"{self.home_url}/search?q={key}"
+            res = requests.get(search_url, headers=self.headers)
+            res.encoding = 'utf-8'
+            root = etree.HTML(res.text)
+            data_list = root.xpath('//div[contains(@class, "h-film-listall_cardList___IXsY")]/a')
+            
+            result = []
+            for item in data_list:
+                vod_name = item.xpath('.//div[contains(@class, "h-film-listall_name__Gyb9x")]/text()')[0].strip()
+                vod_id = item.get('href', '')
+                vod_pic = item.xpath('.//img[contains(@class, "h-film-listall_img__jiamS")]/@src')[0] if item.xpath('.//img[contains(@class, "h-film-listall_img__jiamS")]/@src') else self.placeholder_pic
+                if vod_pic == '/api/images/init':
+                    vod_pic = self.placeholder_pic
+                result.append({
+                    'vod_id': vod_id,
+                    'vod_name': vod_name,
+                    'vod_pic': vod_pic,
+                    'vod_remarks': ''
+                })
+            return {'list': result}
+        except Exception as e:
+            print(f"Error in searchContent: {e}")
+            return {'list': []}
+
     def playerContent(self, flag, pid, vipFlags):
         try:
             play_url = pid
@@ -246,7 +273,15 @@ class Spider(Spider):
         
         vod = detail['list'][0]
         vod_name = vod['vod_name']
-        play_url = vod['vod_play_url'].split('$$$')[0].split('#')[0].split('$')[1]
+        
+        # 獲取所有線路並排序，將 "heimuer" 放在最前面
+        play_from = vod['vod_play_from'].split('$$$')
+        play_url = vod['vod_play_url'].split('$$$')
+        lines = list(zip(play_from, play_url))  # 將線路名稱和 URL 配對
+        sorted_lines = sorted(lines, key=lambda x: x[0] != 'heimuer')  # 按名稱排序，"heimuer" 優先
+        
+        # 取第一條線路（排序後的 "heimuer" 或其他第一條）
+        selected_play_url = sorted_lines[0][1].split('#')[0].split('$')[1] if sorted_lines else ''
         
         html = f"""
         <!DOCTYPE html>
@@ -264,13 +299,13 @@ class Spider(Spider):
         <body>
             <h1>{vod_name}</h1>
             <video controls controlsList="nodownload" oncontextmenu="return false;">
-                <source src="{play_url}" type="application/x-mpegURL">
+                <source src="{selected_play_url}" type="application/x-mpegURL">
                 您的瀏覽器不支持視頻播放。
             </video>
             <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
             <script>
                 var video = document.querySelector('video');
-                var videoSrc = '{play_url}';
+                var videoSrc = '{selected_play_url}';
                 if (Hls.isSupported()) {{
                     var hls = new Hls();
                     hls.loadSource(videoSrc);
@@ -289,3 +324,10 @@ class Spider(Spider):
 
     def destroy(self):
         return '正在Destroy'
+
+if __name__ == '__main__':
+    spider = Spider()
+    html = spider.generate_children_html('/vod/play-thrid/9b1169e9b7c04/1')
+    with open("children_player.html", "w", encoding="utf-8") as f:
+        f.write(html)
+    print("已生成 children_player.html")
