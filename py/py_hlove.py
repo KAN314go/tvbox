@@ -184,6 +184,11 @@ class Spider(Spider):
                 vod_pic = collection_info.get('imgUrl', self.placeholder_pic)
                 is_movie = collection_info.get('isMovie', False)
                 
+                # 獲取原始線路列表
+                videos_group = collection_info['videosGroup']
+                # 將 "herumi" 線路移到最前面
+                sorted_videos_group = sorted(videos_group, key=lambda x: x.get('name', '') != 'heimuer')
+
                 play_from = []
                 play_url = []
                 for group in collection_info['videosGroup']:
