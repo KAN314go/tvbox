@@ -5057,9 +5057,16 @@
       }
     },
     {
-      "name": "台灣風景直播(時好時壞)",
+      "name": "台灣景點直播",
       "playerType": 2,
       "url": "./live/10.txt",
+      "ua": "okhttp/4.12",
+      "epg": "http://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Taipei"
+    },
+    {
+      "name": "大陸景點直播",
+      "playerType": 2,
+      "url": "./live/11.txt",
       "ua": "okhttp/4.12",
       "epg": "http://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Taipei"
     },
