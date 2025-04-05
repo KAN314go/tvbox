@@ -35,37 +35,41 @@ class Spider(Spider):
         pass
 
     def homeContent(self, filter):
+        # 主類別（頂部導航）
         categories = "电影$movie#电视剧$drama#动漫$animation#综艺$variety#儿童$children"
-        classes = "全部$all#動畫$animation#教育$education#益智$yizhi"  # 為兒童調整分類
-        areas = "全部$all#大陸$cn#美國$us#日本$jp#臺灣$tw"
-        years = "all&2025&2024&2023&2022&2021&2020"
-
         class_list = [{'type_id': v.split('$')[1], 'type_name': v.split('$')[0]} for v in categories.split('#')]
+
+        # 電影篩選條件
+        movie_classes = "全部$all#剧情$juqing#喜剧$xiju#动作$dongzuo#惊悚$jingsong#爱情$aiqing#恐怖$kongbu#犯罪$fanzui#冒险$maoxian#奇幻$qihuan#悬疑$xuanyi#科幻$kehuan#家庭$jiating#动画$donghua#历史$lishi#战争$zhanzheng#音乐$yinle#动漫$dongman#电视电影$dianshidianying#西部$xibu#网络电影$wangluodianying#纪录$jilu#同性$tongxing#歌舞$gewu#灾难$zainan#动作冒险$dongzuomaoxian#战争政治$zhanzhengzhengzhi"
+        movie_areas = "全部$all#中国大陆$cn#美国$us#韩国$kr#香港$hk#台湾$tw#日本$jp#英国$gb#泰国$th#西班牙$sp#加拿大$ca#法国$fr#印度$in#澳大利亚$au#其他地区$others"
+        movie_years = "全部$all#2025$2025#2024$2024#2023$2023#2022$2022#2021$2021#2020$2020#2019-2010$2010#2009-2000$2000#90年代$1990#80年代$1980#更早$1970"
+
+        # 構建篩選條件
         filters = {
             'movie': [
-                {'name': '剧情', 'key': 'class', 'value': [{'n': v.split('$')[0], 'v': v.split('$')[1]} for v in classes.split('#')]},
-                {'name': '地区', 'key': 'area', 'value': [{'n': v.split('$')[0], 'v': v.split('$')[1]} for v in areas.split('#')]},
-                {'name': '年份', 'key': 'year', 'value': [{'n': v, 'v': v} for v in years.split('&')]}
+                {'name': '分类', 'key': 'class', 'value': [{'n': v.split('$')[0], 'v': v.split('$')[1]} for v in movie_classes.split('#')]},
+                {'name': '地区', 'key': 'area', 'value': [{'n': v.split('$')[0], 'v': v.split('$')[1]} for v in movie_areas.split('#')]},
+                {'name': '年份', 'key': 'year', 'value': [{'n': v.split('$')[0], 'v': v.split('$')[1]} for v in movie_years.split('#')]}
             ],
             'drama': [
-                {'name': '剧情', 'key': 'class', 'value': [{'n': v.split('$')[0], 'v': v.split('$')[1]} for v in classes.split('#')]},
-                {'name': '地区', 'key': 'area', 'value': [{'n': v.split('$')[0], 'v': v.split('$')[1]} for v in areas.split('#')]},
-                {'name': '年份', 'key': 'year', 'value': [{'n': v, 'v': v} for v in years.split('&')]}
+                {'name': '分类', 'key': 'class', 'value': [{'n': v.split('$')[0], 'v': v.split('$')[1]} for v in movie_classes.split('#')]},
+                {'name': '地区', 'key': 'area', 'value': [{'n': v.split('$')[0], 'v': v.split('$')[1]} for v in movie_areas.split('#')]},
+                {'name': '年份', 'key': 'year', 'value': [{'n': v.split('$')[0], 'v': v.split('$')[1]} for v in movie_years.split('#')]}
             ],
             'animation': [
-                {'name': '剧情', 'key': 'class', 'value': [{'n': v.split('$')[0], 'v': v.split('$')[1]} for v in classes.split('#')]},
-                {'name': '地区', 'key': 'area', 'value': [{'n': v.split('$')[0], 'v': v.split('$')[1]} for v in areas.split('#')]},
-                {'name': '年份', 'key': 'year', 'value': [{'n': v, 'v': v} for v in years.split('&')]}
+                {'name': '分类', 'key': 'class', 'value': [{'n': v.split('$')[0], 'v': v.split('$')[1]} for v in movie_classes.split('#')]},
+                {'name': '地区', 'key': 'area', 'value': [{'n': v.split('$')[0], 'v': v.split('$')[1]} for v in movie_areas.split('#')]},
+                {'name': '年份', 'key': 'year', 'value': [{'n': v.split('$')[0], 'v': v.split('$')[1]} for v in movie_years.split('#')]}
             ],
             'variety': [
-                {'name': '剧情', 'key': 'class', 'value': [{'n': v.split('$')[0], 'v': v.split('$')[1]} for v in classes.split('#')]},
-                {'name': '地区', 'key': 'area', 'value': [{'n': v.split('$')[0], 'v': v.split('$')[1]} for v in areas.split('#')]},
-                {'name': '年份', 'key': 'year', 'value': [{'n': v, 'v': v} for v in years.split('&')]}
+                {'name': '分类', 'key': 'class', 'value': [{'n': v.split('$')[0], 'v': v.split('$')[1]} for v in movie_classes.split('#')]},
+                {'name': '地区', 'key': 'area', 'value': [{'n': v.split('$')[0], 'v': v.split('$')[1]} for v in movie_areas.split('#')]},
+                {'name': '年份', 'key': 'year', 'value': [{'n': v.split('$')[0], 'v': v.split('$')[1]} for v in movie_years.split('#')]}
             ],
             'children': [
-                {'name': '类型', 'key': 'class', 'value': [{'n': v.split('$')[0], 'v': v.split('$')[1]} for v in classes.split('#')]},
-                {'name': '地区', 'key': 'area', 'value': [{'n': v.split('$')[0], 'v': v.split('$')[1]} for v in areas.split('#')]},
-                {'name': '年份', 'key': 'year', 'value': [{'n': v, 'v': v} for v in years.split('&')]}
+                {'name': '类型', 'key': 'class', 'value': [{'n': '全部', 'v': 'all'}, {'n': '動畫', 'v': 'animation'}, {'n': '教育', 'v': 'education'}, {'n': '益智', 'v': 'yizhi'}]},
+                {'name': '地区', 'key': 'area', 'value': [{'n': v.split('$')[0], 'v': v.split('$')[1]} for v in movie_areas.split('#')]},
+                {'name': '年份', 'key': 'year', 'value': [{'n': v.split('$')[0], 'v': v.split('$')[1]} for v in movie_years.split('#')]}
             ]
         }
         return {'class': class_list, 'filters': filters}
@@ -165,7 +169,7 @@ class Spider(Spider):
                 for group in collection_info['videosGroup']:
                     if not group.get('videos'):
                         continue
-                    line_name = group.get('name', '线路1')  # 獲取線路名稱，例如 "線路1"、"線路2"
+                    line_name = group.get('name', '线路1')
                     if is_movie:
                         video = group['videos'][0]
                         play_from.append(line_name)
@@ -211,16 +215,14 @@ class Spider(Spider):
             return {'url': '', 'parse': 0, 'jx': 0}
 
     def generate_children_html(self, vod_id):
-        # 獲取視頻詳情
         detail = self.detailContent([vod_id])
         if not detail['list']:
             return "<h1>無法加載內容</h1>"
         
         vod = detail['list'][0]
         vod_name = vod['vod_name']
-        play_url = vod['vod_play_url'].split('$$$')[0].split('#')[0].split('$')[1]  # 取第一個播放地址
+        play_url = vod['vod_play_url'].split('$$$')[0].split('#')[0].split('$')[1]
         
-        # 生成適合兒童的簡單 HTML
         html = f"""
         <!DOCTYPE html>
         <html lang="zh-CN">
@@ -265,7 +267,6 @@ class Spider(Spider):
 
 if __name__ == '__main__':
     spider = Spider()
-    # 測試兒童播放頁面
     html = spider.generate_children_html('/vod/play-thrid/9b1169e9b7c04/1')
     with open("children_player.html", "w", encoding="utf-8") as f:
         f.write(html)
