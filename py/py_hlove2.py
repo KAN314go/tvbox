@@ -44,6 +44,26 @@ class Spider(Spider):
         movie_areas = "全部$all#中国大陆$cn#美国$us#韩国$kr#香港$hk#台湾$tw#日本$jp#英国$gb#泰国$th#西班牙$sp#加拿大$ca#法国$fr#印度$in#澳大利亚$au#其他地区$others"
         movie_years = "全部$all#2025$2025#2024$2024#2023$2023#2022$2022#2021$2021#2020$2020#2019-2010$2010#2009-2000$2000#90年代$1990#80年代$1980#更早$1970"
 
+        # 電視劇篩選條件
+        drama_classes = "全部$all#国产剧$guocanju#韩剧$hanju#欧美剧$oumeiju#港台剧$gangtaiju#英剧$yingju#新马泰$xinmata#剧情$juqing#喜剧$xiju#悬疑$xuanyi#犯罪$fanzui#科幻&奇幻$kehuanqihuan#动作冒险$dongzuomaoxian#动作&冒险$dongzuojiemaoxian#家庭$jiating#战争&政治$zhanzhengzhengzhi#爱情$aiqing#肥皂剧$feizaoju#短剧$duanju#同性$tongxing#西部$xibu#儿童$ertong#真人秀$zhenrenxiu#动画$donghua#惊悚$jingsong#脱口秀$tuokouxiu#动作$dongzuo#罪案$zuian#古装$guzhuang#都市$dushi#奇幻$qihuan#科幻$kehuan#历史$lishi#青春$qinchun#新闻$xinwen#穿越$chuanyue#军旅$junlv#歌舞$gewu#玄幻$xuanhuan#纪录$jilu#言情$yanqing#警匪$jingfei#音乐剧$yinleju#商战$shangzhan#武侠$wuxia#电视电影$dianshidianying"
+        drama_areas = "全部$all#中国大陆$cn#美国$us#韩国$kr#香港$hk#台湾$tw#日本$jp#英国$gb#泰国$th#其他地区$others"
+        drama_years = "全部$all#2025$2025#2024$2024#2023$2023#2022$2022#2021$2021#2020$2020#2019-2015$2015#2014-2010$2010#2009-2000$2000#90年代$1990#80年代$1980#更早$1970"
+
+        # 綜藝篩選條件
+        variety_classes = "全部$all#真人秀$zhenrenxiu#喜剧$xiju#脱口秀$tuokouxiu#家庭$jiating#剧情$juqing#动作冒险$dongzuomaoxian#悬疑$xuanyi#动作&冒险$dongzuojiemaoxian#犯罪$fanzui#儿童$ertong#晚会$wanhui#音乐$yinle#动画$donghua#纪录$jilu#纪录片$jilupian"
+        variety_areas = "全部$all#中国大陆$cn#美国$us#韩国$kr#香港$hk#台湾$tw#日本$jp#英国$gb#泰国$th#西班牙$sp#加拿大$ca#法国$fr#印度$in#澳大利亚$au#其他地区$others"
+        variety_years = "全部$all#2025$2025#2024$2024#2023$2023#2022$2022#2021$2021#2020$2020#2019-2015$2015#2014-2010$2010#2009-2000$2000#90年代$1990#80年代$1980#更早$1970"
+
+        # 動漫篩選條件
+        animation_classes = "全部$all#动画$donghua#喜剧$xiju#科幻&奇幻$kehuanqihuan#动作冒险$dongzuomaoxian#动作&冒险$dongzuojiemaoxian#剧情$juqing#悬疑$xuanyi#家庭$jiating#魔幻$mohuan#热血$rexue#犯罪$fanzui#战争&政治$zhanzhengzhengzhi#冒险$maoxian#剧场版$juchangban#其它$qita#恋爱$lianai#科幻$kehuan#爆笑$baoxiao#儿童$ertong#校园$xiaoyuan#竞技$jingji#少女$shaonv#爱情$aiqing#泡面$paomian#西部$xibu#穿越$chuanyue#格斗$gedou#治愈$zhiyu#机战$jizhan#推理$tuili#耽美$danmei#肥皂剧$feizaoju"
+        animation_areas = "全部$all#中国大陆$cn#美国$us#韩国$kr#香港$hk#台湾$tw#日本$jp#英国$gb#泰国$th#西班牙$sp#加拿大$ca#法国$fr#印度$in#澳大利亚$au#其他地区$others"
+        animation_years = "全部$all#2025$2025#2024$2024#2023$2023#2022$2022#2021$2021#2020$2020#2019-2015$2015#2014-2010$2010#2009-2000$2000#90年代$1990#80年代$1980#更早$1970"
+
+        # 兒童篩選條件
+        children_classes = "全部$all#儿童$ertong#动画$donghua#喜剧$xiju#动作冒险$dongzuomaoxian#科幻&奇幻$kehuanqihuan#家庭$jiating#动作&冒险$dongzuojiemaoxian#剧情$juqing#悬疑$xuanyi#犯罪$fanzui#冒险$maoxian#科幻$kehuan#动作$dongzuo#动漫$dongman#历史$lishi#奇幻$qihuan"
+        children_areas = "全部$all#中国大陆$cn#美国$us#韩国$kr#香港$hk#台湾$tw#日本$jp#英国$gb#泰国$th#西班牙$sp#加拿大$ca#法国$fr#印度$in#澳大利亚$au#其他地区$others"
+        children_years = "全部$all#2025$2025#2024$2024#2023$2023#2022$2022#2021$2021#2020$2020#2019-2015$2015#2014-2010$2010#2009-2000$2000#90年代$1990#80年代$1980#更早$1970"
+
         # 構建篩選條件
         filters = {
             'movie': [
@@ -52,24 +72,24 @@ class Spider(Spider):
                 {'name': '年份', 'key': 'year', 'value': [{'n': v.split('$')[0], 'v': v.split('$')[1]} for v in movie_years.split('#')]}
             ],
             'drama': [
-                {'name': '分类', 'key': 'class', 'value': [{'n': v.split('$')[0], 'v': v.split('$')[1]} for v in movie_classes.split('#')]},
-                {'name': '地区', 'key': 'area', 'value': [{'n': v.split('$')[0], 'v': v.split('$')[1]} for v in movie_areas.split('#')]},
-                {'name': '年份', 'key': 'year', 'value': [{'n': v.split('$')[0], 'v': v.split('$')[1]} for v in movie_years.split('#')]}
+                {'name': '分类', 'key': 'class', 'value': [{'n': v.split('$')[0], 'v': v.split('$')[1]} for v in drama_classes.split('#')]},
+                {'name': '地区', 'key': 'area', 'value': [{'n': v.split('$')[0], 'v': v.split('$')[1]} for v in drama_areas.split('#')]},
+                {'name': '年份', 'key': 'year', 'value': [{'n': v.split('$')[0], 'v': v.split('$')[1]} for v in drama_years.split('#')]}
             ],
             'animation': [
-                {'name': '分类', 'key': 'class', 'value': [{'n': v.split('$')[0], 'v': v.split('$')[1]} for v in movie_classes.split('#')]},
-                {'name': '地区', 'key': 'area', 'value': [{'n': v.split('$')[0], 'v': v.split('$')[1]} for v in movie_areas.split('#')]},
-                {'name': '年份', 'key': 'year', 'value': [{'n': v.split('$')[0], 'v': v.split('$')[1]} for v in movie_years.split('#')]}
+                {'name': '分类', 'key': 'class', 'value': [{'n': v.split('$')[0], 'v': v.split('$')[1]} for v in animation_classes.split('#')]},
+                {'name': '地区', 'key': 'area', 'value': [{'n': v.split('$')[0], 'v': v.split('$')[1]} for v in animation_areas.split('#')]},
+                {'name': '年份', 'key': 'year', 'value': [{'n': v.split('$')[0], 'v': v.split('$')[1]} for v in animation_years.split('#')]}
             ],
             'variety': [
-                {'name': '分类', 'key': 'class', 'value': [{'n': v.split('$')[0], 'v': v.split('$')[1]} for v in movie_classes.split('#')]},
-                {'name': '地区', 'key': 'area', 'value': [{'n': v.split('$')[0], 'v': v.split('$')[1]} for v in movie_areas.split('#')]},
-                {'name': '年份', 'key': 'year', 'value': [{'n': v.split('$')[0], 'v': v.split('$')[1]} for v in movie_years.split('#')]}
+                {'name': '分类', 'key': 'class', 'value': [{'n': v.split('$')[0], 'v': v.split('$')[1]} for v in variety_classes.split('#')]},
+                {'name': '地区', 'key': 'area', 'value': [{'n': v.split('$')[0], 'v': v.split('$')[1]} for v in variety_areas.split('#')]},
+                {'name': '年份', 'key': 'year', 'value': [{'n': v.split('$')[0], 'v': v.split('$')[1]} for v in variety_years.split('#')]}
             ],
             'children': [
-                {'name': '类型', 'key': 'class', 'value': [{'n': '全部', 'v': 'all'}, {'n': '動畫', 'v': 'animation'}, {'n': '教育', 'v': 'education'}, {'n': '益智', 'v': 'yizhi'}]},
-                {'name': '地区', 'key': 'area', 'value': [{'n': v.split('$')[0], 'v': v.split('$')[1]} for v in movie_areas.split('#')]},
-                {'name': '年份', 'key': 'year', 'value': [{'n': v.split('$')[0], 'v': v.split('$')[1]} for v in movie_years.split('#')]}
+                {'name': '类型', 'key': 'class', 'value': [{'n': v.split('$')[0], 'v': v.split('$')[1]} for v in children_classes.split('#')]},
+                {'name': '地区', 'key': 'area', 'value': [{'n': v.split('$')[0], 'v': v.split('$')[1]} for v in children_areas.split('#')]},
+                {'name': '年份', 'key': 'year', 'value': [{'n': v.split('$')[0], 'v': v.split('$')[1]} for v in children_years.split('#')]}
             ]
         }
         return {'class': class_list, 'filters': filters}
