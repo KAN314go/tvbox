@@ -72,16 +72,15 @@ class Spider(Spider):
             data_list = root.xpath('//div[contains(@class, "qy-mod-link-wrap")]/a') or root.xpath('//a[contains(@class, "qy-mod-link")]')
             
             for i in data_list:
-                # 優先提取標題，排除集數
-                name_nodes = (i.xpath('.//span[@class="qy-mod-title"]/text()') or 
+                # 嘗試更廣泛的標題提取邏輯
+                name_nodes = (i.xpath('.//span[contains(@class, "title")]/text()') or 
                               i.xpath('.//div[contains(@class, "title")]/text()') or 
-                              i.xpath('.//span[contains(@class, "qy-mod-text") and not(contains(@class, "qy-mod-label"))]/text()'))
-                vod_name = next((n.strip() for n in name_nodes if n.strip()), "未知")
+                              i.xpath('.//span[contains(@class, "qy-mod-text") and not(contains(@class, "qy-mod-label"))]/text()') or 
+                              i.xpath('.//text()[not(parent::span[contains(@class, "qy-mod-label")]) and string-length(normalize-space()) > 0]'))
+                vod_name = next((n.strip() for n in name_nodes if n.strip() and "第" not in n), "未知")
                 vod_id = i.get('href', '')
-                pic_nodes = i.xpath('.//img/@src')
-                vod_pic = pic_nodes[0] if pic_nodes else self.placeholder_pic
-                if vod_pic.startswith('/'):
-                    vod_pic = self.home_url + vod_pic
+                # 放棄首頁圖片，直接使用佔位符
+                vod_pic = self.placeholder_pic
                 remark_nodes = i.xpath('.//span[contains(@class, "qy-mod-label")]/text()')
                 vod_remarks = remark_nodes[0].strip() if remark_nodes else ''
                 result['list'].append({
@@ -100,22 +99,21 @@ class Spider(Spider):
         _year = ext.get('year', '')
         _class = ext.get('class', '')
         _area = ext.get('area', '')
-        # 修正參數名稱：®ion -> region，showtype -> class
         url = f"{self.home_url}/filter.html?channel={tid}&region={_area}&class={_class}&year={_year}&page={pg}"
         
         try:
             res = requests.get(url, headers=self.headers)
             res.encoding = 'utf-8'
             root = etree.HTML(res.text)
-            # 調整 XPath 以匹配篩選頁結構
             data_list = root.xpath('//div[contains(@class, "qy-vod-list")]/div/a') or root.xpath('//a[contains(@class, "qy-mod-link")]')
             for i in data_list:
-                name_nodes = (i.xpath('.//span[@class="qy-mod-title"]/text()') or 
+                name_nodes = (i.xpath('.//span[contains(@class, "title")]/text()') or 
                               i.xpath('.//div[contains(@class, "title")]/text()') or 
                               i.xpath('.//span[contains(@class, "qy-mod-text") and not(contains(@class, "qy-mod-label"))]/text()'))
                 vod_name = next((n.strip() for n in name_nodes if n.strip()), "未知")
                 vod_id = i.get('href', '')
-                pic_nodes = i.xpath('.//img/@src')
+                # 調整圖片提取邏輯，適應篩選頁面
+                pic_nodes = i.xpath('.//img[contains(@class, "vod-pic")]/@src') or i.xpath('.//img/@src')
                 vod_pic = pic_nodes[0] if pic_nodes else self.placeholder_pic
                 if vod_pic.startswith('/'):
                     vod_pic = self.home_url + vod_pic
@@ -232,7 +230,7 @@ class Spider(Spider):
             
             for item in data_list:
                 name_nodes = (item.xpath('.//span[contains(@class, "qy-mod-text")]/text()') or 
-                              item.xpath('.//div[contains(@class, "title")]/text()') or 
+                              item xpath('.//div[contains(@class, "title")]/text()') or 
                               item.xpath('.//span[@class="qy-mod-title"]/text()') or 
                               item.xpath('.//text()'))
                 vod_name = next((n.strip() for n in name_nodes if n.strip()), "未知")
