@@ -229,10 +229,12 @@ class Spider(Spider):
             data_list = root.xpath('//a[contains(@class, "qy-mod-link")]')
             
             for item in data_list:
-                name_nodes = (item.xpath('.//span[contains(@class, "qy-mod-text")]/text()') or 
-                              item xpath('.//div[contains(@class, "title")]/text()') or 
-                              item.xpath('.//span[@class="qy-mod-title"]/text()') or 
-                              item.xpath('.//text()'))
+                name_nodes = (
+                    item.xpath('.//span[contains(@class, "qy-mod-text")]/text()') or
+                    item.xpath('.//div[contains(@class, "title")]/text()') or
+                    item.xpath('.//span[@class="qy-mod-title"]/text()') or
+                    item.xpath('.//text()')
+                )
                 vod_name = next((n.strip() for n in name_nodes if n.strip()), "未知")
                 vod_id = item.get('href', '')
                 pic_nodes = item.xpath('.//img/@src')
