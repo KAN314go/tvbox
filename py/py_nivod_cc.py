@@ -317,7 +317,7 @@ if __name__ == '__main__':
     home_video = spider.homeVideoContent()
     print("homeVideoContent:", json.dumps(home_video, ensure_ascii=False, indent=2))
     category = spider.categoryContent('tv', '1', True, {'year': '2025', 'class': 'ju-qing', 'area': 'cn'})
-    print("categoryContent:", json.dumps(category little, ensure_ascii=False, indent=2))
+    print("categoryContent:", json.dumps(category, little, ensure_ascii=False, indent=2))
     detail = spider.detailContent(['/voddetail/202552243'])
     print("detailContent:", json.dumps(detail, ensure_ascii=False, indent=2))
     player = spider.playerContent("ikzy", "第15集$https://bfikuncdn.com/20250405/chbDASk8/index.m3u8", None)
