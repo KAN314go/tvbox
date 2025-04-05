@@ -72,12 +72,21 @@ class Spider(Spider):
             root = etree.HTML(res.text)
             data_list = root.xpath('//div[contains(@class, "qy-mod-link-wrap")]/a')
             
+            # 調試：打印 HTML 和提取的節點數
+            print(f"homeVideoContent HTML length: {len(res.text)}")
+            print(f"homeVideoContent data_list length: {len(data_list)}")
+            if data_list:
+                print(f"First item HTML: {etree.tostring(data_list[0], encoding='unicode')}")
+            
             for i in data_list:
-                # 提取標題
+                # 嘗試主 XPath 提取標題
                 name_nodes = i.xpath('.//div[@class="title-wrap"]/p[@class="main"]/a/span/text()')
-                vod_name = name_nodes[0].strip() if name_nodes else "未知"
+                vod_name = name_nodes[0].strip() if name_nodes else None
+                # 如果失敗，嘗試從 <a> 的 title 屬性提取
+                if not vod_name:
+                    vod_name = i.xpath('./@title')
+                    vod_name = vod_name[0].strip() if vod_name else "未知"
                 vod_id = i.get('href', '')
-                # 使用佔位符圖片（按要求放棄首頁圖片提取）
                 vod_pic = self.placeholder_pic
                 remark_nodes = i.xpath('.//span[contains(@class, "qy-mod-label")]/text()')
                 vod_remarks = remark_nodes[0].strip() if remark_nodes else ''
@@ -97,7 +106,7 @@ class Spider(Spider):
         _year = ext.get('year', '')
         _class = ext.get('class', '')
         _area = ext.get('area', '')
-        url = f"{self.home_url}/filter.html?channel={tid}&region={_area}&class={_class}&year={_year}&page={pg}"
+        url = f"{self.home_url}/filter.html?channel={tid}®ion={_area}&class={_class}&year={_year}&page={pg}"
         
         try:
             res = requests.get(url, headers=self.headers)
@@ -105,12 +114,23 @@ class Spider(Spider):
             root = etree.HTML(res.text)
             data_list = root.xpath('//div[contains(@class, "qy-mod-link-wrap")]/a')
             
+            # 調試：打印 HTML 和提取的節點數
+            print(f"categoryContent URL: {url}")
+            print(f"categoryContent HTML length: {len(res.text)}")
+            print(f"categoryContent data_list length: {len(data_list)}")
+            if data_list:
+                print(f"First item HTML: {etree.tostring(data_list[0], encoding='unicode')}")
+            
             for i in data_list:
-                # 提取標題
+                # 嘗試主 XPath 提取標題
                 name_nodes = i.xpath('.//div[@class="title-wrap"]/p[@class="main"]/a/span/text()')
-                vod_name = name_nodes[0].strip() if name_nodes else "未知"
+                vod_name = name_nodes[0].strip() if name_nodes else None
+                # 如果失敗，嘗試從 <a> 的 title 屬性提取
+                if not vod_name:
+                    vod_name = i.xpath('./@title')
+                    vod_name = vod_name[0].strip() if vod_name else "未知"
                 vod_id = i.get('href', '')
-                # 提取圖片（從 background-image 中解析）
+                # 提取圖片
                 style_nodes = i.xpath('.//div[contains(@class, "qy-mod-cover")]/@style')
                 vod_pic = self.placeholder_pic
                 if style_nodes:
@@ -128,9 +148,8 @@ class Spider(Spider):
                     'vod_pic': vod_pic,
                     'vod_remarks': vod_remarks
                 })
-            # 分頁信息（假設總頁數和總數未知，根據實際情況調整）
             result['page'] = int(pg)
-            result['pagecount'] = 999  # 假設值，需根據實際頁面提取
+            result['pagecount'] = 999  # 假設值，待完善
             result['limit'] = 24
             result['total'] = len(data_list)
         except Exception as e:
@@ -233,7 +252,10 @@ class Spider(Spider):
             
             for item in data_list:
                 name_nodes = item.xpath('.//div[@class="title-wrap"]/p[@class="main"]/a/span/text()')
-                vod_name = name_nodes[0].strip() if name_nodes else "未知"
+                vod_name = name_nodes[0].strip() if name_nodes else None
+                if not vod_name:
+                    vod_name = item.xpath('./@title')
+                    vod_name = vod_name[0].strip() if vod_name else "未知"
                 vod_id = item.get('href', '')
                 style_nodes = item.xpath('.//div[contains(@class, "qy-mod-cover")]/@style')
                 vod_pic = self.placeholder_pic
