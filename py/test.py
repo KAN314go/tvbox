@@ -31,8 +31,6 @@ class Spider(Spider):
         self.session = requests.Session()
         retries = Retry(total=3, backoff_factor=1, status_forcelist=[500, 502, 503, 504])
         self.session.mount('https://', HTTPAdapter(max_retries=retries))
-        # NID 參數（根據您提供的 nid 值）
-        self.nid = "523=btncPqH7jPK4T7OeODctBiD7zVwAu2nyW4tysjKrE_0-1--FQ3dUpOrEUhlNbQwBa-qWV_qKqXmdXKrx9bhTgFzNYyQ2cZsvVoa1E6iXa8-cD2c077gc9kzUlbruEalM_VuLGXdRhDM0WWeMa9CERM1q82Fs-MILLdYXsq81xS5idOl3WsSG1vpImm8nIuoYcjLh6g-19YFWlS1-UP9FaidsjT0YiwPWwmyLJhNdJz4A9am0L7LTafdSlgQT38Y9RBrt-ObM-hOIBrWpllzqOOgQPrdYcKFaStfv7Dbkuy0lRp8CCpiMByaitymDb0XoRWu1DTdhFeTa_lKwkTOjRPgIuPYBOSY_zgXdTmX65zy_eBm4aemGr80ouk9qeqjZbP_MJAeISh0deeZ7vA686gUmdPobb9y55I71U3wsgWITqEO02sunDa-wV3L9Y31OB3-S6b5r-d6XMpag53SF00NVd3F8NEEYyyux9GWmhERKgShlKMoj0fsmrg_xz2MvGXcn0laYYLkv9B1o3glGxB-FBIMxG-_N_DJE99DhATWWcAfesUd536Y7dYNj7CLx0yFLUX611wlzNKUK5u4MU9RE21wPKwa_RCa_jFshWvs_3BqHmauvRRvaEOFqfEda-NoyzffGP_lVjZ_O30pNZOTGKatrmQtrRpK4-KZyi276yJYiNl4AzeuY1DZ3tBiBmBgLtyIv8Lh4xdInrFvrzuBzIMMFjAgN8MlxTrOL7NNBf8jf1l5jH--LS1ObTwe624CjQdf_XZgkHwoyiCbwhYt2mMyjnZfiHqyBXcxNQWIApr4Yvft5zea5dkPZxNm_GZ3BBYEU3ugmAoj_W2JjZ-oHj7AGwClFD6VMB-jq-EZaFgyfVZYGOt11LueOltchX463lJsPS6hvEV98WMEyu3qr5XACNCob-zdrO7Xuk_YQ96B8nezLMEIpUjRyfguUub8HfrQ7eQ_8Aam33PJeivzPnYlZhdabCcL"
 
     def init(self, extend):
         pass
