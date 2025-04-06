@@ -4,9 +4,11 @@
 
 import sys
 import requests
-from lxml import etree
 import re
 import json
+import asyncio
+import aiohttp
+from functools import lru_cache
 sys.path.append('..')
 from base.spider import Spider
 
@@ -18,6 +20,7 @@ class Spider(Spider):
             "Referer": "https://hlove.tv/",
         }
         self.placeholder_pic = 'https://image.tmdb.org/t/p/w600_and_h900_bestv2/placeholder.jpg'
+        self.cache = {}  # 簡單內存緩存
 
     def init(self, extend):
         pass
@@ -94,86 +97,98 @@ class Spider(Spider):
         }
         return {'class': class_list, 'filters': filters}
 
+    @lru_cache(maxsize=1)
+    def fetch_home_page(self):
+        try:
+            res = requests.get(self.home_url, headers=self.headers, timeout=5)
+            res.encoding = 'utf-8'
+            return res.text
+        except Exception as e:
+            print(f"Error fetching home page: {e}")
+            return None
+
     def homeVideoContent(self):
         d = []
         try:
-            res = requests.get(self.home_url, headers=self.headers)
-            res.encoding = 'utf-8'
-            root = etree.HTML(res.text)
-            
-            # 嘗試從 __NEXT_DATA__ 獲取推薦內容（例如 banner）
-            next_data = re.search(r'<script id="__NEXT_DATA__" type="application/json">(.*?)</script>', res.text)
+            # 從緩存或網絡獲取首頁數據
+            home_html = self.fetch_home_page()
+            if not home_html:
+                return {'list': d, 'parse': 0, 'jx': 0}
+
+            # 從 __NEXT_DATA__ 提取推薦內容
+            next_data = re.search(r'<script id="__NEXT_DATA__" type="application/json">(.*?)</script>', home_html)
             if next_data:
                 next_json = json.loads(next_data.group(1))
-                init_cards = next_json['props']['pageProps'].get('initCard', [])
-                for card in init_cards:
-                    vod_name = card.get('name', '')
-                    vod_id = card.get('href', '')
-                    vod_pic = card.get('img', self.placeholder_pic)
-                    if vod_pic == '/api/images/init' or not vod_pic:
-                        vod_pic = self.get_poster_from_id(vod_id)  # 從詳情頁獲取圖片
-                    d.append({
-                        'vod_id': vod_id,
-                        'vod_name': vod_name,
-                        'vod_pic': vod_pic,
-                        'vod_remarks': 'Banner推薦'
-                    })
-
-            # 解析 HTML 中的所有影片區塊
-            sections = root.xpath('//div[contains(@class, "h-film-listall_container__aqNQq")]')
-            for section in sections:
-                # 獲取區塊標題
-                section_title = section.xpath('.//div[contains(@class, "h-film-listall_moduleName__YZIi4")]/text()')
-                section_title = section_title[0].strip() if section_title else "未知分類"
+                cards = next_json['props']['pageProps'].get('cards', [])
                 
-                # 獲取該區塊的所有影片卡片
-                card_list = section.xpath('.//div[contains(@class, "h-film-listall_cardList___IXsY")]/a')
-                for card in card_list:
-                    vod_name = card.xpath('.//div[contains(@class, "h-film-listall_name__Gyb9x")]/text()')
-                    vod_name = vod_name[0].strip() if vod_name else "未知名稱"
-                    vod_id = card.get('href', '')
-                    
-                    # 嘗試從小圖片獲取海報
-                    vod_pic = card.xpath('.//img[contains(@class, "h-film-listall_img__jiamS")]/@src')
-                    vod_pic = vod_pic[0] if vod_pic else None
-                    
-                    # 如果小圖片無效，嘗試從大圖片獲取
-                    if not vod_pic or vod_pic == '/api/images/init':
-                        large_pic = card.xpath('.//img[contains(@class, "h-film-listall_lgimg__edZi2")]/@src')
-                        vod_pic = large_pic[0] if large_pic else None
-                    
-                    # 如果仍然無效，從詳情頁獲取
-                    if not vod_pic or vod_pic == '/api/images/init':
-                        vod_pic = self.get_poster_from_id(vod_id)
-                    
-                    vod_remarks = section_title
-                    d.append({
-                        'vod_id': vod_id,
-                        'vod_name': vod_name,
-                        'vod_pic': vod_pic,
-                        'vod_remarks': vod_remarks
-                    })
-            
+                # 遍歷所有推薦卡片
+                for section in cards:
+                    section_title = section.get('name', '未知分類')
+                    for card in section.get('cards', []):
+                        vod_id = card.get('id', '')
+                        vod_name = card.get('name', '')
+                        vod_pic = card.get('img', self.placeholder_pic)
+                        vod_remarks = card.get('countStr', section_title)
+
+                        # 如果圖片無效，直接使用占位圖片，僅對少數關鍵圖片異步處理
+                        if not vod_pic or vod_pic == '/api/images/init':
+                            vod_pic = self.cache.get(vod_id, self.placeholder_pic)
+                            if vod_pic == self.placeholder_pic and section_title == '热门推荐':  # 僅對熱門推薦異步處理
+                                d.append({
+                                    'vod_id': vod_id,
+                                    'vod_name': vod_name,
+                                    'vod_pic': None,  # 標記為待處理
+                                    'vod_remarks': vod_remarks
+                                })
+                            else:
+                                d.append({
+                                    'vod_id': vod_id,
+                                    'vod_name': vod_name,
+                                    'vod_pic': vod_pic,
+                                    'vod_remarks': vod_remarks
+                                })
+                        else:
+                            d.append({
+                                'vod_id': vod_id,
+                                'vod_name': vod_name,
+                                'vod_pic': vod_pic,
+                                'vod_remarks': vod_remarks
+                            })
+
+                # 異步處理少數缺失的圖片（僅限熱門推薦）
+                loop = asyncio.get_event_loop()
+                missing_pics = [item for item in d if item['vod_pic'] is None]
+                if missing_pics:
+                    pics = loop.run_until_complete(self.async_fetch_posters(missing_pics))
+                    for item, pic in zip(missing_pics, pics):
+                        item['vod_pic'] = pic
+                        self.cache[item['vod_id']] = pic  # 更新緩存
+
             # 去重處理
-            unique_d = {item['vod_id']: item for item in d}.values()
+            unique_d = {item['vod_id']: item for item in d if item['vod_id']}.values()
             return {'list': list(unique_d), 'parse': 0, 'jx': 0}
         except Exception as e:
             print(f"Error in homeVideoContent: {e}")
             return {'list': d, 'parse': 0, 'jx': 0}
 
-    def get_poster_from_id(self, vod_id):
-        """根據 vod_id 從詳情頁獲取海報圖片"""
-        detail_url = f"{self.home_url}{vod_id}"
+    async def async_fetch_posters(self, items):
+        """異步獲取缺失的圖片，極短超時"""
+        async with aiohttp.ClientSession(headers=self.headers) as session:
+            tasks = [self._fetch_poster(session, item['vod_id']) for item in items]
+            return await asyncio.gather(*tasks)
+
+    async def _fetch_poster(self, session, vod_id):
+        """單個影片的圖片獲取，超時設為1秒"""
+        detail_url = f"{self.home_url}/{vod_id}"
         try:
-            res = requests.get(detail_url, headers=self.headers)
-            res.encoding = 'utf-8'
-            next_data = re.search(r'<script id="__NEXT_DATA__" type="application/json">(.*?)</script>', res.text)
-            if next_data:
-                next_json = json.loads(next_data.group(1))
-                return next_json['props']['pageProps']['collectionInfo'].get('imgUrl', self.placeholder_pic)
-            return self.placeholder_pic
-        except Exception as e:
-            print(f"Error in get_poster_from_id: {e}")
+            async with session.get(detail_url, timeout=aiohttp.ClientTimeout(total=1)) as res:
+                text = await res.text()
+                next_data = re.search(r'<script id="__NEXT_DATA__" type="application/json">(.*?)</script>', text)
+                if next_data:
+                    next_json = json.loads(next_data.group(1))
+                    return next_json['props']['pageProps']['collectionInfo'].get('imgUrl', self.placeholder_pic)
+                return self.placeholder_pic
+        except Exception:
             return self.placeholder_pic
 
     def categoryContent(self, cid, page, filter, ext):
@@ -186,7 +201,7 @@ class Spider(Spider):
         
         d = []
         try:
-            res = requests.get(url, headers=self.headers)
+ieto            res = requests.get(url, headers=self.headers)
             res.encoding = 'utf-8'
             root = etree.HTML(res.text)
             data_list = root.xpath('//div[contains(@class, "h-film-listall_cardList___IXsY")]/a')
@@ -204,7 +219,7 @@ class Spider(Spider):
                 vod_pic_list = card.xpath('.//img[contains(@class, "h-film-listall_img__jiamS")]/@src')
                 vod_pic = vod_pic_list[0] if vod_pic_list else None
                 if not vod_pic or vod_pic == '/api/images/init':
-                    vod_pic = init_cards[i]['img'] if i < len(init_cards) and 'img' in init_cards[i] else self.get_poster_from_id(vod_id)
+                    vod_pic = init_cards[i]['img'] if i < len(init_cards) and 'img' in init_cards[i] else self.placeholder_pic
                 vod_remarks = init_cards[i]['countStr'] if i < len(init_cards) and 'countStr' in init_cards[i] else ''
                 d.append({
                     'vod_id': vod_id,
@@ -293,7 +308,7 @@ class Spider(Spider):
                 vod_id = item.get('href', '')
                 vod_pic = item.xpath('.//img[contains(@class, "h-film-listall_img__jiamS")]/@src')[0] if item.xpath('.//img[contains(@class, "h-film-listall_img__jiamS")]/@src') else self.placeholder_pic
                 if vod_pic == '/api/images/init' or not vod_pic:
-                    vod_pic = self.get_poster_from_id(vod_id)
+                    vod_pic = self.placeholder_pic  # 搜索結果直接使用占位圖片
                 result.append({
                     'vod_id': vod_id,
                     'vod_name': vod_name,
