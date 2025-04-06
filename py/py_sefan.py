@@ -124,14 +124,27 @@ class Spider(Spider):
                     if not vod_id or not vod_name:
                         continue
 
-                    if not vod_id.startswith('/'):
-                        vod_id = f"/{self.infer_category(section_title)}/{vod_id}"
+                    # 嘗試從 card 中獲取正確的 URL（若存在）
+                    vod_path = card.get('path', f"/{self.infer_category(section_title)}/{vod_id}")
+                    if not vod_path.startswith('/'):
+                        vod_path = f"/{vod_path}"
+
+                    # 驗證 vod_id 是否有效
+                    detail_url = f"{self.home_url}{vod_path}"
+                    try:
+                        check_res = requests.head(detail_url, headers=self.headers, timeout=5)
+                        if check_res.status_code != 200:
+                            print(f"無效的 vod_id: {vod_path}, 狀態碼: {check_res.status_code}")
+                            continue
+                    except requests.RequestException as e:
+                        print(f"驗證 vod_id 失敗: {vod_path}, 錯誤: {e}")
+                        continue
 
                     if not vod_pic or vod_pic == '/api/images/init':
                         vod_pic = self.default_pic
 
                     d.append({
-                        'vod_id': vod_id,
+                        'vod_id': vod_path,
                         'vod_name': vod_name,
                         'vod_pic': vod_pic,
                         'vod_remarks': vod_remarks
@@ -203,7 +216,6 @@ class Spider(Spider):
     def detailContent(self, did):
         ids = did[0]
         video_list = []
-        # 確保 ids 以 / 開頭
         if not ids.startswith('/'):
             ids = f"/{ids}"
         detail_url = f"{self.home_url}{ids}"
@@ -211,6 +223,10 @@ class Spider(Spider):
         try:
             res = requests.get(detail_url, headers=self.headers, timeout=10)
             print(f"HTTP 狀態碼: {res.status_code}")
+            if res.status_code != 200:
+                print(f"頁面不存在，URL: {detail_url}")
+                return {'list': [], 'msg': f'頁面不存在 (狀態碼: {res.status_code})'}
+
             res.encoding = 'utf-8'
             next_data = re.search(r'<script id="__NEXT_DATA__" type="application/json">(.*?)</script>', res.text)
             
@@ -372,5 +388,5 @@ class Spider(Spider):
 
 if __name__ == "__main__":
     spider = Spider()
-    result = spider.detailContent(["/movie/se4pnjL1IF6D"])
+    result = spider.homeVideoContent()  # 先測試主頁數據
     print(json.dumps(result, ensure_ascii=False, indent=2))
