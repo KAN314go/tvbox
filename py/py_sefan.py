@@ -120,7 +120,6 @@ class Spider(Spider):
                     if not vod_id or not vod_name:
                         continue
 
-                    # 統一 vod_id 格式，添加路徑前綴
                     if not vod_id.startswith('/'):
                         vod_id = f"/{self.infer_category(section_title)}/{vod_id}"
 
@@ -142,7 +141,6 @@ class Spider(Spider):
             return {'list': d, 'parse': 0, 'jx': 0}
 
     def infer_category(self, section_title):
-        """根據分類名稱推斷路徑"""
         category_mapping = {
             '電影': 'movie',
             '电视剧': 'drama',
@@ -153,7 +151,7 @@ class Spider(Spider):
         for key, value in category_mapping.items():
             if key in section_title:
                 return value
-        return 'movie'  # 默認為 movie
+        return 'movie'
 
     def categoryContent(self, cid, page, filter, ext):
         _year = ext.get('year', 'all')
@@ -201,64 +199,68 @@ class Spider(Spider):
     def detailContent(self, did):
         ids = did[0]
         video_list = []
-        # 修正 URL 拼接，確保 vod_id 格式正確
+        # 確保 ids 以 / 開頭，並生成正確的 detail_url
         if not ids.startswith('/'):
             ids = f"/{ids}"
         detail_url = f"{self.home_url}{ids}"
+        print(f"請求的 detail_url: {detail_url}")  # 添加調試日誌
         try:
             res = requests.get(detail_url, headers=self.headers)
             res.encoding = 'utf-8'
             next_data = re.search(r'<script id="__NEXT_DATA__" type="application/json">(.*?)</script>', res.text)
             
-            if next_data:
-                next_json = json.loads(next_data.group(1))
-                collection_info = next_json['props']['pageProps']['collectionInfo']
-                
-                vod_name = collection_info.get('name', '')
-                vod_year = collection_info.get('time', '')
-                vod_area = collection_info.get('country', '')
-                vod_content = collection_info.get('desc', '')
-                vod_remarks = collection_info.get('countStr', '')
-                vod_actor = ', '.join([actor['name'] for actor in collection_info.get('actor', [])])
-                vod_director = ', '.join([director['name'] for director in collection_info.get('director', [])])
-                vod_pic = collection_info.get('imgUrl', self.default_pic)
-                is_movie = collection_info.get('isMovie', False)
-                
-                play_from = []
-                play_url = []
-                for group in collection_info['videosGroup']:
-                    if not group.get('videos'):
-                        continue
-                    line_name = group.get('name', '线路1')
-                    if is_movie:
-                        video = group['videos'][0]
-                        play_from.append(line_name)
-                        play_url.append(f"{vod_name}${video['purl']}")
-                    else:
-                        episodes = []
-                        for video in group['videos']:
-                            ep_name = f"第{video['eporder']}集"
-                            ep_url = video['purl']
-                            episodes.append(f"{ep_name}${ep_url}")
-                        play_from.append(line_name)
-                        play_url.append('#'.join(episodes))
-                
-                video_list.append({
-                    'vod_id': ids,
-                    'vod_name': vod_name,
-                    'vod_pic': vod_pic,
-                    'vod_remarks': vod_remarks,
-                    'vod_year': vod_year,
-                    'vod_area': vod_area,
-                    'vod_actor': vod_actor,
-                    'vod_director': vod_director,
-                    'vod_content': vod_content,
-                    'vod_play_from': '$$$'.join(play_from),
-                    'vod_play_url': '$$$'.join(play_url)
-                })
+            if not next_data:
+                print(f"未找到 __NEXT_DATA__，URL: {detail_url}")
+                return {'list': [], 'msg': '未找到影片數據'}
+
+            next_json = json.loads(next_data.group(1))
+            collection_info = next_json['props']['pageProps']['collectionInfo']
+            
+            vod_name = collection_info.get('name', '')
+            vod_year = collection_info.get('time', '')
+            vod_area = collection_info.get('country', '')
+            vod_content = collection_info.get('desc', '')
+            vod_remarks = collection_info.get('countStr', '')
+            vod_actor = ', '.join([actor['name'] for actor in collection_info.get('actor', [])])
+            vod_director = ', '.join([director['name'] for director in collection_info.get('director', [])])
+            vod_pic = collection_info.get('imgUrl', self.default_pic)
+            is_movie = collection_info.get('isMovie', False)
+            
+            play_from = []
+            play_url = []
+            for group in collection_info['videosGroup']:
+                if not group.get('videos'):
+                    continue
+                line_name = group.get('name', '线路1')
+                if is_movie:
+                    video = group['videos'][0]
+                    play_from.append(line_name)
+                    play_url.append(f"{vod_name}${video['purl']}")
+                else:
+                    episodes = []
+                    for video in group['videos']:
+                        ep_name = f"第{video['eporder']}集"
+                        ep_url = video['purl']
+                        episodes.append(f"{ep_name}${ep_url}")
+                    play_from.append(line_name)
+                    play_url.append('#'.join(episodes))
+            
+            video_list.append({
+                'vod_id': ids,
+                'vod_name': vod_name,
+                'vod_pic': vod_pic,
+                'vod_remarks': vod_remarks,
+                'vod_year': vod_year,
+                'vod_area': vod_area,
+                'vod_actor': vod_actor,
+                'vod_director': vod_director,
+                'vod_content': vod_content,
+                'vod_play_from': '$$$'.join(play_from),
+                'vod_play_url': '$$$'.join(play_url)
+            })
             return {"list": video_list}
         except Exception as e:
-            print(f"Error in detailContent: {e}")
+            print(f"Error in detailContent: {e}, URL: {detail_url}")
             return {'list': [], 'msg': str(e)}
 
     def searchContent(self, key, quick):
