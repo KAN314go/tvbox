@@ -393,7 +393,27 @@ class Spider(Spider):
             
             play_from = []
             play_url = []
-            for group in collection_info.get('videosGroup', []):
+            videos_group = collection_info.get('videosGroup', [])
+            if not videos_group:
+                print(f"videosGroup 為空，URL: {detail_url}")
+                return {
+                    'list': [{
+                        'vod_id': ids,
+                        'vod_name': vod_name,
+                        'vod_pic': vod_pic,
+                        'vod_remarks': vod_remarks,
+                        'vod_year': vod_year,
+                        'vod_area': vod_area,
+                        'vod_actor': vod_actor,
+                        'vod_director': vod_director,
+                        'vod_content': vod_content,
+                        'vod_play_from': '',
+                        'vod_play_url': ''
+                    }],
+                    'msg': '無可用播放線路'
+                }
+
+            for group in videos_group:
                 if not group.get('videos'):
                     continue
                 line_name = group.get('name', '线路1')
@@ -478,10 +498,18 @@ class Spider(Spider):
         vod = detail['list'][0]
         vod_name = vod['vod_name']
         
+        # 檢查是否有播放線路
+        if not vod['vod_play_from'] or not vod['vod_play_url']:
+            return f"<h1>{vod_name} - 無可用播放線路</h1>"
+        
         play_from = vod['vod_play_from'].split('$$$')
         play_url = vod['vod_play_url'].split('$$$')
         lines = list(zip(play_from, play_url))
         sorted_lines = sorted(lines, key=lambda x: x[0] != 'heimuer')
+        
+        # 確保 sorted_lines 不為空
+        if not sorted_lines:
+            return f"<h1>{vod_name} - 無可用播放線路</h1>"
         
         selected_play_url = sorted_lines[0][1].split('#')[0].split('$')[1] if sorted_lines else ''
         
