@@ -30,7 +30,7 @@
             "播放链接": "href=\"&&\"",
             "播放标题": ">&&</",
             //"线路二次截取": "<div class=\"swiper-wrapper&&<div class=\"swiper-pagination",
-            "线路数组": "class=\"swiper-slide orgin-btn&&</section>",
+            "线路数组": "<div id=\"&&</section>",
             "线路标题": ">&&</",
             "嗅探词": "index.m3u8",
             "搜索url":"https://htba.cc/search/{wd}/page/{pg}/",
