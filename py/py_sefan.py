@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # @Author  : Adapted for 華視頻
-# @Time    : 2025/04/05
+# @Time    : 2025/04/06
 
 import sys
 import requests
@@ -45,7 +45,7 @@ class Spider(Spider):
 
         # 電影篩選條件
         movie_classes = "全部$all#剧情$juqing#喜剧$xiju#动作$dongzuo#惊悚$jingsong#爱情$aiqing#恐怖$kongbu#犯罪$fanzui#冒险$maoxian#奇幻$qihuan#悬疑$xuanyi#科幻$kehuan#家庭$jiating#动画$donghua#历史$lishi#战争$zhanzheng#音乐$yinle#动漫$dongman#电视电影$dianshidianying#西部$xibu#网络电影$wangluodianying#纪录$jilu#同性$tongxing#歌舞$gewu#灾难$zainan#动作冒险$dongzuomaoxian#战争政治$zhanzhengzhengzhi"
-        movie_areas = "全部$all#中国大陆$cn#美国 Lacan$us#韩国$kr#香港$hk#台湾$tw#日本$jp#英国$gb#泰国$th#西班牙$sp#加拿大$ca#法国$fr#印度$in#澳大利亚$au#其他地区$others"
+        movie_areas = "全部$all#中国大陆$cn#美国$us#韩国$kr#香港$hk#台湾$tw#日本$jp#英国$gb#泰国$th#西班牙$sp#加拿大$ca#法国$fr#印度$in#澳大利亚$au#其他地区$others"
         movie_years = "全部$all#2025$2025#2024$2024#2023$2023#2022$2022#2021$2021#2020$2020#2019-2010$2010#2009-2000$2000#90年代$1990#80年代$1980#更早$1970"
 
         # 電視劇篩選條件
@@ -100,10 +100,10 @@ class Spider(Spider):
 
     @lru_cache(maxsize=1)
     def fetch_home_page(self):
+        """緩存首頁數據"""
         try:
             res = requests.get(self.home_url, headers=self.headers, timeout=5)
             res.encoding = 'utf-8'
-            print("首頁抓取成功")
             return res.text
         except Exception as e:
             print(f"Error fetching home page: {e}")
@@ -118,7 +118,7 @@ class Spider(Spider):
                 print("首頁 HTML 為空")
                 return {'list': d, 'parse': 0, 'jx': 0}
 
-            # 嘗試從 __NEXT_DATA__ 獲取推薦內容
+            # 嘗試從 __NEXT_DATA__ 獲取所有分類內容
             next_data = re.search(r'<script id="__NEXT_DATA__" type="application/json">(.*?)</script>', home_html)
             if next_data:
                 next_json = json.loads(next_data.group(1))
@@ -127,7 +127,6 @@ class Spider(Spider):
                 for section in cards:
                     section_title = section.get('name', '未知分類')
                     section_cards = section.get('cards', [])
-                    print(f"處理分類: {section_title}, 包含 {len(section_cards)} 個影片")
                     for card in section_cards:
                         vod_id = card.get('id', '')
                         vod_name = card.get('name', '')
@@ -135,17 +134,16 @@ class Spider(Spider):
                         vod_remarks = card.get('countStr', section_title)
 
                         if not vod_id or not vod_name:
-                            print(f"跳過無效數據: id={vod_id}, name={vod_name}")
-                            continue
+                            continue  # 跳過無效數據
 
-                        # 如果圖片無效，檢查緩存或標記待處理
+                        # 如果圖片無效，標記為待處理
                         if not vod_pic or vod_pic == '/api/images/init':
-                            vod_pic = self.cache.get(vod_id, self.placeholder_pic)
-                            if vod_pic == self.placeholder_pic and section_title == '热门推荐':
+                            vod_pic = self.cache.get(vod_id, None)
+                            if not vod_pic:
                                 d.append({
                                     'vod_id': vod_id,
                                     'vod_name': vod_name,
-                                    'vod_pic': None,  # 標記為待處理
+                                    'vod_pic': None,  # 待異步處理
                                     'vod_remarks': vod_remarks
                                 })
                             else:
@@ -163,7 +161,7 @@ class Spider(Spider):
                                 'vod_remarks': vod_remarks
                             })
 
-                # 異步處理缺失的圖片（僅限熱門推薦）
+                # 異步處理缺失的圖片
                 missing_pics = [item for item in d if item['vod_pic'] is None]
                 if missing_pics:
                     print(f"發現 {len(missing_pics)} 個缺失圖片，開始異步處理")
@@ -196,7 +194,7 @@ class Spider(Spider):
                             'vod_remarks': section_title
                         })
 
-            # 去重並檢查數據
+            # 去重並返回完整數據
             unique_d = {item['vod_id']: item for item in d if item['vod_id']}.values()
             print(f"最終返回 {len(unique_d)} 個影片")
             return {'list': list(unique_d), 'parse': 0, 'jx': 0}
@@ -224,184 +222,219 @@ class Spider(Spider):
         except Exception:
             return self.placeholder_pic
 
-    def get_poster_from_id(self, vodphysics = etree
-        vod_id = card.get('href', '')
-        vod_name = card.xpath('.//div[contains(@class, "h-film-listall_name__Gyb9x")]/text()')[0].strip()
-        vod_pic_list = card.xpath('.//img[contains(@class, "h-film-listall_img__jiamS")]/@src')
-        vod_pic = vod_pic_list[0] if vod_pic_list else None
-        if not vod_pic or vod_pic == '/api/images/init':
-            vod_pic = init_cards[i]['img'] if i < len(init_cards) and 'img' in init_cards[i] else self.get_poster_from_id(vod_id)
-        vod_remarks = init_cards[i]['countStr'] if i < len(init_cards) and 'countStr' in init_cards[i] else ''
-        d.append({
-            'vod_id': vod_id,
-            'vod_name': vod_name,
-            'vod_pic': vod_pic,
-            'vod_remarks': vod_remarks
-        })
+    def get_poster_from_id(self, vod_id):
+        """同步獲取圖片（備用）"""
+        detail_url = f"{self.home_url}/{vod_id}"
+        try:
+            res = requests.get(detail_url, headers=self.headers, timeout=5)
+            res.encoding = 'utf-8'
+            next_data = re.search(r'<script id="__NEXT_DATA__" type="application/json">(.*?)</script>', res.text)
+            if next_data:
+                next_json = json.loads(next_data.group(1))
+                return next_json['props']['pageProps']['collectionInfo'].get('imgUrl', self.placeholder_pic)
+            return self.placeholder_pic
+        except Exception as e:
+            print(f"Error in get_poster_from_id: {e}")
+            return self.placeholder_pic
+
+    def categoryContent(self, cid, page, filter, ext):
+        _year = ext.get('year', 'all')
+        _class = ext.get('class', 'all')
+        _area = ext.get('area', 'all')
+        url = f"{self.home_url}/{cid}/{_year}/{_class}/{_area}"
+        if page != '1':
+            url += f"?page={page}"
         
-    pagecount = (total + 23) // 24 if total > 0 else 999
-    return {'list': d, 'page': int(page), 'pagecount': pagecount, 'limit': 24, 'total': total}
-except Exception as e:
-    print(f"Error in categoryContent: {e}")
-    return {'list': d, 'page': int(page), 'pagecount': 999, 'limit': 24, 'total': 0}
+        d = []
+        try:
+            res = requests.get(url, headers=self.headers)
+            res.encoding = 'utf-8'
+            root = etree.HTML(res.text)
+            data_list = root.xpath('//div[contains(@class, "h-film-listall_cardList___IXsY")]/a')
+            next_data = re.search(r'<script id="__NEXT_DATA__" type="application/json">(.*?)</script>', res.text)
+            total = 0
+            init_cards = []
+            if next_data:
+                next_json = json.loads(next_data.group(1))
+                init_cards = next_json['props']['pageProps'].get('initCard', [])
+                total = next_json['props']['pageProps'].get('total', len(data_list))
+            
+            for i, card in enumerate(data_list):
+                vod_name = card.xpath('.//div[contains(@class, "h-film-listall_name__Gyb9x")]/text()')[0].strip()
+                vod_id = card.get('href', '')
+                vod_pic_list = card.xpath('.//img[contains(@class, "h-film-listall_img__jiamS")]/@src')
+                vod_pic = vod_pic_list[0] if vod_pic_list else None
+                if not vod_pic or vod_pic == '/api/images/init':
+                    vod_pic = init_cards[i]['img'] if i < len(init_cards) and 'img' in init_cards[i] else self.get_poster_from_id(vod_id)
+                vod_remarks = init_cards[i]['countStr'] if i < len(init_cards) and 'countStr' in init_cards[i] else ''
+                d.append({
+                    'vod_id': vod_id,
+                    'vod_name': vod_name,
+                    'vod_pic': vod_pic,
+                    'vod_remarks': vod_remarks
+                })
+            
+            pagecount = (total + 23) // 24 if total > 0 else 999
+            return {'list': d, 'page': int(page), 'pagecount': pagecount, 'limit': 24, 'total': total}
+        except Exception as e:
+            print(f"Error in categoryContent: {e}")
+            return {'list': d, 'page': int(page), 'pagecount': 999, 'limit': 24, 'total': 0}
 
-def detailContent(self, did):
-    ids = did[0]
-    video_list = []
-    detail_url = f"{self.home_url}{ids}"
-    try:
-        res = requests.get(detail_url, headers=self.headers)
-        res.encoding = 'utf-8'
-        next_data = re.search(r'<script id="__NEXT_DATA__" type="application/json">(.*?)</script>', res.text)
+    def detailContent(self, did):
+        ids = did[0]
+        video_list = []
+        detail_url = f"{self.home_url}{ids}"
+        try:
+            res = requests.get(detail_url, headers=self.headers)
+            res.encoding = 'utf-8'
+            next_data = re.search(r'<script id="__NEXT_DATA__" type="application/json">(.*?)</script>', res.text)
+            
+            if next_data:
+                next_json = json.loads(next_data.group(1))
+                collection_info = next_json['props']['pageProps']['collectionInfo']
+                
+                vod_name = collection_info.get('name', '')
+                vod_year = collection_info.get('time', '')
+                vod_area = collection_info.get('country', '')
+                vod_content = collection_info.get('desc', '')
+                vod_remarks = collection_info.get('countStr', '')
+                vod_actor = ', '.join([actor['name'] for actor in collection_info.get('actor', [])])
+                vod_director = ', '.join([director['name'] for director in collection_info.get('director', [])])
+                vod_pic = collection_info.get('imgUrl', self.placeholder_pic)
+                is_movie = collection_info.get('isMovie', False)
+                
+                play_from = []
+                play_url = []
+                for group in collection_info['videosGroup']:
+                    if not group.get('videos'):
+                        continue
+                    line_name = group.get('name', '线路1')
+                    if is_movie:
+                        video = group['videos'][0]
+                        play_from.append(line_name)
+                        play_url.append(f"{vod_name}${video['purl']}")
+                    else:
+                        episodes = []
+                        for video in group['videos']:
+                            ep_name = f"第{video['eporder']}集"
+                            ep_url = video['purl']
+                            episodes.append(f"{ep_name}${ep_url}")
+                        play_from.append(line_name)
+                        play_url.append('#'.join(episodes))
+                
+                video_list.append({
+                    'vod_id': ids,
+                    'vod_name': vod_name,
+                    'vod_pic': vod_pic,
+                    'vod_remarks': vod_remarks,
+                    'vod_year': vod_year,
+                    'vod_area': vod_area,
+                    'vod_actor': vod_actor,
+                    'vod_director': vod_director,
+                    'vod_content': vod_content,
+                    'vod_play_from': '$$$'.join(play_from),
+                    'vod_play_url': '$$$'.join(play_url)
+                })
+            return {"list": video_list}
+        except Exception as e:
+            print(f"Error in detailContent: {e}")
+            return {'list': [], 'msg': str(e)}
+
+    def searchContent(self, key, quick):
+        try:
+            search_url = f"{self.home_url}/search?q={key}"
+            res = requests.get(search_url, headers=self.headers)
+            res.encoding = 'utf-8'
+            root = etree.HTML(res.text)
+            data_list = root.xpath('//div[contains(@class, "h-film-listall_cardList___IXsY")]/a')
+            
+            result = []
+            for item in data_list:
+                vod_name = item.xpath('.//div[contains(@class, "h-film-listall_name__Gyb9x")]/text()')[0].strip()
+                vod_id = item.get('href', '')
+                vod_pic = item.xpath('.//img[contains(@class, "h-film-listall_img__jiamS")]/@src')[0] if item.xpath('.//img[contains(@class, "h-film-listall_img__jiamS")]/@src') else self.placeholder_pic
+                if vod_pic == '/api/images/init':
+                    vod_pic = self.get_poster_from_id(vod_id)
+                result.append({
+                    'vod_id': vod_id,
+                    'vod_name': vod_name,
+                    'vod_pic': vod_pic,
+                    'vod_remarks': ''
+                })
+            return {'list': result}
+        except Exception as e:
+            print(f"Error in searchContent: {e}")
+            return {'list': []}
+
+    def playerContent(self, flag, pid, vipFlags):
+        try:
+            play_url = pid
+            return {
+                'url': play_url,
+                'header': json.dumps(self.headers),
+                'parse': 0,
+                'jx': 0
+            }
+        except Exception as e:
+            print(f"Error in playerContent: {e}")
+            return {'url': '', 'parse': 0, 'jx': 0}
+
+    def generate_children_html(self, vod_id):
+        detail = self.detailContent([vod_id])
+        if not detail['list']:
+            return "<h1>無法加載內容</h1>"
         
-        if next_data:
-            next_json = json.loads(next_data.group(1))
-            collection_info = next_json['props']['pageProps']['collectionInfo']
-            
-            vod_name = collection_info.get('name', '')
-            vod_year = collection_info.get('time', '')
-            vod_area = collection_info.get('country', '')
-            vod_content = collection_info.get('desc', '')
-            vod_remarks = collection_info.get('countStr', '')
-            vod_actor = ', '.join([actor['name'] for actor in collection_info.get('actor', [])])
-            vod_director = ', '.join([director['name'] for director in collection_info.get('director', [])])
-            vod_pic = collection_info.get('imgUrl', self.placeholder_pic)
-            is_movie = collection_info.get('isMovie', False)
-            
-            play_from = []
-            play_url = []
-            for group in collection_info['videosGroup']:
-                if not group.get('videos'):
-                    continue
-                line_name = group.get('name', '线路1')
-                if is_movie:
-                    video = group['videos'][0]
-                    play_from.append(line_name)
-                    play_url.append(f"{vod_name}${video['purl']}")
-                else:
-                    episodes = []
-                    for video in group['videos']:
-                        ep_name = f"第{video['eporder']}集"
-                        ep_url = video['purl']
-                        episodes.append(f"{ep_name}${ep_url}")
-                    play_from.append(line_name)
-                    play_url.append('#'.join(episodes))
-            
-            video_list.append({
-                'vod_id': ids,
-                'vod_name': vod_name,
-                'vod_pic': vod_pic,
-                'vod_remarks': vod_remarks,
-                'vod_year': vod_year,
-                'vod_area': vod_area,
-                'vod_actor': vod_actor,
-                'vod_director': vod_director,
-                'vod_content': vod_content,
-                'vod_play_from': '$$$'.join(play_from),
-                'vod_play_url': '$$$'.join(play_url)
-            })
-        return {"list": video_list}
-    except Exception as e:
-        print(f"Error in detailContent: {e}")
-        return {'list': [], 'msg': str(e)}
-
-def searchContent(self, key, quick):
-    try:
-        search_url = f"{self.home_url}/search?q={key}"
-        res = requests.get(search_url, headers=self.headers)
-        res.encoding = 'utf-8'
-        root = etree.HTML(res.text)
-        data_list = root.xpath('//div[contains(@class, "h-film-listall_cardList___IXsY")]/a')
+        vod = detail['list'][0]
+        vod_name = vod['vod_name']
         
-        result = []
-        for item in data_list:
-            vod_name = item.xpath('.//div[contains(@class, "h-film-listall_name__Gyb9x")]/text()')[0].strip()
-            vod_id = item.get('href', '')
-            vod_pic = item.xpath('.//img[contains(@class, "h-film-listall_img__jiamS")]/@src')[0] if item.xpath('.//img[contains(@class, "h-film-listall_img__jiamS")]/@src') else self.placeholder_pic
-            if vod_pic == '/api/images/init' or not vod_pic:
-                vod_pic = self.get_poster_from_id(vod_id)
-            result.append({
-                'vod_id': vod_id,
-                'vod_name': vod_name,
-                'vod_pic': vod_pic,
-                'vod_remarks': ''
-            })
-        return {'list': result}
-    except Exception as e:
-        print(f"Error in searchContent: {e}")
-        return {'list': []}
+        play_from = vod['vod_play_from'].split('$$$')
+        play_url = vod['vod_play_url'].split('$$$')
+        lines = list(zip(play_from, play_url))
+        sorted_lines = sorted(lines, key=lambda x: x[0] != 'heimuer')
+        
+        selected_play_url = sorted_lines[0][1].split('#')[0].split('$')[1] if sorted_lines else ''
+        
+        html = f"""
+        <!DOCTYPE html>
+        <html lang="zh-CN">
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>{vod_name} - 兒童播放</title>
+            <style>
+                body {{ font-family: Arial, sans-serif; background-color: #f0f8ff; text-align: center; }}
+                h1 {{ color: #ff4500; }}
+                video {{ width: 100%; max-width: 600px; margin: 20px auto; }}
+            </style>
+        </head>
+        <body>
+            <h1>{vod_name}</h1>
+            <video controls controlsList="nodownload" oncontextmenu="return false;">
+                <source src="{selected_play_url}" type="application/x-mpegURL">
+                您的瀏覽器不支持視頻播放。
+            </video>
+            <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+            <script>
+                var video = document.querySelector('video');
+                var videoSrc = '{selected_play_url}';
+                if (Hls.isSupported()) {{
+                    var hls = new Hls();
+                    hls.loadSource(videoSrc);
+                    hls.attachMedia(video);
+                }} else if (video.canPlayType('application/vnd.apple.mpegurl')) {{
+                    video.src = videoSrc;
+                }}
+            </script>
+        </body>
+        </html>
+        """
+        return html
 
-def playerContent(self, flag, pid, vipFlags):
-    try:
-        play_url = pid
-        return {
-            'url': play_url,
-            'header': json.dumps(self.headers),
-            'parse': 0,
-            'jx': 0
-        }
-    except Exception as e:
-        print(f"Error in playerContent: {e}")
-        return {'url': '', 'parse': 0, 'jx': 0}
+    def localProxy(self, params):
+        pass
 
-def generate_children_html(self, vod_id):
-    detail = self.detailContent([vod_id])
-    if not detail['list']:
-        return "<h1>無法加載內容</h1>"
-    
-    vod = detail['list'][0]
-    vod_name = vod['vod_name']
-    
-    # 獲取所有線路並排序，將 "heimuer" 放在最前面
-    play_from = vod['vod_play_from'].split('$$$')
-    play_url = vod['vod_play_url'].split('$$$')
-    lines = list(zip(play_from, play_url))
-    sorted_lines = sorted(lines, key=lambda x: x[0] != 'heimuer')
-    
-    # 取第一條線路
-    selected_play_url = sorted_lines[0][1].split('#')[0].split('$')[1] if sorted_lines else ''
-    
-    html = f"""
-    <!DOCTYPE html>
-    <html lang="zh-CN">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>{vod_name} - 兒童播放</title>
-        <style>
-            body {{ font-family: Arial, sans-serif; background-color: #f0f8ff; text-align: center; }}
-            h1 {{ color: #ff4500; }}
-            video {{ width: 100%; max-width: 600px; margin: 20px auto; }}
-        </style>
-    </head>
-    <body>
-        <h1>{vod_name}</h1>
-        <video controls controlsList="nodownload" oncontextmenu="return false;">
-            <source src="{selected_play_url}" type="application/x-mpegURL">
-            您的瀏覽器不支持視頻播放。
-        </video>
-        <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
-        <script>
-            var video = document.querySelector('video');
-            var videoSrc = '{selected_play_url}';
-            if (Hls.isSupported()) {{
-                var hls = new Hls();
-                hls.loadSource(videoSrc);
-                hls.attachMedia(video);
-            }} else if (video.canPlayType('application/vnd.apple.mpegurl')) {{
-                video.src = videoSrc;
-            }}
-        </script>
-    </body>
-    </html>
-    """
-    return html
-
-def localProxy(self, params):
-    pass
-
-def destroy(self):
-    return '正在Destroy'
+    def destroy(self):
+        return '正在Destroy'
 
 if __name__ == "__main__":
     spider = Spider()

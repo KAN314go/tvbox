@@ -324,10 +324,3 @@ class Spider(Spider):
 
     def destroy(self):
         return '正在Destroy'
-
-if __name__ == '__main__':
-    spider = Spider()
-    html = spider.generate_children_html('/vod/play-thrid/9b1169e9b7c04/1')
-    with open("children_player.html", "w", encoding="utf-8") as f:
-        f.write(html)
-    print("已生成 children_player.html")
