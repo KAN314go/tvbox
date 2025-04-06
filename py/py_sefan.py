@@ -198,30 +198,39 @@ class Spider(Spider):
             return {'list': d, 'parse': 0, 'jx': 0}
 
     async def async_fetch_posters(self, items):
-        """異步獲取缺失的圖片，限制並發數為10"""
+        """異步獲取缺失的圖片，限制並發數為5"""
+        semaphore = asyncio.Semaphore(5)
         async with aiohttp.ClientSession(headers=self.headers) as session:
-            tasks = [self._fetch_poster(session, item['vod_id']) for item in items]
+            tasks = [self._fetch_poster(session, item['vod_id'], semaphore) for item in items]
             return await asyncio.gather(*tasks, return_exceptions=True)
 
-    async def _fetch_poster(self, session, vod_id):
-        """單個影片的圖片獲取，超時設為1秒"""
+    async def _fetch_poster(self, session, vod_id, semaphore):
+        """單個影片的圖片獲取，超時設為2秒，帶重試"""
         detail_url = f"{self.home_url}/{vod_id}"
-        try:
-            async with session.get(detail_url, timeout=aiohttp.ClientTimeout(total=1)) as res:
-                text = await res.text()
-                next_data = re.search(r'<script id="__NEXT_DATA__" type="application/json">(.*?)</script>', text)
-                if next_data:
-                    next_json = json.loads(next_data.group(1))
-                    img_url = next_json['props']['pageProps']['collectionInfo'].get('imgUrl')
-                    if img_url and img_url != '/api/images/init':
-                        return img_url
-                # 備用：從 HTML 提取圖片
-                root = etree.HTML(text)
-                img = root.xpath('//img[contains(@class, "h-film-detail_img")]/@src')
-                return img[0] if img else self.placeholder_pic
-        except Exception as e:
-            print(f"Async fetch poster failed for {vod_id}: {e}")
-            return self.placeholder_pic
+        async with semaphore:
+            for attempt in range(2):  # 重試一次
+                try:
+                    async with session.get(detail_url, timeout=aiohttp.ClientTimeout(total=2)) as res:
+                        text = await res.text()
+                        next_data = re.search(r'<script id="__NEXT_DATA__" type="application/json">(.*?)</script>', text)
+                        if next_data:
+                            next_json = json.loads(next_data.group(1))
+                            # 修正圖片路徑，適配不同結構
+                            page_props = next_json['props']['pageProps']
+                            img_url = page_props.get('collectionInfo', {}).get('imgUrl') or \
+                                      page_props.get('initCard', [{}])[0].get('img') or \
+                                      page_props.get('img', self.placeholder_pic)
+                            if img_url and img_url != '/api/images/init':
+                                return img_url
+                        # 備用：從 HTML 提取圖片
+                        root = etree.HTML(text)
+                        img = root.xpath('//img[@class="h-film-detail_cover__W9H8m"]/@src')  # 更新 XPath
+                        return img[0] if img else self.placeholder_pic
+                except Exception as e:
+                    print(f"Attempt {attempt + 1} failed for {vod_id}: {e}")
+                    if attempt == 1:
+                        return self.placeholder_pic
+                    await asyncio.sleep(1)  # 重試前等待1秒
 
     def get_poster_from_id(self, vod_id):
         """同步獲取圖片（備用）"""
@@ -232,12 +241,15 @@ class Spider(Spider):
             next_data = re.search(r'<script id="__NEXT_DATA__" type="application/json">(.*?)</script>', res.text)
             if next_data:
                 next_json = json.loads(next_data.group(1))
-                img_url = next_json['props']['pageProps']['collectionInfo'].get('imgUrl')
+                page_props = next_json['props']['pageProps']
+                img_url = page_props.get('collectionInfo', {}).get('imgUrl') or \
+                          page_props.get('initCard', [{}])[0].get('img') or \
+                          page_props.get('img', self.placeholder_pic)
                 if img_url and img_url != '/api/images/init':
                     return img_url
             # 備用：從 HTML 提取圖片
             root = etree.HTML(res.text)
-            img = root.xpath('//img[contains(@class, "h-film-detail_img")]/@src')
+            img = root.xpath('//img[@class="h-film-detail_cover__W9H8m"]/@src')  # 更新 XPath
             return img[0] if img else self.placeholder_pic
         except Exception as e:
             print(f"Error in get_poster_from_id: {e}")
@@ -297,7 +309,7 @@ class Spider(Spider):
             
             if next_data:
                 next_json = json.loads(next_data.group(1))
-                collection_info = next_json['props']['pageProps']['collectionInfo']
+                collection_info = next_json['props']['pageProps'].get('collectionInfo', {})
                 
                 vod_name = collection_info.get('name', '')
                 vod_year = collection_info.get('time', '')
@@ -311,7 +323,7 @@ class Spider(Spider):
                 
                 play_from = []
                 play_url = []
-                for group in collection_info['videosGroup']:
+                for group in collection_info.get('videosGroup', []):
                     if not group.get('videos'):
                         continue
                     line_name = group.get('name', '线路1')
