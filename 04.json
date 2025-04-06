@@ -19,6 +19,7 @@
         "主页url": "https://www.xifanys.com/",
         "影片状态": "连载：&&</div>",
         "影片类型": "module-info-tag\">&&立即播放",
+        "简介": "<p>&&</p>",
         "搜索模式": "1",
         "搜索url": "https://www.xifanys.com/yingpiansearch/-------------.html?wd={wd}",
         "搜索数组": "module-card-item-class\">&&</a>",
