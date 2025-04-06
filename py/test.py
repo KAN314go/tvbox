@@ -19,7 +19,6 @@ class Spider(Spider):
         self.headers = {
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
             "Referer": "https://hlove.tv/",
-            "Origin": "https://hlove.tv",
             "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
             "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
             "Accept-Encoding": "gzip, deflate, br",
@@ -462,17 +461,16 @@ class Spider(Spider):
             search_url = f"{self.home_url}/search?q={key}"
             res = self.session.get(search_url, headers=self.headers, timeout=20)
             res.encoding = 'utf-8'
-            print(f"搜索 URL: {search_url}, 響應片段: {res.text[:500]}")
+            print(f"搜索 URL: {search_url}, 響應片段: {res.text[:200]}")
             root = etree.HTML(res.text)
-            # 更新 XPath 表達式，根據網站實際結構調整
-            data_list = root.xpath('//div[contains(@class, "h-film-listall_cardList")]/a')
+            data_list = root.xpath('//div[contains(@class, "h-film-listall_cardList___IXsY")]/a')
             
             result = []
             for item in data_list:
-                vod_name = item.xpath('.//div[contains(@class, "h-film-listall_name")]/text()')
+                vod_name = item.xpath('.//div[contains(@class, "h-film-listall_name__Gyb9x")]/text()')
                 vod_name = vod_name[0].strip() if vod_name else ''
                 vod_id = item.get('href', '')
-                vod_pic = item.xpath('.//img[contains(@class, "h-film-listall_img")]/@src')
+                vod_pic = item.xpath('.//img[contains(@class, "h-film-listall_img__jiamS")]/@src')
                 vod_pic = vod_pic[0] if vod_pic else self.default_pic
                 if vod_pic == '/api/images/init':
                     vod_pic = self.default_pic
@@ -493,28 +491,12 @@ class Spider(Spider):
         try:
             play_url = pid.split('$')[1]  # 從 pid 中提取播放 URL
             headers = self.headers.copy()
-            headers['Referer'] = 'https://hlove.tv/'
-            headers['Origin'] = 'https://hlove.tv'
-
-            # 測試播放 URL 是否可訪問
-            print(f"測試播放 URL: {play_url}")
-            try:
-                test_response = self.session.get(play_url, headers=headers, timeout=10, stream=True)
-                print(f"播放 URL 狀態碼: {test_response.status_code}")
-                if test_response.status_code != 200:
-                    print(f"播放 URL 無效: {play_url}")
-                    return {'url': play_url, 'header': json.dumps(headers), 'parse': 1, 'jx': 1}
-            except Exception as e:
-                print(f"無法訪問播放 URL: {play_url}, 錯誤: {str(e)}")
-                return {'url': play_url, 'header': json.dumps(headers), 'parse': 1, 'jx': 1}
-
-            # 如果是 HLS 格式，設置 parse: 1 讓 CatVod 進一步解析
-            is_hls = play_url.endswith('.m3u8')
+            headers['Referer'] = 'https://hlove.tv/'  # 添加 Referer 以確保播放鏈接有效
             return {
                 'url': play_url,
                 'header': json.dumps(headers),
-                'parse': 1 if is_hls else 0,  # HLS 格式需要進一步解析
-                'jx': 1 if is_hls else 0
+                'parse': 0,
+                'jx': 0
             }
         except Exception as e:
             print(f"Error in playerContent: {e}")
@@ -541,8 +523,12 @@ class Spider(Spider):
         if not sorted_lines:
             return f"<h1>{vod_name} - 無可用播放線路</h1>"
         
-        # 顯示所有線路和集數，供用戶選擇
-        html = """
+        selected_play_url = sorted_lines[0][1].split('#')[0].split('$')[1] if sorted_lines else ''
+        
+        # 檢查播放 URL 是否為 HLS 格式
+        is_hls = selected_play_url.endswith('.m3u8')
+        
+        html = f"""
         <!DOCTYPE html>
         <html lang="zh-CN">
         <head>
@@ -553,76 +539,19 @@ class Spider(Spider):
                 body {{ font-family: Arial, sans-serif; background-color: #f0f8ff; text-align: center; }}
                 h1 {{ color: #ff4500; }}
                 video {{ width: 100%; max-width: 600px; margin: 20px auto; }}
-                select {{ margin: 10px; padding: 5px; }}
-                .episode-list {{ margin: 10px; }}
-                .episode-list button {{ margin: 5px; padding: 5px 10px; }}
             </style>
         </head>
         <body>
             <h1>{vod_name}</h1>
-            <div>
-                <label for="lineSelect">選擇線路：</label>
-                <select id="lineSelect" onchange="changeLine()">
-        """.format(vod_name=vod_name)
-
-        # 添加線路選項
-        for i, (line_name, _) in enumerate(sorted_lines):
-            html += f'<option value="{i}">{line_name}</option>'
-
-        html += """
-                </select>
-            </div>
-            <div id="episodeContainer" class="episode-list">
-        """
-
-        # 添加每條線路的集數按鈕
-        for i, (line_name, line_url) in enumerate(sorted_lines):
-            episodes = line_url.split('#')
-            html += f'<div id="line-{i}" class="episodes" style="display: { "block" if i == 0 else "none" };">'
-            for episode in episodes:
-                ep_name, ep_url = episode.split('$')
-                html += f'<button onclick="playVideo(\'{ep_url}\')">{ep_name}</button>'
-            html += '</div>'
-
-        html += """
-            </div>
-            <video id="videoPlayer" controls controlsList="nodownload" oncontextmenu="return false;">
-                <source id="videoSource" src="" type="application/x-mpegURL">
+            <video controls controlsList="nodownload" oncontextmenu="return false;">
+                <source src="{selected_play_url}" type="{ 'application/x-mpegURL' if is_hls else 'video/mp4' }">
                 您的瀏覽器不支持視頻播放。
             </video>
-            <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+            {'<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>' if is_hls else ''}
             <script>
-                var video = document.getElementById('videoPlayer');
-                var videoSource = document.getElementById('videoSource');
-                var hls = null;
-
-                function changeLine() {{
-                    var lineIndex = document.getElementById('lineSelect').value;
-                    document.querySelectorAll('.episodes').forEach(function(el) {{
-                        el.style.display = 'none';
-                    }});
-                    document.getElementById('line-' + lineIndex).style.display = 'block';
-                    video.pause();
-                    videoSource.src = '';
-                    video.load();
-                }}
-
-                function playVideo(url) {{
-                    if (hls) {{
-                        hls.destroy();
-                        hls = null;
-                    }}
-                    videoSource.src = url;
-                    if (Hls.isSupported()) {{
-                        hls = new Hls();
-                        hls.loadSource(url);
-                        hls.attachMedia(video);
-                    }} else if (video.canPlayType("application/vnd.apple.mpegurl")) {{
-                        video.src = url;
-                    }}
-                    video.load();
-                    video.play();
-                }}
+                var video = document.querySelector('video');
+                var videoSrc = '{selected_play_url}';
+                {'if (Hls.isSupported()) { var hls = new Hls(); hls.loadSource(videoSrc); hls.attachMedia(video); } else if (video.canPlayType("application/vnd.apple.mpegurl")) { video.src = videoSrc; }' if is_hls else 'video.src = videoSrc;'}
             </script>
         </body>
         </html>
@@ -634,3 +563,41 @@ class Spider(Spider):
 
     def destroy(self):
         return '正在Destroy'
+
+# 測試代碼
+if __name__ == "__main__":
+    spider = Spider()
+    # 測試 homeContent
+    print("=== 測試 homeContent ===")
+    result = spider.homeContent(True)
+    print(json.dumps(result, ensure_ascii=False, indent=2))
+    
+    # 測試 homeVideoContent
+    print("\n=== 測試 homeVideoContent ===")
+    result = spider.homeVideoContent()
+    print(json.dumps(result, ensure_ascii=False, indent=2))
+    
+    # 測試 categoryContent（兒童）
+    print("\n=== 測試 categoryContent（儿童，中國大陸，無年份限制） ===")
+    result = spider.categoryContent("children", "1", True, {"class": "ertong", "area": "cn"})
+    print(json.dumps(result, ensure_ascii=False, indent=2))
+    
+    # 測試 detailContent（使用其他 vod_id）
+    print("\n=== 測試 detailContent（故宫里的大怪兽） ===")
+    result = spider.detailContent(["/vod/detail/LX89vyQfIj"])
+    print(json.dumps(result, ensure_ascii=False, indent=2))
+    
+    # 測試 searchContent
+    print("\n=== 測試 searchContent ===")
+    result = spider.searchContent("猪猪侠", True)
+    print(json.dumps(result, ensure_ascii=False, indent=2))
+    
+    # 測試 playerContent
+    print("\n=== 測試 playerContent ===")
+    result = spider.playerContent("线路1", "猪猪侠$https://example.com/video.m3u8", [])
+    print(json.dumps(result, ensure_ascii=False, indent=2))
+    
+    # 測試 generate_children_html（使用其他 vod_id）
+    print("\n=== 測試 generate_children_html（故宫里的大怪兽） ===")
+    result = spider.generate_children_html("/vod/detail/LX89vyQfIj")
+    print(result)
