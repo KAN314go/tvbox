@@ -17,9 +17,9 @@
       "filterable": 1,
       "ext": {
         "数组": "class=\"video-img-box mb-e-20\"&&</p>",
-        "线路数组": "class=\"swiper-slide\"&&</div>",
+        "线路数组": "<div id=\"&&</div>",
         "线路标题": ">&&</div>",
-        "播放数组": "class=\"ep-item col-3 col-sm-2 col-lg-2 col-xl-1\"&&</div>",
+        "播放数组": "href=\"&&</a>",
         "图片": "data-src=\"&&\"",
         "分类url": "https://htba.cc/all/{cateId}-{class}-{year}-{by}/page/{catePg}/",
         "分类": "电影$11#国产剧$3#韩剧$4#台剧$6#美剧$7#日剧$5#港剧$9#泰剧$8#海外剧$1#综艺$13#动漫$12",
