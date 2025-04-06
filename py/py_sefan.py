@@ -131,28 +131,23 @@ class Spider(Spider):
                         vod_id = card.get('id', '')
                         vod_name = card.get('name', '')
                         vod_pic = card.get('img', self.placeholder_pic)
-                        vod_remarks = card.get('countStr', section_title)
+                        vod_remarks = card.get('countStr', section_title)  # 若無 countStr，使用分類名稱
 
                         if not vod_id or not vod_name:
                             continue  # 跳過無效數據
 
-                        # 如果圖片無效，標記為待處理
-                        if not vod_pic or vod_pic == '/api/images/init':
-                            vod_pic = self.cache.get(vod_id, None)
-                            if not vod_pic:
-                                d.append({
-                                    'vod_id': vod_id,
-                                    'vod_name': vod_name,
-                                    'vod_pic': None,  # 待異步處理
-                                    'vod_remarks': vod_remarks
-                                })
-                            else:
-                                d.append({
-                                    'vod_id': vod_id,
-                                    'vod_name': vod_name,
-                                    'vod_pic': vod_pic,
-                                    'vod_remarks': vod_remarks
-                                })
+                        # 檢查緩存
+                        cached_pic = self.cache.get(vod_id)
+                        if cached_pic:
+                            print(f"從緩存命中: {vod_id}")
+                            vod_pic = cached_pic
+                        elif not vod_pic or vod_pic == '/api/images/init':
+                            d.append({
+                                'vod_id': vod_id,
+                                'vod_name': vod_name,
+                                'vod_pic': None,  # 待異步處理
+                                'vod_remarks': vod_remarks
+                            })
                         else:
                             d.append({
                                 'vod_id': vod_id,
@@ -203,10 +198,10 @@ class Spider(Spider):
             return {'list': d, 'parse': 0, 'jx': 0}
 
     async def async_fetch_posters(self, items):
-        """異步獲取缺失的圖片"""
+        """異步獲取缺失的圖片，限制並發數為10"""
         async with aiohttp.ClientSession(headers=self.headers) as session:
             tasks = [self._fetch_poster(session, item['vod_id']) for item in items]
-            return await asyncio.gather(*tasks)
+            return await asyncio.gather(*tasks, return_exceptions=True)
 
     async def _fetch_poster(self, session, vod_id):
         """單個影片的圖片獲取，超時設為1秒"""
@@ -217,9 +212,15 @@ class Spider(Spider):
                 next_data = re.search(r'<script id="__NEXT_DATA__" type="application/json">(.*?)</script>', text)
                 if next_data:
                     next_json = json.loads(next_data.group(1))
-                    return next_json['props']['pageProps']['collectionInfo'].get('imgUrl', self.placeholder_pic)
-                return self.placeholder_pic
-        except Exception:
+                    img_url = next_json['props']['pageProps']['collectionInfo'].get('imgUrl')
+                    if img_url and img_url != '/api/images/init':
+                        return img_url
+                # 備用：從 HTML 提取圖片
+                root = etree.HTML(text)
+                img = root.xpath('//img[contains(@class, "h-film-detail_img")]/@src')
+                return img[0] if img else self.placeholder_pic
+        except Exception as e:
+            print(f"Async fetch poster failed for {vod_id}: {e}")
             return self.placeholder_pic
 
     def get_poster_from_id(self, vod_id):
@@ -231,8 +232,13 @@ class Spider(Spider):
             next_data = re.search(r'<script id="__NEXT_DATA__" type="application/json">(.*?)</script>', res.text)
             if next_data:
                 next_json = json.loads(next_data.group(1))
-                return next_json['props']['pageProps']['collectionInfo'].get('imgUrl', self.placeholder_pic)
-            return self.placeholder_pic
+                img_url = next_json['props']['pageProps']['collectionInfo'].get('imgUrl')
+                if img_url and img_url != '/api/images/init':
+                    return img_url
+            # 備用：從 HTML 提取圖片
+            root = etree.HTML(res.text)
+            img = root.xpath('//img[contains(@class, "h-film-detail_img")]/@src')
+            return img[0] if img else self.placeholder_pic
         except Exception as e:
             print(f"Error in get_poster_from_id: {e}")
             return self.placeholder_pic
