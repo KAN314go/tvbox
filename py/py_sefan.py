@@ -156,10 +156,9 @@ class Spider(Spider):
                             })
 
                 # 異步處理少數缺失的圖片（僅限熱門推薦）
-                loop = asyncio.get_event_loop()
                 missing_pics = [item for item in d if item['vod_pic'] is None]
                 if missing_pics:
-                    pics = loop.run_until_complete(self.async_fetch_posters(missing_pics))
+                    pics = asyncio.run(self.async_fetch_posters(missing_pics))
                     for item, pic in zip(missing_pics, pics):
                         item['vod_pic'] = pic
                         self.cache[item['vod_id']] = pic  # 更新緩存
@@ -201,7 +200,7 @@ class Spider(Spider):
         
         d = []
         try:
-ieto            res = requests.get(url, headers=self.headers)
+            res = requests.get(url, headers=self.headers)
             res.encoding = 'utf-8'
             root = etree.HTML(res.text)
             data_list = root.xpath('//div[contains(@class, "h-film-listall_cardList___IXsY")]/a')
@@ -391,3 +390,8 @@ ieto            res = requests.get(url, headers=self.headers)
 
     def destroy(self):
         return '正在Destroy'
+
+if __name__ == "__main__":
+    spider = Spider()
+    result = spider.homeVideoContent()
+    print(result)
