@@ -16,6 +16,10 @@ class Spider(Spider):
         self.headers = {
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
             "Referer": "https://hlove.tv/",
+            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+            "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Connection": "keep-alive"
         }
         self.default_pic = 'https://hlove.tv/api/images/default'
 
@@ -203,14 +207,15 @@ class Spider(Spider):
         if not ids.startswith('/'):
             ids = f"/{ids}"
         detail_url = f"{self.home_url}{ids}"
-        print(f"請求的 detail_url: {detail_url}")  # 調試日誌
+        print(f"請求的 detail_url: {detail_url}")
         try:
-            res = requests.get(detail_url, headers=self.headers)
+            res = requests.get(detail_url, headers=self.headers, timeout=10)
+            print(f"HTTP 狀態碼: {res.status_code}")
             res.encoding = 'utf-8'
             next_data = re.search(r'<script id="__NEXT_DATA__" type="application/json">(.*?)</script>', res.text)
             
             if not next_data:
-                print(f"未找到 __NEXT_DATA__，URL: {detail_url}")
+                print(f"未找到 __NEXT_DATA__，URL: {detail_url}, 響應片段: {res.text[:200]}")
                 return {'list': [], 'msg': '未找到影片數據'}
 
             next_json = json.loads(next_data.group(1))
@@ -367,6 +372,5 @@ class Spider(Spider):
 
 if __name__ == "__main__":
     spider = Spider()
-    # 測試 detailContent
     result = spider.detailContent(["/movie/se4pnjL1IF6D"])
     print(json.dumps(result, ensure_ascii=False, indent=2))
