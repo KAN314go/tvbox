@@ -9,7 +9,7 @@
       "key": "py_4k",
       "name": "🥇｜4k-1｜測試",
       "type": 3,
-      "api": "./py/temp/4k.py",
+      "api": "./py/temp/4K.py",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
