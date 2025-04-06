@@ -5,6 +5,7 @@ import requests
 from lxml import etree
 import re
 import json
+import sys
 sys.path.append('..')
 from base.spider import Spider
 class Spider(Spider):
