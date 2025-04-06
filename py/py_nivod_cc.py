@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Author  : Adapted for 泥視頻.CC with Multi-Source Support
+# @Author  : 老王叔叔 for 泥視頻.CC with Multi-Source Support
 # @Time    : 2025/04/06
 
 import sys
