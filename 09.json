@@ -9,7 +9,7 @@
       "key": "py_華視界",
       "name": "🎥｜華視界｜高清◎秒播(賭場廣告)",
       "type": 3,
-      "api": "./py/py_sefan.py",
+      "api": "./py/py_hlove.py",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
