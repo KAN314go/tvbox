@@ -199,11 +199,11 @@ class Spider(Spider):
     def detailContent(self, did):
         ids = did[0]
         video_list = []
-        # 確保 ids 以 / 開頭，並生成正確的 detail_url
+        # 確保 ids 以 / 開頭
         if not ids.startswith('/'):
             ids = f"/{ids}"
         detail_url = f"{self.home_url}{ids}"
-        print(f"請求的 detail_url: {detail_url}")  # 添加調試日誌
+        print(f"請求的 detail_url: {detail_url}")  # 調試日誌
         try:
             res = requests.get(detail_url, headers=self.headers)
             res.encoding = 'utf-8'
@@ -214,7 +214,12 @@ class Spider(Spider):
                 return {'list': [], 'msg': '未找到影片數據'}
 
             next_json = json.loads(next_data.group(1))
-            collection_info = next_json['props']['pageProps']['collectionInfo']
+            page_props = next_json.get('props', {}).get('pageProps', {})
+            if 'collectionInfo' not in page_props:
+                print(f"collectionInfo 未找到，URL: {detail_url}, pageProps: {json.dumps(page_props, ensure_ascii=False)}")
+                return {'list': [], 'msg': '影片數據缺少 collectionInfo'}
+
+            collection_info = page_props['collectionInfo']
             
             vod_name = collection_info.get('name', '')
             vod_year = collection_info.get('time', '')
@@ -228,7 +233,7 @@ class Spider(Spider):
             
             play_from = []
             play_url = []
-            for group in collection_info['videosGroup']:
+            for group in collection_info.get('videosGroup', []):
                 if not group.get('videos'):
                     continue
                 line_name = group.get('name', '线路1')
@@ -258,10 +263,11 @@ class Spider(Spider):
                 'vod_play_from': '$$$'.join(play_from),
                 'vod_play_url': '$$$'.join(play_url)
             })
+            print(f"成功解析影片: {vod_name}, URL: {detail_url}")
             return {"list": video_list}
         except Exception as e:
-            print(f"Error in detailContent: {e}, URL: {detail_url}")
-            return {'list': [], 'msg': str(e)}
+            print(f"Error in detailContent: {str(e)}, URL: {detail_url}")
+            return {'list': [], 'msg': f'解析錯誤: {str(e)}'}
 
     def searchContent(self, key, quick):
         try:
@@ -361,5 +367,6 @@ class Spider(Spider):
 
 if __name__ == "__main__":
     spider = Spider()
-    result = spider.homeVideoContent()
+    # 測試 detailContent
+    result = spider.detailContent(["/movie/se4pnjL1IF6D"])
     print(json.dumps(result, ensure_ascii=False, indent=2))
