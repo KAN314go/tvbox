@@ -39,9 +39,14 @@ class Spider(Spider):
         pass
 
     def homeContent(self, filter):
-        categories = "电影$movie#电视剧$drama#动漫$animation#综艺$variety#儿童$children"
-        class_list = [{'type_id': v.split('$')[1], 'type_name': v.split('$')[0]} for v in categories.split('#')]
-        return {'class': class_list, 'filters': {}}
+        categories = [
+            {"type_id": "movie", "type_name": "电影"},
+            {"type_id": "drama", "type_name": "电视剧"},
+            {"type_id": "animation", "type_name": "动漫"},
+            {"type_id": "variety", "type_name": "综艺"},
+            {"type_id": "children", "type_name": "儿童"}
+        ]
+        return {'class': categories, 'filters': {}}
 
     def fetch_home_page(self):
         try:
@@ -80,19 +85,45 @@ class Spider(Spider):
                         if vod_pic == '/api/images/init':
                             vod_pic = self.default_pic
 
+                        # 增加 type_id 和其他可能需要的字段
                         d.append({
                             'vod_id': vod_id,
                             'vod_name': vod_name,
                             'vod_pic': vod_pic,
-                            'vod_remarks': vod_remarks
+                            'vod_remarks': vod_remarks,
+                            'type_id': self.infer_type_id(section_title),  # 推斷分類 ID
+                            'vod_tag': self.infer_tag(vod_remarks)  # 推斷標籤
                         })
 
             unique_d = {item['vod_id']: item for item in d if item['vod_id']}.values()
             print(f"最終返回 {len(unique_d)} 個影片")
-            return {'list': list(unique_d)}  # 僅返回 list，移除 parse 和 jx
+            return {'list': list(unique_d)}
         except Exception as e:
             print(f"Error in homeVideoContent: {e}")
             return {'list': []}
+
+    def infer_type_id(self, section_title):
+        """根據分類名稱推斷 type_id"""
+        type_mapping = {
+            '電影': 'movie',
+            '电视剧': 'drama',
+            '动漫': 'animation',
+            '综艺': 'variety',
+            '儿童': 'children'
+        }
+        for key, value in type_mapping.items():
+            if key in section_title:
+                return value
+        return 'movie'  # 默認為電影
+
+    def infer_tag(self, remarks):
+        """根據備註推斷標籤"""
+        if '更新至' in remarks:
+            return 'series'
+        elif '完结' in remarks:
+            return 'finished'
+        else:
+            return 'movie'
 
     @app.route('/api/home', methods=['GET'])
     def api_home():
