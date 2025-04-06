@@ -7,6 +7,8 @@ import requests
 from lxml import etree
 import re
 import json
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
 sys.path.append('..')
 from base.spider import Spider
 
@@ -22,6 +24,10 @@ class Spider(Spider):
             "Connection": "keep-alive"
         }
         self.default_pic = 'https://hlove.tv/api/images/default'
+        # 配置帶重試的會話
+        self.session = requests.Session()
+        retries = Retry(total=3, backoff_factor=1, status_forcelist=[500, 502, 503, 504])
+        self.session.mount('https://', HTTPAdapter(max_retries=retries))
 
     def init(self, extend):
         pass
@@ -99,7 +105,8 @@ class Spider(Spider):
     def homeVideoContent(self):
         d = []
         try:
-            res = requests.get(self.home_url, headers=self.headers)
+            # 增加超時時間並使用帶重試的會話
+            res = self.session.get(self.home_url, headers=self.headers, timeout=20)
             res.encoding = 'utf-8'
             html_text = res.text
 
@@ -124,7 +131,6 @@ class Spider(Spider):
                     if not vod_id or not vod_name:
                         continue
 
-                    # 使用正確的路徑格式
                     vod_path = f"/vod/detail/{vod_id}"
 
                     if not vod_pic or vod_pic == '/api/images/init':
@@ -137,12 +143,12 @@ class Spider(Spider):
                         'vod_remarks': vod_remarks
                     })
 
-            unique_d = {item['vod_id']: item for item in d if item['vod_id']}.values()
-            print(f"最終返回 {len(unique_d)} 個影片")
-            return {'list': list(unique_d), 'parse': 0, 'jx': 0}
+            # 簡化去重，直接返回列表
+            print(f"最終返回 {len(d)} 個影片")
+            return {'list': d, 'parse': 0, 'jx': 0}
         except Exception as e:
             print(f"Error in homeVideoContent: {e}")
-            return {'list': d, 'parse': 0, 'jx': 0}
+            return {'list': [], 'parse': 0, 'jx': 0}
 
     def infer_category(self, section_title):
         category_mapping = {
@@ -167,7 +173,7 @@ class Spider(Spider):
         
         d = []
         try:
-            res = requests.get(url, headers=self.headers)
+            res = self.session.get(url, headers=self.headers, timeout=20)
             res.encoding = 'utf-8'
             root = etree.HTML(res.text)
             data_list = root.xpath('//div[contains(@class, "h-film-listall_cardList___IXsY")]/a')
@@ -203,13 +209,12 @@ class Spider(Spider):
     def detailContent(self, did):
         ids = did[0]
         video_list = []
-        # 確保 ids 是正確的路徑
         if not ids.startswith('/vod/detail/'):
             ids = f"/vod/detail/{ids.lstrip('/')}"
         detail_url = f"{self.home_url}{ids}"
         print(f"請求的 detail_url: {detail_url}")
         try:
-            res = requests.get(detail_url, headers=self.headers, timeout=10)
+            res = self.session.get(detail_url, headers=self.headers, timeout=20)
             print(f"HTTP 狀態碼: {res.status_code}")
             if res.status_code != 200:
                 print(f"頁面不存在，URL: {detail_url}")
@@ -281,7 +286,7 @@ class Spider(Spider):
     def searchContent(self, key, quick):
         try:
             search_url = f"{self.home_url}/search?q={key}"
-            res = requests.get(search_url, headers=self.headers)
+            res = self.session.get(search_url, headers=self.headers, timeout=20)
             res.encoding = 'utf-8'
             root = etree.HTML(res.text)
             data_list = root.xpath('//div[contains(@class, "h-film-listall_cardList___IXsY")]/a')
@@ -307,9 +312,11 @@ class Spider(Spider):
     def playerContent(self, flag, pid, vipFlags):
         try:
             play_url = pid
+            headers = self.headers.copy()
+            headers['Referer'] = 'https://hlove.tv/'  # 添加 Referer 以確保播放鏈接有效
             return {
                 'url': play_url,
-                'header': json.dumps(self.headers),
+                'header': json.dumps(headers),
                 'parse': 0,
                 'jx': 0
             }
@@ -376,9 +383,9 @@ class Spider(Spider):
 
 if __name__ == "__main__":
     spider = Spider()
-    # 先測試主頁
+    # 測試主頁
     result = spider.homeVideoContent()
     print(json.dumps(result, ensure_ascii=False, indent=2))
-    # 再測試詳情頁
+    # 測試詳情頁
     result = spider.detailContent(["/vod/detail/se4pnjL1IF6D"])
     print(json.dumps(result, ensure_ascii=False, indent=2))
