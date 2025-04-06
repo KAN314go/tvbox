@@ -124,21 +124,8 @@ class Spider(Spider):
                     if not vod_id or not vod_name:
                         continue
 
-                    # 嘗試從 card 中獲取正確的 URL（若存在）
-                    vod_path = card.get('path', f"/{self.infer_category(section_title)}/{vod_id}")
-                    if not vod_path.startswith('/'):
-                        vod_path = f"/{vod_path}"
-
-                    # 驗證 vod_id 是否有效
-                    detail_url = f"{self.home_url}{vod_path}"
-                    try:
-                        check_res = requests.head(detail_url, headers=self.headers, timeout=5)
-                        if check_res.status_code != 200:
-                            print(f"無效的 vod_id: {vod_path}, 狀態碼: {check_res.status_code}")
-                            continue
-                    except requests.RequestException as e:
-                        print(f"驗證 vod_id 失敗: {vod_path}, 錯誤: {e}")
-                        continue
+                    # 使用正確的路徑格式
+                    vod_path = f"/vod/detail/{vod_id}"
 
                     if not vod_pic or vod_pic == '/api/images/init':
                         vod_pic = self.default_pic
@@ -216,8 +203,9 @@ class Spider(Spider):
     def detailContent(self, did):
         ids = did[0]
         video_list = []
-        if not ids.startswith('/'):
-            ids = f"/{ids}"
+        # 確保 ids 是正確的路徑
+        if not ids.startswith('/vod/detail/'):
+            ids = f"/vod/detail/{ids.lstrip('/')}"
         detail_url = f"{self.home_url}{ids}"
         print(f"請求的 detail_url: {detail_url}")
         try:
@@ -388,5 +376,9 @@ class Spider(Spider):
 
 if __name__ == "__main__":
     spider = Spider()
-    result = spider.homeVideoContent()  # 先測試主頁數據
+    # 先測試主頁
+    result = spider.homeVideoContent()
+    print(json.dumps(result, ensure_ascii=False, indent=2))
+    # 再測試詳情頁
+    result = spider.detailContent(["/vod/detail/se4pnjL1IF6D"])
     print(json.dumps(result, ensure_ascii=False, indent=2))
