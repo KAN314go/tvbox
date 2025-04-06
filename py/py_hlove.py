@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
-# @Author  : Adapted for 華視頻
-# @Time    : 2025/04/05
+# @Author  : 老王叔叔 for 華視頻
+# @Time    : 2025/04/06
 
 import sys
 import requests
