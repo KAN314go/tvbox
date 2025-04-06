@@ -15,10 +15,10 @@ from base.spider import Spider
 class Spider(Spider):
     def __init__(self):
         self.home_url = 'https://hlove.tv'
-        self.api_url = "https://app.ymedium.top/v3/web/api/filter"
         self.headers = {
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
             "Referer": "https://hlove.tv/",
+            "Origin": "https://hlove.tv",
             "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
             "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
             "Accept-Encoding": "gzip, deflate, br",
@@ -170,162 +170,48 @@ class Spider(Spider):
         _year = ext.get('year', 'all')
         _class = ext.get('class', 'all')
         _area = ext.get('area', 'all')
-        
-        # 映射字段值為中文
-        chName_map = {
-            "movie": "电影",
-            "drama": "电视剧",
-            "animation": "动漫",
-            "variety": "综艺",
-            "children": "动画片"
-        }
-
-        # 劇情分類映射
-        label_map = {
-            # 通用分類
-            "juqing": "剧情",
-            "xiju": "喜剧",
-            "dongzuo": "动作",
-            "jingsong": "惊悚",
-            "aiqing": "爱情",
-            "kongbu": "恐怖",
-            "fanzui": "犯罪",
-            "maoxian": "冒险",
-            "qihuan": "奇幻",
-            "xuanyi": "悬疑",
-            "kehuan": "科幻",
-            "jiating": "家庭",
-            "donghua": "动画",
-            "lishi": "历史",
-            "zhanzheng": "战争",
-            "yinyue": "音乐",
-            "dongman": "动漫",
-            "dianshidianying": "电视电影",
-            "xibu": "西部",
-            "wangluodianying": "网络电影",
-            "jilu": "纪录",
-            "tongxing": "同性",
-            "gewu": "歌舞",
-            "zainan": "灾难",
-            "dongzuomaoxian": "动作冒险",
-            "dongzuoandmaoxian": "动作&冒险",
-            "zhanzhengandzhengzhi": "战争&政治",
-            # 電視劇特有
-            "feizaoju": "肥皂剧",
-            "duanju": "短剧",
-            "ertong": "儿童",
-            "zhenshixiu": "真人秀",
-            "tuokouxiu": "脱口秀",
-            "zuian": "罪案",
-            "guzhuang": "古装",
-            "oumeiju": "欧美剧",
-            "dushi": "都市",
-            "yingju": "英剧",
-            "gangtaiju": "港台剧",
-            "qingchun": "青春",
-            "hanju": "韩剧",
-            "xinwen": "新闻",
-            "chuanyue": "穿越",
-            "junlv": "军旅",
-            "xuanhuan": "玄幻",
-            "jilu": "纪录",
-            "yanqing": "言情",
-            "jingfei": "警匪",
-            "yinyueju": "音乐剧",
-            "shangzhan": "商战",
-            "guochanju": "国产剧",
-            "xinmataiju": "新马泰",
-            "wuxia": "武侠",
-            # 綜藝特有
-            "wanhui": "晚会",
-            "jilupian": "纪录片",
-            # 動漫特有
-            "mohuan": "魔幻",
-            "rexue": "热血",
-            "lianaiju": "恋爱",
-            "baoxiao": "爆笑",
-            "xiaoyuan": "校园",
-            "jingji": "竞技",
-            "shaonv": "少女",
-            "paomian": "泡面",
-            "gedou": "格斗",
-            "zhiyu": "治愈",
-            "jizhan": "机战",
-            "tuili": "推理",
-            "danmei": "耽美",
-            "juchangban": "剧场版",
-            "qita": "其它"
-        }
-
-        # 地區分類映射
-        country_map = {
-            "cn": "中国大陆",
-            "us": "美国",
-            "kr": "韩国",
-            "hk": "香港",
-            "tw": "台湾",
-            "jp": "日本",
-            "gb": "英国",
-            "th": "泰国",
-            "sp": "西班牙",
-            "ca": "加拿大",
-            "fr": "法国",
-            "in": "印度",
-            "au": "澳大利亚",
-            "others": "其他地区"
-        }
-        
-        # 設置請求體
-        pageSize = 12 if cid == "children" else 24
-        payload = {
-            "chName": chName_map.get(cid, "电影"),
-            "startTime": int(_year) if _year != 'all' and _year.isdigit() else 0,
-            "endTime": int(_year) if _year != 'all' and _year.isdigit() else 0,
-            "label": label_map.get(_class, _class) if _class != 'all' else "",
-            "country": country_map.get(_area, _area) if _area != 'all' else "",
-            "pageSize": pageSize,
-            "page": int(page)
-        }
+        # 修改分頁 URL 格式，根據網站實際格式調整
+        url = f"{self.home_url}/{cid}/{_year}/{_class}/{_area}"
+        if page != '1':
+            # 假設網站的分頁格式是 /page/{page}，請根據實際情況調整
+            url = f"{self.home_url}/{cid}/{_year}/{_class}/{_area}/page/{page}"
+            # 如果網站使用 ?page= 格式，則使用以下行（請根據實際情況選擇）
+            # url += f"?page={page}"
         
         d = []
         try:
-            print(f"Requesting API: {self.api_url} with payload {json.dumps(payload, ensure_ascii=False)}")
-            res = self.session.post(self.api_url, headers=self.headers, json=payload, timeout=20)
-            res.raise_for_status()
-            data = res.json()
+            print(f"請求的分頁 URL: {url}")
+            res = self.session.get(url, headers=self.headers, timeout=20)
+            res.encoding = 'utf-8'
+            root = etree.HTML(res.text)
+            data_list = root.xpath('//div[contains(@class, "h-film-listall_cardList___IXsY")]/a')
+            print(f"提取到的影片數量: {len(data_list)}")
             
-            # 打印原始響應以便調試
-            print(f"API Response: {json.dumps(data, ensure_ascii=False, indent=2)}")
+            # 提取 __NEXT_DATA__ 中的分頁信息
+            next_data = re.search(r'<script id="__NEXT_DATA__" type="application/json">(.*?)</script>', res.text)
+            total = 0
+            init_cards = []
+            if next_data:
+                next_json = json.loads(next_data.group(1))
+                page_props = next_json.get('props', {}).get('pageProps', {})
+                print(f"pageProps: {json.dumps(page_props, ensure_ascii=False, indent=2)}")
+                total = page_props.get('total', 0)  # 確保 total 默認為 0
+                init_cards = page_props.get('initCard', [])
+            else:
+                print("未找到 __NEXT_DATA__，嘗試從頁面提取分頁信息")
+                # 如果 __NEXT_DATA__ 不存在，嘗試從頁面提取分頁信息（例如分頁導航欄）
+                page_nav = root.xpath('//div[contains(@class, "pagination")]/a[last()-1]/text()')
+                if page_nav:
+                    total = int(page_nav[0]) * 24  # 假設每頁 24 個影片，根據實際情況調整
             
-            # 檢查響應狀態
-            if data.get('code') != 0:
-                raise Exception(f"API error: code={data.get('code')}, message={data.get('message', 'Unknown error')}")
-            
-            # 檢查數據結構
-            if 'data' not in data:
-                raise Exception("Invalid API response: 'data' field missing")
-            
-            # 提取數據
-            total = data['data'].get('total', 0)
-            items = data['data'].get('list', [])
-            
-            for item in items:
-                vod_id = f"/vod/detail/{item.get('id', '')}"
-                vod_name = item.get('name', '')
-                vod_pic = item.get('img', self.default_pic)
-                if not vod_pic or vod_pic.startswith('/api/images/init'):
-                    vod_pic = self.default_pic
-                
-                # 處理 countStr，截斷過長的更新信息，並處理 "更新至0集"
-                vod_remarks = item.get('countStr', '')
-                if vod_remarks == "更新至0集":
-                    vod_remarks = "尚未更新"
-                elif vod_remarks and len(vod_remarks) > 15:
-                    vod_remarks = vod_remarks[:15] + "..."
-                
-                if not vod_id or not vod_name:
-                    continue
-                    
+            for i, card in enumerate(data_list):
+                vod_name = card.xpath('.//div[contains(@class, "h-film-listall_name__Gyb9x")]/text()')[0].strip()
+                vod_id = card.get('href', '')
+                vod_pic_list = card.xpath('.//img[contains(@class, "h-film-listall_img__jiamS")]/@src')
+                vod_pic = vod_pic_list[0] if vod_pic_list else None
+                if not vod_pic or vod_pic == '/api/images/init':
+                    vod_pic = init_cards[i]['img'] if i < len(init_cards) and 'img' in init_cards[i] else self.default_pic
+                vod_remarks = init_cards[i]['countStr'] if i < len(init_cards) and 'countStr' in init_cards[i] else ''
                 d.append({
                     'vod_id': vod_id,
                     'vod_name': vod_name,
@@ -333,24 +219,13 @@ class Spider(Spider):
                     'vod_remarks': vod_remarks
                 })
             
-            # 調整 pagecount 計算邏輯
-            pagecount = (total + pageSize - 1) // pageSize if total > 0 else 0
-            return {
-                'list': d,
-                'page': int(page),
-                'pagecount': pagecount,
-                'limit': pageSize,
-                'total': total
-            }
+            # 計算總頁數，假設每頁 24 個影片
+            pagecount = (total + 23) // 24 if total > 0 else 999
+            print(f"總影片數: {total}, 計算出的總頁數: {pagecount}")
+            return {'list': d, 'page': int(page), 'pagecount': pagecount, 'limit': 24, 'total': total}
         except Exception as e:
             print(f"Error in categoryContent: {e}")
-            return {
-                'list': d,
-                'page': int(page),
-                'pagecount': 0,
-                'limit': pageSize,
-                'total': 0
-            }
+            return {'list': d, 'page': int(page), 'pagecount': 999, 'limit': 24, 'total': 0}
 
     def detailContent(self, did):
         ids = did[0]
@@ -397,28 +272,22 @@ class Spider(Spider):
             videos_group = collection_info.get('videosGroup', [])
             if not videos_group:
                 print(f"videosGroup 為空，URL: {detail_url}")
-                # 嘗試從其他字段中提取播放 URL（如果有）
-                fallback_url = collection_info.get('url', '')  # 假設有 url 字段
-                if fallback_url:
-                    play_from.append('備用線路')
-                    play_url.append(f"{vod_name}${fallback_url}")
-                else:
-                    return {
-                        'list': [{
-                            'vod_id': ids,
-                            'vod_name': vod_name,
-                            'vod_pic': vod_pic,
-                            'vod_remarks': vod_remarks,
-                            'vod_year': vod_year,
-                            'vod_area': vod_area,
-                            'vod_actor': vod_actor,
-                            'vod_director': vod_director,
-                            'vod_content': vod_content,
-                            'vod_play_from': '',
-                            'vod_play_url': ''
-                        }],
-                        'msg': '無可用播放線路'
-                    }
+                return {
+                    'list': [{
+                        'vod_id': ids,
+                        'vod_name': vod_name,
+                        'vod_pic': vod_pic,
+                        'vod_remarks': vod_remarks,
+                        'vod_year': vod_year,
+                        'vod_area': vod_area,
+                        'vod_actor': vod_actor,
+                        'vod_director': vod_director,
+                        'vod_content': vod_content,
+                        'vod_play_from': '',
+                        'vod_play_url': ''
+                    }],
+                    'msg': '無可用播放線路'
+                }
 
             for group in videos_group:
                 if not group.get('videos'):
@@ -426,14 +295,23 @@ class Spider(Spider):
                 line_name = group.get('name', '线路1')
                 if is_movie:
                     video = group['videos'][0]
+                    index_url = video['purl']
+                    # 從 index.m3u8 中提取 mixed.m3u8 的 URL
+                    mixed_url = self.get_mixed_m3u8_url(index_url)
+                    if not mixed_url:
+                        mixed_url = index_url  # 如果無法提取，則使用原始 URL
                     play_from.append(line_name)
-                    play_url.append(f"{vod_name}${video['purl']}")
+                    play_url.append(f"{vod_name}${mixed_url}")
                 else:
                     episodes = []
                     for video in group['videos']:
                         ep_name = f"第{video['eporder']}集"
-                        ep_url = video['purl']
-                        episodes.append(f"{ep_name}${ep_url}")
+                        index_url = video['purl']
+                        # 從 index.m3u8 中提取 mixed.m3u8 的 URL
+                        mixed_url = self.get_mixed_m3u8_url(index_url)
+                        if not mixed_url:
+                            mixed_url = index_url  # 如果無法提取，則使用原始 URL
+                        episodes.append(f"{ep_name}${mixed_url}")
                     play_from.append(line_name)
                     play_url.append('#'.join(episodes))
             
@@ -456,31 +334,51 @@ class Spider(Spider):
             print(f"Error in detailContent: {str(e)}, URL: {detail_url}")
             return {'list': [], 'msg': f'解析錯誤: {str(e)}'}
 
+    def get_mixed_m3u8_url(self, index_url):
+        """從 index.m3u8 中提取 mixed.m3u8 的 URL"""
+        try:
+            headers = self.headers.copy()
+            headers['Referer'] = 'https://hlove.tv/'
+            response = self.session.get(index_url, headers=headers, timeout=10)
+            response.raise_for_status()
+            m3u8_content = response.text
+            # 查找 mixed.m3u8 的相對路徑
+            mixed_path = re.search(r'(\S*/mixed\.m3u8)', m3u8_content)
+            if mixed_path:
+                mixed_relative_url = mixed_path.group(1)
+                # 將相對路徑轉換為絕對路徑
+                from urllib.parse import urljoin
+                mixed_url = urljoin(index_url, mixed_relative_url)
+                return mixed_url
+            else:
+                print(f"未在 {index_url} 中找到 mixed.m3u8")
+                return None
+        except Exception as e:
+            print(f"無法提取 mixed.m3u8 URL: {str(e)}")
+            return None
+
     def searchContent(self, key, quick):
         try:
             search_url = f"{self.home_url}/search?q={key}"
             res = self.session.get(search_url, headers=self.headers, timeout=20)
             res.encoding = 'utf-8'
-            print(f"搜索 URL: {search_url}, 響應片段: {res.text[:200]}")
+            print(f"搜索 URL: {search_url}, 響應片段: {res.text[:500]}")
             root = etree.HTML(res.text)
             data_list = root.xpath('//div[contains(@class, "h-film-listall_cardList___IXsY")]/a')
             
             result = []
             for item in data_list:
-                vod_name = item.xpath('.//div[contains(@class, "h-film-listall_name__Gyb9x")]/text()')
-                vod_name = vod_name[0].strip() if vod_name else ''
+                vod_name = item.xpath('.//div[contains(@class, "h-film-listall_name__Gyb9x")]/text()')[0].strip()
                 vod_id = item.get('href', '')
-                vod_pic = item.xpath('.//img[contains(@class, "h-film-listall_img__jiamS")]/@src')
-                vod_pic = vod_pic[0] if vod_pic else self.default_pic
+                vod_pic = item.xpath('.//img[contains(@class, "h-film-listall_img__jiamS")]/@src')[0] if item.xpath('.//img[contains(@class, "h-film-listall_img__jiamS")]/@src') else self.default_pic
                 if vod_pic == '/api/images/init':
                     vod_pic = self.default_pic
-                if vod_name and vod_id:
-                    result.append({
-                        'vod_id': vod_id,
-                        'vod_name': vod_name,
-                        'vod_pic': vod_pic,
-                        'vod_remarks': ''
-                    })
+                result.append({
+                    'vod_id': vod_id,
+                    'vod_name': vod_name,
+                    'vod_pic': vod_pic,
+                    'vod_remarks': ''
+                })
             print(f"搜索結果: {json.dumps(result, ensure_ascii=False, indent=2)}")
             return {'list': result}
         except Exception as e:
@@ -491,12 +389,28 @@ class Spider(Spider):
         try:
             play_url = pid.split('$')[1]  # 從 pid 中提取播放 URL
             headers = self.headers.copy()
-            headers['Referer'] = 'https://hlove.tv/'  # 添加 Referer 以確保播放鏈接有效
+            headers['Referer'] = 'https://hlove.tv/'
+            headers['Origin'] = 'https://hlove.tv'
+
+            # 測試播放 URL 是否可訪問
+            print(f"測試播放 URL: {play_url}")
+            try:
+                test_response = self.session.get(play_url, headers=headers, timeout=10, stream=True)
+                print(f"播放 URL 狀態碼: {test_response.status_code}")
+                if test_response.status_code != 200:
+                    print(f"播放 URL 無效: {play_url}")
+                    return {'url': play_url, 'header': json.dumps(headers), 'parse': 1, 'jx': 1}
+            except Exception as e:
+                print(f"無法訪問播放 URL: {play_url}, 錯誤: {str(e)}")
+                return {'url': play_url, 'header': json.dumps(headers), 'parse': 1, 'jx': 1}
+
+            # 如果是 HLS 格式，設置 parse: 1 讓 CatVod 進一步解析
+            is_hls = play_url.endswith('.m3u8')
             return {
                 'url': play_url,
                 'header': json.dumps(headers),
-                'parse': 0,
-                'jx': 0
+                'parse': 1 if is_hls else 0,  # HLS 格式需要進一步解析
+                'jx': 1 if is_hls else 0
             }
         except Exception as e:
             print(f"Error in playerContent: {e}")
@@ -523,12 +437,8 @@ class Spider(Spider):
         if not sorted_lines:
             return f"<h1>{vod_name} - 無可用播放線路</h1>"
         
-        selected_play_url = sorted_lines[0][1].split('#')[0].split('$')[1] if sorted_lines else ''
-        
-        # 檢查播放 URL 是否為 HLS 格式
-        is_hls = selected_play_url.endswith('.m3u8')
-        
-        html = f"""
+        # 顯示所有線路和集數，供用戶選擇
+        html = """
         <!DOCTYPE html>
         <html lang="zh-CN">
         <head>
@@ -539,19 +449,76 @@ class Spider(Spider):
                 body {{ font-family: Arial, sans-serif; background-color: #f0f8ff; text-align: center; }}
                 h1 {{ color: #ff4500; }}
                 video {{ width: 100%; max-width: 600px; margin: 20px auto; }}
+                select {{ margin: 10px; padding: 5px; }}
+                .episode-list {{ margin: 10px; }}
+                .episode-list button {{ margin: 5px; padding: 5px 10px; }}
             </style>
         </head>
         <body>
             <h1>{vod_name}</h1>
-            <video controls controlsList="nodownload" oncontextmenu="return false;">
-                <source src="{selected_play_url}" type="{ 'application/x-mpegURL' if is_hls else 'video/mp4' }">
+            <div>
+                <label for="lineSelect">選擇線路：</label>
+                <select id="lineSelect" onchange="changeLine()">
+        """.format(vod_name=vod_name)
+
+        # 添加線路選項
+        for i, (line_name, _) in enumerate(sorted_lines):
+            html += f'<option value="{i}">{line_name}</option>'
+
+        html += """
+                </select>
+            </div>
+            <div id="episodeContainer" class="episode-list">
+        """
+
+        # 添加每條線路的集數按鈕
+        for i, (line_name, line_url) in enumerate(sorted_lines):
+            episodes = line_url.split('#')
+            html += f'<div id="line-{i}" class="episodes" style="display: { "block" if i == 0 else "none" };">'
+            for episode in episodes:
+                ep_name, ep_url = episode.split('$')
+                html += f'<button onclick="playVideo(\'{ep_url}\')">{ep_name}</button>'
+            html += '</div>'
+
+        html += """
+            </div>
+            <video id="videoPlayer" controls controlsList="nodownload" oncontextmenu="return false;">
+                <source id="videoSource" src="" type="application/x-mpegURL">
                 您的瀏覽器不支持視頻播放。
             </video>
-            {'<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>' if is_hls else ''}
+            <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
             <script>
-                var video = document.querySelector('video');
-                var videoSrc = '{selected_play_url}';
-                {'if (Hls.isSupported()) { var hls = new Hls(); hls.loadSource(videoSrc); hls.attachMedia(video); } else if (video.canPlayType("application/vnd.apple.mpegurl")) { video.src = videoSrc; }' if is_hls else 'video.src = videoSrc;'}
+                var video = document.getElementById('videoPlayer');
+                var videoSource = document.getElementById('videoSource');
+                var hls = null;
+
+                function changeLine() {{
+                    var lineIndex = document.getElementById('lineSelect').value;
+                    document.querySelectorAll('.episodes').forEach(function(el) {{
+                        el.style.display = 'none';
+                    }});
+                    document.getElementById('line-' + lineIndex).style.display = 'block';
+                    video.pause();
+                    videoSource.src = '';
+                    video.load();
+                }}
+
+                function playVideo(url) {{
+                    if (hls) {{
+                        hls.destroy();
+                        hls = null;
+                    }}
+                    videoSource.src = url;
+                    if (Hls.isSupported()) {{
+                        hls = new Hls();
+                        hls.loadSource(url);
+                        hls.attachMedia(video);
+                    }} else if (video.canPlayType("application/vnd.apple.mpegurl")) {{
+                        video.src = url;
+                    }}
+                    video.load();
+                    video.play();
+                }}
             </script>
         </body>
         </html>
@@ -582,7 +549,12 @@ if __name__ == "__main__":
     result = spider.categoryContent("children", "1", True, {"class": "ertong", "area": "cn"})
     print(json.dumps(result, ensure_ascii=False, indent=2))
     
-    # 測試 detailContent（使用其他 vod_id）
+    # 測試 categoryContent（第二頁）
+    print("\n=== 測試 categoryContent（儿童，中國大陸，第二頁） ===")
+    result = spider.categoryContent("children", "2", True, {"class": "ertong", "area": "cn"})
+    print(json.dumps(result, ensure_ascii=False, indent=2))
+    
+    # 測試 detailContent（故宫里的大怪兽）
     print("\n=== 測試 detailContent（故宫里的大怪兽） ===")
     result = spider.detailContent(["/vod/detail/LX89vyQfIj"])
     print(json.dumps(result, ensure_ascii=False, indent=2))
@@ -592,12 +564,12 @@ if __name__ == "__main__":
     result = spider.searchContent("猪猪侠", True)
     print(json.dumps(result, ensure_ascii=False, indent=2))
     
-    # 測試 playerContent
-    print("\n=== 測試 playerContent ===")
-    result = spider.playerContent("线路1", "猪猪侠$https://example.com/video.m3u8", [])
+    # 測試 playerContent（使用 mixed.m3u8）
+    print("\n=== 測試 playerContent（ff 線路，mixed.m3u8） ===")
+    result = spider.playerContent("ff", "第1集$https://vip.ffzyread.com/20230708/13610_ce3745d0/3000k/hls/mixed.m3u8", [])
     print(json.dumps(result, ensure_ascii=False, indent=2))
     
-    # 測試 generate_children_html（使用其他 vod_id）
+    # 測試 generate_children_html（故宫里的大怪兽）
     print("\n=== 測試 generate_children_html（故宫里的大怪兽） ===")
     result = spider.generate_children_html("/vod/detail/LX89vyQfIj")
     print(result)
