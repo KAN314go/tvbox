@@ -1,10 +1,13 @@
--- coding: utf-8 --@Author  : Adapted for 華視頻@Time    : 2025/04/05import sys
+# -- coding: utf-8 --
+# @Author  : Adapted for 華視頻
+# @Time    : 2025/04/05import sys
 import requests
 from lxml import etree
 import re
 import json
 sys.path.append('..')
-from base.spider import Spiderclass Spider(Spider):
+from base.spider import Spider
+class Spider(Spider):
     def init(self):
         self.home_url = 'https://hlove.tv'
         self.headers = {
