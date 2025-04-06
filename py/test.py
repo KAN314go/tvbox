@@ -1,291 +1,230 @@
-# -*- coding: utf-8 -*-
-# @Author  : Adapted from Doubebly's LreeOk by Grok, optimized with XBPQ and Selenium logic
-# @Time    : 2025/3/28
-# @Purpose : Spider for gimy.la to use in CatVod
-
-import sys
 import requests
 import json
-import re
-from lxml import etree
-try:
-    from requests_html import HTMLSession
-except ImportError:
-    HTMLSession = None
 
-sys.path.append('..')
-from base.spider import Spider
-
-
-class Spider(Spider):
-    def getName(self):
-        return "GimyCC"
-
-    def init(self, extend):
-        self.home_url = 'https://gimy.la/'
+class Spider:
+    def __init__(self):
+        self.home_url = "https://hlove.tv"
+        self.api_url = "https://app.ymedium.top/v3/web/api/filter"
+        self.default_pic = "https://pic.rmb.bdstatic.com/bjh/default/8f948e47e8e73a7bfd7c2f548a492e6e.png"
+        self.session = requests.Session()
         self.headers = {
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
-            "Referer": "https://gimy.la/"
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
+            "Referer": self.home_url,
+            "Accept": "application/json, text/plain, */*",
+            "Content-Type": "application/json",
+            "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
+            "Sec-Ch-Ua": '"Chromium";v="134", "Not-A.Brand";v="24", "Google Chrome";v="134"'
         }
-
-    def getDependence(self):
-        return ['requests_html'] if HTMLSession else []
-
-    def isVideoFormat(self, url):
-        video_extensions = ['.mp4', '.m3u8', '.flv', '.avi', '.mkv']
-        return any(url.lower().endswith(ext) for ext in video_extensions)
-
-    def manualVideoCheck(self):
-        return False
-
-    def homeContent(self, filter):
-        result = {
-            'class': [
-                {'type_id': '1', 'type_name': '電影'},
-                {'type_id': '2', 'type_name': '劇集'},
-                {'type_id': '3', 'type_name': '綜藝'},
-                {'type_id': '4', 'type_name': '動漫'}
-            ],
-            'filters': {
-                '1': [{'key': 'area', 'name': '地區', 'value': [{'n': '中國', 'v': '中國'}, {'n': '香港', 'v': '香港'}, {'n': '台灣', 'v': '台灣'}, {'n': '美国', 'v': '美国'}, {'n': '日本', 'v': '日本'}, {'n': '韓國', 'v': '韓國'}]},
-                      {'key': 'year', 'name': '年份', 'value': [{'n': '全部', 'v': ''}, {'n': '2025', 'v': '2025'}, {'n': '2024', 'v': '2024'}, {'n': '2023', 'v': '2023'}]},
-                      {'key': 'by', 'name': '排序', 'value': [{'n': '按最新', 'v': 'time'}, {'n': '按最熱', 'v': 'hits'}]}],
-                '2': [{'key': 'area', 'name': '地區', 'value': [{'n': '中國', 'v': '中國'}, {'n': '香港', 'v': '香港'}, {'n': '台灣', 'v': '台灣'}, {'n': '日本', 'v': '日本'}, {'n': '韓國', 'v': '韓國'}]},
-                      {'key': 'year', 'name': '年份', 'value': [{'n': '全部', 'v': ''}, {'n': '2025', 'v': '2025'}, {'n': '2024', 'v': '2024'}, {'n': '2023', 'v': '2023'}]},
-                      {'key': 'by', 'name': '排序', 'value': [{'n': '按最新', 'v': 'time'}, {'n': '按最熱', 'v': 'hits'}]}],
-                '3': [{'key': 'area', 'name': '地區', 'value': [{'n': '中國', 'v': '中國'}, {'n': '香港', 'v': '香港'}, {'n': '台灣', 'v': '台灣'}, {'n': '日本', 'v': '日本'}, {'n': '韓國', 'v': '韓國'}]},
-                      {'key': 'year', 'name': '年份', 'value': [{'n': '全部', 'v': ''}, {'n': '2025', 'v': '2025'}, {'n': '2024', 'v': '2024'}, {'n': '2023', 'v': '2023'}]},
-                      {'key': 'by', 'name': '排序', 'value': [{'n': '按最新', 'v': 'time'}, {'n': '按最熱', 'v': 'hits'}]}],
-                '4': [{'key': 'area', 'name': '地區', 'value': [{'n': '中國', 'v': '中國'}, {'n': '日本', 'v': '日本'}, {'n': '美国', 'v': '美国'}]},
-                      {'key': 'year', 'name': '年份', 'value': [{'n': '全部', 'v': ''}, {'n': '2025', 'v': '2025'}, {'n': '2024', 'v': '2024'}, {'n': '2023', 'v': '2023'}]},
-                      {'key': 'by', 'name': '排序', 'value': [{'n': '按最新', 'v': 'time'}, {'n': '按最熱', 'v': 'hits'}]}]
-            }
-        }
-        return result
-
-    def homeVideoContent(self):
-        try:
-            if HTMLSession:
-                session = HTMLSession()
-                res = session.get(self.home_url, headers=self.headers, timeout=10)
-                res.html.render(timeout=20)
-                root = etree.HTML(res.html.html)
-            else:
-                res = requests.get(self.home_url, headers=self.headers, timeout=10)
-                res.encoding = 'utf-8'
-                root = etree.HTML(res.text)
-            data_list = root.xpath('//div[@class="public-list-exp"]')
-            d = []
-            for i in data_list:
-                vod_id = i.xpath('.//a/@href')[0].split('/')[-1].split('.')[0] if i.xpath('.//a/@href') else ''
-                vod_name = i.xpath('.//a/@title')[0].strip() if i.xpath('.//a/@title') else ''
-                vod_pic = i.xpath('.//img/@data-src')[0] if i.xpath('.//img/@data-src') else ''
-                vod_remarks = i.xpath('.//span[@class="ft2"]/text()')[0] if i.xpath('.//span[@class="ft2"]/text()') else ''
-                if vod_id and vod_name:
-                    d.append({
-                        'vod_id': vod_id,
-                        'vod_name': vod_name,
-                        'vod_pic': vod_pic,
-                        'vod_remarks': vod_remarks
-                    })
-            print(f"homeVideoContent 提取到 {len(d)} 個項目")
-            return {'list': d}
-        except Exception as e:
-            print(f"homeVideoContent 錯誤: {str(e)}")
-            return {'list': []}
 
     def categoryContent(self, cid, page, filter, ext):
-        payload = {
-            'type': cid,
-            'area': ext.get('area', ''),
-            'year': ext.get('year', ''),
-            'by': ext.get('by', ''),
-            'page': page
+        _year = ext.get('year', 'all')
+        _class = ext.get('class', 'all')
+        _area = ext.get('area', 'all')
+        
+        # 映射字段值為中文
+        chName_map = {
+            "movie": "电影",
+            "tv": "电视剧",
+            "anime": "动漫",
+            "variety": "综艺",
+            "kids": "动画片"  # 更新為 "动画片"
         }
-        url = f'{self.home_url}filter/area/{payload["area"]}/by/{payload["by"]}/id/{cid}/page/{page}/year/{payload["year"]}.html'
-        try:
-            if HTMLSession:
-                session = HTMLSession()
-                res = session.get(url, headers=self.headers, timeout=10)
-                res.html.render(timeout=20)
-                root = etree.HTML(res.html.html)
-            else:
-                res = requests.get(url, headers=self.headers, timeout=10)
-                res.encoding = 'utf-8'
-                root = etree.HTML(res.text)
-            data_list = root.xpath('//div[@class="public-list-exp"]')
-            d = []
-            for i in data_list:
-                vod_id = i.xpath('.//a/@href')[0].split('/')[-1].split('.')[0] if i.xpath('.//a/@href') else ''
-                vod_name = i.xpath('.//a/@title')[0].strip() if i.xpath('.//a/@title') else ''
-                vod_pic = i.xpath('.//img/@data-src')[0] if i.xpath('.//img/@data-src') else ''
-                vod_remarks = i.xpath('.//span[@class="ft2"]/text()')[0] if i.xpath('.//span[@class="ft2"]/text()') else ''
-                if vod_id and vod_name:
-                    d.append({
-                        'vod_id': vod_id,
-                        'vod_name': vod_name,
-                        'vod_pic': vod_pic,
-                        'vod_remarks': vod_remarks
-                    })
-            print(f"categoryContent 提取到 {len(d)} 個項目")
-            return {'list': d}
-        except Exception as e:
-            print(f"categoryContent 錯誤: {str(e)}")
-            return {'list': []}
 
-    def detailContent(self, did):
-        ids = did[0] if isinstance(did, list) else did
-        video_list = []
-        try:
-            res = requests.get(f'{self.home_url}detail/{ids}.html', headers=self.headers, timeout=10)
-            res.raise_for_status()
-            res.encoding = 'utf-8'
-            print("detailContent 前 3000 字元 HTML:", res.text[:3000])
-            root = etree.HTML(res.text)
+        # 劇情分類映射
+        label_map = {
+            # 通用分類
+            "juqing": "剧情",
+            "xiju": "喜剧",
+            "dongzuo": "动作",
+            "jingsong": "惊悚",
+            "aiqing": "爱情",
+            "kongbu": "恐怖",
+            "fanzui": "犯罪",
+            "maoxian": "冒险",
+            "qihuan": "奇幻",
+            "xuanyi": "悬疑",
+            "kehuan": "科幻",
+            "jiating": "家庭",
+            "donghua": "动画",
+            "lishi": "历史",
+            "zhanzheng": "战争",
+            "yinyue": "音乐",
+            "dongman": "动漫",
+            "dianshidianying": "电视电影",
+            "xibu": "西部",
+            "wangluodianying": "网络电影",
+            "jilu": "纪录",
+            "tongxing": "同性",
+            "gewu": "歌舞",
+            "zainan": "灾难",
+            "dongzuomaoxian": "动作冒险",
+            "dongzuoandmaoxian": "动作&冒险",
+            "zhanzhengandzhengzhi": "战争&政治",
+            # 電視劇特有
+            "feizaoju": "肥皂剧",
+            "duanju": "短剧",
+            "ertong": "儿童",
+            "zhenshixiu": "真人秀",
+            "tuokouxiu": "脱口秀",
+            "zuian": "罪案",
+            "guzhuang": "古装",
+            "oumeiju": "欧美剧",
+            "dushi": "都市",
+            "yingju": "英剧",
+            "gangtaiju": "港台剧",
+            "qingchun": "青春",
+            "hanju": "韩剧",
+            "xinwen": "新闻",
+            "chuanyue": "穿越",
+            "junlv": "军旅",
+            "xuanhuan": "玄幻",
+            "jilu": "纪录",
+            "yanqing": "言情",
+            "jingfei": "警匪",
+            "yinyueju": "音乐剧",
+            "shangzhan": "商战",
+            "guochanju": "国产剧",
+            "xinmataiju": "新马泰",
+            "wuxia": "武侠",
+            # 綜藝特有
+            "wanhui": "晚会",
+            "jilupian": "纪录片",
+            # 動漫特有
+            "mohuan": "魔幻",
+            "rexue": "热血",
+            "lianaiju": "恋爱",
+            "baoxiao": "爆笑",
+            "xiaoyuan": "校园",
+            "jingji": "竞技",
+            "shaonv": "少女",
+            "paomian": "泡面",
+            "gedou": "格斗",
+            "zhiyu": "治愈",
+            "jizhan": "机战",
+            "tuili": "推理",
+            "danmei": "耽美",
+            "juchangban": "剧场版",
+            "qita": "其它"
+        }
 
-            # 提取播放線路
-            vod_play_from_list = [name.strip().replace('\xa0', '') for name in root.xpath('//div[contains(@class, "anthology-tab")]//a/text()') if name.strip()]
-            vod_play_from_order = ['量子雲', '索尼雲', '快捷雲', '無限雲', '閃電雲', '小牛雲', '速播雲', '優酷雲']
-            vod_play_from_sorted = sorted(vod_play_from_list, key=lambda x: vod_play_from_order.index(x) if x in vod_play_from_order else len(vod_play_from_order))
-            vod_play_from = '$$$'.join(vod_play_from_sorted) if vod_play_from_sorted else '量子雲$$$索尼雲$$$快捷雲'
-
-            # 提取播放列表
-            play_list = root.xpath('//div[contains(@class, "anthology-list-box")]//ul[contains(@class, "anthology-list-play")]')
-            vod_play_url = []
-            for i in play_list:
-                name_list = i.xpath('./li/a/text()')
-                url_list = i.xpath('./li/a/@href')
-                if len(name_list) != len(url_list):
-                    min_length = min(len(name_list), len(url_list))
-                    name_list = name_list[:min_length]
-                    url_list = url_list[:min_length]
-                play_url = '#'.join([f"{name.strip()}${self.home_url.rstrip('/')}{url}" for name, url in zip(name_list, url_list) if name.strip()])
-                if play_url:
-                    vod_play_url.append(play_url)
-
-            # 提取影片信息
-            vod_name = (root.xpath('//h3[@class="slide-info-title"]/text()')[0] if root.xpath('//h3[@class="slide-info-title"]/text()') else 
-                       root.xpath('//title/text()')[0].split(' - ')[0] if root.xpath('//title/text()') else '未知名稱').strip()
-            vod_year_match = re.search(r'年份 :(\d{4})', res.text) or re.search(r'更新 :.*?(\d{4})', res.text)
-            vod_area_match = re.search(r'地區 :([^<]+)', res.text) or ''.join(root.xpath('//div[contains(@class, "slide-info") and contains(., "地區")]//text()')).strip()
-            vod_remarks_match = re.search(r'備注 :(.+?)</div>', res.text)
-            vod_director = ','.join([d.strip() for d in root.xpath('//div[contains(@class, "slide-info") and contains(., "導演")]//a/text()') if d.strip()]) or ''
-            vod_actor = ','.join([a.strip() for a in root.xpath('//div[contains(@class, "slide-info") and contains(., "演員")]//a/text()') if a.strip()]) or ''
-            vod_content = root.xpath('//meta[@name="description"]/@content')[0].strip() if root.xpath('//meta[@name="description"]/@content') else ''.join(root.xpath('//div[@id="height_limit"]/text()')).strip()
-            vod_pic_match = re.search(r'data-src="([^"]+)"', res.text)
-
-            video_list.append({
-                'vod_id': ids,
-                'vod_name': vod_name,
-                'vod_pic': vod_pic_match.group(1) if vod_pic_match else '',
-                'vod_remarks': re.sub(r'</?\w+[^>]*>', '', vod_remarks_match.group(1)).strip() if vod_remarks_match else '',
-                'vod_year': vod_year_match.group(1).strip() if vod_year_match else '',
-                'vod_area': vod_area_match if isinstance(vod_area_match, str) else vod_area_match.group(1).strip() if vod_area_match else '',
-                'vod_actor': vod_actor,
-                'vod_director': vod_director,
-                'vod_content': vod_content,
-                'vod_play_from': vod_play_from,
-                'vod_play_url': '$$$'.join(vod_play_url) if vod_play_url else ''
-            })
-            print(f"detailContent 成功解析: {vod_name}")
-            return {"list": video_list}
-        except Exception as e:
-            print(f"detailContent 錯誤: {str(e)}")
-            return {'list': []}
-
-    def searchContent(self, key, quick, page='1'):
+        # 地區分類映射
+        country_map = {
+            "cn": "中国大陆",
+            "us": "美国",
+            "kr": "韩国",
+            "hk": "香港",
+            "tw": "台湾",
+            "jp": "日本",
+            "uk": "英国",
+            "th": "泰国",
+            "es": "西班牙",
+            "ca": "加拿大",
+            "fr": "法国",
+            "in": "印度",
+            "au": "澳大利亚",
+            "other": "其他地区"
+        }
+        
+        # 設置請求體
+        payload = {
+            "chName": chName_map.get(cid, "电影"),
+            "startTime": int(_year) if _year != 'all' else 0,
+            "endTime": int(_year) if _year != 'all' else 0,
+            "label": label_map.get(_class, _class) if _class != 'all' else "",
+            "country": country_map.get(_area, _area) if _area != 'all' else "",
+            "pageSize": 12,  # 調整為 12，與新請求一致
+            "page": int(page)
+        }
+        
         d = []
-        url = f'{self.home_url}search.html?wd={key}&page={page}'
         try:
-            if HTMLSession:
-                session = HTMLSession()
-                res = session.get(url, headers=self.headers, timeout=10)
-                res.html.render(timeout=20)
-                root = etree.HTML(res.html.html)
-            else:
-                res = requests.get(url, headers=self.headers, timeout=10)
-                res.raise_for_status()
-                res.encoding = 'utf-8'
-                root = etree.HTML(res.text)
-            print("searchContent 前 3000 字元 HTML:", res.text[:3000] if not HTMLSession else res.html.html[:3000])
-            data_list = root.xpath('//div[@class="public-list-box"]') or root.xpath('//li[contains(@class, "box border")]') or root.xpath('//li[contains(@class, "search-item")]') or root.xpath('//div[contains(@class, "search-list")]')
-            for i in data_list:
-                vod_id_match = re.search(r'href="/detail/(\d+).html"', etree.tostring(i, encoding='unicode'))
-                vod_id = vod_id_match.group(1) if vod_id_match else ''
-                vod_name = i.xpath('.//a/@title')[0].strip() if i.xpath('.//a/@title') else i.xpath('.//a/text()')[0].strip() if i.xpath('.//a/text()') else '未知'
-                vod_pic_match = re.search(r'(?:src|data-src)="([^"]+)"', etree.tostring(i, encoding='unicode'))
-                vod_remarks = i.xpath('.//span/text()')[0].strip() if i.xpath('.//span/text()') else ''
-                if vod_id and vod_name != '未知':
-                    d.append({
-                        'vod_id': vod_id,
-                        'vod_name': vod_name,
-                        'vod_pic': vod_pic_match.group(1) if vod_pic_match else '',
-                        'vod_remarks': vod_remarks
-                    })
-            print(f"searchContent 提取到 {len(d)} 個結果")
-            return {'list': d}
-        except Exception as e:
-            print(f"searchContent 錯誤: {str(e)}")
-            return {'list': []}
-
-    def playerContent(self, flag, pid, vipFlags):
-        try:
-            play_url = f'{self.home_url.rstrip("/")}{pid}'
-            res = requests.get(play_url, headers=self.headers, timeout=10)
+            print(f"Requesting API: {self.api_url} with payload {json.dumps(payload, ensure_ascii=False)}")
+            res = self.session.post(self.api_url, headers=self.headers, json=payload, timeout=20)
             res.raise_for_status()
-            root = etree.HTML(res.text)
-            script_content = ''.join(root.xpath('//script/text()'))
-            m3u8_url = re.search(r"url:\s*['\"](https?://[^'\"]+?\.m3u8)['\"]", script_content)
-            if m3u8_url:
-                print(f"playerContent 找到 m3u8 地址: {m3u8_url.group(1)}")
-                return {
-                    'url': m3u8_url.group(1),
-                    'header': json.dumps(self.headers),
-                    'parse': 0,
-                    'jx': 0
-                }
-            iframe_urls = root.xpath('//iframe/@src')
-            if iframe_urls:
-                print(f"playerContent 找到 iframe 地址: {iframe_urls[0]}")
-                return {
-                    'url': iframe_urls[0],
-                    'header': json.dumps(self.headers),
-                    'parse': 1,
-                    'jx': 0
-                }
-            print("playerContent 未找到有效播放地址")
-            return {'url': '', 'header': json.dumps(self.headers), 'parse': 0, 'jx': 0}
+            data = res.json()
+            
+            # 打印原始響應以便調試
+            print(f"API Response: {json.dumps(data, ensure_ascii=False, indent=2)}")
+            
+            # 檢查響應狀態
+            if data.get('code') != 0:
+                raise Exception(f"API error: code={data.get('code')}, message={data.get('message', 'Unknown error')}")
+            
+            # 檢查數據結構
+            if 'data' not in data:
+                raise Exception("Invalid API response: 'data' field missing")
+            
+            # 提取數據
+            total = data['data'].get('total', 0)
+            items = data['data'].get('list', [])
+            
+            for item in items:
+                vod_id = f"/vod/detail/{item.get('id', '')}"
+                vod_name = item.get('name', '')
+                vod_pic = item.get('img', self.default_pic)
+                if not vod_pic or vod_pic.startswith('/api/images/init'):
+                    vod_pic = self.default_pic
+                
+                # 處理 countStr，截斷過長的更新信息，並處理 "更新至0集"
+                vod_remarks = item.get('countStr', '')
+                if vod_remarks == "更新至0集":
+                    vod_remarks = "尚未更新"
+                elif vod_remarks and len(vod_remarks) > 15:
+                    vod_remarks = vod_remarks[:15] + "..."
+                
+                if not vod_id or not vod_name:
+                    continue
+                    
+                d.append({
+                    'vod_id': vod_id,
+                    'vod_name': vod_name,
+                    'vod_pic': vod_pic,
+                    'vod_remarks': vod_remarks
+                })
+            
+            # 調整 pagecount 計算邏輯
+            pagecount = (total + 11) // 12 if total > 0 else 0  # 調整為每頁 12 條
+            return {
+                'list': d,
+                'page': int(page),
+                'pagecount': pagecount,
+                'limit': 12,
+                'total': total
+            }
         except Exception as e:
-            print(f"playerContent 錯誤: {str(e)}")
-            return {'url': '', 'header': json.dumps(self.headers), 'parse': 0, 'jx': 0}
+            print(f"Error in categoryContent: {e}")
+            return {
+                'list': d,
+                'page': int(page),
+                'pagecount': 0,
+                'limit': 12,
+                'total': 0
+            }
 
-    def localProxy(self, params):
-        return None
-
-    def destroy(self):
-        return '正在Destroy'
-
-    def get_data(self, payload):
-        return []
-
-if __name__ == '__main__':
+# 測試代碼
+if __name__ == "__main__":
     spider = Spider()
-    spider.init({})
-    print("測試首頁推薦內容:")
-    home_videos = spider.homeVideoContent()
-    print(json.dumps(home_videos, ensure_ascii=False, indent=2))
-    print("\n測試分類和篩選選項:")
-    result = spider.homeContent(True)
+    # 測試電影（動作，美國）
+    print("=== 測試電影（動作，美國） ===")
+    result = spider.categoryContent("movie", "1", True, {"year": "2024", "class": "dongzuo", "area": "us"})
     print(json.dumps(result, ensure_ascii=False, indent=2))
-    print("\n測試分類內容:")
-    category = spider.categoryContent('1', '1', True, {'area': '中國', 'year': '2024', 'by': 'time'})
-    print(json.dumps(category, ensure_ascii=False, indent=2))
-    print("\n測試詳情內容:")
-    detail = spider.detailContent(['260933'])
-    print(json.dumps(detail, ensure_ascii=False, indent=2))
-    print("\n測試播放內容:")
-    play = spider.playerContent("測試線路", "/play/260933-1-1.html", [])
-    print(json.dumps(play, ensure_ascii=False, indent=2))
-    print("\n測試搜索內容:")
-    search = spider.searchContent("海賊王", True, "1")
-    print(json.dumps(search, ensure_ascii=False, indent=2))
+    
+    # 測試電視劇（古装，中國大陸，無年份限制）
+    print("\n=== 測試電視劇（古装，中國大陸，無年份限制） ===")
+    result = spider.categoryContent("tv", "1", True, {"class": "guzhuang", "area": "cn"})
+    print(json.dumps(result, ensure_ascii=False, indent=2))
+    
+    # 測試綜藝（真人秀，中國大陸）
+    print("\n=== 測試綜藝（真人秀，中國大陸） ===")
+    result = spider.categoryContent("variety", "1", True, {"year": "2024", "class": "zhenshixiu", "area": "cn"})
+    print(json.dumps(result, ensure_ascii=False, indent=2))
+    
+    # 測試動漫（热血，日本）
+    print("\n=== 測試動漫（热血，日本） ===")
+    result = spider.categoryContent("anime", "1", True, {"year": "2024", "class": "rexue", "area": "jp"})
+    print(json.dumps(result, ensure_ascii=False, indent=2))
+    
+    # 測試兒童（儿童，中國大陸，無年份限制）
+    print("\n=== 測試兒童（儿童，中國大陸，無年份限制） ===")
+    result = spider.categoryContent("kids", "4", True, {"class": "ertong", "area": "cn"})
+    print(json.dumps(result, ensure_ascii=False, indent=2))
