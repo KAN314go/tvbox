@@ -380,6 +380,7 @@ class Spider(Spider):
                 return {'list': [], 'msg': '影片數據缺少 collectionInfo'}
 
             collection_info = page_props['collectionInfo']
+            print(f"collectionInfo: {json.dumps(collection_info, ensure_ascii=False, indent=2)}")
             
             vod_name = collection_info.get('name', '')
             vod_year = collection_info.get('time', '')
@@ -396,22 +397,28 @@ class Spider(Spider):
             videos_group = collection_info.get('videosGroup', [])
             if not videos_group:
                 print(f"videosGroup 為空，URL: {detail_url}")
-                return {
-                    'list': [{
-                        'vod_id': ids,
-                        'vod_name': vod_name,
-                        'vod_pic': vod_pic,
-                        'vod_remarks': vod_remarks,
-                        'vod_year': vod_year,
-                        'vod_area': vod_area,
-                        'vod_actor': vod_actor,
-                        'vod_director': vod_director,
-                        'vod_content': vod_content,
-                        'vod_play_from': '',
-                        'vod_play_url': ''
-                    }],
-                    'msg': '無可用播放線路'
-                }
+                # 嘗試從其他字段中提取播放 URL（如果有）
+                fallback_url = collection_info.get('url', '')  # 假設有 url 字段
+                if fallback_url:
+                    play_from.append('備用線路')
+                    play_url.append(f"{vod_name}${fallback_url}")
+                else:
+                    return {
+                        'list': [{
+                            'vod_id': ids,
+                            'vod_name': vod_name,
+                            'vod_pic': vod_pic,
+                            'vod_remarks': vod_remarks,
+                            'vod_year': vod_year,
+                            'vod_area': vod_area,
+                            'vod_actor': vod_actor,
+                            'vod_director': vod_director,
+                            'vod_content': vod_content,
+                            'vod_play_from': '',
+                            'vod_play_url': ''
+                        }],
+                        'msg': '無可用播放線路'
+                    }
 
             for group in videos_group:
                 if not group.get('videos'):
@@ -454,22 +461,27 @@ class Spider(Spider):
             search_url = f"{self.home_url}/search?q={key}"
             res = self.session.get(search_url, headers=self.headers, timeout=20)
             res.encoding = 'utf-8'
+            print(f"搜索 URL: {search_url}, 響應片段: {res.text[:200]}")
             root = etree.HTML(res.text)
             data_list = root.xpath('//div[contains(@class, "h-film-listall_cardList___IXsY")]/a')
             
             result = []
             for item in data_list:
-                vod_name = item.xpath('.//div[contains(@class, "h-film-listall_name__Gyb9x")]/text()')[0].strip()
+                vod_name = item.xpath('.//div[contains(@class, "h-film-listall_name__Gyb9x")]/text()')
+                vod_name = vod_name[0].strip() if vod_name else ''
                 vod_id = item.get('href', '')
-                vod_pic = item.xpath('.//img[contains(@class, "h-film-listall_img__jiamS")]/@src')[0] if item.xpath('.//img[contains(@class, "h-film-listall_img__jiamS")]/@src') else self.default_pic
+                vod_pic = item.xpath('.//img[contains(@class, "h-film-listall_img__jiamS")]/@src')
+                vod_pic = vod_pic[0] if vod_pic else self.default_pic
                 if vod_pic == '/api/images/init':
                     vod_pic = self.default_pic
-                result.append({
-                    'vod_id': vod_id,
-                    'vod_name': vod_name,
-                    'vod_pic': vod_pic,
-                    'vod_remarks': ''
-                })
+                if vod_name and vod_id:
+                    result.append({
+                        'vod_id': vod_id,
+                        'vod_name': vod_name,
+                        'vod_pic': vod_pic,
+                        'vod_remarks': ''
+                    })
+            print(f"搜索結果: {json.dumps(result, ensure_ascii=False, indent=2)}")
             return {'list': result}
         except Exception as e:
             print(f"Error in searchContent: {e}")
@@ -570,9 +582,9 @@ if __name__ == "__main__":
     result = spider.categoryContent("children", "1", True, {"class": "ertong", "area": "cn"})
     print(json.dumps(result, ensure_ascii=False, indent=2))
     
-    # 測試 detailContent
-    print("\n=== 測試 detailContent ===")
-    result = spider.detailContent(["/vod/detail/rQR1SQZJjQ"])
+    # 測試 detailContent（使用其他 vod_id）
+    print("\n=== 測試 detailContent（故宫里的大怪兽） ===")
+    result = spider.detailContent(["/vod/detail/LX89vyQfIj"])
     print(json.dumps(result, ensure_ascii=False, indent=2))
     
     # 測試 searchContent
@@ -585,7 +597,7 @@ if __name__ == "__main__":
     result = spider.playerContent("线路1", "猪猪侠$https://example.com/video.m3u8", [])
     print(json.dumps(result, ensure_ascii=False, indent=2))
     
-    # 測試 generate_children_html
-    print("\n=== 測試 generate_children_html ===")
-    result = spider.generate_children_html("/vod/detail/rQR1SQZJjQ")
+    # 測試 generate_children_html（使用其他 vod_id）
+    print("\n=== 測試 generate_children_html（故宫里的大怪兽） ===")
+    result = spider.generate_children_html("/vod/detail/LX89vyQfIj")
     print(result)
