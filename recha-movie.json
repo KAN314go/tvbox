@@ -4821,7 +4821,7 @@
     {
       "name": "smart.py",
       "type": 3,
-      "url": "./py/live.smt.py",
+      "url": "./py/live_smt.py",
       "epg": "https://epg.112114.eu.org/?ch={name}&date={date}",
       "logo": "https://epg.112114.eu.org/logo/{name}.png",
       "playerType": 2
