@@ -900,6 +900,16 @@
         "ext": "./drpy_js/theporn.js"
       },
       {
+        "key": "py_4k",
+        "name": "🔞4K歐美",
+        "type": 3,
+        "api": "./py/4K.py",
+        "searchable": 1,
+        "quickSearch": 1,
+        "filterable": 1,
+        "changeable": 1
+      },
+      {
         "key": "csp_XYQHiker_鉴黄师",
         "name": "🔞鉴黄师",
         "type": 3,

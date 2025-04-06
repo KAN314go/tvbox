@@ -6,24 +6,15 @@
 
 
     {
-      "key": "py_4k",
-      "name": "🥇｜4k-1｜測試",
+      "key": "FourKFM",
+      "name": "🥇｜4K影库|磁力+網盤",
       "type": 3,
-      "api": "./py/temp/4K.py",
-      "searchable": 1,
+      "api": "csp_FourKFM",
       "quickSearch": 1,
+      "changeable": 1,
       "filterable": 1,
-      "changeable": 1
-    },
-    {
-      "key": "py_4k-2",
-      "name": "🥇｜4k-2｜測試",
-      "type": 3,
-      "api": "./py/temp/4K数逼毛.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "changeable": 1
+      "timeout": 60,
+      "ext": "./lib/tokenm.json$$$https://www.4kdy.vip/$$$noproxy$$$1$$$./lib/4kfm.txt$$$4KFM"
     },
     {
       "key": "csp_稀飯影視",
