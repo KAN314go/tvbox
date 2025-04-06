@@ -17,7 +17,7 @@
       "filterable": 1,
       "ext": {
         "数组": "class=\"video-img-box mb-e-20\"&&</p>",
-        "线路数组": "style=\"width: 118.75px; margin-right: 10px;\"&&</div>",
+        "线路数组": "class=\"swiper-slide\"&&</div>",
         "线路标题": ">&&</div>",
         "播放数组": "class=\"ep-btn online\"&&</a>",
         "图片": "data-src=\"&&\"",
