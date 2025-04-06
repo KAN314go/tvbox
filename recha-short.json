@@ -25,6 +25,15 @@
           "changeable": 0
       },
       {
+        "key": "py_旺旺短劇",
+        "name": "旺旺短剧",
+        "type": 3,
+        "api": "./py/py_旺旺.py",
+        "searchable": 1,
+        "quickSearch": 0,
+        "filterable": 0
+      },  
+      {
         "key": "py_甜圈短剧.py",
         "name": "📺｜甜圈短剧",
         "type": 3,
@@ -141,7 +150,7 @@
     },
     {
       "key": "旺旺采集资源",
-      "name": "📺｜旺旺短剧",
+      "name": "📺｜旺財短劇",
       "type": 1,
       "api": "https://api.wwzy.tv/api.php/provide/vod/",
       "playerType": 1,

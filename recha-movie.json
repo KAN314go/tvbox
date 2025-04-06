@@ -6,16 +6,6 @@
 
 
     {
-      "key": "py_華視界",
-      "name": "🎖︎｜華視界｜測試",
-      "type": 3,
-      "api": "./py/py_hlove.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "changeable": 1
-    },
-    {
       "key": "豆瓣",
       "name": "🇹🇼｜熱播排行榜｜自動切換",
       "type": 3,
@@ -4807,6 +4797,14 @@
       "ext": "",
       "epg": "http://epg.112114.xyz/?ch={name}&date={date}",
       "logo": "https://epg.112114.xyz/logo/{name}.png"
+    },
+    {
+      "name": "smart.py",
+      "type": 3,
+      "url": "./py/live.smt.py",
+      "epg": "https://epg.112114.eu.org/?ch={name}&date={date}",
+      "logo": "https://epg.112114.eu.org/logo/{name}.png",
+      "playerType": 2
     },
     {
       "name": "瑪斯特",
