@@ -17,7 +17,7 @@ class Spider(Spider):
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
             "Referer": "https://hlove.tv/",
         }
-        self.default_pic = 'https://hlove.tv/api/images/default'  # 修改為網站默認圖片
+        self.default_pic = 'https://hlove.tv/api/images/default'  # 網站默認圖片
 
     def init(self, extend):
         pass
@@ -61,7 +61,7 @@ class Spider(Spider):
 
         # 兒童篩選條件
         children_classes = "全部$all#儿童$ertong#动画$donghua#喜剧$xiju#动作冒险$dongzuomaoxian#科幻&奇幻$kehuanqihuan#家庭$jiating#动作&冒险$dongzuojiemaoxian#剧情$juqing#悬疑$xuanyi#犯罪$fanzui#冒险$maoxian#科幻$kehuan#动作$dongzuo#动漫$dongman#历史$lishi#奇幻$qihuan"
-        children_areas = "全部$all#中国大陆$cn#美国$us#韩国$kr#香港$hk#台湾$tw#日本$jp#英国$gb#泰国$th#西班牙$sp#加拿大$ca#法国$fr#印度$in#澳大利亚$au#其他地区$others"
+        children_areas = "全部$all#中国大陆$cn#美国$us#韩国$kr#香港$hk#台湾$tw#日本$jp#英國$gb#泰国$th#西班牙$sp#加拿大$ca#法国$fr#印度$in#澳大利亚$au#其他地区$others"
         children_years = "全部$all#2025$2025#2024$2024#2023$2023#2022$2022#2021$2021#2020$2020#2019-2015$2015#2014-2010$2010#2009-2000$2000#90年代$1990#80年代$1980#更早$1970"
 
         # 構建篩選條件
@@ -99,21 +99,45 @@ class Spider(Spider):
         try:
             res = requests.get(self.home_url, headers=self.headers)
             res.encoding = 'utf-8'
-            root = etree.HTML(res.text)
-            data_list = root.xpath('//div[contains(@class, "h-film-listall_cardList___IXsY")]/a')
-            for i in data_list:
-                vod_name = i.xpath('.//div[contains(@class, "h-film-listall_name__Gyb9x")]/text()')[0].strip()
-                vod_id = i.get('href', '')
-                vod_pic = i.xpath('.//img[contains(@class, "h-film-listall_img__jiamS")]/@src')[0] if i.xpath('.//img[contains(@class, "h-film-listall_img__jiamS")]/@src') else self.default_pic
-                if vod_pic == '/api/images/init':  # 檢測無效圖片
-                    vod_pic = self.default_pic
-                d.append({
-                    'vod_id': vod_id,
-                    'vod_name': vod_name,
-                    'vod_pic': vod_pic,
-                    'vod_remarks': ''
-                })
-            return {'list': d[:10], 'parse': 0, 'jx': 0}
+            html_text = res.text
+
+            # 從 __NEXT_DATA__ 中提取所有分類區塊
+            next_data = re.search(r'<script id="__NEXT_DATA__" type="application/json">(.*?)</script>', html_text)
+            if not next_data:
+                print("未找到 __NEXT_DATA__")
+                return {'list': [], 'parse': 0, 'jx': 0}
+
+            next_json = json.loads(next_data.group(1))
+            cards = next_json['props']['pageProps'].get('cards', [])
+            print(f"找到 {len(cards)} 個分類區塊")
+
+            for section in cards:
+                section_title = section.get('name', '未知分類')
+                section_cards = section.get('cards', [])
+                for card in section_cards:
+                    vod_id = card.get('id', '')
+                    vod_name = card.get('name', '')
+                    vod_pic = card.get('img', '')  # 優先使用 JSON 中的圖片
+                    vod_remarks = card.get('countStr', section_title)  # 使用分類名稱作為備用備註
+
+                    if not vod_id or not vod_name:
+                        continue
+
+                    # 圖片處理：僅在無效時使用預設圖片
+                    if not vod_pic or vod_pic == '/api/images/init':
+                        vod_pic = self.default_pic
+
+                    d.append({
+                        'vod_id': vod_id,
+                        'vod_name': vod_name,
+                        'vod_pic': vod_pic,
+                        'vod_remarks': vod_remarks
+                    })
+
+            # 去重並返回所有影片
+            unique_d = {item['vod_id']: item for item in d if item['vod_id']}.values()
+            print(f"最終返回 {len(unique_d)} 個影片")
+            return {'list': list(unique_d), 'parse': 0, 'jx': 0}
         except Exception as e:
             print(f"Error in homeVideoContent: {e}")
             return {'list': d, 'parse': 0, 'jx': 0}
@@ -144,8 +168,9 @@ class Spider(Spider):
                 vod_name = card.xpath('.//div[contains(@class, "h-film-listall_name__Gyb9x")]/text()')[0].strip()
                 vod_id = card.get('href', '')
                 vod_pic_list = card.xpath('.//img[contains(@class, "h-film-listall_img__jiamS")]/@src')
-                vod_pic = vod_pic_list[0] if vod_pic_list else self.default_pic  # 使用網站默認圖片
-                if vod_pic == '/api/images/init':
+                vod_pic = vod_pic_list[0] if vod_pic_list else None
+                # 圖片處理：優先使用頁面圖片，無效時使用 init_cards 或預設圖片
+                if not vod_pic or vod_pic == '/api/images/init':
                     vod_pic = init_cards[i]['img'] if i < len(init_cards) and 'img' in init_cards[i] else self.default_pic
                 vod_remarks = init_cards[i]['countStr'] if i < len(init_cards) and 'countStr' in init_cards[i] else ''
                 d.append({
@@ -320,4 +345,4 @@ class Spider(Spider):
 if __name__ == "__main__":
     spider = Spider()
     result = spider.homeVideoContent()
-    print(result)
+    print(json.dumps(result, ensure_ascii=False, indent=2))
