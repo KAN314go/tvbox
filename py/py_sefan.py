@@ -17,7 +17,7 @@ class Spider(Spider):
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
             "Referer": "https://hlove.tv/",
         }
-        self.default_pic = 'https://hlove.tv/api/images/default'  # 網站默認圖片
+        self.default_pic = 'https://hlove.tv/api/images/default'
 
     def init(self, extend):
         pass
@@ -35,7 +35,6 @@ class Spider(Spider):
         pass
 
     def homeContent(self, filter):
-        # 主類別（頂部導航）
         categories = "电影$movie#电视剧$drama#动漫$animation#综艺$variety#儿童$children"
         class_list = [{'type_id': v.split('$')[1], 'type_name': v.split('$')[0]} for v in categories.split('#')]
 
@@ -61,10 +60,9 @@ class Spider(Spider):
 
         # 兒童篩選條件
         children_classes = "全部$all#儿童$ertong#动画$donghua#喜剧$xiju#动作冒险$dongzuomaoxian#科幻&奇幻$kehuanqihuan#家庭$jiating#动作&冒险$dongzuojiemaoxian#剧情$juqing#悬疑$xuanyi#犯罪$fanzui#冒险$maoxian#科幻$kehuan#动作$dongzuo#动漫$dongman#历史$lishi#奇幻$qihuan"
-        children_areas = "全部$all#中国大陆$cn#美国$us#韩国$kr#香港$hk#台湾$tw#日本$jp#英國$gb#泰国$th#西班牙$sp#加拿大$ca#法国$fr#印度$in#澳大利亚$au#其他地区$others"
+        children_areas = "全部$all#中国大陆$cn#美国$us#韩国$kr#香港$hk#台湾$tw#日本$jp#英国$gb#泰国$th#西班牙$sp#加拿大$ca#法国$fr#印度$in#澳大利亚$au#其他地区$others"
         children_years = "全部$all#2025$2025#2024$2024#2023$2023#2022$2022#2021$2021#2020$2020#2019-2015$2015#2014-2010$2010#2009-2000$2000#90年代$1990#80年代$1980#更早$1970"
 
-        # 構建篩選條件
         filters = {
             'movie': [
                 {'name': '分类', 'key': 'class', 'value': [{'n': v.split('$')[0], 'v': v.split('$')[1]} for v in movie_classes.split('#')]},
@@ -101,7 +99,6 @@ class Spider(Spider):
             res.encoding = 'utf-8'
             html_text = res.text
 
-            # 從 __NEXT_DATA__ 中提取所有分類區塊
             next_data = re.search(r'<script id="__NEXT_DATA__" type="application/json">(.*?)</script>', html_text)
             if not next_data:
                 print("未找到 __NEXT_DATA__")
@@ -117,13 +114,16 @@ class Spider(Spider):
                 for card in section_cards:
                     vod_id = card.get('id', '')
                     vod_name = card.get('name', '')
-                    vod_pic = card.get('img', '')  # 優先使用 JSON 中的圖片
-                    vod_remarks = card.get('countStr', section_title)  # 使用分類名稱作為備用備註
+                    vod_pic = card.get('img', '')
+                    vod_remarks = card.get('countStr', section_title)
 
                     if not vod_id or not vod_name:
                         continue
 
-                    # 圖片處理：僅在無效時使用預設圖片
+                    # 統一 vod_id 格式，添加路徑前綴
+                    if not vod_id.startswith('/'):
+                        vod_id = f"/{self.infer_category(section_title)}/{vod_id}"
+
                     if not vod_pic or vod_pic == '/api/images/init':
                         vod_pic = self.default_pic
 
@@ -134,13 +134,26 @@ class Spider(Spider):
                         'vod_remarks': vod_remarks
                     })
 
-            # 去重並返回所有影片
             unique_d = {item['vod_id']: item for item in d if item['vod_id']}.values()
             print(f"最終返回 {len(unique_d)} 個影片")
             return {'list': list(unique_d), 'parse': 0, 'jx': 0}
         except Exception as e:
             print(f"Error in homeVideoContent: {e}")
             return {'list': d, 'parse': 0, 'jx': 0}
+
+    def infer_category(self, section_title):
+        """根據分類名稱推斷路徑"""
+        category_mapping = {
+            '電影': 'movie',
+            '电视剧': 'drama',
+            '动漫': 'animation',
+            '综艺': 'variety',
+            '儿童': 'children'
+        }
+        for key, value in category_mapping.items():
+            if key in section_title:
+                return value
+        return 'movie'  # 默認為 movie
 
     def categoryContent(self, cid, page, filter, ext):
         _year = ext.get('year', 'all')
@@ -169,7 +182,6 @@ class Spider(Spider):
                 vod_id = card.get('href', '')
                 vod_pic_list = card.xpath('.//img[contains(@class, "h-film-listall_img__jiamS")]/@src')
                 vod_pic = vod_pic_list[0] if vod_pic_list else None
-                # 圖片處理：優先使用頁面圖片，無效時使用 init_cards 或預設圖片
                 if not vod_pic or vod_pic == '/api/images/init':
                     vod_pic = init_cards[i]['img'] if i < len(init_cards) and 'img' in init_cards[i] else self.default_pic
                 vod_remarks = init_cards[i]['countStr'] if i < len(init_cards) and 'countStr' in init_cards[i] else ''
@@ -189,6 +201,9 @@ class Spider(Spider):
     def detailContent(self, did):
         ids = did[0]
         video_list = []
+        # 修正 URL 拼接，確保 vod_id 格式正確
+        if not ids.startswith('/'):
+            ids = f"/{ids}"
         detail_url = f"{self.home_url}{ids}"
         try:
             res = requests.get(detail_url, headers=self.headers)
@@ -206,7 +221,7 @@ class Spider(Spider):
                 vod_remarks = collection_info.get('countStr', '')
                 vod_actor = ', '.join([actor['name'] for actor in collection_info.get('actor', [])])
                 vod_director = ', '.join([director['name'] for director in collection_info.get('director', [])])
-                vod_pic = collection_info.get('imgUrl', self.default_pic)  # 使用網站默認圖片
+                vod_pic = collection_info.get('imgUrl', self.default_pic)
                 is_movie = collection_info.get('isMovie', False)
                 
                 play_from = []
