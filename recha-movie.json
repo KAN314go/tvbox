@@ -5,7 +5,19 @@
   "sites": [
 
 
-  
+    {
+      "key": "csp_BookTing2",
+      "name": "㊙︎｜听书之家｜",
+      "type": 3,
+      "playerType": "2",
+      "api": "csp_BookTing",
+      "jar": "./jar/PandaQ250227c.jar;md5;ceda5421cdce5fad2a2f6d8c71ae4311",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "https://www.ytysxs.com",
+      "style": {"type": "rect", "ratio": 1.333}
+    },
 
 
     {
@@ -4803,10 +4815,7 @@
     {
       "name": "smart.py",
       "type": 3,
-      "url": "./py/live_smt.py",
-      "epg": "https://epg.112114.eu.org/?ch={name}&date={date}",
-      "logo": "https://epg.112114.eu.org/logo/{name}.png",
-      "playerType": 2
+      "api": "./py/live_smt.py"
     },
     {
       "name": "瑪斯特",
@@ -4816,12 +4825,6 @@
       "timeout": 5,
       "epg": "https://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/taipei",
       "logo": "https://epg.112114.xyz/logo/{name}.png"
-    },
-    {
-      "name": "大街TV(喵老師)",
-      "playerType": 2,
-      "url": "./live/A喵台.txt",
-      "epg": "http://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Taipei"
     },
     {
       "name": "4G-TV(喵老師)",
@@ -4923,7 +4926,7 @@
       "name": "台灣頻道",
       "type": 0,
       "playerType": 2,
-      "url": ".live/台湾频道.m3u",
+      "url": "./live/台湾频道.m3u",
       "ua": "okhttp/3.15",
       "epg": "http://epg.112114.xyz/?ch={name}&date={date}",
       "logo": "https://epg.112114.xyz/logo/{name}.png"
