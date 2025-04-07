@@ -372,7 +372,7 @@ class Spider(Spider):
             vod_play_url = []
             for i in play_list:
                 name = i['name']
-                url = ids + '/' + str(i['sid'])
+                url = ids + '/' + str(i['nid'])
                 vod_play_url.append(name + '$' + url)
 
             video_list.append(
@@ -427,15 +427,15 @@ class Spider(Spider):
         return {'list': video_list, 'parse': 0, 'jx': 0}
 
     def playerContent(self, flag, pid, vipFlags):
-        # https://www.cfkj86.com/api/mw-movie/anonymous/v1/video/episode/url?id=83882&sid=175817
+        # https://www.cfkj86.com/api/mw-movie/anonymous/v2/video/episode/url?id=83882&nid=175817
         url = pid
         play_url = 'https://gitee.com/dobebly/my_img/raw/c1977fa6134aefb8e5a34dabd731a4d186c84a4d/x.mp4'
         data = url.split('/')
         _id = data[0]
-        _sid = data[1]
+        _nid = data[1]
         t = str(int(time.time() * 1000))
         # t = '1723292093234'
-        data = f'id={_id}&sid={_sid}&key=cb808529bae6b6be45ecfab29a4889bc&t={t}'
+        data = f'id={_id}&nid={_nid}&key=cb808529bae6b6be45ecfab29a4889bc&t={t}'
         data_md5 = hashlib.md5(data.encode()).hexdigest()
         data_sha1 = hashlib.sha1(data_md5.encode()).hexdigest()
         h = {
@@ -448,7 +448,7 @@ class Spider(Spider):
         }
         try:
             res = requests.get(
-                f'{self.home_url}/api/mw-movie/anonymous/v1/video/episode/url?id={_id}&sid={_sid}',
+                f'{self.home_url}/api/mw-movie/anonymous/v2/video/episode/url?id={_id}&nid={_nid}',
                 headers=h)
             play_url = res.json()['data']['playUrl']
         except requests.RequestException as e:
