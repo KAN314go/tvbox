@@ -56,15 +56,14 @@
       "style": {"type": "rect", "ratio": 1.77}
     },
     {
-      "key": "文才影视",
+      "key": "py_金牌.py",
       "name": "🏆｜金影｜高清◎秒播(無廣告)",
       "type": 3,
-      "api": "csp_Jpys",
-      "jar": "./jar/PandaQ250227c.jar;md5;ceda5421cdce5fad2a2f6d8c71ae4311",
-      "playerType": 2,
+      "api": "./py/金牌.py",
       "searchable": 1,
       "quickSearch": 1,
-      "changeable": 1
+      "filterable": 1,
+      "ext": {"site": "https://www.vv3nwjk.com,https://www.jpyy2.com,https://www.cfkj86.com"}
     },
     {
       "key": "Auete",
@@ -318,7 +317,17 @@
       },
       "timeout": 20
     },
-    
+    {
+      "key": "文才影视",
+      "name": "🥇｜文才｜高清◎秒播(無廣告)",
+      "type": 3,
+      "api": "csp_Jpys",
+      "jar": "./jar/PandaQ250227c.jar;md5;ceda5421cdce5fad2a2f6d8c71ae4311",
+      "playerType": 2,
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 1
+    },
     {
       "key": "星辉弹幕",
       "name": "🥇｜星辉｜藍光◎秒播(無廣告+APP)",
@@ -643,16 +652,7 @@
       "quickSearch": 1,
       "filterable": 1
     },
-        {
-      "key": "py_金牌.py",
-      "name": "🥇｜金牌｜高清◎秒播(無廣告)",
-      "type": 3,
-      "api": "./py/金牌.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": {"site": "https://www.vv3nwjk.com,https://www.jpyy2.com,https://www.cfkj86.com"}
-    },
+
     {
       "key": "py_jinpai",
       "name": "🥇｜金光｜高清◎秒播(無廣告)",

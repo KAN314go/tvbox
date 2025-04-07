@@ -4,31 +4,6 @@
   "wallpaper": "https://tv.nxog.top/m//t/",
   "sites": [
 
-    {
-    "key": "csp_XYQHiker_有声小说吧",
-    "name":"有声小说吧(XYQH)",
-    "type":3,
-    "api":"csp_XBPQ",
-    "searchable":1,
-    "quickSearch":1,
-    "filterable":1,
-    "ext":
-         {
-          "首页": "https://www.lrts.me/book/category/1",
-          "分类url": "https://www.lrts.me/book/category/1",
-          "分类": "全部$1#玄幻奇幻$11#历史幻想$12#古代言情$10#都市传说$8#科幻空间$3024#穿越架空$3109#武侠仙侠$14#青春校园$3106#网游竞技$9042#现代言情$3020#次元专区$9287",
-          //"筛选排序名称": "推薦&最新&最熱",
-          //"筛选排序替换词": "recommend&latest&hot",
-          //"链接是否直接播放": "0",
-          //"直接播放链接加前缀": "",
-          //"直接播放链接加后缀": "",
-          //"直接播放直链视频请求头": "",
-          "详情是否Jsoup写法": "1",
-          "是否开启手动嗅探": "1",
-          "手动嗅探视频链接关键词": ".mp3#.m4a",
-          "嗅探词": ".html#=http"
-          }
-        },
 
     {
       "key": "豆瓣",
