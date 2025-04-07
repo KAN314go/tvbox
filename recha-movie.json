@@ -5,20 +5,6 @@
   "sites": [
 
 
-    {
-      "key": "csp_BookTing2",
-      "name": "㊙︎｜听书之家｜",
-      "type": 3,
-      "playerType": "2",
-      "api": "csp_BookTing",
-      "jar": "./jar/PandaQ250227c.jar;md5;ceda5421cdce5fad2a2f6d8c71ae4311",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": "https://www.ytysxs.com",
-      "style": {"type": "rect", "ratio": 1.333}
-    },
-
 
     {
       "key": "豆瓣",
