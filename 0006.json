@@ -15,7 +15,7 @@
     "ext":
          {
           "首页": "https://www.lrts.me/book/category/1",
-          "分类url": "https://www.lrts.me/book/category/{cateId}/{by}/{catePg}/20",
+          "分类url": "https://www.lrts.me/book/category/1",
           "分类": "全部$1#玄幻奇幻$11#历史幻想$12#古代言情$10#都市传说$8#科幻空间$3024#穿越架空$3109#武侠仙侠$14#青春校园$3106#网游竞技$9042#现代言情$3020#次元专区$9287",
           //"筛选排序名称": "推薦&最新&最熱",
           //"筛选排序替换词": "recommend&latest&hot",
