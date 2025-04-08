@@ -34,6 +34,15 @@
         "filterable": 0
       },  
       {
+        "key": "py_偷樂短劇",
+        "name": "偷樂短剧",
+        "type": 3,
+        "api": "./py/py_偷乐短剧.py",
+        "searchable": 1,
+        "quickSearch": 0,
+        "filterable": 0
+      },  
+      {
         "key": "py_甜圈短剧.py",
         "name": "📺｜甜圈短剧",
         "type": 3,
