@@ -15,8 +15,8 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": {
-        "数组": "class=\"public-list-box\"&&",
-        "标题": "title=\">&&封面图</a>",
+        "数组": "class=\"public-list-box\"&&</a>",
+        "标题": "alt=\"&&封面图",
         "线路标题": "超清",
         "图片": "data-src=\"&&\"",
         "主页url": "https://www.jzsdm.com/",
