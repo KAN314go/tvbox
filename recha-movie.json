@@ -18,7 +18,7 @@
         "主页url": "https://www.jzsdm.com/",
         "搜索url": "https://www.jzsdm.com/index.php/vod/search.html?wd={wd}",
         "分类url": "https://www.jzsdm.com/index.php/vod/show/by/{by}/id/{cateId}/page/{catePg}/year/{year}.html",
-        "分类": "日番$1#美番$2#劇場版$3#真人番劇$4",
+        "分类": "日番$1#美番$2#劇場版$3#真人番劇$4"
       }
     },
     {
