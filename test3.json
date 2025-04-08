@@ -16,7 +16,7 @@
         "filterable": 1,
         "ext": {
           "数组": "class=\"public-list-div public-list-bj\"&&</a>",
-          "標題": "title=\"&&\"",
+          "標題": "class=\"time-title hide ft4\"&&</a>",
           "线路标题": "超清",
           "图片": "data-src=\"&&\"",
           "主页url": "https://www.jzsdm.com/",
