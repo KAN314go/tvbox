@@ -6,27 +6,6 @@
 
 
     {
-      "key": "csp_醬子社",
-      "name": "🥈｜醬子社｜高清◎秒播(待測)",
-      "type": 3,
-      "api": "csp_XBPQ",
-      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": {
-        "数组": "class=\"public-list-exp\"&&</a>",
-        "标题": "alt=\"&&封面图",
-        "线路数组": "class=\"swiper-slide on nav-dt swiper-slide-active\"&&</span>",
-        "线路标题": "老王好無聊",
-        "图片": "data-src=\"&&\"",
-        "主页url": "https://www.jzsdm.com/",
-        "搜索url": "https://www.jzsdm.com/index.php/vod/search.html?wd={wd}",
-        "分类url": "https://www.jzsdm.com/index.php/vod/show/by/{by}/id/{cateId}/page/{catePg}/year/{year}.html",
-        "分类": "日番$1#美番$2#劇場版$3#真人番劇$4"
-      }
-    },
-    {
       "key": "豆瓣",
       "name": "🇹🇼｜熱播排行榜｜自動切換",
       "type": 3,
@@ -4180,6 +4159,27 @@
         "线路标题" : "</i>&nbsp;&&</a>+集"                                ,
         "分类url": "https://dingdingdm.com/list/{cateId}-{catePg}.html",
         "分类"   : "动漫电影$1#国产动漫$3#日本动漫$2#欧美动漫$4#短剧$20"
+      }
+    },
+    {
+      "key": "csp_醬子社",
+      "name": "动漫｜醬子社",
+      "type": 3,
+      "api": "csp_XBPQ",
+      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": {
+        "数组": "class=\"public-list-exp\"&&</a>",
+        "标题": "alt=\"&&封面图",
+        "线路数组": "class=\"swiper-slide on nav-dt swiper-slide-active\"&&</span>",
+        "线路标题": "老王好無聊",
+        "图片": "data-src=\"&&\"",
+        "主页url": "https://www.jzsdm.com/",
+        "搜索url": "https://www.jzsdm.com/index.php/vod/search.html?wd={wd}",
+        "分类url": "https://www.jzsdm.com/index.php/vod/show/by/{by}/id/{cateId}/page/{catePg}/year/{year}.html",
+        "分类": "日番$1#美番$2#劇場版$3#真人番劇$4"
       }
     },
     {
