@@ -16,6 +16,7 @@
       "filterable": 1,
       "ext": {
         "数组": "class=\"public-list-exp\"&&</a>",
+        "线路标题": "超清",
         "图片": "data-src=\"&&\"",
         "主页url": "https://www.jzsdm.com/",
         "搜索url": "https://www.jzsdm.com/index.php/vod/search.html?wd={wd}",
