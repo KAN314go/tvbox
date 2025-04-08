@@ -71,7 +71,6 @@ class Spider(Spider):
         {'key': 'year',
          'name': '年份',
          'value': [{'n': '全部', 'v': ''},
-                   {'n': '2025', 'v': '/year/2025'},
                    {'n': '2024', 'v': '/year/2024'},
                    {'n': '2023', 'v': '/year/2023'},
                    {'n': '2022', 'v': '/year/2022'},
@@ -139,7 +138,6 @@ class Spider(Spider):
         {'key': 'year',
          'name': '时间',
          'value': [{'n': '全部', 'v': ''},
-                   {'n': '2025', 'v': '/year/2025'},
                    {'n': '2024', 'v': '/year/2024'},
                    {'n': '2023', 'v': '/year/2023'},
                    {'n': '2022', 'v': '/year/2022'},
@@ -199,7 +197,6 @@ class Spider(Spider):
         {'key': 'year',
          'name': '时间',
          'value': [{'n': '全部', 'v': ''},
-                   {'n': '2025', 'v': '/year/2025'},
                    {'n': '2024', 'v': '/year/2024'},
                    {'n': '2023', 'v': '/year/2023'},
                    {'n': '2022', 'v': '/year/2022'},
@@ -249,7 +246,6 @@ class Spider(Spider):
         {'key': 'year',
          'name': '时间',
          'value': [{'n': '全部', 'v': ''},
-                   {'n': '2025', 'v': '/year/2025'},
                    {'n': '2024', 'v': '/year/2024'},
                    {'n': '2023', 'v': '/year/2023'},
                    {'n': '2022', 'v': '/year/2022'},
@@ -427,7 +423,7 @@ class Spider(Spider):
         return {'list': video_list, 'parse': 0, 'jx': 0}
 
     def playerContent(self, flag, pid, vipFlags):
-        # https://www.cfkj86.com/api/mw-movie/anonymous/v2/video/episode/url?id=83882&nid=175817
+        # https://www.cfkj86.com/api/mw-movie/anonymous/v1/video/episode/url?id=83882&nid=175817
         url = pid
         play_url = 'https://gitee.com/dobebly/my_img/raw/c1977fa6134aefb8e5a34dabd731a4d186c84a4d/x.mp4'
         data = url.split('/')
@@ -450,7 +446,7 @@ class Spider(Spider):
             res = requests.get(
                 f'{self.home_url}/api/mw-movie/anonymous/v2/video/episode/url?id={_id}&nid={_nid}',
                 headers=h)
-            play_url = res.json()['data']['playUrl']
+            play_url = res.json()['data']['list'][0]['url']
         except requests.RequestException as e:
             print(e)
             return {"url": play_url, "header": h2, "parse": 0, "jx": 0}
