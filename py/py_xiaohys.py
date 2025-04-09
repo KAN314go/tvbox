@@ -154,11 +154,11 @@ class Spider:
             items = html.xpath('//div[contains(@class, "public-list-box")]')
             vod_list = []
             for item in items[:10]:  # 限制為前10個推薦項目
-                href = item.xpath('./div/a/@href')
-                vod_id = href[0].split('/')[-1].replace('/', '') if href else ""  # 提取 /detail/12345 中的 12345
-                vod_name = item.xpath('./div/a/@title')[0] if item.xpath('./div/a/@title') else "未知"
-                vod_pic = item.xpath('./div/a/img/@data-src')[0] if item.xpath('./div/a/img/@data-src') else ""
-                vod_remarks = item.xpath('.//div[contains(@class, "public-list-subtitle")]/text()')[0] if item.xpath('.//div[contains(@class, "public-list-subtitle")]/text()') else ""
+                href = item.xpath('.//a/@href')  # 使用 .//a 查找所有子層的 <a> 標籤
+                vod_id = href[0].split('/')[-2] if href and len(href[0].split('/')) > 2 else ""  # 提取 /detail/12345/ 中的 12345
+                vod_name = item.xpath('.//a/@title')[0] if item.xpath('.//a/@title') else "未知"
+                vod_pic = item.xpath('.//img/@data-src')[0] if item.xpath('.//img/@data-src') else item.xpath('.//img/@src')[0] if item.xpath('.//img/@src') else ""
+                vod_remarks = item.xpath('.//div[contains(@class, "public-list-subtitle")]/text()')[0].strip() if item.xpath('.//div[contains(@class, "public-list-subtitle")]/text()') else ""
                 vod_list.append({
                     "vod_id": vod_id,
                     "vod_name": vod_name,
