@@ -16,6 +16,9 @@ class Spider:
             "Origin": "https://xiaohys.com",
             "Referer": "https://xiaohys.com"
         }
+        # 初始化会话以保持Cookie
+        self.session = requests.Session()
+        self.session.get(self.home_url, headers=self.headers)  # 预加载首页获取Cookie
 
     def generate_key(self, t):
         return hashlib.md5(f"DS{t}DCC147D11943AF75".encode()).hexdigest()
@@ -140,7 +143,7 @@ class Spider:
 
     def homeVideoContent(self):
         try:
-            response = requests.get(self.home_url, headers=self.headers, timeout=10)
+            response = self.session.get(self.home_url, headers=self.headers, timeout=10)
             response.raise_for_status()
             html = etree.HTML(response.text)
             items = html.xpath('//div[@class="slide-time-bj swiper-slide"]/a')
@@ -181,7 +184,8 @@ class Spider:
         }
         print(f"API Params: {params}")
         try:
-            response = requests.get(self.api_url, params=params, headers=self.headers, timeout=10)
+            # 尝试POST请求
+            response = self.session.post(self.api_url, data=params, headers=self.headers, timeout=10)
             print(f"Raw API Response: {response.text}")
             data = response.json()
             print(f"Parsed API Response: {json.dumps(data, ensure_ascii=False)}")
@@ -212,16 +216,16 @@ class Spider:
         try:
             vod_id = ids[0]
             url = f"https://www.xiaohys.com/detail/{vod_id}/"
-            response = requests.get(url, headers=self.headers, timeout=10)
+            response = self.session.get(url, headers=self.headers, timeout=10)
             response.raise_for_status()
             html = etree.HTML(response.text)
             vod_item = {"vod_id": vod_id}
 
-            # 以下XPath需根据实际详情页结构调整
-            vod_item["vod_name"] = html.xpath('//h1[@class="title"]/text()')[0] if html.xpath('//h1[@class="title"]/text()') else "未知"
-            year = html.xpath('//div[contains(@class, "slide-info")]/span[@class="slide-info-remarks"]/text()')
-            vod_item["vod_year"] = next((y for y in year if y.isdigit() and len(y) == 4), "")
-            vod_item["vod_content"] = html.xpath('//div[@id="height_limit"]/text()')[0].strip() if html.xpath('//div[@id="height_limit"]/text()') else ""
+            # 调整XPath以匹配详情页结构
+            vod_item["vod_name"] = html.xpath('//h3[@class="slide-info-title hide"]/text()')[0] if html.xpath('//h3[@class="slide-info-title hide"]/text()') else "未知"
+            year = html.xpath('//span[@class="slide-info-remarks"]/text()')
+            vod_item["vod_year"] = next((y.strip() for y in year if y.strip().isdigit() and len(y.strip()) == 4), "")
+            vod_item["vod_content"] = html.xpath('//div[@id="height_limit"]/text()')[0].strip().replace("\xa0", " ").replace("\u3000", " ") if html.xpath('//div[@id="height_limit"]/text()') else ""
             vod_item["vod_director"] = " / ".join(html.xpath('//strong[contains(text(), "导演")]/following-sibling::a/text()')) if html.xpath('//strong[contains(text(), "导演")]/following-sibling::a/text()') else ""
             vod_item["vod_actor"] = " / ".join(html.xpath('//strong[contains(text(), "演员")]/following-sibling::a/text()')) if html.xpath('//strong[contains(text(), "演员")]/following-sibling::a/text()') else ""
             vod_item["vod_area"] = html.xpath('//span[@class="slide-info-remarks"]/a[contains(@href, "area")]/text()')[0] if html.xpath('//span[@class="slide-info-remarks"]/a[contains(@href, "area")]') else ""
@@ -229,13 +233,14 @@ class Spider:
             vod_item["vod_remarks"] = html.xpath('//strong[contains(text(), "备注")]/following-sibling::text()')[0].strip() if html.xpath('//strong[contains(text(), "备注")]/following-sibling::text()') else ""
             vod_item["vod_pic"] = html.xpath('//div[@class="detail-pic"]/img/@data-src')[0] if html.xpath('//div[@class="detail-pic"]/img/@data-src') else ""
 
-            play_from_list = html.xpath('//div[@class="play_source_tab"]/a/text()') or ["默认线路"]
+            # 播放列表解析
+            play_from_list = html.xpath('//div[@class="anthology-tab nav-swiper b-b br"]/div[@class="swiper-wrapper"]/a/text()') or ["默认线路"]
             play_url_list = []
             for i in range(len(play_from_list)):
-                episodes = html.xpath(f'(//ul[@class="content_playlist"])[{i+1}]/li/a/text()')
-                urls = html.xpath(f'(//ul[@class="content_playlist"])[{i+1}]/li/a/@href')
+                episodes = html.xpath(f'(//div[contains(@class, "anthology-list-box")])[{(i+1)}]//ul[@class="anthology-list-play size"]/li/a/text()')
+                urls = html.xpath(f'(//div[contains(@class, "anthology-list-box")])[{(i+1)}]//ul[@class="anthology-list-play size"]/li/a/@href')
                 if episodes and urls:
-                    play_url = "#".join([f"{ep}${self.home_url}{url}" for ep, url in zip(episodes, urls)])
+                    play_url = "#".join([f"{ep.strip()}${self.home_url}{url}" for ep, url in zip(episodes, urls)])
                     play_url_list.append(play_url)
                 else:
                     play_url_list.append("")
@@ -260,7 +265,8 @@ class Spider:
         }
         print(f"Search Params: {params}")
         try:
-            response = requests.get(self.api_url, params=params, headers=self.headers, timeout=10)
+            # 尝试POST请求
+            response = self.session.post(self.api_url, data=params, headers=self.headers, timeout=10)
             print(f"Raw Search Response: {response.text}")
             data = response.json()
             print(f"Parsed Search Response: {json.dumps(data, ensure_ascii=False)}")
