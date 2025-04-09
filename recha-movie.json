@@ -21,7 +21,15 @@
       "线路标题":"</i>&&<span",
       "搜索url":"https://xiaohys.com/search/-------------/?wd={wd}"
     },
-
+    {
+      "key": "py_feifanziyuan",
+      "name": "🎥｜無廣告非凡資源｜(待測)",
+      "type": 3,
+      "api": "./py/py_feifanziyuan.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },  
 
     {
       "key": "豆瓣",
