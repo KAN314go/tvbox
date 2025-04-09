@@ -151,11 +151,11 @@ class Spider:
             # 提取基本信息
             vod_name = html.xpath('//h3[@class="slide-info-title hide"]/text()')[0] if html.xpath('//h3[@class="slide-info-title hide"]/text()') else "未知"
             vod_pic = html.xpath('//div[@class="detail-pic"]/img/@data-src')[0] if html.xpath('//div[@class="detail-pic"]/img/@data-src') else ""
-            vod_year = html.xpath('//span[@class="slide-info-remarks"]/a[contains(@href, "2024")]/text()')[0] if html.xpath('//span[@class="slide-info-remarks"]/a[contains(@href, "2024")]/text()') else ""
+            vod_year = html.xpath('//div[@class="slide-info hide" and strong/text()="年代 :"]/text()')[0].strip() if html.xpath('//div[@class="slide-info hide" and strong/text()="年代 :"]/text()') else ""
             vod_remarks = html.xpath('//div[@class="slide-info hide" and strong/text()="备注 :"]/text()')[0].strip() if html.xpath('//div[@class="slide-info hide" and strong/text()="备注 :"]/text()') else ""
             vod_actor = ", ".join(html.xpath('//div[@class="slide-info hide" and strong/text()="演员 :"]/a/text()')) if html.xpath('//div[@class="slide-info hide" and strong/text()="演员 :"]/a/text()') else ""
             vod_director = ", ".join(html.xpath('//div[@class="slide-info hide" and strong/text()="导演 :"]/a/text()')) if html.xpath('//div[@class="slide-info hide" and strong/text()="导演 :"]/a/text()') else ""
-            vod_content = html.xpath('//meta[@name="description"]/@content')[0] if html.xpath('//meta[@name="description"]/@content') else ""
+            vod_content = html.xpath('//div[@class="datail-profile-text"]/p/text()')[0].strip() if html.xpath('//div[@class="datail-profile-text"]/p/text()') else html.xpath('//meta[@name="description"]/@content')[0] if html.xpath('//meta[@name="description"]/@content') else ""
 
             # 提取播放源和播放鏈接
             play_from_list = html.xpath('//div[@class="anthology-tab nav-swiper b-b br"]//a/text()')
@@ -207,7 +207,7 @@ class Spider:
         params = {
             "ac": "videolist",
             "wd": key,
-            "t": "2",  # 限定為電視劇
+            "t": "",  # 移除限制，搜索所有類型
             "page": "1",
             "limit": "20",
             "time": str(t),
@@ -217,6 +217,7 @@ class Spider:
             response = requests.post(self.api_url, data=params, headers=self.headers)
             print(f"Search API Raw Response: {response.text}")
             data = response.json()
+            print(f"Search API Parsed List: {[item['vod_name'] for item in data.get('list', [])]}")  # 添加診斷
             vod_list = [
                 {
                     "vod_id": str(item.get("vod_id", "")),
@@ -224,8 +225,18 @@ class Spider:
                     "vod_pic": item.get("vod_pic", ""),
                     "vod_remarks": item.get("vod_remarks", "")
                 }
-                for item in data.get("list", []) if data.get("code") == 1
+                for item in data.get("list", []) if data.get("code") == 1 and key in item.get("vod_name", "")
             ]
+            if not vod_list:  # 若無精確匹配，返回所有結果
+                vod_list = [
+                    {
+                        "vod_id": str(item.get("vod_id", "")),
+                        "vod_name": item.get("vod_name", "未知"),
+                        "vod_pic": item.get("vod_pic", ""),
+                        "vod_remarks": item.get("vod_remarks", "")
+                    }
+                    for item in data.get("list", []) if data.get("code") == 1
+                ]
         except Exception as e:
             print(f"Search Error: {e}")
             vod_list = []
