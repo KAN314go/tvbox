@@ -141,7 +141,30 @@ class Spider:
                 ]}
             ]
         }
-        return json.dumps({"class": categories, "filters": filters if filter else {}}, ensure_ascii=False)
+        return {"class": categories, "filters": filters if filter else {}, "parse": 0, "jx": 0}
+
+    def homeVideoContent(self):
+        try:
+            response = requests.get(self.home_url, headers=self.headers)
+            response.raise_for_status()
+            html = etree.HTML(response.text)
+            items = html.xpath('//div[contains(@class, "public-list-box")]')
+            vod_list = []
+            for item in items[:10]:  # 限制為前10個推薦項目
+                vod_id = item.xpath('./div/a/@href')[0].split('/')[-1] if item.xpath('./div/a/@href') else ""
+                vod_name = item.xpath('./div/a/@title')[0] if item.xpath('./div/a/@title') else "未知"
+                vod_pic = item.xpath('./div/a/img/@data-src')[0] if item.xpath('./div/a/img/@data-src') else ""
+                vod_remarks = item.xpath('.//div[contains(@class, "public-list-subtitle")]/text()')[0] if item.xpath('.//div[contains(@class, "public-list-subtitle")]/text()') else ""
+                vod_list.append({
+                    "vod_id": vod_id,
+                    "vod_name": vod_name,
+                    "vod_pic": vod_pic,
+                    "vod_remarks": vod_remarks
+                })
+            return {"list": vod_list, "parse": 0, "jx": 0}
+        except Exception as e:
+            print(f"Home Video Error: {e}")
+            return {"list": [], "parse": 0, "jx": 0}
 
     def categoryContent(self, tid, pg, filter, extend):
         t = int(time.time())
@@ -164,7 +187,7 @@ class Spider:
         try:
             response = requests.post(self.api_url, data=params, headers=self.headers)
             data = response.json()
-            print(f"API Response: {json.dumps(data, ensure_ascii=False)}")  # 打印完整響應
+            print(f"API Response: {json.dumps(data, ensure_ascii=False)}")
             vod_list = [
                 {
                     "vod_id": str(item.get("vod_id", "")),
@@ -175,16 +198,18 @@ class Spider:
                 for item in data.get("list", []) 
                 if data.get("code") == 1 and ("集" not in item.get("vod_remarks", "") or tid != "movie")
             ]
-            return json.dumps({
+            return {
                 "page": int(data.get("page", pg)),
                 "pagecount": data.get("pagecount", 999),
                 "limit": int(data.get("limit", 20)),
                 "total": data.get("total", 9999),
-                "list": vod_list
-            }, ensure_ascii=False)
+                "list": vod_list,
+                "parse": 0,
+                "jx": 0
+            }
         except Exception as e:
             print(f"Category Error: {e}")
-            return json.dumps({"page": int(pg), "pagecount": 999, "limit": 20, "total": 9999, "list": []}, ensure_ascii=False)
+            return {"page": int(pg), "pagecount": 999, "limit": 20, "total": 9999, "list": [], "parse": 0, "jx": 0}
 
     def detailContent(self, ids):
         try:
@@ -197,7 +222,6 @@ class Spider:
             vod_item = {"vod_id": vod_id}
 
             vod_item["vod_name"] = html.xpath('//h3[@class="slide-info-title hide"]/text()')[0] if html.xpath('//h3[@class="slide-info-title hide"]/text()') else ""
-            # 放寬年份提取條件，避免正則表達式依賴
             year_candidates = html.xpath('//span[@class="slide-info-remarks"]/a/text()')
             vod_item["vod_year"] = next((y for y in year_candidates if y.isdigit() and len(y) == 4), "")
             vod_content = "".join(html.xpath('//div[@id="height_limit"]/text()')).strip()
@@ -225,13 +249,14 @@ class Spider:
 
             vod_item["vod_play_from"] = "$$$".join(play_from_list)
             vod_item["vod_play_url"] = "$$$".join(play_url_list)
-            return json.dumps({"list": [vod_item]}, ensure_ascii=False)
+            return {"list": [vod_item], "parse": 0, "jx": 0}
         except Exception as e:
             print(f"Detail Error: {e}")
-            return json.dumps({"list": []}, ensure_ascii=False)
+            return {"list": [], "parse": 0, "jx": 0}
 
 if __name__ == "__main__":
     spider = Spider()
     print(spider.homeContent(filter=True))
+    print(spider.homeVideoContent())
     print(spider.categoryContent("tv", "1", True, {"class": "古装", "area": "内地", "year": "2024", "lang": "国语", "order": "score"}))
     print(spider.detailContent(["49751"]))
