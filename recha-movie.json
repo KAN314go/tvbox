@@ -5,6 +5,15 @@
   "sites": [
 
     {
+        "key": "csp_小紅影院",
+        "name": "🏆｜小紅｜(待測)",
+        "type": 3,
+        "api": "csp_XBPQ",
+        "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+        "searchable": 1,
+        "quickSearch": 1,
+        "filterable": 1,
+        "ext": {
       "主页url":"https://xiaohys.com/",
       "分类url":"https://xiaohys.com/show/{cateId}/{{catePg}/",
       "分类": "电影$movie#电视剧$tv#综艺$variety#动漫$anime",
@@ -20,6 +29,7 @@
       "线路数组":"swiper-slide&&</a>",
       "线路标题":"</i>&&<span",
       "搜索url":"https://xiaohys.com/search/-------------/?wd={wd}"
+      }
     },
     {
       "key": "py_feifanziyuan",
