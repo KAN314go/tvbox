@@ -145,12 +145,12 @@ class Spider:
             html = etree.HTML(response.text)
             items = html.xpath('//div[@class="slide-time-bj swiper-slide"]/a')
             vod_list = []
-            for item in items[:10]:  # 限制为前10个轮播推荐
+            for item in items[:10]:
                 vod_id = item.xpath('./@href')[0].split('/')[-2]
                 vod_name = item.xpath('.//h3[@class="slide-info-title hide"]/text()')[0]
                 vod_pic = item.xpath('.//div[contains(@class, "slide-time-img3")]/@style')[0].split("url('")[1].rstrip("');")
                 remarks = item.xpath('.//div[@class="slide-info hide"]/span[@class="slide-info-remarks"]/text()')
-                vod_remarks = " ".join(remarks) if remarks else ""
+                vod_remarks = " ".join(remarks).replace("\xa0", "").strip() if remarks else ""
                 vod_list.append({
                     "vod_id": vod_id,
                     "vod_name": vod_name,
@@ -176,15 +176,15 @@ class Spider:
             "lang": extend.get("lang", ""),
             "by": extend.get("order", "time"),
             "pg": str(pg),
-            "limit": "20",
             "time": str(t),
             "key": key
         }
         print(f"API Params: {params}")
         try:
             response = requests.get(self.api_url, params=params, headers=self.headers, timeout=10)
+            print(f"Raw API Response: {response.text}")
             data = response.json()
-            print(f"API Response: {json.dumps(data, ensure_ascii=False)}")
+            print(f"Parsed API Response: {json.dumps(data, ensure_ascii=False)}")
             vod_list = [
                 {
                     "vod_id": str(item.get("vod_id", "")),
@@ -217,19 +217,19 @@ class Spider:
             html = etree.HTML(response.text)
             vod_item = {"vod_id": vod_id}
 
-            vod_item["vod_name"] = html.xpath('//h1[@class="title"]/text()')[0] if html.xpath('//h1[@class="title"]/text()') else ""
+            # 以下XPath需根据实际详情页结构调整
+            vod_item["vod_name"] = html.xpath('//h1[@class="title"]/text()')[0] if html.xpath('//h1[@class="title"]/text()') else "未知"
             year = html.xpath('//div[contains(@class, "slide-info")]/span[@class="slide-info-remarks"]/text()')
             vod_item["vod_year"] = next((y for y in year if y.isdigit() and len(y) == 4), "")
-            vod_item["vod_content"] = html.xpath('//div[@class="slide-info hide2"]/text()')[0].strip() if html.xpath('//div[@class="slide-info hide2"]/text()') else ""
-            vod_item["vod_director"] = ""
-            vod_item["vod_actor"] = ""
-            vod_item["vod_area"] = ""
-            vod_item["vod_type"] = html.xpath('//div[@class="slide-info-type"]/span/text()')[0] if html.xpath('//div[@class="slide-info-type"]/span/text()') else ""
-            remarks = html.xpath('//div[@class="slide-info hide"]/span[@class="slide-info-remarks"]/text()')
-            vod_item["vod_remarks"] = " ".join(remarks) if remarks else ""
-            vod_item["vod_pic"] = html.xpath('//div[contains(@class, "slide-time-img3")]/@style')[0].split("url('")[1].rstrip("');") if html.xpath('//div[contains(@class, "slide-time-img3")]/@style') else ""
+            vod_item["vod_content"] = html.xpath('//div[@id="height_limit"]/text()')[0].strip() if html.xpath('//div[@id="height_limit"]/text()') else ""
+            vod_item["vod_director"] = " / ".join(html.xpath('//strong[contains(text(), "导演")]/following-sibling::a/text()')) if html.xpath('//strong[contains(text(), "导演")]/following-sibling::a/text()') else ""
+            vod_item["vod_actor"] = " / ".join(html.xpath('//strong[contains(text(), "演员")]/following-sibling::a/text()')) if html.xpath('//strong[contains(text(), "演员")]/following-sibling::a/text()') else ""
+            vod_item["vod_area"] = html.xpath('//span[@class="slide-info-remarks"]/a[contains(@href, "area")]/text()')[0] if html.xpath('//span[@class="slide-info-remarks"]/a[contains(@href, "area")]') else ""
+            vod_item["vod_type"] = " ".join(html.xpath('//span[@class="slide-info-remarks"]/a[contains(@href, "show/")]/text()')) if html.xpath('//span[@class="slide-info-remarks"]/a[contains(@href, "show/")]') else ""
+            vod_item["vod_remarks"] = html.xpath('//strong[contains(text(), "备注")]/following-sibling::text()')[0].strip() if html.xpath('//strong[contains(text(), "备注")]/following-sibling::text()') else ""
+            vod_item["vod_pic"] = html.xpath('//div[@class="detail-pic"]/img/@data-src')[0] if html.xpath('//div[@class="detail-pic"]/img/@data-src') else ""
 
-            play_from_list = html.xpath('//div[@class="play_source_tab"]/a/text()')
+            play_from_list = html.xpath('//div[@class="play_source_tab"]/a/text()') or ["默认线路"]
             play_url_list = []
             for i in range(len(play_from_list)):
                 episodes = html.xpath(f'(//ul[@class="content_playlist"])[{i+1}]/li/a/text()')
@@ -240,8 +240,9 @@ class Spider:
                 else:
                     play_url_list.append("")
 
-            vod_item["vod_play_from"] = "$$$".join(play_from_list) if play_from_list else "默认线路"
-            vod_item["vod_play_url"] = "$$$".join(play_url_list) if play_url_list else ""
+            vod_item["vod_play_from"] = "$$$".join(play_from_list)
+            vod_item["vod_play_url"] = "$$$".join(play_url_list)
+            print(f"Detail Content: {json.dumps(vod_item, ensure_ascii=False)}")
             return {"list": [vod_item], "parse": 0, "jx": 0}
         except Exception as e:
             print(f"Detail Error: {e}")
@@ -257,9 +258,12 @@ class Spider:
             "time": str(t),
             "key": key_hash
         }
+        print(f"Search Params: {params}")
         try:
             response = requests.get(self.api_url, params=params, headers=self.headers, timeout=10)
+            print(f"Raw Search Response: {response.text}")
             data = response.json()
+            print(f"Parsed Search Response: {json.dumps(data, ensure_ascii=False)}")
             vod_list = [
                 {
                     "vod_id": str(item.get("vod_id", "")),
