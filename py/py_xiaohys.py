@@ -154,7 +154,8 @@ class Spider:
             items = html.xpath('//div[contains(@class, "public-list-box")]')
             vod_list = []
             for item in items[:10]:  # 限制為前10個推薦項目
-                vod_id = item.xpath('./div/a/@href')[0].split('/')[-1] if item.xpath('./div/a/@href') else ""
+                href = item.xpath('./div/a/@href')
+                vod_id = href[0].split('/')[-1].replace('/', '') if href else ""  # 提取 /detail/12345 中的 12345
                 vod_name = item.xpath('./div/a/@title')[0] if item.xpath('./div/a/@title') else "未知"
                 vod_pic = item.xpath('./div/a/img/@data-src')[0] if item.xpath('./div/a/img/@data-src') else ""
                 vod_remarks = item.xpath('.//div[contains(@class, "public-list-subtitle")]/text()')[0] if item.xpath('.//div[contains(@class, "public-list-subtitle")]/text()') else ""
@@ -290,9 +291,8 @@ class Spider:
             url = f"https://www.xiaohys.com{pid}"
             response = requests.get(url, headers=self.headers)
             response.raise_for_status()
-            # 這裡假設播放頁面有直接的播放鏈接，根據實際情況調整
             html = etree.HTML(response.text)
-            play_url = html.xpath('//video/@src')[0] if html.xpath('//video/@src') else url  # 簡單示例，需根據實際網站調整
+            play_url = html.xpath('//video/@src')[0] if html.xpath('//video/@src') else url
             return {
                 "url": play_url,
                 "header": json.dumps(self.headers),
