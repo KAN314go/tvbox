@@ -160,10 +160,11 @@ class Spider:
             "time": str(t),
             "key": key
         }
-        print(f"API Params: {params}")  # 添加日誌檢查參數
+        print(f"API Params: {params}")
         try:
             response = requests.post(self.api_url, data=params, headers=self.headers)
             data = response.json()
+            print(f"API Response: {json.dumps(data, ensure_ascii=False)}")  # 打印完整響應
             vod_list = [
                 {
                     "vod_id": str(item.get("vod_id", "")),
@@ -196,16 +197,18 @@ class Spider:
             vod_item = {"vod_id": vod_id}
 
             vod_item["vod_name"] = html.xpath('//h3[@class="slide-info-title hide"]/text()')[0] if html.xpath('//h3[@class="slide-info-title hide"]/text()') else ""
-            vod_item["vod_year"] = html.xpath('//span[@class="slide-info-remarks"]/a[re:match(text(), "\d{4}")]/text()', namespaces={"re": "http://exslt.org/regular-expressions"})[0] if html.xpath('//span[@class="slide-info-remarks"]/a[re:match(text(), "\d{4}")]') else ""
+            # 放寬年份提取條件，避免正則表達式依賴
+            year_candidates = html.xpath('//span[@class="slide-info-remarks"]/a/text()')
+            vod_item["vod_year"] = next((y for y in year_candidates if y.isdigit() and len(y) == 4), "")
             vod_content = "".join(html.xpath('//div[@id="height_limit"]/text()')).strip()
             vod_item["vod_content"] = vod_content.replace("\xa0", " ").replace("\u3000", " ").strip()
             directors = html.xpath('//div[contains(@class, "slide-info hide")]/strong[contains(text(), "导演")]/following-sibling::a/text()')
-            vod_item["vod_director"] = " / ".join(directors)
+            vod_item["vod_director"] = " / ".join(directors) if directors else ""
             actors = html.xpath('//div[contains(@class, "slide-info hide")]/strong[contains(text(), "演员")]/following-sibling::a/text()')
-            vod_item["vod_actor"] = " / ".join(actors)
+            vod_item["vod_actor"] = " / ".join(actors) if actors else ""
             vod_item["vod_area"] = html.xpath('//span[@class="slide-info-remarks"]/a[contains(@href, "area")]/text()')[0] if html.xpath('//span[@class="slide-info-remarks"]/a[contains(@href, "area")]') else ""
             types = html.xpath('//span[@class="slide-info-remarks"]/a[contains(@href, "show/")]/text()')
-            vod_item["vod_type"] = " ".join(types)
+            vod_item["vod_type"] = " ".join(types) if types else ""
             vod_item["vod_remarks"] = html.xpath('//div[contains(@class, "slide-info hide")]/strong[contains(text(), "备注")]/following-sibling::text()')[0].strip() if html.xpath('//div[contains(@class, "slide-info hide")]/strong[contains(text(), "备注")]/following-sibling::text()') else ""
             vod_item["vod_pic"] = html.xpath('//div[@class="detail-pic"]/img/@data-src')[0] if html.xpath('//div[@class="detail-pic"]/img/@data-src') else ""
 
