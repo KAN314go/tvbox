@@ -5,7 +5,10 @@ import hashlib
 import time
 
 class Spider:
-    def __init__(self):
+    def getName(self):
+        return "XiaoHYS"
+
+    def init(self, extend=""):
         self.home_url = "https://www.xiaohys.com"
         self.api_url = "https://xiaohys.com/index.php/api/vod"
         self.headers = {
@@ -145,7 +148,7 @@ class Spider:
 
     def homeVideoContent(self):
         try:
-            response = requests.get(self.home_url, headers=self.headers)
+            response = requests.get(self.home_url, headers=self.headers, timeout=10)
             response.raise_for_status()
             html = etree.HTML(response.text)
             items = html.xpath('//div[contains(@class, "public-list-box")]')
@@ -161,6 +164,7 @@ class Spider:
                     "vod_pic": vod_pic,
                     "vod_remarks": vod_remarks
                 })
+            print(f"Home Video Content: {json.dumps(vod_list, ensure_ascii=False)}")  # 調試輸出
             return {"list": vod_list, "parse": 0, "jx": 0}
         except Exception as e:
             print(f"Home Video Error: {e}")
@@ -254,9 +258,68 @@ class Spider:
             print(f"Detail Error: {e}")
             return {"list": [], "parse": 0, "jx": 0}
 
+    def searchContent(self, key, quick, page='1'):
+        t = int(time.time())
+        key_hash = self.generate_key(t)
+        params = {
+            "ac": "videolist",
+            "wd": key,
+            "page": page,
+            "time": str(t),
+            "key": key_hash
+        }
+        try:
+            response = requests.post(self.api_url, data=params, headers=self.headers)
+            data = response.json()
+            vod_list = [
+                {
+                    "vod_id": str(item.get("vod_id", "")),
+                    "vod_name": item.get("vod_name", "未知"),
+                    "vod_pic": item.get("vod_pic", ""),
+                    "vod_remarks": item.get("vod_remarks", "")
+                }
+                for item in data.get("list", []) if data.get("code") == 1
+            ]
+            return {"list": vod_list, "parse": 0, "jx": 0}
+        except Exception as e:
+            print(f"Search Error: {e}")
+            return {"list": [], "parse": 0, "jx": 0}
+
+    def playerContent(self, flag, pid, vipFlags):
+        try:
+            url = f"https://www.xiaohys.com{pid}"
+            response = requests.get(url, headers=self.headers)
+            response.raise_for_status()
+            # 這裡假設播放頁面有直接的播放鏈接，根據實際情況調整
+            html = etree.HTML(response.text)
+            play_url = html.xpath('//video/@src')[0] if html.xpath('//video/@src') else url  # 簡單示例，需根據實際網站調整
+            return {
+                "url": play_url,
+                "header": json.dumps(self.headers),
+                "parse": 0,
+                "jx": 0
+            }
+        except Exception as e:
+            print(f"Player Error: {e}")
+            return {"url": "", "header": "", "parse": 0, "jx": 0}
+
+    def isVideoFormat(self, url):
+        return False
+
+    def manualVideoCheck(self):
+        return False
+
+    def localProxy(self, params):
+        return None
+
+    def destroy(self):
+        pass
+
 if __name__ == "__main__":
     spider = Spider()
+    spider.init()
     print(spider.homeContent(filter=True))
     print(spider.homeVideoContent())
     print(spider.categoryContent("tv", "1", True, {"class": "古装", "area": "内地", "year": "2024", "lang": "国语", "order": "score"}))
     print(spider.detailContent(["49751"]))
+    print(spider.searchContent("假面骑士", True))
