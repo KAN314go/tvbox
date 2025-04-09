@@ -61,10 +61,32 @@ class Spider:
                 ]}
             ],
             "tv": [
-                {"key": "class", "name": "類型", "value": [{"n": "全部", "v": ""}, {"n": "古装", "v": "古装"}, {"n": "剧情", "v": "剧情"}, {"n": "犯罪", "v": "犯罪"}]},
-                {"key": "area", "name": "地區", "value": [{"n": "全部", "v": ""}, {"n": "内地", "v": "内地"}, {"n": "韩国", "v": "韩国"}, {"n": "美国", "v": "美国"}]},
-                {"key": "year", "name": "年份", "value": [{"n": "全部", "v": ""}, {"n": "2025", "v": "2025"}] + [{"n": str(y), "v": str(y)} for y in range(2024, 2019, -1)]},
-                {"key": "order", "name": "排序", "value": [{"n": "按最新", "v": "time"}, {"n": "按最熱", "v": "hits"}, {"n": "按評分", "v": "score"}]}
+                {"key": "class", "name": "類型", "value": [
+                    {"n": "全部", "v": ""}, {"n": "古装", "v": "古装"}, {"n": "战争", "v": "战争"}, {"n": "青春偶像", "v": "青春偶像"},
+                    {"n": "喜剧", "v": "喜剧"}, {"n": "家庭", "v": "家庭"}, {"n": "犯罪", "v": "犯罪"}, {"n": "动作", "v": "动作"},
+                    {"n": "奇幻", "v": "奇幻"}, {"n": "剧情", "v": "剧情"}, {"n": "历史", "v": "历史"}, {"n": "经典", "v": "经典"},
+                    {"n": "乡村", "v": "乡村"}, {"n": "情景", "v": "情景"}, {"n": "商战", "v": "商战"}, {"n": "网剧", "v": "网剧"},
+                    {"n": "其他", "v": "其他"}
+                ]},
+                {"key": "area", "name": "地區", "value": [
+                    {"n": "全部", "v": ""}, {"n": "内地", "v": "内地"}, {"n": "韩国", "v": "韩国"}, {"n": "香港", "v": "香港"},
+                    {"n": "台湾", "v": "台湾"}, {"n": "日本", "v": "日本"}, {"n": "美国", "v": "美国"}, {"n": "泰国", "v": "泰国"},
+                    {"n": "英国", "v": "英国"}, {"n": "新加坡", "v": "新加坡"}, {"n": "其他", "v": "其他"}
+                ]},
+                {"key": "year", "name": "年份", "value": [
+                    {"n": "全部", "v": ""}, {"n": "2025", "v": "2025"}, {"n": "2024", "v": "2024"}, {"n": "2023", "v": "2023"},
+                    {"n": "2022", "v": "2022"}, {"n": "2021", "v": "2021"}, {"n": "2020", "v": "2020"}, {"n": "2019", "v": "2019"},
+                    {"n": "2018", "v": "2018"}, {"n": "2017", "v": "2017"}, {"n": "2016", "v": "2016"}, {"n": "2015", "v": "2015"},
+                    {"n": "2014", "v": "2014"}, {"n": "2013", "v": "2013"}, {"n": "2012", "v": "2012"}, {"n": "2011", "v": "2011"},
+                    {"n": "2010", "v": "2010"}
+                ]},
+                {"key": "lang", "name": "語言", "value": [
+                    {"n": "全部", "v": ""}, {"n": "国语", "v": "国语"}, {"n": "英语", "v": "英语"}, {"n": "粤语", "v": "粤语"},
+                    {"n": "闽南语", "v": "闽南语"}, {"n": "韩语", "v": "韩语"}, {"n": "日语", "v": "日语"}, {"n": "其它", "v": "其它"}
+                ]},
+                {"key": "order", "name": "排序", "value": [
+                    {"n": "按最新", "v": "time"}, {"n": "按最熱", "v": "hits"}, {"n": "按評分", "v": "score"}
+                ]}
             ],
             "variety": [
                 {"key": "class", "name": "類型", "value": [
@@ -174,7 +196,6 @@ class Spider:
             vod_item = {"vod_id": vod_id}
 
             vod_item["vod_name"] = html.xpath('//h3[@class="slide-info-title hide"]/text()')[0] if html.xpath('//h3[@class="slide-info-title hide"]/text()') else ""
-            # 放寬年份提取條件
             vod_item["vod_year"] = html.xpath('//span[@class="slide-info-remarks"]/a[re:match(text(), "\d{4}")]/text()', namespaces={"re": "http://exslt.org/regular-expressions"})[0] if html.xpath('//span[@class="slide-info-remarks"]/a[re:match(text(), "\d{4}")]') else ""
             vod_content = "".join(html.xpath('//div[@id="height_limit"]/text()')).strip()
             vod_item["vod_content"] = vod_content.replace("\xa0", " ").replace("\u3000", " ").strip()
@@ -182,7 +203,6 @@ class Spider:
             vod_item["vod_director"] = " / ".join(directors)
             actors = html.xpath('//div[contains(@class, "slide-info hide")]/strong[contains(text(), "演员")]/following-sibling::a/text()')
             vod_item["vod_actor"] = " / ".join(actors)
-            # 調整地區提取
             vod_item["vod_area"] = html.xpath('//span[@class="slide-info-remarks"]/a[contains(@href, "area")]/text()')[0] if html.xpath('//span[@class="slide-info-remarks"]/a[contains(@href, "area")]') else ""
             types = html.xpath('//span[@class="slide-info-remarks"]/a[contains(@href, "show/")]/text()')
             vod_item["vod_type"] = " ".join(types)
@@ -206,3 +226,9 @@ class Spider:
         except Exception as e:
             print(f"Detail Error: {e}")
             return json.dumps({"list": []}, ensure_ascii=False)
+
+if __name__ == "__main__":
+    spider = Spider()
+    print(spider.homeContent(filter=True))
+    print(spider.categoryContent("tv", "1", True, {"class": "古装", "area": "内地", "year": "2024", "lang": "国语", "order": "score"}))
+    print(spider.detailContent(["49751"]))
