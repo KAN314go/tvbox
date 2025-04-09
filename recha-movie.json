@@ -5,33 +5,6 @@
   "sites": [
 
     {
-        "key": "csp_小紅影院",
-        "name": "🏆｜小紅｜(待測)",
-        "type": 3,
-        "api": "csp_XBPQ",
-        "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-        "searchable": 1,
-        "quickSearch": 1,
-        "filterable": 1,
-        "ext": {
-      "主页url":"https://xiaohys.com/",
-      "分类url":"https://xiaohys.com/show/{cateId}/{{catePg}/",
-      "分类": "电影$movie#电视剧$tv#综艺$variety#动漫$anime",
-      "数组":"public-list-div public-list-bj&&</div>",
-      "标题":"class=\"public-list-button\">*>&&</a>",
-      "副标题":"public-list-prb hide ft2\">&&</span>",
-      "图片":"data-src=\"&&\"",
-      "链接":"href=\"&&\"",
-      //"跳转播放链接":"src=\"&&\"",
-      "播放数组":"anthology-list-play size&&</ul>",
-      "播放列表":"<a&&</a>",
-      "播放标题":">&&</a>",
-      "线路数组":"swiper-slide&&</a>",
-      "线路标题":"</i>&&<span",
-      "搜索url":"https://xiaohys.com/search/-------------/?wd={wd}"
-      }
-    },
-    {
       "key": "py_feifanziyuan",
       "name": "🎥｜無廣告非凡資源｜(待測)",
       "type": 3,
@@ -40,7 +13,6 @@
       "quickSearch": 1,
       "filterable": 1
     },  
-
     {
       "key": "豆瓣",
       "name": "🇹🇼｜熱播排行榜｜自動切換",
