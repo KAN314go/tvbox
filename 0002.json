@@ -4,6 +4,19 @@
   "wallpaper": "https://tv.nxog.top/m//t/",
   "sites": [
 
+
+
+
+
+    {
+        "key": "py_feifanziyuan",
+        "name": "🎥｜無廣告非凡資源｜(待測)",
+        "type": 3,
+        "api": "./py/py_feifanziyuan.py",
+        "searchable": 1,
+        "quickSearch": 1,
+        "filterable": 1
+    },  
     {
       "key": "csp_xiaohys",
       "name": "🎥｜小紅影視｜高清◎秒播(待測)",
