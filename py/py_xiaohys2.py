@@ -52,10 +52,6 @@ class Spider(Spider):
         ]
         filters = {
             "movie": [
-                {"key": "class", "name": "類型", "value": [
-                    {"n": "全部", "v": ""}, {"n": "喜剧", "v": "喜剧"}, {"n": "爱情", "v": "爱情"}, {"n": "恐怖", "v": "恐怖"},
-                    {"n": "动作", "v": "动作"}, {"n": "科幻", "v": "科幻"}, {"n": "剧情", "v": "剧情"}, {"n": "战争", "v": "战争"}
-                ]},
                 {"key": "area", "name": "地區", "value": [
                     {"n": "全部", "v": ""}, {"n": "大陆", "v": "大陆"}, {"n": "香港", "v": "香港"}, {"n": "台湾", "v": "台湾"},
                     {"n": "美国", "v": "美国"}, {"n": "日本", "v": "日本"}, {"n": "韩国", "v": "韩国"}
@@ -68,9 +64,6 @@ class Spider(Spider):
                 ]}
             ],
             "tv": [
-                {"key": "class", "name": "類型", "value": [
-                    {"n": "全部", "v": ""}, {"n": "古装", "v": "古装"}, {"n": "战争", "v": "战争"}, {"n": "青春偶像", "v": "青春偶像"}
-                ]},
                 {"key": "area", "name": "地區", "value": [
                     {"n": "全部", "v": ""}, {"n": "内地", "v": "内地"}, {"n": "韩国", "v": "韩国"}, {"n": "香港", "v": "香港"}
                 ]},
@@ -102,11 +95,10 @@ class Spider(Spider):
         body = {
             'ac': 'videolist',
             't': type_map.get(tid, tid),
-            'class': extend.get('class', ''),
             'area': extend.get('area', ''),
             'year': extend.get('year', ''),
             'by': extend.get('by', 'time'),
-            'pg': str(pg),
+            'pg': str(pg),  # 分頁參數
             'time': str(t),
             'key': key
         }
@@ -121,15 +113,14 @@ class Spider(Spider):
             filtered_list = []
             type_classes = {
                 "movie": ["电影"],
-                "tv": ["国产", "剧"],  # 電視劇應包含 "国产" 或 "剧"
+                "tv": ["国产", "剧"],
                 "variety": ["综艺"],
                 "anime": ["动漫", "动画"]
             }
-            exclude_classes = ["动漫", "动画", "综艺"]  # 明確排除的類型
+            exclude_classes = ["动漫", "动画", "综艺"]
             expected_classes = type_classes.get(tid, [])
             for item in data.get('list', []):
                 vod_class = item.get('vod_class', '')
-                # 必須包含預期類型且不包含排除類型
                 if (any(cls in vod_class for cls in expected_classes) and 
                     not any(ex_cls in vod_class for ex_cls in exclude_classes)):
                     filtered_list.append({
@@ -141,7 +132,7 @@ class Spider(Spider):
             
             result = {
                 'list': filtered_list,
-                'page': int(data.get('page', pg)),
+                'page': int(data.get('page', pg)),  # 確保從 API 返回的頁數生效
                 'pagecount': data.get('pagecount', 9999),
                 'limit': int(data.get('limit', 20)),
                 'total': data.get('total', len(filtered_list)) if filtered_list else 0
@@ -240,10 +231,12 @@ if __name__ == "__main__":
     spider = Spider()
     print(json.dumps(spider.homeContent(filter=True), ensure_ascii=False))
     print(json.dumps(spider.homeVideoContent(), ensure_ascii=False))
-    print("測試電視劇篩選:")
-    print(json.dumps(spider.categoryContent("tv", "1", True, {"class": "古装", "area": "内地", "year": "2024", "by": "score"}), ensure_ascii=False))
-    print("測試僅類型篩選:")
-    print(json.dumps(spider.categoryContent("tv", "1", True, {"class": "古装"}), ensure_ascii=False))
-    print("測試無篩選條件:")
+    print("測試電視劇篩選（第一頁）:")
+    print(json.dumps(spider.categoryContent("tv", "1", True, {"area": "内地", "year": "2024", "by": "score"}), ensure_ascii=False))
+    print("測試電視劇篩選（第二頁）:")
+    print(json.dumps(spider.categoryContent("tv", "2", True, {"area": "内地", "year": "2024", "by": "score"}), ensure_ascii=False))
+    print("測試無篩選條件（第一頁）:")
     print(json.dumps(spider.categoryContent("tv", "1", True, {}), ensure_ascii=False))
+    print("測試無篩選條件（第二頁）:")
+    print(json.dumps(spider.categoryContent("tv", "2", True, {}), ensure_ascii=False))
     print(json.dumps(spider.detailContent(["49751"]), ensure_ascii=False))
