@@ -22,7 +22,6 @@ class Spider(Spider):
             'Referer': f"{self.host}/",
         }
 
-    # 實現抽象方法
     def init(self, extend=""):
         pass
 
@@ -30,13 +29,13 @@ class Spider(Spider):
         pass
 
     def isVideoFormat(self, url):
-        return False  # 可根據需要返回 True/False，表示是否為視頻格式
+        return False
 
     def manualVideoCheck(self):
-        return False  # 可根據需要實現手動視頻檢查邏輯
+        return False
 
     def localProxy(self, param):
-        return None  # 返回 None 表示不使用本地代理
+        return None
 
     def getName(self):
         return "XiaoHYS"
@@ -108,29 +107,50 @@ class Spider(Spider):
         type_map = {"movie": "1", "tv": "2", "variety": "3", "anime": "4"}
         body = {
             'ac': 'videolist',
-            't': type_map.get(tid, tid),
+            't': type_map.get(tid, tid),  # 類型ID
             'class': extend.get('class', ''),
             'area': extend.get('area', ''),
             'year': extend.get('year', ''),
             'lang': extend.get('lang', ''),
             'by': extend.get('by', 'time'),
-            'page': pg,
-            'time': t,
+            'pg': str(pg),
+            'time': str(t),
             'key': key
         }
+        print(f"Category request params: {json.dumps(body, ensure_ascii=False)}")
         try:
-            data = self.post(self.api_url, headers=self.headers, data=body).json()
+            response = self.post(self.api_url, headers=self.headers, data=body)
+            print(f"Raw API response: {response.text}")  # 輸出原始響應
+            data = response.json()
             print(f"Category API response: {json.dumps(data, ensure_ascii=False)}")
-            result = {
-                'list': data.get('list', []),
-                'page': int(pg),
-                'pagecount': data.get('pagecount', 9999),
-                'limit': 20,
-                'total': data.get('total', 99999)
+            
+            # 本地過濾：確保結果符合 tid
+            filtered_list = []
+            type_keywords = {
+                "movie": ["电影"],
+                "tv": ["剧", "集"],
+                "variety": ["综艺"],
+                "anime": ["动漫", "动画"]
             }
+            expected_keywords = type_keywords.get(tid, [])
+            for item in data.get('list', []):
+                name = item.get('vod_name', '')
+                remarks = item.get('vod_remarks', '')
+                # 如果名稱或備註包含預期關鍵詞，則認為符合類型
+                if any(kw in name or kw in remarks for kw in expected_keywords) or not expected_keywords:
+                    filtered_list.append(item)
+            
+            result = {
+                'list': filtered_list,
+                'page': int(data.get('page', pg)),
+                'pagecount': data.get('pagecount', 9999),
+                'limit': int(data.get('limit', 20)),
+                'total': data.get('total', len(filtered_list)) if filtered_list else 0
+            }
+            print(f"Filtered list size: {len(filtered_list)}")
         except Exception as e:
             print(f"Category error: {e}")
-            result = {'list': [], 'page': int(pg), 'pagecount': 9999, 'limit': 20, 'total': 99999}
+            result = {'list': [], 'page': int(pg), 'pagecount': 9999, 'limit': 20, 'total': 0}
         return result
 
     def detailContent(self, ids):
@@ -221,5 +241,11 @@ if __name__ == "__main__":
     spider = Spider()
     print(json.dumps(spider.homeContent(filter=True), ensure_ascii=False))
     print(json.dumps(spider.homeVideoContent(), ensure_ascii=False))
+    # 測試篩選功能
+    print("測試電視劇篩選:")
     print(json.dumps(spider.categoryContent("tv", "1", True, {"class": "古装", "area": "内地", "year": "2024", "lang": "国语", "by": "score"}), ensure_ascii=False))
+    print("測試僅類型篩選:")
+    print(json.dumps(spider.categoryContent("tv", "1", True, {"class": "古装"}), ensure_ascii=False))
+    print("測試無篩選條件:")
+    print(json.dumps(spider.categoryContent("tv", "1", True, {}), ensure_ascii=False))
     print(json.dumps(spider.detailContent(["49751"]), ensure_ascii=False))
