@@ -1,319 +1,174 @@
-import requests
-from lxml import etree
+# -*- coding: utf-8 -*-
+# by @嗷呜
+import re
+import sys
+from base64 import b64decode
+from Crypto.Cipher import AES
+from Crypto.Hash import MD5
+from Crypto.Util.Padding import unpad
+sys.path.append("..")
 import json
-import hashlib
 import time
+from pyquery import PyQuery as pq
+from base.spider import Spider
 
-class Spider:
-    def getName(self):
-        return "XiaoHYS"
+class Spider(Spider):
 
     def init(self, extend=""):
-        self.home_url = "https://www.xiaohys.com"
-        self.api_url = "https://xiaohys.com/index.php/api/vod"
-        self.headers = {
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36",
-            "Origin": "https://xiaohys.com",
-            "Referer": "https://xiaohys.com"
-        }
-        # 初始化会话以保持Cookie
-        self.session = requests.Session()
-        self.session.get(self.home_url, headers=self.headers)  # 预加载首页获取Cookie
+        pass
 
-    def generate_key(self, t):
-        return hashlib.md5(f"DS{t}DCC147D11943AF75".encode()).hexdigest()
-
-    def homeContent(self, filter):
-        categories = [
-            {"type_id": "movie", "type_name": "电影"},
-            {"type_id": "tv", "type_name": "电视剧"},
-            {"type_id": "variety", "type_name": "综艺"},
-            {"type_id": "anime", "type_name": "动漫"}
-        ]
-        filters = {
-            "movie": [
-                {"key": "class", "name": "类型", "value": [
-                    {"n": "全部", "v": ""}, {"n": "喜剧", "v": "喜剧"}, {"n": "爱情", "v": "爱情"}, {"n": "恐怖", "v": "恐怖"},
-                    {"n": "动作", "v": "动作"}, {"n": "科幻", "v": "科幻"}, {"n": "剧情", "v": "剧情"}, {"n": "战争", "v": "战争"},
-                    {"n": "警匪", "v": "警匪"}, {"n": "犯罪", "v": "犯罪"}, {"n": "动画", "v": "动画"}, {"n": "奇幻", "v": "奇幻"},
-                    {"n": "武侠", "v": "武侠"}, {"n": "冒险", "v": "冒险"}, {"n": "枪战", "v": "枪战"}, {"n": "悬疑", "v": "悬疑"},
-                    {"n": "惊悚", "v": "惊悚"}, {"n": "经典", "v": "经典"}, {"n": "青春", "v": "青春"}, {"n": "文艺", "v": "文艺"},
-                    {"n": "微电影", "v": "微电影"}, {"n": "古装", "v": "古装"}, {"n": "历史", "v": "历史"}, {"n": "运动", "v": "运动"},
-                    {"n": "农村", "v": "农村"}, {"n": "儿童", "v": "儿童"}, {"n": "网络电影", "v": "网络电影"}
-                ]},
-                {"key": "area", "name": "地区", "value": [
-                    {"n": "全部", "v": ""}, {"n": "大陆", "v": "大陆"}, {"n": "香港", "v": "香港"}, {"n": "台湾", "v": "台湾"},
-                    {"n": "美国", "v": "美国"}, {"n": "法国", "v": "法国"}, {"n": "英国", "v": "英国"}, {"n": "日本", "v": "日本"},
-                    {"n": "韩国", "v": "韩国"}, {"n": "德国", "v": "德国"}, {"n": "泰国", "v": "泰国"}, {"n": "印度", "v": "印度"},
-                    {"n": "意大利", "v": "意大利"}, {"n": "西班牙", "v": "西班牙"}, {"n": "加拿大", "v": "加拿大"}, {"n": "其他", "v": "其他"}
-                ]},
-                {"key": "year", "name": "年份", "value": [
-                    {"n": "全部", "v": ""}, {"n": "2025", "v": "2025"}, {"n": "2024", "v": "2024"}, {"n": "2023", "v": "2023"},
-                    {"n": "2022", "v": "2022"}, {"n": "2021", "v": "2021"}, {"n": "2020", "v": "2020"}, {"n": "2019", "v": "2019"},
-                    {"n": "2018", "v": "2018"}, {"n": "2017", "v": "2017"}, {"n": "2016", "v": "2016"}, {"n": "2015", "v": "2015"},
-                    {"n": "2014", "v": "2014"}, {"n": "2013", "v": "2013"}, {"n": "2012", "v": "2012"}, {"n": "2011", "v": "2011"},
-                    {"n": "2010", "v": "2010"}
-                ]},
-                {"key": "lang", "name": "语言", "value": [
-                    {"n": "全部", "v": ""}, {"n": "国语", "v": "国语"}, {"n": "英语", "v": "英语"}, {"n": "粤语", "v": "粤语"},
-                    {"n": "闽南语", "v": "闽南语"}, {"n": "韩语", "v": "韩语"}, {"n": "日语", "v": "日语"}, {"n": "其它", "v": "其它"}
-                ]},
-                {"key": "order", "name": "排序", "value": [
-                    {"n": "按最新", "v": "time"}, {"n": "按最热", "v": "hits"}, {"n": "按评分", "v": "score"}
-                ]}
-            ],
-            "tv": [
-                {"key": "class", "name": "类型", "value": [
-                    {"n": "全部", "v": ""}, {"n": "古装", "v": "古装"}, {"n": "战争", "v": "战争"}, {"n": "青春偶像", "v": "青春偶像"},
-                    {"n": "喜剧", "v": "喜剧"}, {"n": "家庭", "v": "家庭"}, {"n": "犯罪", "v": "犯罪"}, {"n": "动作", "v": "动作"},
-                    {"n": "奇幻", "v": "奇幻"}, {"n": "剧情", "v": "剧情"}, {"n": "历史", "v": "历史"}, {"n": "经典", "v": "经典"},
-                    {"n": "乡村", "v": "乡村"}, {"n": "情景", "v": "情景"}, {"n": "商战", "v": "商战"}, {"n": "网剧", "v": "网剧"}
-                ]},
-                {"key": "area", "name": "地区", "value": [
-                    {"n": "全部", "v": ""}, {"n": "内地", "v": "内地"}, {"n": "韩国", "v": "韩国"}, {"n": "香港", "v": "香港"},
-                    {"n": "台湾", "v": "台湾"}, {"n": "日本", "v": "日本"}, {"n": "美国", "v": "美国"}, {"n": "泰国", "v": "泰国"},
-                    {"n": "英国", "v": "英国"}, {"n": "新加坡", "v": "新加坡"}, {"n": "其他", "v": "其他"}
-                ]},
-                {"key": "year", "name": "年份", "value": [
-                    {"n": "全部", "v": ""}, {"n": "2025", "v": "2025"}, {"n": "2024", "v": "2024"}, {"n": "2023", "v": "2023"},
-                    {"n": "2022", "v": "2022"}, {"n": "2021", "v": "2021"}, {"n": "2020", "v": "2020"}, {"n": "2019", "v": "2019"},
-                    {"n": "2018", "v": "2018"}, {"n": "2017", "v": "2017"}, {"n": "2016", "v": "2016"}, {"n": "2015", "v": "2015"},
-                    {"n": "2014", "v": "2014"}, {"n": "2013", "v": "2013"}, {"n": "2012", "v": "2012"}, {"n": "2011", "v": "2011"},
-                    {"n": "2010", "v": "2010"}
-                ]},
-                {"key": "lang", "name": "语言", "value": [
-                    {"n": "全部", "v": ""}, {"n": "国语", "v": "国语"}, {"n": "英语", "v": "英语"}, {"n": "粤语", "v": "粤语"},
-                    {"n": "闽南语", "v": "闽南语"}, {"n": "韩语", "v": "韩语"}, {"n": "日语", "v": "日语"}, {"n": "其它", "v": "其它"}
-                ]},
-                {"key": "order", "name": "排序", "value": [
-                    {"n": "按最新", "v": "time"}, {"n": "按最热", "v": "hits"}, {"n": "按评分", "v": "score"}
-                ]}
-            ],
-            "variety": [
-                {"key": "class", "name": "类型", "value": [
-                    {"n": "全部", "v": ""}, {"n": "选秀", "v": "选秀"}, {"n": "情感", "v": "情感"}, {"n": "访谈", "v": "访谈"},
-                    {"n": "播报", "v": "播报"}, {"n": "旅游", "v": "旅游"}, {"n": "音乐", "v": "音乐"}, {"n": "美食", "v": "美食"},
-                    {"n": "纪实", "v": "纪实"}, {"n": "曲艺", "v": "曲艺"}, {"n": "生活", "v": "生活"}, {"n": "游戏互动", "v": "游戏互动"}
-                ]},
-                {"key": "area", "name": "地区", "value": [
-                    {"n": "全部", "v": ""}, {"n": "内地", "v": "内地"}, {"n": "港台", "v": "港台"}, {"n": "日韩", "v": "日韩"}, {"n": "欧美", "v": "欧美"}
-                ]},
-                {"key": "year", "name": "年份", "value": [
-                    {"n": "全部", "v": ""}, {"n": "2025", "v": "2025"}, {"n": "2024", "v": "2024"}, {"n": "2023", "v": "2023"},
-                    {"n": "2022", "v": "2022"}, {"n": "2021", "v": "2021"}, {"n": "2020", "v": "2020"}, {"n": "2019", "v": "2019"},
-                    {"n": "2018", "v": "2018"}, {"n": "2017", "v": "2017"}, {"n": "2016", "v": "2016"}, {"n": "2015", "v": "2015"},
-                    {"n": "2014", "v": "2014"}, {"n": "2013", "v": "2013"}, {"n": "2012", "v": "2012"}, {"n": "2011", "v": "2011"},
-                    {"n": "2010", "v": "2010"}
-                ]},
-                {"key": "lang", "name": "语言", "value": [
-                    {"n": "全部", "v": ""}, {"n": "国语", "v": "国语"}, {"n": "英语", "v": "英语"}, {"n": "粤语", "v": "粤语"},
-                    {"n": "闽南语", "v": "闽南语"}, {"n": "韩语", "v": "韩语"}, {"n": "日语", "v": "日语"}, {"n": "其它", "v": "其它"}
-                ]},
-                {"key": "order", "name": "排序", "value": [
-                    {"n": "按最新", "v": "time"}, {"n": "按最热", "v": "hits"}, {"n": "按评分", "v": "score"}
-                ]}
-            ],
-            "anime": [
-                {"key": "class", "name": "类型", "value": [
-                    {"n": "全部", "v": ""}, {"n": "情感", "v": "情感"}, {"n": "科幻", "v": "科幻"}, {"n": "热血", "v": "热血"},
-                    {"n": "推理", "v": "推理"}, {"n": "搞笑", "v": "搞笑"}, {"n": "冒险", "v": "冒险"}, {"n": "校园", "v": "校园"},
-                    {"n": "动作", "v": "动作"}, {"n": "机战", "v": "机战"}, {"n": "运动", "v": "运动"}, {"n": "战争", "v": "战争"},
-                    {"n": "少年", "v": "少年"}, {"n": "少女", "v": "少女"}, {"n": "原创", "v": "原创"}, {"n": "励志", "v": "励志"}
-                ]},
-                {"key": "area", "name": "地区", "value": [
-                    {"n": "全部", "v": ""}, {"n": "国产", "v": "国产"}, {"n": "日本", "v": "日本"}, {"n": "欧美", "v": "欧美"}, {"n": "其他", "v": "其他"}
-                ]},
-                {"key": "year", "name": "年份", "value": [
-                    {"n": "全部", "v": ""}, {"n": "2025", "v": "2025"}, {"n": "2024", "v": "2024"}, {"n": "2023", "v": "2023"},
-                    {"n": "2022", "v": "2022"}, {"n": "2021", "v": "2021"}, {"n": "2020", "v": "2020"}, {"n": "2019", "v": "2019"},
-                    {"n": "2018", "v": "2018"}, {"n": "2017", "v": "2017"}, {"n": "2016", "v": "2016"}, {"n": "2015", "v": "2015"},
-                    {"n": "2014", "v": "2014"}, {"n": "2013", "v": "2013"}, {"n": "2012", "v": "2012"}, {"n": "2011", "v": "2011"},
-                    {"n": "2010", "v": "2010"}
-                ]},
-                {"key": "lang", "name": "语言", "value": [
-                    {"n": "全部", "v": ""}, {"n": "国语", "v": "国语"}, {"n": "英语", "v": "英语"}, {"n": "粤语", "v": "粤语"},
-                    {"n": "闽南语", "v": "闽南语"}, {"n": "韩语", "v": "韩语"}, {"n": "日语", "v": "日语"}, {"n": "其它", "v": "其它"}
-                ]},
-                {"key": "order", "name": "排序", "value": [
-                    {"n": "按最新", "v": "time"}, {"n": "按最热", "v": "hits"}, {"n": "按评分", "v": "score"}
-                ]}
-            ]
-        }
-        return {"class": categories, "filters": filters if filter else {}, "parse": 0, "jx": 0}
-
-    def homeVideoContent(self):
-        try:
-            response = self.session.get(self.home_url, headers=self.headers, timeout=10)
-            response.raise_for_status()
-            html = etree.HTML(response.text)
-            items = html.xpath('//div[@class="slide-time-bj swiper-slide"]/a')
-            vod_list = []
-            for item in items[:10]:
-                vod_id = item.xpath('./@href')[0].split('/')[-2]
-                vod_name = item.xpath('.//h3[@class="slide-info-title hide"]/text()')[0]
-                vod_pic = item.xpath('.//div[contains(@class, "slide-time-img3")]/@style')[0].split("url('")[1].rstrip("');")
-                remarks = item.xpath('.//div[@class="slide-info hide"]/span[@class="slide-info-remarks"]/text()')
-                vod_remarks = " ".join(remarks).replace("\xa0", "").strip() if remarks else ""
-                vod_list.append({
-                    "vod_id": vod_id,
-                    "vod_name": vod_name,
-                    "vod_pic": vod_pic,
-                    "vod_remarks": vod_remarks
-                })
-            print(f"Home Video Content: {json.dumps(vod_list, ensure_ascii=False)}")
-            return {"list": vod_list, "parse": 0, "jx": 0}
-        except Exception as e:
-            print(f"Home Video Error: {e}")
-            return {"list": [], "parse": 0, "jx": 0}
-
-    def categoryContent(self, tid, pg, filter, extend):
-        t = int(time.time())
-        key = self.generate_key(t)
-        type_map = {"movie": "1", "tv": "2", "variety": "3", "anime": "4"}
-        params = {
-            "ac": "videolist",
-            "t": type_map.get(tid, tid),
-            "class": extend.get("class", ""),
-            "area": extend.get("area", ""),
-            "year": extend.get("year", ""),
-            "lang": extend.get("lang", ""),
-            "by": extend.get("order", "time"),
-            "pg": str(pg),
-            "time": str(t),
-            "key": key
-        }
-        print(f"API Params: {params}")
-        try:
-            # 尝试POST请求
-            response = self.session.post(self.api_url, data=params, headers=self.headers, timeout=10)
-            print(f"Raw API Response: {response.text}")
-            data = response.json()
-            print(f"Parsed API Response: {json.dumps(data, ensure_ascii=False)}")
-            vod_list = [
-                {
-                    "vod_id": str(item.get("vod_id", "")),
-                    "vod_name": item.get("vod_name", "未知"),
-                    "vod_pic": item.get("vod_pic", ""),
-                    "vod_remarks": item.get("vod_remarks", "")
-                }
-                for item in data.get("list", []) 
-                if data.get("code") == 1
-            ]
-            return {
-                "page": int(data.get("page", pg)),
-                "pagecount": data.get("pagecount", 999),
-                "limit": int(data.get("limit", 20)),
-                "total": data.get("total", 9999),
-                "list": vod_list,
-                "parse": 0,
-                "jx": 0
-            }
-        except Exception as e:
-            print(f"Category Error: {e}")
-            return {"page": int(pg), "pagecount": 999, "limit": 20, "total": 9999, "list": [], "parse": 0, "jx": 0}
-
-    def detailContent(self, ids):
-        try:
-            vod_id = ids[0]
-            url = f"https://www.xiaohys.com/detail/{vod_id}/"
-            response = self.session.get(url, headers=self.headers, timeout=10)
-            response.raise_for_status()
-            html = etree.HTML(response.text)
-            vod_item = {"vod_id": vod_id}
-
-            # 调整XPath以匹配详情页结构
-            vod_item["vod_name"] = html.xpath('//h3[@class="slide-info-title hide"]/text()')[0] if html.xpath('//h3[@class="slide-info-title hide"]/text()') else "未知"
-            year = html.xpath('//span[@class="slide-info-remarks"]/text()')
-            vod_item["vod_year"] = next((y.strip() for y in year if y.strip().isdigit() and len(y.strip()) == 4), "")
-            vod_item["vod_content"] = html.xpath('//div[@id="height_limit"]/text()')[0].strip().replace("\xa0", " ").replace("\u3000", " ") if html.xpath('//div[@id="height_limit"]/text()') else ""
-            vod_item["vod_director"] = " / ".join(html.xpath('//strong[contains(text(), "导演")]/following-sibling::a/text()')) if html.xpath('//strong[contains(text(), "导演")]/following-sibling::a/text()') else ""
-            vod_item["vod_actor"] = " / ".join(html.xpath('//strong[contains(text(), "演员")]/following-sibling::a/text()')) if html.xpath('//strong[contains(text(), "演员")]/following-sibling::a/text()') else ""
-            vod_item["vod_area"] = html.xpath('//span[@class="slide-info-remarks"]/a[contains(@href, "area")]/text()')[0] if html.xpath('//span[@class="slide-info-remarks"]/a[contains(@href, "area")]') else ""
-            vod_item["vod_type"] = " ".join(html.xpath('//span[@class="slide-info-remarks"]/a[contains(@href, "show/")]/text()')) if html.xpath('//span[@class="slide-info-remarks"]/a[contains(@href, "show/")]') else ""
-            vod_item["vod_remarks"] = html.xpath('//strong[contains(text(), "备注")]/following-sibling::text()')[0].strip() if html.xpath('//strong[contains(text(), "备注")]/following-sibling::text()') else ""
-            vod_item["vod_pic"] = html.xpath('//div[@class="detail-pic"]/img/@data-src')[0] if html.xpath('//div[@class="detail-pic"]/img/@data-src') else ""
-
-            # 播放列表解析
-            play_from_list = html.xpath('//div[@class="anthology-tab nav-swiper b-b br"]/div[@class="swiper-wrapper"]/a/text()') or ["默认线路"]
-            play_url_list = []
-            for i in range(len(play_from_list)):
-                episodes = html.xpath(f'(//div[contains(@class, "anthology-list-box")])[{(i+1)}]//ul[@class="anthology-list-play size"]/li/a/text()')
-                urls = html.xpath(f'(//div[contains(@class, "anthology-list-box")])[{(i+1)}]//ul[@class="anthology-list-play size"]/li/a/@href')
-                if episodes and urls:
-                    play_url = "#".join([f"{ep.strip()}${self.home_url}{url}" for ep, url in zip(episodes, urls)])
-                    play_url_list.append(play_url)
-                else:
-                    play_url_list.append("")
-
-            vod_item["vod_play_from"] = "$$$".join(play_from_list)
-            vod_item["vod_play_url"] = "$$$".join(play_url_list)
-            print(f"Detail Content: {json.dumps(vod_item, ensure_ascii=False)}")
-            return {"list": [vod_item], "parse": 0, "jx": 0}
-        except Exception as e:
-            print(f"Detail Error: {e}")
-            return {"list": [], "parse": 0, "jx": 0}
-
-    def searchContent(self, key, quick, page='1'):
-        t = int(time.time())
-        key_hash = self.generate_key(t)
-        params = {
-            "ac": "videolist",
-            "wd": key,
-            "pg": page,
-            "time": str(t),
-            "key": key_hash
-        }
-        print(f"Search Params: {params}")
-        try:
-            # 尝试POST请求
-            response = self.session.post(self.api_url, data=params, headers=self.headers, timeout=10)
-            print(f"Raw Search Response: {response.text}")
-            data = response.json()
-            print(f"Parsed Search Response: {json.dumps(data, ensure_ascii=False)}")
-            vod_list = [
-                {
-                    "vod_id": str(item.get("vod_id", "")),
-                    "vod_name": item.get("vod_name", "未知"),
-                    "vod_pic": item.get("vod_pic", ""),
-                    "vod_remarks": item.get("vod_remarks", "")
-                }
-                for item in data.get("list", []) if data.get("code") == 1
-            ]
-            return {"list": vod_list, "parse": 0, "jx": 0}
-        except Exception as e:
-            print(f"Search Error: {e}")
-            return {"list": [], "parse": 0, "jx": 0}
-
-    def playerContent(self, flag, pid, vipFlags):
-        try:
-            url = f"https://www.xiaohys.com{pid}"
-            return {
-                "url": url,
-                "header": json.dumps(self.headers),
-                "parse": 0,
-                "jx": 0
-            }
-        except Exception as e:
-            print(f"Player Error: {e}")
-            return {"url": "", "header": "", "parse": 0, "jx": 0}
+    def getName(self):
+        pass
 
     def isVideoFormat(self, url):
-        return False
+        pass
 
     def manualVideoCheck(self):
-        return False
+        pass
 
-    def localProxy(self, params):
-        return None
+    def action(self, action):
+        pass
 
     def destroy(self):
         pass
 
-if __name__ == "__main__":
-    spider = Spider()
-    spider.init()
-    print(spider.homeContent(filter=True))
-    print(spider.homeVideoContent())
-    print(spider.categoryContent("tv", "1", True, {"class": "古装", "area": "内地", "year": "2024", "lang": "国语", "order": "score"}))
-    print(spider.detailContent(["49864"]))  # 测试《乌云之上》
-    print(spider.searchContent("假面骑士", True))
+    host='https://www.xiaohys.com'
+
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36',
+        'Accept': 'application/json, text/javascript, */*; q=0.01',
+        'sec-ch-ua-platform': '"macOS"',
+        'sec-ch-ua': '"Not/A)Brand";v="8", "Chromium";v="134", "Google Chrome";v="134"',
+        'Origin': host,
+        'Referer': f"{host}/",
+    }
+
+    def homeContent(self, filter):
+        data=self.getpq(self.fetch(self.host,headers=self.headers).text)
+        result = {}
+        classes = []
+        for k in data('.head-more.box a').items():
+            i=k.attr('href')
+            if i and '/show' in i:
+                classes.append({
+                    'type_name': k.text(),
+                    'type_id': i.split('/')[-1]
+                })
+        result['class'] = classes
+        result['list']=self.getlist(data('.border-box.diy-center .public-list-div'))
+        return result
+
+    def homeVideoContent(self):
+        pass
+
+    def categoryContent(self, tid, pg, filter, extend):
+        body = {'type':tid,'class':'','area':'','lang':'','version':'','state':'','letter':'','page':pg}
+        data = self.post(f"{self.host}/index.php/api/vod", headers=self.headers, data=self.getbody(body)).json()
+        result = {}
+        result['list'] = data['list']
+        result['page'] = pg
+        result['pagecount'] = 9999
+        result['limit'] = 90
+        result['total'] = 999999
+        return result
+
+    def detailContent(self, ids):
+        data = self.getpq(self.fetch(f"{self.host}/detail/{ids[0]}/", headers=self.headers).text)
+        v=data('.detail-info.lightSpeedIn .slide-info')
+        vod = {
+            'vod_year': v.eq(-1).text(),
+            'vod_remarks': v.eq(0).text(),
+            'vod_actor': v.eq(3).text(),
+            'vod_director': v.eq(2).text(),
+            'vod_content': data('.switch-box #height_limit').text()
+        }
+        np=data('.anthology.wow.fadeInUp')
+        ndata=np('.anthology-tab .swiper-wrapper .swiper-slide')
+        pdata=np('.anthology-list .anthology-list-box ul')
+        play,names=[],[]
+        for i in range(len(ndata)):
+            n=ndata.eq(i)('a')
+            n('span').remove()
+            names.append(n.text())
+            vs=[]
+            for v in pdata.eq(i)('li').items():
+                vs.append(f"{v.text()}${v('a').attr('href')}")
+            play.append('#'.join(vs))
+        vod["vod_play_from"] = "$$$".join(names)
+        vod["vod_play_url"] = "$$$".join(play)
+        result = {"list": [vod]}
+        return result
+
+    def searchContent(self, key, quick, pg="1"):
+        data = self.fetch(f"{self.host}/index.php/ajax/suggest?mid=1&wd={key}&limit=9999&timestamp={int(time.time()*1000)}", headers=self.headers).json()
+        videos=[]
+        for i in data['list']:
+            videos.append({
+                'vod_id': i['id'],
+                'vod_name': i['name'],
+                'vod_pic': i['pic']
+            })
+        return {'list':videos,'page':pg}
+
+    def playerContent(self, flag, id, vipFlags):
+        h,p,url1= {"User-Agent": "okhttp/3.14.9"},1,''
+        url=f"{self.host}{id}"
+        data = self.getpq(self.fetch(url, headers=self.headers).text)
+        try:
+            jstr = data('.player .player-left script').eq(0).text()
+            jsdata = json.loads(jstr.split('=',1)[-1])
+            body, url1= {'url': jsdata['url'],'referer':url},jsdata['url']
+            data = self.post(f"{self.host}/static/player/artplayer/api.php?ac=getdate", headers=self.headers, data=body).json()
+            l=self.aes(data['data'],data['iv'])
+            url=l.get('url') or l['data'].get('url')
+            p = 0
+            if not url:raise Exception('未找到播放地址')
+        except Exception as e:
+            print('错误信息：',e)
+            if re.search(r'\.m3u8|\.mp4',url1):url=url1
+        result = {}
+        result["parse"] = p
+        result["url"] = url
+        result["header"] = h
+        return result
+
+    def localProxy(self, param):
+        pass
+
+    def getbody(self, params):
+        t=int(time.time())
+        h = MD5.new()
+        h.update(f"DS{t}DCC147D11943AF75".encode('utf-8'))
+        key=h.hexdigest()
+        params.update({'time':t,'key':key})
+        return params
+
+    def getlist(self,data):
+        videos=[]
+        for i in data.items():
+            id = i('a').attr('href')
+            if id:
+                id = re.search(r'\d+', id).group(0)
+                img = i('img').attr('data-src')
+                if img and 'url=' in img and 'http' not in img: img = f'{self.host}{img}'
+                videos.append({
+                    'vod_id': id,
+                    'vod_name': i('img').attr('alt'),
+                    'vod_pic': img,
+                    'vod_remarks': i('.public-prt').text() or i('.public-list-prb').text()
+                })
+        return videos
+
+    def getpq(self, data):
+        try:
+            return pq(data)
+        except Exception as e:
+            print(f"{str(e)}")
+            return pq(data.encode('utf-8'))
+
+    def aes(self, text,iv):
+        key = b"d978a93ffb4d3a00"
+        iv = iv.encode("utf-8")
+        cipher = AES.new(key, AES.MODE_CBC, iv)
+        pt = unpad(cipher.decrypt(b64decode(text)), AES.block_size)
+        return json.loads(pt.decode("utf-8"))
