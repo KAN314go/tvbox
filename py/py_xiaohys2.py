@@ -63,9 +63,6 @@ class Spider(Spider):
                 {"key": "year", "name": "年份", "value": [
                     {"n": "全部", "v": ""}, {"n": "2025", "v": "2025"}, {"n": "2024", "v": "2024"}, {"n": "2023", "v": "2023"}
                 ]},
-                {"key": "lang", "name": "語言", "value": [
-                    {"n": "全部", "v": ""}, {"n": "国语", "v": "国语"}, {"n": "英语", "v": "英语"}, {"n": "粤语", "v": "粤语"}
-                ]},
                 {"key": "by", "name": "排序", "value": [
                     {"n": "按最新", "v": "time"}, {"n": "按最熱", "v": "hits"}, {"n": "按評分", "v": "score"}
                 ]}
@@ -79,9 +76,6 @@ class Spider(Spider):
                 ]},
                 {"key": "year", "name": "年份", "value": [
                     {"n": "全部", "v": ""}, {"n": "2025", "v": "2025"}, {"n": "2024", "v": "2024"}, {"n": "2023", "v": "2023"}
-                ]},
-                {"key": "lang", "name": "語言", "value": [
-                    {"n": "全部", "v": ""}, {"n": "国语", "v": "国语"}, {"n": "英语", "v": "英语"}
                 ]},
                 {"key": "by", "name": "排序", "value": [
                     {"n": "按最新", "v": "time"}, {"n": "按最熱", "v": "hits"}, {"n": "按評分", "v": "score"}
@@ -111,7 +105,6 @@ class Spider(Spider):
             'class': extend.get('class', ''),
             'area': extend.get('area', ''),
             'year': extend.get('year', ''),
-            'lang': extend.get('lang', ''),
             'by': extend.get('by', 'time'),
             'pg': str(pg),
             'time': str(t),
@@ -128,15 +121,17 @@ class Spider(Spider):
             filtered_list = []
             type_classes = {
                 "movie": ["电影"],
-                "tv": ["国产", "剧"],  # 電視劇可能包含 "国产" 或 "剧"
+                "tv": ["国产", "剧"],  # 電視劇應包含 "国产" 或 "剧"
                 "variety": ["综艺"],
                 "anime": ["动漫", "动画"]
             }
+            exclude_classes = ["动漫", "动画", "综艺"]  # 明確排除的類型
             expected_classes = type_classes.get(tid, [])
             for item in data.get('list', []):
                 vod_class = item.get('vod_class', '')
-                # 如果 vod_class 包含預期類型，則保留
-                if any(cls in vod_class for cls in expected_classes) or not vod_class:
+                # 必須包含預期類型且不包含排除類型
+                if (any(cls in vod_class for cls in expected_classes) and 
+                    not any(ex_cls in vod_class for ex_cls in exclude_classes)):
                     filtered_list.append({
                         'vod_id': item.get('vod_id'),
                         'vod_name': item.get('vod_name', '未知'),
@@ -246,7 +241,7 @@ if __name__ == "__main__":
     print(json.dumps(spider.homeContent(filter=True), ensure_ascii=False))
     print(json.dumps(spider.homeVideoContent(), ensure_ascii=False))
     print("測試電視劇篩選:")
-    print(json.dumps(spider.categoryContent("tv", "1", True, {"class": "古装", "area": "内地", "year": "2024", "lang": "国语", "by": "score"}), ensure_ascii=False))
+    print(json.dumps(spider.categoryContent("tv", "1", True, {"class": "古装", "area": "内地", "year": "2024", "by": "score"}), ensure_ascii=False))
     print("測試僅類型篩選:")
     print(json.dumps(spider.categoryContent("tv", "1", True, {"class": "古装"}), ensure_ascii=False))
     print("測試無篩選條件:")
