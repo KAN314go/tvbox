@@ -22,27 +22,11 @@ class Spider(Spider):
             'Referer': f"{self.host}/",
         }
 
-    def init(self, extend=""):
-        pass
-
-    def destroy(self):
-        pass
-
-    def isVideoFormat(self, url):
-        return False
-
-    def manualVideoCheck(self):
-        return False
-
-    def localProxy(self, param):
-        return None
-
     def getName(self):
         return "XiaoHYS"
 
     def homeContent(self, filter):
         data = self.getpq(self.fetch(self.host, headers=self.headers).text)
-        print(f"Home HTML length: {len(data.text())}")
         result = {}
         classes = [
             {"type_id": "movie", "type_name": "电影"},
@@ -78,14 +62,12 @@ class Spider(Spider):
         result['class'] = classes
         result['filters'] = filters if filter else {}
         video_list = self.getlist(data('.border-box.diy-center .public-list-div'))
-        print(f"Home videos found: {len(video_list)}")
         result['list'] = video_list
         return result
 
     def homeVideoContent(self):
         data = self.getpq(self.fetch(self.host, headers=self.headers).text)
         video_list = self.getlist(data('.border-box.diy-center .public-list-div'))
-        print(f"HomeVideoContent videos found: {len(video_list)}")
         return {"list": video_list}
 
     def categoryContent(self, tid, pg, filter, extend):
@@ -98,30 +80,29 @@ class Spider(Spider):
             'area': extend.get('area', ''),
             'year': extend.get('year', ''),
             'by': extend.get('by', 'time'),
-            'page': str(pg),  # 改為 'page' 測試分頁
+            'pg': str(pg),  # 先測試 'pg'
+            'page': str(pg),  # 同時測試 'page'
             'time': str(t),
             'key': key
         }
-        print(f"Category request params: {json.dumps(body, ensure_ascii=False)}")
+        print(f"Request params (Page {pg}): {json.dumps(body, ensure_ascii=False)}")
         try:
             response = self.post(self.api_url, headers=self.headers, data=body)
-            print(f"Raw API response: {response.text}")
             data = response.json()
-            print(f"Category API response: {json.dumps(data, ensure_ascii=False)}")
+            print(f"API response page: {data.get('page', '未知')}, pagecount: {data.get('pagecount', '未知')}")
             
-            # 本地過濾：根據 tid 和 vod_class
+            # 本地過濾：只保留電視劇
             filtered_list = []
             type_classes = {
                 "movie": ["电影"],
-                "tv": ["国产"],  # 更嚴格，只允許 "国产"，排除 "国产动漫"
+                "tv": ["国产", "剧"],  # 電視劇必須包含 "国产" 或 "剧"
                 "variety": ["综艺"],
                 "anime": ["动漫", "动画"]
             }
-            exclude_classes = ["动漫", "动画", "综艺", "电影"]  # 排除非電視劇類型
+            exclude_classes = ["动漫", "动画", "综艺", "电影"]
             expected_classes = type_classes.get(tid, [])
             for item in data.get('list', []):
                 vod_class = item.get('vod_class', '')
-                # 必須包含 "国产" 且不包含排除類型
                 if (any(cls in vod_class for cls in expected_classes) and 
                     not any(ex_cls in vod_class for ex_cls in exclude_classes)):
                     filtered_list.append({
@@ -138,7 +119,7 @@ class Spider(Spider):
                 'limit': int(data.get('limit', 20)),
                 'total': data.get('total', len(filtered_list)) if filtered_list else 0
             }
-            print(f"Filtered list size: {len(filtered_list)}")
+            print(f"Filtered list size (Page {pg}): {len(filtered_list)}")
         except Exception as e:
             print(f"Category error: {e}")
             result = {'list': [], 'page': int(pg), 'pagecount': 9999, 'limit': 20, 'total': 0}
@@ -230,14 +211,15 @@ class Spider(Spider):
 
 if __name__ == "__main__":
     spider = Spider()
-    print(json.dumps(spider.homeContent(filter=True), ensure_ascii=False))
-    print(json.dumps(spider.homeVideoContent(), ensure_ascii=False))
     print("測試電視劇篩選（第一頁）:")
-    print(json.dumps(spider.categoryContent("tv", "1", True, {"area": "内地", "year": "2024", "by": "score"}), ensure_ascii=False))
+    result1 = spider.categoryContent("tv", "1", True, {"area": "内地", "year": "2024", "by": "score"})
+    print(json.dumps(result1, ensure_ascii=False))
     print("測試電視劇篩選（第二頁）:")
-    print(json.dumps(spider.categoryContent("tv", "2", True, {"area": "内地", "year": "2024", "by": "score"}), ensure_ascii=False))
+    result2 = spider.categoryContent("tv", "2", True, {"area": "内地", "year": "2024", "by": "score"})
+    print(json.dumps(result2, ensure_ascii=False))
     print("測試無篩選條件（第一頁）:")
-    print(json.dumps(spider.categoryContent("tv", "1", True, {}), ensure_ascii=False))
+    result3 = spider.categoryContent("tv", "1", True, {})
+    print(json.dumps(result3, ensure_ascii=False))
     print("測試無篩選條件（第二頁）:")
-    print(json.dumps(spider.categoryContent("tv", "2", True, {}), ensure_ascii=False))
-    print(json.dumps(spider.detailContent(["49751"]), ensure_ascii=False))
+    result4 = spider.categoryContent("tv", "2", True, {})
+    print(json.dumps(result4, ensure_ascii=False))
