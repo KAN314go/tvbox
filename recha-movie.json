@@ -3,15 +3,7 @@
   "logo": "https://p3-pc.douyinpic.com/img/aweme-avatar/tos-cn-i-0813_6e2553f5708c414386eeca88b5f2674a~c5_300x300.jpeg?from=2956013662",
   "wallpaper": "https://tv.nxog.top/m//t/",
   "sites": [
-    {
-      "key": "py_xiaohys",
-      "name": "🥇｜小紅｜藍光◎秒播(無廣告)",
-      "type": 3,
-      "api": "./py/py_xiaohys.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1
-    },  
+ 
     {
       "key": "豆瓣",
       "name": "🇹🇼｜熱播排行榜｜自動切換",
@@ -1578,6 +1570,15 @@
         "线路标题": "<span>&&</span>[不包含:高清线路]"
       }
     },
+    {
+      "key": "py_xiaohys",
+      "name": "🥇｜小紅｜藍光◎秒播(無廣告)",
+      "type": 3,
+      "api": "./py/py_xiaohys.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    }, 
     {
       "key": "T4-heimuer",
       "name": "🥇｜唐黑｜高清◎秒播(？廣告？)",
