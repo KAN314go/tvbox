@@ -107,7 +107,7 @@ class Spider(Spider):
         type_map = {"movie": "1", "tv": "2", "variety": "3", "anime": "4"}
         body = {
             'ac': 'videolist',
-            't': type_map.get(tid, tid),  # 類型ID
+            't': type_map.get(tid, tid),
             'class': extend.get('class', ''),
             'area': extend.get('area', ''),
             'year': extend.get('year', ''),
@@ -120,25 +120,29 @@ class Spider(Spider):
         print(f"Category request params: {json.dumps(body, ensure_ascii=False)}")
         try:
             response = self.post(self.api_url, headers=self.headers, data=body)
-            print(f"Raw API response: {response.text}")  # 輸出原始響應
+            print(f"Raw API response: {response.text}")
             data = response.json()
             print(f"Category API response: {json.dumps(data, ensure_ascii=False)}")
             
-            # 本地過濾：確保結果符合 tid
+            # 本地過濾：根據 tid 和 vod_class
             filtered_list = []
-            type_keywords = {
+            type_classes = {
                 "movie": ["电影"],
-                "tv": ["剧", "集"],
+                "tv": ["国产", "剧"],  # 電視劇可能包含 "国产" 或 "剧"
                 "variety": ["综艺"],
                 "anime": ["动漫", "动画"]
             }
-            expected_keywords = type_keywords.get(tid, [])
+            expected_classes = type_classes.get(tid, [])
             for item in data.get('list', []):
-                name = item.get('vod_name', '')
-                remarks = item.get('vod_remarks', '')
-                # 如果名稱或備註包含預期關鍵詞，則認為符合類型
-                if any(kw in name or kw in remarks for kw in expected_keywords) or not expected_keywords:
-                    filtered_list.append(item)
+                vod_class = item.get('vod_class', '')
+                # 如果 vod_class 包含預期類型，則保留
+                if any(cls in vod_class for cls in expected_classes) or not vod_class:
+                    filtered_list.append({
+                        'vod_id': item.get('vod_id'),
+                        'vod_name': item.get('vod_name', '未知'),
+                        'vod_pic': item.get('vod_pic', ''),
+                        'vod_remarks': item.get('vod_remarks', '')
+                    })
             
             result = {
                 'list': filtered_list,
@@ -241,7 +245,6 @@ if __name__ == "__main__":
     spider = Spider()
     print(json.dumps(spider.homeContent(filter=True), ensure_ascii=False))
     print(json.dumps(spider.homeVideoContent(), ensure_ascii=False))
-    # 測試篩選功能
     print("測試電視劇篩選:")
     print(json.dumps(spider.categoryContent("tv", "1", True, {"class": "古装", "area": "内地", "year": "2024", "lang": "国语", "by": "score"}), ensure_ascii=False))
     print("測試僅類型篩選:")
