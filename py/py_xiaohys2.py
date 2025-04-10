@@ -98,7 +98,7 @@ class Spider(Spider):
             'area': extend.get('area', ''),
             'year': extend.get('year', ''),
             'by': extend.get('by', 'time'),
-            'pg': str(pg),  # 分頁參數
+            'page': str(pg),  # 改為 'page' 測試分頁
             'time': str(t),
             'key': key
         }
@@ -113,14 +113,15 @@ class Spider(Spider):
             filtered_list = []
             type_classes = {
                 "movie": ["电影"],
-                "tv": ["国产", "剧"],
+                "tv": ["国产"],  # 更嚴格，只允許 "国产"，排除 "国产动漫"
                 "variety": ["综艺"],
                 "anime": ["动漫", "动画"]
             }
-            exclude_classes = ["动漫", "动画", "综艺"]
+            exclude_classes = ["动漫", "动画", "综艺", "电影"]  # 排除非電視劇類型
             expected_classes = type_classes.get(tid, [])
             for item in data.get('list', []):
                 vod_class = item.get('vod_class', '')
+                # 必須包含 "国产" 且不包含排除類型
                 if (any(cls in vod_class for cls in expected_classes) and 
                     not any(ex_cls in vod_class for ex_cls in exclude_classes)):
                     filtered_list.append({
@@ -132,7 +133,7 @@ class Spider(Spider):
             
             result = {
                 'list': filtered_list,
-                'page': int(data.get('page', pg)),  # 確保從 API 返回的頁數生效
+                'page': int(data.get('page', pg)),
                 'pagecount': data.get('pagecount', 9999),
                 'limit': int(data.get('limit', 20)),
                 'total': data.get('total', len(filtered_list)) if filtered_list else 0
