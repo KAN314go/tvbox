@@ -22,11 +22,28 @@ class Spider(Spider):
             'Referer': f"{self.host}/",
         }
 
+    # 實現抽象方法
+    def init(self, extend=""):
+        pass
+
+    def destroy(self):
+        pass
+
+    def isVideoFormat(self, url):
+        return False  # 可根據需要返回 True/False，表示是否為視頻格式
+
+    def manualVideoCheck(self):
+        return False  # 可根據需要實現手動視頻檢查邏輯
+
+    def localProxy(self, param):
+        return None  # 返回 None 表示不使用本地代理
+
     def getName(self):
         return "XiaoHYS"
 
     def homeContent(self, filter):
         data = self.getpq(self.fetch(self.host, headers=self.headers).text)
+        print(f"Home HTML length: {len(data.text())}")
         result = {}
         classes = [
             {"type_id": "movie", "type_name": "电影"},
@@ -34,7 +51,6 @@ class Spider(Spider):
             {"type_id": "variety", "type_name": "综艺"},
             {"type_id": "anime", "type_name": "动漫"}
         ]
-        # 增加篩選條件
         filters = {
             "movie": [
                 {"key": "class", "name": "類型", "value": [
@@ -46,8 +62,7 @@ class Spider(Spider):
                     {"n": "美国", "v": "美国"}, {"n": "日本", "v": "日本"}, {"n": "韩国", "v": "韩国"}
                 ]},
                 {"key": "year", "name": "年份", "value": [
-                    {"n": "全部", "v": ""}, {"n": "2025", "v": "2025"}, {"n": "2024", "v": "2024"}, {"n": "2023", "v": "2023"},
-                    {"n": "2022", "v": "2022"}, {"n": "2021", "v": "2021"}
+                    {"n": "全部", "v": ""}, {"n": "2025", "v": "2025"}, {"n": "2024", "v": "2024"}, {"n": "2023", "v": "2023"}
                 ]},
                 {"key": "lang", "name": "語言", "value": [
                     {"n": "全部", "v": ""}, {"n": "国语", "v": "国语"}, {"n": "英语", "v": "英语"}, {"n": "粤语", "v": "粤语"}
@@ -58,8 +73,7 @@ class Spider(Spider):
             ],
             "tv": [
                 {"key": "class", "name": "類型", "value": [
-                    {"n": "全部", "v": ""}, {"n": "古装", "v": "古装"}, {"n": "战争", "v": "战争"}, {"n": "青春偶像", "v": "青春偶像"},
-                    {"n": "喜剧", "v": "喜剧"}, {"n": "家庭", "v": "家庭"}
+                    {"n": "全部", "v": ""}, {"n": "古装", "v": "古装"}, {"n": "战争", "v": "战争"}, {"n": "青春偶像", "v": "青春偶像"}
                 ]},
                 {"key": "area", "name": "地區", "value": [
                     {"n": "全部", "v": ""}, {"n": "内地", "v": "内地"}, {"n": "韩国", "v": "韩国"}, {"n": "香港", "v": "香港"}
@@ -73,17 +87,20 @@ class Spider(Spider):
                 {"key": "by", "name": "排序", "value": [
                     {"n": "按最新", "v": "time"}, {"n": "按最熱", "v": "hits"}, {"n": "按評分", "v": "score"}
                 ]}
-            ],
-            # 其他類型可根據需要擴展
+            ]
         }
         result['class'] = classes
         result['filters'] = filters if filter else {}
-        result['list'] = self.getlist(data('.border-box.diy-center .public-list-div'))
+        video_list = self.getlist(data('.border-box.diy-center .public-list-div'))
+        print(f"Home videos found: {len(video_list)}")
+        result['list'] = video_list
         return result
 
     def homeVideoContent(self):
         data = self.getpq(self.fetch(self.host, headers=self.headers).text)
-        return {"list": self.getlist(data('.border-box.diy-center .public-list-div'))}
+        video_list = self.getlist(data('.border-box.diy-center .public-list-div'))
+        print(f"HomeVideoContent videos found: {len(video_list)}")
+        return {"list": video_list}
 
     def categoryContent(self, tid, pg, filter, extend):
         t = int(time.time())
@@ -101,14 +118,19 @@ class Spider(Spider):
             'time': t,
             'key': key
         }
-        data = self.post(self.api_url, headers=self.headers, data=body).json()
-        result = {
-            'list': data.get('list', []),
-            'page': int(pg),
-            'pagecount': data.get('pagecount', 9999),
-            'limit': 20,
-            'total': data.get('total', 99999)
-        }
+        try:
+            data = self.post(self.api_url, headers=self.headers, data=body).json()
+            print(f"Category API response: {json.dumps(data, ensure_ascii=False)}")
+            result = {
+                'list': data.get('list', []),
+                'page': int(pg),
+                'pagecount': data.get('pagecount', 9999),
+                'limit': 20,
+                'total': data.get('total', 99999)
+            }
+        except Exception as e:
+            print(f"Category error: {e}")
+            result = {'list': [], 'page': int(pg), 'pagecount': 9999, 'limit': 20, 'total': 99999}
         return result
 
     def detailContent(self, ids):
@@ -138,7 +160,7 @@ class Spider(Spider):
         return {"list": [vod]}
 
     def searchContent(self, key, quick, pg="1"):
-        data = self.fetch(f"{self.host}/index.php/ajax/suggest?mid=1&wd={key}&limit=9999&timestamp={int(time.time()*1000)}", headers=self.headers).json()
+        data = self.fetch(f"{self.host}/index.php/ajax/suggest?mid=1&wd={key}&limit=9999×tamp={int(time.time()*1000)}", headers=self.headers).json()
         videos = [{
             'vod_id': i['id'],
             'vod_name': i['name'],
@@ -158,7 +180,8 @@ class Spider(Spider):
             l = self.aes(data['data'], data['iv'])
             url = l.get('url') or l['data'].get('url')
             parse = 0 if url else 1
-        except:
+        except Exception as e:
+            print(f"Player error: {e}")
             url = id
             parse = 1
         return {"parse": parse, "url": url, "header": h}
@@ -170,20 +193,21 @@ class Spider(Spider):
             if id:
                 id = re.search(r'\d+', id).group(0)
                 img = i('img').attr('data-src')
-                if img and 'url=' in img and 'http' not in img: 
+                if img and 'url=' in img and 'http' not in img:
                     img = f'{self.host}{img}'
                 videos.append({
                     'vod_id': id,
-                    'vod_name': i('img').attr('alt'),
-                    'vod_pic': img,
-                    'vod_remarks': i('.public-prt').text() or i('.public-list-prb').text()
+                    'vod_name': i('img').attr('alt') or "未知",
+                    'vod_pic': img or "",
+                    'vod_remarks': i('.public-prt').text() or i('.public-list-prb').text() or ""
                 })
-        return videos[:10]  # 限制首頁推薦為10個
+        return videos[:10]
 
     def getpq(self, data):
         try:
             return pq(data)
-        except:
+        except Exception as e:
+            print(f"Parse error: {e}")
             return pq(data.encode('utf-8'))
 
     def aes(self, text, iv):
@@ -195,7 +219,6 @@ class Spider(Spider):
 
 if __name__ == "__main__":
     spider = Spider()
-    # 測試功能
     print(json.dumps(spider.homeContent(filter=True), ensure_ascii=False))
     print(json.dumps(spider.homeVideoContent(), ensure_ascii=False))
     print(json.dumps(spider.categoryContent("tv", "1", True, {"class": "古装", "area": "内地", "year": "2024", "lang": "国语", "by": "score"}), ensure_ascii=False))
