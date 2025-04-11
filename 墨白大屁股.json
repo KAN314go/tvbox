@@ -4,7 +4,52 @@
   "wallpaper": "https://tv.nxog.top/m//t/",
   "sites": [
  
-
+    {
+      "key":"黑木影视",
+      "name":"🥇｜黑木影视｜無廣超高清版",
+      "type":1,
+      "api":"https://heimuer.ggff.net/api.php/tvbox",
+      "jar": "./jar/custom_spider.jar;md5;5e53c8f9ddd4ede5359c16bee091db93",
+      "searchable":1,
+      "quickSearch":1,
+      "filterable":0
+   },
+   {
+      "key":"Qile优视频",
+      "name":"🥇｜优视频｜無廣超高清版",
+      "type":3,
+      "searchable":1,
+      "changeable":1,
+      "api":"csp_Uvod",
+      "jar": "./jar/custom_spider.jar;md5;5e53c8f9ddd4ede5359c16bee091db93",
+      "playerType":2,
+      "filterable":1
+   },
+   {
+      "key":"huarenoktv",
+      "name":"🥇｜华人直播️｜無廣超高速版",
+      "type":1,
+      "api":"https://huaren.live/api.php/tvbox",
+      "playUrl":"json:https://parse.okhuaren.com/?url=",
+      "jar": "./jar/custom_spider.jar;md5;5e53c8f9ddd4ede5359c16bee091db93",
+      "searchable":1,
+      "quickSearch":1,
+      "filterable":1,
+      "header":{
+         "User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+         "Referer":"test"
+      }
+   },
+   {
+      "key":"备用黑木影视",
+      "name":"🥇｜备用黑木影视｜不知道是幹啥的",
+      "type":1,
+      "api":"https://tvbot.ggff.net/api.php/tvbox",
+      "jar": "./jar/custom_spider.jar;md5;5e53c8f9ddd4ede5359c16bee091db93",
+      "searchable":1,
+      "quickSearch":1,
+      "filterable":0
+   },
 
     {
       "key": "py_又是一個金牌",
