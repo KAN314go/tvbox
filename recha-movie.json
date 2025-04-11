@@ -8,13 +8,13 @@
 
     {
       "key": "py_又是一個金牌",
-      "name": "🥇｜嗷漫｜(動漫+待測)",
+      "name": "🥇｜又是一個金牌｜(動漫+待測)",
       "type": 3,
       "api": "./py/又是一個金牌.py",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": "https://www.jpyy.com/"
+      "ext": {"site": "https://jpyy.com,https://www.jiabaide.cn,https://cqzuoer.com,https://www.tjrongze.com,https://www.jpyy2.com,https://www.cfkj86.com"}
     }, 
     {
       "key": "py_嗷呜动漫",
