@@ -4,6 +4,36 @@
   "wallpaper": "https://tv.nxog.top/m//t/",
   "sites": [
  
+
+
+
+    {
+      "key": "又是一個金牌",
+      "name": "🥇｜又是一個金牌｜(待測)",
+      "type": 3,
+      "api": "./py/又是一個金牌.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    }, 
+    {
+      "key": "py_xiaohys",
+      "name": "🥇｜嗷漫｜(動漫+待測)",
+      "type": 3,
+      "api": "./py/py_国外剧app.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    }, 
+    {
+      "key": "py_国外剧app",
+      "name": "🥇｜美劇｜高清◎秒播(無廣告+APP)",
+      "type": 3,
+      "api": "./py/py_国外剧app.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    }, 
     {
       "key": "豆瓣",
       "name": "🇹🇼｜熱播排行榜｜自動切換",
