@@ -20,7 +20,7 @@
       "key": "py_xiaohys",
       "name": "🥇｜嗷漫｜(動漫+待測)",
       "type": 3,
-      "api": "./py/py_国外剧app.py",
+      "api": "./py/嗷呜动漫.py",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1
