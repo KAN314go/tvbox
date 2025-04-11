@@ -6,7 +6,7 @@
  
     {
       "key":"黑木影视",
-      "name":"🥇｜黑木影视｜無廣超高清版",
+      "name":"🥇｜黑木耳｜無廣超高清版",
       "type":1,
       "api":"https://heimuer.ggff.net/api.php/tvbox",
       "jar": "./jar/custom_spider.jar;md5;5e53c8f9ddd4ede5359c16bee091db93",
@@ -27,7 +27,7 @@
    },
    {
       "key":"huarenoktv",
-      "name":"🥇｜华人直播️｜無廣超高速版",
+      "name":"🥇｜华人OK｜無廣超高速版",
       "type":1,
       "api":"https://huaren.live/api.php/tvbox",
       "playUrl":"json:https://parse.okhuaren.com/?url=",
@@ -40,17 +40,6 @@
          "Referer":"test"
       }
    },
-   {
-      "key":"备用黑木影视",
-      "name":"🥇｜备用黑木影视｜不知道是幹啥的",
-      "type":1,
-      "api":"https://tvbot.ggff.net/api.php/tvbox",
-      "jar": "./jar/custom_spider.jar;md5;5e53c8f9ddd4ede5359c16bee091db93",
-      "searchable":1,
-      "quickSearch":1,
-      "filterable":0
-   },
-
     {
       "key": "py_又是一個金牌",
       "name": "🥇｜又是一個金牌｜(動漫+待測)",
