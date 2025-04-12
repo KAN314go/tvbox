@@ -3149,7 +3149,7 @@
       "key": "py_BaHaoTV",
       "name": "🥉｜八影｜普清◎順播(無廣告)",
       "type": 4,
-      "api": "https://json.doube.eu.org/spider?site=BaHaoTV",
+      "api": "https://py.doube.eu.org/spider?site=BaHaoTV",
       "searchable": 1,
       "quickSearch": 0,
       "filterable": 0,
