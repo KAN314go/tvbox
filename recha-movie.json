@@ -1760,16 +1760,6 @@
       }
     },
     {
-      "key": "py_HeiMuEr",
-      "name": "🥈｜黑耳｜高清◎秒播(超多廣告)",
-      "type": 4,
-      "api": "https://spider.doube.eu.org/spider?site=HeiMuEr",
-      "searchable": 1,
-      "quickSearch": 0,
-      "filterable": 0,
-      "changeable": 0
-    },
-    {
       "key": "WexF4kvmGuard",
       "name": "🥈｜纯享｜高清◎秒播(部分廣告)",
       "type": 3,
@@ -3159,7 +3149,7 @@
       "key": "py_BaHaoTV",
       "name": "🥉｜八影｜普清◎順播(無廣告)",
       "type": 4,
-      "api": "https://py.doube.eu.org/spider?site=BaHaoTV",
+      "api": "https://json.doube.eu.org/spider?site=BaHaoTV",
       "searchable": 1,
       "quickSearch": 0,
       "filterable": 0,
