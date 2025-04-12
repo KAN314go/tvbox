@@ -4,70 +4,8 @@
   "wallpaper": "https://tv.nxog.top/m//t/",
   "sites": [
  
-    {
-      "key":"黑木影视",
-      "name":"🥇｜黑木耳｜無廣超高清版",
-      "type":1,
-      "api":"https://heimuer.ggff.net/api.php/tvbox",
-      "jar": "./jar/custom_spider.jar;md5;5e53c8f9ddd4ede5359c16bee091db93",
-      "searchable":1,
-      "quickSearch":1,
-      "filterable":0
-   },
-   {
-      "key":"Qile优视频",
-      "name":"🥇｜优视频｜無廣超高清版",
-      "type":3,
-      "searchable":1,
-      "changeable":1,
-      "api":"csp_Uvod",
-      "jar": "./jar/custom_spider.jar;md5;5e53c8f9ddd4ede5359c16bee091db93",
-      "playerType":2,
-      "filterable":1
-   },
-   {
-      "key":"huarenoktv",
-      "name":"🥇｜华人OK｜無廣超高速版",
-      "type":1,
-      "api":"https://huaren.live/api.php/tvbox",
-      "playUrl":"json:https://parse.okhuaren.com/?url=",
-      "jar": "./jar/custom_spider.jar;md5;5e53c8f9ddd4ede5359c16bee091db93",
-      "searchable":1,
-      "quickSearch":1,
-      "filterable":1,
-      "header":{
-         "User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
-         "Referer":"test"
-      }
-   },
-    {
-      "key": "py_又是一個金牌",
-      "name": "🥇｜又是一個金牌｜(動漫+待測)",
-      "type": 3,
-      "api": "./py/又是一個金牌.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": {"site": "https://jpyy.com,https://www.jiabaide.cn,https://cqzuoer.com,https://www.tjrongze.com,https://www.jpyy2.com,https://www.cfkj86.com"}
-    }, 
-    {
-      "key": "py_嗷呜动漫",
-      "name": "🥇｜嗷漫｜(動漫+待測)",
-      "type": 3,
-      "api": "./py/嗷呜动漫.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1
-    }, 
-    {
-      "key": "py_国外剧app",
-      "name": "🥇｜外劇｜高清◎秒播(無廣告+APP)",
-      "type": 3,
-      "api": "./py/py_国外剧app.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1
-    }, 
+
+
     {
       "key": "豆瓣",
       "name": "🇹🇼｜熱播排行榜｜自動切換",
@@ -118,8 +56,18 @@
       "style": {"type": "rect", "ratio": 1.77}
     },
     {
+      "key": "py_又是一個金牌",
+      "name": "🏆｜王牌｜藍光◎秒播(無廣告)",
+      "type": 3,
+      "api": "./py/又是一個金牌.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": {"site": "https://jpyy.com,https://www.jiabaide.cn,https://cqzuoer.com,https://www.tjrongze.com,https://www.jpyy2.com,https://www.cfkj86.com"}
+    }, 
+    {
       "key": "py_金牌.py",
-      "name": "🏆｜金影｜高清◎秒播(無廣告)",
+      "name": "🏆｜金牌｜高清◎秒播(無廣告)",
       "type": 3,
       "api": "./py/金牌.py",
       "searchable": 1,
@@ -129,7 +77,7 @@
     },
     {
       "key": "Auete",
-      "name": "🏆｜銀影｜高清◎秒播(無廣告)",
+      "name": "🏆｜銀牌｜高清◎秒播(無廣告)",
       "type": 3,
       "api": "csp_Auete",
       "timeout": 15,
@@ -141,7 +89,7 @@
     },
     {
       "key":"XBPQ_fxzcjy",
-      "name":"🏆｜銅影｜高清◎秒播(無廣告)",
+      "name":"🏆｜銅牌｜高清◎秒播(無廣告)",
         "jar":"./jar/tvkj.jar",
         "type": 3,
         "api": "csp_Xpg",
@@ -153,7 +101,7 @@
     },
     {
       "key": "csp_歐樂影院ORG",
-      "name": "🏆｜鐵影｜高清◎秒播(無廣告)",
+      "name": "🏆｜鐵牌｜高清◎秒播(無廣告)",
       "type": 3,
       "api": "csp_XBPQ",
       "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
@@ -186,6 +134,42 @@
       "searchable": 1,
       "changeable": 1
     },
+    {
+      "key":"黑木影视",
+      "name":"🏆｜黑木耳｜藍光◎秒播(無廣告)",
+      "type":1,
+      "api":"https://heimuer.ggff.net/api.php/tvbox",
+      "jar": "./jar/custom_spider.jar;md5;5e53c8f9ddd4ede5359c16bee091db93",
+      "searchable":1,
+      "quickSearch":1,
+      "filterable":0
+   },
+   {
+      "key":"Qile优视频",
+      "name":"🏆｜优视频｜藍光◎秒播(無廣告)",
+      "type":3,
+      "searchable":1,
+      "changeable":1,
+      "api":"csp_Uvod",
+      "jar": "./jar/custom_spider.jar;md5;5e53c8f9ddd4ede5359c16bee091db93",
+      "playerType":2,
+      "filterable":1
+   },
+   {
+      "key":"huarenoktv",
+      "name":"🏆｜华人OK｜藍光◎秒播(無廣告)",
+      "type":1,
+      "api":"https://huaren.live/api.php/tvbox",
+      "playUrl":"json:https://parse.okhuaren.com/?url=",
+      "jar": "./jar/custom_spider.jar;md5;5e53c8f9ddd4ede5359c16bee091db93",
+      "searchable":1,
+      "quickSearch":1,
+      "filterable":1,
+      "header":{
+         "User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+         "Referer":"test"
+      }
+   },
     {
       "key": "drpy_js_360影视",
       "name": "🎖︎｜360｜官源",
@@ -1190,6 +1174,15 @@
       "quickSearch": 1,
       "filterable": 1
     },
+    {
+      "key": "py_国外剧app",
+      "name": "🥇｜外劇｜高清◎秒播(無廣告+APP)",
+      "type": 3,
+      "api": "./py/py_国外剧app.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    }, 
     {
       "key": "py_边缘影视",
       "name": "🥇｜边缘｜高清◎秒播(無廣告+APP)",
@@ -4112,6 +4105,15 @@
       "filterable": 0,
       "changeable": 1
     },
+    {
+      "key": "py_嗷呜动漫",
+      "name": "动漫｜嗷漫动漫｜PYTHON",
+      "type": 3,
+      "api": "./py/嗷呜动漫.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    }, 
     {
       "key": "py_MiFun",
       "name": "动漫｜MiFun｜PYTHON",
