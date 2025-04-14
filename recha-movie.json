@@ -136,7 +136,7 @@
     },
     {
       "key":"黑木影视",
-      "name":"🏆｜黑木耳｜藍光◎秒播(無廣告)",
+      "name":"🏆｜黑木耳｜藍光◎秒播(無廣告+採集)",
       "type":1,
       "api":"https://heimuer.ggff.net/api.php/tvbox",
       "jar": "./jar/custom_spider.jar;md5;5e53c8f9ddd4ede5359c16bee091db93",
@@ -145,6 +145,17 @@
       "filterable":0
    },
    {
+      "key":"T4-heimuer",
+      "name":"🏆｜黑木耳｜藍光◎秒播(無廣告+唐三)",
+      "type":4,
+      "api":"https://tang.hz.cz/power/hme?token=96ae29c6",
+      "searchable":1,
+      "quickSearch":1,
+      "filterable":1,
+      "changeable":0,
+      "ext":true
+    },
+    {
       "key":"Qile优视频",
       "name":"🏆｜优视频｜藍光◎秒播(無廣告)",
       "type":3,
