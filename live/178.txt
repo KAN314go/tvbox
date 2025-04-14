@@ -2,6 +2,8 @@
 
 
 
+
+
 💋松视CR(更新日期114.04.07),#genre#
 松视1台(小雲),http://18.svi-studio.com:80/live/478790710441/100371347442/5.m3u8
 松视1台(小雲),http://18.svi-studio.com:80/live/176844830209/558261845324/5.m3u8
@@ -20,6 +22,7 @@
 松视1台(小雲),http://18.svi-studio.com:80/live/656570054361/567275863459/5.m3u8
 
 
+松视1台,p3p://108.181.32.169:40187/650b87f1000d765a8f12ea107fd81201
 松视1台,http://276868.cloud/33899f168487d4ecf86768be40853b71/a342fa9e5e11747f731a4832e31e0e7d/c5f2d006bb9ccf4951acc5cc4b4b8b39/index.m3u8
 松视1台,http://suo.im/c4FP2
 松视1台,http://ali.hlspull.yximgs.com/live/3ece22313a5434d269096c0492bb4592.flv
@@ -48,6 +51,7 @@
 
 
 
+松视2台,p3p://108.181.32.169:40187/650b8a51000ac6568f1c30530c503d72
 松视2台,http://276868.cloud/e7e5fccaa92d69a7553c3890c3519a14/a342fa9e5e11747f731a4832e31e0e7d/79624e0ad988a352ad8d5a819dd37a46/index.m3u8
 松视2台,http://b.mtw.so/6pAjsB
 松视2台,http://lc.aacalive.com:26789/i/ghjnvq5o/8c85fsaf/index.m3u8
@@ -76,6 +80,7 @@
 松视3台(小雲),http://18.svi-studio.com:80/live/656570054361/567275863459/20205.m3u8
 
 
+松视3台,p3p://108.181.32.169:40187/650b8a0e000007df8f1b27da75d42f65
 松视3台,p3p://173.208.176.178:31809/6109e9590001f40bfd9b661109395f3b
 松视3台,http://ali.hlspull.yximgs.com:80/live/9663ea3c5f5a81b533de8c546c1329f5.flv
 松视3台,http://ali.hlspull.yximgs.com/live/3f6f5f4476f4ac79303be71e5cd70808.flv
@@ -84,6 +89,8 @@
 松视3台,http://104.194.10.200:25461/live/271871095922/006886711863/20205.m3u8?token=SRVZVERZGl8UCA4FVw9TAlQFBQRQWgAEDlIGDlYBAQcCAAIEDwMIAA4SGhZFTRdVVl1rWwYaXAMbE0FLBERmClYVCxcABhpJFERfWVMbXwAbEkRbBhpcEAYDAw5RFBVBV09FUEVfWQlpVFNCX1oAEg1eQV4OFERdWW5QXQxXVwcQDRMFFR0aDEVAFA5YTAlcGxJWWxZKB0ZSEw4aUwQOUxAbE1ZYRFYRREkUDhRsNhIbElFKFl0IQV5eWhpbFFRQRw8TGRVYSzpEVUVARFwEXVJCFghACEQeFVxVQD5VVg1cUlJBXl5WFhQKFA0PAFwSGxJZXQxREl1FbkRRBRQDQQAEAQUDE0U=
 
 松视4台(小雲),http://18.svi-studio.com:8880/get.php?username=652484888807&password=195449585962&type=m3u&output=m3u8
+
+松视4台,http://127.0.0.1:17173/172.96.160.90:16000/stream/9a533206e58bf825-25eedb205648744a12e36e835dbfcb43/b83239991a6e146d5f0721c58cd6bc2b/master.m3u8
 松视4台,https://kdy-oss.oss01-cn-lasa-xzns-d01-a.cloud.ningsuan.com.cn/kodbox/202410/06/akw6b-3pn5Rcw?response-content-disposition=inline%3Bfilename%3DS4-3.mp4&response-content-type=video%2Fmp4&OSSAccessKeyId=FfDrPsUMS4h3sKnf&Expires=1732118399&Signature=P6mI8Nv7Gvdvg0UaQ9bIvFKk3Rs%3D
 松视4台,https://u.kstore.space/download/8504/%E8%8B%B9%E6%9E%9C%E9%A6%992.mp4
 松视4台,https://www.5ycc.cn/view.php/4151ed5519480243da312ee68cf45312.mp4
@@ -104,8 +111,10 @@
 
 彩虹K台,http://jaz9.my.to:2390/udp/224.1.4.175:11111
 彩虹K台,http://ali.hlspull.yximgs.com/live/8e965f80be61b5bee081846aa9a0a7f1.flv
+彩虹K台,p3p://108.181.32.169:40187/650b896a000407bf8f18a840011e789a
 
 彩虹电影,p3p://173.208.176.178:31809/6253066c00049259f74b05224cf375e6
+彩虹电影,p3p://108.181.32.169:40187/650b89c6000280318f1a0f3c30b74958
 彩虹电影,http://ali.hlspull.yximgs.com/live/27f6f1e4159f92cc3813793adccb3bcb.flv
 彩虹电影,http://suo.im/9sOLD
 彩虹电影,http://ali.hlspull.yximgs.com/live/7e4848e68e3720703b7f5f23246a3b92.flv
@@ -134,6 +143,7 @@
 
 
 潘朵拉完美,http://107.167.16.226:8880/live/wLmJEuYw32hs/75X2WAcaeJexPFiZ/639649.m3u8
+潘朵拉完美,p3p://108.181.32.169:40187/650b8a9900047f038f1d47f730bd5b7c
 潘朵拉完美,p3p://173.208.176.178:31809/5fe4450c000c918b829fca233c845311
 潘朵拉完美,http://suo.im/6TuSG
 潘朵拉完美,http://276868.cloud/beec6a5b65accd0d5d126c4e464d26c1/a342fa9e5e11747f731a4832e31e0e7d/b74d1eed9ea3ca8d661091ffa5f1fd54/index.m3u8
@@ -163,6 +173,7 @@
 
 
 香蕉臺,https://2.ddyunbo.com/20190908/ETghLd5D/index.m3u8 
+香蕉臺,p3p://108.181.32.169:40187/650b8ae60005f36b8f1e751f68bd1c14
 香蕉臺,http://125.227.210.55:8159/VideoInput/play.ts
 香蕉臺,p3p://173.208.176.178:31809/60626a760005067e6f5bbecb5816771e
 香蕉臺,http://276868.cloud/ecc014a79434755f42850add23f2cafb/a342fa9e5e11747f731a4832e31e0e7d/dd18c7572f6fa68799ed27685fafa1da/index.m3u8
@@ -171,6 +182,7 @@
 香蕉臺,http://lc.aacalive.com:26789/i/ghjnvq5o/8c85giea/index.m3u8
 香蕉臺,http://ali.hlspull.yximgs.com/live/9663ea3c5f5a81b533de8c546c1329f5.flv
 香蕉臺,http://ali.hlspull.yximgs.com/live/e00f9d2b895f1c412993d4089791fa2c.flv
+
 
 驚艷臺(小雲),http://18.svi-studio.com:80/live/478790710441/100371347442/1.m3u8
 驚艷臺(小雲),http://18.svi-studio.com:80/live/652484888807/195449585962/1.m3u8
@@ -194,8 +206,11 @@
 驚艷臺,http://suo.im/8odLv
 驚艷臺,http://ali.hlspull.yximgs.com/live/9663ea3c5f5a81b533de8c546c1329f5.flv
 驚艷臺,http://ali.hlspull.yximgs.com/live/4629abfefeb84a6ae624143368299f09.flv
+驚艷台,p3p://108.181.32.169:40187/650b8b37000c4e8a8f1fb328756e4077
+
 
 HAPPY,p3p://173.208.176.178:31809/616b79be000a35b17ab2f7b84c325eeb
+HAPPY,p3p://108.181.32.169:40187/650b8915000b1a1b8f175e0765017f8a
 HAPPY,http://jaz9.my.to:2390/udp/224.1.4.186:11111
 HAPPY,http://ali.hlspull.yximgs.com/live/dd66a1fb532611a4942181a95f5931a1.flv
 
@@ -216,7 +231,7 @@ HAPPY,http://ali.hlspull.yximgs.com/live/dd66a1fb532611a4942181a95f5931a1.flv
 极限电影台,https://epg.pw/stream/a4a9b7e7603d96e605468df45eb0d14be5b022328f927957290b981f8c7f7a6c.m3u8
 极限电影台,http://ali.hlspull.yximgs.com/live/bcdf6089e51c0106e39c233ed584f95e.flv
 极限电影台,http://ali.hlspull.yximgs.com/live/c4559a900cb808925162c053af606dd2.flv
-
+极限电影台,p3p://108.181.32.169:40187/650b8b700004037d8f208fb144ea7e3f
 
 💋cherry,#genre#
 松視1臺,tvbus://8QVYgbvvCmRA3JyAKsv451Qth5jdbRJWzmejsxrKShFtmRmwdw#tvbus://7VvSfBAFW3d1GZHizWvkQfsrQzNz9cujGtccHwgxEEQhtd7aYM#tvbus://7Bft8oDmVXvpnBuUsbd49oboHFqMtqZ3VZMiS9mQ5FUcBYa7GG#tvbus://72ttM3vKb1oxdwEKnxgL3KTCbeEeP6stiyygYTNduvieM5JfXg#tvbus://6zpnzu3sy73nBzqJwALsg7eAj8zvD4zjeANs9McFCW5UZUstDv#tvbus://7KFjoSXqboBxnvAq3gr8yGtT2bV4UZTQEfnFmV5UNMAByEyy2b#tvbus://6We3nbhZgwMKHCZpzXM2BQChyaw9cQNFwWQBEfQUAJcAkeDTgq6zxQShiRELo
