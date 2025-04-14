@@ -4919,6 +4919,14 @@
       "logo": "https://epg.112114.xyz/logo/{name}.png"
     },
     {
+      "name": "大視界",
+      "type": 0,
+      "url": "./live/大視界.txt",
+      "epg": "https://epg.112114.eu.org/?ch={name}&date={date}",
+      "logo": "https://epg.112114.eu.org/logo/{name}.png",
+      "playerType": 2
+    },
+    {
       "name": "4G-TV(喵老師)",
       "type": 0,
       "url": "./live/iptv.txt",
