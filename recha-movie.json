@@ -4854,6 +4854,20 @@
   ],
   "lives": [
     {
+      "name": "金星test",
+      "url": "./live/gold/jx.txt",
+      "epg":"https://diyp100.112114.xyz/?ch={name}&date={date}",
+      "logo": "https://epg.v1.mk/logo/{name}.png",
+      "core": {
+        "auth": "https://sgla.googlejt.com/v1/auth",
+        "name": "08a77819f9b7",
+        "pass": "1742653607661",
+        "sign": "163428eb20fa4b27",
+        "pkg": "com.yby.v11.singapore.tv",
+        "so": "./live/gold/joy.so"
+      }
+    },
+    {
       "name": "小雲1台",
       "url": "./live/ueen.txt",
       "playerType": 2,
@@ -5068,7 +5082,7 @@
     {
       "name": "歐華(ouhua TV)",
       "type": 0,
-      "url": "http://xg.52sw.top/iptv/欧华.m3u",
+      "url": "./live/ohhua.txt",
       "ua": "okhttp/3.15",
       "epg": "http://iptv.52sw.top:668/?ch={name}&date={date}"
     },
