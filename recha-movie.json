@@ -8,7 +8,7 @@
     {
       "key": "vod_caiji",
       "name": "🧲｜不明｜待測◎(??)",
-      "type": 3,
+      "type": 1,
       "api": "https://caiji.dbzy5.com/api.php/provide/vod/at/josn",
       "searchable": 1,
       "quickSearch": 1,
