@@ -4,20 +4,7 @@
   "wallpaper": "https://tv.nxog.top/m//t/",
   "sites": [
 
-    
-    {
-      "key": "vod_caiji",
-      "name": "🧲｜不明｜待測◎(??)",
-      "type": 1,
-      "api": "https://caiji.dbzy5.com/api.php/provide/vod/at/josn",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1
-    },
-
-
-    
-
+ 
 
     {
       "key": "豆瓣",
