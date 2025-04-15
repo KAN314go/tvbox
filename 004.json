@@ -9,7 +9,7 @@
       "key": "vod_caiji",
       "name": "🧲｜不明｜待測◎(??)",
       "type": 1,
-      "api": "https://caiji.dbzy5.com/api.php/provide/vod/from/dbm3u8/at/xml/",
+      "api": "https://caiji.dbzy5.com/api.php/provide/vod/at/josn/",
       "playurl": "https://dbzy8.com:699/?url=",
       "searchable": 1,
       "quickSearch": 1,
