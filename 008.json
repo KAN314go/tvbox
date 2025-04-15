@@ -7,7 +7,7 @@
     {
       "key": "豆瓣资源json接口",
       "name": "豆瓣资源json接口",
-      "type": 0,
+      "type": 1,
       "api": "https://caiji.dbzy5.tv/api.php/provide/vod/at/json",
       "playurl": "https://dbjiexi.com:966/jx/?url=",
       "searchable": 1,
@@ -17,7 +17,7 @@
   {
       "key": "豆瓣资源m3u8 json接口",
       "name": "豆瓣资源m3u8 json接口",
-      "type": 0,
+      "type": 1,
       "api": "https://caiji.dbzy5.tv/api.php/provide/vod/from/dbm3u8/at/json",
       "playurl": "https://dbjiexi.com:966/jx/?url=",
       "searchable": 1,
@@ -27,7 +27,7 @@
   {
       "key": "豆瓣资源m3u8 xml接口",
       "name": "豆瓣资源m3u8 xml接口",
-      "type": 0,
+      "type": 1,
       "api": "https://caiji.dbzy5.tv/api.php/provide/vod/from/dbm3u8/at/xml",
       "playurl": "https://dbjiexi.com:966/jx/?url=",
       "searchable": 1,
@@ -37,7 +37,7 @@
   {
       "key": "豆瓣资源m3u8 xml备用接口",
       "name": "豆瓣资源m3u8 xml备用接口",
-      "type": 0,
+      "type": 1,
       "api": "https://caiji.dbzy5.tv/api.php/provide/vod/from/dbm3u8/at/xml",
       "playurl": "https://dbjiexi.com:966/jx/?url=",
       "searchable": 1,
