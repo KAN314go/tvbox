@@ -3,7 +3,20 @@
   "logo": "https://p3-pc.douyinpic.com/img/aweme-avatar/tos-cn-i-0813_6e2553f5708c414386eeca88b5f2674a~c5_300x300.jpeg?from=2956013662",
   "wallpaper": "https://tv.nxog.top/m//t/",
   "sites": [
- 
+
+    
+    {
+      "key": "vod_caiji",
+      "name": "🧲｜不明｜待測◎(??)",
+      "type": 3,
+      "api": "https://caiji.dbzy5.com/api.php/provide/vod/at/josn",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+
+
+    
 
 
     {
