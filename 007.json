@@ -8,8 +8,8 @@
       "key": "豆瓣资源json接口",
       "name": "豆瓣资源json接口",
       "type": 0,
-      "api": "https://caiji.dbzy.tv/api.php/provide/vod/at/json",
-      "playurl": "https://dbzy8.com:699/?url=",
+      "api": "https://caiji.dbzy5.tv/api.php/provide/vod/at/json",
+      "playurl": "https://dbjiexi.com:966/jx/?url=",
       "searchable": 1,
       "quickSearch": 0,
       "changeable": 1
@@ -18,8 +18,8 @@
       "key": "豆瓣资源m3u8 json接口",
       "name": "豆瓣资源m3u8 json接口",
       "type": 0,
-      "api": "https://caiji.dbzy.tv/api.php/provide/vod/from/dbm3u8/at/json",
-      "playurl": "https://dbzy8.com:699/?url=",
+      "api": "https://caiji.dbzy5.tv/api.php/provide/vod/from/dbm3u8/at/json",
+      "playurl": "https://dbjiexi.com:966/jx/?url=",
       "searchable": 1,
       "quickSearch": 0,
       "changeable": 1
@@ -28,8 +28,8 @@
       "key": "豆瓣资源m3u8 xml接口",
       "name": "豆瓣资源m3u8 xml接口",
       "type": 0,
-      "api": "https://caiji.dbzy.tv/api.php/provide/vod/from/dbm3u8/at/xml",
-      "playurl": "https://dbzy8.com:699/?url=",
+      "api": "https://caiji.dbzy5.tv/api.php/provide/vod/from/dbm3u8/at/xml",
+      "playurl": "https://dbjiexi.com:966/jx/?url=",
       "searchable": 1,
       "quickSearch": 0,
       "changeable": 1
@@ -38,8 +38,8 @@
       "key": "豆瓣资源m3u8 xml备用接口",
       "name": "豆瓣资源m3u8 xml备用接口",
       "type": 0,
-      "api": "https://caiji.dbzy.tv/api.php/provide/vod/from/dbm3u8/at/xml",
-      "playurl": "https://dbzy8.com:699/?url=",
+      "api": "https://caiji.dbzy5.tv/api.php/provide/vod/from/dbm3u8/at/xml",
+      "playurl": "https://dbjiexi.com:966/jx/?url=",
       "searchable": 1,
       "quickSearch": 0,
       "changeable": 1
@@ -4046,7 +4046,7 @@
       "key": "vod_豆瓣",
       "name": "🧲｜豆瓣｜高清◎龜速(浮水印廣告)",
       "type": 1,
-      "api": "https://caiji.dbzy.tv/api.php/provide/vod/at/josn/",
+      "api": "https://caiji.dbzy5.tv/api.php/provide/vod/at/josn/",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1
