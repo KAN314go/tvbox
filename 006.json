@@ -4,16 +4,46 @@
   "wallpaper": "https://tv.nxog.top/m//t/",
   "sites": [
 
-    
     {
-      "key": "vod_caiji",
-      "name": "🧲｜不明｜待測◎(??)",
-      "type": 1,
-      "api": "https://caiji.dbzy5.com/api.php/provide/vod/at/josn",
+      "key": "豆瓣资源json接口",
+      "name": "豆瓣资源json接口",
+      "type": 0,
+      "api": "https://caiji.dbzy.tv/api.php/provide/vod/at/json",
+      "playurl": "https://dbzy8.com:699/?url=",
       "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1
-    },
+      "quickSearch": 0,
+      "changeable": 1
+  },
+  {
+      "key": "豆瓣资源m3u8 json接口",
+      "name": "豆瓣资源m3u8 json接口",
+      "type": 0,
+      "api": "https://caiji.dbzy.tv/api.php/provide/vod/from/dbm3u8/at/json",
+      "playurl": "https://dbzy8.com:699/?url=",
+      "searchable": 1,
+      "quickSearch": 0,
+      "changeable": 1
+  },
+  {
+      "key": "豆瓣资源m3u8 xml接口",
+      "name": "豆瓣资源m3u8 xml接口",
+      "type": 0,
+      "api": "https://caiji.dbzy.tv/api.php/provide/vod/from/dbm3u8/at/xml",
+      "playurl": "https://dbzy8.com:699/?url=",
+      "searchable": 1,
+      "quickSearch": 0,
+      "changeable": 1
+  },
+  {
+      "key": "豆瓣资源m3u8 xml备用接口",
+      "name": "豆瓣资源m3u8 xml备用接口",
+      "type": 0,
+      "api": "https://caiji.dbzy.tv/api.php/provide/vod/from/dbm3u8/at/xml",
+      "playurl": "https://dbzy8.com:699/?url=",
+      "searchable": 1,
+      "quickSearch": 0,
+      "changeable": 1
+  },
 
 
     
