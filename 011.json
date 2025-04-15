@@ -5,41 +5,14 @@
   "sites": [
 
     {
-      "key": "豆瓣资源json接口",
-      "name": "豆瓣资源json接口",
+      "key": "豆瓣采集资源",
+      "name": "豆瓣 | 采集",
       "type": 1,
-      "api": "https://caiji.dbzy5.com/api.php/provide/vod/at/json?ac=list&pg=",
+      "api": "https://caiji.dbzy.tv/api.php/provide/vod/from/dbm3u8/at/josn/",
+      "playerType": 1,
       "searchable": 1,
-      "quickSearch": 0,
       "changeable": 1
-  },
-  {
-      "key": "豆瓣资源m3u8 json接口",
-      "name": "豆瓣资源m3u8 json接口",
-      "type": 1,
-      "api": "https://caiji.dbzy5.com/api.php/provide/vod/from/dbm3u8/at/json",
-      "searchable": 1,
-      "quickSearch": 0,
-      "changeable": 1
-  },
-  {
-      "key": "豆瓣资源m3u8 xml接口",
-      "name": "豆瓣资源m3u8 xml接口",
-      "type": 1,
-      "api": "https://caiji.dbzy5.com/api.php/provide/vod/from/dbm3u8/at/xml",
-      "searchable": 1,
-      "quickSearch": 0,
-      "changeable": 1
-  },
-  {
-      "key": "豆瓣资源m3u8 xml备用接口",
-      "name": "豆瓣资源m3u8 xml备用接口",
-      "type": 1,
-      "api": "https://caiji.dbzy5.com/api.php/provide/vod/from/dbm3u8/at/xml",
-      "searchable": 1,
-      "quickSearch": 0,
-      "changeable": 1
-  },
+    },
 
 
     
