@@ -9,6 +9,7 @@
       "name": "🏆｜薦片｜",
       "type": 3,
       "api": "csp_WexJianpianGuard",
+      "jar": "./jar/wex.txt;md5;6237e73e89cd1cc8ed815ad7712c6b65",
       "searchable": 1,
       "changeable": 1
     },
