@@ -8,7 +8,17 @@
 
 
 
-
+    {
+      "key": "文才影视",
+      "name": "🥇｜文才｜高清◎秒播(無廣告)",
+      "type": 3,
+      "api": "csp_Jpys",
+      "jar": "./jar/feimao0403.txt;md5;5a0f3bef8b15b9bd2be978359fd5f4cd",
+      "playerType": 2,
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 1
+    },
     {
       "key": "人人",
       "name": "🥇｜人人｜APP(無法修)",
