@@ -1,0 +1,822 @@
+{
+    "sites": [
+      {
+        "key": "黑木影视",
+        "name": "🏆｜黑木耳｜藍光◎秒播(無廣告+採集)",
+        "type": 1,
+        "api": "https://heimuer.ggff.net/api.php/tvbox",
+        "jar": "./jar/custom_spider.jar;md5;5e53c8f9ddd4ede5359c16bee091db93",
+        "searchable": 1,
+        "quickSearch": 1,
+        "filterable": 0
+      },
+      {
+        "key": "huarenoktv",
+        "name": "🏆｜华人OK｜藍光◎秒播(無廣告)",
+        "type": 1,
+        "api": "https://huaren.live/api.php/tvbox",
+        "playUrl": "json:https://parse.okhuaren.com/?url=",
+        "jar": "./jar/custom_spider.jar;md5;5e53c8f9ddd4ede5359c16bee091db93",
+        "searchable": 1,
+        "quickSearch": 1,
+        "filterable": 1,
+        "header": {
+          "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+          "Referer": "test"
+        }
+      },
+      {
+        "key": "csp_moxmi",
+        "name": "🥇｜樂美｜高清◎秒播(無廣告)",
+        "type": 1,
+        "api": "http://mi.moxmi.top:81/api.php/provide/vod/?ac=list",
+        "playUrl": "json:http://iid.moxmi.top:81/gg.php?url=",
+        "searchable": 1,
+        "quickSearch": 1,
+        "filterable": 1,
+        "jar": "https://raw.githubusercontent.com/cpu170/bf/0b1b3e305fd4ac2e206d3589cd1ca3e70cf7b28e/n/g/jars/林中的小屋.jar",
+        "categories": ["电影", "剧集", "综艺", "动漫", "短剧"]
+      },
+      {
+        "key": "csp_vodimg资源",
+        "name": "🥈｜vod｜低清◎秒播(浮水印廣告)",
+        "type": 1,
+        "api": "https://cj.vodimg.top/api.php/provide/vod/&type=2&mid=1",
+        "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+        "searchable": 1,
+        "changeable": 1,
+        "categories": []
+      },
+      {
+        "key": "vod_爱看",
+        "name": "爱看機器人｜全線路",
+        "type": 3,
+        "api": "./drpy_libs/drpy2.min.js",
+        "ext": "./drpy_js/ikanbot2.js"
+      },
+      {
+        "key": "vod_360",
+        "name": "360｜高清◎秒播(無廣告)",
+        "type": 1,
+        "api": "https://360zy.com/api.php/provide/vod",
+        "categories": [
+          "国产剧" , "短片"  , "动画片" , "香港剧" , "韩国剧" , "欧美剧" , "动作片" , "喜剧片" , "爱情片" ,
+          "科幻片" , "恐怖片" , "剧情片" , "战争片" , "NBA" , "惊悚片" , "家庭篇" , "古装片" , "历史片" ,
+          "悬疑片" , "犯罪片" , "纪录片" , "台湾剧" , "大陆综艺", "国产动漫", "日韩动漫", "西部片"
+        ]
+      },
+      {
+        "key": "vod_优质",
+        "name": "優質｜普清◎秒播(無廣告)",
+        "type": 1,
+        "api": "https://api.1080zyku.com/inc/api_mac10.php",
+        "searchable": 1,
+        "quickSearch": 1
+      },
+      {
+        "key": "csp_HkTv",
+        "name": "TVB｜高清◎秒播(無廣告)",
+        "type": 3,
+        "api": "csp_HkTv",
+        "searchable": 1,
+        "quickSearch": 1,
+        "filterable": 1,
+        "jar": "./jar/jar0423.jar;md5;f5f25556deaf4016a82345864b16cd81"
+      },
+      {
+        "key": "vod_天涯",
+        "name": "天涯｜高清◎順播(無廣告)",
+        "type": 1,
+        "api": "https://tyyszyapi.com/api.php/provide/vod/?ac=list",
+        "searchable": 1,
+        "quickSearch": 0,
+        "changeable": 1
+      },
+      {
+        "key": "采集集合go",
+        "name": "采集集合｜高清◎順播(浮水印廣告)",
+        "type": 1,
+        "api": "http://zhangqun1818.serv00.net:5053",
+        "searchable": 1,
+        "style": {"type": "rect", "ratio": 1.33},
+        "quickSearch": 0,
+        "changeable": 1
+      },
+      {
+        "key": "vod_极速",
+        "name": "極速｜高清◎秒播(浮水印廣告)",
+        "type": 1,
+        "api": "https://jszyapi.com/api.php/provide/vod/at/json",
+        "searchable": 1,
+        "quickSearch": 1,
+        "filterable": 1,
+        "categories": [
+          "内地剧" , "欧美剧" , "日剧"  , "韩剧"  , "台湾剧" , "香港剧" , "马泰剧" , "悬疑片" , "喜剧片" ,
+          "动作片" , "爱情片" , "科幻片" , "恐怖片" , "剧情片" , "战争片" , "犯罪片" , "记录片" , "动画片" ,
+          "日本动漫", "欧美动漫", "中国动漫", "大陆综艺", "日韩综艺", "港台综艺", "欧美综艺", "体育赛事"
+        ]
+      },
+      {
+        "key": "vod_豪华",
+        "name": "豪華｜高清◎秒播(浮水印廣告)",
+        "type": 1,
+        "api": "https://hhzyapi.com/api.php/provide/vod/?ac=list",
+        "searchable": 1,
+        "quickSearch": 1,
+        "filterable": 1,
+        "categories": [
+          "动作片" , "喜剧片" , "爱情片" , "科幻片" , "恐怖片" , "剧情片" , "战争片" , "悬疑片" , "犯罪片" ,
+          "奇幻片" , "记录片" , "动画片" , "内地剧" , "香港剧" , "台湾剧" , "日剧"  , "韩剧"  , "欧美剧" ,
+          "马泰剧" , "大陆综艺", "港台综艺", "日韩综艺", "欧美综艺", "中国动漫", "日本动漫", "欧美动漫"
+        ]
+      },
+      {
+        "key": "vod_金鹰",
+        "name": "金鹰｜高清◎秒播(浮水印廣告)",
+        "type": 1,
+        "api": "https://jyzyapi.com/api.php/provide/vod/",
+        "searchable": 1,
+        "quickSearch": 1,
+        "filterable": 1
+      },
+      {
+        "key": "vod_飘零",
+        "name": "飘零｜高清◎秒播(浮水印廣告)",
+        "type": 1,
+        "api": "https://p2100.net/api.php/provide/vod/",
+        "searchable": 1,
+        "quickSearch": 1,
+        "categories": [
+          "电影"  , "连续剧" , "综艺"  , "动漫"  , "动作片" , "电影"  , "喜剧片" , "爱情片" , "科幻片" ,
+          "恐怖片" , "剧情片" , "战争片" , "国产剧" , "香港剧" , "台湾剧" , "日本剧" , "韩国剧" , "欧美剧" ,
+          "海外剧" , "纪录片" , "动漫电影", "邵氏大片"
+        ]
+      },
+      {
+        "key": "vod_索隆",
+        "name": "索隆｜高清◎秒播(浮水印廣告)",
+        "type": 4,
+        "api": "http://zhangqun66.com/sn.php",
+        "jar": "./jar/fm.jar;md5;41c87635d7592069884a5dafa12acabe",
+        "searchable": 1,
+        "quickSearch": 1,
+        "filterable": 1
+      },
+      {
+        "key": "vod_OK",
+        "name": "ＯＫ｜高清◎秒播(跑馬燈廣告)",
+        "type": 1,
+        "api": "https://api.okzy.org/api.php/provide/vod/",
+        "searchable": 1,
+        "quickSearch": 1,
+        "filterable": 1
+      },
+      {
+        "key": "vod_魔都",
+        "name": "魔都｜高清◎秒播(浮水印廣告+成人動畫)",
+        "type": 1,
+        "api": "https://www.moduzy.com/api.php/provide/vod/?ac=list",
+        "searchable": 1,
+        "changeable": 1,
+        "quickSearch": 1,
+        "filterable": 1
+      },
+      {
+        "key": "vod_卧龙",
+        "name": "卧龍｜高清◎秒播(浮水印廣告+成人)",
+        "type": 1,
+        "api": "https://collect.wolongzyw.com/api.php/provide/vod/",
+        "searchable": 1,
+        "quickSearch": 1,
+        "filterable": 1
+      },
+      {
+        "key": "非凡采集资源",
+        "name": "非凡｜高清◎速播(賭城廣告+成人)",
+        "type": 1,
+        "api": "http://api.ffzyapi.com/api.php/provide/vod/",
+        "playerType": 1,
+        "searchable": 1,
+        "changeable": 1
+      },
+      {
+        "key": "量子采集资源",
+        "name": "量子｜高清◎秒播(賭城廣告+成人)",
+        "type": 1,
+        "api": "https://cj.lziapi.com/api.php/provide/vod/at/json/",
+        "playerType": 1,
+        "searchable": 1,
+        "changeable": 1
+      },
+      {
+        "key": "无忧采集资源",
+        "name": "无忧｜高清◎秒播(賭城廣告+成人)",
+        "type": 1,
+        "api": "https://www.wyvod.com/api.php/provide/vod/",
+        "playerType": 1,
+        "searchable": 1,
+        "changeable": 1
+      },
+      {
+        "key": "如意采集资源",
+        "name": "如意｜高清◎秒播(賭城廣告+成人)",
+        "type": 1,
+        "api": "https://cj.rycjapi.com/api.php/provide/vod/at/json/",
+        "playerType": 1,
+        "searchable": 1,
+        "changeable": 1
+      },
+      {
+        "key": "九零采集资源",
+        "name": "九零｜高清◎秒播(賭城廣告)",
+        "type": 1,
+        "api": "https://oknnews.com/api.php/provide/vod/",
+        "playerType": 1,
+        "searchable": 1,
+        "changeable": 1
+      },
+      {
+        "key": "魔抓采集资源",
+        "name": "魔抓｜高清◎龜速(賭城廣告)",
+        "type": 1,
+        "api": "https://mozhuazy.com/api.php/provide/vod/",
+        "playerType": 1,
+        "searchable": 1,
+        "changeable": 1
+      },
+      {
+        "key": "vod_艾旦",
+        "name": "艾旦｜高清◎秒播(浮水印廣告+圖壞)",
+        "type": 1,
+        "api": "https://lovedan.net/api.php/provide/vod/",
+        "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+        "searchable": 1,
+        "quickSearch": 1,
+        "categories": [
+          "动作片" , "喜剧片" , "爱情片" , "科幻片" , "恐怖片" , "犯罪片" , "战争片" , "剧情片" , "动画电影",
+          "国产剧" , "港台剧" , "日韩剧" , "欧美剧" , "海外剧" , "网红主播", "日韩综艺", "港台综艺", "欧美综艺",
+          "大陆综艺", "国产动漫", "日韩动漫", "欧美动漫", "海外动漫", "海外抖音", "影视解说", "直播"
+        ]
+      },
+      {
+        "key": "vod_索尼",
+        "name": "索尼｜高清◎秒播(浮水印廣告)",
+        "type": 1,
+        "api": "https://suoniapi.com/api.php/provide/vod/?ac=list",
+        "searchable": 1,
+        "changeable": 1,
+        "quickSearch": 1,
+        "filterable": 1,
+        "categories": [
+          "动作片" , "喜剧片" , "爱情片" , "科幻片" , "恐怖片" , "剧情片" , "战争片" , "悬疑片" , "犯罪片" ,
+          "冒险片" , "动画片" , "惊悚片" , "奇幻片" , "国产剧" , "欧美剧" , "韩剧"  , "日剧"  , "港剧"  ,
+          "台剧"  , "泰剧"  , "大陆综艺", "日韩综艺", "港台综艺", "欧美综艺", "国产动漫", "日韩动漫", "欧美动漫",
+          "动画片" , "港台动漫", "海外动漫"
+        ]
+      },
+      {
+        "key": "vod_無盡",
+        "name": "無盡｜高清◎秒播(浮水印廣告)",
+        "type": 1,
+        "api": "https://api.wujinapi.me/api.php/provide/vod/?ac=list",
+        "searchable": 1,
+        "quickSearch": 1,
+        "filterable": 1,
+        "categories": [
+          "动作片" , "动画片" , "喜剧片" , "爱情片" , "科幻片" , "恐怖片" , "剧情片" , "战争片" , "悬疑片" ,
+          "犯罪片" , "奇幻片" , "邵氏电影", "纪录片" , "短剧"  , "国产剧" , "香港剧" , "台湾剧" , "日本剧" ,
+          "韩国剧" , "美国剧" , "泰剧"  , "海外剧" , "大陆综艺", "港台综艺", "日韩综艺", "欧美综艺", "国产动漫",
+          "日韩动漫", "欧美动漫", "影视解说", "体育赛事"
+        ]
+      },
+      {
+        "key": "vod_优酷",
+        "name": "優酷｜普清◎秒播(浮水印廣告)",
+        "type": 1,
+        "api": "https://api.ukuapi.com/api.php/provide/vod/",
+        "searchable": 1,
+        "quickSearch": 1,
+        "filterable": 1
+      },
+      {
+        "key": "vod_順播",
+        "name": "順播｜高清◎秒播(浮水印廣告)",
+        "type": 1,
+        "api": "https://subocaiji.com/api.php/provide/vod/",
+        "searchable": 1,
+        "quickSearch": 1,
+        "filterable": 1
+      },
+      {
+        "key": "vod_红牛",
+        "name": "红牛｜高清◎秒播(浮水印廣告)",
+        "type": 1,
+        "api": "https://www.hongniuzy2.com/api.php/provide/vod/",
+        "searchable": 1,
+        "quickSearch": 1,
+        "filterable": 1
+      },
+      {
+        "key": "vod_最大",
+        "name": "最大｜高清◎順播(浮水印廣告)",
+        "type": 1,
+        "api": "http://zuidazy.me/api.php/provide/vod/",
+        "searchable": 1,
+        "quickSearch": 1,
+        "filterable": 1
+      },
+      {
+        "key": "vod_光速",
+        "name": "光速｜高清◎龜速(浮水印廣告)",
+        "type": 1,
+        "api": "https://api.guangsuapi.com/api.php/provide/vod/from/gsm3u8/?ac=list",
+        "searchable": 1,
+        "quickSearch": 1,
+        "filterable": 1,
+        "categories": [
+          "动作片" , "爱情片" , "科幻片" , "战争片" , "剧情片" , "恐怖片" , "喜剧片" , "大陆剧" , "港澳剧" ,
+          "台湾剧" , "欧美剧" , "动漫电影", "韩剧"  , "日剧"  , "泰剧"
+        ]
+      },
+      {
+        "key": "vod_黑墙",
+        "name": "黑墙｜普清◎龜速(浮水印廣告)",
+        "type": 1,
+        "api": "https://blackwallvideo.online/api.php/provide/vod/",
+        "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+        "searchable": 1,
+        "quickSearch": 1
+      },
+      {
+        "key": "vod_豆瓣",
+        "name": "豆瓣｜高清◎龜速(浮水印廣告)",
+        "type": 1,
+        "api": "https://caiji.dbzy.tv/api.php/provide/vod/at/josn/",
+        "searchable": 1,
+        "quickSearch": 1,
+        "filterable": 1
+      },
+      {
+        "key": "vod_黑木耳克隆",
+        "name": "黑隆｜高清◎秒播(各種廣告)",
+        "type": 4,
+        "api": "http://zhangqun66.com/225.php",
+        "jar": "./jar/fm.jar;md5;41c87635d7592069884a5dafa12acabe",
+        "searchable": 1,
+        "quickSearch": 1,
+        "filterable": 1,
+        "recordable": 0
+      },
+      {
+        "key": "vod_黑木耳资源",
+        "name": "黑皮｜高清◎秒播(各種廣告)",
+        "type": 1,
+        "api": "http://json.heimuer.xyz/api.php/provide/vod/",
+        "playurl": "https://hoplayer.com/index.html?url=",
+        "searchable": 1,
+        "quickSearch": 1,
+        "categories": [
+          "剧情片"  , "动作片"  , "冒险片"  , "同性片"  , "喜剧片"  , "奇幻片"  , "恐怖片"  , "悬疑片"  ,
+          "惊悚片"  , "灾难片"  , "爱情片"  , "犯罪片"  , "科幻片"  , "歌舞片"  , "战争片"  , "经典片"  ,
+          "动画电影" , "网络电影" , "其他片"  , "国产剧"  , "港剧"   , "韩剧"   , "日剧"   , "泰剧"   ,
+          "台剧"   , "欧美剧"  , "新马剧"  , "其他剧"  , "国产综艺" , "港台综艺" , "韩国综艺" , "日本综艺" ,
+          "欧美综艺" , "新马泰综艺", "其他综艺" , "古装短剧" , "虐恋短剧" , "逆袭短剧" , "神豪短剧" , "重生短剧" ,
+          "复仇短剧" , "穿越短剧" , "甜宠短剧" , "强者短剧" , "欧美动漫" , "日本动漫" , "韩国动漫" , "国产动漫" ,
+          "港台动漫"
+        ]
+      },
+      {
+        "key": "克隆合集",
+        "name": "克隆｜普清◎龜速(各種廣告)",
+        "type": 4,
+        "api": "http://zhangqun66.com/klhj.php",
+        "searchable": 1,
+        "quickSearch": 1,
+        "style": {"type": "rect", "ratio": 1.33},
+        "changeable": 1,
+        "filterable": 0
+      },
+      {
+        "key": "vod_闪电资源",
+        "name": "閃電｜高清◎順播(賭城廣告)",
+        "type": 1,
+        "api": "https://xsd.sdzyapi.com/api.php/provide/vod/",
+        "jar": "./jar/fan.txt;md5;8851819289f80deae32319080028db3b",
+        "searchable": 1,
+        "quickSearch": 1,
+        "playerType": 2,
+        "categories": [
+          "国产剧" , "韩国剧" , "国产动漫", "欧美剧" , "香港剧" , "台湾剧" , "日剧"  , "海外剧" , "日本动漫",
+          "欧美动漫", "港台动漫", "海外动漫", "动作片" , "喜剧片" , "科幻片" , "恐怖片" , "爱情片" , "剧情片" ,
+          "战争片" , "纪录片" , "犯罪片" , "其他片" , "悬疑片" , "奇幻片" , "动画片" , "大陆综艺", "港台综艺",
+          "日韩综艺", "欧美综艺"
+        ]
+      },
+      {
+        "key": "vod_爱睏",
+        "name": "爱睏｜高清◎秒播(賭城廣告)",
+        "type": 1,
+        "api": "https://ikunzyapi.com/api.php/provide/vod/from/ikm3u8/at/json",
+        "searchable": 1,
+        "quickSearch": 1,
+        "filterable": 1
+      },
+      {
+        "key": "vod_爱坤",
+        "name": "爱坤｜高清◎順播(賭城廣告)",
+        "type": 1,
+        "api": "https://www.ikunzy.com/api.php/provide/vod/",
+        "searchable": 1,
+        "categories": [
+          "动作片" , "喜剧片" , "爱情片" , "科幻片" , "恐怖片" , "剧情片" , "战争片" , "国产剧" , "香港剧" ,
+          "台湾剧" , "韩国剧" , "纪录片" , "动画片" , "日本剧" , "泰国剧" , "欧美剧" , "国产动漫", "日本动漫",
+          "欧美"  , "海外动漫", "电影解说", "大陆综艺", "港台综艺", "日韩综艺", "欧美综艺"
+        ]
+      },
+      {
+        "name": "通用官方采集",
+        "type": 1,
+        "api": "https://zy.hls.one/api.php/provide/vod"
+      },
+      {"name": "韩剧看看", "type": 1, "api": "https://www.hanjukankan.com"},
+      {"name": "金牌影视", "type": 1, "api": "https://www.ghw9zwp5.com"},
+      {"name": "蛋蛋剧", "type": 1, "api": "https://www.dandanju.tv"},
+      {"name": "老白听书", "type": 1, "api": "https://apk-lb-json.fodexin.com"},
+      {"name": "素白白", "type": 1, "api": "https://www.subaibaiys.com"},
+      {"name": "短剧天堂", "type": 1, "api": "https://duanjutt.tv"},
+      {"name": "瓜子web", "type": 1, "api": "https://api.zaqohu.com"},
+      {"name": "瓜子 app", "type": 1, "api": "https://api.9cec79d.com"},
+      {"name": "烧火", "type": 1, "api": "https://saohuo.tv"},
+      {"name": "欧乐影视", "type": 1, "api": "https://www.olevod.tv"},
+      {"name": "天天影视", "type": 1, "api": "http://op.ysdqjs.cn"},
+      {"name": "在线之家", "type": 1, "api": "https://www.zxzja.com"},
+      {"name": "厂长影视", "type": 1, "api": "https://www.czzy77.com"},
+      {"name": "两个bt", "type": 1, "api": "https://www.bttwoo.com"},
+      {"name": "4k-av", "type": 1, "api": "https://4k-av.com"},
+      {"name": "mifun", "type": 1, "api": "http://www.mifun.tw"},
+      {"name": "eacg2", "type": 1, "api": "https://eacg1.com"},
+      {"name": "eacg", "type": 1, "api": "https://eacg1.com"},
+      {"name": "clicli", "type": 1, "api": "https://www.clicli.pro"},
+      {"name": "aggl", "type": 1, "api": "https://anime.girigirilove.com"},
+      {
+        "name": "如意",
+        "type": 1,
+        "api": "https://cj.rycjapi.com/api.php/provide/vod"
+      },
+      {
+        "name": "黑木耳",
+        "type": 1,
+        "api": "https://json.heimuer.xyz/api.php/provide/vod/"
+      },
+      {
+        "name": "360",
+        "type": 1,
+        "api": "https://360zy.com/api.php/provide/vod/"
+      },
+      {
+        "name": "豆瓣",
+        "type": 1,
+        "api": "https://caiji.dbzy.tv/api.php/provide/vod/at/josn"
+      },
+      {
+        "name": "旺旺",
+        "type": 1,
+        "api": "https://api.wwzy.tv/api.php/provide/vod/"
+      },
+      {
+        "name": "墨斗",
+        "type": 1,
+        "api": "https://www.mdzyapi.com/api.php/provide/vod/"
+      },
+      {
+        "name": "黑木耳",
+        "type": 1,
+        "api": "https://json02.heimuer.xyz/api.php/provide/vod/"
+      },
+      {
+        "name": "华为吧",
+        "type": 1,
+        "api": "https://hw8.live/api.php/provide/vod/"
+      },
+      {
+        "name": "腐剧",
+        "type": 1,
+        "api": "http://www.fuju2024.cc:8013/ruifenglb_api.php/provide/vod/"
+      },
+      {
+        "name": "金鹰",
+        "type": 1,
+        "api": "https://jinyingzy.com/api.php/provide/vod/"
+      },
+      {
+        "name": "OK",
+        "type": 1,
+        "api": "https://okzyw9.com/api.php/provide/vod/"
+      },
+      {
+        "name": "宝片",
+        "type": 1,
+        "api": "https://zpsps.com/api.php/provide/vod/"
+      },
+      {
+        "name": "小黄人",
+        "type": 1,
+        "api": "https://iqyi.xiaohuangrentv.com/api.php/provide/vod/"
+      },
+      {
+        "name": "牛牛",
+        "type": 1,
+        "api": "https://api.niuniuzy.me/api.php/provide/vod/"
+      },
+      {
+        "name": "丫丫",
+        "type": 1,
+        "api": "https://cj.yayazy.net/api.php/provide/vod/"
+      },
+      {
+        "name": "影图",
+        "type": 1,
+        "api": "https://cj.vodimg.top/api.php/provide/vod/"
+      },
+      {
+        "name": "U酷",
+        "type": 1,
+        "api": "https://api.ukuapi.com/api.php/provide/vod/"
+      },
+      {
+        "name": "豪华",
+        "type": 1,
+        "api": "https://hhzyapi.com/api.php/provide/vod"
+      },
+      {
+        "name": "极速",
+        "type": 1,
+        "api": "https://jszyapi.com/api.php/provide/vod"
+      },
+      {
+        "name": "索尼",
+        "type": 1,
+        "api": "https://suoniapi.com/api.php/provide/vod/"
+      },
+      {
+        "name": "ikun",
+        "type": 1,
+        "api": "https://ikunzyapi.com/api.php/provide/vod/"
+      },
+      {
+        "name": "非凡",
+        "type": 1,
+        "api": "http://cj.ffzyapi.com/api.php/provide/vod/"
+      },
+      {
+        "name": "量子",
+        "type": 1,
+        "api": "https://cj.lziapi.com/api.php/provide/vod/"
+      },
+      {
+        "name": "暴风",
+        "type": 1,
+        "api": "https://bfzyapi.com/api.php/provide/vod/"
+      },
+      {
+        "name": "红牛",
+        "type": 1,
+        "api": "https://www.hongniuzy2.com/api.php/provide/vod/"
+      },
+      {
+        "name": "快车",
+        "type": 1,
+        "api": "https://caiji.kczyapi.com/api.php/provide/vod/from/kcm3u8/"
+      },
+      {
+        "name": "闪电",
+        "type": 1,
+        "api": "http://sdzyapi.com/api.php/provide/vod/"
+      },
+      {
+        "name": "樱花",
+        "type": 1,
+        "api": "https://m3u8.apiyhzy.com/api.php/provide/vod/"
+      },
+      {
+        "name": "卧龙",
+        "type": 1,
+        "api": "https://collect.wolongzyw.com/api.php/provide/vod/"
+      },
+      {
+        "name": "虎牙",
+        "type": 1,
+        "api": "https://www.huyaapi.com/api.php/provide/vod/"
+      },
+      {
+        "name": "飘零",
+        "type": 1,
+        "api": "https://p2100.net/api.php/provide/vod/"
+      },
+      {
+        "name": "无尽",
+        "type": 1,
+        "api": "https://api.wujinapi.com/api.php/provide/vod/"
+      },
+      {
+        "name": "速博",
+        "type": 1,
+        "api": "https://subocaiji.com/api.php/provide/vod/"
+      },
+      {
+        "name": "魔都",
+        "type": 1,
+        "api": "https://caiji.moduapi.cc/api.php/provide/vod/"
+      },
+      {
+        "name": "最大",
+        "type": 1,
+        "api": "http://zuidazy.me/api.php/provide/vod/"
+      },
+      {
+        "name": "火狐",
+        "type": 1,
+        "api": "https://hhzyapi.com/api.php/provide/vod/"
+      },
+      {
+        "name": "新浪",
+        "type": 1,
+        "api": "https://api.xinlangapi.com/xinlangapi.php/provide/vod/"
+      },
+      {
+        "name": "厂长资源",
+        "type": 3,
+        "api": "csp_czzy",
+        "ext": "https://raw.githubusercontent.com/fangkuia/XPTV/refs/heads/main/js/czzy.js"
+      },
+      {
+        "name": "哔滴影视",
+        "type": 3,
+        "api": "csp_bde4",
+        "ext": "https://raw.githubusercontent.com/fangkuia/XPTV/refs/heads/main/js/bdys.js"
+      },
+      {
+        "name": "欧乐🪜",
+        "type": 3,
+        "api": "csp_Olevod",
+        "ext": "https://raw.githubusercontent.com/fangkuia/XPTV/refs/heads/main/js/ole.js",
+        "ext2": "https://gist.githubusercontent.com/occupy-pluto/ce9bf8248a15acb87e6b55e382fb8e4b/raw/ole.js"
+      },
+      {
+        "name": "在线之家",
+        "type": 3,
+        "api": "csp_Zxzj",
+        "ext": "https://raw.githubusercontent.com/fangkuia/XPTV/refs/heads/main/js/zxzj.js",
+        "ext2": "https://gist.githubusercontent.com/occupy-pluto/13a199a1a85c619f948d40e6c5a12c21/raw/zxzj.js"
+      },
+      {
+        "name": "LIBVIO",
+        "type": 3,
+        "api": "csp_libvio",
+        "ext": "https://raw.githubusercontent.com/fangkuia/XPTV/refs/heads/main/js/libvio.js",
+        "ext2": "https://gist.githubusercontent.com/occupy-pluto/67cc3a53a26c631e32ed2f37e19e479d/raw/libvio.js"
+      },
+      {
+        "name": "低端影视",
+        "type": 3,
+        "api": "csp_ddys",
+        "ext": "https://raw.githubusercontent.com/fangkuia/XPTV/refs/heads/main/js/ddys.js"
+      },
+      {
+        "name": "ギリギリ动漫",
+        "type": 3,
+        "api": "csp_ai",
+        "ext": "https://raw.githubusercontent.com/fangkuia/XPTV/refs/heads/main/js/ai.js",
+        "ext2": "https://gist.githubusercontent.com/occupy-pluto/5185fa59944d5b8af625b2c83604d397/raw/girl.js"
+      },
+      {
+        "name": "独播库",
+        "type": 3,
+        "api": "csp_duboku",
+        "ext": "https://raw.githubusercontent.com/fangkuia/XPTV/refs/heads/main/js/duboku.js",
+        "ext2": "https://gist.githubusercontent.com/occupy-pluto/f6cf4425bf7d1815a26323ade89ea593/raw/duboku.js"
+      },
+      {
+        "name": "AGE动漫",
+        "type": 3,
+        "api": "csp_age",
+        "ext": "https://raw.githubusercontent.com/fangkuia/XPTV/refs/heads/main/js/age.js",
+        "ext2": "https://gist.githubusercontent.com/occupy-pluto/e3a7bb98d5027d0f6dfa85fc2ac11a78/raw/agedm.js"
+      },
+      {
+        "name": "4k-av",
+        "type": 3,
+        "api": "csp_4kav",
+        "ext": "https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/4kav.js"
+      },
+      {
+        "name": "韓劇看看",
+        "type": 3,
+        "api": "csp_hjkk",
+        "ext": "https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/hjkk.js"
+      },
+      {
+        "name": "金牌影院",
+        "type": 3,
+        "api": "csp_jpyy",
+        "ext": "https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/jpyy.js"
+      },
+      {
+        "name": "燒火電影",
+        "type": 3,
+        "api": "csp_saohuo",
+        "ext": "https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/saohuo.js"
+      },
+      {
+        "name": "素白白影視",
+        "type": 3,
+        "api": "csp_subaibai",
+        "ext": "https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/subaibai.js"
+      },
+      {
+        "name": "NO視頻",
+        "type": 3,
+        "api": "csp_novipnoad",
+        "ext": "https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/novipnoad.js"
+      },
+      {
+        "name": "星芽短劇",
+        "type": 3,
+        "api": "csp_xingya",
+        "ext": "https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/xingya.js"
+      },
+      {
+        "name": "瓜子",
+        "type": 3,
+        "api": "csp_guazi",
+        "ext": "https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/gzys.js"
+      },
+      {
+        "name": "anfuns",
+        "type": 3,
+        "api": "csp_anfuns",
+        "ext": "https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/anfuns.js"
+      },
+      {
+        "name": "愛壹帆",
+        "type": 3,
+        "api": "csp_iyftv",
+        "ext": "https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/iyftv.js"
+      },
+      {
+        "name": "天天影視",
+        "type": 3,
+        "api": "csp_tiantian",
+        "ext": "https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/tiantian.js"
+      },
+      {
+        "name": "追光影视",
+        "type": 3,
+        "api": "csp_sgsd",
+        "ext": "https://raw.githubusercontent.com/fangkuia/XPTV/refs/heads/main/js/sgsd.js"
+      },
+      {
+        "name": "影视天堂",
+        "type": 3,
+        "api": "csp_ystt",
+        "ext": "https://raw.githubusercontent.com/fangkuia/XPTV/refs/heads/main/js/ystt.js"
+      },
+      {
+        "name": "hdmoli",
+        "type": 3,
+        "api": "csp_hdmoli",
+        "ext": "https://raw.githubusercontent.com/Yswag/xptv-extensions/refs/heads/main/js/hdmoli.js"
+      },
+      {
+        "name": "小蘋果",
+        "type": 3,
+        "api": "csp_apple",
+        "ext": "https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/apple.js"
+      },
+      {
+        "name": "老地方",
+        "type": 3,
+        "api": "csp_laodifang",
+        "ext": "https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/laodifang.js"
+      },
+      {
+        "name": "嗷嗚動漫",
+        "type": 3,
+        "api": "csp_aowu",
+        "ext": "https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/aowu.js"
+      },
+      {
+        "name": "小紅影視",
+        "type": 3,
+        "api": "csp_xiaohys",
+        "ext": "https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/xiaohys.js"
+      },
+      {
+        "name": "絕對影視",
+        "type": 3,
+        "api": "csp_jdys",
+        "ext": "https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/jdys.js"
+      }
+    ]
+  }
+  
