@@ -3,174 +3,6 @@
   "logo": "https://p3-pc.douyinpic.com/img/aweme-avatar/tos-cn-i-0813_6e2553f5708c414386eeca88b5f2674a~c5_300x300.jpeg?from=2956013662",
   "wallpaper": "https://tv.nxog.top/m//t/",
   "sites": [
-    {
-      "key": "csp_臭蛋蛋影视",
-      "name": "🥇｜臭蛋｜高清◎秒播(4/16修復)",
-      "type": 3,
-      "api": "csp_XBPQ",
-      "jar": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/jar1/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "url": "https://jx.2s0.cn/player/?url=",
-      "ext": 
-           {
-           "线路数组": "data-dropdown-value=\"&&</div>[排序:高清②>普通T1>高清④>高清①>高清③]",
-           "线路标题": "span>&&</span",
-           "分类url": "https://cddys1.me/vodshow/{cateId}-{area}-{by}------{catePg}---{year}.html",                     
-           "分类": "電影$1#電視劇$2#綜藝$3#動漫$4",
-           "地区": "大陆&香港&台湾&美国&法国&英国&日本&韩国||大陆&韩国&香港&台湾&日本&美国&泰国&英国||大陆&港台&日韩&欧美||大陆&日本&欧美&其他"
-           }
-    },
-    {
-      "key": "csp_XBPQ_淘剧",
-      "name": "🎥｜淘剧｜無法修",
-      "type": 3,
-      "api": "csp_XBPQ",
-      "jar": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/jar1/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": {
-        "分类url": "http://www.taoju.tv/list/{cateId}.html",
-        "分类"   : "电影$1#连续剧$2#动漫$3#综艺$4"
-      }
-    },
-		{
-			"key": "hipy_js_播客[听]",
-			"name": "播客[听](drpy_t3)",
-			"type": 3,
-			"api": "./drpy_libs/drpy2.min.js",
-			"searchable": 1,
-			"quickSearch": 1,
-			"filterable": 1,
-			"order_num": 0,
-			"ext": "./drpy_js/播客[听].js"
-		},
-		{
-			"key": "hipy_js_广播迷FM[听]",
-			"name": "广播迷FM[听](drpy_t3)",
-			"type": 3,
-			"api": "./drpy_libs/drpy2.min.js",
-			"searchable": 1,
-			"quickSearch": 1,
-			"filterable": 1,
-			"order_num": 0,
-			"ext": "./drpy_js/广播迷FM[听].js"
-		},
-    {
-			"key": "hipy_js_好趣网[播]",
-			"name": "好趣网[播](drpy_t3)",
-			"type": 3,
-			"api": "./drpy_libs/drpy2.min.js",
-			"searchable": 1,
-			"quickSearch": 1,
-			"filterable": 1,
-			"order_num": 0,
-			"ext": "./drpy_js/好趣网[播].js"
-		},
-		{
-			"key": "hipy_js_喜马拉雅[听]",
-			"name": "喜马拉雅[听](drpy_t3)",
-			"type": 3,
-			"api": "./drpy_libs/drpy2.min.js",
-			"searchable": 1,
-			"quickSearch": 1,
-			"filterable": 1,
-			"order_num": 0,
-			"ext": "./drpy_js/喜马拉雅[听].js"
-		},
-		{
-			"key": "hipy_js_有声小说吧[听]",
-			"name": "有声小说吧[听](drpy_t3)",
-			"type": 3,
-			"api": "./drpy_libs/drpy2.min.js",
-			"searchable": 1,
-			"quickSearch": 1,
-			"filterable": 1,
-			"order_num": 0,
-			"ext": "./drpy_js/有声小说吧[听].js"
-		},
-		{
-			"key": "hipy_js_中华听书网[听]",
-			"name": "中华听书网[听](drpy_t3)",
-			"type": 3,
-			"api": "./drpy_libs/drpy2.min.js",
-			"searchable": 1,
-			"quickSearch": 1,
-			"filterable": 1,
-			"order_num": 0,
-			"ext": "./drpy_js/中华听书网[听].js"
-		},
-		{
-			"key": "hipy_js_i275听书[听]",
-			"name": "i275听书[听](drpy_t3)",
-			"type": 3,
-			"api": "./drpy_libs/drpy2.min.js",
-			"searchable": 1,
-			"quickSearch": 1,
-			"filterable": 1,
-			"order_num": 0,
-			"ext": "./drpy_js/i275听书[听].js"
-		},
-		{
-			"key": "hipy_js_老白故事[听]",
-			"name": "老白故事[听](drpy_t3)",
-			"type": 3,
-			"api": "./drpy_libs/drpy2.min.js",
-			"searchable": 1,
-			"quickSearch": 1,
-			"filterable": 1,
-			"order_num": 0,
-			"ext": "./drpy_js/老白故事[听].js"
-		},
-		{
-			"key": "hipy_js_酷我听书[听]",
-			"name": "酷我听书[听](drpy_t3)",
-			"type": 3,
-			"api": "./drpy_libs/drpy2.min.js",
-			"searchable": 1,
-			"quickSearch": 1,
-			"filterable": 1,
-			"order_num": 0,
-			"ext": "./drpy_js/酷我听书[听].js"
-		},
-		{
-			"key": "hipy_js_爱上你听书网[听]",
-			"name": "爱上你听书网[听](drpy_t3)",
-			"type": 3,
-			"api": "./drpy_libs/drpy2.min.js",
-			"searchable": 1,
-			"quickSearch": 1,
-			"filterable": 1,
-			"order_num": 0,
-			"ext": "./drpy_js/爱上你听书网[听].js"
-		},
-		{
-			"key": "hipy_js_222听书[听]",
-			"name": "222听书[听](drpy_t3)",
-			"type": 3,
-			"api": "./drpy_libs/drpy2.min.js",
-			"searchable": 1,
-			"quickSearch": 1,
-			"filterable": 1,
-			"order_num": 0,
-			"ext": "./drpy_js/222听书[听].js"
-		},
-    {
-      "key": "py_素白白.py",
-      "name": "🥉｜素白｜高清◎順播(無廣告)",
-      "type": 3,
-      "api": "./py/素白白.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1
-    },
-
-
-
-
-
 
 
 
@@ -349,7 +181,16 @@
          "User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
          "Referer":"test"
       }
-   },
+    },
+    {
+      "key": "py_素白白.py",
+      "name": "🏆｜素白｜高清◎順播(無廣告)",
+      "type": 3,
+      "api": "./py/素白白.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
     {
       "key": "drpy_js_360影视",
       "name": "🎖︎｜360｜官源",
@@ -1808,6 +1649,25 @@
       }
     },
     {
+      "key": "csp_臭蛋蛋影视",
+      "name": "🥇｜臭蛋｜高清◎秒播(4/16修復)",
+      "type": 3,
+      "api": "csp_XBPQ",
+      "jar": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/jar1/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "url": "https://jx.2s0.cn/player/?url=",
+      "ext": 
+           {
+           "线路数组": "data-dropdown-value=\"&&</div>[排序:高清②>普通T1>高清④>高清①>高清③]",
+           "线路标题": "span>&&</span",
+           "分类url": "https://cddys1.me/vodshow/{cateId}-{area}-{by}------{catePg}---{year}.html",                     
+           "分类": "電影$1#電視劇$2#綜藝$3#動漫$4",
+           "地区": "大陆&香港&台湾&美国&法国&英国&日本&韩国||大陆&韩国&香港&台湾&日本&美国&泰国&英国||大陆&港台&日韩&欧美||大陆&日本&欧美&其他"
+           }
+    },
+    {
       "key": "py_xiaohys",
       "name": "🥇｜小紅｜藍光◎秒播(無廣告)",
       "type": 3,
@@ -1818,7 +1678,7 @@
     }, 
     {
       "key": "T4-heimuer",
-      "name": "🥇｜唐黑｜高清◎秒播(？廣告？)",
+      "name": "🥇｜唐黑｜高清◎秒播(無廣告)",
       "type": 4,
       "api": "https://tang.hz.cz/power/hme?token=155d14a3",
       "searchable": 1,
@@ -1826,6 +1686,20 @@
       "filterable": 1,
       "changeable": 0,
       "ext": true
+    },
+    {
+      "key": "csp_XBPQ_淘剧",
+      "name": "🥇｜淘剧｜高清◎秒播(無廣告+無篩選)",
+      "type": 3,
+      "api": "csp_XBPQ",
+      "jar": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/jar1/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": {
+        "分类url": "http://www.taoju.tv/list/{cateId}.html",
+        "分类"   : "电影$1#连续剧$2#动漫$3#综艺$4"
+      }
     },
     {
       "key": "圣农极光",
@@ -5030,6 +4904,39 @@
       "searchable": 1,
       "changeable": 0,
       "ext": "https://m.365ting.com#公众号#影视资源站"
+  },
+  {
+    "key": "hipy_js_中华听书网[听]",
+    "name": "㊙︎｜中華聽書",
+    "type": 3,
+    "api": "./drpy_libs/drpy2.min.js",
+    "searchable": 1,
+    "quickSearch": 1,
+    "filterable": 1,
+    "order_num": 0,
+    "ext": "./drpy_js/中华听书网[听].js"
+  },
+  {
+    "key": "hipy_js_i275听书[听]",
+    "name": "㊙︎｜愛聽書",
+    "type": 3,
+    "api": "./drpy_libs/drpy2.min.js",
+    "searchable": 1,
+    "quickSearch": 1,
+    "filterable": 1,
+    "order_num": 0,
+    "ext": "./drpy_js/i275听书[听].js"
+  },
+  {
+    "key": "hipy_js_爱上你听书网[听]",
+    "name": "墨白大屁股",
+    "type": 3,
+    "api": "./drpy_libs/drpy2.min.js",
+    "searchable": 1,
+    "quickSearch": 1,
+    "filterable": 1,
+    "order_num": 0,
+    "ext": "./drpy_js/爱上你听书网[听].js"
   }
   ],
   "lives": [
