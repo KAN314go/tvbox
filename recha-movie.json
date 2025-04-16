@@ -12,7 +12,16 @@
       "searchable": 1,
       "changeable": 1
     },
-
+    {
+      "key": "py_零度影视APP",
+      "name": "🏆｜零度｜高清◎秒播(無廣告)",
+      "type": 3,
+      "api": "./py/py_零度影视APP.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    }, 
+    
 
     {
       "key": "豆瓣",
