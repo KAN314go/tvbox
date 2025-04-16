@@ -4,24 +4,7 @@
   "wallpaper": "https://tv.nxog.top/m//t/",
   "sites": [
 
-    {
-      "key": "賤賤",
-      "name": "🏆｜薦片｜",
-      "type": 3,
-      "api": "csp_WexJianpianGuard",
-      "jar": "./jar/wex.txt;md5;6237e73e89cd1cc8ed815ad7712c6b65",
-      "searchable": 1,
-      "changeable": 1
-    },
-    {
-      "key": "py_零度影视APP",
-      "name": "🏆｜零度｜高清◎秒播(無廣告)",
-      "type": 3,
-      "api": "./py/py_零度影视APP.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1
-    }, 
+
     
 
     {
@@ -183,30 +166,6 @@
       "jar": "./jar/custom_spider.jar;md5;5e53c8f9ddd4ede5359c16bee091db93",
       "playerType":2,
       "filterable":1
-   },
-   {
-      "key":"huarenoktv",
-      "name":"🏆｜华人OK｜藍光◎秒播(無廣告)",
-      "type":1,
-      "api":"https://huaren.live/api.php/tvbox",
-      "playUrl":"json:https://parse.okhuaren.com/?url=",
-      "jar": "./jar/custom_spider.jar;md5;5e53c8f9ddd4ede5359c16bee091db93",
-      "searchable":1,
-      "quickSearch":1,
-      "filterable":1,
-      "header":{
-         "User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
-         "Referer":"test"
-      }
-    },
-    {
-      "key": "py_素白白.py",
-      "name": "🏆｜素白｜高清◎順播(無廣告)",
-      "type": 3,
-      "api": "./py/素白白.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1
     },
     {
       "key": "drpy_js_360影视",
@@ -400,6 +359,39 @@
       },
       "timeout": 20
     },
+    {
+      "key": "py_零度影视APP",
+      "name": "🏆｜零度｜高清◎秒播(無廣告)",
+      "type": 3,
+      "api": "./py/py_零度影视APP.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    }, 
+     {
+        "key":"huarenoktv",
+        "name":"🏆｜华人OK｜藍光◎秒播(無廣告)",
+        "type":1,
+        "api":"https://huaren.live/api.php/tvbox",
+        "playUrl":"json:https://parse.okhuaren.com/?url=",
+        "jar": "./jar/custom_spider.jar;md5;5e53c8f9ddd4ede5359c16bee091db93",
+        "searchable":1,
+        "quickSearch":1,
+        "filterable":1,
+        "header":{
+           "User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+           "Referer":"test"
+        }
+      },
+      {
+        "key": "py_素白白.py",
+        "name": "🏆｜素白｜高清◎順播(無廣告)",
+        "type": 3,
+        "api": "./py/素白白.py",
+        "searchable": 1,
+        "quickSearch": 1,
+        "filterable": 1
+      },
     {
       "key": "文才影视",
       "name": "🥇｜文才｜高清◎秒播(無廣告)",
