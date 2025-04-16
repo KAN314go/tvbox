@@ -1,4 +1,7 @@
-{"sites":[{"key":"黑木影视","name":"🏆｜黑木耳｜","type":1,"api":"https://heimuer.ggff.net/api.php/tvbox","jar":"./jar/custom_spider.jar;md5;5e53c8f9ddd4ede5359c16bee091db93","filterable":0},
+{
+    "sites":[
+
+{"key":"黑木影视","name":"🏆｜黑木耳｜","type":1,"api":"https://heimuer.ggff.net/api.php/tvbox","jar":"./jar/custom_spider.jar;md5;5e53c8f9ddd4ede5359c16bee091db93","filterable":0},
 {"key":"huarenoktv","name":"🏆｜华人OK｜","type":1,"api":"https://huaren.live/api.php/tvbox","playUrl":"json:https://parse.okhuaren.com/?url=","jar":"./jar/custom_spider.jar;md5;5e53c8f9ddd4ede5359c16bee091db93","header":{"User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36","Referer":"test"}},
 {"key":"csp_moxmi","name":"🥇｜樂美｜","type":1,"api":"http://mi.moxmi.top:81/api.php/provide/vod/?ac=list","playUrl":"json:http://iid.moxmi.top:81/gg.php?url=","jar":"https://raw.githubusercontent.com/cpu170/bf/0b1b3e305fd4ac2e206d3589cd1ca3e70cf7b28e/n/g/jars/林中的小屋.jar","categories":["电影","剧集","综艺","动漫","短剧"]},
 {"name":"小紅影視","type":3,"api":"csp_xiaohys","ext":"https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/xiaohys.js"},
