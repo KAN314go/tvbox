@@ -3,7 +3,39 @@
   "logo": "https://p3-pc.douyinpic.com/img/aweme-avatar/tos-cn-i-0813_6e2553f5708c414386eeca88b5f2674a~c5_300x300.jpeg?from=2956013662",
   "wallpaper": "https://tv.nxog.top/m//t/",
   "sites": [
-
+    {
+      "key": "csp_臭蛋蛋影视",
+      "name": "🥇｜臭蛋｜高清◎秒播(4/16修復)",
+      "type": 3,
+      "api": "csp_XBPQ",
+      "jar": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/jar1/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "url": "https://jx.2s0.cn/player/?url=",
+      "ext": 
+           {
+           "线路数组": "data-dropdown-value=\"&&</div>[排序:高清②>普通T1>高清④>高清①>高清③]",
+           "线路标题": "span>&&</span",
+           "分类url": "https://cddys1.me/vodshow/{cateId}-{area}-{by}------{catePg}---{year}.html",                     
+           "分类": "電影$1#電視劇$2#綜藝$3#動漫$4",
+           "地区": "大陆&香港&台湾&美国&法国&英国&日本&韩国||大陆&韩国&香港&台湾&日本&美国&泰国&英国||大陆&港台&日韩&欧美||大陆&日本&欧美&其他"
+           }
+    },
+    {
+      "key": "csp_XBPQ_淘剧",
+      "name": "🎥｜淘剧｜無法修",
+      "type": 3,
+      "api": "csp_XBPQ",
+      "jar": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/jar1/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": {
+        "分类url": "http://www.taoju.tv/list/{cateId}.html",
+        "分类"   : "电影$1#连续剧$2#动漫$3#综艺$4"
+      }
+    },
 		{
 			"key": "hipy_js_播客[听]",
 			"name": "播客[听](drpy_t3)",
