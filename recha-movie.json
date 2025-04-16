@@ -4809,6 +4809,17 @@
       "jar": "./jar/panda1123.jar;md5;d9004aa2e16f60b04baed361713fb710"
     },
     {
+      "key": "hipy_js_爱上你听书网[听]",
+      "name": "㊙︎｜純粹聽書",
+      "type": 3,
+      "api": "./drpy_libs/drpy2.min.js",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "order_num": 0,
+      "ext": "./drpy_js/爱上你听书网[听].js"
+    },
+    {
       "key": "csp_LaoBaiBook_FM",
       "name": "㊙︎｜老白聽書｜",
       "type": 3,
@@ -4926,17 +4937,6 @@
     "filterable": 1,
     "order_num": 0,
     "ext": "./drpy_js/i275听书[听].js"
-  },
-  {
-    "key": "hipy_js_爱上你听书网[听]",
-    "name": "墨白大屁股",
-    "type": 3,
-    "api": "./drpy_libs/drpy2.min.js",
-    "searchable": 1,
-    "quickSearch": 1,
-    "filterable": 1,
-    "order_num": 0,
-    "ext": "./drpy_js/爱上你听书网[听].js"
   }
   ],
   "lives": [
