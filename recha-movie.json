@@ -4,7 +4,144 @@
   "wallpaper": "https://tv.nxog.top/m//t/",
   "sites": [
 
- 
+		{
+			"key": "hipy_js_播客[听]",
+			"name": "播客[听](drpy_t3)",
+			"type": 3,
+			"api": "./drpy_libs/drpy2.min.js",
+			"searchable": 1,
+			"quickSearch": 1,
+			"filterable": 1,
+			"order_num": 0,
+			"ext": "./drpy_js/播客[听].js"
+		},
+		{
+			"key": "hipy_js_广播迷FM[听]",
+			"name": "广播迷FM[听](drpy_t3)",
+			"type": 3,
+			"api": "./drpy_libs/drpy2.min.js",
+			"searchable": 1,
+			"quickSearch": 1,
+			"filterable": 1,
+			"order_num": 0,
+			"ext": "./drpy_js/广播迷FM[听].js"
+		},
+    {
+			"key": "hipy_js_好趣网[播]",
+			"name": "好趣网[播](drpy_t3)",
+			"type": 3,
+			"api": "./drpy_libs/drpy2.min.js",
+			"searchable": 1,
+			"quickSearch": 1,
+			"filterable": 1,
+			"order_num": 0,
+			"ext": "./drpy_js/好趣网[播].js"
+		},
+		{
+			"key": "hipy_js_喜马拉雅[听]",
+			"name": "喜马拉雅[听](drpy_t3)",
+			"type": 3,
+			"api": "./drpy_libs/drpy2.min.js",
+			"searchable": 1,
+			"quickSearch": 1,
+			"filterable": 1,
+			"order_num": 0,
+			"ext": "./drpy_js/喜马拉雅[听].js"
+		},
+		{
+			"key": "hipy_js_有声小说吧[听]",
+			"name": "有声小说吧[听](drpy_t3)",
+			"type": 3,
+			"api": "./drpy_libs/drpy2.min.js",
+			"searchable": 1,
+			"quickSearch": 1,
+			"filterable": 1,
+			"order_num": 0,
+			"ext": "./drpy_js/有声小说吧[听].js"
+		},
+		{
+			"key": "hipy_js_中华听书网[听]",
+			"name": "中华听书网[听](drpy_t3)",
+			"type": 3,
+			"api": "./drpy_libs/drpy2.min.js",
+			"searchable": 1,
+			"quickSearch": 1,
+			"filterable": 1,
+			"order_num": 0,
+			"ext": "./drpy_js/中华听书网[听].js"
+		},
+		{
+			"key": "hipy_js_i275听书[听]",
+			"name": "i275听书[听](drpy_t3)",
+			"type": 3,
+			"api": "./drpy_libs/drpy2.min.js",
+			"searchable": 1,
+			"quickSearch": 1,
+			"filterable": 1,
+			"order_num": 0,
+			"ext": "./drpy_js/i275听书[听].js"
+		},
+		{
+			"key": "hipy_js_老白故事[听]",
+			"name": "老白故事[听](drpy_t3)",
+			"type": 3,
+			"api": "./drpy_libs/drpy2.min.js",
+			"searchable": 1,
+			"quickSearch": 1,
+			"filterable": 1,
+			"order_num": 0,
+			"ext": "./drpy_js/老白故事[听].js"
+		},
+		{
+			"key": "hipy_js_酷我听书[听]",
+			"name": "酷我听书[听](drpy_t3)",
+			"type": 3,
+			"api": "./drpy_libs/drpy2.min.js",
+			"searchable": 1,
+			"quickSearch": 1,
+			"filterable": 1,
+			"order_num": 0,
+			"ext": "./drpy_js/酷我听书[听].js"
+		},
+		{
+			"key": "hipy_js_爱上你听书网[听]",
+			"name": "爱上你听书网[听](drpy_t3)",
+			"type": 3,
+			"api": "./drpy_libs/drpy2.min.js",
+			"searchable": 1,
+			"quickSearch": 1,
+			"filterable": 1,
+			"order_num": 0,
+			"ext": "./drpy_js/爱上你听书网[听].js"
+		},
+		{
+			"key": "hipy_js_222听书[听]",
+			"name": "222听书[听](drpy_t3)",
+			"type": 3,
+			"api": "./drpy_libs/drpy2.min.js",
+			"searchable": 1,
+			"quickSearch": 1,
+			"filterable": 1,
+			"order_num": 0,
+			"ext": "./drpy_js/222听书[听].js"
+		},
+    {
+      "key": "py_素白白.py",
+      "name": "🥉｜素白｜高清◎順播(無廣告)",
+      "type": 3,
+      "api": "./py/素白白.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+
+
+
+
+
+
+
+
 
     {
       "key": "豆瓣",

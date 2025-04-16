@@ -5,7 +5,22 @@
     "logo": "https://p3-pc.douyinpic.com/img/aweme-avatar/tos-cn-i-0813_6e2553f5708c414386eeca88b5f2674a~c5_300x300.jpeg?from=2956013662",
     "wallpaper": "https://picsum.photos/1080/",
     "sites": [ 
-      {
+
+
+
+
+    {
+      "key": "人人",
+      "name": "🥇｜人人｜APP(無法修)",
+      "type": 3,
+      "api": "csp_Xdai",
+      "jar":"https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/jar1/spider.jar;md5;b836384ede14d319c1dcbf257a264eda",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "caHR0cHM6Ly9qaWVrb3UtMTMxNDA1NDY5OS5jb3MuYXAtY2hvbmdxaW5nLm15cWNsb3VkLmNvbS9qaWVrb3UudHh0fEY1MUY1RDUyRDIzQ0JGMjd8RjUxRjVENTJEMjNDQkYyN3wxOTE="
+    },
+    {
         "key": "net_emby",
         "name": "🇹🇼｜net_emby",
         "type": 3,
@@ -25,45 +40,7 @@
         "filterable": 0,
         "changeable": 0
       },
-    {
-        "key": "T4-欧乐",
-        "name": "🥇｜歐唐｜高清◎秒播(無廣告+唐三網站被查封)",
-        "type": 4,
-        "api": "https://tang.hz.cz/power/olelive?token=647c28ca",
-        "searchable": 1,
-        "quickSearch": 1,
-        "filterable": 1,
-        "changeable": 1
-      },
-      {
-        "key": "T4-独播库",
-        "name": "🥇｜獨播｜藍光◎秒播(無廣告+唐三網站被查封)",
-        "type": 4,
-        "api": "https://tang.hz.cz/power/duboku?token=647c28ca",
-        "searchable": 1,
-        "quickSearch": 1,
-        "filterable": 1,
-        "changeable": 1
-      },
-      {
-        "key": "T4-安博",
-        "name": "🥇｜安博｜高清◎秒播(無廣告)",
-        "type": 4,
-        "api": "https://tang.hz.cz/power/ub18?token=647c28ca",
-        "searchable": 1,
-        "quickSearch": 1,
-        "filterable": 1,
-        "changeable": 1
-      },
-    {
-        "key": "py_素白白.py",
-        "name": "🥉｜素白｜高清◎順播(無廣告)",
-        "type": 3,
-        "api": "./py/素白白.py",
-        "searchable": 1,
-        "quickSearch": 1,
-        "filterable": 1
-      },
+
     {
         "key": "csp_麥田影院",
         "name": "🥇｜麥田(網站死)｜高清◎秒播(無廣告)",
@@ -1164,7 +1141,7 @@
         "分类": "電影&連續劇&綜藝&動畫",
         "分类值": "mo-1zxgt/5738/1&mo-1zxgt/5749/1&mo-1zxgt/5758/1&mo-1zxgt/5767/1"
       }
-    }
+    },
     {
       "key": "LKDB",
       "name": "来看(網站死)",
@@ -1312,17 +1289,6 @@
         "quickSearch": 1,
         "filterable": 1,
         "ext": "http://www.ppxys.vip/api.php/app/"
-      },
-      {
-        "key": "人人",
-        "name": "🥇｜人人｜APP(無法修)",
-        "type": 3,
-        "api": "csp_Xdai",
-        "jar":"https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/jar1/spider.jar;md5;b836384ede14d319c1dcbf257a264eda",
-        "searchable": 1,
-        "quickSearch": 1,
-        "filterable": 1,
-        "ext": "caHR0cHM6Ly9qaWVrb3UtMTMxNDA1NDY5OS5jb3MuYXAtY2hvbmdxaW5nLm15cWNsb3VkLmNvbS9qaWVrb3UudHh0fEY1MUY1RDUyRDIzQ0JGMjd8RjUxRjVENTJEMjNDQkYyN3wxOTE="
       },
     {
       "key": "无忧短剧",
