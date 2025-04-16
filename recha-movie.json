@@ -4,7 +4,14 @@
   "wallpaper": "https://tv.nxog.top/m//t/",
   "sites": [
 
-
+    {
+      "key": "賤賤",
+      "name": "🏆｜薦片｜",
+      "type": 3,
+      "api": "csp_WexJianpianGuard",
+      "searchable": 1,
+      "changeable": 1
+    },
 
 
     {
