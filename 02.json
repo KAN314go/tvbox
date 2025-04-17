@@ -13,7 +13,7 @@
       "quickSearch": 1,
       "filterable": 1,
       "api": "csp_XBPQ",
-      "jar": "./jar/XBPQ.jar",
+      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
       "ext": {
       "数组": "<a&&</a>",
       "链接": "href=\"&&\"",
