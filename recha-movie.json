@@ -136,17 +136,6 @@
       "changeable": 0
     },
     {
-      "key":"T4-heimuer",
-      "name":"🏆｜黑木耳｜藍光◎秒播(無廣告+唐三)",
-      "type":4,
-      "api":"https://tang.hz.cz/power/hme?token=1ba1d034",
-      "searchable":1,
-      "quickSearch":1,
-      "filterable":1,
-      "changeable":0,
-      "ext":true
-    },
-    {
       "key":"黑木影视",
       "name":"🏆｜黑木耳｜藍光◎秒播(無廣告+採集)",
       "type":1,
@@ -661,7 +650,7 @@
       "key": "T4-heimuer",
       "name": "🥇｜唐黑｜高清◎秒播(無廣告)",
       "type": 4,
-      "api": "https://tang.hz.cz/power/hme?token=1ba1d034",
+      "api": "https://tang.hz.cz/power/hme?token=96ae29c6",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
@@ -784,7 +773,7 @@
       "key": "T4-欧乐",
       "name": "️🥇｜歐唐｜高清◎秒播(無廣告)",
       "type": 4,
-      "api": "https://tang.hz.cz/power/olelive?token=1ba1d034",
+      "api": "https://tang.hz.cz/power/olelive?token=96ae29c6",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
