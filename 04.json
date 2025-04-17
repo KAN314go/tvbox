@@ -15,7 +15,7 @@
       "api": "csp_XBPQ",
       "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
       "ext": {
-      "数组": "class=\"swiper-slide swiper-slide-duplicate\"&&</li>",
+      "数组": "class=\"swiper-slide\"&&</li>",
       "链接": "href=\"&&\"",
       "标题": "title=\"&&\"",
       "图片": "data-original=\"&&\"",
