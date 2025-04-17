@@ -126,6 +126,27 @@
       "changeable": 1
     },
     {
+      "key": "T4-独播库",
+      "name": "🏆｜獨播｜藍光◎秒播(無廣告)",
+      "type": 4,
+      "api": "https://tang.hz.cz/power/duboku?token=1ba1d034",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "changeable": 0
+    },
+    {
+      "key":"T4-heimuer",
+      "name":"🏆｜黑木耳｜藍光◎秒播(無廣告+唐三)",
+      "type":4,
+      "api":"https://tang.hz.cz/power/hme?token=1ba1d034",
+      "searchable":1,
+      "quickSearch":1,
+      "filterable":1,
+      "changeable":0,
+      "ext":true
+    },
+    {
       "key":"黑木影视",
       "name":"🏆｜黑木耳｜藍光◎秒播(無廣告+採集)",
       "type":1,
@@ -627,6 +648,27 @@
       "changeable": 1
     },
     {
+      "key": "T4-安博",
+      "name": "🥇｜安博｜高清◎秒播(無廣告)",
+      "type": 4,
+      "api": "https://tang.hz.cz/power/ub18?token=1ba1d034",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "changeable": 0
+    },
+    {
+      "key": "T4-heimuer",
+      "name": "🥇｜唐黑｜高清◎秒播(無廣告)",
+      "type": 4,
+      "api": "https://tang.hz.cz/power/hme?token=1ba1d034",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "changeable": 0,
+      "ext": true
+    },
+    {
       "key": "糯米弹幕",
       "name": "🥇｜糯米｜高清◎秒播(無廣告)",
       "type": 3,
@@ -712,7 +754,6 @@
       "jar": "./jar/mi-0319.jar;md5;b73ed98a0a285189794be3c8d9c3a335",
       "api": "csp_JpysGuard"
     },
-
     {
       "key": "py_OleVod",
       "name": "🥇｜歐沐｜高清◎秒播(無廣告)",
@@ -738,6 +779,16 @@
         "分类": "電影$1#電視劇$2#綜藝$3#動漫$4",
         "地区": "大陆&香港&台湾&美国&法国&英国&日本&韩国&德国&泰国&印度&意大利&西班牙&加拿大&其他"
       }
+    },
+    {
+      "key": "T4-欧乐",
+      "name": "️🥇｜歐唐｜高清◎秒播(無廣告)",
+      "type": 4,
+      "api": "https://tang.hz.cz/power/olelive?token=1ba1d034",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "changeable": 0
     },
     {
       "key": "py_UpFuHn",

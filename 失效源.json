@@ -7,58 +7,7 @@
     "sites": [ 
 
 
-    {
-      "key": "T4-独播库",
-      "name": "🏆｜獨播｜藍光◎秒播(無廣告)",
-      "type": 4,
-      "api": "https://tang.hz.cz/power/duboku?token=96ae29c6",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "changeable": 0
-    },
-    {
-      "key":"T4-heimuer",
-      "name":"🏆｜黑木耳｜藍光◎秒播(無廣告+唐三)",
-      "type":4,
-      "api":"https://tang.hz.cz/power/hme?token=96ae29c6",
-      "searchable":1,
-      "quickSearch":1,
-      "filterable":1,
-      "changeable":0,
-      "ext":true
-    },
-    {
-      "key": "T4-欧乐",
-      "name": "️🥇｜歐唐｜高清◎秒播(無廣告)",
-      "type": 4,
-      "api": "https://tang.hz.cz/power/olelive?token=96ae29c6",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "changeable": 0
-    },
-    {
-      "key": "T4-安博",
-      "name": "🥇｜安博｜高清◎秒播(無廣告)",
-      "type": 4,
-      "api": "https://tang.hz.cz/power/ub18?token=96ae29c6",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "changeable": 0
-    },
-    {
-      "key": "T4-heimuer",
-      "name": "🥇｜唐黑｜高清◎秒播(無廣告)",
-      "type": 4,
-      "api": "https://tang.hz.cz/power/hme?token=96ae29c6",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "changeable": 0,
-      "ext": true
-    },
+
     {
       "key": "文才影视",
       "name": "🥇｜文才｜高清◎秒播(無廣告)",
