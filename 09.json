@@ -30,7 +30,7 @@
       "搜索图片": "class=\"pic\">*data-original=\"&&\"",
       "搜索链接": "class=\"btn-box\">\"&&\"</",
       "播放数组": "class=\"episode-box scrollbar\">&&</div>",
-      "线路数组": "class=\"swiper-slide ewave-tab\"&&</ul>",
+      "线路数组": "class=\"swiper-slide ewave-tab\"&&</li>",
       "线路标题": ">&&<em>"
      }
     },
