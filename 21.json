@@ -29,8 +29,8 @@
       "搜索": "https://www.7.movie/vodsearch/-------------.html?wd={wd}",
       "搜索图片": "class=\"pic\">*data-original=\"&&\"",
       "搜索链接": "class=\"btn-box\">\"&&\"</",
-      "播放数组": "ewave-playlist-sort-content\"&&</ul>",
-      "线路数组": "swiper-slide ewave-tab\"&&</ul>",
+      "播放数组": "ewave-playlist-sort-content\"&&</li>",
+      "线路数组": "role=\"group\"&&</ul>",
       "线路标题": ">&&<em>"
      }
     },
