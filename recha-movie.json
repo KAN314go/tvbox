@@ -17,11 +17,12 @@
       "api": "csp_XBPQ",
       "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
       "ext": {
-      "数组": "class=\"pic\"&&</li>",
+      "数组":"<li&&</p>",
       "链接": "href=\"&&\"",
       "标题": "title=\"&&\"",
       "图片": "data-original=\"&&\"",
       "副标题": "class=\"item-status text-overflow\">&&<",
+      "二次截取":"<ul class=\"row&&</ul",
       "分类url": "https://www.7.movie/vodshow/{cateId}-{area}-{by}-{class}-----{catePg}---{year}.html",
       "分类": "电影$20#剧集$21#动漫$22#综艺$23#短剧$24",
       "地区": "中国大陆&大陆&香港&台湾&美国&法国&英国&日本&韩国&德国&泰国&印度&其他||中国大陆&大陆&香港&韩国&美国&日本&法国&英国&德国&台湾&泰国&印度&其他||大陆&日本&欧美&其他||大陆&韩国&香港&台湾&美国&其它||空",
@@ -32,8 +33,8 @@
       "搜索图片": "class=\"pic\">*data-original=\"&&\"",
       "搜索链接": "class=\"btn-box\">\"&&\"</",
       "播放数组": "ewave-playlist-sort-content\"&&</ul>",
-      "线路数组": "class=\"swiper-wrapper\"&&</ul>",
-      "线路标题": ">&&<em></em>"
+      "线路数组":"swiper-slide ewave-tab&&</li>",
+      "线路标题":">&&</em>",
      }
     },
     {
