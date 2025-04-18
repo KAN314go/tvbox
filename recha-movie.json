@@ -21,6 +21,7 @@
       "链接": "href=\"&&\"",
       "标题": "title=\"&&\"",
       "图片": "data-original=\"&&\"",
+      "简介": "简介：&&</div>",
       "副标题": "class=\"item-status text-overflow\">&&<",
       "二次截取":"<ul class=\"row&&</ul",
       "分类url": "https://www.7.movie/vodshow/{cateId}-{area}-{by}-{class}-----{catePg}---{year}.html",
