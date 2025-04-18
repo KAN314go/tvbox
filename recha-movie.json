@@ -4962,7 +4962,7 @@
   "lives": [
     {
       "name": "小雲1台",
-      "url": "./live/ueen.txt",
+      "url": "./live/ueen.m3u",
       "playerType": 2,
       "core": {
         "auth": "local://tvbus",
