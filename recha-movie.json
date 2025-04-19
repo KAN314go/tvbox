@@ -196,16 +196,6 @@
       "changeable": 1
     },
     {
-      "key": "T4-独播库",
-      "name": "🏆｜獨播｜藍光◎秒播(無廣告)",
-      "type": 4,
-      "api": "https://tang.hz.cz/power/duboku?token=8ad17bb0",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "changeable": 0
-    },
-    {
       "key":"黑木影视",
       "name":"🏆｜黑木耳｜藍光◎秒播(無廣告+採集)",
       "type":1,
@@ -695,16 +685,6 @@
       "jar": "./jar/wex.txt;md5;6237e73e89cd1cc8ed815ad7712c6b65",
       "searchable": 0,
       "changeable": 1
-    },
-    {
-      "key": "T4-安博",
-      "name": "🥇｜安博｜高清◎秒播(無廣告)",
-      "type": 4,
-      "api": "https://tang.hz.cz/power/ub18?token=8ad17bb0",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "changeable": 0
     },
     {
       "key": "糯米弹幕",
