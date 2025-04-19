@@ -176,20 +176,15 @@
         "timeout": 10
     },
     {
-      "key": "csp_歐樂影院ORG",
-      "name": "🏆｜鐵牌｜高清◎秒播(無廣告)",
-      "type": 3,
-      "api": "csp_XBPQ",
-      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": {
-        "简介": "content_desc context clearfix\">&&</span>",
-        "分类url": "https://www.oulevod.org/index.php/vod/show/area/{area}/by/{by}/id/{cateId}/page/{catePg}/year/{year}.html",
-        "分类": "電視劇$2#電影$1#動漫$4#綜藝$3#短劇$53",
-        "地区": "大陆&香港&台湾&美国&法国&英国&日本&韩国&德国&泰国&印度&意大利&西班牙&加拿大&其他"
-      }
+      "key":"Qile优视频",
+      "name":"🏆｜鐵牌｜藍光◎秒播(無廣告)",
+      "type":3,
+      "searchable":1,
+      "changeable":1,
+      "api":"csp_Uvod",
+      "jar": "./jar/custom_spider.jar;md5;5e53c8f9ddd4ede5359c16bee091db93",
+      "playerType":2,
+      "filterable":1
     },
     {
       "key": "Wexduboku",
@@ -220,17 +215,7 @@
       "quickSearch":1,
       "filterable":0
    },
-    {
-      "key":"Qile优视频",
-      "name":"🏆｜优视频｜藍光◎秒播(無廣告)",
-      "type":3,
-      "searchable":1,
-      "changeable":1,
-      "api":"csp_Uvod",
-      "jar": "./jar/custom_spider.jar;md5;5e53c8f9ddd4ede5359c16bee091db93",
-      "playerType":2,
-      "filterable":1
-    },
+
     {
       "key": "drpy_js_360影视",
       "name": "🎖︎｜360｜官源",
@@ -853,6 +838,23 @@
       "quickSearch": 1,
       "filterable": 1,
       "changeable": 0
+    },
+    
+    {
+      "key": "csp_歐樂影院ORG",
+      "name": "🏆｜歐吉｜高清◎秒播(無廣告)",
+      "type": 3,
+      "api": "csp_XBPQ",
+      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": {
+        "简介": "content_desc context clearfix\">&&</span>",
+        "分类url": "https://www.oulevod.org/index.php/vod/show/area/{area}/by/{by}/id/{cateId}/page/{catePg}/year/{year}.html",
+        "分类": "電視劇$2#電影$1#動漫$4#綜藝$3#短劇$53",
+        "地区": "大陆&香港&台湾&美国&法国&英国&日本&韩国&德国&泰国&印度&意大利&西班牙&加拿大&其他"
+      }
     },
     {
       "key": "py_UpFuHn",
