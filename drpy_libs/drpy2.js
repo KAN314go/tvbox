@@ -24,6 +24,35 @@ cheerio.jinja2 = function (template, obj) {
 // import 模板 from"https://ghproxy.net/https://raw.githubusercontent.com/hjdhnx/dr_py/main/js/模板.js";
 // import {gbkTool} from 'https://ghproxy.net/https://raw.githubusercontent.com/hjdhnx/dr_py/main/libs/gbk.js'
 
+let vercode = typeof (pdfl) === 'function' ? 'drpy2.1' : 'drpy2';
+const VERSION = vercode + ' 3.9.51beta6 20241126';
+const UpdateInfo = [
+    {
+        date: '20241126',
+        title: 'drpy更新，优化去广告算法',
+        version: '3.9.51beta6 20241126',
+        msg: `
+ 1. 更新龙头大佬提供的去广告算法  
+       `
+    },
+    {
+        date: '20241104',
+        title: 'drpy更新，增加新特性',
+        version: '3.9.51beta5 20241104',
+        msg: `
+ 1. rule增加 搜索验证标识 属性,可以不定义，默认为 '系统安全验证|请输入验证码' 
+ 2. rule增加 searchNoPage 属性，可以不定义，如果定义 1 将关闭该源的搜索翻页功能，超过1页直接返回空     
+       `
+    },
+];
+
+function getUpdateInfo() {
+    return UpdateInfo.map((_o) => {
+        _o.msg = _o.msg.trim().split('\n').map(_it => _it.trim()).join('\n')
+        return _o
+    })
+}
+
 function init_test() {
     // console.log(typeof(JSON5));
     // let a = `{'SHOW':'10','UK':'43a7dc59-e87b-449e-8b74-ba40db28e674','albumlist':[{'DC_TARGETID':'30965086','DC_TARGETTYPE':'','PAY':'0','PLAYCNT':'17294','aartist':'','ad_subtype':'102,103,501,101,301','ad_type':'1,3,5','albumid':'30965086','artist':'小白不做凤尾','artistid':'10442011','artistpic':'http://img4.kuwo.cn/star/starheads/120/92/53/247071944.jpg','color':'[#FFE2F2C6,#FF85A476]','company':'独立发行','content_type':'0','falbum':'','fartist':'小白不做凤尾','finished':'0','hts_img':'https://img2.kuwo.cn/star/albumcover/240/51/40/547190780.jpg','id':'30965086','img':'http://img2.sycdn.kuwo.cn/star/albumcover/240/51/40/547190780.jpg','info':'来听听','isstar':'1','lang':'','musiccnt':'37','name':'我的','new':'0','payvalue':'0','pic':'120/51/40/547190780.jpg','pub':'2022-08-28','score':'0','showtime':'','spPrivilege':'0','startype':'有声小说','timing_online':'0000-00-00&nbsp;00:00:00','title':'','vip':'0'},{'DC_TARGETID':'28041980','DC_TARGETTYPE':'','PAY':'0','PLAYCNT':'0','aartist':'','ad_subtype':'','ad_type':'','albumid':'28041980','artist':'玄琛','artistid':'9688248','artistpic':'http://img4.kuwo.cn/star/starheads/120/96/39/3155308302.jpg','color':'[#FFE2F2C6,#FF85A476]','company':'独立发行','content_type':'0','falbum':'','fartist':'玄琛','finished':'0','hts_img':'https://img2.kuwo.cn/star/albumcover/240/72/16/2510768590.jpg','id':'28041980','img':'http://img2.sycdn.kuwo.cn/star/albumcover/240/72/16/2510768590.jpg','info':'我来诉说我的故事，请你认真聆听，做最好的聆听者','isstar':'1','lang':'','musiccnt':'2','name':'我的','new':'0','payvalue':'0','pic':'120/72/16/2510768590.jpg','pub':'2020-08-18','score':'0','showtime':'','spPrivilege':'0','startype':'历史人文','timing_online':'0000-00-00&nbsp;00:00:00','title':'','vip':'0'},{'DC_TARGETID':'17245200','DC_TARGETTYPE':'','PAY':'0','PLAYCNT':'5529096','aartist':'','ad_subtype':'','ad_type':'','albumid':'17245200','artist':'我和我的家乡','artistid':'5037564','artistpic':'http://img4.kuwo.cn/star/starheads/0/10/27/3738071257.jpg','color':'[#FFD8F3F1,#FF719794]','company':'中青在线','content_type':'0','falbum':'','fartist':'我和我的家乡','finished':'1','hts_img':'https://img2.kuwo.cn/star/albumcover/240/85/51/1350940634.jpg','id':'17245200','img':'http://img2.sycdn.kuwo.cn/star/albumcover/240/85/51/1350940634.jpg','info':'《我和我的家乡2》是融媒体音频节目《我和我的家乡》第二季。为解读中国人的乡土情结，汇聚同心追梦的力量。【歌曲篇】每期节目将推出一个主题城市，邀请一位青春正能量明星，演唱与家乡有关的原创或翻唱歌曲，曲传乡音。','isstar':'1','lang':'','musiccnt':'5','name':'我和我的家乡第二季「歌曲篇」','new':'0','payvalue':'0','pic':'120/85/51/1350940634.jpg','pub':'2020-12-25','score':'0','showtime':'','spPrivilege':'0','startype':'历史人文','timing_online':'0000-00-00&nbsp;00:00:00','title':'解读中国人的乡土情结','vip':'0'},{'DC_TARGETID':'12854978','DC_TARGETTYPE':'','PAY':'0','PLAYCNT':'21482961','aartist':'','ad_subtype':'','ad_type':'','albumid':'12854978','artist':'佛学听我的','artistid':'3651480','artistpic':'http://img4.kuwo.cn/star/starheads/120/21/42/3683883829.jpg','color':'[#FFD8F3F1,#FF719794]','company':'暂无','content_type':'0','falbum':'','fartist':'佛学听我的','finished':'0','hts_img':'https://img2.kuwo.cn/star/albumcover/240/99/12/1066669641.jpg','id':'12854978','img':'http://img2.sycdn.kuwo.cn/star/albumcover/240/99/12/1066669641.jpg','info':'禅音静心：禅茶一味','isstar':'1','lang':'普通话','musiccnt':'407','name':'禅音静心：禅茶一味','new':'0','payvalue':'0','pic':'120/99/12/1066669641.jpg','pub':'2020-02-23','score':'0','showtime':'','spPrivilege':'0','startype':'历史人文','timing_online':'0000-00-00&nbsp;00:00:00','title':'禅音静心：禅茶一味','vip':'0'},{'DC_TARGETID':'13884852','DC_TARGETTYPE':'','PAY':'0','PLAYCNT':'17396226','aartist':'','ad_subtype':'','ad_type':'','albumid':'13884852','artist':'佛学听我的','artistid':'3651480','artistpic':'http://img4.kuwo.cn/star/starheads/120/21/42/3683883829.jpg','color':'[#FFD8F3F1,#FF719794]','company':'暂无','content_type':'0','falbum':'','fartist':'佛学听我的','finished':'0','hts_img':'https://img2.kuwo.cn/star/albumcover/240/91/94/4253604466.jpg','id':'13884852','img':'http://img2.sycdn.kuwo.cn/star/albumcover/240/91/94/4253604466.jpg','info':'静心听佛乐','isstar':'1','lang':'普通话','musiccnt':'228','name':'静心听佛乐','new':'0','payvalue':'0','pic':'120/91/94/4253604466.jpg','pub':'2020-04-27','score':'0','showtime':'','spPrivilege':'0','startype':'历史人文','timing_online':'0000-00-00&nbsp;00:00:00','title':'静心听佛乐','vip':'0'},{'DC_TARGETID':'17172751','DC_TARGETTYPE':'','PAY':'0','PLAYCNT':'553401','aartist':'','ad_subtype':'102,103,101,501','ad_type':'1,5','albumid':'17172751','artist':'我和我的家乡','artistid':'5037564','artistpic':'http://img4.kuwo.cn/star/starheads/0/10/27/3738071257.jpg','color':'[#FFD8F3F1,#FF719794]','company':'中青在线','content_type':'0','falbum':'','fartist':'我和我的家乡','finished':'1','hts_img':'https://img2.kuwo.cn/star/albumcover/240/63/45/3978411674.jpg','id':'17172751','img':'http://img2.sycdn.kuwo.cn/star/albumcover/240/63/45/3978411674.jpg','info':'《我和我的家乡2》是融媒体音频节目《我和我的家乡》第二季。为解读中国人的乡土情结，汇聚同心追梦的力量。每期节目将推出一个主题城市，邀请一位青春正能量明星，用笔者独有的乡愁情感，配以讲述者也为此乡人的身份，着力刻画该城市的魅力形象，展现一座城的普通百姓生活和经济社会发展。','isstar':'1','lang':'','musiccnt':'11','name':'我和我的家乡第二季「有声篇」','new':'0','payvalue':'0','pic':'120/63/45/3978411674.jpg','pub':'2020-12-21','score':'0','showtime':'2020-12-20','spPrivilege':'0','startype':'娱乐','timing_online':'2020-12-20&nbsp;23:40:00','title':'','vip':'0'},{'DC_TARGETID':'18769609','DC_TARGETTYPE':'','PAY':'0','PLAYCNT':'69987','aartist':'','ad_subtype':'101,102,103,501','ad_type':'1,5','albumid':'18769609','artist':'你是我的荣耀','artistid':'6998984','artistpic':'http://img4.kuwo.cn/star/starheads/120/41/44/262468637.jpg','color':'[#FFD8F3F1,#FF719794]','company':'﻿暂无','content_type':'0','falbum':'','fartist':'你是我的荣耀','finished':'0','hts_img':'https://img2.kuwo.cn/star/albumcover/240/44/72/4080853707.jpg','id':'18769609','img':'http://img2.sycdn.kuwo.cn/star/albumcover/240/44/72/4080853707.jpg','info':'﻿《你是我的荣耀》是由王之执导，潘粤明、胡可、王彦霖、杨洋、迪丽热巴、郑合惠子主演的都市爱情剧。该剧改编自顾漫创作的同名小说,主要讲述了人气女星乔晶晶在游戏中与曾经的高中同学于途意外重逢后发生的故事。\\\\\\\\\\\\\\\\\\n;跟随《你是我的荣耀》之声，一起见证航天工程师于途与人气女星乔晶晶，携手砥砺前行成为彼此荣耀的爱情故事！\\\\\\\\\\\\\\\\\\n;\\\\\\\\\\\\\\\\\\n;\\\\\\\\\\\\\\\\\\n;\\\\\\\\\\\\\\\\\\n;\\\\\\\\\\\\\\\\\\n;','isstar':'1','lang':'普通话','musiccnt':'1','name':'你是我的荣耀','new':'0','payvalue':'0','pic':'120/44/72/4080853707.jpg','pub':'2021-03-05','score':'0','showtime':'2021-03-09','spPrivilege':'0','startype':'有声小说','timing_online':'2021-03-09&nbsp;00:00:00','title':'大明星恋上航天工程师&nbsp;热巴杨洋甜蜜相守','vip':'0'},{'DC_TARGETID':'23641999','DC_TARGETTYPE':'','PAY':'0','PLAYCNT':'1292491','aartist':'','ad_subtype':'102,103,501,101,301','ad_type':'1,3,5','albumid':'23641999','artist':'我的存在','artistid':'8102787','artistpic':'http://img4.kuwo.cn/star/starheads/120/31/87/632983033.jpg','color':'[#FFE2F2C6,#FF85A476]','company':'独立发行','content_type':'0','falbum':'','fartist':'我的存在','finished':'1','hts_img':'https://img2.kuwo.cn/star/albumcover/240/50/6/2193571523.jpg','id':'23641999','img':'http://img2.sycdn.kuwo.cn/star/albumcover/240/50/6/2193571523.jpg','info':'为给老驸马冲喜，长亭长公主庶孙迎娶陆家女，新娘子当天却吊死在洞房，现代女医生陆漫穿越而来。委屈的某人，我要功成名就，我的生活我作主。陆漫，还你自由，我也自由……','isstar':'1','lang':'','musiccnt':'726','name':'金玉良医（完结）','new':'0','payvalue':'0','pic':'120/50/6/2193571523.jpg','pub':'2021-10-11','score':'0','showtime':'','spPrivilege':'0','startype':'有声小说','timing_online':'0000-00-00&nbsp;00:00:00','title':'现代女医生陆漫穿越到古代发生的事情','vip':'0'},{'DC_TARGETID':'28177105','DC_TARGETTYPE':'','PAY':'0','PLAYCNT':'10448','aartist':'','ad_subtype':'102,103,501,101,301','ad_type':'1,3,5','albumid':'28177105','artist':'我的青糖','artistid':'9650993','artistpic':'http://img4.kuwo.cn/star/starheads/120/40/93/1019968534.jpg','color':'[#FFE2F2C6,#FF85A476]','company':'独立发行','content_type':'0','falbum':'','fartist':'我的青糖','finished':'0','hts_img':'https://img2.kuwo.cn/star/albumcover/240/62/97/3136446870.jpg','id':'28177105','img':'http://img2.sycdn.kuwo.cn/star/albumcover/240/62/97/3136446870.jpg','info':'【字数：16万字】&lt;br&gt;裴子墨和丁辰是一对夫妻，妻子丁辰深爱裴子墨，但裴子墨难以忘怀初恋总是对她若即若离。婚后两年，裴子墨前女友于筝突然回国，使得他和丁辰原本就不稳定的婚姻更加雪上加霜。于筝当初背叛裴子墨，受伤后才意识到裴子墨的好，于是不择手段夺回了裴子墨。丁辰和裴子墨离婚后，裴子墨才意识到两年相处，他早已习惯有丁辰的陪伴。裴子墨决心重新赢回丁辰的心，但此时丁辰身边已经有了一位极其出色的追求者，前景不容乐观……','isstar':'1','lang':'','musiccnt':'80','name':'如果你是我的传说','new':'0','payvalue':'0','pic':'120/62/97/3136446870.jpg','pub':'2022-04-21','score':'0','showtime':'1979-10-05','spPrivilege':'0','startype':'有声小说','timing_online':'2022-05-01&nbsp;19:26:48','title':'','vip':'0'},{'DC_TARGETID':'12896662','DC_TARGETTYPE':'','PAY':'0','PLAYCNT':'2412258','aartist':'','ad_subtype':'','ad_type':'','albumid':'12896662','artist':'佛学听我的','artistid':'3651480','artistpic':'http://img4.kuwo.cn/star/starheads/120/21/42/3683883829.jpg','color':'[#FFD8F3F1,#FF719794]','company':'暂无','content_type':'0','falbum':'','fartist':'佛学听我的','finished':'0','hts_img':'https://img2.kuwo.cn/star/albumcover/240/93/41/3670973086.jpg','id':'12896662','img':'http://img2.sycdn.kuwo.cn/star/albumcover/240/93/41/3670973086.jpg','info':'佛书梵唱100篇','isstar':'1','lang':'普通话','musiccnt':'50','name':'佛书梵唱100篇','new':'0','payvalue':'0','pic':'120/93/41/3670973086.jpg','pub':'2020-02-24','score':'0','showtime':'','spPrivilege':'0','startype':'历史人文','timing_online':'0000-00-00&nbsp;00:00:00','title':'佛书梵唱100篇','vip':'0'}],'pn':'0','rn':'10','total':'257'}`;
@@ -278,8 +307,6 @@ function pre() {
 }
 
 let rule = {};
-let vercode = typeof (pdfl) === 'function' ? 'drpy2.1' : 'drpy2';
-const VERSION = vercode + ' 3.9.51beta2 20240711';
 /** 已知问题记录
  * 1.影魔的jinjia2引擎不支持 {{fl}}对象直接渲染 (有能力解决的话尽量解决下，支持对象直接渲染字符串转义,如果加了|safe就不转义)[影魔牛逼，最新的文件发现这问题已经解决了]
  * Array.prototype.append = Array.prototype.push; 这种js执行后有毛病,for in 循环列表会把属性给打印出来 (这个大毛病需要重点排除一下)
@@ -1017,9 +1044,10 @@ function fixAdM3u8(m3u8_text, m3u8_url, ad_remove) {
  * @returns {string}
  */
 function fixAdM3u8Ai(m3u8_url, headers) {
-    let ts = new Date().getTime();
-    let option = headers ? {headers: headers} : {};
-
+    let ts = (new Date).getTime();
+    let option = headers ? {
+        headers: headers
+    } : {};
     function b(s1, s2) {
         let i = 0;
         while (i < s1.length) {
@@ -1028,67 +1056,102 @@ function fixAdM3u8Ai(m3u8_url, headers) {
             }
             i++
         }
-        return i;
+        return i
     }
-
     function reverseString(str) {
-        return str.split('').reverse().join('');
+        return str.split("").reverse().join("")
     }
-
-    //log('播放的地址：' + m3u8_url);
     let m3u8 = request(m3u8_url, option);
-    //log('m3u8处理前:' + m3u8);
-    m3u8 = m3u8.trim().split('\n').map(it => it.startsWith('#') ? it : urljoin(m3u8_url, it)).join('\n');
-    //log('m3u8处理后:============:' + m3u8);
-    // 获取嵌套m3u8地址
-    m3u8 = m3u8.replace(/\n\n/ig, '\n');//删除多余的换行符
-    let last_url = m3u8.split('\n').slice(-1)[0];
+    m3u8 = m3u8.trim().split("\n").map(it => it.startsWith("#") ? it : urljoin(m3u8_url, it)).join("\n");
+    m3u8 = m3u8.replace(/\n\n/gi, "\n");
+    let last_url = m3u8.split("\n").slice(-1)[0];
     if (last_url.length < 5) {
-        last_url = m3u8.split('\n').slice(-2)[0];
+        last_url = m3u8.split("\n").slice(-2)[0]
     }
-
-    if (last_url.includes('.m3u8') && last_url !== m3u8_url) {
+    if (last_url.includes(".m3u8") && last_url !== m3u8_url) {
         m3u8_url = urljoin2(m3u8_url, last_url);
-        log('嵌套的m3u8_url:' + m3u8_url);
-        m3u8 = request(m3u8_url, option);
+        log("嵌套的m3u8_url:" + m3u8_url);
+        m3u8 = request(m3u8_url, option)
     }
-    //log('----处理有广告的地址----');
-    let s = m3u8.trim().split('\n').filter(it => it.trim()).join('\n');
-    let ss = s.split('\n')
-    //找出第一条播放地址
-    //let firststr = ss.find(x => !x.startsWith('#'));
-    let firststr = '';
-    let maxl = 0;//最大相同字符
+    let s = m3u8.trim().split("\n").filter(it => it.trim()).join("\n");
+    let ss = s.split("\n");
+    if (m3u8_url.indexOf("ffzy") > 0) {
+        let j = 0
+          , k1 = 0
+          , m = 0
+          , n = 0
+          , t = 0;
+        let s2 = "";
+        for (let i = 0; i < ss.length; i++) {
+            let s = ss[i];
+            let s1 = "";
+            if (s.startsWith("#EXTINF")) {
+                s1 = s.slice(8);
+                n++;
+                if (n == 1)
+                    k1 = i;
+                if (s2.indexOf(s1) == -1) {
+                    s2 = s2 + s1;
+                    m++;
+                }
+                t = t + parseFloat(s1);
+                i++;
+                s = ss[i];
+            }
+            if (s.startsWith("#EXT-X-DISCONTINUITY")) {
+                if (n == 5) {
+                    log("n:" + n);
+                    log("m:" + m);
+                    for (let j = k1; j < k1 + n * 2; j++) {
+                        log(ss[j]);
+                    }
+                    log("广告位置：" + k1);
+                    log("数据条数:" + n);
+                    log("数据种类:" + m);
+                    log("广告时间：" + t.toFixed(5));
+                    ss.splice(k1, 2 * n + 1);
+                    i = i - 2 * n + 1;
+                }
+                t = 0;
+                m = 0;
+                n = 0;
+                s2 = "";
+            }
+        }
+    }
+    let firststr = "";
+    let maxl = 0;
     let kk = 0;
-    let kkk = 2;
-    let secondstr = '';
+    let kkk1 = 1;
+    let kkk2 = 0;
+    let secondstr = "";
     for (let i = 0; i < ss.length; i++) {
         let s = ss[i];
         if (!s.startsWith("#")) {
-            if (kk == 0) firststr = s;
-            if (kk == 1) maxl = b(firststr, s);
-            if (kk > 1) {
-                if (maxl > b(firststr, s)) {
-                    if (secondstr.length < 5) secondstr = s;
-                    kkk = kkk + 2;
+            if (kk == 0)
+                firststr = s;
+            if (kk > 0) {
+                if (maxl > b(firststr, s) + 1) {
+                    if (secondstr.length < 5)
+                        secondstr = s;
+                    kkk2++
                 } else {
                     maxl = b(firststr, s);
-                    kkk++;
+                    kkk1++
                 }
             }
             kk++;
-            if (kk >= 20) break;
+            if (kk >= 30)
+                break
         }
     }
-    if (kkk > 30) firststr = secondstr;
+    if (kkk2 > kkk1)
+        firststr = secondstr;
     let firststrlen = firststr.length;
-    //log('字符串长度：' + firststrlen);
-    let ml = Math.round(ss.length / 2).toString().length;//取数据的长度的位数
-    //log('数据条数的长度：' + ml);
-    //找出最后一条播放地址
+    let ml = Math.round(ss.length / 2).toString().length;
     let maxc = 0;
-    let laststr = ss.toReversed().find((x) => {
-        if (!x.startsWith('#')) {
+    let laststr = ss.toReversed().find(x => {
+        if (!x.startsWith("#")) {
             let k = b(reverseString(firststr), reverseString(x));
             maxl = b(firststr, x);
             maxc++;
@@ -1097,30 +1160,30 @@ function fixAdM3u8Ai(m3u8_url, headers) {
             }
         }
         return false
-    });
-    log('最后一条切片：' + laststr);
-    //log('最小相同字符长度：' + maxl);
+    }
+    );
+    log("最后一条切片：" + laststr);
     let ad_urls = [];
     for (let i = 0; i < ss.length; i++) {
         let s = ss[i];
-        if (!s.startsWith('#')) {
+        if (!s.startsWith("#")) {
             if (b(firststr, s) < maxl) {
-                ad_urls.push(s); // 广告地址加入列表
+                ad_urls.push(s);
                 ss.splice(i - 1, 2);
-                i = i - 2;
+                i = i - 2
             } else {
-                ss[i] = urljoin(m3u8_url, s);
+                ss[i] = urljoin(m3u8_url, s)
             }
         } else {
-            ss[i] = s.replace(/URI=\"(.*)\"/, 'URI=\"' + urljoin(m3u8_url, '$1') + '\"');
+            ss[i] = s.replace(/URI=\"(.*)\"/, 'URI="' + urljoin(m3u8_url, "$1") + '"')
         }
     }
-    log('处理的m3u8地址:' + m3u8_url);
-    log('----广告地址----');
+    log("处理的m3u8地址:" + m3u8_url);
+    log("----广告地址----");
     log(ad_urls);
-    m3u8 = ss.join('\n');
-    //log('处理完成');
-    log('处理耗时：' + (new Date().getTime() - ts).toString());
+    m3u8 = ss.join("\n");
+    log("处理耗时：" + ((new Date).getTime() - ts).toString());
+    log(m3u8);
     return m3u8
 }
 
@@ -1627,6 +1690,46 @@ function keysToLowerCase(obj) {
     }, {});
 }
 
+//字符串To对象
+function parseQueryString(query) {
+    const params = {};
+    query.split('&').forEach(function (part) {
+        // 使用正则表达式匹配键和值，直到遇到第一个等号为止
+        const regex = /^(.*?)=(.*)/;
+        const match = part.match(regex);
+        if (match) {
+            const key = decodeURIComponent(match[1]);
+            const value = decodeURIComponent(match[2]);
+            params[key] = value;
+        }
+    });
+    return params;
+}
+
+//URL需要转码字符串
+function encodeIfContainsSpecialChars(value) {
+    // 定义在URL中需要编码的特殊字符
+    const specialChars = ":/?#[]@!$'()*+,;=%";
+    // 检查值中是否包含特殊字符
+    if (specialChars.split('').some(char => value.includes(char))) {
+        // 如果包含，则使用encodeURIComponent进行编码
+        return encodeURIComponent(value);
+    }
+    // 如果不包含特殊字符，返回原值
+    return value;
+}
+
+//对象To字符串
+function objectToQueryString(obj) {
+    const encoded = [];
+    for (let key in obj) {
+        if (obj.hasOwnProperty(key)) {
+            encoded.push(encodeURIComponent(key) + '=' + encodeIfContainsSpecialChars(obj[key]));
+        }
+    }
+    return encoded.join('&');
+}
+
 /**
  * 海阔网页请求函数完整封装
  * @param url 请求链接
@@ -1702,6 +1805,19 @@ function request(url, obj, ocr_flag) {
     if (obj.redirect === false) {
         obj.redirect = 0;
     }
+    if (obj.headers.hasOwnProperty('Content-Type') || obj.headers.hasOwnProperty('content-type')) {
+        let _contentType = obj.headers["Content-Type"] || obj.headers["content-type"] || "";
+        if (_contentType.includes("application/x-www-form-urlencoded")) {
+            log("custom body is application/x-www-form-urlencoded");
+            //console.log(JSON.stringify(obj));
+            if (typeof obj.body == "string") {
+                let temp_obj = parseQueryString(obj.body);
+                //obj.body = objectToQueryString(temp_obj);
+                console.log(JSON.stringify(temp_obj));
+            }
+        }
+    }
+
     console.log(JSON.stringify(obj.headers));
     // console.log('request:'+url+' obj:'+JSON.stringify(obj));
     console.log('request:' + url + `|method:${obj.method || 'GET'}|body:${obj.body || ''}`);
@@ -2359,6 +2475,10 @@ function searchParse(searchObj) {
     if (!searchObj.searchUrl) {
         return '{}'
     }
+    if (rule.searchNoPage && Number(searchObj.pg) > 1) {
+        // 关闭搜索分页
+        return '{}'
+    }
     let p = searchObj.搜索 === '*' && rule.一级 ? rule.一级 : searchObj.搜索;
     if (!p || typeof (p) !== 'string') {
         return '{}'
@@ -2447,7 +2567,9 @@ function searchParse(searchObj) {
                 html = getHtml(MY_URL);
             }
             if (html) {
-                if (/系统安全验证|输入验证码/.test(html)) {
+                // 解决搜索源码奇葩触发自动过验证逻辑
+                let search_tag = rule.搜索验证标识 || '系统安全验证|输入验证码';
+                if (new RegExp(search_tag).test(html)) {
                     let cookie = verifyCode(MY_URL);
                     if (cookie) {
                         console.log(`本次成功过验证,cookie:${cookie}`);
@@ -3148,8 +3270,12 @@ function init(ext) {
         if (typeof ext == 'object') {
             rule = ext;
         } else if (typeof ext == 'string') {
-            if (ext.startsWith('http') || ext.startsWith('file://')) {
+            let is_file = ext.startsWith('file://');
+            if (ext.startsWith('http') || is_file) {
                 let query = getQuery(ext); // 获取链接传参
+                if (is_file) {
+                    ext = ext.split('?')[0];
+                }
                 let js = request(ext, {'method': 'GET'});
                 if (js) {
                     js = getOriginalJs(js);
@@ -3158,7 +3284,11 @@ function init(ext) {
                     eval("(function(){" + js.replace('var rule', 'rule') + "})()");
                 }
                 if (query.type === 'url' && query.params) { // 指定type是链接并且传了params支持简写如 ./xx.json
-                    rule.params = urljoin(ext, query.params);
+                    if (is_file && /^http/.test(query.params)) {
+                        rule.params = query.params;
+                    } else {
+                        rule.params = urljoin(ext, query.params);
+                    }
                 } else if (query.params) { // 没指定type直接视为字符串
                     rule.params = query.params;
                 }
@@ -3303,10 +3433,11 @@ function init(ext) {
             } catch (e) {
                 console.log(`处理headers发生错误:${e.message}`);
             }
+        } else {
+            rule.headers = {}
         }
-        // print(rule.headers);
-        rule_fetch_params = {'headers': rule.headers || false, 'timeout': rule.timeout, 'encoding': rule.encoding};
-        oheaders = rule.headers || {};
+        oheaders = deepCopy(rule.headers);
+        rule_fetch_params = {'headers': rule.headers, 'timeout': rule.timeout, 'encoding': rule.encoding};
         RKEY = typeof (key) !== 'undefined' && key ? key : 'drpy_' + (rule.title || rule.host);
         pre(); // 预处理
         init_test();
@@ -3532,6 +3663,101 @@ function getRule(key) {
     return key ? rule[key] || '' : rule
 }
 
+/**
+ * 深拷贝一个对象
+ * @param _obj
+ * @returns {any}
+ */
+function deepCopy(_obj) {
+    return JSON.parse(JSON.stringify(_obj))
+}
+
+//正则matchAll
+function matchesAll(str, pattern, flatten) {
+    if (!pattern.global) {
+        pattern = new RegExp(pattern.source, "g" + (pattern.ignoreCase ? "i" : "") + (pattern.multiline ? "m" : ""));
+    }
+    var matches = [];
+    var match;
+    while ((match = pattern.exec(str)) !== null) {
+        matches.push(match);
+    }
+    return flatten ? matches.flat() : matches;
+}
+
+//文本扩展
+function stringUtils() {
+    Object.defineProperties(String.prototype, {
+        replaceX: {
+            value: function (regex, replacement) {
+                let matches = matchesAll(this, regex, true);
+                if (matches && matches.length > 1) {
+                    const hasCaptureGroup = /\$\d/.test(replacement);
+                    if (hasCaptureGroup) {
+                        return this.replace(regex, (m) => m.replace(regex, replacement));
+                    } else {
+                        return this.replace(regex, (m, p1) => m.replace(p1, replacement));
+                    }
+                }
+                return this.replace(regex, replacement);
+            },
+            configurable: true,
+            enumerable: false,
+            writable: true
+        },
+        parseX: {
+            get: function () {
+                try {
+                    //console.log(typeof this);
+                    return JSON.parse(this);
+                } catch (e) {
+                    console.log(e.message);
+                    return this.startsWith("[") ? [] : {};
+                }
+            },
+            configurable: true,
+            enumerable: false,
+        }
+    });
+}
+
+//正则裁切
+function cut(text, start, end, method, All) {
+    let result = "";
+    let c = (t, s, e) => {
+        let result = "";
+        let rs = [];
+        let results = [];
+        try {
+            let lr = new RegExp(String.raw`${s}`.toString());
+            let rr = new RegExp(String.raw`${e}`.toString());
+            const segments = t.split(lr);
+            if (segments.length < 2) return '';
+            let cutSegments = segments.slice(1).map(segment => {
+                let splitSegment = segment.split(rr);
+                //log(splitSegment)
+                return splitSegment.length < 2 ? undefined : splitSegment[0] + e;
+            }).filter(f => f);
+            //log(cutSegments.at(-1))
+            if (All) {
+                return `[${cutSegments.join(',')}]`;
+            } else {
+                return cutSegments[0];
+            }
+        } catch (e) {
+            console.log(`Error cutting text:${e.message}`);
+        }
+        return result;
+    }
+    result = c(text, start, end);
+    stringUtils();
+    if (method && typeof method === "function") {
+        result = method(result);
+    }
+    //console.log(result);
+    return result
+}
+
 function DRPY() {//导出函数
     return {
         runMain: runMain,
@@ -3554,8 +3780,8 @@ function DRPY() {//导出函数
  * 导出函数无法简写成下面的形式:
 
  export default {
-  ...DRPY,
-  DRPY
+ ...DRPY,
+ DRPY
  }
 
  */
