@@ -5037,7 +5037,7 @@
     {
       "name": "4G-TV(ROB)",
       "playerType": 2,
-      "url": "./live/4G-tw.txt",
+      "url": "./live/4gtv.txt",
       "epg": "http://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Taipei",
       "logo": "https://epg.112114.xyz/logo/{name}.png",
       "pass": true
@@ -5045,7 +5045,7 @@
     {
       "name": "4G-TV(備用)",
       "type": 0,
-      "url": "./live/4gtv.txt",
+      "url": "./live/4G-tw.txt",
       "playerType": 2,
       "epg": "http://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Taipei",
       "logo": "https://epg.112114.xyz/logo/{name}.png",
