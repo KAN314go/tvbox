@@ -4964,6 +4964,15 @@
   ],
   "lives": [
     {
+      "name": "安博(待測)",
+      "type": 0,
+      "url": "./live/anber.txt",
+      "epg": "https://epg.112114.eu.org/?ch={name}&date={date}",
+      "logo": "https://epg.112114.eu.org/logo/{name}.png",
+      "playerType": 2,
+      "pass": true
+    },
+    {
       "name": "小雲1台",
       "url": "./live/ueen.m3u",
       "playerType": 2,
