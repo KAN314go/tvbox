@@ -4964,15 +4964,6 @@
   ],
   "lives": [
     {
-      "name": "安博(待測)",
-      "type": 0,
-      "url": "./live/anber.txt",
-      "epg": "https://epg.112114.eu.org/?ch={name}&date={date}",
-      "logo": "https://epg.112114.eu.org/logo/{name}.png",
-      "playerType": 2,
-      "pass": true
-    },
-    {
       "name": "小雲1台",
       "url": "./live/ueen.m3u",
       "playerType": 2,
@@ -5013,6 +5004,14 @@
       "name": "smart.py",
       "type": 3,
       "api": "./py/live_smt.py"
+    },
+    {
+      "name": "安博(新加坡節點--很卡)",
+      "type": 0,
+      "url": "./live/anber.txt",
+      "epg": "https://epg.112114.eu.org/?ch={name}&date={date}",
+      "logo": "https://epg.112114.eu.org/logo/{name}.png",
+      "pass": true
     },
     {
       "name": "瑪斯特",
