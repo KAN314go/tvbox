@@ -5014,6 +5014,14 @@
       "pass": true
     },
     {
+      "name": "安博(Z88)",
+      "type": 0,
+      "url": "./live/anber-Z88.txt",
+      "epg": "https://epg.112114.eu.org/?ch={name}&date={date}",
+      "logo": "https://epg.112114.eu.org/logo/{name}.png",
+      "pass": true
+    },
+    {
       "name": "瑪斯特",
       "playerType": 2,
       "url": "./live/must.txt",
