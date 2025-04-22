@@ -18,22 +18,8 @@
       "filterable": 0,
       "changeable": 0
     },
-    {"key":"人人","name":"人人影視","type":3,"api":"csp_AppGetGuard","jar":"https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1745207317358/0421.jar;md5;1c80e3fd1d023a3882a164c5f5fbca20","ext":"sHR2rlsfjI4L3t4RXQMkn5lWAFk63MKp99BaRaCwGwVoPMXpUrRhJupGqVQN8zzRhc0PCuL4mVzuh+KN84Fro7WINX8x2KJlpNKTLBLPlTuVfsg1mblMWUa4ZqZVqz8bk6MbJPrt3r0jg7nCMVsUaeYm/CFBu4z4N5c4sNExHQ44DdF44W2s6KWUWZpSkfRb2WJdy5v0GcpIoQuxWUsh9EnK9D3N3m64NCPyEyiwAVg="},
-    {"key":"csp_baibai","name":"素白白","type":3,"quickSearch":1,"api":"csp_SuBaiBaiGuard","jar":"https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1745207317358/0421.jar;md5;1c80e3fd1d023a3882a164c5f5fbca20","ext":"https://www.subaibai.com"},
-    {"key":"听书","name":"6月听书","type":3,"api":"csp_TingBookGuard","jar":"https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1745207317358/0421.jar;md5;1c80e3fd1d023a3882a164c5f5fbca20","searchable":1,"ext":"http://www.6yueting.com"},
 
-
-
-
-
-
-
-
-
-
-
-
-
+    
 
 
     {
@@ -389,6 +375,15 @@
       "filterable": 1
     },
     {
+      "key": "csp_baibai",
+      "name": "素白白",
+      "type": 3,
+      "quickSearch": 1,
+      "api": "csp_SuBaiBaiGuard",
+      "jar": "https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1745207317358/0421.jar;md5;1c80e3fd1d023a3882a164c5f5fbca20",
+      "ext": "https://www.subaibai.com"
+    },
+    {
       "key": "星辉弹幕",
       "name": "🥇｜星辉｜藍光◎秒播(無廣告+APP)",
       "type": 3,
@@ -590,6 +585,14 @@
       "jar": "./jar/pizza.jar;md5;6bcb3de5f0d7c9b3d4f19cfe9a314ab2",
       "playerType": 2,
       "ext": "jaHR0cDovL3BweC5iangzNjUudG9wfHBpcGl4aWEyMTc1MjIzMjR8cGlwaXhpYTIxNzUyMjMyNHw1MDY="
+    },
+    {
+      "key": "人人",
+      "name": "🥇｜人人藍光◎秒播(無廣告+APP)",
+      "type": 3,
+      "api": "csp_AppGetGuard",
+      "jar": "https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1745207317358/0421.jar;md5;1c80e3fd1d023a3882a164c5f5fbca20",
+      "ext": "sHR2rlsfjI4L3t4RXQMkn5lWAFk63MKp99BaRaCwGwVoPMXpUrRhJupGqVQN8zzRhc0PCuL4mVzuh+KN84Fro7WINX8x2KJlpNKTLBLPlTuVfsg1mblMWUa4ZqZVqz8bk6MbJPrt3r0jg7nCMVsUaeYm/CFBu4z4N5c4sNExHQ44DdF44W2s6KWUWZpSkfRb2WJdy5v0GcpIoQuxWUsh9EnK9D3N3m64NCPyEyiwAVg="
     },
     {
       "key": "py_奇蹟APP",
