@@ -8,16 +8,7 @@
 
 
 
-    {
-      "key": "py_4K影院",
-      "name": "？｜4K影院｜測試",
-      "type": 3,
-      "api": "./py/4k影院.py",
-      "searchable": 1,
-      "quickSearch": 0,
-      "filterable": 0,
-      "changeable": 0
-    },
+
     {
       "key": "A8",
       "name": "🥇｜A8｜測試",
@@ -168,6 +159,16 @@
       "quickSearch": 1,
       "api": "./drpy_libs/drpy2.min.js",
       "ext": "./drpy_js/360影视[官].js"
+    },
+    {
+      "key": "py_4K影院",
+      "name": "🏆｜4K影院｜藍光◎順播(無廣告+無篩選)",
+      "type": 3,
+      "api": "./py/4k影院.py",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 0,
+      "changeable": 0
     },
     {
       "key": "三六零弹幕",
