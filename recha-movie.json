@@ -9,20 +9,6 @@
 
 
 
-    {
-      "key": "A8",
-      "name": "🥇｜A8｜測試",
-      "type": 3,
-      "api": "csp_XBPQ",
-      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-      "playerType": 2,
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": "./json/A8影视.json"
-    },
-    
-
 
     {
       "key": "豆瓣",
@@ -1730,6 +1716,18 @@
         "分类url": "http://www.taoju.tv/list/{cateId}.html",
         "分类"   : "电影$1#连续剧$2#动漫$3#综艺$4"
       }
+    },
+    {
+      "key": "A8",
+      "name": "🥇｜A8｜高清◎秒播(無廣告+無篩選)",
+      "type": 3,
+      "api": "csp_XBPQ",
+      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+      "playerType": 2,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "./json/A8影视.json"
     },
     {
       "key": "圣农极光",
