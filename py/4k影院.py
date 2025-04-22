@@ -1,10 +1,3 @@
-"""
-
-作者 凯悦宾馆 🚓 内容均从互联网收集而来 仅供交流学习使用 版权归原创者所有 如侵犯了您的权益 请通知作者 将及时删除侵权内容
-                    ====================kaiyuebinguan====================
-
-"""
-
 import requests
 from bs4 import BeautifulSoup
 import re
@@ -65,9 +58,9 @@ class Spider(Spider):
                         else:
                             number = 0
                         if 'http' not in match[0]:
-                            output += f"#{'📽️丢丢👉' + match[1]}${number}{xurl}{match[0]}"
+                            output += f"#{match[1]}${number}{xurl}{match[0]}"
                         else:
-                            output += f"#{'📽️丢丢👉' + match[1]}${number}{match[0]}"
+                            output += f"#{match[1]}${number}{match[0]}"
                     output = output[1:]
                     purl = purl + output + "$$$"
                 purl = purl[:-3]
@@ -97,15 +90,15 @@ class Spider(Spider):
             middle_text = text[start_index + len(start_str):end_index]
             matches = re.findall(start_index1, middle_text)
             if matches:
-                new_list = [f'✨丢丢👉{item}' for item in matches]
+                new_list = [f'{item}' for item in matches]
                 jg = '$$$'.join(new_list)
                 return jg
 
     def homeContent(self, filter):
         result = {}
-        result = {"class": [{"type_id": "movies", "type_name": "丢丢电影🌠"},
-                            {"type_id": "tvshows", "type_name": "丢丢剧集🌠"},
-                            {"type_id": "trending", "type_name": "丢丢热门🌠"}]}
+        result = {"class": [{"type_id": "movies", "type_name": "电影"},
+                            {"type_id": "tvshows", "type_name": "剧集"},
+                            {"type_id": "trending", "type_name": "热门"}]}
 
         return result
 
@@ -136,9 +129,9 @@ class Spider(Spider):
 
                     video = {
                         "vod_id": id,
-                        "vod_name": '丢丢📽️' + name,
+                        "vod_name":  name,
                         "vod_pic": pic,
-                        "vod_remarks": '丢丢▶️' + remark
+                        "vod_remarks":  remark
                     }
                     videos.append(video)
 
@@ -182,9 +175,9 @@ class Spider(Spider):
 
                 video = {
                     "vod_id": id,
-                    "vod_name": '丢丢📽️' + name,
+                    "vod_name": name,
                     "vod_pic": pic,
-                    "vod_remarks": '丢丢▶️' + remark
+                    "vod_remarks": remark
                 }
                 videos.append(video)
 
@@ -240,14 +233,14 @@ class Spider(Spider):
             purl = ''
             purl = purl + str(name) + '$' + xurl + '/artplayer?mvsource=0&id=' + id + '&type=hls'
 
-        content = '😸丢丢🎉为您介绍剧情📢本资源来源于网络🚓侵权请联系删除👉' + self.extract_middle_text(res, '<p>', '</p>',0)
+        content = self.extract_middle_text(res, '<p>', '</p>',0)
 
         videos.append({
             "vod_id": did,
-            "vod_actor": '😸皮皮 😸灰灰',
-            "vod_director": '😸丢丢',
+            "vod_actor": '',
+            "vod_director": '',
             "vod_content": content,
-            "vod_play_from": '😸丢丢专线',
+            "vod_play_from": '專線',
             "vod_play_url": purl
         })
 
@@ -303,9 +296,9 @@ class Spider(Spider):
 
             video = {
                 "vod_id": id,
-                "vod_name": '丢丢📽️' + name,
+                "vod_name": name,
                 "vod_pic": pic,
-                "vod_remarks": '丢丢▶️' + remark
+                "vod_remarks": remark
                     }
             videos.append(video)
 
