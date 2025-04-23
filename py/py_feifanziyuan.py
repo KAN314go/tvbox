@@ -170,12 +170,14 @@ class Spider(Spider):
 
     def playerContent(self, flag, pid, vipFlags):
         # url = pid
-        url = f'http://127.0.0.1:8964/proxy?do=py&url={self.b64encode(pid)}'
+        url = f'{self.getProxyUrl()}&url={self.b64encode(pid)}'
         return {"url": url, "header": self.headers, "parse": 0, "jx": 0}
 
     def localProxy(self, params):
         url = self.b64decode(params['url'])
-        url = url.replace('index.m3u8', '2000k/hls/mixed.m3u8')
+        r = requests.get(url, headers=self.headers)
+        a =r.text.strip().split('\n')[-1]
+        url = url.replace('index.m3u8', a)
         home_url = url.replace('mixed.m3u8', '')
         try:
             r = requests.get(url, headers=self.headers)
