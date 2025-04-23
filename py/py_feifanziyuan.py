@@ -170,7 +170,7 @@ class Spider(Spider):
 
     def playerContent(self, flag, pid, vipFlags):
         # url = pid
-        url = f'http://127.0.0.1:9987/proxy?do=py&url={self.b64encode(pid)}'
+        url = f'http://127.0.0.1:8964/proxy?do=py&url={self.b64encode(pid)}'
         return {"url": url, "header": self.headers, "parse": 0, "jx": 0}
 
     def localProxy(self, params):
