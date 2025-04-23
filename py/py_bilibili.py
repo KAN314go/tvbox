@@ -1195,7 +1195,7 @@ class Spider(Spider):
 		I=C._get_sth(url,Q).json()['body'];E=B;F=1
 		for D in I:G=AK(D['from'],3);H=AK(D['to'],3);J=D[Av];K=X.strftime(Bw,X.gmtime(G))+','+C.miao(G);L=X.strftime(Bw,X.gmtime(H))+','+C.miao(H);E+=A(F)+An+K+A7+'-->'+A7+L+An+J+'\n\n';F+=1
 		return E
-	localProxyUrl='http://127.0.0.1:9978/proxy?do=py&siteType=3&siteKey=py_bilibili&type='
+	localProxyUrl='http://127.0.0.1:8964/proxy?do=py&siteType=3&siteKey=py_bilibili&type='
 	def get_subs(J,aid,cid):
 		L='application/x-subrip';I=[];M=J.encrypt_wbi(aid=aid,cid=cid)[0];N=f"https://api.bilibili.com/x/player/wbi/v2?{M}";D=J._get_sth(N,e).json().get(E)
 		if D:
@@ -1242,7 +1242,7 @@ class Spider(Spider):
 				I[A(K)]=a[Be][0]
 		else:K=D[W];I[A(K)]=D[Be][0];C[b]=f"{G.localProxyUrl}durl{V}{K}"
 		I[u]={**I.get(u,{}),**C};return C,S,P
-	def _refreshDetail(A,t=0):X.sleep(F(t));A.fetch('http://127.0.0.1:9978/action?do=refresh&type=detail')
+	def _refreshDetail(A,t=0):X.sleep(F(t));A.fetch('http://127.0.0.1:8964/action?do=refresh&type=detail')
 	def playerContent(C,flag,id,vipFlags):
 		C.pool.submit(C.stop_heartbeat);D={};P=B
 		if'@'in id:id,P=id.split('@')

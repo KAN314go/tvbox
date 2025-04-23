@@ -331,7 +331,7 @@ class Spider(Spider):  # 元类 默认的元类 type
 		return sub(clean, '', src)
 
 	def getCache(self, key):
-		value = self.fetch(f'http://127.0.0.1:9978/cache?do=get&key={key}', timeout=5).text
+		value = self.fetch(f'http://127.0.0.1:8964/cache?do=get&key={key}', timeout=5).text
 		if len(value) > 0:
 			if value.startswith('{') and value.endswith('}') or value.startswith('[') and value.endswith(']'):
 				value = json.loads(value)
@@ -349,10 +349,10 @@ class Spider(Spider):  # 元类 默认的元类 type
 		if len(value) > 0:
 			if type(value) == dict or type(value) == list:
 				value = json.dumps(value, ensure_ascii=False)
-		self.post(f'http://127.0.0.1:9978/cache?do=set&key={key}', data={"value": value}, timeout=5)
+		self.post(f'http://127.0.0.1:8964/cache?do=set&key={key}', data={"value": value}, timeout=5)
 
 	def delCache(self, key):
-		self.fetch(f'http://127.0.0.1:9978/cache?do=del&key={key}', timeout=5)
+		self.fetch(f'http://127.0.0.1:8964/cache?do=del&key={key}', timeout=5)
 
 	header = {
 		"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.54 Safari/537.36"
