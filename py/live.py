@@ -331,7 +331,7 @@ class Spider(Spider):  # 元类 默认的元类 type
 		return sub(clean, '', src)
 
 	def getCache(self, key):
-		value = self.fetch(f'http://127.0.0.1:8964/cache?do=get&key={key}', timeout=5).text
+		value = self.fetch(f'http://127.0.0.1:9987/cache?do=get&key={key}', timeout=5).text
 		if len(value) > 0:
 			if value.startswith('{') and value.endswith('}') or value.startswith('[') and value.endswith(']'):
 				value = json.loads(value)
