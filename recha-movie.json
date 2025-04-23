@@ -4987,7 +4987,7 @@
       }
     },
     {
-      "name": "沐辰直播(8964)",
+      "name": "沐辰直播(蜂蜜影視)",
       "type": 3,
       "playerType": 2,
       "api": "./py/py_litv.py",
@@ -4996,7 +4996,7 @@
       "logo": "https://epg.112114.xyz/logo/{name}.png"
     },
     {
-      "name": "沐辰直播(9987)",
+      "name": "沐辰直播(OK影視)",
       "type": 3,
       "playerType": 2,
       "api": "https://json.doube.eu.org/python/py_litv.py",
