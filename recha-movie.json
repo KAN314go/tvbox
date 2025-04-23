@@ -4987,11 +4987,19 @@
       }
     },
     {
-      "name": "沐辰直播",
+      "name": "沐辰直播(8964)",
       "type": 3,
       "playerType": 2,
-      //"api": "https://json.doube.eu.org/python/py_litv.py",
       "api": "./py/py_litv.py",
+      "ext": "",
+      "epg": "http://epg.112114.xyz/?ch={name}&date={date}",
+      "logo": "https://epg.112114.xyz/logo/{name}.png"
+    },
+    {
+      "name": "沐辰直播(9987)",
+      "type": 3,
+      "playerType": 2,
+      "api": "https://json.doube.eu.org/python/py_litv.py",
       "ext": "",
       "epg": "http://epg.112114.xyz/?ch={name}&date={date}",
       "logo": "https://epg.112114.xyz/logo/{name}.png"
