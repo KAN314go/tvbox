@@ -4987,14 +4987,11 @@
       }
     },
     {
-      "name": "沐辰直播",
-      "type": 3,
-      "playerType": 2,
-      "api": "https:/raw.githubusercontent.com/doube-ba/Sub/refs/heads/main/live/live_litv.py",
-      "ext": "",
-      "epg": "http://epg.112114.xyz/?ch={name}&date={date}",
-      "logo": "https://epg.112114.xyz/logo/{name}.png"
-    },
+     "name": "沐辰直播",
+     "type": 3,
+     "api": "https://gh-proxy.com/https://raw.githubusercontent.com/doube-ba/Sub/refs/heads/main/live/live_litv.py",
+     "ext": {}
+    }
     {"name": "smart.py", "type": 3, "api": "./py/live_smt.py"},
     {
       "name": "安博1台(新加坡節點--很卡)",
