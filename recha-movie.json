@@ -4987,19 +4987,10 @@
       }
     },
     {
-      "name": "沐辰直播(蜂蜜影視)",
+      "name": "沐辰直播",
       "type": 3,
       "playerType": 2,
-      "api": "./py/py_litv.py",
-      "ext": "",
-      "epg": "http://epg.112114.xyz/?ch={name}&date={date}",
-      "logo": "https://epg.112114.xyz/logo/{name}.png"
-    },
-    {
-      "name": "沐辰直播(OK影視)",
-      "type": 3,
-      "playerType": 2,
-      "api": "https://json.doube.eu.org/python/py_litv.py",
+      "api": "https:/raw.githubusercontent.com/doube-ba/Sub/refs/heads/main/live/live_litv.py",
       "ext": "",
       "epg": "http://epg.112114.xyz/?ch={name}&date={date}",
       "logo": "https://epg.112114.xyz/logo/{name}.png"
