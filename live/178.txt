@@ -3,9 +3,10 @@
 
 
 
-
 🔞松视CR(更新日期114.04.07),#genre#
 松视1台(小雲),http://18.svi-studio.com:80/live/478790710441/100371347442/5.m3u8
+松视1台(小雲),http://18.svi-studio.com:80/live/824908251669/532612644941/5.m3u8
+松视1台(小雲),http://18.svi-studio.com:8880/live/584830114073/800309151021/5.m3u8
 松视1台(小雲),http://18.svi-studio.com:80/live/426804892399/739490745427/5.m3u8
 松视1台(小雲),http://18.svi-studio.com:80/live/176844830209/558261845324/5.m3u8
 松视1台(小雲),http://18.svi-studio.com:80/live/055613148424/758984796805/5.m3u8
@@ -24,6 +25,7 @@
 
 
 松视1台,p3p://108.181.32.169:40187/650b87f1000d765a8f12ea107fd81201
+松视1台,p3p://167.114.175.6:55331/5fe445280008a40682a0367c343436bb
 松视1台,http://276868.cloud/33899f168487d4ecf86768be40853b71/a342fa9e5e11747f731a4832e31e0e7d/c5f2d006bb9ccf4951acc5cc4b4b8b39/index.m3u8
 松视1台,http://suo.im/c4FP2
 松视1台,http://ali.hlspull.yximgs.com/live/3ece22313a5434d269096c0492bb4592.flv
@@ -36,6 +38,8 @@
 
 
 松视2台(小雲),http://18.svi-studio.com:80/live/478790710441/100371347442/6.m3u8
+松视2台(小雲),http://18.svi-studio.com:80/live/824908251669/532612644941/6.m3u8
+松视2台(小雲),http://18.svi-studio.com:8880/live/917952932058/953281067271/6.m3u8
 松视2台(小雲),http://18.svi-studio.com:80/live/426804892399/739490745427/6.m3u8
 松视2台(小雲),http://18.svi-studio.com:80/live/176844830209/558261845324/6.m3u8
 松视2台(小雲),http://18.svi-studio.com:80/live/055613148424/758984796805/6.m3u8
@@ -54,6 +58,7 @@
 
 
 松视2台,p3p://108.181.32.169:40187/650b8a51000ac6568f1c30530c503d72
+松视2台,p3p://167.114.175.6:55331/60232b5f00007bc37850649979e379df
 松视2台,http://276868.cloud/e7e5fccaa92d69a7553c3890c3519a14/a342fa9e5e11747f731a4832e31e0e7d/79624e0ad988a352ad8d5a819dd37a46/index.m3u8
 松视2台,http://b.mtw.so/6pAjsB
 松视2台,http://lc.aacalive.com:26789/i/ghjnvq5o/8c85fsaf/index.m3u8
@@ -77,13 +82,13 @@
 松视3台(小雲),http://18.svi-studio.com:80/live/346356153167/782875691212/20205.m3u8
 松视3台(小雲),http://18.svi-studio.com:80/live/426804892399/739490745427/20205.m3u8
 松视3台(小雲),http://18.svi-studio.com:80/live/917952932058/953281067271/20205.m3u8
-松视3台(小雲),http://18.svi-studio.com:8880/live/271871095922/006886711863/20205.m3u8
 松视3台(小雲),http://18.svi-studio.com:80/live/875355861316/575426927985/20205.m3u8
-松视3台(小雲),http://18.svi-studio.com:8880/live/271871095922/006886711863/20205.m3u8
 松视3台(小雲),http://18.svi-studio.com:80/live/656570054361/567275863459/20205.m3u8
-
+松視3台(小雲),http://18.svi-studio.com:80/live/824908251669/532612644941/20205.m3u8
+松視3台(小雲),http://18.svi-studio.com:8880/live/271871095922/006886711863/20205.m3u8
 
 松视3台,p3p://108.181.32.169:40187/650b8a0e000007df8f1b27da75d42f65
+松视3台,p3p://167.114.175.6:55331/6109e9590001f40bfd9b661109395f3b
 松视3台,p3p://173.208.176.178:31809/6109e9590001f40bfd9b661109395f3b
 松视3台,http://ali.hlspull.yximgs.com:80/live/9663ea3c5f5a81b533de8c546c1329f5.flv
 松视3台,http://ali.hlspull.yximgs.com/live/3f6f5f4476f4ac79303be71e5cd70808.flv
@@ -105,7 +110,11 @@
 
 大番號直播,http://lc.aacalive.com:26789/i/ghjnvq5o/sajdxxzc/index.m3u8
 
+Miami TV：https://59ec5453559f0.streamlock.net/mexicotv/smil:miamitvmexico/playlist.m3u8
+
+
 彩虹E台,p3p://173.208.176.178:31809/6062716c0008efc86f76f0c44d55329f
+彩虹E台,p3p://167.114.175.6:55331/6062716c0008efc86f76f0c44d55329f
 彩虹E台,http://276868.cloud/304eb151795fdb6f46fb2e7131899aa4/a342fa9e5e11747f731a4832e31e0e7d/8f9bc18b7f6567180e5f3444818aaa9c/index.m3u8
 彩虹E台,https://epg.pw/stream/39d8f414d724fb9b7c2b1d6ae39871850ff5cf78d9db0ef0a2b8eea8ed84a39a.m3u8
 彩虹E台,http://ali.hlspull.yximgs.com/live/fc2149516cf4b11feacb3deff665fb30.flv
@@ -113,21 +122,26 @@
 彩虹E台,http://lc.aacalive.com:26789/i/ghjnvq5o/8c855daa/index.m3u8
 
 彩虹K台,http://jaz9.my.to:2390/udp/224.1.4.175:11111
+彩虹K台,p3p://167.114.175.6:55331/63fd56ec000b5f0d26d4fe1b07963493
 彩虹K台,http://ali.hlspull.yximgs.com/live/8e965f80be61b5bee081846aa9a0a7f1.flv
 彩虹K台,p3p://108.181.32.169:40187/650b896a000407bf8f18a840011e789a
 
 彩虹电影,p3p://173.208.176.178:31809/6253066c00049259f74b05224cf375e6
+彩虹电影,p3p://167.114.175.6:55331/6253066c00049259f74b05224cf375e6
 彩虹电影,p3p://108.181.32.169:40187/650b89c6000280318f1a0f3c30b74958
 彩虹电影,http://ali.hlspull.yximgs.com/live/27f6f1e4159f92cc3813793adccb3bcb.flv
 彩虹电影,http://suo.im/9sOLD
 彩虹电影,http://ali.hlspull.yximgs.com/live/7e4848e68e3720703b7f5f23246a3b92.flv
 
 彩虹频道,http://276868.cloud/57b7c041286055ef3facb09ea2849486/a342fa9e5e11747f731a4832e31e0e7d/ec5cb3771e4e2d2e1ff1c96838e0c64c/index.m3u8
+彩虹频道,p3p://167.114.175.6:55331/63fd589300099ff426db7203798a21f9
 彩虹频道,p3p://173.208.176.178:31809/63fd589300099ff426db7203798a21f9
 彩虹频道,https://2.ddyunbo.com/20190914/vL0TDJOa/index.m3u8 
 
 
 潘朵拉完美(小雲),http://18.svi-studio.com:80/live/478790710441/100371347442/3.m3u8
+潘朵拉完美(小雲),http://18.svi-studio.com:80/live/824908251669/532612644941/3.m3u8
+潘朵拉完美(小雲),http://18.svi-studio.com:8880/live/624372101145/418430465490/3.m3u8
 潘朵拉完美(小雲),http://18.svi-studio.com:80/live/426804892399/739490745427/3.m3u8
 潘朵拉完美(小雲),http://18.svi-studio.com:80/live/652484888807/195449585962/3.m3u8
 潘朵拉完美(小雲),http://18.svi-studio.com:80/live/091271435055/841916267544/3.m3u8
@@ -138,15 +152,14 @@
 潘朵拉完美(小雲),http://18.svi-studio.com:80/live/346356153167/782875691212/3.m3u8
 潘朵拉完美(小雲),http://18.svi-studio.com:80/live/875994180836/930699661147/3.m3u8
 潘朵拉完美(小雲),http://18.svi-studio.com:80/live/426804892399/739490745427/3.m3u8
-潘朵拉完美(小雲),http://18.svi-studio.com:8880/live/624372101145/418430465490/3.m3u8
 潘朵拉完美(小雲),http://18.svi-studio.com:80/live/055613148424/758984796805/3.m3u8
 潘朵拉完美(小雲),http://18.svi-studio.com:80/live/875355861316/575426927985/3.m3u8
-潘朵拉完美(小雲),http://18.svi-studio.com:8880/live/624372101145/418430465490/3.m3u8
 潘朵拉完美(小雲),http://18.svi-studio.com:80/live/656570054361/567275863459/3.m3u8
 
 
 
 潘朵拉完美,http://107.167.16.226:8880/live/wLmJEuYw32hs/75X2WAcaeJexPFiZ/639649.m3u8
+潘朵拉完美,p3p://167.114.175.6:55331/5fe4450c000c918b829fca233c845311
 潘朵拉完美,p3p://108.181.32.169:40187/650b8a9900047f038f1d47f730bd5b7c
 潘朵拉完美,p3p://173.208.176.178:31809/5fe4450c000c918b829fca233c845311
 潘朵拉完美,http://suo.im/6TuSG
@@ -172,12 +185,15 @@
 香蕉臺(小雲),http://18.svi-studio.com:8880/live/624372101145/418430465490/4.m3u8
 香蕉臺(小雲),http://18.svi-studio.com:80/live/055613148424/758984796805/4.m3u8
 香蕉臺(小雲),http://18.svi-studio.com:80/live/875355861316/575426927985/4.m3u8
-香蕉臺(小雲),http://18.svi-studio.com:8880/live/624372101145/418430465490/4.m3u8 
 香蕉臺(小雲),http://18.svi-studio.com:80/live/656570054361/567275863459/4.m3u8
 香蕉臺(小雲),http://18.svi-studio.com:80/live/426804892399/739490745427/4.m3u8
+香蕉臺(小雲),http://18.svi-studio.com:80/live/824908251669/532612644941/4.m3u8
+
+
 
 香蕉臺,https://2.ddyunbo.com/20190908/ETghLd5D/index.m3u8 
 香蕉臺,p3p://108.181.32.169:40187/650b8ae60005f36b8f1e751f68bd1c14
+香蕉臺,p3p://167.114.175.6:55331/60626a760005067e6f5bbecb5816771e
 香蕉臺,http://125.227.210.55:8159/VideoInput/play.ts
 香蕉臺,p3p://173.208.176.178:31809/60626a760005067e6f5bbecb5816771e
 香蕉臺,http://276868.cloud/ecc014a79434755f42850add23f2cafb/a342fa9e5e11747f731a4832e31e0e7d/dd18c7572f6fa68799ed27685fafa1da/index.m3u8
@@ -189,6 +205,7 @@
 
 
 驚艷臺(小雲),http://18.svi-studio.com:80/live/478790710441/100371347442/1.m3u8
+驚艷臺(小雲),http://18.svi-studio.com:80/live/824908251669/532612644941/1.m3u8
 驚艷臺(小雲),http://18.svi-studio.com:80/live/426804892399/739490745427/1.m3u8
 驚艷臺(小雲),http://18.svi-studio.com:80/live/652484888807/195449585962/1.m3u8
 驚艷臺(小雲),http://18.svi-studio.com:80/live/055613148424/758984796805/1.m3u8
@@ -206,6 +223,7 @@
 
 
 驚艷臺,p3p://173.208.176.178:31809/60626a1b00010e3e6f5a5a4f018e5ebe
+驚艷臺,p3p://167.114.175.6:55331/60626a1b00010e3e6f5a5a4f018e5e
 驚艷臺,http://125.227.210.55:8156/VideoInput/play.ts
 驚艷臺,http://104.194.10.200:25461/live/271871095922/006886711863/1.m3u8?token=SRVZVERZGl8UCA4FVw9TAlQFBQRQWgAEDlIGDlYBAQcCAAIEDwMIAA4SGhZFTRdVVl1rWwYaXAMbE0FLBERmClYVCxcABhpJFERfWVMbXwAbEkRbBhpcEAYDAw5RFBVBV09FUEVfWQlpVFNCX1oAEg1eQV4OFERdWW5QXQxXVwcQDRMFFR0aDEVAFA5YTAlcGxJWWxZKB0ZSEw4aUwQOUxAbE1ZYRFYRREkUDhRsNhIbElFKFl0IQV5eWhpbFFRQRw8TGRVYSzpEVUVARFwEXVJCFghACEQeFVxVQD5VVg1cUlJBXl5WFhQKFA0PAFwSGxJZXQxREl1FbkRRBRQDQQAEAQUDE0U=
 驚艷臺,http://suo.im/8odLv
@@ -218,7 +236,7 @@ HAPPY,p3p://173.208.176.178:31809/616b79be000a35b17ab2f7b84c325eeb
 HAPPY,p3p://108.181.32.169:40187/650b8915000b1a1b8f175e0765017f8a
 HAPPY,http://jaz9.my.to:2390/udp/224.1.4.186:11111
 HAPPY,http://ali.hlspull.yximgs.com/live/dd66a1fb532611a4942181a95f5931a1.flv
-
+HAPPY,p3p://167.114.175.6:55331/616b79be000a35b17ab2f7b84c325eeb
 
 一本道,https://2.ddyunbo.com/20190904/ZnGN7sEl/index.m3u8 
 
@@ -237,6 +255,8 @@ HAPPY,http://ali.hlspull.yximgs.com/live/dd66a1fb532611a4942181a95f5931a1.flv
 极限电影台,http://ali.hlspull.yximgs.com/live/bcdf6089e51c0106e39c233ed584f95e.flv
 极限电影台,http://ali.hlspull.yximgs.com/live/c4559a900cb808925162c053af606dd2.flv
 极限电影台,p3p://108.181.32.169:40187/650b8b700004037d8f208fb144ea7e3f
+极限电影台,p3p://167.114.175.6:55331/6109e9bb0005fd87fd9ce5ea2c1f18d3
+
 
 
 🔞歐美,#genre#
@@ -255,6 +275,7 @@ pigoo,http://s.mrw.so/7DlB
 奧视3,http://125.227.210.55:8917/VideoInput/play.ts
 Mainu臺,http://125.227.210.55:51359/VideoInput/play.ts
 Sex Girl,http://125.227.210.55:62698/VideoInput/play.ts
+beLOOK,p3p://167.114.175.6:55331/606271190002a1266f75aaee0463186a
 
 
 
@@ -277,6 +298,8 @@ bluehustler,http://18.svi-studio.com:80/live/426804892399/739490745427/101422.m3
 bluehustler,http://18.svi-studio.com:80/live/875355861316/575426927985/101422.m3u8
 bluehustler,http://18.svi-studio.com:80/live/656570054361/567275863459/101422.m3u8
 bluehustler,http://18.svi-studio.com:80/live/426804892399/739490745427/101422.m3u8
+bluehustler,http://18.svi-studio.com:80/live/824908251669/532612644941/101422.m3u8
+
 
 
 hustlet,http://18.svi-studio.com:80/live/478790710441/100371347442/101423.m3u8
@@ -295,6 +318,7 @@ hustlet,http://18.svi-studio.com:80/live/426804892399/739490745427/101423.m3u8
 hustlet,http://18.svi-studio.com:80/live/875355861316/575426927985/101423.m3u8
 hustlet,http://18.svi-studio.com:80/live/656570054361/567275863459/101423.m3u8
 hustlet,http://18.svi-studio.com:80/live/426804892399/739490745427/101423.m3u8
+hustlet,http://18.svi-studio.com:80/live/824908251669/532612644941/101423.m3u8
 
 
 
@@ -314,7 +338,7 @@ private,http://18.svi-studio.com:80/live/426804892399/739490745427/101424.m3u8
 private,http://18.svi-studio.com:80/live/875355861316/575426927985/101424.m3u8
 private,http://18.svi-studio.com:80/live/656570054361/567275863459/101424.m3u8
 private,http://18.svi-studio.com:80/live/426804892399/739490745427/101424.m3u8
-
+private,http://18.svi-studio.com:80/live/824908251669/532612644941/101424.m3u8
 
 
 vividred,http://18.svi-studio.com:80/live/478790710441/100371347442/101425.m3u8
@@ -333,6 +357,7 @@ vividred,http://18.svi-studio.com:80/live/426804892399/739490745427/101425.m3u8
 vividred,http://18.svi-studio.com:80/live/875355861316/575426927985/101425.m3u8
 vividred,http://18.svi-studio.com:80/live/656570054361/567275863459/101425.m3u8
 vividred,http://18.svi-studio.com:80/live/426804892399/739490745427/101425.m3u8
+vividred,http://18.svi-studio.com:80/live/824908251669/532612644941/101425.m3u8
 
 
 
@@ -352,6 +377,7 @@ vividtouch,http://18.svi-studio.com:80/live/426804892399/739490745427/101426.m3u
 vividtouch,http://18.svi-studio.com:80/live/875355861316/575426927985/101426.m3u8
 vividtouch,http://18.svi-studio.com:80/live/656570054361/567275863459/101426.m3u8
 vividtouch,http://18.svi-studio.com:80/live/426804892399/739490745427/101426.m3u8
+vividtouch,http://18.svi-studio.com:80/live/824908251669/532612644941/101426.m3u8
 
 
 
@@ -371,6 +397,11 @@ vividtv,http://18.svi-studio.com:80/live/426804892399/739490745427/101427.m3u8
 vividtv,http://18.svi-studio.com:80/live/875355861316/575426927985/101427.m3u8
 vividtv,http://18.svi-studio.com:80/live/656570054361/567275863459/101427.m3u8
 vividtv,http://18.svi-studio.com:80/live/426804892399/739490745427/101427.m3u8
+vividtv,http://18.svi-studio.com:80/live/824908251669/532612644941/101427.m3u8
+
+
+
+
 
 
 
