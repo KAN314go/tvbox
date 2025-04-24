@@ -266,7 +266,7 @@ class Spider(Spider):
 			try:
 				self.fetch('http://127.0.0.1:7777', timeout=1)
 			except:
-				self.fetch('http://127.0.0.1:8964/go')
+				self.fetch('http://127.0.0.1:9978/go')
 			url = f'http://127.0.0.1:7777/?url={quote(url)}&thread={self.thread}'
 		result = {
 			"url": url,

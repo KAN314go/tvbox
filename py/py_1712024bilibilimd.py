@@ -219,7 +219,7 @@ class Spider(Spider):  # 元类 默认的元类 type
 			thread = '0'
 		result["parse"] = '0'
 		result["playUrl"] = ''
-		result["url"] = f'http://127.0.0.1:8964/proxy?do=py&type=mpd&cookies={cookies}&url={quote(url)}&aid={aid}&cid={cid}&thread={thread}'
+		result["url"] = f'http://127.0.0.1:9978/proxy?do=py&type=mpd&cookies={cookies}&url={quote(url)}&aid={aid}&cid={cid}&thread={thread}'
 		result["header"] = self.header
 		result['danmaku'] = 'https://api.bilibili.com/x/v1/dm/list.so?oid={}'.format(cid)
 		result["format"] = 'application/dash+xml'
@@ -354,7 +354,7 @@ class Spider(Spider):  # 元类 默认的元类 type
 				try:
 					self.fetch('http://127.0.0.1:7777')
 				except:
-					self.fetch('http://127.0.0.1:8964/go')
+					self.fetch('http://127.0.0.1:9978/go')
 				purl = f'http://127.0.0.1:7777?url={quote(purl)}&thread={thread}'
 			self.setCache(key, {'content': purl, 'type': 'mp4', 'dashinfos': data['result'], 'expiresAt': expiresAt})
 			return purl, data['result'], 'mp4'
@@ -380,7 +380,7 @@ class Spider(Spider):  # 元类 默认的元类 type
 			void = video['id']
 			vidparams = params.copy()
 			vidparams['videoid'] = videoid
-			baseUrl = f'http://127.0.0.1:8964/proxy?do=py&type=media&cookies={quote(json.dumps(cookies))}&url={quote(url)}&aid={aid}&cid={cid}&videoid={videoid}'
+			baseUrl = f'http://127.0.0.1:9978/proxy?do=py&type=media&cookies={quote(json.dumps(cookies))}&url={quote(url)}&aid={aid}&cid={cid}&videoid={videoid}'
 			videoinfo = videoinfo + f"""	      <Representation bandwidth="{bandwidth}" codecs="{codecs}" frameRate="{frameRate}" height="{height}" id="{void}" width="{width}">
 	        <BaseURL>{baseUrl}</BaseURL>
 	        <SegmentBase indexRange="{video['SegmentBase']['indexRange']}">
@@ -402,7 +402,7 @@ class Spider(Spider):  # 元类 默认的元类 type
 			aoid = audio['id']
 			aidparams = params.copy()
 			aidparams['audioid'] = audioid
-			baseUrl = f'http://127.0.0.1:8964/proxy?do=py&type=media&cookies={quote(json.dumps(cookies))}&url={quote(url)}&aid={aid}&cid={cid}&audioid={audioid}'
+			baseUrl = f'http://127.0.0.1:9978/proxy?do=py&type=media&cookies={quote(json.dumps(cookies))}&url={quote(url)}&aid={aid}&cid={cid}&audioid={audioid}'
 			audioinfo = audioinfo + f"""	      <Representation audioSamplingRate="44100" bandwidth="{bandwidth}" codecs="{codecs}" id="{aoid}">
 	        <BaseURL>{baseUrl}</BaseURL>
 	        <SegmentBase indexRange="{audio['SegmentBase']['indexRange']}">
