@@ -26,24 +26,6 @@
         }
       },
       {
-        "key": "csp_XBiuNIVODvip",
-        "name": "🇹🇼｜泥視頻②｜待測",
-        "type": 3,
-        "api": "csp_XBPQ",
-        "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-        "searchable": 1,
-        "quickSearch": 1,
-        "filterable": 1,
-        "ext": {
-          "简介": "video-info-item video-info-content vod_content\">&&</span>",
-          "搜索url": "https://www.nivod.vip/s/----------{pg}---/?wd={wd}",
-          "分类url": "https://www.nivod.vip/k/{cateId}-{area}-{by}------{catePg}---{year}/",
-          "分类": "電影$1#電視劇$2#綜藝$3#動漫$4#動畫電影$26",
-          "地区": "大陆&香港&台湾&日本&韩国&泰国&美国&法国&英国&德国&印度&其他||大陆&香港&台湾&日本&韩国&泰国&美国&法国&英国&德国&印度&其他||内地&港台&日韩&欧美||内地&港台&日韩&欧美||大陆&香港&台湾&日本&韩国&泰国&美国&法国&英国&德国&印度&其他",
-          "年份": "2025&2024&2023&2022&2021&2020&2019&2018&2017&2016&2015&2014&2013&2012&2011&2010-2000&90年代&80年代&更早"
-        }
-      },
-      {
         "key": "csp_XBiu唐人街影院COM",
         "name": "🇹🇼｜唐人街影院1｜待測",
         "type": 3,
