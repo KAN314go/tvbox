@@ -120,7 +120,7 @@
         "filterable": 1,
         "ext": {
           "搜索url": "https://www.ilingyu.com/vodsearch/----------{pg}---.html?wd={wd}",
-          "搜索图片": "class=\"pic\">*data-original=\"&&\"",
+          "搜索图片": "class=\"module-item-pic\"data-original=\"&&\"",
           "分类url": "https://www.ilingyu.com/vodshow/{cateId}/area/{area}/by/{by}/page/{catePg}/year/{year}.html",
           "分类": "電影$dianying#電視劇$dsj#綜藝$zongyi#動漫$dongman#短劇$remenduanju",
           "地区": "大陆&香港&台湾&日本&韩国&泰国&美国&法国&英国&德国&印度&其他||内地&韩国&香港&台湾&日本&美国&泰国&英国&新加坡&其他||内地&港台&日韩&欧美||国产&日本&欧美&其他||空"
