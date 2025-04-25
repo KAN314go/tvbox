@@ -6,10 +6,178 @@
 
 
 
-
-
-
-
+      {
+        "key": "csp_XBiuNIVODapp",
+        "name": "🇹🇼｜泥視頻｜待測",
+        "type": 3,
+        "api": "csp_XBPQ",
+        "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+        "searchable": 1,
+        "quickSearch": 1,
+        "filterable": 1,
+        "ext": {
+          "线路数组": "class=\"playlist-mobile playlist layout-box clearfix&&</ul>",
+          "简介": "details-content-all\">&&</span>",
+          "搜索url": "https://www.nivod.app/vod-search/page/{pg}/wd/{wd}.html",
+          "分类url": "https://www.nivod.app/vod-show-{cateId}/area/{area}/by/{by}/page/{catePg}/year/{year}.html",
+          "分类": "電視劇$1#電影$2#綜藝$3#動漫$4#動畫電影$215",
+          "地区": "中国大陆&中国香港&中国台湾&欧美&法国&英国&日本&韩国&泰国&新加坡&马来西亚&印度&西班牙&加拿大&俄罗斯&其它",
+          "排序": "更新$time#週人氣$hits_week#總人氣$hits"
+        }
+      },
+      {
+        "key": "csp_XBiuNIVODvip",
+        "name": "🇹🇼｜泥視頻②｜待測",
+        "type": 3,
+        "api": "csp_XBPQ",
+        "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+        "searchable": 1,
+        "quickSearch": 1,
+        "filterable": 1,
+        "ext": {
+          "简介": "video-info-item video-info-content vod_content\">&&</span>",
+          "搜索url": "https://www.nivod.vip/s/----------{pg}---/?wd={wd}",
+          "分类url": "https://www.nivod.vip/k/{cateId}-{area}-{by}------{catePg}---{year}/",
+          "分类": "電影$1#電視劇$2#綜藝$3#動漫$4#動畫電影$26",
+          "地区": "大陆&香港&台湾&日本&韩国&泰国&美国&法国&英国&德国&印度&其他||大陆&香港&台湾&日本&韩国&泰国&美国&法国&英国&德国&印度&其他||内地&港台&日韩&欧美||内地&港台&日韩&欧美||大陆&香港&台湾&日本&韩国&泰国&美国&法国&英国&德国&印度&其他",
+          "年份": "2025&2024&2023&2022&2021&2020&2019&2018&2017&2016&2015&2014&2013&2012&2011&2010-2000&90年代&80年代&更早"
+        }
+      },
+      {
+        "key": "csp_XBiu唐人街影院COM",
+        "name": "🇹🇼｜唐人街影院1｜待測",
+        "type": 3,
+        "api": "csp_XBPQ",
+        "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+        "searchable": 1,
+        "quickSearch": 1,
+        "filterable": 1,
+        "ext": {
+          "简介": "+display:none;\">&&</span>",
+          "搜索url": "https://www.trjvod.com/index.php/vod/search/page/{pg}/wd/{wd}.html",
+          "分类url": "https://www.trjvod.com/index.php/vod/show/area/{area}/by/{by}/id/{cateId}/page/{catePg}/year/{year}.html",
+          "分类": "電影$1#電視劇$2#綜藝$3#動漫$4#短劇$53",
+          "地区": "大陆&香港&台湾&日本&韩国&泰国&美国&法国&英国&德国&印度&其它||内地&韩国&香港&台湾&日本&美国&泰国&英国&新加坡&其他||内地&港台&日韩&欧美||国产&日本&欧美&其他||空"
+        }
+      },
+      {
+        "key": "csp_XBiu唐人街影院JJ",
+        "name": "🇹🇼｜唐人街影院2｜待測",
+        "type": 3,
+        "api": "csp_XBPQ",
+        "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+        "searchable": 1,
+        "quickSearch": 1,
+        "filterable": 1,
+        "ext": {
+          "简介": "+display:none;\">&&</span>",
+          "搜索url": "https://www.trjyy.com/index.php/vod/search/page/{pg}/wd/{wd}.html",
+          "分类url": "https://www.trjyy.com/index.php/vod/show/area/{area}/by/{by}/id/{cateId}/page/{catePg}/year/{year}.html",
+          "分类": "電影$1#電視劇$2#綜藝$3#動漫$4#短劇$42",
+          "地区": "内地&香港&台湾&美国&法国&英国&日本&韩国&德国&泰国&印度&意大利&西班牙&加拿大&其他||内地&韩国&香港&台湾&日本&美国&泰国&英国&新加坡&其他||内地&香港&台湾&日本&韩国&美国||内地&日本&欧美&其他||空"
+        }
+      },
+      {
+        "key": "csp_XBiuTrjdy",
+        "name": "🇹🇼｜唐人街電影3｜待測",
+        "type": 3,
+        "api": "csp_XBPQ",
+        "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+        "searchable": 1,
+        "quickSearch": 1,
+        "filterable": 1,
+        "ext": {
+          "搜索url": "https://www.trjdy.com/dysearch/----------{pg}---.html?wd={wd}&submit=",
+          "分类url": "https://www.trjdy.com/dyshow/{cateId}-{area}-{by}------{catePg}---{year}.html",
+          "分类": "電影$1#電視劇$2#綜藝$3#動漫$4#動畫電影$25",
+          "地区": "大陆&香港&台湾&欧美&日本&韩国&新马&泰国&其它||大陆&韩国&香港&台湾&日本&欧美&新马&泰国&其它||大陆&韩国&香港&台湾&日本&欧美&泰国&其它||大陆&韩国&香港&台湾&日本&欧美&其它"
+        }
+      },
+      {
+        "key": "csp_hao45廠長影院",
+        "name": "🇹🇼｜廠長影院｜待測",
+        "type": 3,
+        "api": "csp_XBPQ",
+        "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+        "searchable": 1,
+        "quickSearch": 1,
+        "filterable": 1,
+        "ext": {
+          "搜索url": "https://www.hao45.cc/vodsearch/{wd}----------{pg}---/",
+          "分类url": "https://www.hao45.cc/vodshow/{cateId}-{area}-{by}------{catePg}---{year}/",          
+          "分类": "電影$1#電視劇$2#動漫$3#綜藝$4#短劇$23",
+          "地区": "大陆&香港&台湾&美国&法国&英国&日本&韩国&德国&泰国&印度&意大利&西班牙&加拿大&其他||內地&韩国&香港&台湾&日本&美国&泰国&英国&新加坡&其他||内地&港台&日韩&欧美||国产&日本&欧美&其他||空"
+        }
+      },
+      {
+        "key": "csp_ilingyu廠長資源",
+        "name": "🇹🇼｜廠長資源2｜待測",
+        "type": 3,
+        "api": "csp_XBPQ",
+        "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+        "searchable": 1,
+        "quickSearch": 1,
+        "filterable": 1,
+        "ext": {
+          "搜索url": "https://www.ilingyu.com/vodsearch/----------{pg}---.html?wd={wd}",
+          "搜索图片": "class=\"pic\">*data-original=\"&&\"",
+          "分类url": "https://www.ilingyu.com/vodshow/{cateId}/area/{area}/by/{by}/page/{catePg}/year/{year}.html",
+          "分类": "電影$dianying#電視劇$dsj#綜藝$zongyi#動漫$dongman#短劇$remenduanju",
+          "地区": "大陆&香港&台湾&日本&韩国&泰国&美国&法国&英国&德国&印度&其他||内地&韩国&香港&台湾&日本&美国&泰国&英国&新加坡&其他||内地&港台&日韩&欧美||国产&日本&欧美&其他||空"
+        }
+      },
+      {
+        "key": "csp_XBiu大師兄影視",
+        "name": "🇹🇼｜大師兄影視1｜待測",
+        "type": 3,
+        "api": "csp_XBPQ",
+        "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+        "searchable": 1,
+        "quickSearch": 1,
+        "filterable": 1,
+        "ext": {
+          "搜索url": "http://www.weixinquanquan.com/rhj/----------{pg}---.html?wd={wd}",
+          "分类url": "http://www.weixinquanquan.com/omj/{cateId}-{area}-{by}------{catePg}---{year}.html",
+          "分类": "電影$1#電視劇$2#綜藝$3#動漫$4#短劇$5",
+          "地区": "大陆&内地&香港&台湾&日本&韩国&泰国&美国&法国&英国&德国&印度&其他||大陆&内地&香港&台湾&美国&韩国&日本&泰国&印度&英国&法国||内地&香港&台湾&美国&英国&法国&德国&意大利&俄罗斯&日本&韩国||内地&日本&美国||大陆&日本&美国"
+        }
+      },
+      {
+        "key": "csp_XBiu大師兄影視PRO",
+        "name": "🇹🇼｜大師兄影視2｜待測",
+        "type": 3,
+        "api": "csp_XBPQ",
+        "jar": "./jar/bauhe.txt",
+        "searchable": 1,
+        "quickSearch": 1,
+        "filterable": 1,
+        "ext": {
+          "搜索url": "https://dsxys.pro/sb/kemksmaksdl7nhZe3c1{wd}-/page/{pg}.html",
+          "分类url": "https://dsxys.pro/vodshow/{cateId}-{area}-{by}------{catePg}---{year}.html",
+          "分类": "電影$1#電視劇$2#綜藝$3#動漫$4",
+          "地区": "大陆&香港&台湾&日本&韩国&泰国&美国&法国&英国&德国&印度&其他||内地&韩国&香港&台湾&日本&美国&泰国&英国&新加坡&其他||内地&港台&日韩&欧美||国产&日本&欧美&其他"
+        }
+      },
+      {
+        "key": "csp_XBiu人人影視FUN",
+        "name": "🇹🇼｜人人影視2｜待測",
+        "type": 3,
+        "api": "csp_XBPQ",
+        "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+        "searchable": 1,
+        "quickSearch": 1,
+        "filterable": 1,
+        "ext": {
+          "嗅探词": ".mp4?#m3u8?#.m3u8#.mp4#.flv#.mp3#.m4a",
+          "搜索url": "https://svip1.fun/index.php/vod/search/page/{pg}/wd/{wd}.html",
+          "分类url": "https://svip1.fun/index.php/vod/show/area/{area}/by/{by}/id/{cateId}/page/{catePg}/year/{year}.html",
+          "分类": "電視劇$21#電影$20#動漫$22#綜藝$23#動畫電影$25#短劇$24",
+          "地区": "大陆&香港&台湾&日本&韩国&泰国&美国&法国&英国&德国&印度&其他||大陆&香港&台湾&日本&韩国&泰国&美国&法国&英国&德国&印度&其他||大陆&日本&韩国&欧美||大陆&日本&韩国&欧美||空||空"
+        }
+      },
+    
+    
+    
     {
       "key": "豆瓣",
       "name": "🇹🇼｜熱播排行榜｜自動切換",
@@ -373,15 +541,6 @@
       "filterable": 1
     },
     {
-      "key": "csp_baibai",
-      "name": "素白白",
-      "type": 3,
-      "quickSearch": 1,
-      "api": "csp_SuBaiBaiGuard",
-      "jar": "https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1745207317358/0421.jar;md5;1c80e3fd1d023a3882a164c5f5fbca20",
-      "ext": "https://www.subaibai.com"
-    },
-    {
       "key": "星辉弹幕",
       "name": "🥇｜星辉｜藍光◎秒播(無廣告+APP)",
       "type": 3,
@@ -583,14 +742,6 @@
       "jar": "./jar/pizza.jar;md5;6bcb3de5f0d7c9b3d4f19cfe9a314ab2",
       "playerType": 2,
       "ext": "jaHR0cDovL3BweC5iangzNjUudG9wfHBpcGl4aWEyMTc1MjIzMjR8cGlwaXhpYTIxNzUyMjMyNHw1MDY="
-    },
-    {
-      "key": "人人",
-      "name": "🥇｜人人藍光◎秒播(無廣告+APP)",
-      "type": 3,
-      "api": "csp_AppGetGuard",
-      "jar": "https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1745207317358/0421.jar;md5;1c80e3fd1d023a3882a164c5f5fbca20",
-      "ext": "sHR2rlsfjI4L3t4RXQMkn5lWAFk63MKp99BaRaCwGwVoPMXpUrRhJupGqVQN8zzRhc0PCuL4mVzuh+KN84Fro7WINX8x2KJlpNKTLBLPlTuVfsg1mblMWUa4ZqZVqz8bk6MbJPrt3r0jg7nCMVsUaeYm/CFBu4z4N5c4sNExHQ44DdF44W2s6KWUWZpSkfRb2WJdy5v0GcpIoQuxWUsh9EnK9D3N3m64NCPyEyiwAVg="
     },
     {
       "key": "py_奇蹟APP",
@@ -4968,14 +5119,6 @@
   ],
   "lives": [
     {
-      "name" : "🐮牛牛直播🐮",
-      "type" : 0,
-      "url" : "https://web.banye.tech:7777/tv/hlj.txt",
-      "ua" : "okhttp/3.15",
-      "epg" : "http://127.0.0.1:10079/p/0/proxy/http://epg.112114.xyz/?ch={name}&date={date}",
-      "logo" : "http://127.0.0.1:10079/p/0/proxy/https://epg.112114.xyz/logo/{name}.png"
-    },
-    {
       "name": "小雲1台",
       "url": "./live/ueen.m3u",
       "playerType": 2,
@@ -5004,13 +5147,10 @@
       }
     },
     {
-      "name": "沐辰直播",
-      "type": 3,
-      "playerType": 2,
-      "api": "https://json.doube.eu.org/python/py_litv.py",
-      "ext": "",
-      "epg": "http://epg.112114.xyz/?ch={name}&date={date}",
-      "logo": "https://epg.112114.xyz/logo/{name}.png"
+     "name": "沐辰直播",
+     "type": 3,
+     "api": "https://raw.githubusercontent.com/doube-ba/Sub/refs/heads/main/live/live_litv.py",
+     "ext": {}
     },
     {"name": "smart.py", "type": 3, "api": "./py/live_smt.py"},
     {
@@ -5095,6 +5235,13 @@
       "epg": "http://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Taipei",
       "logo": "https://epg.112114.xyz/logo/{name}.png",
       "pass": true
+    },
+    {
+      "name": "4G-TV(神奇版)",
+      "type": 0,
+      "url": "./live/666-live.txt",
+      "epg": "https://epg.112114.eu.org/?ch={name}&date={date}",
+      "logo": "https://epg.112114.eu.org/logo/{name}.png"
     },
     {
       "name": "4G-TV(備用)",
