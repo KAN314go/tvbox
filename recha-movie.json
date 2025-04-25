@@ -6,24 +6,156 @@
 
 
 
-    {"key":"csp_XBiuNIVODapp","name":"🇹🇼｜泥視頻(XB)","type":3,"api":"csp_XBPQ","jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5","searchable":1,"quickSearch":1,"filterable":1,"ext":{"线路数组":"class=\"playlist-mobile playlist layout-box clearfix&&</ul>","简介":"details-content-all\">&&</span>","分类url":"https://www.nivod.app/vod-show-{cateId}/page/{catePg}/year/{year}.html","分类": "電視劇$1#電影$2#動漫$4#綜藝$3#動畫電影$215"}},
-    {"key":"csp_XBiuNIVODvip","name":"🇹🇼｜泥視頻②(XB)","type":3,"api":"csp_XBPQ","jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5","searchable":1,"quickSearch":1,"filterable":1,"ext":{"简介":"video-info-item video-info-content vod_content\">&&</span>","分类url":"https://www.nivod.vip/k/{cateId}--time------{cateIPg}---{year}/","分类": "電視劇$2#電影$1#動漫$4#綜藝$3#紀錄片$21#動畫電影$26#直播$49"}},
-    {"key":"csp_XBiu唐人街影院COM","name":"🇹🇼｜唐人街影院1(XB)","type": 3,"api":"csp_XBPQ","jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5","searchable":1,"quickSearch":1,"filterable":1,"ext":{"简介":"+display:none;\">&&</span>","分类url":"https://www.trjvod.com/index.php/vod/show/by/time/id/{cateId}/page/{catePg}/year/{year}.html","分类": "電視劇$2#電影$1#動漫$4#綜藝$3#短劇$53"}},
-    {"key":"csp_XBiu唐人街影院JJ","name":"🇹🇼｜唐人街影院2(XB)","type": 3,"api":"csp_XBPQ","jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5","searchable":1,"quickSearch":1,"filterable":1,"ext":{"简介":"+display:none;\">&&</span>","分类url":"https://www.trjyy.com/index.php/vod/show/by/time/id/{cateId}/page/{catePg}/year/{year}.html","分类": "電視劇$2#電影$1#動漫$4#綜藝$3#短劇$42"}},
-    {"key":"csp_XBiu唐人街影视","name":"🇹🇼｜唐人街影視3(XB)","type": 3,"api":"csp_XBPQ","jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5","searchable":1,"quickSearch":1,"filterable":1,"ext":{"简介":"+hl-col-xs-12 blurb\">&&</li>","分类url":"https://www.chinatownfilm.com/vodshow/{cateId}--time------{catePg}---{year}.html","分类": "電視劇$2#電影$1#動漫$4#綜藝$3"}},
-    {"key":"csp_XBiuTrjdy","name":"🇹🇼｜唐人街電影4(XB)","type":3,"api":"csp_XBPQ","jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5","searchable":1,"quickSearch":1,"filterable":1,"ext":{"分类url":"https://www.trjdy.com/dyshow/{cateId}--time------{catePg}---{year}.html","分类": "電視劇$2#電影$1#動漫$4#綜藝$3#紀錄片$24#動畫電影$25"}},
-    {"key":"csp_XBiu廠長影院","name":"🇹🇼｜廠長影院","type": 3,"api":"csp_XBPQ","jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5","searchable":1,"quickSearch":1,"filterable":1,"ext":{"分类url":"https://www.hao45.cc/vodshow/{cateId}--time------{catePg}---{year}.html","分类": "電視劇$2#電影$1#動漫$3#綜藝$4#短劇$23"}},
-    {"key":"csp_XBiu廠長資源","name":"🇹🇼｜廠長資源","type": 3,"api":"csp_XBPQ","jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5","searchable":1,"quickSearch":1,"filterable":1,"ext":{"分类url":"https://www.ilingyu.com/vodshow/{cateId}/by/time/page/{catePg}/year/{year}.html","分类": "電視劇$2#電影$1#動漫$4#綜藝$3#紀錄片$22#動畫電影$16#短劇$31"}},
-    {"key":"csp_XBiu大師兄影視","name":"🇹🇼｜大師兄影視1","type": 3,"api":"csp_XBPQ","jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5","searchable":1,"quickSearch":1,"filterable":1,"ext":{"分类url":"http://www.weixinquanquan.com/omj/{cateId}--time------{catePg}---{year}.html","分类": "電視劇$2#電影$1#動漫$4#綜藝$3#紀錄片$14#短劇$5"}},
-    {"key":"csp_XBiu大師兄影視PRO","name":"🇹🇼｜大師兄影視2","type": 3,"api":"csp_XBPQ","jar":"./jar/bauhe.txt","searchable":1,"quickSearch":1,"filterable":1,"ext":{"分类url":"https://dsxys.pro/vodshow/{cateId}--time------{catePg}---{year}.html","分类": "電視劇$2#電影$1#動漫$4#綜藝$3"}},
-    {"key":"csp_XBiu人人影視","name":"🇹🇼｜人人影視1","type": 3,"api":"csp_XBPQ","jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5","searchable":1,"quickSearch":1,"filterable":1,"ext":{"线路数组":"class=\"module-tab-item tab-item\"&&</div>","简介":"col-xs-1 detail-info hidden-xs\">&&</div>","分类url":"https://www.rrentv.com/vodlist/{cateId}___{year}__addtime_{catePg}.html","分类": "電視劇$dianshiju#電影$dianying#動漫$dongman#綜藝$zongyi"}},
-    {"key":"csp_XBiu人人影視FUN","name":"🇹🇼｜人人影視2","type": 3,"api":"csp_XBPQ","jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5","searchable":1,"quickSearch":1,"filterable":1,"ext":{"嗅探词":".mp4?#m3u8?#.m3u8#.mp4#.flv#.mp3#.m4a","分类url":"https://svip1.fun/index.php/vod/show/by/time/id/{cateId}/page/{catePg}/year/{year}.html","分类": "電視劇$21#電影$20#動漫$22#綜藝$23#動畫電影$25#短劇$24"}},
-    {"key":"csp_XBiuAG動漫","name":"🇹🇼｜AG動漫","type": 3,"api":"csp_XBPQ","jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5","searchable":1,"quickSearch":1,"filterable":1,"ext":{"分类url":"https://agdm.tv/show/{cateId}/by/time/page/{catePg}/year/{year}.html","分类": "全區$1#劇場版$9#日本動漫$6#國產動漫$7#歐美動漫$8#海外動漫$21"}},
-
-    
-    
-    
-    
+      {
+        "key": "csp_XBiuNIVODapp",
+        "name": "🇹🇼｜泥視頻(XB)",
+        "type": 3,
+        "api": "csp_XBPQ",
+        "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+        "searchable": 1,
+        "quickSearch": 1,
+        "filterable": 1,
+        "ext": {
+          "线路数组": "class=\"playlist-mobile playlist layout-box clearfix&&</ul>",
+          "简介": "details-content-all\">&&</span>",
+          "分类url": "https://www.nivod.app/vod-show-{cateId}/page/{catePg}/year/{year}.html",
+          "分类": "電視劇$1#電影$2#動漫$4#綜藝$3#動畫電影$215"
+        }
+      },
+      {
+        "key": "csp_XBiuNIVODvip",
+        "name": "🇹🇼｜泥視頻②(XB)",
+        "type": 3,
+        "api": "csp_XBPQ",
+        "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+        "searchable": 1,
+        "quickSearch": 1,
+        "filterable": 1,
+        "ext": {
+          "简介": "video-info-item video-info-content vod_content\">&&</span>",
+          "分类url": "https://www.nivod.vip/k/{cateId}--time------{cateIPg}---{year}/",
+          "分类": "電視劇$2#電影$1#動漫$4#綜藝$3#紀錄片$21#動畫電影$26#直播$49"
+        }
+      },
+      {
+        "key": "csp_XBiu唐人街影院COM",
+        "name": "🇹🇼｜唐人街影院1(XB)",
+        "type": 3,
+        "api": "csp_XBPQ",
+        "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+        "searchable": 1,
+        "quickSearch": 1,
+        "filterable": 1,
+        "ext": {
+          "简介": "+display:none;\">&&</span>",
+          "分类url": "https://www.trjvod.com/index.php/vod/show/by/time/id/{cateId}/page/{catePg}/year/{year}.html",
+          "分类": "電視劇$2#電影$1#動漫$4#綜藝$3#短劇$53"
+        }
+      },
+      {
+        "key": "csp_XBiu唐人街影院JJ",
+        "name": "🇹🇼｜唐人街影院2(XB)",
+        "type": 3,
+        "api": "csp_XBPQ",
+        "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+        "searchable": 1,
+        "quickSearch": 1,
+        "filterable": 1,
+        "ext": {
+          "简介": "+display:none;\">&&</span>",
+          "分类url": "https://www.trjyy.com/index.php/vod/show/by/time/id/{cateId}/page/{catePg}/year/{year}.html",
+          "分类": "電視劇$2#電影$1#動漫$4#綜藝$3#短劇$42"
+        }
+      },
+      {
+        "key": "csp_XBiuTrjdy",
+        "name": "🇹🇼｜唐人街電影4(XB)",
+        "type": 3,
+        "api": "csp_XBPQ",
+        "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+        "searchable": 1,
+        "quickSearch": 1,
+        "filterable": 1,
+        "ext": {
+          "分类url": "https://www.trjdy.com/dyshow/{cateId}--time------{catePg}---{year}.html",
+          "分类": "電視劇$2#電影$1#動漫$4#綜藝$3#紀錄片$24#動畫電影$25"
+        }
+      },
+      {
+        "key": "csp_XBiu廠長影院",
+        "name": "🇹🇼｜廠長影院",
+        "type": 3,
+        "api": "csp_XBPQ",
+        "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+        "searchable": 1,
+        "quickSearch": 1,
+        "filterable": 1,
+        "ext": {
+          "分类url": "https://www.hao45.cc/vodshow/{cateId}--time------{catePg}---{year}.html",
+          "分类": "電視劇$2#電影$1#動漫$3#綜藝$4#短劇$23"
+        }
+      },
+      {
+        "key": "csp_XBiu廠長資源",
+        "name": "🇹🇼｜廠長資源",
+        "type": 3,
+        "api": "csp_XBPQ",
+        "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+        "searchable": 1,
+        "quickSearch": 1,
+        "filterable": 1,
+        "ext": {
+          "分类url": "https://www.ilingyu.com/vodshow/{cateId}/area/{area}/by/{by}/page/{catePg}/year/{year}.html",
+          "分类": "電影$dianying#電視劇$dsj#綜藝$zongyi#動漫$dongman#短劇$remenduanju",
+          "地区": "大陆&香港&台湾&日本&韩国&泰国&美国&法国&英国&德国&印度&其他||内地&韩国&香港&台湾&日本&美国&泰国&英国&新加坡&其他||内地&港台&日韩&欧美||国产&日本&欧美&其他||空"
+        }
+      },
+      {
+        "key": "csp_XBiu大師兄影視",
+        "name": "🇹🇼｜大師兄影視1",
+        "type": 3,
+        "api": "csp_XBPQ",
+        "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+        "searchable": 1,
+        "quickSearch": 1,
+        "filterable": 1,
+        "ext": {
+          "分类url": "http://www.weixinquanquan.com/omj/{cateId}-{area}-{by}------{catePg}---{year}.html",
+          "分类": "電影$1#電視劇$2#綜藝$3#動漫$4#短劇$5",
+          "地区": "大陆&内地&香港&台湾&日本&韩国&泰国&美国&法国&英国&德国&印度&其他||大陆&内地&香港&台湾&美国&韩国&日本&泰国&印度&英国&法国||内地&香港&台湾&美国&英国&法国&德国&意大利&俄罗斯&日本&韩国||内地&日本&美国||大陆&日本&美国"
+        }
+      },
+      {
+        "key": "csp_XBiu大師兄影視PRO",
+        "name": "🇹🇼｜大師兄影視2",
+        "type": 3,
+        "api": "csp_XBPQ",
+        "jar": "./jar/bauhe.txt",
+        "searchable": 1,
+        "quickSearch": 1,
+        "filterable": 1,
+        "ext": {
+          "分类url": "https://dsxys.pro/vodshow/{cateId}-{area}-{by}------{catePg}---{year}.html",
+          "分类": "電影$1#電視劇$2#綜藝$3#動漫$4",
+          "地区": "大陆&香港&台湾&日本&韩国&泰国&美国&法国&英国&德国&印度&其他||内地&韩国&香港&台湾&日本&美国&泰国&英国&新加坡&其他||内地&港台&日韩&欧美||国产&日本&欧美&其他"
+        }
+      },
+      {
+        "key": "csp_XBiu人人影視FUN",
+        "name": "🇹🇼｜人人影視2",
+        "type": 3,
+        "api": "csp_XBPQ",
+        "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+        "searchable": 1,
+        "quickSearch": 1,
+        "filterable": 1,
+        "ext": {
+          "嗅探词": ".mp4?#m3u8?#.m3u8#.mp4#.flv#.mp3#.m4a",
+          "分类url": "https://svip1.fun/index.php/vod/show/area/{area}/by/{by}/id/{cateId}/page/{catePg}/year/{year}.html",
+          "分类": "電視劇$21#電影$20#動漫$22#綜藝$23#動畫電影$25#短劇$24",
+          "地区": "大陆&香港&台湾&日本&韩国&泰国&美国&法国&英国&德国&印度&其他||大陆&香港&台湾&日本&韩国&泰国&美国&法国&英国&德国&印度&其他||大陆&日本&韩国&欧美||大陆&日本&韩国&欧美||空||空"
+        }
+      },
     
     
     
