@@ -5108,6 +5108,13 @@
   ],
   "lives": [
     {
+      "name": "4G-TV(神奇版)",
+      "type": 0,
+      "url": "./live/666-live.txt",
+      "epg": "https://epg.112114.eu.org/?ch={name}&date={date}",
+      "logo": "https://epg.112114.eu.org/logo/{name}.png"
+    },
+    {
       "name": "小雲1台",
       "url": "./live/ueen.m3u",
       "playerType": 2,
