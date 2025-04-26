@@ -41,75 +41,6 @@
       }
     },
       {
-        "key": "csp_XBiuNIVODapp",
-        "name": "🇹🇼｜泥視頻｜待測",
-        "type": 3,
-        "api": "csp_XBPQ",
-        "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-        "searchable": 1,
-        "quickSearch": 1,
-        "filterable": 1,
-        "ext": {
-          "线路数组": "class=\"playlist-mobile playlist layout-box clearfix&&</ul>",
-          "简介": "details-content-all\">&&</span>",
-          "搜索url": "https://www.nivod.app/vod-search/page/{pg}/wd/{wd}.html",
-          "分类url": "https://www.nivod.app/vod-show-{cateId}/area/{area}/by/{by}/page/{catePg}/year/{year}.html",
-          "分类": "電視劇$1#電影$2#綜藝$3#動漫$4#動畫電影$215",
-          "地区": "中国大陆&中国香港&中国台湾&欧美&法国&英国&日本&韩国&泰国&新加坡&马来西亚&印度&西班牙&加拿大&俄罗斯&其它",
-          "排序": "更新$time#週人氣$hits_week#總人氣$hits"
-        }
-      },
-      {
-        "key": "csp_XBiu唐人街影院COM",
-        "name": "🇹🇼｜唐人街影院1｜待測",
-        "type": 3,
-        "api": "csp_XBPQ",
-        "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-        "searchable": 1,
-        "quickSearch": 1,
-        "filterable": 1,
-        "ext": {
-          "简介": "+display:none;\">&&</span>",
-          "搜索url": "https://www.trjvod.com/index.php/vod/search/page/{pg}/wd/{wd}.html",
-          "分类url": "https://www.trjvod.com/index.php/vod/show/area/{area}/by/{by}/id/{cateId}/page/{catePg}/year/{year}.html",
-          "分类": "電影$1#電視劇$2#綜藝$3#動漫$4#短劇$53",
-          "地区": "大陆&香港&台湾&日本&韩国&泰国&美国&法国&英国&德国&印度&其它||内地&韩国&香港&台湾&日本&美国&泰国&英国&新加坡&其他||内地&港台&日韩&欧美||国产&日本&欧美&其他||空"
-        }
-      },
-      {
-        "key": "csp_XBiu唐人街影院JJ",
-        "name": "🇹🇼｜唐人街影院2｜待測",
-        "type": 3,
-        "api": "csp_XBPQ",
-        "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-        "searchable": 1,
-        "quickSearch": 1,
-        "filterable": 1,
-        "ext": {
-          "简介": "+display:none;\">&&</span>",
-          "搜索url": "https://www.trjyy.com/index.php/vod/search/page/{pg}/wd/{wd}.html",
-          "分类url": "https://www.trjyy.com/index.php/vod/show/area/{area}/by/{by}/id/{cateId}/page/{catePg}/year/{year}.html",
-          "分类": "電影$1#電視劇$2#綜藝$3#動漫$4#短劇$42",
-          "地区": "内地&香港&台湾&美国&法国&英国&日本&韩国&德国&泰国&印度&意大利&西班牙&加拿大&其他||内地&韩国&香港&台湾&日本&美国&泰国&英国&新加坡&其他||内地&香港&台湾&日本&韩国&美国||内地&日本&欧美&其他||空"
-        }
-      },
-      {
-        "key": "csp_XBiuTrjdy",
-        "name": "🇹🇼｜唐人街電影3｜待測",
-        "type": 3,
-        "api": "csp_XBPQ",
-        "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-        "searchable": 1,
-        "quickSearch": 1,
-        "filterable": 1,
-        "ext": {
-          "搜索url": "https://www.trjdy.com/dysearch/----------{pg}---.html?wd={wd}&submit=",
-          "分类url": "https://www.trjdy.com/dyshow/{cateId}-{area}-{by}------{catePg}---{year}.html",
-          "分类": "電影$1#電視劇$2#綜藝$3#動漫$4#動畫電影$25",
-          "地区": "大陆&香港&台湾&欧美&日本&韩国&新马&泰国&其它||大陆&韩国&香港&台湾&日本&欧美&新马&泰国&其它||大陆&韩国&香港&台湾&日本&欧美&泰国&其它||大陆&韩国&香港&台湾&日本&欧美&其它"
-        }
-      },
-      {
         "key": "csp_hao45廠長影院",
         "name": "🇹🇼｜廠長影院｜待測",
         "type": 3,
@@ -3869,7 +3800,7 @@
     },
     {
       "key": "csp_NIVODvip",
-      "name": "🎥｜泥視頻｜高清◎秒播(黑木耳廣告)",
+      "name": "🎥｜泥視頻(VIP)｜高清◎秒播(各種廣告)",
       "type": 3,
       "api": "csp_XBPQ",
       "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
@@ -3877,6 +3808,26 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": "./json/泥視頻VIP.json"
+    },
+    {
+      "key": "csp_NIVODapp",
+      "name": "🇹🇼｜泥視頻(APP)｜高清◎秒播(各種廣告)",
+      "type": 3,
+      "api": "csp_XBPQ",
+      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": {
+        "线路数组": "class=\"playlist-mobile playlist layout-box clearfix&&</ul>",
+        "线路标题": ">&&</a>",
+        "简介": "details-content-all\">&&</span>",
+        "搜索url": "https://www.nivod.app/vod-search/page/{pg}/wd/{wd}.html",
+        "分类url": "https://www.nivod.app/vod-show-{cateId}/area/{area}/by/{by}/page/{catePg}/year/{year}.html",
+        "分类": "電視劇$1#電影$2#綜藝$3#動漫$4#動畫電影$215",
+        "地区": "中国大陆&中国香港&中国台湾&欧美&法国&英国&日本&韩国&泰国&新加坡&马来西亚&印度&西班牙&加拿大&俄罗斯&其它",
+        "排序": "更新$time#週人氣$hits_week#總人氣$hits"
+      }
     },
     {
       "key": "csp_GM_注视影视",
