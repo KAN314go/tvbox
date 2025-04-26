@@ -20,11 +20,12 @@
       "ext": {
         "主页url":"https://www.laodifang.tv",
         "二次截取":"<ul class=\"row\">&&</ul>",
-        "数组":"<a&&</li>",
+        "数组": "lazyload\"&&</li>",
         "标题":"title=\"&&\"[不包含:下载APP#]",
         "副标题":"<p class=\"item-status text-overflow\">&&</p>[替换:更新至第>> #更新至>> #]",
         "图片":"data-original=\"&&\"",
         "链接":"href=\"&&\"",
+      
         "简介":"状态：&&</span>[替换:更新至第>> #更新至>> #]+简介：&&</div>",
         "导演":"导演：&&</span>[替换:<span class=\"slash\">/</span>>><br>#<i>/</i>>><br>#]+状态：&&</span>[替换:更新至第>> #更新至>> #]",
         "主演":"主演：&&</span>[替换:</a><span class=\"slash\">/</span>>><br>#<i>/</i>>><br>#]",
