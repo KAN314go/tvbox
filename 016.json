@@ -34,7 +34,7 @@
         "搜索副标题": "<p class=\"item-status text-overflow\">&&</p>[替换:更新至第>> #更新至>> #]", 
         "搜索图片": "data-original=\"&&\"",
         "搜索链接": "href=\"&&\"",
-        "线路数组": "class=\"play_source_tab list_scroll clearfix\"&&</div>",
+        "线路数组": "class=\"play_sourc\"&&</div>",
         "线路标题": "</i>&&</a>[不包含:蓝光1]",
         "分类url": "https://www.laodifang.tv/vodshow/{cateId}-{area}-{by}-{class}-----{catePg}---{year}.html",        
         "分类": "電影$1#電視劇$2#綜藝$3#動漫$4#短劇$20",
