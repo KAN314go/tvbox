@@ -69,17 +69,7 @@
         "filterable": 1,
         "ext": "./json/麥田影院.json"
       },
-      {
-        "key": "新可可影视③",
-        "name": "🥈｜新可(網站太慢)｜高清◎秒播(浮水印廣告)",
-        "type": 3,
-        "api": "csp_XBPQ",
-        "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-        "searchable": 1,
-        "quickSearch": 1,
-        "filterable": 1,
-        "ext": "./json/新可可影視3.json"
-      },
+
 
     {
         "key": "瓜籽儿影院",
@@ -1035,34 +1025,6 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/json_now/兄弟.json"
-    },
-    {
-      "key": "csp_北川影视",
-      "name": "🎥｜北川｜無法修",
-      "type": 3,
-      "api": "csp_XBPQ",
-      "jar": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/jar1/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-      "ext": {
-        "请求头": "User-Agent$MOBILE_UA",
-        "编码": "UTF-8",
-        "防走丢": "https://www.bcyingshi.ink/fb/",
-        "主页url": "https://www.bczhuiju.com/",
-        "数组": "默认--/voddetail/&&</a>||搜索--module-card-item-class&&module-card-item-info",
-        "链接": "默认--/voddetail/+&&\"||搜索--href=\"&&\"",
-        "图片": "默认--data-original=\"&&\"||搜索--data-original=\"&&\"",
-        "标题": "默认--title=\"&&\"||搜索--alt=\"&&\"",
-        "副标题": "默认--note\">&&</div>||搜索--note\">&&</div>",
-        "播放数组": "module-play-list-base&&</div>",
-        "播放列表": "<a&&a>",
-        "播放链接": "href=\"&&\"",
-        "播放标题": "<span>&&</span>",
-        "线路数组": "module-tab-item tab-item&&</div>",
-        "线路标题": "<span>&&</span>",
-        "跳转播放链接": "var player_*\"url\":\"&&\"",
-        "搜索url": "https://www.bczhuiju.com/vodsearch/page/{pg}/wd/{wd}/",
-        "分类url": "https://www.bczhuiju.com/vodshow/{cateId}-{area}-{by}-{class}-{lang}-{letter}---{catePg}---{year}/",
-        "分类": "电影$1#连剧集$2#综艺$3#动漫$4"
-      }
     },
     {
       "key": "MTYY",
