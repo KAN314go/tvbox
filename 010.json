@@ -18,6 +18,7 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": {
+        "数组": "lazyload\"&&</li>",
         "简介": "class=\"content_desc full_text clearfix\"<span>&&</span>",
         "搜索url": "https://www.laodifang.tv/vodsearch/{wd}----------{pg}---.html",
         "分类url": "https://www.laodifang.tv/vodshow/{cateId}-{area}-{by}-{class}-----{catePg}---{year}.html",        
