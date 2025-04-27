@@ -9,7 +9,25 @@
 
 
 
-
+    {
+      "key": "格格",
+      "name": "🇹🇼｜格格｜半成品，不保留",
+      "type": 3,
+      "api": "csp_Xdai",
+      "jar": "http://我不是.摸鱼儿.com/by/jar/moyuer.php;md5;a9edc77b65fdba8da8d6af08aeaf0d74",
+      "playerType": 2,
+      "ext": "jaHR0cDovLzExMS4xODAuMTk4LjQwOjExMTAvYXBpLnBocHxhc2djeGhqa3RzMTI0NTczfGFzZ2N4aGprdHMxMjQ1NzN8MTE5"
+  },
+  {
+    "key": "nk",
+    "name": "🇹🇼｜耐看｜半成品，不保留",
+    "type": 3,
+    "api": "csp_WebNK",
+    "jar": "http://我不是.摸鱼儿.com/by/jar/moyuer.php;md5;a9edc77b65fdba8da8d6af08aeaf0d74",
+    "searchable": 0,
+    "changeable": 0,
+    "ext": "w7TCmsONw6LDrsKYwoXCosKcwqDCrcKawqDDosKnwqTCoMKjwrPCosKpw7DDscKqXsKewpvDncOpw57Cp8OnwphXXFDCoMOnw6PDqcKhbVBXwovlh77phZvmkJ/lkZzCpuWGn+S9h+WQp2rlv6roqLnotr7mvInnrZPCkFdcUMKgw5fDn8Ocw6zCrMKgwqR7w57DrMKhwrPCmlrCp8KlwqnDosKpwrDCr8KhwrA="
+},
     {
       "key": "莉莉",
       "name": "🎥｜莉莉｜壞了(無廣告+APP)",
