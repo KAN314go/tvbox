@@ -1,5 +1,5 @@
 {
-  "spider": "./jar/pg.jar",
+  "spider": "http://我不是.摸鱼儿.com/by/jar/moyu.php;md5;9d38a1d411dc4d10851531e3d5728e25",
   "logo": "https://p3-pc.douyinpic.com/img/aweme-avatar/tos-cn-i-0813_6e2553f5708c414386eeca88b5f2674a~c5_300x300.jpeg?from=2956013662",
   "wallpaper": "https://tv.nxog.top/m//t/",
   "sites": [
@@ -30,8 +30,6 @@
   "name": "🇹🇼｜文采｜待測",
   "type": 3,
   "api": "csp_JpysGuard",
-  "spider": "http://我不是.摸鱼儿.com/by/jar/moyuer.php;md5;a9edc77b65fdba8da8d6af08aeaf0d74",
-  "jar": "http://我不是.摸鱼儿.com/by/jar/moyuer.php;md5;a9edc77b65fdba8da8d6af08aeaf0d74",
   "playerType": 2,
   "searchable": 1,
   "quickSearch": 1,
@@ -42,7 +40,6 @@
 "name": "🇹🇼｜白白｜待測",
 "type": 3,
 "api": "csp_SbaibaiGuard",
-"jar": "http://我不是.摸鱼儿.com/by/jar/moyuer.php;md5;a9edc77b65fdba8da8d6af08aeaf0d74",
 "playerType": 2,
 "searchable": 1,
 "quickSearch": 1,
