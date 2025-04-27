@@ -210,7 +210,40 @@
         "简介": "<p>&&<p>"
       }
     },
-
+    {
+      "key": "csp_电影驿站",
+      "name": "🎥｜驿站",
+      "type": 3,
+      "api": "csp_XBPQ",
+      "jar": "./jar/xyqxbpq.jar",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "./json/電影驛站.json"
+    },
+    {
+      "key": "csp_Y3电影",
+      "name": "🎥｜Y3电影",
+      "type": 3,
+      "api": "csp_XBPQ",
+      "jar": "./jar/xyqxbpq.jar",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "./json/Y3電影.json"
+    },
+    {
+      "key": "csp_纤纤影视",
+      "name": "🎥｜纤纤",
+      "type": 3,
+      "api": "csp_XBPQ",
+      "jar": "./jar/xyqxbpq.jar",
+      "playerType": 2,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/json_now/芊芊影視.json"
+    },
     {
       "key": "csp_韩迷TV",
       "name": "🎥｜韩迷TV",
