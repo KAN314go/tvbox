@@ -6,7 +6,75 @@
 
 
 
-
+    {
+      "key": "格格",
+      "name": "🇹🇼｜格格｜待測",
+      "type": 3,
+      "api": "csp_Xdai",
+      "jar": "http://我不是.摸鱼儿.com/by/jar/moyuer.php;md5;a9edc77b65fdba8da8d6af08aeaf0d74",
+      "playerType": 2,
+      "ext": "jaHR0cDovLzExMS4xODAuMTk4LjQwOjExMTAvYXBpLnBocHxhc2djeGhqa3RzMTI0NTczfGFzZ2N4aGprdHMxMjQ1NzN8MTE5"
+  },
+  {
+    "key": "nk",
+    "name": "🇹🇼｜耐看｜待測",
+    "type": 3,
+    "api": "csp_WebNK",
+    "jar": "http://我不是.摸鱼儿.com/by/jar/moyuer.php;md5;a9edc77b65fdba8da8d6af08aeaf0d74",
+    "searchable": 0,
+    "changeable": 0,
+    "ext": "w7TCmsONw6LDrsKYwoXCosKcwqDCrcKawqDDosKnwqTCoMKjwrPCosKpw7DDscKqXsKewpvDncOpw57Cp8OnwphXXFDCoMOnw6PDqcKhbVBXwovlh77phZvmkJ/lkZzCpuWGn+S9h+WQp2rlv6roqLnotr7mvInnrZPCkFdcUMKgw5fDn8Ocw6zCrMKgwqR7w57DrMKhwrPCmlrCp8KlwqnDosKpwrDCr8KhwrA="
+},
+{
+  "key": "文采",
+  "name": "🇹🇼｜文采｜待測",
+  "type": 3,
+  "api": "csp_JpysGuard",
+  "jar": "http://我不是.摸鱼儿.com/by/jar/moyuer.php;md5;a9edc77b65fdba8da8d6af08aeaf0d74",
+  "playerType": 2,
+  "searchable": 1,
+  "quickSearch": 1,
+  "changeable": 1
+},
+{
+"key": "白白",
+"name": "🇹🇼｜白白｜待測",
+"type": 3,
+"api": "csp_SbaibaiGuard",
+"jar": "http://我不是.摸鱼儿.com/by/jar/moyuer.php;md5;a9edc77b65fdba8da8d6af08aeaf0d74",
+"playerType": 2,
+"searchable": 1,
+"quickSearch": 1,
+"changeable": 1
+},
+{
+  "key": "五五影视",
+  "name": "🇹🇼｜呜呜｜待測",
+  "type": 3,
+  "api": "csp_XBPQ",
+  "jar": "http://我不是.摸鱼儿.com/by/jar/moyuer.php;md5;a9edc77b65fdba8da8d6af08aeaf0d74",
+  "searchable": 1,
+  "quickSearch": 1,
+  "filterable": 1,
+  "ext": "http://我不是.摸鱼儿.com/api/moyu.php?file=55"
+},
+{
+  "key": "雨滴",
+  "name": "🇹🇼｜雨滴｜待測",
+  "type": 3,
+  "api": "csp_Xdai",
+  "jar": "http://我不是.摸鱼儿.com/by/jar/moyuer.php;md5;a9edc77b65fdba8da8d6af08aeaf0d74",
+  "playerType": 1,
+  "ext": "jaHR0cDovL2M4dzJvdjd1NXdnMnoxbzhwMjFjLmFsaXl1bmNzLmNsaWNrfGs5bzNwMmM4YjdtM3owbzh8azlvM3AyYzhiN20zejBvOHwxMDA="
+},
+{
+  "key": "面包影视",
+  "name": "🇹🇼｜面包｜待測",
+  "type": 3,
+  "api": "csp_XBPQ",
+  "jar": "http://我不是.摸鱼儿.com/by/jar/moyuer.php;md5;a9edc77b65fdba8da8d6af08aeaf0d74",
+  "ext": "http://我不是.摸鱼儿.com/api/moyu.php?file=面包"
+},    
     {
       "key": "csp_XBPQ_老王",
       "name": "🎥｜老王",
@@ -752,7 +820,7 @@
 
   {
     "key": "csp_蓝光影视",
-    "name": "🎥｜蓝光影视CC",
+    "name": "🎥｜蓝光影视CC｜40秒鐘的超長置入廣告",
     "type": 3,
     "api": "csp_XBPQ",
     "jar": "./jar/xyqxbpq.jar",
