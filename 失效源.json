@@ -7,6 +7,265 @@
     "sites": [ 
 
 
+
+
+
+
+
+
+    {
+      "key": "csp_XBiuYouKnowTV",
+      "name": "🎥｜YouKnowTV",
+      "type": 3,
+      "api": "csp_XBPQ",
+      "jar": "./jar/xyqxbpq.jar",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": {
+        "分类url": "https://www.youknow.tv/show/{cateId}--time------{catePg}---{year}/",
+        "分类": "電視劇$1#電影$2#動漫$4#綜藝$3#紀錄片$5#短劇$55"
+      }
+    },
+    {
+      "key": "csp_北川影视",
+      "name": "🎥｜北川｜低清◎龜速(浮水印廣告)",
+      "type": 3,
+      "api": "csp_XBPQ",
+      "jar": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/jar1/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+      "ext": {
+        "请求头": "User-Agent$MOBILE_UA",
+        "编码": "UTF-8",
+        "防走丢": "https://www.bcyingshi.ink/fb/",
+        "主页url": "https://www.bczhuiju.com/",
+        "数组": "默认--/voddetail/&&</a>||搜索--module-card-item-class&&module-card-item-info",
+        "链接": "默认--/voddetail/+&&\"||搜索--href=\"&&\"",
+        "图片": "默认--data-original=\"&&\"||搜索--data-original=\"&&\"",
+        "标题": "默认--title=\"&&\"||搜索--alt=\"&&\"",
+        "副标题": "默认--note\">&&</div>||搜索--note\">&&</div>",
+        "播放数组": "module-play-list-base&&</div>",
+        "播放列表": "<a&&a>",
+        "播放链接": "href=\"&&\"",
+        "播放标题": "<span>&&</span>",
+        "线路数组": "module-tab-item tab-item&&</div>",
+        "线路标题": "<span>&&</span>",
+        "跳转播放链接": "var player_*\"url\":\"&&\"",
+        "搜索url": "https://www.bczhuiju.com/vodsearch/page/{pg}/wd/{wd}/",
+        "分类url": "https://www.bczhuiju.com/vodshow/{cateId}-{area}-{by}-{class}-{lang}-{letter}---{catePg}---{year}/",
+        "分类": "电影$1#连剧集$2#综艺$3#动漫$4"
+      }
+    },
+    {
+      "key": "csp_美柏影视",
+      "name": "🎥｜美柏｜高清◎秒播(賭場廣告)",
+      "type": 3,
+      "api": "csp_XBPQ",
+      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "./json/美柏影視.json"
+    },
+    {
+      "key": "csp_XBPQ_美剧",
+      "name": "🎥｜美剧",
+      "type": 3,
+      "api": "csp_XBPQ",
+      "jar": "./jar/xyqxbpq.jar",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/json_now/美劇.json"
+    },
+    {
+      "key": "csp_GM_麻雀视频",
+      "name": "🎥｜麻雀｜高清◎順播(賭場廣告)",
+      "type": 3,
+      "searchable": 1,
+      "changeable": 1,
+      "quickSearch": 0,
+      "style": {"type": "rect", "ratio": 0.71},
+      "api": "csp_GM",
+      "jar": "./jar/gm.jar",
+      "ext": {
+        "userScript": "./js/mqtv.user.js",
+        "debug": false,
+        "webViewSettings": {
+          "blockNetworkImage": true,
+          "blockList": ["https://hm.baidu.com/*", "https://*.n3f2.cn/*"]
+        },
+        "playUrlMatch": [
+          "https://*/obj/tos-*", "*://*/*.mp4*"       , "*://*/*.m3u8*"
+        ],
+        "spider": {
+          "homeContent": {"loadUrl": "https://www.mqtv.cc/"},
+          "categoryContent": {"loadUrl": "https://www.mqtv.cc/type/${tid}"},
+          "detailContent": {"loadUrl": "https://www.mqtv.cc${id}"},
+          "playerContent": {"loadUrl": "https://www.mqtv.cc${url}#${anchor}"},
+          "searchContent": {"loadUrl": "https://www.mqtv.cc/search/${key}"}
+        }
+      }
+    },
+    {
+      "key": "lkg",
+      "name": "🎥｜午夜",
+      "type": 3,
+      "api": "csp_XBPQ",
+      "jar": "./jar/xyqxbpq.jar",
+      "playerType": 2,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": {
+        "站名": "午夜剧场",
+        "请求头": "User-Agent$MOBILE_UA",
+        "编码": "UTF-8",
+        "图片代理": "0",
+        "主页url": "https://wyjc.tv",
+        "首页": "120",
+        "起始页": "1",
+        "分类url": "https://wyjc.tv/vod/cid/{cateId}/area/{area}/year/{year}/sort/{by}/page/{catePg}.html;;mrcd0",
+        "分类": "电影&剧集&综艺&动漫&纪录片",
+        "分类值": "1&2&4&3&33",
+        "二次截取": "",
+        "数组": "fed-part-2by3\"&&</span></li>",
+        "标题": "title=\"&&\"",
+        "图片": "data-src=\"&&\"",
+        "副标题": "fed-text-center\">&&</span>",
+        "链接": "href=\"&&\"",
+        "影片年代": "年份：&&</a>",
+        "影片地区": "地区：&&</li>",
+        "影片类型": "类型：&&</li>",
+        "状态": "",
+        "导演": "导演：&&</li>",
+        "主演": "主演：&&</li>",
+        "简介": "简介：&&</div>",
+        "线路二次截取": "nav-tabs&&</ul>",
+        "线路数组": "javascript:\"&&</a>",
+        "线路标题": ">&&</a>",
+        "播放二次截取": "",
+        "播放数组": "sort-list clearfix\"&&</ul>",
+        "播放列表": "<a&&/a>",
+        "播放标题": ">&&</a>",
+        "播放链接": "href=\"&&\"",
+        "解析": "",
+        "直接播放": "0",
+        "播放请求头": "",
+        "嗅探词": ".mp4#.m3u8",
+        "过滤词": "",
+        "跳转播放链接": "",
+        "跳转解析": "",
+        "搜索请求头": "User-Agent$MOBILE_UA",
+        "搜索url": "https://wyjc.tv/search.html?key={wd}={pg}",
+        "搜索模式": "1",
+        "搜索后缀": "",
+        "搜索二次截取": "",
+        "搜索数组": "fed-list-item fed-padding&&</li>",
+        "搜索标题": "title=\"&&\"",
+        "搜索图片": "data-src=\"&&\"",
+        "搜索副标题": "fed-text-center\">&&<",
+        "搜索链接": "href=\"&&\"",
+        "筛选": "1",
+        "类型": "动作片$5#喜剧片$6#爱情片$7#科幻片$8#恐怖片$9#剧情片$10#战争片$11#悬疑片$12#犯罪片$13#魔幻片$42#惊悚片$14#冒险片$15&纪录片$16#动画片$17#微影视$18#其他片$19||国产剧$20#港台剧$21#日韩剧$22#欧美剧$23#短剧$43#其他剧$24||国产动漫$25#日韩动漫$26#欧美动漫$27#其他动漫$28#成人动漫$41||大陆综艺$29#日韩综艺$30#港台综艺$31#欧美综艺$32||自然纪录$34#人文记录$35",
+        "地区": "大陆&香港&台湾&美国&法国&英国&日本&韩国&德国&泰国&印度&新加坡&其他||大陆&香港&台湾&美国&法国&英国&日本&韩国&德国&泰国&印度&新加坡&其他||大陆&香港&台湾&美国&法国&英国&日本&韩国&德国&泰国&印度&新加坡&其他||大陆&香港&台湾&美国&法国&英国&日本&韩国&德国&泰国&印度&新加坡&其他||大陆&香港&台湾&美国&法国&英国&日本&韩国&德国&泰国&印度&新加坡&其他",
+        "地区值": "*",
+        "年份": "2007-2025",
+        "年份值": "*",
+        "语言": "",
+        "语言值": "*",
+        "字母": "A&B&C&D&E&F&G&H&I&J&K&L&M&N&O&P&Q&R&S&T&U&V&W&X&Y&Z&0-9",
+        "字母值": "*",
+        "排序": "时间&人气&评分",
+        "排序值": "time&hits&score"
+      }
+    },
+    {
+        "key": "天天弹幕",
+        "name": "🎥｜天天｜高清◎龜速(無廣+APP)",
+        "type": 3,
+        "api": "csp_TianTian",
+        "jar": "./jar/tvkj.jar",
+        "searchable": 1,
+        "quickSearch": 1,
+        "filterable": 1,
+        "ext": {"danmu": true, "site": "aHR0cDovL3YucmJvdHYuY24="}
+      },
+    {
+      "key": "vod_海外",
+      "name": "🧲｜海外",
+      "type": 1,
+      "api": "https://hw8.live/api.php/provide/vod/",
+      "searchable": 1,
+      "quickSearch": 1
+    },
+    {
+      "key": "vod_影图",
+      "name": "🧲｜影图",
+      "type": 1,
+      "api": "https://cj.vodimg.top/api.php/provide/vod/",
+      "jar": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/jar1/panda1123.jar;md5;d9004aa2e16f60b04baed361713fb710",
+      "searchable": 1,
+      "quickSearch": 1
+    },
+    {
+      "key": "CSP_青檸影视",
+      "name": "🎥｜青檸",
+      "type": 3,
+      "api": "csp_XBPQ",
+      "jar": "./jar/xyqxbpq.jar",
+      "ext": {
+        "请求头": "User-Agent$MOBILE_UA",
+        "编码": "UTF-8",
+        "分类url": "https://www.hspf520.com/vodshow/{cateId}-{area}-{by}-{class}-{lang}-{letter}---{catePg}---{year}.html",
+        "分类": "电影$1#电视剧$2#综艺$3#动漫$4",
+        "简介": "<p>&&<p>"
+      }
+    },
+    {
+      "key": "csp_飞流影视",
+      "name": "🎥｜飛流",
+      "type": 3,
+      "api": "csp_XBPQ",
+      "jar": "./jar/xyqxbpq.jar",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": {
+        "分类url": "https://www.flixflop.com/explore/{cateId}?page={catePg}&year={year}&sort=recently_updated",
+        "分类": "電視劇$151438147794763777#電影$151438147786375168#動漫$151438147807346690#綜藝$151438147807346691#體育$151438147807346693#短劇$331153971999670710"
+      }
+    },
+    {
+      "key": "csp_韩迷TV",
+      "name": "🎥｜韩迷TV",
+      "type": 3,
+      "api": "csp_XBPQ",
+      "jar": "./jar/xyqxbpq.jar",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/json_now/韓迷TV.json"
+    },
+    {
+      "key": "csp_XBPQ_追剧",
+      "name": "🎥｜追剧",
+      "type": 3,
+      "api": "csp_XBPQ",
+      "jar": "./jar/xyqxbpq.jar",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": {
+        "数组": "fed-list-item fed-padding fed-col-xs4 fed-col-sm3 fed-col-md2\">&&</li>",
+        "图片": "data-original=\"&&\"",
+        "标题": "ed-visible fed-part-eone\" href=*>&&</a>",
+        "副标题": "fed-text-white fed-text-center\">&&</span>",
+        "线路数组": "fed-list-head fed-part-rows fed-padding\">&&</li>",
+        "简介": "<p>&&</p>",
+        "分类url": "https://xhaoer.com/search.php?page={catePg}&searchtype=5&tid={cateId}&area={area}&year={year}",
+        "分类": "短剧$29#电影$1#电视剧$2#综艺$3#动漫$4"
+      }
+    },
     {
       "key": "人人",
       "name": "🥇｜人人｜藍光◎秒播(無廣告+APP)",
