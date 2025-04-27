@@ -25,26 +25,6 @@
     "ext": "w7TCmsONw6LDrsKYwoXCosKcwqDCrcKawqDDosKnwqTCoMKjwrPCosKpw7DDscKqXsKewpvDncOpw57Cp8OnwphXXFDCoMOnw6PDqcKhbVBXwovlh77phZvmkJ/lkZzCpuWGn+S9h+WQp2rlv6roqLnotr7mvInnrZPCkFdcUMKgw5fDn8Ocw6zCrMKgwqR7w57DrMKhwrPCmlrCp8KlwqnDosKpwrDCr8KhwrA="
 },
 {
-  "key": "文采",
-  "name": "🇹🇼｜文采｜待測",
-  "type": 3,
-  "api": "csp_JpysGuard",
-  "playerType": 2,
-  "searchable": 1,
-  "quickSearch": 1,
-  "changeable": 1
-},
-{
-"key": "白白",
-"name": "🇹🇼｜白白｜待測",
-"type": 3,
-"api": "csp_SbaibaiGuard",
-"playerType": 2,
-"searchable": 1,
-"quickSearch": 1,
-"changeable": 1
-},
-{
   "key": "五五影视",
   "name": "🇹🇼｜呜呜｜待測",
   "type": 3,

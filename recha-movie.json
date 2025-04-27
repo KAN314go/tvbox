@@ -6,26 +6,8 @@
 
 
     
-    {
-      "key": "文采",
-      "name": "🇹🇼｜文采｜待測",
-      "type": 3,
-      "api": "csp_JpysGuard",
-      "playerType": 2,
-      "searchable": 1,
-      "quickSearch": 1,
-      "changeable": 1
-    },
-    {
-    "key": "白白",
-    "name": "🇹🇼｜白白｜待測",
-    "type": 3,
-    "api": "csp_SbaibaiGuard",
-    "playerType": 2,
-    "searchable": 1,
-    "quickSearch": 1,
-    "changeable": 1
-    },
+
+
     {
       "key": "豆瓣",
       "name": "🇹🇼｜熱播排行榜｜自動切換",
@@ -384,8 +366,18 @@
       }
     },
     {
-      "key": "py_素白白.py",
+      "key": "白白",
       "name": "🥇｜素白｜高清◎順播(無廣告)",
+      "type": 3,
+      "api": "csp_SbaibaiGuard",
+      "playerType": 2,
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 1
+    },
+    {
+      "key": "py_素白白.py",
+      "name": "🥇｜素白｜高清◎順播(無廣告+PY)",
       "type": 3,
       "api": "./py/素白白.py",
       "searchable": 1,
@@ -1175,15 +1167,16 @@
       "categories": ["电影", "剧集", "综艺", "动漫", "短剧"]
     },
     {
-      "key": "文才弹幕",
+      "key": "文采",
       "name": "🥇｜文才｜高清◎秒播(無廣告)",
       "type": 3,
-      "api": "csp_Jpys",
-      "jar": "./jar/feimao0403.txt;md5;5a0f3bef8b15b9bd2be978359fd5f4cd",
+      "api": "csp_JpysGuard",
+      "playerType": 2,
       "searchable": 1,
       "quickSearch": 1,
-      "filterable": 1,
+      "changeable": 1,
       "ext": {"danmu": true}
+
     },
     {
       "key": "苹果",
