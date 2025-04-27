@@ -1167,18 +1167,6 @@
       "categories": ["电影", "剧集", "综艺", "动漫", "短剧"]
     },
     {
-      "key": "文采",
-      "name": "🥇｜文才｜高清◎秒播(無廣告)",
-      "type": 3,
-      "api": "csp_JpysGuard",
-      "playerType": 2,
-      "searchable": 1,
-      "quickSearch": 1,
-      "changeable": 1,
-      "ext": {"danmu": true}
-
-    },
-    {
       "key": "苹果",
       "name": "🥇｜苹果｜高清◎秒播(無廣告)",
       "type": 3,
@@ -1742,6 +1730,17 @@
       "quickSearch": 0,
       "filterable": 0,
       "changeable": 1
+    },
+    {
+      "key": "文采",
+      "name": "🥈｜文才｜高清◎秒播(賭場廣告)",
+      "type": 3,
+      "api": "csp_JpysGuard",
+      "playerType": 2,
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 1,
+      "ext": {"danmu": true}
     },
     {
       "key": "PKW",

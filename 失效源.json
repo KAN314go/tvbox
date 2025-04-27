@@ -10,7 +10,14 @@
 
 
 
-
+    {
+      "key": "莉莉",
+      "name": "🎥｜莉莉｜壞了(無廣告+APP)",
+      "type": 3,
+      "api": "csp_AppGetGuard",
+      "jar": "./jar/mi-0319.jar;md5;b73ed98a0a285189794be3c8d9c3a335",
+      "ext": "sHR2rlsfjI4L3t4RXQMkn0xaBCNcSQUCvczzn7zWpJd7PJ5uE10QNLrWWS17wAYglPoC8UNLIX0B4DnEefWcAydxKYH8rxXY/n5Z1HeXH9exVQ6o+uIi6FAmTcCFBKVEhbMLsvvqM3GIa16E8qYderB0nB+AiqMMXAUC0sfjCrt7OHidpXhNZqkTjmVqiwvC3NjlI8h65kp6Qu58FpriLCfdQOs2uyQq6VaJAApvA2cYX2V5fMu4UtLCjorwdlJc"
+    },
     {
       "key": "csp_lreeok",
       "name": "🎥｜Lree｜高清◎秒播(賭城廣告)",
