@@ -4354,7 +4354,7 @@
       "type": 3,
       "playerType": 2,
       "api": "csp_LaoBaiBook",
-      "jar": "./jar/lem0318.jar;md5;626cd9f34ad3d3899bb2de54b1bc0a25",
+      "jar": "./jar/lem0424.jar;md5;626cd9f34ad3d3899bb2de54b1bc0a25",
       "searchable": 0,
       "style": {"type": "rect", "ratio": 1.333}
     },
@@ -4498,9 +4498,15 @@
      "name": "沐辰直播",
      "type": 3,
      "api": "https://raw.githubusercontent.com/doube-ba/Sub/refs/heads/main/live/live_litv.py",
-     "ext": {}
+     "ext": {},
+     "pass": true
     },
-    {"name": "smart.py", "type": 3, "api": "./py/live_smt.py"},
+    {
+      "name": "smart.py", 
+      "type": 3, 
+      "api": "./py/live_smt.py",
+      "pass": true
+    },
     {
       "name": "安博1台(新加坡節點--很卡)",
       "type": 0,
@@ -4518,7 +4524,8 @@
       "timeout": 5,
       "epg": "https://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Hong_Kong",
       "logo": "https://epg.112114.xyz/logo/{name}.png",
-      "jar": "https://fm.t4tv.hz.cz/jar/custom_spider.jar"
+      "jar": "https://fm.t4tv.hz.cz/jar/custom_spider.jar",
+      "pass": true
     },
     {
       "name": "安博3台",
@@ -4529,7 +4536,8 @@
       "timeout": 5,
       "epg": "https://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Hong_Kong",
       "logo": "https://epg.112114.xyz/logo/{name}.png",
-      "jar": "https://fm.t4tv.hz.cz/jar/custom_spider.jar"
+      "jar": "https://fm.t4tv.hz.cz/jar/custom_spider.jar",
+      "pass": true
     },
     {
       "name": "live.iptv365(m3u)",
@@ -4540,13 +4548,15 @@
       "timeout": 5,
       "epg": "https://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Hong_Kong",
       "logo": "https://epg.112114.xyz/logo/{name}.png",
-      "jar": "https://fm.t4tv.hz.cz/jar/custom_spider.jar"
+      "jar": "https://fm.t4tv.hz.cz/jar/custom_spider.jar",
+      "pass": true
     },
     {
       "name": "live.iptv365(txt)",
       "type": 0,
       "url": "https://live.iptv365.org/live.txt",
-      "logo": "https://epg.112114.xyz/logo/{name}.png"
+      "logo": "https://epg.112114.xyz/logo/{name}.png",
+      "pass": true
     },
     {
       "name": "瑪斯特",
@@ -4619,7 +4629,8 @@
       "ua": "okhttp/4.12.0",
       "timeout": 5,
       "epg": "https://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Hong_Kong",
-      "logo": "https://epg.112114.xyz/logo/{name}.png"
+      "logo": "https://epg.112114.xyz/logo/{name}.png",
+      "pass": true
     },
     {
       "name": "RobYang備2| http://RobYang.rr.nu",
@@ -4646,13 +4657,15 @@
       "name": "香蕉-MYTV",
       "playerType": 2,
       "url": "https://tv.iill.top/m3u/MyTV",
-      "epg": "http://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Taipei"
+      "epg": "http://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Taipei",
+      "pass": true
     },
     {
       "name": "香蕉-LIVE",
       "playerType": 2,
       "url": "https://tv.iill.top/m3u/Live",
-      "epg": "http://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Taipei"
+      "epg": "http://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Taipei",
+      "pass": true
     },
     {
       "name": "天天開心",
@@ -4661,7 +4674,8 @@
       "ua": "okhttp/3",
       "playerType": 2,
       "epg": "http://diyp2.112114.xyz/?ch={name}&date={date}",
-      "logo": "http://diyp2.112114.xyz/logo/{name}.png"
+      "logo": "http://diyp2.112114.xyz/logo/{name}.png",
+      "pass": true
     },
     {
       "name": "雷蒙直播",
@@ -4670,7 +4684,8 @@
       "playerType": 2,
       "ua": "okhttp/3.15",
       "epg": "http://epg.112114.xyz/?ch={name}&date={date}",
-      "logo": "https://epg.112114.xyz/logo/{name}.png"
+      "logo": "https://epg.112114.xyz/logo/{name}.png",
+      "pass": true
     },
     {
       "name": "台灣頻道",
@@ -4709,7 +4724,8 @@
       "url": "./live/otttv.txt",
       "ua": "okhttp/3.15",
       "epg": "http://epg.112114.xyz/?ch={name}&date={date}",
-      "logo": "https://epg.112114.xyz/logo/{name}.png"
+      "logo": "https://epg.112114.xyz/logo/{name}.png",
+      "pass": true
     },
     {
       "name": "173線路",
@@ -4741,28 +4757,32 @@
       "url": "http://xg.52sw.top/play/hxds/",
       "ua": "okhttp/3.15",
       "epg": "http://iptv.52sw.top:668/epg/?ch={name}&date={date}",
-      "header": {"Referer": "https://www.kds.tw/"}
+      "header": {"Referer": "https://www.kds.tw/"},
+      "pass": true
     },
     {
       "name": "焦点(Focus TV)",
       "type": 0,
       "url": "http://xg.52sw.top/jd/?ip=108.181.32.169",
       "ua": "okhttp/3.15",
-      "epg": "http://iptv.52sw.top:668/?ch={name}&date={date}"
+      "epg": "http://iptv.52sw.top:668/?ch={name}&date={date}",
+      "pass": true
     },
     {
       "name": "歐華(ouhua TV)",
       "type": 0,
       "url": "./live/ohhua.txt",
       "ua": "okhttp/3.15",
-      "epg": "http://iptv.52sw.top:668/?ch={name}&date={date}"
+      "epg": "http://iptv.52sw.top:668/?ch={name}&date={date}",
+      "pass": true
     },
     {
       "name": "歐飛(ofiii TV)",
       "type": 0,
       "url": "./live/ofiii.m3u",
       "ua": "okhttp/3.15",
-      "logo": "https://epg.112114.xyz/logo/{name}.png"
+      "logo": "https://epg.112114.xyz/logo/{name}.png",
+      "pass": true
     },
     {
       "name": "歐華167",
@@ -4771,7 +4791,8 @@
       "ua": "okhttp/3.15",
       "timeout": 5,
       "epg": "https://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/taipei",
-      "logo": "https://epg.112114.xyz/logo/{name}.png"
+      "logo": "https://epg.112114.xyz/logo/{name}.png",
+      "pass": true
     },
     {
       "name": "Recha線路1",
@@ -4780,7 +4801,8 @@
       "ua": "okhttp/3.15",
       "timeout": 5,
       "epg": "https://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/taipei",
-      "logo": "https://epg.112114.xyz/logo/{name}.png"
+      "logo": "https://epg.112114.xyz/logo/{name}.png",
+      "pass": true
     },
     {
       "name": "Recha線路2",
@@ -4797,7 +4819,8 @@
       "playerType": 2,
       "ua": "okhttp/3",
       "epg": "https://epg.112114.eu.org/?ch={name}&date={date}",
-      "logo": "https://epg.112114.eu.org/logo/{name}.png"
+      "logo": "https://epg.112114.eu.org/logo/{name}.png",
+      "pass": true
     },
     {
       "name": "寶盒直播",
@@ -4808,7 +4831,8 @@
       "timeout": 5,
       "epg": "https://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Hong_Kong",
       "logo": "https://epg.112114.xyz/logo/{name}.png",
-      "jar": "https://fm.t4tv.hz.cz/jar/custom_spider.jar"
+      "jar": "https://fm.t4tv.hz.cz/jar/custom_spider.jar",
+      "pass": true
     },
     {
       "name": "日本直播台",
@@ -4819,7 +4843,8 @@
       "timeout": 5,
       "epg": "https://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Hong_Kong",
       "logo": "https://epg.112114.xyz/logo/{name}.png",
-      "jar": "https://fm.t4tv.hz.cz/jar/custom_spider.jar"
+      "jar": "https://fm.t4tv.hz.cz/jar/custom_spider.jar",
+      "pass": true
     },
     {
       "name": "猫TV线路",
@@ -4828,7 +4853,8 @@
       "playerType": 2,
       "ua": "okhttp/3",
       "epg": "https://epg.112114.eu.org/?ch={name}&date={date}",
-      "logo": "https://epg.112114.eu.org/logo/{name}.png"
+      "logo": "https://epg.112114.eu.org/logo/{name}.png",
+      "pass": true
     },
     {
       "name": "抖音、斗鱼、B站、YY、Afreeca、Youtube",
@@ -4843,7 +4869,8 @@
       "name": "小武哥(18+)",
       "playerType": 2,
       "url": "https://qu.ax/PEHy.txt",
-      "epg": "http://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Taipei"
+      "epg": "http://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Taipei",
+      "pass": true
     },
     {
       "name": "私密線路(18+)",
@@ -4861,6 +4888,7 @@
       "playerType": 2,
       "url": "./live/cherry.txt",
       "epg": "http://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Taipei",
+      "pass": true,
       "core": {
         "auth": "local://tvbus",
         "name": "123",
@@ -4890,7 +4918,8 @@
       "type":0,
       "spider":"./custom_spider.jar;md5;b5079660bb98ded216e787a0458981b4",
       "jar":"./custom_spider.jar;md5;b5079660bb98ded216e787a0458981b4",
-      "url":"proxy://do=hema&token=d2510bb5"
+      "url":"proxy://do=hema&token=d2510bb5",
+      "pass" :true
     },
     {
       "name": "PIXMAN(故障)",
