@@ -30,6 +30,7 @@
   "name": "🇹🇼｜文采｜待測",
   "type": 3,
   "api": "csp_JpysGuard",
+  "spider": "http://我不是.摸鱼儿.com/by/jar/moyuer.php;md5;a9edc77b65fdba8da8d6af08aeaf0d74",
   "jar": "http://我不是.摸鱼儿.com/by/jar/moyuer.php;md5;a9edc77b65fdba8da8d6af08aeaf0d74",
   "playerType": 2,
   "searchable": 1,
