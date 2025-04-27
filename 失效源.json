@@ -210,20 +210,7 @@
         "简介": "<p>&&<p>"
       }
     },
-    {
-      "key": "csp_飞流影视",
-      "name": "🎥｜飛流",
-      "type": 3,
-      "api": "csp_XBPQ",
-      "jar": "./jar/xyqxbpq.jar",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": {
-        "分类url": "https://www.flixflop.com/explore/{cateId}?page={catePg}&year={year}&sort=recently_updated",
-        "分类": "電視劇$151438147794763777#電影$151438147786375168#動漫$151438147807346690#綜藝$151438147807346691#體育$151438147807346693#短劇$331153971999670710"
-      }
-    },
+
     {
       "key": "csp_韩迷TV",
       "name": "🎥｜韩迷TV",
