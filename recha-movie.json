@@ -4465,14 +4465,7 @@
     }
   ],
   "lives": [
-    {
-      "name": "安博測試台",
-      "type": 0,
-      "url": "./live/UBLIVE.php",
-      "epg": "https://epg.112114.eu.org/?ch={name}&date={date}",
-      "logo": "https://epg.112114.eu.org/logo/{name}.png",
-      "pass": true
-    },
+
     {
       "name": "小雲1台",
       "url": "./live/ueen.m3u",
@@ -4919,6 +4912,14 @@
       "url": "./live/11.txt",
       "ua": "okhttp/4.12",
       "epg": "http://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Taipei"
+    },
+    {
+      "name": "安博測試台",
+      "type": 0,
+      "url": "./live/UBLIVE.php",
+      "epg": "https://epg.112114.eu.org/?ch={name}&date={date}",
+      "logo": "https://epg.112114.eu.org/logo/{name}.png",
+      "pass": true
     },
     {
       "name":"故障(故障)",

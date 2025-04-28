@@ -1,15 +1,4 @@
-﻿松视3台,https://z88.ubtvfans.com/live/rx3/404/92fba28e982d7b13b6b47247c5a40674/index.m3u8
-潘多拉,https://z88.ubtvfans.com/live/rx3/410/dacb911175b62240def0b25261956255/index.m3u8
-潘多拉,https://z88.ubtvfans.com/live/rx4/2932/b6b6a5be91b01fc51c10ef875771c2e1/index.m3u8
-HAPPY,https://z88.ubtvfans.com/live/rx3/2908/424b43f3308a24923d95343136393324/index.m3u8
-彩虹E,https://z88.ubtvfans.com/live/rx3/406/c7cf20f7311656179fff53851157b0c8/index.m3u8
-彩虹E,https://z88.ubtvfans.com/live/rx4/2935/81f1bcf77f4b026aa463b02c759533c4/index.m3u8
-彩虹K,https://z88.ubtvfans.com/live/rx3/415/42559e8bdd8c8295cfd79bff2c07ab00/index.m3u8
-香蕉台,https://z88.ubtvfans.com/live/rx3/2930/d7519066a215773ae2b4c2b9a8d84b0e/index.m3u8
-极限电影,https://z88.ubtvfans.com/live/rx3/405/3173a543a9c92b07348ba90c2a3e833e/index.m3u8
-
-
-
+﻿
 
 🔞松视CR(更新日期114.04.25),#genre#
 松视1台(小雲),http://18.svi-studio.com:80/live/478790710441/100371347442/5.m3u8
