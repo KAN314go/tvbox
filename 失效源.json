@@ -6,7 +6,15 @@
     "wallpaper": "https://picsum.photos/1080/",
     "sites": [ 
 
-
+    {
+      "key": "电影",
+      "name": "🎥｜电影｜普清◎龜速(壞了)",
+      "type": 3,
+      "quickSearch": 0,
+      "api": "csp_AppGetGuard",
+      "jar": "./jar/mi-0319.jar;md5;b73ed98a0a285189794be3c8d9c3a335",
+      "ext": "sHR2rlsfjI4L3t4RXQMkn9pXqDDJVVS6pwdk2S4nTvU6TUFngKGexyvHMXSXO57AN6M4LsBHwZ1tcHnPZ2gPH1m7qu7r1zc7CkawgqunMPxZznGnqtbiv5NVOliQUr2NK4Pee7PFE2+BCvbGUPd3IR9Hiub1wBkbrfqjptJFLEpVXeR1pgeGp6pPUjADtyQPuXHj4azaFzDrobUCcdcn7KM6ZC4rjkupd5HlbdqhOJTRBv917h5RUlXs1sgRU1+EWkMXuNopX+18VjWwSrFYPw=="
+    },
     {
       "key": "csp_CN影院",
       "name": "🎥｜CN｜",
