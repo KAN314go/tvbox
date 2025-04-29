@@ -4467,11 +4467,11 @@
     {
       "name":"小雲破解版",
       "url":"./live/ueen.m3u",
-      "spider":"./jar/custom_spider-tanz.jar",
-      "jar":"./jar/custom_spider-tanz.jar",
+      "spider":"./jar/custom_spider-tanz.jar;md5;b5079660bb98ded216e787a0458981b4",
+      "jar":"./jar/custom_spider-tanz.jar;md5;b5079660bb98ded216e787a0458981b4",
       "core":
       {
-      "auth":"local://tvbus"
+      "auth":"local://tvbus",
       "name":"123",
       "pass":"345",
       "resp":"{\"result_code\":\"0\",\"result\":\"ok\",\"keys\":{\"user_id\":\"0027000005f5c398\",\"peer_id\":\"0ec044591d9e1418\",\"session_key\":\"0a49662f37674af5\"}}",
@@ -4483,6 +4483,8 @@
     {
       "name": "小雲1台",
       "url": "./live/ueen.m3u",
+      "spider":"./jar/custom_spider-tanz.jar;md5;b5079660bb98ded216e787a0458981b4",
+      "jar":"./jar/custom_spider-tanz.jar;md5;b5079660bb98ded216e787a0458981b4",
       "playerType": 2,
       "core": {
         "auth": "local://tvbus",
@@ -4497,6 +4499,8 @@
     {
       "name": "小雲2台",
       "url": "./live/ueen2.txt",
+      "spider":"./jar/custom_spider-tanz.jar;md5;b5079660bb98ded216e787a0458981b4",
+      "jar":"./jar/custom_spider-tanz.jar;md5;b5079660bb98ded216e787a0458981b4",
       "playerType": 2,
       "core": {
         "auth": "local://tvbus",
@@ -4938,8 +4942,8 @@
     {
       "name":"故障(故障)",
       "type":0,
-      "spider":"./jar/custom_spider.jar;md5;b5079660bb98ded216e787a0458981b4",
-      "jar":"./jar/custom_spider.jar;md5;b5079660bb98ded216e787a0458981b4",
+      "spider":"./jar/custom_spider-tanz.jar;md5;b5079660bb98ded216e787a0458981b4",
+      "jar":"./jar/custom_spider-tanz.jar;md5;b5079660bb98ded216e787a0458981b4",
       "url":"proxy://do=hema&token=d2510bb5",
       "pass" :true
     },
