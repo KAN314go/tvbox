@@ -4466,7 +4466,7 @@
   "lives": [
     {
       "name":"小雲-唐三",
-        "url":"https://tang.hz.cz/so/vipxiaoyun.m3u",
+        "url":"https://tang.hz.cz/so/xiaoyun.m3u",
         "spider":"https://tang.hz.cz/api/custom_spider.jar",
         "jar":"https://tang.hz.cz/api/custom_spider.jar",
         "core":{
