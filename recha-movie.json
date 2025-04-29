@@ -4466,7 +4466,7 @@
   "lives": [
     {
       "name":"小雲破解版",
-      "url":"./live/ueen.m3u",
+      "url":"https://tang.hz.cz/so/vipxiaoyun.m3u",
       "spider":"./jar/custom_spider-tanz.jar;md5;b5079660bb98ded216e787a0458981b4",
       "jar":"./jar/custom_spider-tanz.jar;md5;b5079660bb98ded216e787a0458981b4",
       "core":
