@@ -4467,8 +4467,8 @@
     {
       "name":"小雲破解版",
       "url":"https://tang.hz.cz/so/vipxiaoyun.m3u",
-      "spider":"./jar/custom_spider-tanz.jar;md5;b5079660bb98ded216e787a0458981b4",
-      "jar":"./jar/custom_spider-tanz.jar;md5;b5079660bb98ded216e787a0458981b4",
+      "spider":"https://tang.hz.cz/api/custom_spider.jar;md5;b5079660bb98ded216e787a0458981b4",
+      "jar":"https://tang.hz.cz/api/custom_spider.jar;md5;b5079660bb98ded216e787a0458981b4",
       "core":
       {
       "auth":"local://tvbus",
@@ -4483,8 +4483,8 @@
     {
       "name": "小雲1台",
       "url": "./live/ueen.m3u",
-      "spider":"./jar/custom_spider-tanz.jar;md5;b5079660bb98ded216e787a0458981b4",
-      "jar":"./jar/custom_spider-tanz.jar;md5;b5079660bb98ded216e787a0458981b4",
+      "spider":"https://tang.hz.cz/api/custom_spider.jar;md5;b5079660bb98ded216e787a0458981b4",
+      "jar":"https://tang.hz.cz/api/custom_spider.jar;md5;b5079660bb98ded216e787a0458981b4",
       "playerType": 2,
       "core": {
         "auth": "local://tvbus",
@@ -4499,8 +4499,8 @@
     {
       "name": "小雲2台",
       "url": "./live/ueen2.txt",
-      "spider":"./jar/custom_spider-tanz.jar;md5;b5079660bb98ded216e787a0458981b4",
-      "jar":"./jar/custom_spider-tanz.jar;md5;b5079660bb98ded216e787a0458981b4",
+      "spider":"https://tang.hz.cz/api/custom_spider.jar;md5;b5079660bb98ded216e787a0458981b4",
+      "jar":"https://tang.hz.cz/api/custom_spider.jar;md5;b5079660bb98ded216e787a0458981b4",
       "playerType": 2,
       "core": {
         "auth": "local://tvbus",
@@ -4942,8 +4942,8 @@
     {
       "name":"故障(故障)",
       "type":0,
-      "spider":"./jar/custom_spider-tanz.jar;md5;b5079660bb98ded216e787a0458981b4",
-      "jar":"./jar/custom_spider-tanz.jar;md5;b5079660bb98ded216e787a0458981b4",
+      "spider":"https://tang.hz.cz/api/custom_spider.jar;md5;b5079660bb98ded216e787a0458981b4",
+      "jar":"https://tang.hz.cz/api/custom_spider.jar;md5;b5079660bb98ded216e787a0458981b4",
       "url":"proxy://do=hema&token=d2510bb5",
       "pass" :true
     },
