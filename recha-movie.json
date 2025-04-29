@@ -7,15 +7,7 @@
 
     
 
-    {
-      "key": "py_4KAV",
-      "name": "🥇｜4KAV｜待測",
-      "type": 3,
-      "api": "./py/4KAV.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1
-    },
+
     {
       "key": "豆瓣",
       "name": "🇹🇼｜熱播排行榜｜自動切換",
