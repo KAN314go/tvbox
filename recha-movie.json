@@ -4,26 +4,6 @@
   "wallpaper": "https://tv.nxog.top/m//t/",
   "sites": [
 
-    {
-      "key": "四个圈影视",
-      "name": "四圈影视",
-      "type": 1,
-      "api": "https://pg.fenwe078.cf/api.php/provide/vod/",
-      "quickSearch": 1,
-      "searchable": 1,
-      "changeable": 1,
-      "categories": ["电影","连续剧","国产剧","韩国剧","台湾剧","日本剧","美国剧","港台剧","日韩剧","综艺","国产动漫", "日韩动漫","短剧"]
-    },
-    {
-      "key": "py_文才",
-      "name": "文才影视",
-      "type": 3,
-      "api": "./py/文才影视.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": {"site": "https://www.hkybqufgh.com,https://www.sizhengxt.com,https://0996zp.com,https://9zhoukj.com/,https://www.sizhengxt.com,https://www.tjrongze.com,https://www.jiabaide.cn,https://cqzuoer.com"}    
-    },
 
     {
       "key": "豆瓣",
@@ -85,6 +65,16 @@
       "ext": {
         "site": "https://jpyy.com,https://www.jiabaide.cn,https://cqzuoer.com,https://www.tjrongze.com,https://www.jpyy2.com,https://www.cfkj86.com"
       }
+    },
+    {
+      "key": "py_文才",
+      "name": "🏆｜鬼牌｜藍光◎秒播(無廣告)",
+      "type": 3,
+      "api": "./py/文才影视.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": {"site": "https://www.hkybqufgh.com,https://www.sizhengxt.com,https://0996zp.com,https://9zhoukj.com/,https://www.sizhengxt.com,https://www.tjrongze.com,https://www.jiabaide.cn,https://cqzuoer.com"}    
     },
     {
       "key": "py_金牌.py",
@@ -3495,6 +3485,16 @@
       "style": {"type": "rect", "ratio": 1.33},
       "quickSearch": 0,
       "changeable": 1
+    },
+    {
+      "key": "vod_四个圈影视",
+      "name": "🧲｜四圈｜高清◎秒播(全版廣告)",
+      "type": 1,
+      "api": "https://pg.fenwe078.cf/api.php/provide/vod/",
+      "quickSearch": 1,
+      "searchable": 1,
+      "changeable": 1,
+      "categories": ["电影","连续剧","国产剧","韩国剧","台湾剧","日本剧","美国剧","港台剧","日韩剧","综艺","国产动漫", "日韩动漫","短剧"]
     },
     {
       "key": "vod_极速",
