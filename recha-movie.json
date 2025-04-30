@@ -4,7 +4,16 @@
   "wallpaper": "https://tv.nxog.top/m//t/",
   "sites": [
 
-
+    {
+      "key": "四个圈影视",
+      "name": "四圈影视",
+      "type": 1,
+      "api": "https://pg.fenwe078.cf/api.php/provide/vod/",
+      "quickSearch": 1,
+      "searchable": 1,
+      "changeable": 1,
+      "categories": ["电影","连续剧","国产剧","韩国剧","台湾剧","日本剧","美国剧","港台剧","日韩剧","综艺","国产动漫", "日韩动漫","短剧"]
+    },
     {
       "key": "py_文才",
       "name": "文才影视",
