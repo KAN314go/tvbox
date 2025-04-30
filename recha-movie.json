@@ -1,6 +1,5 @@
 {
-//  "spider": "http://我不是.摸鱼儿.com/by/jar/moyu.php;md5;9d38a1d411dc4d10851531e3d5728e25",
-"spider":"./jar/custom_spider.jar;md5;b5079660bb98ded216e787a0458981b4",
+  "spider": "http://我不是.摸鱼儿.com/by/jar/moyu.php;md5;9d38a1d411dc4d10851531e3d5728e25",
   "logo": "https://p3-pc.douyinpic.com/img/aweme-avatar/tos-cn-i-0813_6e2553f5708c414386eeca88b5f2674a~c5_300x300.jpeg?from=2956013662",
   "wallpaper": "https://tv.nxog.top/m//t/",
   "sites": [
