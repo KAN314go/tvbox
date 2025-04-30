@@ -3228,7 +3228,7 @@
     },
     {
       "key": "py_BaHaoTV",
-      "name": "🥉｜八影｜普清◎順播(無廣告)",
+      "name": "🥉｜八號｜普清◎順播(無廣告)",
       "type": 4,
       "api": "https://py.doube.eu.org/spider?site=BaHaoTV",
       "searchable": 1,
@@ -3255,6 +3255,47 @@
       "api": "csp_AppGetGuard",
       "jar": "./jar/mi-0319.jar;md5;b73ed98a0a285189794be3c8d9c3a335",
       "ext": "sHR2rlsfjI4L3t4RXQMkn4/zRHG7KueeJHsenaeUMOWp1EzObBSdbU9et5QXxSbLZNx3dMChdqtSieuV5wZj006LehfFeCmj8B095j2lIKIF0YoQe+MZcPjGy7gtOViYZ6wvyGkzWk6oD1mJmauAyZhYFgIf28dxzY5kbxJVtI2PjlO6xlD2NRNjVM5uVtSkhN2Pf9gmJ5qaWk40c4YC+w=="
+    },
+    {
+      "key": "csp_NIVODvip",
+      "name": "🎥｜泥視頻(VIP)｜藍光◎順播(無廣告)",
+      "type": 3,
+      "api": "csp_XBPQ",
+      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "./json/泥視頻VIP.json"
+    },
+    {
+      "key": "py_NIVOD.CC",
+      "name": "🎥｜泥視頻｜高清◎秒播(浮水印廣告)",
+      "type": 3,
+      "api": "./py/py_nivod_cc.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "changeable": 1
+    },
+    {
+      "key": "csp_NIVODapp",
+      "name": "🇹🇼｜泥視頻(APP)｜藍光◎順播(跑馬燈廣告)",
+      "type": 3,
+      "api": "csp_XBPQ",
+      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": {
+        "线路数组": "class=\"playlist-mobile playlist layout-box clearfix&&</ul>",
+        "线路标题": ">&&</a>",
+        "简介": "details-content-all\">&&</span>",
+        "搜索url": "https://www.nivod.app/vod-search/page/{pg}/wd/{wd}.html",
+        "分类url": "https://www.nivod.app/vod-show-{cateId}/area/{area}/by/{by}/page/{catePg}/year/{year}.html",
+        "分类": "電視劇$1#電影$2#綜藝$3#動漫$4#動畫電影$215",
+        "地区": "中国大陆&中国香港&中国台湾&欧美&法国&英国&日本&韩国&泰国&新加坡&马来西亚&印度&西班牙&加拿大&俄罗斯&其它",
+        "排序": "更新$time#週人氣$hits_week#總人氣$hits"
+      }
     },
     {
       "key": "csp_奥特影视(PRO)",
@@ -3357,7 +3398,7 @@
     },
     {
       "key": "csp_JUMITV",
-      "name": "🎥｜劇迷｜重測",
+      "name": "🎥｜劇迷｜高清◎秒播(全版廣告)",
       "type": 3,
       "api": "csp_XBPQ",
       "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
@@ -3373,7 +3414,7 @@
     },
     {
       "key": "csp_剧迷_jagcys",
-      "name": "🎥｜劇家｜重測",
+      "name": "🎥｜劇家｜高清◎秒播(浮水印廣告)",
       "type": 3,
       "api": "csp_XBPQ",
       "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
@@ -3389,48 +3430,6 @@
         "地区": "大陆&香港&台湾&美国&法国&英国&日本&韩国&德国&泰国&印度&意大利&西班牙&加拿大&其他||空||内地&港台&日韩&欧美||国产&日本&欧美&其他||空"
       }
     },
-    {
-      "key": "py_NIVOD.CC",
-      "name": "🎥｜泥視頻｜重測",
-      "type": 3,
-      "api": "./py/py_nivod_cc.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "changeable": 1
-    },
-    {
-      "key": "csp_NIVODvip",
-      "name": "🎥｜泥視頻(VIP)｜重測",
-      "type": 3,
-      "api": "csp_XBPQ",
-      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": "./json/泥視頻VIP.json"
-    },
-    {
-      "key": "csp_NIVODapp",
-      "name": "🇹🇼｜泥視頻(APP)｜重測",
-      "type": 3,
-      "api": "csp_XBPQ",
-      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": {
-        "线路数组": "class=\"playlist-mobile playlist layout-box clearfix&&</ul>",
-        "线路标题": ">&&</a>",
-        "简介": "details-content-all\">&&</span>",
-        "搜索url": "https://www.nivod.app/vod-search/page/{pg}/wd/{wd}.html",
-        "分类url": "https://www.nivod.app/vod-show-{cateId}/area/{area}/by/{by}/page/{catePg}/year/{year}.html",
-        "分类": "電視劇$1#電影$2#綜藝$3#動漫$4#動畫電影$215",
-        "地区": "中国大陆&中国香港&中国台湾&欧美&法国&英国&日本&韩国&泰国&新加坡&马来西亚&印度&西班牙&加拿大&俄罗斯&其它",
-        "排序": "更新$time#週人氣$hits_week#總人氣$hits"
-      }
-    },
-
     {
       "key": "vod_爱看",
       "name": "🧲｜爱看機器人｜全線路",
