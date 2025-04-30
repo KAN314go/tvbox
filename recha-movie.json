@@ -4931,12 +4931,20 @@
       "epg": "http://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Taipei"
     },
     {
-      "name": "安博測試台",
+      "name": "安博測試台(很卡-不能看)",
       "type": 0,
       "url": "./live/UBLIVE.php",
       "epg": "https://epg.112114.eu.org/?ch={name}&date={date}",
       "logo": "https://epg.112114.eu.org/logo/{name}.png",
       "pass": true
+    },
+    {
+      "name":"故障(故障)",
+      "type":0,
+      "spider":"./jar/custom_spider.jar;md5;b5079660bb98ded216e787a0458981b4",
+      "jar":"./jar/custom_spider.jar;md5;b5079660bb98ded216e787a0458981b4",
+      "url":"proxy://do=hema&token=d2510bb5",
+      "pass" :true
     },
     {
       "name": "PIXMAN(故障)",
