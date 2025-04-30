@@ -1,12 +1,20 @@
 {
-  "spider": "http://我不是.摸鱼儿.com/by/jar/moyu.php;md5;9d38a1d411dc4d10851531e3d5728e25",
+  "spider": "./jar/pg.jar;md5;3d7366987f27631444e98cde17418a57",
   "logo": "https://p3-pc.douyinpic.com/img/aweme-avatar/tos-cn-i-0813_6e2553f5708c414386eeca88b5f2674a~c5_300x300.jpeg?from=2956013662",
   "wallpaper": "https://tv.nxog.top/m//t/",
   "sites": [
 
 
-    
-
+    {
+      "key": "py_文才",
+      "name": "文才影视",
+      "type": 3,
+      "api": "./py/文才影视.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": {"site": "https://www.hkybqufgh.com,https://www.sizhengxt.com,https://0996zp.com,https://9zhoukj.com/,https://www.sizhengxt.com,https://www.tjrongze.com,https://www.jiabaide.cn,https://cqzuoer.com"}    
+    },
 
     {
       "key": "豆瓣",
@@ -14,7 +22,6 @@
       "type": 3,
       "api": "csp_Douban",
       "ext": "./json/douban.json",
-      "jar": "./jar/pg.jar;md5;3d7366987f27631444e98cde17418a57",
       "searchable": 0,
       "quickSearch": 0,
       "changeable": 1
@@ -24,7 +31,6 @@
       "name": "🇹🇼｜點播搜索｜可選站",
       "type": 3,
       "api": "csp_Douban",
-      "jar": "./jar/pg.jar;md5;3d7366987f27631444e98cde17418a57",
       "searchable": 0,
       "changeable": 0,
       "indexs": 1,
@@ -35,7 +41,6 @@
       "name": "🇹🇼｜Youtube、网盘、弹幕配置",
       "type": 3,
       "api": "csp_Config",
-      "jar": "./jar/pg.jar;md5;3d7366987f27631444e98cde17418a57",
       "searchable": 0,
       "changeable": 0,
       "ext": "./json/tokenm.json",
@@ -46,7 +51,6 @@
       "name": "🇹🇼｜Youtube",
       "type": 3,
       "api": "csp_Youtube",
-      "jar": "./jar/pg.jar;md5;3d7366987f27631444e98cde17418a57",
       "searchable": 1,
       "quickSearch": 1,
       "changeable": 0,
@@ -364,16 +368,6 @@
         "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
         "Referer": "test"
       }
-    },
-    {
-      "key": "白白",
-      "name": "🥇｜素白｜高清◎順播(無廣告)",
-      "type": 3,
-      "api": "csp_SbaibaiGuard",
-      "playerType": 2,
-      "searchable": 1,
-      "quickSearch": 1,
-      "changeable": 1
     },
     {
       "key": "py_素白白.py",
@@ -1729,16 +1723,6 @@
       "searchable": 1,
       "quickSearch": 0,
       "filterable": 0,
-      "changeable": 1
-    },
-    {
-      "key": "文采",
-      "name": "🥈｜文才｜高清◎秒播(賭場廣告)",
-      "type": 3,
-      "api": "csp_JpysGuard",
-      "playerType": 2,
-      "searchable": 1,
-      "quickSearch": 1,
       "changeable": 1
     },
     {
