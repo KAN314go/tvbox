@@ -5,18 +5,6 @@
   "sites": [
 
 
-
-    {
-      "key":"huarenoktv",
-      "name":"華人直播️",
-      "type":1,
-      "api":"https://huaren.live/api.php/tvbox",
-      "playUrl":"json:https://parse.okhuaren.com/?url=",
-      "searchable":1,
-      "quickSearch":1,
-      "filterable":1,
-      "header":{"User-Agent":"Mozilla/5.0(Macintosh;IntelMacOSX10_15_7)AppleWebKit/537.36(KHTML,likeGecko)Chrome/131.0.0.0Safari/537.36","Referer":"test"}
-    },
     {
       "key": "豆瓣",
       "name": "🇹🇼｜熱播排行榜｜自動切換",
@@ -155,6 +143,15 @@
       "filterable": 0
     },
     {
+      "key": "drpy_js_360影视",
+      "name": "🎖︎｜360｜官源",
+      "type": 3,
+      "searchable": 1,
+      "quickSearch": 1,
+      "api": "./drpy_libs/drpy2.min.js",
+      "ext": "./drpy_js/360影视[官].js"
+    },
+    {
       "key": "py_4K影院",
       "name": "🏆｜4K影院｜藍光◎順播(無廣告+無篩選)",
       "type": 3,
@@ -163,15 +160,6 @@
       "quickSearch": 0,
       "filterable": 0,
       "changeable": 0
-    },
-    {
-      "key": "drpy_js_360影视",
-      "name": "🎖︎｜360｜官源",
-      "type": 3,
-      "searchable": 1,
-      "quickSearch": 1,
-      "api": "./drpy_libs/drpy2.min.js",
-      "ext": "./drpy_js/360影视[官].js"
     },
     {
       "key": "三六零弹幕",
@@ -192,7 +180,7 @@
       "changeable": 1,
       "quickSearch": 1,
       "style": {"type": "rect", "ratio": 0.75},
-      "jar": "./jar/gm.jar",
+      "jar": "./jar/GM.jar;md5;3e59c9c3c50ea1d4609cec9dbee730c3",
       "api": "csp_GM",
       "ext": {
         "userScript": "./drpy_js/ysfp.user.js",
@@ -209,9 +197,13 @@
         },
         "spider": {
           "homeContent": {"loadUrl": "https://m.yfsp.tv/"},
-          "categoryContent": {"loadUrl": "https://m.yfsp.tv/list/${tid}?type=${index-0:-0}${index-1:-,0}${index-2:-,0}${index-3:-,0}${index-4:-,0}${index-5:-}"},
+          "categoryContent": {
+            "loadUrl": "https://m.yfsp.tv/list/${tid}?type=${index-0:-0}${index-1:-,0}${index-2:-,0}${index-3:-,0}${index-4:-,0}${index-5:-}"
+          },
           "detailContent": {"loadUrl": "https://m.yfsp.tv/play/${id}"},
-          "playerContent": {"loadUrl": "https://m.yfsp.tv/play/${mediaKey}?id=${episodeKey}"},
+          "playerContent": {
+            "loadUrl": "https://m.yfsp.tv/play/${mediaKey}?id=${episodeKey}"
+          },
           "searchContent": {"loadUrl": "https://m.yfsp.tv/search"}
         }
       }
@@ -1937,6 +1929,40 @@
       }
     },
     {
+      "key": "csp_JUMITV",
+      "name": "🥈｜劇迷｜高清◎秒播(全版廣告)",
+      "type": 3,
+      "api": "csp_XBPQ",
+      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": {
+        "分类url": "https://jumi.tv/show/{cateId}/area/{area}/by/{by}/page/{catePg}/year/{year}.html",
+        "分类": "電影$1#電視劇$2#綜藝$3#動漫$4",
+        "类型": "動作片$6#喜劇片$7#愛情片$8#科幻片$9#恐怖片$10#劇情片$11#戰爭片$12#紀錄片$20||陸劇$13#港劇$14#台劇$22#日劇$15#韓劇$23#美劇$16#海外劇$24||空||空",
+        "地区": "大陸&香港&台灣&美國&法國&英國&日本&韓國&德國&泰國&印度&意大利&西班牙&加拿大||大陸&韓國&香港&台灣&日本&美國&泰國&英國&新加坡&其他||大陸&香港&台灣&美國&法國&英國&日本&韓國&德國&泰國&印度&意大利&西班牙&加拿大&其他||大陸&香港&台灣&美國&法國&英國&日本&韓國&德國&泰國&印度&意大利&西班牙&加拿大&其他"
+      }
+    },
+    {
+      "key": "csp_剧迷_jagcys",
+      "name": "🥈｜劇家｜高清◎秒播(浮水印廣告)",
+      "type": 3,
+      "api": "csp_XBPQ",
+      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": {
+        "线路数组": "class=\"module-tab-item tab-item\"&&</div>",
+        "线路标题": "<span>&&</span>[不包含:蓝光极速#蓝光高清]",
+        "分类url": "https://www.jagcys.com/vodshow/{cateId}/area/{area}/page/{catePg}/year/{year}.html",
+        "分类": "电影$dianying#电视剧$dsj#动漫$dongman#综艺$zongyi#短劇$remenduanju",
+        "类型": "喜剧片$xijupian#动作片$dongzuopian#爱情片$aiqingpian#科幻片$kehuanpian#恐怖片$kongbupian#剧情片$juqingpian#战争片$zhanzhengpian#悬疑片$xuanyipian#犯罪片$fanzuipian#冒险片$maoxianpian#动画片$donghuapian#惊悚片$jingsongpian#奇幻片$qihuanpian#纪录片$jilupian||国产剧$guochanju#欧美剧$oumeiju#日剧$riju#韩剧$hanju#港剧$gangju#台剧$taiju#泰剧$taiju#海外剧$haiwaiju#爽文短剧$shuangwenduanju||空||国产动漫$guochandongman#日韩动漫$rihandongman#欧美动漫$oumeidongman#港台动漫$gangtaidongman#海外动漫$haiwaidongman||空",
+        "地区": "大陆&香港&台湾&美国&法国&英国&日本&韩国&德国&泰国&印度&意大利&西班牙&加拿大&其他||空||内地&港台&日韩&欧美||国产&日本&欧美&其他||空"
+      }
+    },
+    {
       "key": "追剧弹幕",
       "name": "🥈｜追剧｜高清◎秒播(浮水印廣告)",
       "type": 3,
@@ -3405,40 +3431,6 @@
       }
     },
     {
-      "key": "csp_JUMITV",
-      "name": "🎥｜劇迷｜高清◎秒播(全版廣告)",
-      "type": 3,
-      "api": "csp_XBPQ",
-      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": {
-        "分类url": "https://jumi.tv/show/{cateId}/area/{area}/by/{by}/page/{catePg}/year/{year}.html",
-        "分类": "電影$1#電視劇$2#綜藝$3#動漫$4",
-        "类型": "動作片$6#喜劇片$7#愛情片$8#科幻片$9#恐怖片$10#劇情片$11#戰爭片$12#紀錄片$20||陸劇$13#港劇$14#台劇$22#日劇$15#韓劇$23#美劇$16#海外劇$24||空||空",
-        "地区": "大陸&香港&台灣&美國&法國&英國&日本&韓國&德國&泰國&印度&意大利&西班牙&加拿大||大陸&韓國&香港&台灣&日本&美國&泰國&英國&新加坡&其他||大陸&香港&台灣&美國&法國&英國&日本&韓國&德國&泰國&印度&意大利&西班牙&加拿大&其他||大陸&香港&台灣&美國&法國&英國&日本&韓國&德國&泰國&印度&意大利&西班牙&加拿大&其他"
-      }
-    },
-    {
-      "key": "csp_剧迷_jagcys",
-      "name": "🎥｜劇家｜高清◎秒播(浮水印廣告)",
-      "type": 3,
-      "api": "csp_XBPQ",
-      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": {
-        "线路数组": "class=\"module-tab-item tab-item\"&&</div>",
-        "线路标题": "<span>&&</span>[不包含:蓝光极速#蓝光高清]",
-        "分类url": "https://www.jagcys.com/vodshow/{cateId}/area/{area}/page/{catePg}/year/{year}.html",
-        "分类": "电影$dianying#电视剧$dsj#动漫$dongman#综艺$zongyi#短劇$remenduanju",
-        "类型": "喜剧片$xijupian#动作片$dongzuopian#爱情片$aiqingpian#科幻片$kehuanpian#恐怖片$kongbupian#剧情片$juqingpian#战争片$zhanzhengpian#悬疑片$xuanyipian#犯罪片$fanzuipian#冒险片$maoxianpian#动画片$donghuapian#惊悚片$jingsongpian#奇幻片$qihuanpian#纪录片$jilupian||国产剧$guochanju#欧美剧$oumeiju#日剧$riju#韩剧$hanju#港剧$gangju#台剧$taiju#泰剧$taiju#海外剧$haiwaiju#爽文短剧$shuangwenduanju||空||国产动漫$guochandongman#日韩动漫$rihandongman#欧美动漫$oumeidongman#港台动漫$gangtaidongman#海外动漫$haiwaidongman||空",
-        "地区": "大陆&香港&台湾&美国&法国&英国&日本&韩国&德国&泰国&印度&意大利&西班牙&加拿大&其他||空||内地&港台&日韩&欧美||国产&日本&欧美&其他||空"
-      }
-    },
-    {
       "key": "vod_爱看",
       "name": "🧲｜爱看機器人｜全線路",
       "type": 3,
@@ -4638,6 +4630,16 @@
     }
   ],
   "lives": [
+    {
+      "name": "歐華167(P3P)",
+      "playerType": 2,
+      "url": "./live/169.txt",
+      "ua": "okhttp/3.15",
+      "timeout": 5,
+      "epg": "https://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/taipei",
+      "logo": "https://epg.112114.xyz/logo/{name}.png",
+      "pass": true
+    },
     {
       "name":"小雲-唐三",
         "url":"https://tang.hz.cz/so/xiaoyun.m3u",
