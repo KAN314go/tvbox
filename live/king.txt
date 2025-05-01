@@ -1,4 +1,4 @@
-🇹🇼弯弯综合,#genre#
+台灣頻道,#genre#
 民视,rtmp://f13h.mine.nu/sat/tv051
 台视,rtmp://f13h.mine.nu/sat/tv071
 中视,rtmp://f13h.mine.nu/sat/tv091
