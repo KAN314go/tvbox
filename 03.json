@@ -4679,6 +4679,30 @@
         "pass": true
     },
     {
+        "name": "LiTV",
+        "type": 0,
+        "url": "http://xg.52sw.top/iptv/litv.php",
+        "ua": "okhttp/3.15",
+        "epg": "http://iptv.52sw.top:668/?ch={name}&date={date}",
+        "pass": true
+    },
+    {
+      "name": "歐華(ouhua TV)",
+      "type": 0,
+      "url": "./live/ohhua.txt",
+      "ua": "okhttp/3.15",
+      "epg": "http://iptv.52sw.top:668/?ch={name}&date={date}",
+      "pass": true
+    },
+    {
+      "name": "歐飛(ofiii TV)",
+      "type": 0,
+      "url": "./live/ofiii.m3u",
+      "ua": "okhttp/3.15",
+      "logo": "https://epg.112114.xyz/logo/{name}.png",
+      "pass": true
+    },
+    {
       "name":"小雲-唐三",
         "url":"https://tang.hz.cz/so/xiaoyun.m3u",
         "spider":"https://tang.hz.cz/api/custom_spider.jar",
@@ -4884,71 +4908,10 @@
       "pass": true
     },
     {
-      "name": "stream",
-      "type": 0,
-      "playerType": 2,
-      "url": "./live/stream.txt",
-      "ua": "okhttp/3.15",
-      "epg": "http://epg.112114.xyz/?ch={name}&date={date}",
-      "logo": "https://epg.112114.xyz/logo/{name}.png",
-      "pass": true
-    },
-    {
-      "name": "收集者",
-      "type": 0,
-      "playerType": 2,
-      "url": "./live/otttv.txt",
-      "ua": "okhttp/3.15",
-      "epg": "http://epg.112114.xyz/?ch={name}&date={date}",
-      "logo": "https://epg.112114.xyz/logo/{name}.png",
-      "pass": true
-    },
-    {
       "name": "FreeTV",
       "playerType": 2,
       "url": "https://freeman.neocities.org/Live-TV520.txt",
       "epg": "http://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Taipei",
-      "logo": "https://epg.112114.xyz/logo/{name}.png",
-      "pass": true
-    },
-    {
-      "name": "LiTV",
-      "type": 0,
-      "url": "http://xg.52sw.top/iptv/litv.php",
-      "ua": "okhttp/3.15",
-      "epg": "http://iptv.52sw.top:668/?ch={name}&date={date}",
-      "pass": true
-    },
-    {
-      "name": "火星直播",
-      "type": 0,
-      "url": "http://xg.52sw.top/play/hxds/",
-      "ua": "okhttp/3.15",
-      "epg": "http://iptv.52sw.top:668/epg/?ch={name}&date={date}",
-      "header": {"Referer": "https://www.kds.tw/"},
-      "pass": true
-    },
-    {
-      "name": "焦点(Focus TV)",
-      "type": 0,
-      "url": "http://xg.52sw.top/jd/?ip=108.181.32.169",
-      "ua": "okhttp/3.15",
-      "epg": "http://iptv.52sw.top:668/?ch={name}&date={date}",
-      "pass": true
-    },
-    {
-      "name": "歐華(ouhua TV)",
-      "type": 0,
-      "url": "./live/ohhua.txt",
-      "ua": "okhttp/3.15",
-      "epg": "http://iptv.52sw.top:668/?ch={name}&date={date}",
-      "pass": true
-    },
-    {
-      "name": "歐飛(ofiii TV)",
-      "type": 0,
-      "url": "./live/ofiii.m3u",
-      "ua": "okhttp/3.15",
       "logo": "https://epg.112114.xyz/logo/{name}.png",
       "pass": true
     },
