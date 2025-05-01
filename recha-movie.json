@@ -180,7 +180,7 @@
       "changeable": 1,
       "quickSearch": 1,
       "style": {"type": "rect", "ratio": 0.75},
-      "jar": "./jar/GM.jar;md5;3e59c9c3c50ea1d4609cec9dbee730c3",
+      "jar": "./jar/gm.jar",
       "api": "csp_GM",
       "ext": {
         "userScript": "./drpy_js/ysfp.user.js",
@@ -197,13 +197,9 @@
         },
         "spider": {
           "homeContent": {"loadUrl": "https://m.yfsp.tv/"},
-          "categoryContent": {
-            "loadUrl": "https://m.yfsp.tv/list/${tid}?type=${index-0:-0}${index-1:-,0}${index-2:-,0}${index-3:-,0}${index-4:-,0}${index-5:-}"
-          },
+          "categoryContent": {"loadUrl": "https://m.yfsp.tv/list/${tid}?type=${index-0:-0}${index-1:-,0}${index-2:-,0}${index-3:-,0}${index-4:-,0}${index-5:-}"},
           "detailContent": {"loadUrl": "https://m.yfsp.tv/play/${id}"},
-          "playerContent": {
-            "loadUrl": "https://m.yfsp.tv/play/${mediaKey}?id=${episodeKey}"
-          },
+          "playerContent": {"loadUrl": "https://m.yfsp.tv/play/${mediaKey}?id=${episodeKey}"},
           "searchContent": {"loadUrl": "https://m.yfsp.tv/search"}
         }
       }
