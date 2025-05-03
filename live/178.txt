@@ -81,8 +81,8 @@
 松视3台(小雲),http://18.svi-studio.com:80/live/917952932058/953281067271/20205.m3u8
 松视3台(小雲),http://18.svi-studio.com:80/live/875355861316/575426927985/20205.m3u8
 松视3台(小雲),http://18.svi-studio.com:80/live/656570054361/567275863459/20205.m3u8
-松視3台(小雲),http://18.svi-studio.com:80/live/824908251669/532612644941/20205.m3u8
-松視3台(小雲),http://18.svi-studio.com:8880/live/271871095922/006886711863/20205.m3u8
+松视3台(小雲),http://18.svi-studio.com:80/live/824908251669/532612644941/20205.m3u8
+松视3台(小雲),http://18.svi-studio.com:8880/live/271871095922/006886711863/20205.m3u8
 
 松视3台,p3p://108.181.32.169:40187/650b8a0e000007df8f1b27da75d42f65
 松视3台,p3p://167.114.175.6:55331/6109e9590001f40bfd9b661109395f3b
@@ -269,11 +269,11 @@ HAPPY,p3p://167.114.175.6:55331/616b79be000a35b17ab2f7b84c325eeb
 欧美版松視1,http://cdn.adultiptv.net/interracial.m3u8
 
 欧美版松視2,http://live.redtraffic.xyz:80/bigtits.m3u8
-欧美媒松視2,http://live.redtraffic.xyz:80/fetish.m3u8
-欧美媒松視2,http://live.redtraffic.xyz/fetish.m3u8?fluxuslust.m3u8
-欧美媒松視2,http://live.redtraffic.xyz/fetish.m3u8
-欧美媒松視2,http://cdn.adultiptv.net/fetish.m3u8
-欧美媒松視2,http://live.redtraffic.xyz/fetish.m3u8fluxuslust.m3u8
+欧美版松視2,http://live.redtraffic.xyz:80/fetish.m3u8
+欧美版松視2,http://live.redtraffic.xyz/fetish.m3u8?fluxuslust.m3u8
+欧美版松視2,http://live.redtraffic.xyz/fetish.m3u8
+欧美版松視2,http://cdn.adultiptv.net/fetish.m3u8
+欧美版松視2,http://live.redtraffic.xyz/fetish.m3u8fluxuslust.m3u8
 
 欧美版松視3,http://live.redtraffic.xyz:80/bigdick.m3u8
 欧美版松視3,mitv://generationnexxxt.com:19806/4f855e073cb74c4ba33494f3c5feab03
