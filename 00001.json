@@ -6,8 +6,34 @@
 
 
     
-
-
+    {
+      "key": "人人",
+      "name": "人人｜APP",
+      "type": 3,
+      "quickSearch": 1,
+      "api": "csp_AppGet",
+      "ext": {
+          "url": "https://svip1.fun",
+          "dataKey": "laodiesdawsswasd",
+          "dataIv": "laodiesdawsswasd",
+          "deviceId": "298e5fe29c74b35aabb9836ee2f6f449f",
+          "version": "105"
+      }
+  },
+  {
+    "key": "晴天",
+    "name": "晴天｜APP",
+    "type": 3,
+    "quickSearch": 1,
+    "api": "csp_AppGet",
+    "ext": {
+        "url": "https://appcms.sun4k.top",
+        "dataKey": "b025dcd9c289cbb3",
+        "dataIv": "b025dcd9c289cbb3",
+        "deviceId": "",
+        "version": ""
+    }
+},
     {
       "key": "豆瓣",
       "name": "🇹🇼｜熱播排行榜｜自動切換",
