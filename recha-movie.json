@@ -4631,6 +4631,20 @@
   ],
   "lives": [
     {
+      "name": "GanChengTv",
+      "type": 3,
+      "api": "./py/live_GanChengTv.py",
+      "header": {
+        "User-Agent": "com.coocaa.iptv.IPTVApplication"
+      }
+    },
+    {
+      "name": "yoo体育直播(python)",
+      "type": 3,
+      "api": "./py/yoozb.py",
+      "ext": {}
+    },
+    {
         "name": "小雲1台",
         "url": "./live/ueen.m3u",
         "spider":"https://tang.hz.cz/api/custom_spider.jar;md5;b5079660bb98ded216e787a0458981b4",
