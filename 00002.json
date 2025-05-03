@@ -12,6 +12,7 @@
       "type": 3,
       "quickSearch": 1,
       "api": "csp_AppGet",
+      "jar": "./jar/svip.jar",
       "ext": {
           "url": "https://svip1.fun",
           "dataKey": "laodiesdawsswasd",
@@ -26,6 +27,7 @@
     "type": 3,
     "quickSearch": 1,
     "api": "csp_AppGet",
+    "jar": "./jar/svip.jar",
     "ext": {
         "url": "https://appcms.sun4k.top",
         "dataKey": "b025dcd9c289cbb3",
