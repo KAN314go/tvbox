@@ -4631,18 +4631,6 @@
   ],
   "lives": [
     {
-        "name": "快直播(python)",
-        "type": 3,
-        "api": "./py/kzb.py",
-        "ext": ""
-    },
-    {
-        "name": "快直播体育(python)",
-        "type": 3,
-        "api": "./py/kzbty.py",
-        "ext": ""
-    },
-    {
         "name": "小雲1台",
         "url": "./live/ueen.m3u",
         "spider":"https://tang.hz.cz/api/custom_spider.jar;md5;b5079660bb98ded216e787a0458981b4",
@@ -4844,6 +4832,12 @@
       "ua": "okhttp/3.15",
       "logo": "https://epg.112114.xyz/logo/{name}.png",
       "pass": true
+    },
+    {
+      "name": "快直播体育(python)",
+      "type": 3,
+      "api": "./py/kzbty.py",
+      "ext": ""
     },
     {
       "name": "安博1台(新加坡節點--很卡)",
