@@ -4,15 +4,6 @@
   "wallpaper": "https://tv.nxog.top/m//t/",
   "sites": [
 
-    {
-      "key": "vod_豆瓣",
-      "name": "🧲｜豆瓣｜測試",
-      "type": 1,
-      "api": "https://caiji.dbzy5.com/api.php/provide/vod/at/josn/",
-      "searchable": 1,
-      "quickSearch": 0,
-      "changeable": 1
-    },
 
     
 
@@ -3487,6 +3478,15 @@
       "quickSearch": 0,
       "changeable": 1
     },
+    {
+        "key": "vod_豆瓣",
+        "name": "🧲｜豆瓣｜高清◎順播(浮水印廣告)",
+        "type": 1,
+        "api": "https://caiji.dbzy5.com/api.php/provide/vod/at/josn/",
+        "searchable": 1,
+        "quickSearch": 0,
+        "changeable": 1
+      },
     {
       "key": "采集集合go",
       "name": "🧲｜采集集合｜高清◎順播(浮水印廣告)",
