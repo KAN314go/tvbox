@@ -4631,20 +4631,6 @@
   ],
   "lives": [
     {
-      "name": "GanChengTv",
-      "type": 3,
-      "api": "./py/live_GanChengTv.py",
-      "header": {
-        "User-Agent": "com.coocaa.iptv.IPTVApplication"
-      }
-    },
-    {
-      "name": "yoo体育直播(python)",
-      "type": 3,
-      "api": "./py/yoozb.py",
-      "ext": {}
-    },
-    {
         "name": "小雲1台",
         "url": "./live/ueen.m3u",
         "spider":"https://tang.hz.cz/api/custom_spider.jar;md5;b5079660bb98ded216e787a0458981b4",
@@ -4848,6 +4834,12 @@
       "pass": true
     },
     {
+      "name": "yoo体育直播(python)",
+      "type": 3,
+      "api": "./py/yoozb.py",
+      "ext": {}
+    },
+    {
       "name": "快直播体育(python)",
       "type": 3,
       "api": "./py/kzbty.py",
@@ -4966,6 +4958,14 @@
       "epg": "https://epg.112114.eu.org/?ch={name}&date={date}",
       "logo": "https://epg.112114.eu.org/logo/{name}.png",
       "pass": true
+    },
+    {
+      "name": "大陸直播台(沐辰)",
+      "type": 3,
+      "api": "./py/live_GanChengTv.py",
+      "header": {
+        "User-Agent": "com.coocaa.iptv.IPTVApplication"
+      }
     },
     {
       "name": "日本直播台",
