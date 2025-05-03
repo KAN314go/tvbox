@@ -4640,6 +4640,7 @@
     }
   ],
   "lives": [
+
     {
         "name": "小雲1台",
         "url": "./live/ueen.m3u",
@@ -4728,6 +4729,20 @@
       "pass": true
     },
     {
+      "name":"4GTV(docker)",
+      "playerType": 2,
+      "url":"http://docker.livednow.dpdns.org/?type=m3u",
+      "ua":"judy/5.2.1"
+    },
+    {
+      "name": "4GTV(ROB)",
+      "playerType": 2,
+      "url": "./live/4gtv.txt",
+      "epg": "http://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Taipei",
+      "logo": "https://epg.112114.xyz/logo/{name}.png",
+      "pass": true
+    },
+    {
         "name": "FreeTV",
         "playerType": 2,
         "url": "https://freeman.neocities.org/Live-TV520.txt",
@@ -4757,14 +4772,6 @@
         "playerType": 2,
         "url": "https://tv.iill.top/m3u/Live",
         "epg": "http://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Taipei",
-        "pass": true
-      },
-      {
-        "name": "4G-TV(ROB)",
-        "playerType": 2,
-        "url": "./live/4gtv.txt",
-        "epg": "http://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Taipei",
-        "logo": "https://epg.112114.xyz/logo/{name}.png",
         "pass": true
       },
       {
@@ -5088,15 +5095,7 @@
         "playerType": 2,
         "pass": true
     },
-    {
-        "name": "4G-TV(備用--故障)",
-        "type": 0,
-        "url": "./live/4G-tw.txt",
-        "playerType": 2,
-        "epg": "http://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Taipei",
-        "logo": "https://epg.112114.xyz/logo/{name}.png",
-        "pass": true
-    },
+
     {
         "name": "天天開心(故障)",
         "type": 0,
