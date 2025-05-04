@@ -83,7 +83,7 @@
     },
     {
       "key": "溢彩",
-      "name": "🇹🇼｜溢彩",
+      "name": "🇹🇼｜溢彩｜APP",
       "type": 3,
       "api": "csp_AppSxGuard",
       "spider": "./jar/fty.jar;md5;948a482e3bad5bd090a87a6a85d38903",
@@ -96,7 +96,7 @@
     },
     {
       "key": "zxzj",
-      "name": "🇹🇼｜在线",
+      "name": "🇹🇼｜在线｜APP",
       "type": 3,
       "api": "csp_ZxzjGuard",
       "jar": "./jar/fty.jar;md5;948a482e3bad5bd090a87a6a85d38903",
@@ -106,14 +106,7 @@
       "changeable": 1,
       "ext": "https://www.zxzjhd.com/"
     },
-    {
-      "key": "4Kdy",
-      "name": "🇹🇼｜4K-DY",
-      "type": 3,
-      "api": "csp_XBPQ",
-      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-      "ext": "http://我不是.摸鱼儿.com/api/moyu.php?file=4kdy"
-    },
+
     {
       "key": "豆瓣",
       "name": "🇹🇼｜熱播排行榜｜自動切換",
@@ -3762,6 +3755,14 @@
         "欧美"  , "海外动漫", "电影解说", "大陆综艺", "港台综艺", "日韩综艺", "欧美综艺"
       ]
     },
+    {
+        "key": "4Kdy",
+        "name": "🧲｜4K-DY｜磁力網盤",
+        "type": 3,
+        "api": "csp_XBPQ",
+        "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+        "ext": "http://我不是.摸鱼儿.com/api/moyu.php?file=4kdy"
+      },
     {
       "key": "py_animal3",
       "name": "动漫｜3號動漫",
