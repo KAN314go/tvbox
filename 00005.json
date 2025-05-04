@@ -18,7 +18,7 @@
 {
   "name":"海馬",
   "type":0,
-  "url":"proxy://do=hema&token=d2510bb5",
+  "url":"https://127.0.0.1:9978//proxy?do=hema&token=d2510bb5",
   "pass" :true
 }
 ],
