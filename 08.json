@@ -5,7 +5,16 @@
   "sites": [
 
 
-
+    {
+        "key": "nk",
+        "name": "🇹🇼｜耐看｜APP",
+        "type": 3,
+        "api": "csp_WebNK",
+        "jar": "./moyuer.php",
+        "searchable": 0,
+        "changeable": 0,
+        "ext": "w7TCmsONw6LDrsKYwoXCosKcwqDCrcKawqDDosKnwqTCoMKjwrPCosKpw7DDscKqXsKewpvDncOpw57Cp8OnwphXXFDCoMOnw6PDqcKhbVBXwovlh77phZvmkJ/lkZzCpuWGn+S9h+WQp2rlv6roqLnotr7mvInnrZPCkFdcUMKgw5fDn8Ocw6zCrMKgwqR7w57DrMKhwrPCmlrCp8KlwqnDosKpwrDCr8KhwrA="
+    },
     {
       "key": "优质",
       "name": "🇹🇼｜优质｜APP",
