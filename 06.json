@@ -14,6 +14,7 @@
       "type": 3,
       "quickSearch": 1,
       "api": "csp_AppGet",
+      "jar": "./jar/xiaosa.jar",
       "ext": {
           "url": "https://app.omofun1.top",
           "dataKey": "66dc309cbeeca454",
@@ -28,6 +29,7 @@
       "type": 3,
       "quickSearch": 1,
       "api": "csp_AppGet",
+      "jar": "./jar/xiaosa.jar",
       "ext": {
           "url": "https://www.gugu3.com",
           "dataKey": "nKfZ8KX6JTNWRzTD",
@@ -42,6 +44,7 @@
       "type": 3,
       "quickSearch": 1,
       "api": "csp_AppGet",
+      "jar": "./jar/xiaosa.jar",
       "ext": {
           "url": "http://45.43.29.111:9527",
           "dataKey": "GETMIFUNGEIMIFUN",
@@ -56,6 +59,7 @@
       "type": 3,
       "quickSearch": 1,
       "api": "csp_AppGet",
+      "jar": "./jar/xiaosa.jar",
       "ext": {
           "url": "https://apiapplbys.lbys.cc:5678",
           "dataKey": "apiapplbyskey168",
@@ -70,6 +74,7 @@
       "type": 3,
       "quickSearch": 1,
       "api": "csp_AppGet",
+      "jar": "./jar/xiaosa.jar",
       "ext": {
           "url": "https://svip1.fun",
           "dataKey": "laodiesdawsswasd",
@@ -84,6 +89,7 @@
       "type": 3,
       "quickSearch": 1,
       "api": "csp_AppGet",
+      "jar": "./jar/xiaosa.jar",
       "ext": {
           "url": "https://appcms.sun4k.top",
           "dataKey": "b025dcd9c289cbb3",
@@ -98,6 +104,7 @@
       "type": 3,
       "quickSearch": 1,
       "api": "csp_AppGet",
+      "jar": "./jar/xiaosa.jar",
       "ext": {
           "url": "http://121.62.22.204:9876",
           "dataKey": "f5e2tx53ykp6s2c9",
@@ -112,6 +119,7 @@
       "type": 3,
       "quickSearch": 1,
       "api": "csp_AppGet",
+      "jar": "./jar/xiaosa.jar",
       "ext": {
           "url": "http://47.122.22.78",
           "dataKey": "1234567890123456",
