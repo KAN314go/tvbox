@@ -19,7 +19,7 @@
     },
     {
       "key": "zxzj",
-      "name": "🍊在线┃秒播",
+      "name": "🇹🇼｜在线",
       "type": 3,
       "api": "csp_ZxzjGuard",
       "jar": "./jar/fty.jar;md5;948a482e3bad5bd090a87a6a85d38903",
@@ -31,11 +31,11 @@
     },
     {
       "key": "4Kdy",
-      "name": "🕊️凝安┃蓝光┃无广",
+      "name": "🇹🇼｜4K-DY",
       "type": 3,
       "api": "csp_XBPQ",
       "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-      "ext": "http://我不是.摸鱼儿.com/api/moyu.php?file=4kdy"
+      "ext": "./jar/moyu.php?file=4kdy"
     },
     {
       "key": "豆瓣",
