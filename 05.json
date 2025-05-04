@@ -4,6 +4,122 @@
   "wallpaper": "https://tv.nxog.top/m//t/",
   "sites": [
 
+
+
+
+
+    {
+      "key": "曼波动漫",
+      "name": "曼波｜动漫",
+      "type": 3,
+      "quickSearch": 1,
+      "api": "csp_AppGet",
+      "ext": {
+          "url": "https://app.omofun1.top",
+          "dataKey": "66dc309cbeeca454",
+          "dataIv": "66dc309cbeeca454",
+          "deviceId": "",
+          "version": ""
+      }
+    },
+    {
+      "key": "咕咕动漫",
+      "name": "咕咕｜动漫",
+      "type": 3,
+      "quickSearch": 1,
+      "api": "csp_AppGet",
+      "ext": {
+          "url": "https://www.gugu3.com",
+          "dataKey": "nKfZ8KX6JTNWRzTD",
+          "dataIv": "nKfZ8KX6JTNWRzTD",
+          "deviceId": "",
+          "version": ""
+      }
+    },
+    {
+      "key": "米饭动漫",
+      "name": "米饭｜动漫",
+      "type": 3,
+      "quickSearch": 1,
+      "api": "csp_AppGet",
+      "ext": {
+          "url": "http://45.43.29.111:9527",
+          "dataKey": "GETMIFUNGEIMIFUN",
+          "dataIv": "GETMIFUNGEIMIFUN",
+          "deviceId": "",
+          "version": ""
+      }
+    },
+    {
+      "key": "优质",
+      "name": "优质｜APP",
+      "type": 3,
+      "quickSearch": 1,
+      "api": "csp_AppGet",
+      "ext": {
+          "url": "https://apiapplbys.lbys.cc:5678",
+          "dataKey": "apiapplbyskey168",
+          "dataIv": "apiapplbyskey168",
+          "deviceId": "",
+          "version": "107"
+      }
+    },
+    {
+      "key": "人人",
+      "name": "人人｜APP",
+      "type": 3,
+      "quickSearch": 1,
+      "api": "csp_AppGet",
+      "ext": {
+          "url": "https://svip1.fun",
+          "dataKey": "laodiesdawsswasd",
+          "dataIv": "laodiesdawsswasd",
+          "deviceId": "298e5fe29c74b35aabb9836ee2f6f449f",
+          "version": "105"
+      }
+    },
+    {
+      "key": "晴天",
+      "name": "晴天｜APP",
+      "type": 3,
+      "quickSearch": 1,
+      "api": "csp_AppGet",
+      "ext": {
+          "url": "https://appcms.sun4k.top",
+          "dataKey": "b025dcd9c289cbb3",
+          "dataIv": "b025dcd9c289cbb3",
+          "deviceId": "",
+          "version": ""
+      }
+    },
+    {
+      "key": "星河",
+      "name": "星河｜APP",
+      "type": 3,
+      "quickSearch": 1,
+      "api": "csp_AppGet",
+      "ext": {
+          "url": "http://121.62.22.204:9876",
+          "dataKey": "f5e2tx53ykp6s2c9",
+          "dataIv": "f5e2tx53ykp6s2c9",
+          "deviceId": "",
+          "version": "361"
+      }
+    },
+    {
+      "key": "鲶鱼",
+      "name": "鲶鱼｜APP",
+      "type": 3,
+      "quickSearch": 1,
+      "api": "csp_AppGet",
+      "ext": {
+          "url": "http://47.122.22.78",
+          "dataKey": "1234567890123456",
+          "dataIv": "1234567890123456",
+          "deviceId": "",
+          "version": "119"
+      }
+    },
     {
       "key": "溢彩",
       "name": "🇹🇼｜溢彩",
