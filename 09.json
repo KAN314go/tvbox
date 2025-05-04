@@ -4,13 +4,7 @@
   "wallpaper": "https://tv.nxog.top/m//t/",
   "sites": [
 
-    {
-      "key": "茅台",
-      "name": "茅台|采集",
-      "type": 1,
-      "playUrl": "https://mtjiexi.cc:966/?url=",
-      "api": "https://caiji.maotaizy.cc/api.php/provide/vod/from/mtm3u8/at/josn/"
-  },
+
     {
         "key": "nk",
         "name": "🇹🇼｜耐看｜APP",
@@ -3671,6 +3665,13 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1
+    },
+    {
+        "key": "vod_茅台",
+        "name": "🧲｜茅台｜高清◎龜速(浮水印廣告)",
+        "type": 1,
+        "playUrl": "https://mtjiexi.cc:966/?url=",
+        "api": "https://caiji.maotaizy.cc/api.php/provide/vod/from/mtm3u8/at/josn/"
     },
     {
       "key": "vod_光速",
