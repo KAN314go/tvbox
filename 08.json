@@ -115,6 +115,16 @@
       "changeable": 1,
       "ext": "https://www.zxzjhd.com/"
     },
+    {
+        "key": "py_策驰影院",
+        "name": "🎥｜策驰｜高清◎秒播(賭城廣告)",
+        "type": 3,
+        "api": "./py/策驰影院.py",
+        "searchable": 1,
+        "quickSearch": 0,
+        "filterable": 0,
+        "changeable": 1
+      },
 
     {
       "key": "豆瓣",
