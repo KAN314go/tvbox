@@ -10,7 +10,7 @@
 
     {
       "key": "曼波动漫",
-      "name": "曼波｜动漫",
+      "name": "🇹🇼｜曼波｜动漫",
       "type": 3,
       "quickSearch": 1,
       "api": "csp_AppGet",
@@ -25,7 +25,7 @@
     },
     {
       "key": "咕咕动漫",
-      "name": "咕咕｜动漫",
+      "name": "🇹🇼｜咕咕｜动漫",
       "type": 3,
       "quickSearch": 1,
       "api": "csp_AppGet",
@@ -40,7 +40,7 @@
     },
     {
       "key": "米饭动漫",
-      "name": "米饭｜动漫",
+      "name": "🇹🇼｜米饭｜动漫",
       "type": 3,
       "quickSearch": 1,
       "api": "csp_AppGet",
@@ -55,7 +55,7 @@
     },
     {
       "key": "优质",
-      "name": "优质｜APP",
+      "name": "🇹🇼｜优质｜APP",
       "type": 3,
       "quickSearch": 1,
       "api": "csp_AppGet",
@@ -70,7 +70,7 @@
     },
     {
       "key": "人人",
-      "name": "人人｜APP",
+      "name": "🇹🇼｜人人｜APP",
       "type": 3,
       "quickSearch": 1,
       "api": "csp_AppGet",
@@ -85,7 +85,7 @@
     },
     {
       "key": "晴天",
-      "name": "晴天｜APP",
+      "name": "🇹🇼｜晴天｜APP",
       "type": 3,
       "quickSearch": 1,
       "api": "csp_AppGet",
@@ -100,7 +100,7 @@
     },
     {
       "key": "星河",
-      "name": "星河｜APP",
+      "name": "🇹🇼｜星河｜APP",
       "type": 3,
       "quickSearch": 1,
       "api": "csp_AppGet",
@@ -115,7 +115,7 @@
     },
     {
       "key": "鲶鱼",
-      "name": "鲶鱼｜APP",
+      "name": "🇹🇼｜鲶鱼｜APP",
       "type": 3,
       "quickSearch": 1,
       "api": "csp_AppGet",
