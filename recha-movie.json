@@ -9,14 +9,33 @@
       "name": "🇹🇼｜溢彩",
       "type": 3,
       "api": "csp_AppSxGuard",
-      "spider": "./jar/fty.jar;md5;948a482e3bad5bd090a87a6a85d38903",
+      "jar": "./jar/fty.jar;md5;948a482e3bad5bd090a87a6a85d38903",
       "timeout": 10,
       "searchable": 1,
       "quickSearch": 1,
       "changeable": 1,
       "ext": "rfOb1uAWbkRHp7hdxprG9un3+TfN183v1zIyaYDoDAIaLw5L8Dp8+v88LrEL3dBzrmWbdMBX0WNm7HtkQuw0AIzUurGBVyPqCKzDmbriATuukhctJlsLo8KxCw=="
     },
-    
+    {
+      "key": "zxzj",
+      "name": "🍊在线┃秒播",
+      "type": 3,
+      "api": "csp_ZxzjGuard",
+      "jar": "./jar/fty.jar;md5;948a482e3bad5bd090a87a6a85d38903",
+      "timeout": 10,
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 1,
+      "ext": "https://www.zxzjhd.com/"
+    },
+    {
+      "key": "4Kdy",
+      "name": "🕊️凝安┃蓝光┃无广",
+      "type": 3,
+      "api": "csp_XBPQ",
+      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+      "ext": "http://我不是.摸鱼儿.com/api/moyu.php?file=4kdy"
+    },
     {
       "key": "豆瓣",
       "name": "🇹🇼｜熱播排行榜｜自動切換",
