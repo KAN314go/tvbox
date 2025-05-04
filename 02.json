@@ -10,6 +10,7 @@
       "type": 3,
       "api": "csp_AppSxGuard",
       "spider": "./jar/fty.jar;md5;948a482e3bad5bd090a87a6a85d38903",
+      "jar": "./jar/fty.jar;md5;948a482e3bad5bd090a87a6a85d38903",
       "timeout": 10,
       "searchable": 1,
       "quickSearch": 1,
