@@ -17,26 +17,8 @@
           "site": "jaHR0cDovLzExMS4xODAuMTk4LjQwOjExMTB8NDk0ODA4MDgwbGdneXNjb3w0OTQ4MDgwODBsZ2d5c2NvfDY2Ng=="
         }
     },
-    {
-      "key": "剧评",
-      "name": "🥈｜剧评｜普清◎秒播(無廣告)",
-      "type": 3,
-      "api": "csp_Jpys",
-      "jar": "./jar/pizza.jar",
-      "playerType": 1,
-      "ext": "caHR0cHM6Ly93d3cuY2Zrajg2LmNvbQ=="
-    },
-    {
-      "key": "浪酷弹幕",
-      "name": "🥈｜浪酷｜高清◎秒播(跑馬燈廣告+APP)",
-      "type": 3,
-      "api": "csp_TianTian",
-      "jar": "./jar/pizza.jar",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": {"danmu": true, "site": "aHR0cDovL3YubGt1eXMuY24="}
-    },
+
+
     {
       "key": "小米电影",
       "name": "🥈｜米影｜普清◎秒播(無廣告+APP)",
@@ -60,15 +42,7 @@
         "site": "w7TCmsK8w5rDrcKYwoPCmcKkw57CmsK0wpnCoVpcUFfDgsOhw6PDrcORwqLCosKUV8KzwpPCocOiw6jCnMKkwoZhwqrCrMKhwqXCmlrCpMKZwqDCoMKtwprCoMOV5Ya46YSY5o+V5ZCTwqXlh5/kvpHlkbDCtOW+pOintui1tOa7gOetksOQwqHCpcKaWnHClcKjw4TDmMOzwqDCtFNXdMKow7DCvMOtw63DrMKXwofCksKJw6nDlcOmw7DDqFpcUFfCusOYw63DgsOwWmpQV8K9w6vDscOCw63Cp8KiwpTCh8Obw4zDqsObw6bCqsKeV1zCmcKaw43DosOuwpjChcKiwpzCoMKtwprCoMOiwqfCpMKgasKowqLCq8KuwrBhYmJlwqfCpsKqwqfCsGhqZWXCr8KpwqnDmsOqwpxewqDCmMOpwprCpsKZwqHCl8KVwpPCosOyw6PDrsOEw5/CrFdqUMKgw6zDm8Oow7HClMKewpdgwqrCpcKwwqDDtw=="
       }
     },
-    {
-      "key": "永夜",
-      "name": "🥇｜永夜｜高清◎秒播(無廣告+APP)",
-      "type": 3,
-      "api": "csp_Xdai",
-      "playerType": 2,
-      "jar": "./jar/pizza.jar",
-      "ext": "caHR0cHM6Ly9yeHlzeXlkcy5vc3MtY24tY2hlbmdkdS5hbGl5dW5jcy5jb20vZ2V0YXBwLnR4dHxlYmFkM2YxYTU4YjEzOTMzfGViYWQzZjFhNThiMTM5MzN8MTAw"
-    },
+
     {
       "key": "主角",
       "name": "🥇｜主角｜高清◎秒播(無廣告+APP)",
@@ -77,28 +51,6 @@
       "jar": "./jar/pizza.jar",
       "playerType": 2,
       "ext": "caHR0cHM6Ly9tdW91Lmxpbmd1dHYuY2586L+95Ymn5b2x6ZmifDQuMS44"
-    },
-    {
-      "key": "洽洽影视",
-      "name": "🥇｜洽洽｜高清◎秒播(無廣告+APP)",
-      "jar": "./jar/pizza.jar",
-      "type": 3,
-      "api": "csp_AppGZ",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": "KhY021WelCEl+6MsvwnzaPussky6FQJcpCjT9V7/D61ft9vQAhNEPOYSMZVJSODd/JOOSOwUzim+9qfvgpNz7SvUPpAkXAweyrp76WY8s5EBwW7DBMY="
-    },
-    {
-      "key": "热播弹幕",
-      "name": "🥇｜热播｜高清◎秒播(無廣告+APP)",
-      "type": 3,
-      "api": "csp_TianTian",
-      "jar": "./jar/pizza.jar",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": {"danmu": true, "site": "aHR0cDovL3YucmJvdHYuY24="}
     },
     {
       "key": "优质",
@@ -149,16 +101,6 @@
       }
     },
     {
-      "key": "韩小圈",
-      "name": "🥇｜韩圈｜高清◎秒播(無廣告+APP)",
-      "type": 3,
-      "api": "csp_HanXiaoQuan",
-      "jar": "./jar/pizza.jar",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1
-    },
-    {
       "key": "站长影视",
       "name": "🥇｜站长｜高清◎秒播(無廣告+APP)",
       "type": 3,
@@ -171,18 +113,6 @@
         "danmu": true,
         "site": "w7TClcK8w5rDrcKYwoPCmcKkw57ClcK0wpvCnF9SwoPCmcOtw5jDj8Orw6ZValLCmMOtw6fDqsOswrRiX8KdacOcw57CrMKxw6DCqmbCnmPDpsKow6XCsMKywpRhYMKUwqfDl8Ozw7LDtGVewpPCn8Omwq3Cr8KvwrJsX8KRwqDDosKhw6rDocOqVVxSecOnw5zDrsOQw6nCpcKUUmrCm8KVwqbCm8OuwpzCoFJqwpvDjuWHv+mFoeaQn+WQllzlhpzkvYflkbDCreW/q+iov+i2vua7g+esicKNUsKlwpXCu8Oew61+wpXCqVLCs8KVw57DssOzwq3CpMKmwpHDqcOcw5vDqcOqwqzCqcKUwqPCm8KfwpzCusOfwqZ5wqZSwrPClcOew7LDs8KtwqTCpsKRw6nDnMObw6nDqsKswqnClMKjwpvDsA=="
       }
-    },
-    {
-      "key": "天天弹幕",
-      "name": "🥇｜天天｜高清◎秒播(無廣告+APP)",
-      "type": 3,
-      "api": "csp_TianTian",
-      "jar": "./jar/pizza.jar",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "playerType": 1,
-      "ext": {"danmu": true, "site": "aHR0cDovL3R0LnlzZHFqcy5jbg=="}
     },
     {
       "key": "优秀",
