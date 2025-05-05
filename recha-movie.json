@@ -5072,8 +5072,8 @@
     {
       "name":"故障(故障)",
       "type":0,
-      "spider":"./jar/custom_spider.jar;md5;b5079660bb98ded216e787a0458981b4",
-      "jar":"./jar/custom_spider.jar;md5;b5079660bb98ded216e787a0458981b4",
+      "spider":"https://tang.hz.cz/api/custom_spider.jar;md5;30c650f153f10097baa51cdd09c6cce3",
+      "jar":"https://tang.hz.cz/api/custom_spider.jar;md5;30c650f153f10097baa51cdd09c6cce3",
       "url":"proxy://do=hema&token=d2510bb5",
       "pass" :true
     },
