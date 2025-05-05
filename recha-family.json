@@ -4347,33 +4347,6 @@
       "style": {"type": "rect", "ratio": 1.597}
     },
     {
-      "key": "直播转点播",
-      "name": "㊙︎｜直播转点播",
-      "type": 4,
-      "api": "http://zhangqun66.com/zh/2241-2.php",
-      "jar": "./jar/fm.jar;md5;41c87635d7592069884a5dafa12acabe",
-      "searchable": 1,
-      "changeable": 0
-    },
-    {
-      "key": "直播转点播vod",
-      "name": "㊙︎｜直播转点播[vod]",
-      "type": 3,
-      "searchable": 1,
-      "api": "https://raw.githubusercontent.com/sqspot/tac/main/lib/live2vod.js",
-      "ext": "https://raw.githubusercontent.com/sqspot/tac/main/live2tv_sq.m3u",
-      "jar": "./jar/panda1123.jar;md5;d9004aa2e16f60b04baed361713fb710"
-    },
-    {
-      "key": "直播转点播s",
-      "name": "㊙︎｜直播转点播[cms]",
-      "type": 3,
-      "style": {"type": "oval"},
-      "api": "https://raw.githubusercontent.com/sqspot/tac/main/lib/live2cms.js",
-      "ext": "https://raw.githubusercontent.com/sqspot/tac/main/live2tv_sq_s.txt",
-      "jar": "./jar/panda1123.jar;md5;d9004aa2e16f60b04baed361713fb710"
-    },
-    {
       "key": "hipy_js_爱上你听书网[听]",
       "name": "㊙︎｜純粹聽書",
       "type": 3,
