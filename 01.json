@@ -4592,7 +4592,7 @@
     {
       "name": "全球",
       "playerType": 2,
-      "url": "./live/全球.m3u",
+      "url": "./live/laji.m3u",
       "timeout": 5,
       "epg": "https://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/taipei",
       "logo": "https://epg.112114.xyz/logo/{name}.png",
