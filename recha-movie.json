@@ -4696,7 +4696,8 @@
       "spider":"https://raw.githubusercontent.com/Freeman0501/freelist/refs/heads/main/custom_spider.jar;md5;b5079660bb98ded216e787a0458981b4",
       "jar":"https://raw.githubusercontent.com/Freeman0501/freelist/refs/heads/main/custom_spider.jar;md5;b5079660bb98ded216e787a0458981b4",
       "playerType": 2,
-      "epg":"http://epg.112114.xyz/?ch={name}&date={date}","logo":"https://epg.112114.xyz/logo/{name}.png",
+      "epg":"http://epg.112114.xyz/?ch={name}&date={date}",
+      "logo":"https://epg.112114.xyz/logo/{name}.png",
       "core": {
       "auth": "local://tvbus",
       "name": "123",
