@@ -4590,16 +4590,6 @@
   ],
   "lives": [
     {
-      "name": "安博成人",
-      "playerType": 2,
-      "url": "./live/anber-z03.txt",
-      "ua": "okhttp/3.15",
-      "timeout": 5,
-      "epg": "https://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/taipei",
-      "logo": "https://epg.112114.xyz/logo/{name}.png",
-      "pass": true
-    },
-    {
         "name": "小雲1台",
         "url": "./live/ueen.m3u",
         "spider":"https://tang.hz.cz/api/custom_spider.jar;md5;b5079660bb98ded216e787a0458981b4",
