@@ -4590,6 +4590,24 @@
   ],
   "lives": [
     {
+      "name": "飞蓝直播",
+      "type": 0,
+      "url": "http://my.djian.top/dfgeg/dhsvj/raw/branch/maing/飞蓝直播.txt",
+      "playerType": 2,
+      "ua": "okhttp/3",
+      "epg": "https://epg.112114.eu.org/?ch={name}&date={date}",
+      "logo": "https://epg.112114.eu.org/logo/{name}.png"
+    },
+    {
+      "name": "绿影直播",
+      "type": 0,
+      "url": "http://my.djian.top/dfgeg/dhsvj/raw/branch/maing/绿影直播.txt",
+      "playerType": 2,
+      "ua": "okhttp/3",
+      "epg": "https://epg.112114.eu.org/?ch={name}&date={date}",
+      "logo": "https://epg.112114.eu.org/logo/{name}.png"
+    },
+    {
         "name": "小雲1台",
         "url": "./live/ueen.m3u",
         "spider":"https://tang.hz.cz/api/custom_spider.jar;md5;b5079660bb98ded216e787a0458981b4",
