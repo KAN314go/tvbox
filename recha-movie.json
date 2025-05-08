@@ -4589,21 +4589,13 @@
     }
   ],
   "lives": [
+
     {
-      "name": "飞蓝直播",
+      "name": "XZpitv",
       "type": 0,
-      "url": "http://my.djian.top/dfgeg/dhsvj/raw/branch/maing/飞蓝直播.txt",
+      "url": "./live/xzpitv.txt",
       "playerType": 2,
-      "ua": "okhttp/3",
-      "epg": "https://epg.112114.eu.org/?ch={name}&date={date}",
-      "logo": "https://epg.112114.eu.org/logo/{name}.png"
-    },
-    {
-      "name": "绿影直播",
-      "type": 0,
-      "url": "http://my.djian.top/dfgeg/dhsvj/raw/branch/maing/绿影直播.txt",
-      "playerType": 2,
-      "ua": "okhttp/3",
+      "ua": "xzitv-xzitv-dabbf6eab75ee2efb4f5a8069372cca4",
       "epg": "https://epg.112114.eu.org/?ch={name}&date={date}",
       "logo": "https://epg.112114.eu.org/logo/{name}.png"
     },
