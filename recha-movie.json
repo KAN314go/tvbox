@@ -159,25 +159,15 @@
       "changeable": 0
     },
     {
-      "key": "drpy_js_360影视",
-      "name": "🎖︎｜360｜官源",
-      "type": 3,
-      "searchable": 1,
-      "quickSearch": 1,
-      "api": "./drpy_libs/drpy2.min.js",
-      "ext": "./drpy_js/360影视[官].js"
-    },
-
-    {
       "key": "三六零弹幕",
-      "name": "🎖︎｜360｜備用",
+      "name": "🎖︎｜360｜官源",
       "type": 3,
       "api": "csp_Sp360",
       "jar": "./jar/xiaosa.jar;md5;e4619193d9073ff124bb77f88f61d057",
       "searchable": 1,
       "filterable": 1,
       "changeable": 1,
-      "ext": {"danmu": true}
+      "ext": ""
     },
     {
       "key": "yfsp",
@@ -236,17 +226,8 @@
       "changeable": 0
     },
     {
-      "key": "drpy_js_腾云驾雾",
-      "name": "🎖︎｜腾讯｜官源",
-      "type": 3,
-      "searchable": 1,
-      "quickSearch": 1,
-      "api": "./drpy_libs/drpy2.min.js",
-      "ext": "./drpy_js/腾云驾雾[官].js"
-    },
-    {
       "key": "py_腾",
-      "name": "🎖︎｜腾訊｜備用",
+      "name": "🎖︎｜腾訊｜官源",
       "type": 3,
       "api": "./py/py_腾.py",
       "searchable": 1,
@@ -255,32 +236,14 @@
       "changeable": 0
     },
     {
-      "key": "drpy_js_优酷",
+      "key": "py_优",
       "name": "🎖︎｜优酷｜官源",
       "type": 3,
-      "searchable": 1,
-      "quickSearch": 1,
-      "api": "./drpy_libs/drpy2.min.js",
-      "ext": "./drpy_js/优酷[官].js"
-    },
-    {
-      "key": "py_优",
-      "name": "🎖︎｜优酷｜備用",
-      "type": 3,
-      "api": "./py/py_芒.py",
+      "api": "./py/py_优.py",
       "searchable": 1,
       "quickSearch": 0,
       "filterable": 0,
       "changeable": 0
-    },
-    {
-      "key": "drpy_js_菜狗",
-      "name": "🎖︎｜搜狗｜官源",
-      "type": 3,
-      "searchable": 1,
-      "quickSearch": 1,
-      "api": "./drpy_libs/drpy2.min.js",
-      "ext": "./drpy_js/菜狗[官].js"
     },
     {
       "key": "bilimd",
@@ -448,28 +411,6 @@
         "分类": "电影$dianying#动画$donghua#国产剧$guochanju#美欧剧$meiouju#日韩剧$rihanju",
         "分类url": "https://www.foxjun.com/channel/{cateId}.html?apage1={catePg}"
       }
-    },
-    {
-      "key": "云腾酷酷1",
-      "name": "🥇｜雲騰｜藍光◎秒播(開頭廣告)",
-      "type": 3,
-      "searchable": 1,
-      "quickSearch": 1,
-      "order_num": 0,
-      "changeable": 0,
-      "api": "./drpy_libs/drpy2.min.js",
-      "ext": "./js/雲騰.js"
-    },
-    {
-      "key": "影視大全",
-      "name": "🥇｜大全｜藍光◎秒播(開頭廣告)",
-      "type": 3,
-      "searchable": 1,
-      "quickSearch": 1,
-      "order_num": 0,
-      "changeable": 0,
-      "api": "./drpy_libs/drpy2.min.js",
-      "ext": "./js/影視大全.js"
     },
     {
       "key": "7点影视",
@@ -1017,16 +958,6 @@
         "分类": "電影$1#電視劇$2#綜藝$3#動漫$4",
         "地区": "大陆&香港&台湾&美国&法国&英国&日本&韩国||大陆&韩国&香港&台湾&日本&美国&泰国&英国||大陆&港台&日韩&欧美||大陆&日本&欧美&其他"
       }
-    },
-    {
-      "key": "csp_低端",
-      "name": "🥇｜低端｜高清◎秒播(無廣告)",
-      "type": 3,
-      "api": "./drpy_libs/drpy2.min.js",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": "./drpy_js/低端.js"
     },
     {
       "key": "底端",
@@ -1946,13 +1877,6 @@
         "类型": "喜剧片$xijupian#动作片$dongzuopian#爱情片$aiqingpian#科幻片$kehuanpian#恐怖片$kongbupian#剧情片$juqingpian#战争片$zhanzhengpian#悬疑片$xuanyipian#犯罪片$fanzuipian#冒险片$maoxianpian#动画片$donghuapian#惊悚片$jingsongpian#奇幻片$qihuanpian#纪录片$jilupian||国产剧$guochanju#欧美剧$oumeiju#日剧$riju#韩剧$hanju#港剧$gangju#台剧$taiju#泰剧$taiju#海外剧$haiwaiju#爽文短剧$shuangwenduanju||空||国产动漫$guochandongman#日韩动漫$rihandongman#欧美动漫$oumeidongman#港台动漫$gangtaidongman#海外动漫$haiwaidongman||空",
         "地区": "大陆&香港&台湾&美国&法国&英国&日本&韩国&德国&泰国&印度&意大利&西班牙&加拿大&其他||空||内地&港台&日韩&欧美||国产&日本&欧美&其他||空"
       }
-    },
-    {
-      "key": "追剧弹幕",
-      "name": "🥈｜追剧｜高清◎秒播(浮水印廣告)",
-      "type": 3,
-      "api": "./drpy_libs/drpy2.min.js",
-      "ext": "https://gitee.com/PizazzXS/another-d/raw/master/movie/js/ZJDM.js"
     },
     {
       "key": "csp_在線電影網",
@@ -3361,13 +3285,6 @@
       }
     },
     {
-      "key": "vod_爱看",
-      "name": "🧲｜爱看機器人｜全線路",
-      "type": 3,
-      "api": "./drpy_libs/drpy2.min.js",
-      "ext": "./drpy_js/ikanbot2.js"
-    },
-    {
       "key": "vod_360",
       "name": "🧲｜360｜高清◎秒播(無廣告)",
       "type": 1,
@@ -3842,13 +3759,6 @@
       "ext": "./json/動漫巴士.json"
     },
     {
-      "key": "动漫巴士",
-      "name": "动漫｜動漫巴士｜道長",
-      "type": 3,
-      "api": "./drpy_libs/drpy2.min.js",
-      "ext": "./drpy_js/动漫巴士.js"
-    },
-    {
       "key": "Dm84",
       "name": "动漫｜動漫巴士｜飯太硬",
       "type": 3,
@@ -3954,87 +3864,6 @@
       "ext": "./json/餅乾動漫.json"
     },
     {
-      "key": "drpy_js_去看吧",
-      "name": "动漫｜去看吧",
-      "type": 3,
-      "api": "./drpy_libs/drpy2.min.js",
-      "ext": "./drpy_js/去看吧.js"
-    },
-    {
-      "key": "drpy_js_奇米动漫",
-      "name": "动漫｜奇米",
-      "type": 3,
-      "api": "./drpy_libs/drpy2.min.js",
-      "ext": "./drpy_js/奇米动漫.js"
-    },
-    {
-      "key": "动画片",
-      "name": "动漫｜动画片",
-      "type": 3,
-      "api": "./drpy_libs/drpy2.min.js",
-      "ext": "./drpy_js/DHPDQ.js"
-    },
-    {
-      "key": "动漫岛",
-      "name": "动漫｜动漫岛",
-      "type": 3,
-      "api": "./drpy_libs/drpy2.min.js",
-      "ext": "./drpy_js/DMD.js"
-    },
-    {
-      "key": "好看动漫",
-      "name": "动漫｜好看",
-      "type": 3,
-      "api": "./drpy_libs/drpy2.min.js",
-      "ext": "./drpy_js/HKDM.js"
-    },
-    {
-      "key": "drpy_js_爱弹幕",
-      "name": "动漫｜爱弹幕",
-      "type": 3,
-      "api": "./drpy_libs/drpy2.min.js",
-      "ext": "./drpy_js/爱弹幕.js"
-    },
-    {
-      "key": "drpy_js_路漫漫",
-      "name": "动漫｜路漫漫",
-      "type": 3,
-      "api": "./drpy_libs/drpy2.min.js",
-      "ext": "./drpy_js/路漫漫.js"
-    },
-    {
-      "key": "hipy_js_大米动漫[漫]",
-      "name": "动漫｜大米",
-      "type": 3,
-      "api": "./drpy_libs/drpy2.min.js",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "order_num": 0,
-      "ext": "./drpy_js/大米动漫[漫].js"
-    },
-    {
-      "key": "drpyS_OmoFun[漫]",
-      "name": "动漫｜OmoFun",
-      "type": 4,
-      "api": "http://drpys.aera.eu.org/api/OmoFun[漫]",
-      "searchable": 2,
-      "filterable": 0,
-      "quickSearch": 1,
-      "ext": ""
-    },
-    {
-      "key": "hipy_js_七色番[漫]",
-      "name": "动漫｜七色番",
-      "type": 3,
-      "api": "./drpy_libs/drpy2.min.js",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "order_num": 0,
-      "ext": "./drpy_js/七色番[漫].js"
-    },
-    {
       "key": "csp_桵空",
       "name": "動漫｜桵空",
       "type": 3,
@@ -4047,13 +3876,6 @@
         "分类url": "https://www.maigo.cc/vodshow/{cateId}---{class}-----{catePg}---{year}/",
         "分类": "电影$84#综艺$91#大陆剧$81#港台剧$82#海外剧$83#纪录片$88#动漫$1#日剧$32#日漫$46#国漫$47#美漫$85"
       }
-    },
-    {
-      "key": "怡萱动漫",
-      "name": "动漫｜怡萱",
-      "type": 3,
-      "api": "./drpy_libs/drpy2.min.js",
-      "ext": "./drpy_js/怡萱动漫.js"
     },
     {
       "key": "csp_NyaFun动漫",
@@ -4197,46 +4019,6 @@
       }
     },
     {
-      "key": "hipy_js_NT动漫[漫]",
-      "name": "动漫｜牛顿",
-      "type": 3,
-      "api": "./drpy_libs/drpy2.min.js",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "order_num": 0,
-      "ext": "./drpy_js/NT动漫[漫].js"
-    },
-    {
-      "key": "hipy_js_次元城动漫[漫]",
-      "name": "动漫｜次元城",
-      "type": 3,
-      "api": "./drpy_libs/drpy2.min.js",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "order_num": 0,
-      "ext": "./drpy_js/次元城动漫[漫].js"
-    },
-    {
-      "key": "hipy_js_奇米动漫[漫]",
-      "name": "动漫｜奇米1",
-      "type": 3,
-      "api": "./drpy_libs/drpy2.min.js",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "order_num": 0,
-      "ext": "./drpy_js/奇米动漫[漫].js"
-    },
-    {
-      "key": "奇米动漫",
-      "name": "动漫｜奇米2",
-      "type": 3,
-      "api": "./drpy_libs/drpy2.min.js",
-      "ext": "./drpy_js/奇米动漫.js"
-    },
-    {
       "key": "Anime1",
       "name": "动漫｜日本",
       "type": 3,
@@ -4246,24 +4028,6 @@
       "searchable": 1,
       "quickSearch": 1,
       "changeable": 1
-    },
-    {
-      "key": "hipy_js_嗷呜动漫",
-      "name": "动漫｜嗷呜动漫",
-      "type": 3,
-      "api": "./drpy_libs/drpy2.min.js",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "order_num": 0,
-      "ext": "./drpy_js/嗷呜动漫.js"
-    },
-    {
-      "key": "大米动漫",
-      "name": "动漫｜大米",
-      "type": 3,
-      "api": "./drpy_libs/drpy2.min.js",
-      "ext": "./drpy_js/大米动漫.js"
     },
     {
       "key": "csp_漫岛",
@@ -4311,43 +4075,6 @@
       }
     },
     {
-      "key": "hipy_js_爱弹幕[漫]",
-      "name": "动漫｜爱弹幕",
-      "type": 3,
-      "api": "./drpy_libs/drpy2.min.js",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": "./drpy_js/爱弹幕[漫].js"
-    },
-    {
-      "key": "喵物",
-      "name": "动漫｜喵物",
-      "type": 3,
-      "api": "./drpy_libs/drpy2.min.js",
-      "searchable": 1,
-      "changeable": 1,
-      "ext": "./drpy_js/喵物次元.js"
-    },
-    {
-      "key": "漫元",
-      "name": "动漫｜漫元",
-      "type": 3,
-      "api": "./drpy_libs/drpy2.min.js",
-      "searchable": 1,
-      "changeable": 1,
-      "ext": "./drpy_js/漫次元.js"
-    },
-    {
-      "key": "异世界",
-      "name": "动漫｜异世界",
-      "type": 3,
-      "api": "./drpy_libs/drpy2.min.js",
-      "searchable": 1,
-      "quickSearch": 1,
-      "ext": "./drpy_js/异世界.js"
-    },
-    {
       "key": "Ysj",
       "name": "动漫｜异世界(飯源)",
       "type": 3,
@@ -4372,13 +4099,6 @@
         "分类": "日本动漫$6#国产动漫$7#欧美动漫$8#海外动漫$21#剧场版$9",
         "地区": "日本&大陆&美国"
       }
-    },
-    {
-      "key": "drpy_js_58动漫",
-      "name": "动漫｜58动漫",
-      "type": 3,
-      "api": "./drpy_libs/drpy2.min.js",
-      "ext": "./drpy_js/58动漫.js"
     },
     {
       "key": "csp_Kugou_FM",
@@ -4461,17 +4181,6 @@
       "jar": "./jar/panda1123.jar;md5;d9004aa2e16f60b04baed361713fb710"
     },
     {
-      "key": "hipy_js_爱上你听书网[听]",
-      "name": "㊙︎｜純粹聽書",
-      "type": 3,
-      "api": "./drpy_libs/drpy2.min.js",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "order_num": 0,
-      "ext": "./drpy_js/爱上你听书网[听].js"
-    },
-    {
       "key": "csp_LaoBaiBook_FM",
       "name": "㊙︎｜老白聽書｜",
       "type": 3,
@@ -4513,49 +4222,6 @@
       "style": {"type": "rect", "ratio": 1.333}
     },
     {
-      "key": "hipy_js_有声小说吧",
-      "name": "㊙︎｜听书吧｜",
-      "type": 3,
-      "api": "./drpy_libs/drpy2.min.js",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "order_num": 0,
-      "ext": "./drpy_js/有声小说吧[听].js"
-    },
-    {
-      "key": "hipy_js_海洋听书[听]",
-      "name": "㊙︎｜海洋听书｜",
-      "type": 3,
-      "api": "./drpy_libs/drpy2.min.js",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "order_num": 0,
-      "ext": "./drpy_js/海洋听书[听].js"
-    },
-    {
-      "key": "drpy2_酷我听书[听]",
-      "name": "㊙︎｜酷我听书｜",
-      "type": 3,
-      "api": "./drpy_libs/drpy2.min.js",
-      "searchable": 2,
-      "filterable": 1,
-      "quickSearch": 0,
-      "ext": "https://drpy-node-mauve.vercel.app/js/酷我听书[听].js"
-    },
-    {
-      "key": "hipy_js_六月听书[听]",
-      "name": "㊙︎｜六月听书｜",
-      "type": 3,
-      "api": "./drpy_libs/drpy2.min.js",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "order_num": 0,
-      "ext": "./drpy_js/六月听书[听].js"
-    },
-    {
       "key": "ting",
       "name": "㊙︎｜海盜听书",
       "type": 3,
@@ -4564,28 +4230,6 @@
       "searchable": 1,
       "changeable": 0,
       "ext": "https://m.365ting.com#公众号#影视资源站"
-    },
-    {
-      "key": "hipy_js_中华听书网[听]",
-      "name": "㊙︎｜中華聽書",
-      "type": 3,
-      "api": "./drpy_libs/drpy2.min.js",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "order_num": 0,
-      "ext": "./drpy_js/中华听书网[听].js"
-    },
-    {
-      "key": "hipy_js_i275听书[听]",
-      "name": "㊙︎｜愛聽書",
-      "type": 3,
-      "api": "./drpy_libs/drpy2.min.js",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "order_num": 0,
-      "ext": "./drpy_js/i275听书[听].js"
     }
   ],
   "lives": [
