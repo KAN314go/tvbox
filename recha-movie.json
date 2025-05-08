@@ -5,7 +5,34 @@
   "sites": [
 
 
+    {"key":"csp_XBiuSSZZYY",
+    "name":"西瓜",
+    "type": 3,
+    "api":"csp_XBPQ",
+    "searchable":1,
+    "quickSearch":1,"filterable":1,
+    "ext":
+    {
+      "主页url":"https://sszzyy.com/",
+      "分类url":"https://sszzyy.com/index.php/vod/show/area/{area}/by/{by}/id/{cateId}/page/{catePg}/year/{year}.html",
+                
+      "分类": "电影$20#剧集$37",
+      "标题":"title=\"*\">&&</div>",
+      "图片":"data-original=\"&&\"",
+      "链接":"href=\"&&\"",
+      "播放数组":"content_playlist&&</ul>",
+      "播放列表":"<a&&</a>",
+      "播放标题":">&&</a>",
+      "跳转播放链接":"src=\"&&\"",
+      "线路数组":"class=\"titleName cr3 swiper-slide&&</a>",
+      "线路标题":">&&</a>"
+    }
+    },
 
+
+
+
+    
     {
       "key": "豆瓣",
       "name": "🇹🇼｜熱播排行榜｜自動切換",
@@ -4589,16 +4616,7 @@
     }
   ],
   "lives": [
-    {
-      "name": "晓峰",
-      "playerType": 2,
-      "url": "./live/fong.txt",
-      "ua": "okhttp/3.15",
-      "timeout": 5,
-      "epg": "https://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/taipei",
-      "logo": "https://epg.112114.xyz/logo/{name}.png",
-      "pass": true
-    },
+
     
     {
         "name": "小雲1台",
@@ -4660,6 +4678,16 @@
          "api": "./py/live_smt.py",
          "pass": true
        },
+       {
+        "name": "曉峰直播",
+        "playerType": 2,
+        "url": "./live/fong.txt",
+        "ua": "okhttp/3.15",
+        "timeout": 5,
+        "epg": "https://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/taipei",
+        "logo": "https://epg.112114.xyz/logo/{name}.png",
+        "pass": true
+      },
        {
             "name": "LiTV",
             "type": 0,
