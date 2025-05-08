@@ -4589,16 +4589,6 @@
     }
   ],
   "lives": [
-
-    {
-      "name": "XZpitv",
-      "type": 0,
-      "url": "./live/xzpitv.txt",
-      "playerType": 2,
-      "ua": "xzitv-xzitv-dabbf6eab75ee2efb4f5a8069372cca4",
-      "epg": "https://epg.112114.eu.org/?ch={name}&date={date}",
-      "logo": "https://epg.112114.eu.org/logo/{name}.png"
-    },
     {
         "name": "小雲1台",
         "url": "./live/ueen.m3u",
