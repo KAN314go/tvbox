@@ -1,3 +1,5 @@
+Uesr-Agent:xzitv-xzitv-dabbf6eab75ee2efb4f5a8069372cca4
+
 臺灣/TW,#genre#
 民視HD,http://szx.putids.com/proxy/xgxg.php?id=51
 台視HD,http://szx.putids.com/proxy/xgxg.php?id=52
