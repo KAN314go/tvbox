@@ -4592,7 +4592,7 @@
     {
       "name": "晓峰",
       "playerType": 2,
-      "url": "http://晓峰.azip.dpdns.org:5008/?type=txt",
+      "url": "./live/fong.txt",
       "ua": "okhttp/3.15",
       "timeout": 5,
       "epg": "https://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/taipei",
