@@ -16,7 +16,7 @@
       "ext":
            {
            "主页url":"https://www.gugu3.com/",
-           "分类url":"https://www.gugu3.com/index.php/vod/show/id/{cateId}/page/(catePg).html",
+           "分类url":"https://www.gugu3.com/index.php/vod/show/id/{cateId}.html",
            "分类": "连载新番$6#完结动画$7#动漫电影$21#特摄动画$23"
            }
     },
