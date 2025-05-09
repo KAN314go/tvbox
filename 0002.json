@@ -1408,7 +1408,7 @@
         "type": 1,
         "api": "https://aosikazy.com/api.php/provide/vod/?ac=list",
         "jar": "./jar/pg.jar",
-        //"playUrl": "json:http://127.0.0.1:10079/parse/?thread=0&proxy=&url=",
+        "playUrl": "https://askvodbf.com/?url=",
         "recordable": 0,
         "style": {"type": "rect", "ratio": 1.33}
       },
