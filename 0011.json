@@ -17,8 +17,7 @@
         "name":"🔞奥斯卡",
         "type":1,
         "style":{"ratio":1.7},
-        "api":"http://aosikazy.com/api.php/provide/vod",
-        "jar": "./jar/pg.jar"
+        "api":"http://aosikazy.com/api.php/provide/vod"
       },
       {
         "key": "奥斯卡资源",
@@ -44,8 +43,8 @@
             "请求头": "User-Agent$MOBILE_UA",
             "编码": "UTF-8",
             "标题": "alt=\"&&\"",
-            
             "数组": "img-box cover-md bind_video_img&&</a>",
+            "图片": "src=\"blob:&&\"",
             "直接播放": "1",
             "分类url": "https://www.kissavtv.com/index/getstylemvs/id/{cateId}/sort/update/page/{catePg}",
             "分类": "中文&角色&制服&调教&无码&丝袜&啪啪",
