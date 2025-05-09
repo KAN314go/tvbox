@@ -1406,7 +1406,7 @@
         "key": "aosikazy.com",
         "name": "🔞奥斯卡",
         "type": 1,
-        "api": "https://aosikazy.com/api.php/provide/vod/?ac=list",
+        "api": "https://aosikazy1.com/api.php/provide/vod/?ac=list",
         "jar": "./jar/pg.jar",
         "playUrl": "https://bfaskcdn.com/?url=",
         "recordable": 0,
@@ -1416,7 +1416,7 @@
         "key": "奥斯卡资源",
         "name": "🔞奥斯卡资源",
         "type": 1,
-        "api": "https://aosikazy1.com/api.php/provide/vod/?ac=list",
+        "api": "https://aosikazy.com/api.php/provide/vod/?ac=list",
         "jar": "./jar/pg.jar",
         "searchable": 1,
         "quickSearch": 1
