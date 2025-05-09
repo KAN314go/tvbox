@@ -13,13 +13,11 @@
     "sites": [
 
       {
-        "key": "aosikazy.com",
-        "name": "🔞奥斯卡",
-        "type": 1,
-        "api": "https://aosikazy.com/api.php/provide/vod/",
-        "playUrl": "https://askvodbf.com/?url=",
-        "recordable": 0,
-        "style": {"type": "rect", "ratio": 1.33}
+        "key":"奥斯卡",
+        "name":"🔞奥斯卡",
+        "type":1,
+        "style":{"ratio":1.7},
+        "api":"http://aosikazy.com/api.php/provide/vod"
       },
       {
         "key": "奥斯卡资源",
