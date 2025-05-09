@@ -28,28 +28,6 @@
         "searchable": 1,
         "quickSearch": 1
       },
-
-      {
-        "key": "kiss",
-        "name": "kisd｜影视",
-        "type": 3,
-        "changeable": 1,
-        "searchable": 1,
-        "quickSearch": 1,
-        "filterable": 1,
-        "api": "csp_XBPQ",
-        "jar": "./jar/xyqxbpq.jar",
-        "ext": {
-            "请求头": "User-Agent$MOBILE_UA",
-            "编码": "UTF-8",
-            "标题": "alt=\"&&\"",
-            "数组": "img-box cover-md bind_video_img&&</a>",
-            "图片": "src=\"blob:&&\"",
-            "直接播放": "1",
-            "分类url": "https://www.kissavtv.com/index/getstylemvs/id/{cateId}/sort/update/page/{catePg}",
-            "分类": "中文字幕$3#角色劇情$2#制服誘惑$4#主奴調教$7#直接開啪$5#男友視角$9#凌辱強暴$10#多P群交$8#絲襪美腿$6#無碼解放$11#盜攝偷拍$12#女同歡愉$13"
-        }
-    },
       {
         "key": "麻豆",
         "name": "🇹🇼【老王成人專區】🇹🇼",
@@ -212,15 +190,6 @@
         "quickSearch": 0,
         "filterable": 0,
         "changeable": 0
-      },
-      {
-        "key": "py_慾火社",
-        "name": "⏭｜慾火社｜PYTHON(失效)",
-        "type": 3,
-        "api": "./py/py_浴火社.py",
-        "searchable": 1,
-        "quickSearch": 1,
-        "filterable": 1
       },
       {
         "key": "Zuise",
@@ -864,6 +833,27 @@
         "ext": "./json/jable.json",
         "style": {"type": "rect", "ratio": 1.6}
       },
+      {
+        "key": "kiss",
+        "name": "🔞KissAV(無圖)",
+        "type": 3,
+        "changeable": 1,
+        "searchable": 1,
+        "quickSearch": 1,
+        "filterable": 1,
+        "api": "csp_XBPQ",
+        "jar": "./jar/xyqxbpq.jar",
+        "ext": {
+            "请求头": "User-Agent$MOBILE_UA",
+            "编码": "UTF-8",
+            "标题": "alt=\"&&\"",
+            "数组": "img-box cover-md bind_video_img&&</a>",
+            "图片": "src=\"blob:&&\"",
+            "直接播放": "1",
+            "分类url": "https://www.kissavtv.com/index/getstylemvs/id/{cateId}/sort/update/page/{catePg}",
+            "分类": "中文字幕$3#角色劇情$2#制服誘惑$4#主奴調教$7#直接開啪$5#男友視角$9#凌辱強暴$10#多P群交$8#絲襪美腿$6#無碼解放$11#盜攝偷拍$12#女同歡愉$13"
+        }
+    },
       {
         "key": "pronlulu",
         "name": "🔞pronlulu",
