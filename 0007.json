@@ -1,5 +1,13 @@
 {
     "spider": "./jar/xyqxbpq.jar",
+    "headers": [
+    {
+      "host": "aosikazy.com",
+      "header": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.95 Safari/537.36"
+      }
+    }
+  ],
     "logo": ".美.gif",
     "wallpaper": "https://picsum.photos/1080/",
     "sites": [
