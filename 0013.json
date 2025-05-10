@@ -17,7 +17,11 @@
         "name":"🔞奥斯卡",
         "type":1,
         "style":{"ratio":1.7},
-        "api":"http://aosikazy.com/api.php/provide/vod"
+        "api":"https://aosikazy.com/api.php/provide/vod/",
+        "jar": "./jar/pg.jar",
+        "playUrl": "json:http://127.0.0.1:10079/parse/?thread=0&proxy=&url=",
+        "recordable": 0
+
       },
       {
         "key": "奥斯卡资源",
