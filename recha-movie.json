@@ -4576,6 +4576,15 @@
       "logo": "https://epg.112114.xyz/logo/{name}.png",
       "pass": true
     },
+        {
+        "name": "IPTV(喵老師)",
+        "type": 0,
+        "url": "./live/iptv.txt",
+        "epg": "https://epg.112114.eu.org/?ch={name}&date={date}",
+        "logo": "https://epg.112114.eu.org/logo/{name}.png",
+        "playerType": 2,
+        "pass": true
+    },
     {
       "name": "雷蒙直播",
       "type": 0,
@@ -4711,39 +4720,11 @@
       "pass" :true
     },
     {
-        "name": "223線路(故障)",
+        "name": "223線路(要花錢了)",
         "type": 0,
         "url": "./live/666-live.txt",
         "epg": "https://epg.112114.eu.org/?ch={name}&date={date}",
         "logo": "https://epg.112114.eu.org/logo/{name}.png"
-    },
-    {
-        "name": "4G-TV(喵老師--故障)",
-        "type": 0,
-        "url": "./live/iptv.txt",
-        "epg": "https://epg.112114.eu.org/?ch={name}&date={date}",
-        "logo": "https://epg.112114.eu.org/logo/{name}.png",
-        "playerType": 2,
-        "pass": true
-    },
-
-    {
-        "name": "天天開心(故障)",
-        "type": 0,
-        "url": "http://ttkx.cc:55/lib/kx2024.txt",
-        "ua": "okhttp/3",
-        "playerType": 2,
-        "epg": "http://diyp2.112114.xyz/?ch={name}&date={date}",
-        "logo": "http://diyp2.112114.xyz/logo/{name}.png",
-        "pass": true
-    },
-    {
-      "name": "PIXMAN(故障)",
-      "type": 0,
-      "url": "./live/ueen.txt",
-      "ua": "okhttp/3.15",
-      "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
-      "logo": "https://epg.112114.xyz/logo/{name}.png"
     }
   ],
   "parses": [
