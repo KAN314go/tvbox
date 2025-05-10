@@ -4231,16 +4231,6 @@
   "lives": [
 
     {
-      "name": "老馬直播",
-      "playerType": 2,
-      "url": "./live/瑪斯特.txt",
-      "ua": "okhttp/3.15",
-      "timeout": 5,
-      "pass": true,
-      "epg": "https://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/taipei",
-      "logo": "https://epg.112114.xyz/logo/{name}.png"
-    },
-    {
         "name": "小雲1台",
         "url": "./live/ueen.m3u",
         "spider":"https://tang.hz.cz/api/custom_spider.jar;md5;b5079660bb98ded216e787a0458981b4",
