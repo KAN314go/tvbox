@@ -78,7 +78,7 @@
       "name": "⏭｜AV电视｜直播",
       "type": 3,
       "searchable": 0,
-      "api": "http://www.fish2018.us.kg/p//lib/live2vod.js",
+      "api": "https://raw.githubusercontent.com/fish2018/lib/refs/heads/main/js/live2vod.js",
       "ext": "https://raw.githubusercontent.com/fish2018/lib/refs/heads/main/json/feimaolive.json"
     },
     {
