@@ -4679,6 +4679,17 @@
       }
     },
     {
+      "name": "秘密花園(18+)",
+      "playerType": 2,
+      "url": "./live/秘密花園.txt",
+      "epg": "http://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Taipei",
+      "ua": "Lavf/58.12.100",
+      "pass": true,
+      "header": {
+        "X-Api-key": "eef635a7806e57ab688fa46eaddb6926a728de071bc267cb5f336d7be068d880..0..1735089945..75b109b1-81c5-4caf-aea1-776e6a81"
+      }
+    },
+    {
       "name": "台灣景點直播",
       "playerType": 2,
       "url": "./live/10.txt",
