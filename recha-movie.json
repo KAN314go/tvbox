@@ -4328,10 +4328,10 @@
       "pass": true
     },
     {
-      "name":"4GTV(docker)",
+      "name":"4GTV(judy)",
       "playerType": 2,
-      "url":"http://docker.livednow.dpdns.org/?type=m3u",
-      "ua":"judy/5.2.1"
+      "url":"https://smart.pendy.dpdns.org/m3u/merged_judy.m3u",
+      "ua":"xieanqishiwoerzi/0.0.1"
     },
     {
       "name": "4GTV(ROB)",
