@@ -78,12 +78,12 @@
       "name": "⏭｜AV电视｜直播",
       "type": 3,
       "searchable": 0,
-      "api": "https://raw.githubusercontent.com/fish2018/lib/refs/heads/main/js/live2vod.js",
-      "ext": "https://raw.githubusercontent.com/fish2018/lib/refs/heads/main/json/feimaolive.json"
+      "api": "./js/live2vod.js",
+      "ext": "./json/feimaolive.json"
     },
     {
       "key": "py_花都",
-      "name": "🇹🇼｜花都｜待測",
+      "name": "⏭｜花都｜PYTHON",
       "type": 3,
       "api": "./py/花都.py",
       "searchable": 1,
@@ -119,7 +119,7 @@
     },
     {
       "key": "小红书",
-      "name": "⏭｜小淫书｜PYTHON(失效)",
+      "name": "⏭｜小淫书｜PYTHON",
       "type": 3,
       "searchable": 1,
       "changeable": 1,
@@ -163,14 +163,14 @@
       "searchable": 1,
       "quickSearch": 0,
       "filterable": 0,
-      "ext": "https://raw.githubusercontent.com/fish2018/lib/refs/heads/main/json/pornhub.json",
+      "ext": "./json/pornhub.json",
       "style": {"type": "rect", "ratio": 1.6}
     },
     {
       "key": "pornhub",
       "name": "⏭｜91Pornhub｜PYTHON",
       "type": 3,
-      "api": "https://raw.githubusercontent.com/fish2018/lib/refs/heads/main/py/py_Phb.py",
+      "api": "./py/py_Phb.py",
       "searchable": 1,
       "quickSearch": 0,
       "filterable": 0,
@@ -198,7 +198,7 @@
     },
     {
       "key": "Xhm",
-      "name": "⏭小黃書",
+      "name": "⏭｜小黃書",
       "type": 3,
       "api": "./py/py_xhm.py",
       "searchable": 1,
@@ -234,7 +234,7 @@
     },
     {
       "key": "91md",
-      "name": "91md",
+      "name": "🔞91md",
       "type": 1,
       "api": "https://91md.me/api.php/provide/vod/",
       "searchable": 1,
@@ -275,16 +275,6 @@
       "jar": "./jar/netflav.jar",
       "ext": "proxy",
       "timeout":60
-    },
-    {
-      "key":"csp_XYQHiker_njav.com",
-      "name": "🔞Njav.com(失敗)",
-      "type": 3,"api": "csp_XYQHiker",
-      "searchable": 1,
-      "quickSearch": 0,
-      "filterable": 0,
-      "ext": "./json/njav.com.json",
-      "style": {"type": "rect","ratio": 1.6}
     },
     {
       "key": "csp_JavBus",
@@ -563,11 +553,11 @@
       "name": "🔞91Pornhub",
       "type": 3,
       "api": "csp_XYQHiker",
-      "jar": "https://raw.githubusercontent.com/fish2018/lib/refs/heads/main/jar/XYQ.jar",
+      "jar": "./jar/xyqxbpq.jar",
       "searchable": 1,
       "quickSearch": 0,
       "filterable": 0,
-      "ext": "https://raw.githubusercontent.com/fish2018/lib/refs/heads/main/json/pornhub.json",
+      "ext": "./json/pornhub.json",
       "style": {"type": "rect", "ratio": 1.6, "proxy": "proxy"}
     },
     {
@@ -939,19 +929,6 @@
       "filterable": 0,
       "ext": "./json/鉴黄师.json",
       "style": {"type": "rect", "ratio": 1.6}
-    },
-    {
-      "key": "csp_春水堂",
-      "name": "🔞春水堂",
-      "type": 3,
-      "api": "csp_XBPQ",
-      "jar": "./jar/xyqxbpq.jar",
-      "filterable": 1,
-      "ext": {
-        "分类url": "https://cst1.buzz/frim/index{cateId}-{catePg}.html",
-        "分类": "國產視頻$25#中文字幕$26#國產傳媒$27#日本有碼$28#日本無碼$29#歐美無碼$30#強奸亂倫$31#制服誘惑$32#國產主播$33#激情動漫$34#明星換臉$35#抖音視頻$36#女優明星$37#網曝黑料$38#倫理三級$39#AV解說$40#SM調教$41#蘿莉少女$42#極品媚黑$43#女同性戀$44#網紅頭條$45#人妖系列$46#韓國主播$47#VR視角$48",
-        "简介": "class=\"plot\"&&</div>"
-      }
     },
     {
       "key": "csp_色花堂",
@@ -2963,7 +2940,7 @@
     },
     {
       "key": "csp_XYQHiker_黄色仓库123",
-      "name": "🔞黄色仓库123✈️🔗",
+      "name": "🔞黄色仓库123",
       "type": 3,
       "api": "csp_XYQHiker",
       "spider": "./jar/pg.jar",
@@ -2975,7 +2952,7 @@
     },
     {
       "key": "csp_XYQHiker_黄色仓库la",
-      "name": "🔞黄色仓库啦✈️🔗",
+      "name": "🔞黄色仓库啦",
       "type": 3,
       "api": "csp_XYQHiker",
       "spider": "./jar/pg.jar",
@@ -2987,7 +2964,7 @@
     },
     {
       "key": "csp_XYQHiker_酷爱成人网>",
-      "name": "🔞酷爱成人网✈️",
+      "name": "🔞酷爱成人网",
       "type": 3,
       "api": "csp_XYQHiker",
       "spider": "./jar/pg.jar",
