@@ -4229,12 +4229,7 @@
     }
   ],
   "lives": [
-    {
-      "name":"smart(Judy)",
-      "playerType": 2,
-      "url":"./live/judy.txt",
-      "ua":"judy/5.2.1"
-    },
+
     {
         "name": "小雲1台",
         "url": "./live/ueen.m3u",
@@ -4294,6 +4289,12 @@
          "type": 3, 
          "api": "./py/live_smt.py",
          "pass": true
+       },
+       {
+        "name":"smart(Judy)",
+        "playerType": 2,
+        "url":"./live/judy.txt",
+        "ua":"judy/5.2.1"
        },
        {
         "name": "曉峰直播",
@@ -4394,18 +4395,6 @@
         "epg": "http://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Taipei",
         "pass": true
       },
-      {
-        "name": "寶盒直播",
-        "type": 0,
-        "playerType": 2,
-        "ua": "AptvPlayer/1.3.3",
-        "url": "http://a90120.serv00.net/anbox/moonlight.txt",
-        "timeout": 5,
-        "epg": "https://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Hong_Kong",
-        "logo": "https://epg.112114.xyz/logo/{name}.png",
-        "jar": "https://fm.t4tv.hz.cz/jar/custom_spider.jar",
-        "pass": true
-      },
     {
         "name": "173線路",
         "playerType": 2,
@@ -4414,30 +4403,11 @@
         "logo": "https://epg.112114.xyz/logo/{name}.png",
         "pass": true
     },
-    {
-      "name": "168線路",
-      "playerType": 2,
-      "url": "./live/168.m3u",
-      "ua": "okhttp/3.15",
-      "timeout": 5,
-      "epg": "https://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/taipei",
-      "logo": "https://epg.112114.xyz/logo/{name}.png",
-      "pass": true
-    },
+
     {
         "name": "F13線路",
         "playerType": 2,
         "url": "./live/king.txt",
-        "ua": "okhttp/3.15",
-        "timeout": 5,
-        "epg": "https://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/taipei",
-        "logo": "https://epg.112114.xyz/logo/{name}.png",
-        "pass": true
-    },
-    {
-        "name": "live 4 play",
-        "playerType": 2,
-        "url": "./live/175.txt",
         "ua": "okhttp/3.15",
         "timeout": 5,
         "epg": "https://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/taipei",
@@ -4576,15 +4546,6 @@
       "logo": "https://epg.112114.xyz/logo/{name}.png",
       "pass": true
     },
-        {
-        "name": "IPTV(喵老師)",
-        "type": 0,
-        "url": "./live/iptv.txt",
-        "epg": "https://epg.112114.eu.org/?ch={name}&date={date}",
-        "logo": "https://epg.112114.eu.org/logo/{name}.png",
-        "playerType": 2,
-        "pass": true
-    },
     {
       "name": "雷蒙直播",
       "type": 0,
@@ -4712,6 +4673,18 @@
       "pass": true
     },
     {
+        "name": "寶盒直播(失效)",
+        "type": 0,
+        "playerType": 2,
+        "ua": "AptvPlayer/1.3.3",
+        "url": "http://a90120.serv00.net/anbox/moonlight.txt",
+        "timeout": 5,
+        "epg": "https://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Hong_Kong",
+        "logo": "https://epg.112114.xyz/logo/{name}.png",
+        "jar": "https://fm.t4tv.hz.cz/jar/custom_spider.jar",
+        "pass": true
+      },
+    {
       "name":"故障(故障)",
       "type":0,
       "spider":"./jar/custom_spider.jar;md5;b5079660bb98ded216e787a0458981b4",
@@ -4720,11 +4693,58 @@
       "pass" :true
     },
     {
-        "name": "223線路(要花錢了)",
+        "name": "223線路(故障)",
         "type": 0,
         "url": "./live/666-live.txt",
         "epg": "https://epg.112114.eu.org/?ch={name}&date={date}",
         "logo": "https://epg.112114.eu.org/logo/{name}.png"
+    },
+    {
+        "name": "4G-TV(喵老師--故障)",
+        "type": 0,
+        "url": "./live/iptv.txt",
+        "epg": "https://epg.112114.eu.org/?ch={name}&date={date}",
+        "logo": "https://epg.112114.eu.org/logo/{name}.png",
+        "playerType": 2,
+        "pass": true
+    },
+    {
+      "name": "168線路(故障)",
+      "playerType": 2,
+      "url": "./live/168.m3u",
+      "ua": "okhttp/3.15",
+      "timeout": 5,
+      "epg": "https://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/taipei",
+      "logo": "https://epg.112114.xyz/logo/{name}.png",
+      "pass": true
+    },
+        {
+        "name": "live 4 play(故障)",
+        "playerType": 2,
+        "url": "./live/175.txt",
+        "ua": "okhttp/3.15",
+        "timeout": 5,
+        "epg": "https://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/taipei",
+        "logo": "https://epg.112114.xyz/logo/{name}.png",
+        "pass": true
+    },
+    {
+        "name": "天天開心(故障)",
+        "type": 0,
+        "url": "http://ttkx.cc:55/lib/kx2024.txt",
+        "ua": "okhttp/3",
+        "playerType": 2,
+        "epg": "http://diyp2.112114.xyz/?ch={name}&date={date}",
+        "logo": "http://diyp2.112114.xyz/logo/{name}.png",
+        "pass": true
+    },
+    {
+      "name": "PIXMAN(故障)",
+      "type": 0,
+      "url": "./live/ueen.txt",
+      "ua": "okhttp/3.15",
+      "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
+      "logo": "https://epg.112114.xyz/logo/{name}.png"
     }
   ],
   "parses": [
