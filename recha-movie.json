@@ -4328,9 +4328,15 @@
       "pass": true
     },
     {
-      "name":"4GTV(judy)",
+      "name":"4GTV(Judy)",
       "playerType": 2,
       "url":"https://smart.pendy.dpdns.org/m3u/merged_judy.m3u",
+      "ua":"xieanqishiwoerzi/0.0.1"
+    },
+        {
+      "name":"4GTV(Migu)",
+      "playerType": 2,
+      "url":"./live/migu.m3u",
       "ua":"xieanqishiwoerzi/0.0.1"
     },
     {
