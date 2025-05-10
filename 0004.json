@@ -4229,12 +4229,7 @@
     }
   ],
   "lives": [
-    {
-      "name":"smart(Judy)",
-      "playerType": 2,
-      "url":"./live/judy.txt",
-      "ua":"judy/5.2.1"
-    },
+
     {
         "name": "小雲1台",
         "url": "./live/ueen.m3u",
@@ -4294,6 +4289,12 @@
          "type": 3, 
          "api": "./py/live_smt.py",
          "pass": true
+       },
+       {
+        "name":"smart(Judy)",
+        "playerType": 2,
+        "url":"./live/judy.txt",
+        "ua":"judy/5.2.1"
        },
        {
         "name": "曉峰直播",
