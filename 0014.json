@@ -18,8 +18,6 @@
         "type":1,
         "style":{"ratio":1.7},
         "api":"https://aosikazy.com/api.php/provide/vod/",
-        "jar": "./jar/pg.jar",
-        "playUrl": "json:http://127.0.0.1:10079/parse/?thread=0&proxy=&url=",
         "recordable": 0
 
       },
@@ -28,7 +26,6 @@
         "name": "🔞奥斯卡资源",
         "type": 1,
         "api": "https://aosikazy.com/api.php/provide/vod/?ac=list",
-        "jar": "./jar/pg.jar",
         "searchable": 1,
         "quickSearch": 1
       },
