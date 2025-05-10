@@ -1,15 +1,15 @@
 台湾频道,#genre#
+松視1台,http://ali.hlspull.yximgs.com:80/live/b6526b4f416c1e3cfa3962a56478a8c6.flv
+松視3台,http://ali.hlspull.yximgs.com:80/live/f673e599ae7adbe670d806be01df24e9.flv
+潘朵拉玩美,http://ali.hlspull.yximgs.com:80/live/eb04cd9948630d102558b9b141a2378d.flv
+彩虹頻道,http://ali.hlspull.yximgs.com:80/live/525dba358dd3d61a4a916784f6f41713.flv
+彩虹K頻道,http://ali.hlspull.yximgs.com:80/live/7cf51c7c4d984d58f9fab21ee5d93f56.flv
+彩虹E頻道,http://ali.hlspull.yximgs.com:80/live/7a7649bbf442ec4bb0646ac76469f9ec.flv
+香蕉台,http://ali.hlspull.yximgs.com:80/live/ad8be608918f515c45e5b4e02a0476ea.flv
+驚豔台,http://ali.hlspull.yximgs.com:80/live/d81a80286be7ce42e0b1feb5aac811f5.flv
+极限電影台,http://ali.hlspull.yximgs.com:80/live/91dc51a893678bdcff4bc3cb2e1d479a.flv
 pigoo,http://ali.hlspull.yximgs.com:80/live/c7d03756c1f917033682d56606b9668c.flv
-极限,http://ali.hlspull.yximgs.com:80/live/91dc51a893678bdcff4bc3cb2e1d479a.flv
-hap,http://ali.hlspull.yximgs.com:80/live/9465185b1cce59c929d3af7de1497520.flv
-香蕉,http://ali.hlspull.yximgs.com:80/live/ad8be608918f515c45e5b4e02a0476ea.flv
-经验,http://ali.hlspull.yximgs.com:80/live/d81a80286be7ce42e0b1feb5aac811f5.flv
-潘朵拉,http://ali.hlspull.yximgs.com:80/live/eb04cd9948630d102558b9b141a2378d.flv
-彩虹,http://ali.hlspull.yximgs.com:80/live/525dba358dd3d61a4a916784f6f41713.flv
-k,http://ali.hlspull.yximgs.com:80/live/7cf51c7c4d984d58f9fab21ee5d93f56.flv
-e,http://ali.hlspull.yximgs.com:80/live/7a7649bbf442ec4bb0646ac76469f9ec.flv
-松3,http://ali.hlspull.yximgs.com:80/live/f673e599ae7adbe670d806be01df24e9.flv
-松1,http://ali.hlspull.yximgs.com:80/live/b6526b4f416c1e3cfa3962a56478a8c6.flv
+Happy,http://ali.hlspull.yximgs.com:80/live/9465185b1cce59c929d3af7de1497520.flv
 pigoo,https://luong.utako.moe/pigoo/index.m3u8 
 
 夜间频道,#genre#
