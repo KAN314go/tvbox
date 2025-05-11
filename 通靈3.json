@@ -25,7 +25,7 @@
       "key": "girigiri爱动漫",
       "name": "girigiri爱动漫",
       "type": 1,
-      "api": "https://anime.girigirilove.com/api.php/provide/vod/?ac=list",
+      "api": "https://anime.girigirilove.com//api.php/provide/vod/?ac=list",
       "searchable": 1,
       "filterable": 0
     },    
