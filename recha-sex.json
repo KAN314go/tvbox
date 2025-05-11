@@ -55,16 +55,6 @@
       "filterable": 1,
       "changeable": 1
     },
-    {
-      "key": "py_黄色仓库",
-      "name": "🔞黄色仓库",
-      "type": 3,
-      "api": "./py/黄色仓库.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "changeable": 1
-    },
 
 
 
