@@ -16,16 +16,6 @@
 
 
     {
-      "key": "py_miss",
-      "name": "🔞miss",
-      "type": 3,
-      "api": "./py/py_miss.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "changeable": 1
-    },
-    {
       "key": "py_dsys",
       "name": "🔞dsys",
       "type": 3,
