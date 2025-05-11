@@ -4521,7 +4521,14 @@
     }
   ],
   "lives": [
-
+    {
+      "name": "smart(?)",
+      "playerType": 2,
+      "url": "./live/smart.txt",
+      "epg": "http://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Taipei",
+      "logo": "https://epg.112114.xyz/logo/{name}.png",
+      "pass": true
+    },
     {
         "name": "小雲1台",
         "url": "./live/ueen.m3u",
