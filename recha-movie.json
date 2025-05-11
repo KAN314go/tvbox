@@ -4720,7 +4720,16 @@
       "api": "./py/kzbty.py",
       "ext": ""
     },
-        {
+    {
+        "name": "4G-TV(雜七雜八)",
+        "type": 0,
+        "url": "./live/iptv.txt",
+        "epg": "https://epg.112114.eu.org/?ch={name}&date={date}",
+        "logo": "https://epg.112114.eu.org/logo/{name}.png",
+        "playerType": 2,
+        "pass": true
+    },
+    {
       "name": "smart(跟安博一樣卡)",
       "playerType": 2,
       "url": "./live/smart.txt",
@@ -4959,14 +4968,6 @@
         "logo": "https://epg.112114.xyz/logo/{name}.png",
         "jar": "https://fm.t4tv.hz.cz/jar/custom_spider.jar",
         "pass": true
-      },
-    {
-      "name":"故障(故障)",
-      "type":0,
-      "spider":"./jar/custom_spider.jar;md5;b5079660bb98ded216e787a0458981b4",
-      "jar":"./jar/custom_spider.jar;md5;b5079660bb98ded216e787a0458981b4",
-      "url":"proxy://do=hema&token=d2510bb5",
-      "pass" :true
     },
     {
         "name": "223線路(故障)",
@@ -4974,15 +4975,6 @@
         "url": "./live/666-live.txt",
         "epg": "https://epg.112114.eu.org/?ch={name}&date={date}",
         "logo": "https://epg.112114.eu.org/logo/{name}.png"
-    },
-    {
-        "name": "4G-TV(喵老師--故障)",
-        "type": 0,
-        "url": "./live/iptv.txt",
-        "epg": "https://epg.112114.eu.org/?ch={name}&date={date}",
-        "logo": "https://epg.112114.eu.org/logo/{name}.png",
-        "playerType": 2,
-        "pass": true
     },
     {
       "name": "168線路(故障)",
