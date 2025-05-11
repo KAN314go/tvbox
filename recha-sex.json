@@ -13,6 +13,71 @@
   "sites": [
 
 
+
+
+    {
+      "key": "py_miss",
+      "name": "🔞miss",
+      "type": 3,
+      "api": "./py/py_miss.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "changeable": 1
+    },
+    {
+      "key": "py_dsys",
+      "name": "🔞dsys",
+      "type": 3,
+      "api": "./py/py_dsys.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "changeable": 1
+    },
+    {
+      "key": "py_洋馬",
+      "name": "🔞洋馬",
+      "type": 3,
+      "api": "./py/py_洋马.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "changeable": 1
+    },
+    {
+      "key": "py_香蕉",
+      "name": "🔞香蕉",
+      "type": 3,
+      "api": "./py/py_香蕉.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "changeable": 1
+    },
+    {
+      "key": "py_色播",
+      "name": "🔞色播",
+      "type": 3,
+      "api": "./py/py_色播.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "changeable": 1
+    },
+    {
+      "key": "py_黄色仓库",
+      "name": "🔞黄色仓库",
+      "type": 3,
+      "api": "./py/黄色仓库.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "changeable": 1
+    },
+
+
+
     {
       "key": "麻豆",
       "name": "🇹🇼【老王成人專區】🇹🇼",
