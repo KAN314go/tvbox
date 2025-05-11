@@ -2,22 +2,29 @@
   "spider": "./jar/pg.jar;md5;3d7366987f27631444e98cde17418a57",
   "logo": "https://p3-pc.douyinpic.com/img/aweme-avatar/tos-cn-i-0813_6e2553f5708c414386eeca88b5f2674a~c5_300x300.jpeg?from=2956013662",
   "wallpaper": "https://tv.nxog.top/m//t/",
-  "sites": [
+  "sites": [https://zouming.com/m2t.html
 
 
-          { 
-            "name": "ギリギリ动漫", 
-            "type": 3, 
-            "api": "csp_ai",
-            "ext": "https://raw.githubusercontent.com/fangkuia/XPTV/refs/heads/main/js/ai.js",
-            "ext2": "https://gist.githubusercontent.com/occupy-pluto/5185fa59944d5b8af625b2c83604d397/raw/girl.js"
-        },
+    {
+      "key": "csp_爱动漫",
+      "name": "🥇｜爱动漫｜",
+      "type": 3,
+      "api": "csp_XBPQ",
+      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": {
+        "数组": "class=\"public-list-box public-pic-b\"&&</div>",
+        "分类url": "https://anime.girigirilove.com/show/2--------{catePg}---/"
+      }
+    },
 
     {
       "key": "girigiri爱动漫",
       "name": "girigiri爱动漫",
       "type": 1,
-      "api": "https://anime.girigirilove.com//api.php/provide/vod/?ac=list",
+      "api": "https://anime.girigirilove.com//api.php/provide/vod",
       "searchable": 1,
       "filterable": 0
     },    
