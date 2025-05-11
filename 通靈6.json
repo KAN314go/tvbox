@@ -5,20 +5,13 @@
   "sites": [
 
 
-    {
-      "key": "csp_爱动漫",
-      "name": "🥇｜爱动漫｜",
-      "type": 3,
-      "api": "csp_XBPQ",
-      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": {
-        "数组": "class=\"public-list-box public-pic-b\"&&</div>",
-        "分类url": "https://anime.girigirilove.com/show/2--------{catePg}---/"
-      }
-    },
+          { 
+            "name": "ギリギリ动漫", 
+            "type": 3, 
+            "api": "csp_ai",
+            "ext": "https://raw.githubusercontent.com/fangkuia/XPTV/refs/heads/main/js/ai.js",
+            "ext2": "https://gist.githubusercontent.com/occupy-pluto/5185fa59944d5b8af625b2c83604d397/raw/girl.js"
+        },
 
     {
       "key": "girigiri爱动漫",
