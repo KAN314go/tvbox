@@ -15,6 +15,7 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": {
+        "数组": "class=\"public-list-box public-pic-b\"&&</div>",
         "分类url": "https://anime.girigirilove.com/show/{cateId}--{by}------{catePg}---{year}/",
         "分类": "日番$2#美番$3#劇場版$21#真人番劇$20#BD副音軌$24#其他$26"
       }
