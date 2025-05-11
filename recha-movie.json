@@ -3749,7 +3749,7 @@
     },
     {
       "key": "py_dm84",
-      "name": "动漫｜动漫巴士(沐辰)｜PYTHON",
+      "name": "动漫巴士(沐辰)｜PYTHON",
       "type": 3,
       "api": "./py/py_dm84.py",
       "searchable": 1,
@@ -3789,7 +3789,7 @@
     },
     {
         "key": "曼波动漫",
-        "name": "动漫｜曼波｜动漫",
+        "name": "动漫｜曼波",
         "type": 3,
         "quickSearch": 1,
         "api": "csp_AppGet",
@@ -3804,7 +3804,7 @@
       },
       {
         "key": "咕咕动漫",
-        "name": "动漫｜咕咕｜动漫",
+        "name": "动漫｜咕咕",
         "type": 3,
         "quickSearch": 1,
         "api": "csp_AppGet",
@@ -3819,7 +3819,7 @@
       },
       {
         "key": "米饭动漫",
-        "name": "动漫｜米饭｜动漫",
+        "name": "动漫｜米饭",
         "type": 3,
         "quickSearch": 1,
         "api": "csp_AppGet",
@@ -3850,7 +3850,7 @@
     },
     {
       "key": "动漫大全",
-      "name": "动漫｜动漫大全",
+      "name": "动漫大全",
       "type": 3,
       "api": "csp_XBPQ",
       "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
@@ -4065,7 +4065,7 @@
     },
     {
       "key": "csp_动漫",
-      "name": "动漫｜动漫屋",
+      "name": "动漫屋",
       "type": 3,
       "api": "csp_XBPQ",
       "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
@@ -4133,7 +4133,7 @@
     },
     {
       "key": "动漫岛",
-      "name": "动漫｜动漫岛",
+      "name": "动漫岛",
       "type": 3,
       "api": "./drpy_libs/drpy2.min.js",
       "ext": "./drpy_js/DMD.js"
@@ -4525,7 +4525,7 @@
       "filterable": 1,
       "order_num": 0,
       "ext": "./drpy_js/六月听书[听].js"
-    }
+    },
     {
       "key": "ting",
       "name": "㊙︎｜海盜听书",
