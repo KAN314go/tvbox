@@ -5,8 +5,30 @@
   "sites": [
 
 
+    {
+      "key": "csp_爱动漫",
+      "name": "🥇｜爱动漫｜",
+      "type": 3,
+      "api": "csp_XBPQ",
+      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": {
+        "搜索url": "https://www.kpkuang.fun/vodsearch/-------------.html?wd={wd}",
+        "分类url": "https://anime.girigirilove.com/show/{cateId}--{by}------{catePg}---{year}/",
+        "分类": "日番$2#美番$3#劇場版$21#真人番劇$20#BD副音軌$24#演唱會&周邊活動&其他$26"
+      }
+    },
 
-    
+    {
+      "key": "girigiri爱动漫",
+      "name": "girigiri爱动漫",
+      "type": 1,
+      "api": "https://anime.girigirilove.com/api.php/provide/vod/?ac=list",
+      "searchable": 1,
+      "filterable": 0
+    },    
     {
       "key": "豆瓣",
       "name": "🇹🇼｜熱播排行榜｜自動切換",
