@@ -1152,6 +1152,16 @@
       }
     },
     {
+      "key": "csp_低端",
+      "name": "🥇｜低端｜高清◎秒播(無廣告)",
+      "type": 3,
+      "api": "./drpy_libs/drpy2.min.js",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "./drpy_js/低端.js"
+    },
+    {
       "key": "csp_moxmi",
       "name": "🥇｜樂美｜高清◎秒播(無廣告)",
       "type": 1,
@@ -1550,7 +1560,7 @@
       "name": "🥇｜臭蛋｜高清◎秒播(4/16修復)",
       "type": 3,
       "api": "csp_XBPQ",
-      "jar": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/jar1/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+      "jar": "./jar1/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
@@ -1577,7 +1587,7 @@
       "name": "🥇｜淘剧｜高清◎秒播(無廣告+無篩選)",
       "type": 3,
       "api": "csp_XBPQ",
-      "jar": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/jar1/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+      "jar": "./jar1/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
@@ -3280,6 +3290,10 @@
         "地区": "大陸&香港&臺灣&美國&法國&英國&日本&韓國&德國&泰國&印度&意大利&西班牙&加拿大&其他||內地&韓國&香港&臺灣&日本&美國&泰國&英國&新加坡&其他||內地&港臺&日韓&歐美||國產&日本&歐美&其他"
       }
     },
+    {"key": "vod_drjs_爱看","name":"🧲｜爱看機器人｜全線路","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./drpy_js/ikanbot2.js"},
+    {"key": "drpy_js_xb6v","name": "🧲｜新版6v｜無廣","type": 3,"api": "./drpy_libs/drpy2.min.js","ext": "./drpy_js/xb6v.js","playerType": "1","searchable": 1},
+    {"key": "drpy_js_MP4US","name": "🧲｜MP4电影｜無廣","type": 3,"api": "./drpy_libs/drpy2.min.js","ext": "./drpy_js/mp4us.js","playerType": "1","searchable": 1},
+    {"key": "采集之王","name":"🧲｜採集大合集","type":3,"api":"https://raw.githubusercontent.com/maoystv/000/master/js/drpy2.min.js","searchable":1,"quickSearch":1,"ext":"https://git.acwing.com/YGFXZ/0/-/raw/main/采集之王_合_.js?type=url&params=https://git.acwing.com/YGFXZ/0/-/raw/main/采集静态.json"},
     {
       "key": "vod_360",
       "name": "🧲｜360｜高清◎秒播(無廣告)",
@@ -3692,7 +3706,7 @@
         "api": "csp_XBPQ",
         "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
         "ext": "http://我不是.摸鱼儿.com/api/moyu.php?file=4kdy"
-      },
+    },
     {
       "key": "py_animal3",
       "name": "动漫｜3號動漫",
@@ -4096,6 +4110,268 @@
         "地区": "日本&大陆&美国"
       }
     },
+        {
+      "key": "drpy_js_去看吧",
+      "name": "动漫｜去看吧",
+      "type": 3,
+      "api": "./drpy_libs/drpy2.min.js",
+      "ext": "./drpy_js/去看吧.js"
+    },
+    {
+      "key": "drpy_js_奇米动漫",
+      "name": "动漫｜奇米动漫",
+      "type": 3,
+      "api": "./drpy_libs/drpy2.min.js",
+      "ext": "./drpy_js/奇米动漫.js"
+    },
+    {
+      "key": "动画片",
+      "name": "动漫｜动画片",
+      "type": 3,
+      "api": "./drpy_libs/drpy2.min.js",
+      "ext": "./drpy_js/DHPDQ.js"
+    },
+    {
+      "key": "动漫岛",
+      "name": "动漫｜动漫岛",
+      "type": 3,
+      "api": "./drpy_libs/drpy2.min.js",
+      "ext": "./drpy_js/DMD.js"
+    },
+    {
+      "key": "好看动漫",
+      "name": "动漫｜好看",
+      "type": 3,
+      "api": "./drpy_libs/drpy2.min.js",
+      "ext": "./drpy_js/HKDM.js"
+    },
+    {
+      "key": "drpy_js_爱弹幕",
+      "name": "动漫｜爱弹幕",
+      "type": 3,
+      "api": "./drpy_libs/drpy2.min.js",
+      "ext": "./drpy_js/爱弹幕.js"
+    },
+    {
+      "key": "drpy_js_路漫漫",
+      "name": "动漫｜路漫漫",
+      "type": 3,
+      "api": "./drpy_libs/drpy2.min.js",
+      "ext": "./drpy_js/路漫漫.js"
+    },
+    {
+      "key": "hipy_js_大米动漫[漫]",
+      "name": "动漫｜大米",
+      "type": 3,
+      "api": "./drpy_libs/drpy2.min.js",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "order_num": 0,
+      "ext": "./drpy_js/大米动漫[漫].js"
+    },
+    {
+      "key": "动漫巴士",
+      "name": "动漫｜動漫巴士｜道長",
+      "type": 3,
+      "api": "./drpy_libs/drpy2.min.js",
+      "ext": "./drpy_js/动漫巴士.js"
+    },
+    {
+      "key": "hipy_js_七色番[漫]",
+      "name": "动漫｜七色番",
+      "type": 3,
+      "api": "./drpy_libs/drpy2.min.js",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "order_num": 0,
+      "ext": "./drpy_js/七色番[漫].js"
+    },
+    {
+      "key": "奇米动漫",
+      "name": "动漫｜奇米",
+      "type": 3,
+      "api": "./drpy_libs/drpy2.min.js",
+      "ext": "./drpy_js/奇米动漫.js"
+    },
+    {
+      "key": "怡萱动漫",
+      "name": "动漫｜怡萱[V1]",
+      "type": 3,
+      "api": "./drpy_libs/drpy2.min.js",
+      "ext": "./drpy_js/怡萱动漫.js"
+    },
+    {
+      "key": "hipy_js_怡萱动漫[漫]",
+      "name": "动漫｜怡萱[V2]",
+      "type": 3,
+      "api": "./drpy_libs/drpy2.min.js",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "order_num": 0,
+      "ext": "./drpy_js/怡萱动漫[漫].js"
+    },
+    {
+      "key": "drpy_js_58动漫",
+      "name": "动漫｜58动漫",
+      "type": 3,
+      "api": "./drpy_libs/drpy2.min.js",
+      "ext": "./drpy_js/58动漫.js"
+    },
+        {
+      "key": "hipy_js_爱弹幕[漫]",
+      "name": "动漫｜爱弹幕",
+      "type": 3,
+      "api": "./drpy_libs/drpy2.min.js",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "./drpy_js/爱弹幕[漫].js"
+    },
+    {
+      "key": "喵物",
+      "name": "动漫｜喵物",
+      "type": 3,
+      "api": "./drpy_libs/drpy2.min.js",
+      "searchable": 1,
+      "changeable": 1,
+      "ext": "./drpy_js/喵物次元.js"
+    },
+    {
+      "key": "漫元",
+      "name": "动漫｜漫元",
+      "type": 3,
+      "api": "./drpy_libs/drpy2.min.js",
+      "searchable": 1,
+      "changeable": 1,
+      "ext": "./drpy_js/漫次元.js"
+    },
+    {
+      "key": "异世界",
+      "name": "动漫｜异世界",
+      "type": 3,
+      "api": "./drpy_libs/drpy2.min.js",
+      "searchable": 1,
+      "quickSearch": 1,
+      "ext": "./drpy_js/异世界.js"
+    },
+        {
+      "key": "hipy_js_NT动漫[漫]",
+      "name": "动漫｜牛顿",
+      "type": 3,
+      "api": "./drpy_libs/drpy2.min.js",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "order_num": 0,
+      "ext": "./drpy_js/NT动漫[漫].js"
+    },
+    {
+      "key": "hipy_js_次元城动漫[漫]",
+      "name": "动漫｜次元城｜T3",
+      "type": 3,
+      "api": "./drpy_libs/drpy2.min.js",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "order_num": 0,
+      "ext": "./drpy_js/次元城动漫[漫].js"
+    },
+    {
+      "key": "hipy_js_奇米动漫[漫]",
+      "name": "动漫｜奇米",
+      "type": 3,
+      "api": "./drpy_libs/drpy2.min.js",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "order_num": 0,
+      "ext": "./drpy_js/奇米动漫[漫].js"
+    },
+    {
+      "key": "hipy_js_嗷呜动漫",
+      "name": "动漫｜嗷呜动漫",
+      "type": 3,
+      "api": "./drpy_libs/drpy2.min.js",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "order_num": 0,
+      "ext": "./drpy_js/嗷呜动漫.js"
+    },
+    {
+      "key": "大米动漫",
+      "name": "动漫｜大米",
+      "type": 3,
+      "api": "./drpy_libs/drpy2.min.js",
+      "ext": "./drpy_js/大米动漫.js"
+    },
+        {
+      "key": "drpy_js_360影视",
+      "name": "🎖︎｜360｜無廣",
+      "type": 3,
+      "searchable": 1,
+      "quickSearch": 1,
+      "api": "./drpy_libs/drpy2.min.js",
+      "ext": "./drpy_js/360影视[官].js"
+    },
+    {
+      "key": "hipy_js_奇珍异兽[官]",
+      "name": "🎖︎｜愛奇异",
+      "type": 3,
+      "searchable": 1,
+      "quickSearch": 1,
+      "api": "./drpy_libs/drpy2.min.js",
+      "ext": "./drpy_js/奇珍异兽[官].js"
+    },
+    {
+      "key": "drpy_js_百忙无果",
+      "name": "🎖︎｜芒果",
+      "type": 3,
+      "searchable": 1,
+      "quickSearch": 1,
+      "api": "./drpy_libs/drpy2.min.js",
+      "ext": "./drpy_js/百忙无果[官].js"
+    },
+    {
+      "key": "drpy_js_腾云驾雾",
+      "name": "🎖︎｜腾讯",
+      "type": 3,
+      "searchable": 1,
+      "quickSearch": 1,
+      "api": "./drpy_libs/drpy2.min.js",
+      "ext": "./drpy_js/腾云驾雾[官].js"
+    },
+    {
+      "key": "drpy_js_菜狗",
+      "name": "🎖︎｜搜狗",
+      "type": 3,
+      "searchable": 1,
+      "quickSearch": 1,
+      "api": "./drpy_libs/drpy2.min.js",
+      "ext": "./drpy_js/菜狗[官].js"
+    },
+    {
+      "key": "drpy_js_优酷",
+      "name": "🎖︎｜优酷",
+      "type": 3,
+      "searchable": 1,
+      "quickSearch": 1,
+      "api": "./drpy_libs/drpy2.min.js",
+      "ext": "./drpy_js/优酷[官].js"
+    },
+    {
+      "key": "哔哩直播",
+      "name": "🎖︎｜bilbile直播",
+      "type": 3,
+      "api": "./drpy_libs/drpy2.min.js",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 1,
+      "ext": "./drpy_js/blzb.js"
+    },
     {
       "key": "csp_Kugou_FM",
       "name": "🎧｜酷狗聽歌",
@@ -4217,6 +4493,39 @@
       "ext": "https://m.ting275.com",
       "style": {"type": "rect", "ratio": 1.333}
     },
+        {
+      "key": "hipy_js_有声小说吧",
+      "name": "㊙︎｜听书吧",
+      "type": 3,
+      "api": "./drpy_libs/drpy2.min.js",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "order_num": 0,
+      "ext": "./drpy_js/有声小说吧[听].js"
+    },
+    {
+      "key": "hipy_js_海洋听书[听]",
+      "name": "㊙︎｜海洋听书",
+      "type": 3,
+      "api": "./drpy_libs/drpy2.min.js",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "order_num": 0,
+      "ext": "./drpy_js/海洋听书[听].js"
+    },
+    {
+      "key": "hipy_js_六月听书[听]",
+      "name": "㊙︎｜六月听书｜T3",
+      "type": 3,
+      "api": "./drpy_libs/drpy2.min.js",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "order_num": 0,
+      "ext": "./drpy_js/六月听书[听].js"
+    }
     {
       "key": "ting",
       "name": "㊙︎｜海盜听书",
