@@ -163,6 +163,100 @@
       "changeable": 1,
       "ext": ""
     },
+            {
+      "key": "drpy_js_360影视",
+      "name": "🎖︎｜360｜官源(道長)",
+      "type": 3,
+      "searchable": 1,
+      "quickSearch": 1,
+      "api": "./drpy_libs/drpy2.min.js",
+      "ext": "./drpy_js/360影视[官].js"
+    },
+   {
+      "key": "py_爱",
+      "name": "🎖︎｜爱奇異｜官源",
+      "type": 3,
+      "api": "./py/py_爱.py",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 0,
+      "changeable": 0
+    },
+    {
+      "key": "hipy_js_奇珍异兽[官]",
+      "name": "🎖︎｜愛奇异｜官源(道長)",
+      "type": 3,
+      "searchable": 1,
+      "quickSearch": 1,
+      "api": "./drpy_libs/drpy2.min.js",
+      "ext": "./drpy_js/奇珍异兽[官].js"
+    },
+    {
+      "key": "py_芒",
+      "name": "🎖︎｜芒果｜官源",
+      "type": 3,
+      "api": "./py/py_芒.py",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 0,
+      "changeable": 0
+    },
+    {
+      "key": "drpy_js_百忙无果",
+      "name": "🎖︎｜芒果｜官源(道長)",
+      "type": 3,
+      "searchable": 1,
+      "quickSearch": 1,
+      "api": "./drpy_libs/drpy2.min.js",
+      "ext": "./drpy_js/百忙无果[官].js"
+    },
+   {
+      "key": "py_腾",
+      "name": "🎖︎｜腾訊｜官源",
+      "type": 3,
+      "api": "./py/py_腾.py",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 0,
+      "changeable": 0
+    },
+    {
+      "key": "drpy_js_腾云驾雾",
+      "name": "🎖︎｜腾讯｜官源(道長)",
+      "type": 3,
+      "searchable": 1,
+      "quickSearch": 1,
+      "api": "./drpy_libs/drpy2.min.js",
+      "ext": "./drpy_js/腾云驾雾[官].js"
+    },
+    {
+      "key": "drpy_js_菜狗",
+      "name": "🎖︎｜搜狗｜官源(道長)",
+      "type": 3,
+      "searchable": 1,
+      "quickSearch": 1,
+      "api": "./drpy_libs/drpy2.min.js",
+      "ext": "./drpy_js/菜狗[官].js"
+    },
+    {
+      "key": "py_优",
+      "name": "🎖︎｜优酷｜官源",
+      "type": 3,
+      "api": "./py/py_优.py",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 0,
+      "changeable": 0
+    },
+    {
+      "key": "drpy_js_优酷",
+      "name": "🎖︎｜优酷｜官源(道長)",
+      "type": 3,
+      "searchable": 1,
+      "quickSearch": 1,
+      "api": "./drpy_libs/drpy2.min.js",
+      "ext": "./drpy_js/优酷[官].js"
+    },
     {
       "key": "yfsp",
       "name": "🎖︎｜愛壹帆｜官源",
@@ -198,46 +292,6 @@
           "searchContent": {"loadUrl": "https://m.yfsp.tv/search"}
         }
       }
-    },
-    {
-      "key": "py_爱",
-      "name": "🎖︎｜爱奇異｜官源",
-      "type": 3,
-      "api": "./py/py_爱.py",
-      "searchable": 1,
-      "quickSearch": 0,
-      "filterable": 0,
-      "changeable": 0
-    },
-    {
-      "key": "py_芒",
-      "name": "🎖︎｜芒果｜官源",
-      "type": 3,
-      "api": "./py/py_芒.py",
-      "searchable": 1,
-      "quickSearch": 0,
-      "filterable": 0,
-      "changeable": 0
-    },
-    {
-      "key": "py_腾",
-      "name": "🎖︎｜腾訊｜官源",
-      "type": 3,
-      "api": "./py/py_腾.py",
-      "searchable": 1,
-      "quickSearch": 0,
-      "filterable": 0,
-      "changeable": 0
-    },
-    {
-      "key": "py_优",
-      "name": "🎖︎｜优酷｜官源",
-      "type": 3,
-      "api": "./py/py_优.py",
-      "searchable": 1,
-      "quickSearch": 0,
-      "filterable": 0,
-      "changeable": 0
     },
     {
       "key": "bilimd",
@@ -4266,60 +4320,6 @@
       "type": 3,
       "api": "./drpy_libs/drpy2.min.js",
       "ext": "./drpy_js/大米动漫.js"
-    },
-        {
-      "key": "drpy_js_360影视",
-      "name": "🎖︎｜360｜無廣",
-      "type": 3,
-      "searchable": 1,
-      "quickSearch": 1,
-      "api": "./drpy_libs/drpy2.min.js",
-      "ext": "./drpy_js/360影视[官].js"
-    },
-    {
-      "key": "hipy_js_奇珍异兽[官]",
-      "name": "🎖︎｜愛奇异",
-      "type": 3,
-      "searchable": 1,
-      "quickSearch": 1,
-      "api": "./drpy_libs/drpy2.min.js",
-      "ext": "./drpy_js/奇珍异兽[官].js"
-    },
-    {
-      "key": "drpy_js_百忙无果",
-      "name": "🎖︎｜芒果",
-      "type": 3,
-      "searchable": 1,
-      "quickSearch": 1,
-      "api": "./drpy_libs/drpy2.min.js",
-      "ext": "./drpy_js/百忙无果[官].js"
-    },
-    {
-      "key": "drpy_js_腾云驾雾",
-      "name": "🎖︎｜腾讯",
-      "type": 3,
-      "searchable": 1,
-      "quickSearch": 1,
-      "api": "./drpy_libs/drpy2.min.js",
-      "ext": "./drpy_js/腾云驾雾[官].js"
-    },
-    {
-      "key": "drpy_js_菜狗",
-      "name": "🎖︎｜搜狗",
-      "type": 3,
-      "searchable": 1,
-      "quickSearch": 1,
-      "api": "./drpy_libs/drpy2.min.js",
-      "ext": "./drpy_js/菜狗[官].js"
-    },
-    {
-      "key": "drpy_js_优酷",
-      "name": "🎖︎｜优酷",
-      "type": 3,
-      "searchable": 1,
-      "quickSearch": 1,
-      "api": "./drpy_libs/drpy2.min.js",
-      "ext": "./drpy_js/优酷[官].js"
     },
     {
       "key": "哔哩直播",
