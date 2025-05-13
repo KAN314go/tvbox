@@ -28,7 +28,7 @@
       "key": "csp_Lgyy",
       "name": "🥈｜流光｜高清◎秒播(浮水印廣告)",
       "type": 3,
-      "jar": "./jar/mi-0513.txt;md5;bcb27d2740df8d21bfc49c507432663a",
+      "jar": "./jar/mi-0319.jar;md5;b73ed98a0a285189794be3c8d9c3a335",
       "api": "csp_FreeOkGuard"
     },
     {
@@ -36,7 +36,7 @@
       "name": "🥉｜光速｜高清◎順播(無廣告+APP)",
       "type": 3,
       "api": "csp_AppGetGuard",
-      "jar": "./jar/mi-0513.txt;md5;bcb27d2740df8d21bfc49c507432663a",
+      "jar": "./jar/mi-0319.jar;md5;b73ed98a0a285189794be3c8d9c3a335",
       "ext": "sHR2rlsfjI4L3t4RXQMkn97hxHYaEbu5lFfPUXOxEzpAZL11z+ayZEbLSb3vs/v8ZS0i6U3Oh/aCVpUdIeZzRgc5TQyB2k7aC0UwqxoW281lBnRyLoSPb+ejqJ92E4RYuH9BABywIr8NA9Bn0Ndnl5c+AJCGNVdUwDUcd6fmGzQoQ+VuzRpX5xfgCbnpjcTp56dL50nhDb7IIe7CtKv7pA=="
     },
     {
@@ -45,14 +45,14 @@
       "type": 3,
       "quickSearch": 0,
       "api": "csp_AppGetGuard",
-      "jar": "./jar/mi-0513.txt;md5;bcb27d2740df8d21bfc49c507432663a",
+      "jar": "./jar/mi-0319.jar;md5;b73ed98a0a285189794be3c8d9c3a335",
       "ext": "sHR2rlsfjI4L3t4RXQMkn4/zRHG7KueeJHsenaeUMOWp1EzObBSdbU9et5QXxSbLZNx3dMChdqtSieuV5wZj006LehfFeCmj8B095j2lIKIF0YoQe+MZcPjGy7gtOViYZ6wvyGkzWk6oD1mJmauAyZhYFgIf28dxzY5kbxJVtI2PjlO6xlD2NRNjVM5uVtSkhN2Pf9gmJ5qaWk40c4YC+w=="
     },
     {
       "key": "csp_Gz360",
       "name": "🥇｜瓜子｜高清◎秒播(無廣告)",
       "type": 3,
-      "jar": "./jar/mi-0513.txt;md5;bcb27d2740df8d21bfc49c507432663a",
+      "jar": "./jar/mi-0319.jar;md5;b73ed98a0a285189794be3c8d9c3a335",
       "api": "csp_Gz360Guard"
     },
     {
@@ -60,14 +60,14 @@
       "name": "🥇｜优秀｜高清◎秒播(無廣告+APP)",
       "type": 3,
       "api": "csp_AppGetGuard",
-      "jar": "./jar/mi-0513.txt;md5;bcb27d2740df8d21bfc49c507432663a",
+      "jar": "./jar/mi-0319.jar;md5;b73ed98a0a285189794be3c8d9c3a335",
       "ext": "rpb8IjZTuzYSqZNn/sGvG+nmDP6c5rlJM5DTXdn6d/OdwIl8hAgvoCnQmL7YkzCXHe+hpViArom3TFB7ORHGx8Gsyk/NiHE7VuNzVMP/C+/r78ogd9EF54Pi+n6PkOaxl7jEppsqJjozMoCPS929dwPWfx4NGsZnpVFvANeZUOzlo4RKfmAaN35kAo+7amKcqawPF/jPPsCEXambLeH+PqICmlcdkCN+3k+Dft4Z8iA="
     },
     {
       "key": "csp_Jpys",
       "name": "🥇｜銀光｜高清◎秒播(無廣告)",
       "type": 3,
-      "jar": "./jar/mi-0513.txt;md5;bcb27d2740df8d21bfc49c507432663a",
+      "jar": "./jar/mi-0319.jar;md5;b73ed98a0a285189794be3c8d9c3a335",
       "api": "csp_JpysGuard"
     },
     {
@@ -75,7 +75,7 @@
       "name": "🥇｜农民｜高清◎秒播(無廣告)",
       "type": 3,
       "api": "csp_WwysGuard",
-      "jar": "./jar/mi-0513.txt;md5;bcb27d2740df8d21bfc49c507432663a",
+      "jar": "./jar/mi-0319.jar;md5;b73ed98a0a285189794be3c8d9c3a335",
       "ext": "https://www.wwgz.cn"
     },
     {
@@ -83,7 +83,7 @@
       "name": "🥇｜天天｜高清◎秒播(無廣告+APP)",
       "type": 3,
       "api": "csp_AppRJGuard",
-      "jar": "./jar/mi-0513.txt;md5;bcb27d2740df8d21bfc49c507432663a",
+      "jar": "./jar/mi-0319.jar;md5;b73ed98a0a285189794be3c8d9c3a335",
       "ext": "sHR2rlsfjI4L3t4RXQMknxhunFUlA4159TKiKvIPpfcM1xianxebcSLajBbwFymqC+z9WoGzQYbh7FSvh8KdiC0BKF0CalaPaCEMOZm+ClGEeNzXAaR0FnrV04SiB2NK"
     },
     {
