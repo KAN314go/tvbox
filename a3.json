@@ -5180,6 +5180,26 @@
         }
       }
     },
+        {
+      "name": "牛牛2",
+      "type": 1,
+      "url": "https://zy.qiaoji8.com/xiafan.php?url=",
+      "ext": {
+        "flag": [
+          "QD4K",
+          "iyf",
+          "duanju",
+          "gzcj",
+          "GTV",
+          "GZYS",
+          "weggz",
+          "Ace"
+        ],
+        "header": {
+          "User-Agent": "okhttp/4.9.1"
+        }
+      }
+    },
     {
       "name": "4k解析",
       "url": "http://chaoqianys.top:98/api/?key=DHZNz2KxkQ6szAWfJo&url=",
@@ -5286,12 +5306,6 @@
       "url": "http://1.94.221.189:88/algorithm.php?url=",
       "ext": { "flag": ["hgvip"], "header": {"User-Agent": "okhttp/4.9.1"} }
     },
-    {
-      "name": "皮皮虾",
-      "type": "1",
-      "url": "http://jiexi.52ppx.top/lxjson.php?url=",
-      "ext": { "flag": ["PPXLG", "皮皮虾4K"] }
-    },
     {"name": "8090", "type": 0, "url": "https://www.8090g.cn/?url="},
     {"name": "m3u8", "type": 0, "url": "https://jx.m3u8.tv/jiexi/?url="},
     {
@@ -5371,6 +5385,64 @@
       "regex": [
         "#EXTINF.*?\\s+.*?adjump.*?\\.ts\\s+"                               ,
         "#EXT-X-DISCONTINUITY\r*\n*#EXTINF:3,[\\s\\S]*?#EXT-X-DISCONTINUITY"
+      ]
+    },
+        {
+      "name": "♻️农民",
+      "hosts": [
+        "toutiaovod.com"
+      ],
+      "regex": [
+        "video/tos/cn"
+      ]
+    },
+    {
+      "name": "♻️火山",
+      "hosts": [
+        "huoshan.com"
+      ],
+      "regex": [
+        "item_id="
+      ]
+    },
+    {
+      "name": "♻️抖音",
+      "hosts": [
+        "douyin.com"
+      ],
+      "regex": [
+        "is_play_url="
+      ]
+    },
+    {
+      "name": "♻️磁力",
+      "hosts": [
+        "magnet"
+      ],
+      "regex": [
+        "最 新",
+        "直 播",
+        "更 新"
+      ]
+    },
+    {
+      "name": "♻️饭团点击",
+      "hosts": [
+        "dadagui",
+        "freeok",
+        "dadagui"
+      ],
+      "script": [
+        "document.querySelector(\"#playleft iframe\").contentWindow.document.querySelector(\"#start\").click();"
+      ]
+    },
+    {
+      "name": "♻️毛驴点击",
+      "hosts": [
+        "www.maolvys.com"
+      ],
+      "script": [
+        "document.getElementsByClassName('swal-button swal-button--confirm')[0].click()"
       ]
     },
     {
