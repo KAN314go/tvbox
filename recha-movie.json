@@ -4497,7 +4497,14 @@
     }
   ],
   "lives": [
-
+{
+      "name": "松园",
+      "type": 0,
+      "url": "http://files.catbox.moe/ohoob2.txt",
+      "ua": "Lavf/58.12.100",
+      "timeout": 20,
+      "playerType": 2
+    },
     {
         "name": "小雲1台",
         "url": "./live/ueen.m3u",
