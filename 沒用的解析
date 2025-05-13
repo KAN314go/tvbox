@@ -1,34 +1,4 @@
-    {
-      "name": "技巧1",
-      "type": 1,
-      "url": "http://pan.qiaoji8.com/tvbox/gouzi.php?url=",
-      "ext": {
-        "flag": [
-          "qq"      , "腾讯"      , "腾云驾雾"    , "腾 讯"     , "qiyi"    ,
-          "爱奇艺"     , "爱 奇 艺"   , "奇艺"      , "youku"   , "优酷"      ,
-          "优 酷"     , "mgtv"    , "芒果"      , "芒 果T V"  , "imgo"    ,
-          "letv"    , "乐视"      , "乐 视"     , "咪 咕 视 频" , "pptv"    ,
-          "PPTV"    , "C N T V" , "sohu"    , "bilibili", "哔哩哔哩"    ,
-          "哔 哩 哔 哩" , "哔哩"
-        ]
-      }
-    },
-    {
-      "name": "巧技2",
-      "type": 1,
-      "url": "https://zy.qiaoji8.com/neibu.php?url=",
-      "ext": {
-        "flag": [
-          "qq"      , "腾讯"      , "腾云驾雾"    , "腾 讯"     , "qiyi"    ,
-          "爱奇艺"     , "爱 奇 艺"   , "奇艺"      , "youku"   , "优酷"      ,
-          "优 酷"     , "mgtv"    , "芒果"      , "芒 果T V"  , "imgo"    ,
-          "letv"    , "乐视"      , "乐 视"     , "咪 咕 视 频" , "pptv"    ,
-          "PPTV"    , "C N T V" , "sohu"    , "bilibili", "哔哩哔哩"    ,
-          "哔 哩 哔 哩" , "哔哩"
-        ]
-      }
-    },
-    {"name": "巧技3", "type": 1, "url": "https://zy.qiaoji8.com/gouzi.php?url="},
+
 {
   "name": "飞捷",
   "type": 1,
