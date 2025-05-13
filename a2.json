@@ -5,82 +5,24 @@
   "sites": [
 
 
-            {
-      "key": "巧技",
-      "name": "🥇｜巧记｜高清◎秒播(無廣告+APP)",
-      "type": 3,
-      "api": "csp_qiao2",
-      "playerType": 2,
-      "jar": "./jar/mi-0303.jar;md5;ec975f203099b42d6286751914e27fc9",
-      "ext": "adgHZD4T/7tWFulh0C127b9BxztLdgaMQTADJnxZKZbY3ckvairRpCHy4DPsalkJ9gSwgZCDLdy4KBeQLIkceHOCS3Mu2XUxmJoneDAGC0e0spaKT/5U94AdpsDRBWWNtIcqbBwDbaTbLNnjlCBq0AYJceS9Kjm06ECDMd2dGe/KW3J76qu/DmsPuAmnVKn8Q3uSL2uhtsTuukMiEo0/mpxwlwSnuzKnZZhEaplyj5eo4iB7gcnPUzFi8YAQxziTD0MQZYk4vAaV2bpzUMIYXCtb+643J0JYn3In71iBNnncqF4a7tVaO+sj1rAtYwtAHZfyVKRmK8VrIKRxMCT1g9GQ7XF7oxsC/nimhCSWy3Rd8AU91E7hWaFxFAteN7X3+eht6q6fIrpb0tmUHyAR3x5GpES0mSs21xmQk1WhDRwEJLdU/RHyODDhgR+fxALd5sa42IJG6GKMWUKaYBUcANzDdDrQle256UEeh1w9zN0AWQys2rlp5OTk+1yqtlR0/+yV/N+cKaC8G1IkBFEedcAdKlDMvSsxH2xzKuIfpdur1vc8gL72/5YLQt6lR4HRkcbFUjY7tHNY/VVAMkDzMVP4PHdq+kdXT7RpHOEwEukvaG/tsf8EaVKk83LikN98Xpa/HzRuTv4xmFvfb5bKCTHL+T9523/6tvUQaQ+mNyAA="
-    },
-    {
-      "key": "悠悠",
-      "name": "🥇｜悠悠｜高清◎秒播(無廣告+APP)",
-      "type": 3,
-      "api": "csp_Muou",
-      "playerType": 2,
-      "quickSearch": 1,
-      "ext": "caHR0cDovL2FwcC53dWlxLmNufOS8mOS8mOWFlHw0LjEuOA==",
-      "jar": "./jar/mi-0303.jar;md5;ec975f203099b42d6286751914e27fc9"
-    },
+
     {
       "key": "csp_Lgyy",
-      "name": "🥈｜流光｜高清◎秒播(浮水印廣告)",
+      "name": "📱｜流光｜高清◎秒播(APP源)",
       "type": 3,
       "jar": "./jar/mi-0319.jar;md5;b73ed98a0a285189794be3c8d9c3a335",
       "api": "csp_FreeOkGuard"
     },
     {
-      "key": "光速",
-      "name": "🥉｜光速｜高清◎順播(無廣告+APP)",
-      "type": 3,
-      "api": "csp_AppGetGuard",
-      "jar": "./jar/mi-0319.jar;md5;b73ed98a0a285189794be3c8d9c3a335",
-      "ext": "sHR2rlsfjI4L3t4RXQMkn97hxHYaEbu5lFfPUXOxEzpAZL11z+ayZEbLSb3vs/v8ZS0i6U3Oh/aCVpUdIeZzRgc5TQyB2k7aC0UwqxoW281lBnRyLoSPb+ejqJ92E4RYuH9BABywIr8NA9Bn0Ndnl5c+AJCGNVdUwDUcd6fmGzQoQ+VuzRpX5xfgCbnpjcTp56dL50nhDb7IIe7CtKv7pA=="
-    },
-    {
-      "key": "︎酷云",
-      "name": "🥉｜米兔｜低清◎順播(浮水印廣告+APP)",
-      "type": 3,
-      "quickSearch": 0,
-      "api": "csp_AppGetGuard",
-      "jar": "./jar/mi-0319.jar;md5;b73ed98a0a285189794be3c8d9c3a335",
-      "ext": "sHR2rlsfjI4L3t4RXQMkn4/zRHG7KueeJHsenaeUMOWp1EzObBSdbU9et5QXxSbLZNx3dMChdqtSieuV5wZj006LehfFeCmj8B095j2lIKIF0YoQe+MZcPjGy7gtOViYZ6wvyGkzWk6oD1mJmauAyZhYFgIf28dxzY5kbxJVtI2PjlO6xlD2NRNjVM5uVtSkhN2Pf9gmJ5qaWk40c4YC+w=="
-    },
-    {
       "key": "csp_Gz360",
-      "name": "🥇｜瓜子｜高清◎秒播(無廣告)",
+      "name": "📱｜瓜子｜高清◎秒播(APP源)",
       "type": 3,
       "jar": "./jar/mi-0319.jar;md5;b73ed98a0a285189794be3c8d9c3a335",
       "api": "csp_Gz360Guard"
     },
     {
-      "key": "优秀",
-      "name": "🥇｜优秀｜高清◎秒播(無廣告+APP)",
-      "type": 3,
-      "api": "csp_AppGetGuard",
-      "jar": "./jar/mi-0319.jar;md5;b73ed98a0a285189794be3c8d9c3a335",
-      "ext": "rpb8IjZTuzYSqZNn/sGvG+nmDP6c5rlJM5DTXdn6d/OdwIl8hAgvoCnQmL7YkzCXHe+hpViArom3TFB7ORHGx8Gsyk/NiHE7VuNzVMP/C+/r78ogd9EF54Pi+n6PkOaxl7jEppsqJjozMoCPS929dwPWfx4NGsZnpVFvANeZUOzlo4RKfmAaN35kAo+7amKcqawPF/jPPsCEXambLeH+PqICmlcdkCN+3k+Dft4Z8iA="
-    },
-    {
-      "key": "csp_Jpys",
-      "name": "🥇｜銀光｜高清◎秒播(無廣告)",
-      "type": 3,
-      "jar": "./jar/mi-0319.jar;md5;b73ed98a0a285189794be3c8d9c3a335",
-      "api": "csp_JpysGuard"
-    },
-    {
-      "key": "csp_Wwys",
-      "name": "🥇｜农民｜高清◎秒播(無廣告)",
-      "type": 3,
-      "api": "csp_WwysGuard",
-      "jar": "./jar/mi-0319.jar;md5;b73ed98a0a285189794be3c8d9c3a335",
-      "ext": "https://www.wwgz.cn"
-    },
-    {
       "key": "天天",
-      "name": "🥇｜天天｜高清◎秒播(無廣告+APP)",
+      "name": "📱｜天天｜高清◎秒播(APP源)",
       "type": 3,
       "api": "csp_AppRJGuard",
       "jar": "./jar/mi-0319.jar;md5;b73ed98a0a285189794be3c8d9c3a335",
@@ -88,33 +30,33 @@
     },
     {
       "key": "QD4K",
-      "name": "🐷猪猪┃QD4K",
+      "name": "📱｜快看｜高清◎秒播(待測)",
       "type": 3,
       "api": "csp_AppYsV2",
       "jar": "./jar/mi-0513.txt;md5;bcb27d2740df8d21bfc49c507432663a",
       "playerType": 2,
       "ext": "http://172.83.156.150:1010/api.php/app/"
     },
-        {
+    {
       "key": "csp_Wwys",
-      "name": "👨农民┃1080P",
+      "name": "📱｜农民｜高清◎秒播(APP源)",
       "type": 3,
       "quickSearch": 1,
       "api": "csp_Wwys",
       "jar": "./jar/mi-0513.txt;md5;bcb27d2740df8d21bfc49c507432663a",
       "ext": "https://www.wwgz.cn"
     },
-        {
+    {
       "key": "晴天",
-      "name": "☀️晴天┃1080P",
+      "name": "📱｜晴天｜高清◎秒播(APP源)",
       "type": 3,
       "api": "csp_AppGet",
       "jar": "./jar/mi-0513.txt;md5;bcb27d2740df8d21bfc49c507432663a",
       "ext": "sHR2rlsfjI4L3t4RXQMknxZ67tu9z+phb0aSTvZQgyA6q0xr5CADU+Ci4NlKxGdylKHER46Cs4iIIIx6DdbWw0Sng/Z0F+jfaucg9epO4FUb/E7RG8NezsS+R4Dvsb4o50UjQG9bvlSBY9p/s5XD9KtJNMrH5tj1EbC6eEwZ4KOT7oCjM7uBxZRVhTmijQCvcoza/h46Fz6BrnGO68PxIg=="
     },
-        {
+    {
       "key": "悠悠",
-      "name": "🏆悠悠┃1080P",
+      "name": "📱｜悠悠｜高清◎秒播(APP源)",
       "type": 3,
       "api": "csp_AppGet",
       "jar": "./jar/mi-0513.txt;md5;bcb27d2740df8d21bfc49c507432663a",
@@ -122,7 +64,7 @@
     },
     {
       "key": "彼岸",
-      "name": "🏖比岸┃1080P",
+      "name": "📱｜比岸｜高清◎秒播(APP源)",
       "type": 3,
       "api": "csp_AppGet",
       "jar": "./jar/mi-0513.txt;md5;bcb27d2740df8d21bfc49c507432663a",
@@ -130,7 +72,7 @@
     },
     {
       "key": "再看",
-      "name": "🔭再看┃1080P",
+      "name": "📱｜再看｜高清◎秒播(APP源)",
       "type": 3,
       "api": "csp_AppGet",
       "jar": "./jar/mi-0513.txt;md5;bcb27d2740df8d21bfc49c507432663a",
@@ -138,14 +80,14 @@
     },
     {
       "key": "牛牛",
-      "name": "🐂牛牛┃1080P",
+      "name": "📱｜牛牛｜高清◎秒播(APP源)",
       "type": 3,
       "api": "./py/mioaying.py",
       "ext": ""
     },
     {
       "key": "光速",
-      "name": "☁️云端┃1080P",
+      "name": "📱｜光速｜高清◎秒播(APP源)",
       "type": 3,
       "quickSearch": 1,
       "api": "csp_AppGet",
@@ -154,46 +96,14 @@
     },
     {
       "key": "人人",
-      "name": "⛄️人人┃1080P",
+      "name": "📱｜人人｜高清◎秒播(APP源)",
       "type": 3,
       "api": "csp_AppGet",
       "jar": "./jar/mi-0513.txt;md5;bcb27d2740df8d21bfc49c507432663a",
       "ext": "sHR2rlsfjI4L3t4RXQMknw+zXdsvYSFPrylVBk8Otj7BtrOcImUIxu7uCmi/oCEVSH+1Tuw/tXHzW47SGQsj8bRydPRgWesjHAxv9eu8eO9hOGeUeBKsucMHODs09HXY4kiPp3p1vemBghpvJFm9mx/FFTQYaEQ33Bpqwk73VkDa2zWgoB0CNuBseJhbj2hRKqOiT08iymzh4sSfhjJ5tbS5yTDxPIJAjwMijWuyOJB++d859vxajKD2Jg5qw0lv"
     },
-    {
-      "key": "电影",
-      "name": "🎬电影┃1080P",
-      "type": 3,
-      "quickSearch": 1,
-      "api": "csp_AppGet",
-      "jar": "./jar/mi-0513.txt;md5;bcb27d2740df8d21bfc49c507432663a",
-      "ext": "sHR2rlsfjI4L3t4RXQMkn0xaBCNcSQUCvczzn7zWpJd7PJ5uE10QNLrWWS17wAYgUMrJ+kztENaDom6MWpmmvbZdw38U+pT14qEwywuRW7eny/HInm+UXxpCyI8e5D7Y4kc2n0QBkeQ2Tk5Y0atLMuupC2ZGF68+oMVeX0Px9e9ODSiSspzQH/Rg1Sz5CHp0GKozVTjPIZHhO159i7A1HwZ+kk77Eh0E7AnBTt6qVBX5G+murD+CKjMLYo6MMmsE"
-    },
-    {
-      "key": "享趣",
-      "name": "🔎享趣┃1080P",
-      "type": 3,
-      "api": "csp_AppGet",
-      "jar": "./jar/mi-0513.txt;md5;bcb27d2740df8d21bfc49c507432663a",
-      "ext": "sHR2rlsfjI4L3t4RXQMknzdNfEmX+jzXPZb/mKHyGEy2TNjdEVXKnEaZcfRUBxi7/nuHzmnprt8K+u6bJZhSGnE60tMgmxrHuYgcW7vPq9rk2vuaIUDPSHUm/i4T6w079JPylMWG75rjEhWmZO6BNHpX+SyayDRv9fun7Lu6t0sxMhXSR3ErwCmwbxtmx0SI"
-    },
-    {
-      "key": "步步",
-      "name": "👟步步┃1080P",
-      "type": 3,
-      "api": "https://weixine.net/js/lib/drpy2.min.js",
-      "jar": "./jar/mi-0513.txt;md5;bcb27d2740df8d21bfc49c507432663a",
-      "ext": "https://gitee.com/smallmi1007/mimi/raw/master/ceshi.js"
-    },
-    {
-      "key": "追忆",
-      "name": "✴星光┃1080P",
-      "type": 3,
-      "quickSearch": 0,
-      "api": "csp_AppMiTo",
-      "jar": "./jar/mi-0513.txt;md5;bcb27d2740df8d21bfc49c507432663a",
-      "ext": "or8dey6pioFw+XxkF2wS/RAzk3DzRGdI670hdzQc+Mikgjqjk9TLUbAA9F0iudN1/EXY443m7GHk8GjSrx5HqSIJwhkFw/xSNAD7EWUrLDF6HohBg/KuqjTeaDuMIXz7cBXwt1KPJLptozlzoIMYeWIXu6G0zPvUHi/rxqkaq6IWp1t9tTKX7JnqKU/XhyNt"
-    },
+
+
 
 
 
@@ -1004,7 +914,13 @@
       "filterable": 0,
       "changeable": 1
     },
-
+    {
+      "key": "csp_Jpys",
+      "name": "🥇｜銀光｜高清◎秒播(無廣告)",
+      "type": 3,
+      "jar": "./jar/mi-0319.jar;md5;b73ed98a0a285189794be3c8d9c3a335",
+      "api": "csp_JpysGuard"
+    },
     {
       "key": "py_OleVod",
       "name": "🥇｜歐沐｜高清◎秒播(無廣告)",
