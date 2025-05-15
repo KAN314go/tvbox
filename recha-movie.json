@@ -4565,17 +4565,6 @@
         "ua":"judy/5.2.1"
        },
        {
-        "name": "曉峰直播",
-        "playerType": 2,
-        "url": "./live/fong.m3u",
-        
-        "ua": "okhttp/3.15",
-        "timeout": 5,
-        "epg": "https://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/taipei",
-        "logo": "https://epg.112114.xyz/logo/{name}.png",
-        "pass": true
-      },
-       {
             "name": "LiTV",
             "type": 0,
             "url": "http://xg.52sw.top/iptv/litv.php",
@@ -4619,7 +4608,16 @@
       "playerType": 2,
       "url":"./live/4gtv-leifeng.m3u"
     },
-    
+    {
+      "name": "4GTV(曉峰)",
+      "playerType": 2,
+      "url": "./live/fong.m3u",     
+      "ua": "okhttp/3.15",
+      "timeout": 5,
+      "epg": "https://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/taipei",
+      "logo": "https://epg.112114.xyz/logo/{name}.png",
+      "pass": true
+    },
     {
       "name": "4GTV(ROB)",
       "playerType": 2,
