@@ -4607,12 +4607,18 @@
       "url":"https://smart.pendy.dpdns.org/m3u/merged_judy.m3u",
       "ua":"xieanqishiwoerzi/0.0.1"
     },
-        {
+    {
       "name":"4GTV(Migu)",
       "playerType": 2,
       "url":"./live/migu.m3u",
       "ua":"xieanqishiwoerzi/0.0.1"
     },
+            {
+      "name":"4GTV(leifeng)",
+      "playerType": 2,
+      "url":"./live/4gtv-leifeng.m3u"
+    },
+    
     {
       "name": "4GTV(ROB)",
       "playerType": 2,
