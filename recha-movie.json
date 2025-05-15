@@ -433,16 +433,6 @@
       "changeable": 1
     },
     {
-      "key": "csp_Uvod",
-      "name": "🥇｜優視｜藍光◎秒播(無廣告)",
-      "type": 3,
-      "api": "csp_Uvod",
-      "jar": "./jar/lem0318.jar;md5;626cd9f34ad3d3899bb2de54b1bc0a25",
-      "searchable": 1,
-      "quickSearch": 1,
-      "changeable": 1
-    },
-    {
       "key": "csp_狐狸君",
       "name": "🥇｜狐狸｜藍光◎秒播(無廣告)",
       "type": 3,
@@ -1677,6 +1667,16 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": "./json/A8影视.json"
+    },
+        {
+      "key": "csp_Uvod",
+      "name": "🥈｜優視｜低清◎秒播(無廣告)",
+      "type": 3,
+      "api": "csp_Uvod",
+      "jar": "./jar/lem0318.jar;md5;626cd9f34ad3d3899bb2de54b1bc0a25",
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 1
     },
     {
       "key": "圣农极光",
