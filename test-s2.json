@@ -4518,7 +4518,7 @@
     {
       "name": "MQiTV",
       "api": "csp_MQiTV",
-      "spider": "./mqitv.jar",
+      "spider": "./jar/mqitv.jar",
       "ext": "https://59.125.210.231:4433"
     },
     {
