@@ -5,7 +5,16 @@
   "sites": [
 
 
-
+    {
+      "key": "py_熱播APP",
+      "name": "🏆｜熱播｜高清◎秒播(無廣告+APP)",
+      "type": 3,
+      "api": "./py/热播APP.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "changeable": 1
+    },
     {
       "key": "豆瓣",
       "name": "🇹🇼｜熱播排行榜｜自動切換",
@@ -156,13 +165,21 @@
       "key": "py_海马",
       "name": "🏆｜海马｜高清◎秒播(無廣告)",
       "type": 3,
-      "api": "./py/海马影视APP.py"
+      "api": "./py/海马影视APP.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "changeable": 1
     },
     {
       "key": "py_貓眼",
       "name": "🏆｜貓眼｜藍光◎秒播(無廣告)",
       "type": 3,
-      "api": "./py/mioaying.py"
+      "api": "./py/mioaying.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "changeable": 1
     },
     {
       "key": "三六零弹幕",
