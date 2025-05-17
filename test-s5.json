@@ -4518,10 +4518,21 @@
     {
       "spider": "./jar/mqitv.jar",
       "jar": "./jar/mqitv.jar",
-      "name": "MQiTV",
+      "name": "MQi-TV",
       "api": "csp_MQiTV",
       "ext": "https://59.125.210.231:4433"
     },
+    {
+      "name": "色情直播",
+      "playerType": 2,
+      "url": "./live/change-av.txt",
+      "ua": "okhttp/3.15",
+      "timeout": 5,
+      "epg": "https://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/taipei",
+      "logo": "https://epg.112114.xyz/logo/{name}.png",
+      "pass": true
+    },
+    
     {
         "name": "小雲1台",
         "url": "./live/ueen.m3u",
