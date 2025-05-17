@@ -1342,7 +1342,6 @@
         "name": "📱｜永夜｜高清◎秒播(無廣告+APP)",
         "type": 3,
         "api": "csp_Xdai",
-        "playerType": 2,
         "searchable": 1,
         "changeable": 1,
         "quickSearch": 1,
@@ -1545,7 +1544,6 @@
     "key": "优质",
     "name": "📱｜优质｜高清◎秒播(無廣告+APP)",
     "type": 3,
-    "quickSearch": 1,
     "api": "csp_AppGet",
     "jar": "./jar/xiaosa.jar;md5;e4619193d9073ff124bb77f88f61d057",
     "searchable": 1,
@@ -2663,6 +2661,9 @@
       "key": "csp_555电影",
       "name": "🥈｜555｜高清◎秒播(浮水印廣告)",
       "type": 3,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
       "api": "csp_XBPQ",
       "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
       "ext": "./json/555電影.json"
@@ -2703,6 +2704,9 @@
       "key": "csp_四海影院",
       "name": "🥈｜四海｜高清◎秒播(浮水印廣告)",
       "type": 3,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
       "api": "csp_XBPQ",
       "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
       "ext": "./json/四海影院.json"
@@ -2711,6 +2715,9 @@
       "key": "csp_老王影视",
       "name": "🥈｜老王｜普清◎秒播(跑馬燈廣告)",
       "type": 3,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
       "api": "csp_XBPQ",
       "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
       "ext": {
@@ -2727,6 +2734,9 @@
       "key": "csp_网飞TV",
       "name": "🥈｜网飞｜普清◎秒播(跑馬燈廣告)",
       "type": 3,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,      
       "api": "csp_XBPQ",
       "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
       "ext": {
@@ -2970,6 +2980,9 @@
       "key": "金牌資源",
       "name": "🥈｜金資｜低清◎秒播(無廣告)",
       "type": 3,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,      
       "api": "csp_XBPQ",
       "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
       "ext": "./json/金牌資源.json"
@@ -3333,6 +3346,9 @@
       "key": "csp_奥特影视(PRO)",
       "name": "🎥｜奥普｜重測",
       "type": 3,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,      
       "api": "csp_XBPQ",
       "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
       "ext": {
@@ -3355,6 +3371,9 @@
       "key": "csp_奥特影视(CC)",
       "name": "🎥｜奥悉｜重測",
       "type": 3,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,      
       "api": "csp_XBPQ",
       "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
       "ext": {
@@ -3377,6 +3396,9 @@
       "key": "csp_奥特影视(COM)",
       "name": "🎥｜奥康｜重測",
       "type": 3,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,      
       "api": "csp_XBPQ",
       "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
       "ext": {
@@ -3399,11 +3421,11 @@
       "key": "csp_楓林網",
       "name": "🎥｜楓花｜重測",
       "type": 3,
-      "api": "csp_XBPQ",
-      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
       "searchable": 1,
       "quickSearch": 1,
-      "filterable": 1,
+      "filterable": 1,      
+      "api": "csp_XBPQ",
+      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
       "ext": "./json/楓林網.json"
     },
     {
@@ -3428,10 +3450,47 @@
         "地区": "大陸&香港&臺灣&美國&法國&英國&日本&韓國&德國&泰國&印度&意大利&西班牙&加拿大&其他||內地&韓國&香港&臺灣&日本&美國&泰國&英國&新加坡&其他||內地&港臺&日韓&歐美||國產&日本&歐美&其他"
       }
     },
-    {"key": "vod_drjs_爱看","name":"🧲｜爱看機器人｜全線路","type":3,"api":"./drpy_libs/drpy2.min.js","ext":"./drpy_js/ikanbot2.js"},
-    {"key": "drpy_js_xb6v","name": "🧲｜新版6v｜無廣","type": 3,"api": "./drpy_libs/drpy2.min.js","ext": "./drpy_js/xb6v.js","playerType": "1","searchable": 1},
-    {"key": "drpy_js_MP4US","name": "🧲｜MP4电影｜無廣","type": 3,"api": "./drpy_libs/drpy2.min.js","ext": "./drpy_js/mp4us.js","playerType": "1","searchable": 1},
-    {"key": "采集之王","name":"🧲｜採集大合集","type":3,"api":"https://raw.githubusercontent.com/maoystv/000/master/js/drpy2.min.js","searchable":1,"quickSearch":1,"ext":"https://git.acwing.com/YGFXZ/0/-/raw/main/采集之王_合_.js?type=url&params=https://git.acwing.com/YGFXZ/0/-/raw/main/采集静态.json"},
+    {
+      "key": "vod_drjs_爱看",
+      "name":"🧲｜爱看機器人｜全線路",
+      "type":3,      
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "api":"./drpy_libs/drpy2.min.js",
+      "ext":"./drpy_js/ikanbot2.js"
+    },
+    {
+      "key": "drpy_js_xb6v",
+      "name": "🧲｜新版6v｜無廣",
+      "type": 3,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,      
+      "api": "./drpy_libs/drpy2.min.js",
+      "ext": "./drpy_js/xb6v.js",
+      "playerType": "1"
+    },
+    {
+      "key": "drpy_js_MP4US",
+      "name": "🧲｜MP4电影｜無廣",
+      "type": 3,
+      "api": "./drpy_libs/drpy2.min.js",
+      "ext": "./drpy_js/mp4us.js",
+      "playerType": "1",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "采集之王",
+      "name":"🧲｜採集大合集",
+      "type":3,
+      "api":"https://raw.githubusercontent.com/maoystv/000/master/js/drpy2.min.js",
+      "searchable":1,
+      "quickSearch":1,
+      "ext":"https://git.acwing.com/YGFXZ/0/-/raw/main/采集之王_合_.js?type=url&params=https://git.acwing.com/YGFXZ/0/-/raw/main/采集静态.json"
+    },
     {
       "key": "vod_360",
       "name": "🧲｜360｜高清◎秒播(無廣告)",
@@ -3493,6 +3552,9 @@
       "key": "QD4K",
       "name": "🧲｜快看｜高清◎秒播(全版廣告)",
       "type": 3,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
       "api": "csp_AppYsV2",
       "jar": "./jar/mi-0513.txt;md5;bcb27d2740df8d21bfc49c507432663a",
       "playerType": 2,
@@ -3735,6 +3797,9 @@
         "key": "vod_茅台",
         "name": "🧲｜茅台｜高清◎慢播(浮水印廣告)",
         "type": 1,
+        "searchable": 1,
+        "quickSearch": 1,
+        "filterable": 1,
         "playUrl": "https://mtjiexi.cc:966/?url=",
         "api": "https://caiji.maotaizy.cc/api.php/provide/vod/from/mtm3u8/at/josn/"
     },
@@ -3755,10 +3820,11 @@
       "key": "vod_黑墙",
       "name": "🧲｜黑墙｜普清◎慢播(浮水印廣告)",
       "type": 1,
-      "api": "https://blackwallvideo.online/api.php/provide/vod/",
-      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
       "searchable": 1,
-      "quickSearch": 1
+      "quickSearch": 1,
+      "filterable": 1,      
+      "api": "https://blackwallvideo.online/api.php/provide/vod/",
+      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5"
     },
     {
       "key": "vod_豆瓣",
@@ -3938,7 +4004,9 @@
         "key": "曼波动漫",
         "name": "动漫｜曼波",
         "type": 3,
+        "searchable": 1,
         "quickSearch": 1,
+        "filterable": 1,
         "api": "csp_AppGet",
         "jar": "./jar/xiaosa.jar;md5;e4619193d9073ff124bb77f88f61d057",
         "ext": {
@@ -3953,7 +4021,9 @@
         "key": "咕咕动漫",
         "name": "动漫｜咕咕",
         "type": 3,
+        "searchable": 1,
         "quickSearch": 1,
+        "filterable": 1,
         "api": "csp_AppGet",
         "jar": "./jar/xiaosa.jar;md5;e4619193d9073ff124bb77f88f61d057",
         "ext": {
@@ -3968,7 +4038,9 @@
         "key": "米饭动漫",
         "name": "动漫｜米饭",
         "type": 3,
+        "searchable": 1,
         "quickSearch": 1,
+        "filterable": 1,
         "api": "csp_AppGet",
         "jar": "./jar/xiaosa.jar;md5;e4619193d9073ff124bb77f88f61d057",
         "ext": {
@@ -4016,6 +4088,9 @@
       "key": "csp_饼干动漫",
       "name": "动漫｜饼干",
       "type": 3,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,      
       "api": "csp_XBPQ",
       "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
       "ext": "./json/餅乾動漫.json"
@@ -4071,6 +4146,9 @@
       "key": "csp_白狐",
       "name": "动漫｜白狐",
       "type": 3,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
       "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
       "api": "csp_XBPQ",
       "ext": "./json/白狐動畫.json"
@@ -4240,6 +4318,9 @@
       "key": "drpy_js_去看吧",
       "name": "动漫｜去看吧",
       "type": 3,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,      
       "api": "./drpy_libs/drpy2.min.js",
       "ext": "./drpy_js/去看吧.js"
     },
@@ -4247,6 +4328,9 @@
       "key": "drpy_js_奇米动漫",
       "name": "动漫｜奇米动漫",
       "type": 3,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,      
       "api": "./drpy_libs/drpy2.min.js",
       "ext": "./drpy_js/奇米动漫.js"
     },
@@ -4254,6 +4338,9 @@
       "key": "动画片",
       "name": "动漫｜动画片",
       "type": 3,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,      
       "api": "./drpy_libs/drpy2.min.js",
       "ext": "./drpy_js/DHPDQ.js"
     },
@@ -4261,6 +4348,9 @@
       "key": "动漫岛",
       "name": "动漫岛",
       "type": 3,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,      
       "api": "./drpy_libs/drpy2.min.js",
       "ext": "./drpy_js/DMD.js"
     },
@@ -4268,6 +4358,9 @@
       "key": "好看动漫",
       "name": "动漫｜好看",
       "type": 3,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,      
       "api": "./drpy_libs/drpy2.min.js",
       "ext": "./drpy_js/HKDM.js"
     },
@@ -4275,6 +4368,9 @@
       "key": "drpy_js_爱弹幕",
       "name": "动漫｜爱弹幕",
       "type": 3,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,      
       "api": "./drpy_libs/drpy2.min.js",
       "ext": "./drpy_js/爱弹幕.js"
     },
@@ -4282,6 +4378,9 @@
       "key": "drpy_js_路漫漫",
       "name": "动漫｜路漫漫",
       "type": 3,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,      
       "api": "./drpy_libs/drpy2.min.js",
       "ext": "./drpy_js/路漫漫.js"
     },
@@ -4300,6 +4399,9 @@
       "key": "动漫巴士",
       "name": "动漫｜動漫巴士｜道長",
       "type": 3,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,      
       "api": "./drpy_libs/drpy2.min.js",
       "ext": "./drpy_js/动漫巴士.js"
     },
@@ -4307,17 +4409,19 @@
       "key": "hipy_js_七色番[漫]",
       "name": "动漫｜七色番",
       "type": 3,
-      "api": "./drpy_libs/drpy2.min.js",
       "searchable": 1,
       "quickSearch": 1,
-      "filterable": 1,
-      "order_num": 0,
+      "filterable": 1,      
+      "api": "./drpy_libs/drpy2.min.js",
       "ext": "./drpy_js/七色番[漫].js"
     },
     {
       "key": "奇米动漫",
       "name": "动漫｜奇米",
       "type": 3,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,      
       "api": "./drpy_libs/drpy2.min.js",
       "ext": "./drpy_js/奇米动漫.js"
     },
@@ -4325,6 +4429,9 @@
       "key": "drpy_js_58动漫",
       "name": "动漫｜58动漫",
       "type": 3,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,      
       "api": "./drpy_libs/drpy2.min.js",
       "ext": "./drpy_js/58动漫.js"
     },
@@ -4413,6 +4520,9 @@
       "key": "大米动漫",
       "name": "动漫｜大米",
       "type": 3,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,      
       "api": "./drpy_libs/drpy2.min.js",
       "ext": "./drpy_js/大米动漫.js"
     },
