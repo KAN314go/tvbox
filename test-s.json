@@ -4515,7 +4515,12 @@
     }
   ],
   "lives": [
-
+    {
+      "name": "MQiTV",
+      "api": "csp_MQiTV",
+      "spider": "./mqitv.jar",
+      "ext": "https://59.125.210.231:4433"
+    },
     {
         "name": "小雲1台",
         "url": "./live/ueen.m3u",
