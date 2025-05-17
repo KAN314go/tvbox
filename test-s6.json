@@ -5,16 +5,7 @@
   "sites": [
 
 
-    {
-      "key": "py_熱播APP",
-      "name": "🏆｜熱播｜高清◎秒播(無廣告+APP)",
-      "type": 3,
-      "api": "./py/热播APP.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "changeable": 1
-    },
+
     {
       "key": "豆瓣",
       "name": "🇹🇼｜熱播排行榜｜自動切換",
@@ -582,9 +573,19 @@
       "quickSearch": 1,
       "filterable": 1
     },
+        {
+      "key": "py_熱播APP",
+      "name": "🥇｜熱播｜高清◎秒播(無廣告+APP)",
+      "type": 3,
+      "api": "./py/热播APP.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "changeable": 1
+    },
     {
       "key": "光速",
-      "name": "🥇｜光速｜藍光◎秒播(無廣告+APP)",
+      "name": "🥇｜光速｜高清◎秒播(無廣告+APP)",
       "type": 3,
       "api": "csp_Xdai",
       "jar": "./jar/xiaosa.jar;md5;e4619193d9073ff124bb77f88f61d057",
@@ -629,11 +630,6 @@
       "jar": "./jar/mi-0513.txt;md5;bcb27d2740df8d21bfc49c507432663a",
       "ext": "https://www.wwgz.cn"
     },
-
-
-
-
-
   {
     "key": "zxzj",
     "name": "🥇｜在线｜高清◎順播(隨機廣告+)",
@@ -1163,31 +1159,12 @@
       "filterable": 1,
       "ext": "./json/即看.json"
     },
-    {
-      "key": "金星影视",
-      "name": "🥇｜金星｜高清◎秒播(無廣告)",
-      "type": 3,
-      "api": "csp_WebJP",
-      "jar": "./jar/tvkj.jar",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": "KhY021WelCEl+6MsvwnzaPusskysEhxc/i3d/FHwReBTtZTeDEVZJbQKKez3K+OxlrjAIMdUpAUxP8fGystYn0Hss098UFVR69Qm2ARgmeZN86q8Ww=="
-    },
+
     {
       "key": "csp_可可",
       "name": "🥇｜可可｜高清◎秒播(無廣告)",
       "type": 3,
       "api": "./py/py_keke.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1
-    },
-    {
-      "key": "py_国外剧app",
-      "name": "🥇｜外劇｜高清◎秒播(無廣告+APP)",
-      "type": 3,
-      "api": "./py/py_国外剧app.py",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1
@@ -1203,8 +1180,28 @@
       "changeable": 1
     },
     {
+      "key": "金星影视",
+      "name": "📱｜金星｜高清◎秒播(無廣告)",
+      "type": 3,
+      "api": "csp_WebJP",
+      "jar": "./jar/tvkj.jar",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "KhY021WelCEl+6MsvwnzaPusskysEhxc/i3d/FHwReBTtZTeDEVZJbQKKez3K+OxlrjAIMdUpAUxP8fGystYn0Hss098UFVR69Qm2ARgmeZN86q8Ww=="
+    },
+    {
+      "key": "py_国外剧app",
+      "name": "📱｜外劇｜高清◎秒播(無廣告+APP)",
+      "type": 3,
+      "api": "./py/py_国外剧app.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
       "key": "雨滴",
-      "name": "🥇｜雨滴｜高清◎秒播(無廣告+APP)",
+      "name": "📱｜雨滴｜高清◎秒播(無廣告+APP)",
       "type": 3,
       "api": "csp_Xdai",
       "jar": "./jar/spider.jar;md5;b836384ede14d319c1dcbf257a264eda",
@@ -1213,10 +1210,9 @@
       "filterable": 1,
       "ext": "jaHR0cDovL2M4dzJvdjd1NXdnMnoxbzhwMjFjLmFsaXl1bmNzLmNsaWNrfGs5bzNwMmM4YjdtM3owbzh8azlvM3AyYzhiN20zejBvOHwxMDA="
     },
-
     {
       "key": "潮流",
-      "name": "🥇｜潮流｜高清◎秒播(無廣告+APP)",
+      "name": "📱｜潮流｜高清◎秒播(無廣告+APP)",
       "type": 3,
       "jar": "./jar/feimao0403.txt;md5;5a0f3bef8b15b9bd2be978359fd5f4cd",
       "api": "csp_AppRJ",
@@ -1224,7 +1220,7 @@
     },
     {
       "key": "梦回",
-      "name": "🥇｜梦回｜高清◎秒播(無廣告+APP)",
+      "name": "📱｜梦回｜高清◎秒播(無廣告+APP)",
       "type": 3,
       "jar": "./jar/feimao0403.txt;md5;5a0f3bef8b15b9bd2be978359fd5f4cd",
       "api": "csp_AppRJ",
@@ -1232,7 +1228,7 @@
     },
     {
       "key": "嗨皮影视",
-      "name": "🥇｜嗨皮｜高清◎秒播(無廣告+APP)",
+      "name": "📱｜嗨皮｜高清◎秒播(無廣告+APP)",
       "type": 3,
       "api": "./py/嗨皮APP.py",
       "searchable": 1,
@@ -1243,7 +1239,7 @@
     },
     {
       "key": "py_光速APP",
-      "name": "🥇｜光速｜高清◎秒播(無廣告+APP)",
+      "name": "📱｜光速｜高清◎秒播(無廣告+APP)",
       "type": 3,
       "api": "./py/光速APP.py",
       "searchable": 1,
@@ -1252,7 +1248,7 @@
     },
     {
       "key": "优质",
-      "name": "🥇｜優質｜高清◎秒播(無廣告+APP)",
+      "name": "📱｜優質｜高清◎秒播(無廣告+APP)",
       "type": 3,
       "api": "csp_Xdai",
       "jar": "./jar/feimao0403.txt;md5;5a0f3bef8b15b9bd2be978359fd5f4cd",
@@ -1263,7 +1259,7 @@
     },
     {
       "key": "py_若惜追剧APP",
-      "name": "🥇｜若惜｜高清◎秒播(無廣告+APP)",
+      "name": "📱｜若惜｜高清◎秒播(無廣告+APP)",
       "type": 3,
       "api": "./py/若惜追剧APP.py",
       "searchable": 1,
@@ -1273,7 +1269,7 @@
     },
     {
       "key": "py_哇哇APP",
-      "name": "🥇｜哇哇｜高清◎秒播(無廣告+APP)",
+      "name": "📱｜哇哇｜高清◎秒播(無廣告+APP)",
       "type": 3,
       "api": "./py/哇哇APP.py",
       "searchable": 1,
@@ -1283,7 +1279,7 @@
     },
     {
       "key": "py_云端APP",
-      "name": "🥇｜雲端｜高清◎秒播(無廣告+APP)",
+      "name": "📱｜雲端｜高清◎秒播(無廣告+APP)",
       "type": 3,
       "api": "./py/云端APP.py",
       "searchable": 1,
@@ -1293,7 +1289,7 @@
     },
     {
       "key": "py_云速影视",
-      "name": "🥇｜云速｜高清◎秒播(無廣告+APP)",
+      "name": "📱｜云速｜高清◎秒播(無廣告+APP)",
       "type": 3,
       "api": "./py/云速影视APP.py",
       "searchable": 1,
@@ -1303,7 +1299,7 @@
     },
     {
       "key": "csp_sbb",
-      "name": "🥇｜布布｜高清◎秒播(無廣告+APP)",
+      "name": "📱｜布布｜高清◎秒播(無廣告+APP)",
       "type": 3,
       "api": "csp_Czsapp",
       "searchable": 1,
@@ -1315,7 +1311,7 @@
     },
     {
         "key": "热播弹幕",
-        "name": "🥇｜热播｜高清◎秒播(無廣告+APP)",
+        "name": "📱｜热播｜高清◎秒播(無廣告+APP)",
         "type": 3,
         "api": "csp_TianTian",
         "jar": "./jar/pizza.jar",
@@ -1326,7 +1322,7 @@
     },
     {
         "key": "天天弹幕",
-        "name": "🥇｜天天｜高清◎秒播(無廣告+APP)",
+        "name": "📱｜天天｜高清◎秒播(無廣告+APP)",
         "type": 3,
         "api": "csp_TianTian",
         "jar": "./jar/pizza.jar",
@@ -1338,7 +1334,7 @@
     },
     {
         "key": "永夜",
-        "name": "🥇｜永夜｜高清◎秒播(無廣告+APP)",
+        "name": "📱｜永夜｜高清◎秒播(無廣告+APP)",
         "type": 3,
         "api": "csp_Xdai",
         "playerType": 2,
@@ -1347,7 +1343,7 @@
     },
     {
         "key": "洽洽影视",
-        "name": "🥇｜洽洽｜高清◎秒播(無廣告+無推薦+APP)",
+        "name": "📱｜洽洽｜高清◎秒播(無廣告+無推薦+APP)",
         "jar": "./jar/pizza.jar",
         "type": 3,
         "api": "csp_AppGZ",
@@ -1358,7 +1354,7 @@
     },
     {
         "key": "韩小圈",
-        "name": "🥇｜韩圈｜高清◎秒播(無廣告+無推薦+APP)",
+        "name": "🥇｜韩圈｜高清◎秒播(無廣告+無推薦)",
         "type": 3,
         "api": "csp_HanXiaoQuan",
         "jar": "./jar/pizza.jar",
