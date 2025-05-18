@@ -7,7 +7,44 @@
     "sites": [ 
 
 
-
+    {
+      "key": "py_UpFuHn",
+      "name": "🥇｜嗨影｜高清◎秒播(無廣告)",
+      "type": 4,
+      "api": "https://py.doube.eu.org/spider?site=UpFuHn",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 0,
+      "changeable": 1
+    },
+    {
+      "key": "py_hitv.py",
+      "name": "🥇｜嗨影｜高清◎秒播(無廣告)",
+      "type": 3,
+      "api": "https://git.acwing.com/ocean2025/ocean/-/raw/main/py/py_hitv.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "py_hitvAPP",
+      "name": "🥇｜嗨影｜高清◎秒播(無廣告+APP)",
+      "type": 3,
+      "api": "./py/hitvAPP.py",
+      "searchable": 1,
+      "filterable": 0,
+      "changeable": 0
+    },
+    {
+      "key": "hitv_emby",
+      "name": "🥇｜嗨影｜高清◎秒播(無廣告+emby)",
+      "type": 3,
+      "api": "./py/hitv_emby.py",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 0,
+      "changeable": 0
+    },
 
     {
       "key": "晴天",
