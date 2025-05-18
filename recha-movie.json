@@ -1300,6 +1300,43 @@
       }
     },
     {
+      "key": "csp_XBPQ_淘剧",
+      "name": "🥇｜淘剧｜高清◎秒播(無廣告+無篩選)",
+      "type": 3,
+      "api": "csp_XBPQ",
+      "jar": "./jar1/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": {
+        "分类url": "http://www.taoju.tv/list/{cateId}.html",
+        "分类"   : "电影$1#连续剧$2#动漫$3#综艺$4"
+      }
+    },
+    {
+      "key": "浪酷影视",
+      "name": "🥇｜浪酷｜高清◎秒播(無廣告)",
+      "type": 3,
+      "api": "csp_AppRJ",
+      "jar": "./jar/xiaosa-0518.jar;md5;ee38cccf7fa23258b09670785aa96665",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "ext": {"url": "http://v.lkuys.cn"}
+    },
+    {
+      "key": "A8",
+      "name": "🥇｜A8｜高清◎秒播(無廣告+無篩選)",
+      "type": 3,
+      "api": "csp_XBPQ",
+      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+      "playerType": 2,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "./json/A8影视.json"
+    },
+    {
       "key": "py_奇蹟APP",
       "name": "📱｜奇蹟｜高清◎秒播｜(無廣告+APP)",
       "type": 3,
@@ -1852,43 +1889,6 @@
         "deviceId": ""                         ,
         "version" : ""
       }
-    },
-    {
-      "key": "csp_XBPQ_淘剧",
-      "name": "🥇｜淘剧｜高清◎秒播(無廣告+無篩選)",
-      "type": 3,
-      "api": "csp_XBPQ",
-      "jar": "./jar1/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": {
-        "分类url": "http://www.taoju.tv/list/{cateId}.html",
-        "分类"   : "电影$1#连续剧$2#动漫$3#综艺$4"
-      }
-    },
-    {
-      "key": "浪酷影视",
-      "name": "🥇｜浪酷｜高清◎秒播(無廣告)",
-      "type": 3,
-      "api": "csp_AppRJ",
-      "jar": "./jar/xiaosa-0518.jar;md5;ee38cccf7fa23258b09670785aa96665",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "ext": {"url": "http://v.lkuys.cn"}
-    },
-    {
-      "key": "A8",
-      "name": "🥇｜A8｜高清◎秒播(無廣告+無篩選)",
-      "type": 3,
-      "api": "csp_XBPQ",
-      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-      "playerType": 2,
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": "./json/A8影视.json"
     },
     {
       "key": "csp_Uvod",
