@@ -5006,6 +5006,16 @@
       }
     },
     {
+      "name": "live 4 play",
+      "playerType": 2,
+      "url": "./live/175.txt",
+      "ua": "okhttp/3.15",
+      "timeout": 5,
+      "epg": "https://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/taipei",
+      "logo": "https://epg.112114.xyz/logo/{name}.png",
+      "pass": true
+    },
+    {
       "name": "香蕉-Gather",
       "playerType": 2,
       "url": "https://tv.iill.top/m3u/Gather",
@@ -5319,18 +5329,6 @@
       "pass": true
     },
     {
-      "name": "寶盒直播(失效)",
-      "type": 0,
-      "playerType": 2,
-      "ua": "AptvPlayer/1.3.3",
-      "url": "http://a90120.serv00.net/anbox/moonlight.txt",
-      "timeout": 5,
-      "epg": "https://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Hong_Kong",
-      "logo": "https://epg.112114.xyz/logo/{name}.png",
-      "jar": "https://fm.t4tv.hz.cz/jar/custom_spider.jar",
-      "pass": true
-    },
-    {
       "name": "223線路(故障)",
       "type": 0,
       "url": "./live/666-live.txt",
@@ -5346,34 +5344,6 @@
       "epg": "https://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/taipei",
       "logo": "https://epg.112114.xyz/logo/{name}.png",
       "pass": true
-    },
-    {
-      "name": "live 4 play(故障)",
-      "playerType": 2,
-      "url": "./live/175.txt",
-      "ua": "okhttp/3.15",
-      "timeout": 5,
-      "epg": "https://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/taipei",
-      "logo": "https://epg.112114.xyz/logo/{name}.png",
-      "pass": true
-    },
-    {
-      "name": "天天開心(故障)",
-      "type": 0,
-      "url": "http://ttkx.cc:55/lib/kx2024.txt",
-      "ua": "okhttp/3",
-      "playerType": 2,
-      "epg": "http://diyp2.112114.xyz/?ch={name}&date={date}",
-      "logo": "http://diyp2.112114.xyz/logo/{name}.png",
-      "pass": true
-    },
-    {
-      "name": "PIXMAN(故障)",
-      "type": 0,
-      "url": "./live/ueen.txt",
-      "ua": "okhttp/3.15",
-      "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
-      "logo": "https://epg.112114.xyz/logo/{name}.png"
     }
   ],
   "parses": [
