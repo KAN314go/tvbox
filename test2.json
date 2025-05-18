@@ -9,6 +9,7 @@
             "name": "移动｜APP",
             "type": 3,
             "api": "csp_YD",
+            "jar": "./jar/xiaosa-0518.jar;md5;ee38cccf7fa23258b09670785aa96665",      
             "searchable": 1,
             "quickSearch": 1
         },
