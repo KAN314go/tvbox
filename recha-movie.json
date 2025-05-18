@@ -1351,13 +1351,18 @@
       "type": 3,
       "jar": "./jar/feimao0403.txt;md5;5a0f3bef8b15b9bd2be978359fd5f4cd",
       "api": "csp_AppRJ",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
       "ext": "sHR2rlsfjI4L3t4RXQMknxhunFUlA4159TKiKvIPpfcM1xianxebcSLajBbwFymqC+z9WoGzQYbh7FSvh8KdiC0BKF0CalaPaCEMOZm+ClGEeNzXAaR0FnrV04SiB2NK"
     },
     {
       "key": "橘子",
       "name": "📱｜橘子｜APP",
       "type": 3,
+      "searchable": 1,
       "quickSearch": 1,
+      "filterable": 1,
       "api": "csp_AppGet",
       "jar": "./jar/xiaosa-0518.jar;md5;ee38cccf7fa23258b09670785aa96665",
       "ext": {
@@ -1372,8 +1377,9 @@
       "key": "玉米",
       "name": "📱｜玉米｜APP",
       "type": 3,
+      "searchable": 1,
       "quickSearch": 1,
-      "api": "csp_AppGet",
+      "filterable": 1,      "api": "csp_AppGet",
       "jar": "./jar/xiaosa-0518.jar;md5;ee38cccf7fa23258b09670785aa96665",
       "ext": {
         "url"     : "https://www.zjc.app",
@@ -1387,7 +1393,9 @@
       "key": "米兔",
       "name": "📱｜米兔｜APP",
       "type": 3,
+      "searchable": 1,
       "quickSearch": 1,
+      "filterable": 1,
       "api": "csp_AppGet",
       "jar": "./jar/xiaosa-0518.jar;md5;ee38cccf7fa23258b09670785aa96665",
       "ext": {
@@ -1402,7 +1410,9 @@
       "key": "电影",
       "name": "📱｜电影｜APP",
       "type": 3,
+      "searchable": 1,
       "quickSearch": 1,
+      "filterable": 1,
       "api": "csp_AppGet",
       "jar": "./jar/xiaosa-0518.jar;md5;ee38cccf7fa23258b09670785aa96665",
       "ext": {
@@ -1417,7 +1427,9 @@
       "key": "外剧",
       "name": "📱｜外剧｜APP",
       "type": 3,
+      "searchable": 1,
       "quickSearch": 1,
+      "filterable": 1,
       "api": "csp_AppGet",
       "jar": "./jar/xiaosa-0518.jar;md5;ee38cccf7fa23258b09670785aa96665",
       "ext": {
@@ -1432,7 +1444,9 @@
       "key": "鲨鱼",
       "name": "📱｜鲨鱼｜APP",
       "type": 3,
+      "searchable": 1,
       "quickSearch": 1,
+      "filterable": 1,
       "api": "csp_AppGet",
       "jar": "./jar/xiaosa-0518.jar;md5;ee38cccf7fa23258b09670785aa96665",
       "ext": {
@@ -1447,7 +1461,9 @@
       "key": "驿站",
       "name": "📱｜驿站｜APP",
       "type": 3,
+      "searchable": 1,
       "quickSearch": 1,
+      "filterable": 1,
       "api": "csp_AppMuou",
       "jar": "./jar/xiaosa-0518.jar;md5;ee38cccf7fa23258b09670785aa96665",
       "ext": {
@@ -1471,7 +1487,9 @@
       "key": "光速",
       "name": "📱｜光速｜高清◎秒播(無廣告+APP)",
       "type": 3,
+      "searchable": 1,
       "quickSearch": 1,
+      "filterable": 1,
       "api": "csp_AppGet",
       "jar": "./jar/xiaosa-0518.jar;md5;ee38cccf7fa23258b09670785aa96665",
       "ext": {
@@ -1516,7 +1534,9 @@
       "key": "雨滴",
       "name": "📱｜雨滴｜高清◎秒播(無廣告+APP)",
       "type": 3,
+      "searchable": 1,
       "quickSearch": 1,
+      "filterable": 1,
       "api": "csp_AppGet",
       "jar": "./jar/xiaosa-0518.jar;md5;ee38cccf7fa23258b09670785aa96665",
       "ext": {
@@ -1531,6 +1551,9 @@
       "key": "潮流",
       "name": "📱｜潮流｜高清◎秒播(無廣告+APP)",
       "type": 3,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
       "jar": "./jar/feimao0403.txt;md5;5a0f3bef8b15b9bd2be978359fd5f4cd",
       "api": "csp_AppRJ",
       "ext": "sHR2rlsfjI4L3t4RXQMkn9mmg6Ofmy66+wcs9waIyn4hKqT9jG9s4kO6qzcu2OSqWS1/T+wfkqe+UwoipekwvcM11PTDrQqKYI8lmMXUc1vBHxp/2uWIw5HUoscBNWEb"
@@ -1566,13 +1589,15 @@
       "api": "./py/光速APP.py",
       "searchable": 1,
       "filterable": 0,
-      "changeable": 0
+      "changeable": 1
     },
     {
       "key": "优质",
       "name": "📱｜優質｜高清◎秒播(無廣告+APP)",
       "type": 3,
+      "searchable": 1,
       "quickSearch": 1,
+      "filterable": 1,
       "api": "csp_AppGet",
       "jar": "./jar/xiaosa-0518.jar;md5;ee38cccf7fa23258b09670785aa96665",
       "ext": {
@@ -1589,9 +1614,9 @@
       "type": 3,
       "api": "./py/若惜追剧APP.py",
       "searchable": 1,
-      "quickSearch": 0,
-      "filterable": 0,
-      "changeable": 0
+      "quickSearch": 1,
+      "filterable": 1,
+      "changeable": 1
     },
     {
       "key": "py_哇哇APP",
@@ -1601,7 +1626,7 @@
       "searchable": 1,
       "quickSearch": 0,
       "filterable": 0,
-      "changeable": 0
+      "changeable": 1
     },
     {
       "key": "py_云端APP",
@@ -1611,7 +1636,7 @@
       "searchable": 1,
       "quickSearch": 0,
       "filterable": 0,
-      "changeable": 0
+      "changeable": 1
     },
     {
       "key": "py_云速影视",
@@ -1673,7 +1698,9 @@
       "key": "永夜",
       "name": "📱｜永夜｜高清◎秒播(無廣告+APP)",
       "type": 3,
+      "searchable": 1,
       "quickSearch": 1,
+      "filterable": 1,
       "api": "csp_AppMuou",
       "jar": "./jar/xiaosa-0518.jar;md5;ee38cccf7fa23258b09670785aa96665",
       "ext": {
@@ -1687,7 +1714,9 @@
       "key": "星河",
       "name": "📱｜星河｜高清◎秒播(無廣告+APP)",
       "type": 3,
+      "searchable": 1,
       "quickSearch": 1,
+      "filterable": 1,
       "api": "csp_AppGet",
       "jar": "./jar/xiaosa-0518.jar;md5;ee38cccf7fa23258b09670785aa96665",
       "ext": {
@@ -1725,8 +1754,9 @@
       "type": 3,
       "api": "csp_WebNK",
       "jar": "http://我不是.摸鱼儿.com/by/jar/moyuer.php;md5;a5f4d9e487c8a0bc7a85077839a4dd05",
-      "searchable": 0,
-      "changeable": 0,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
       "ext": "w7TCmsONw6LDrsKYwoXCosKcwqDCrcKawqDDosKnwqTCoMKjwrPCosKpw7DDscKqXsKewpvDncOpw57Cp8OnwphXXFDCoMOnw6PDqcKhbVBXwovlh77phZvmkJ/lkZzCpuWGn+S9h+WQp2rlv6roqLnotr7mvInnrZPCkFdcUMKgw5fDn8Ocw6zCrMKgwqR7w57DrMKhwrPCmlrCp8KlwqnDosKpwrDCr8KhwrA="
     },
     {
@@ -1864,7 +1894,9 @@
       "key": "彼岸",
       "name": "📱｜彼岸｜高清◎秒播(浮水印廣告+APP源)",
       "type": 3,
+      "searchable": 1,
       "quickSearch": 1,
+      "filterable": 1,
       "api": "csp_AppGet",
       "jar": "./jar/xiaosa-0518.jar;md5;ee38cccf7fa23258b09670785aa96665",
       "ext": {
@@ -1879,7 +1911,9 @@
       "key": "在看",
       "name": "📱｜再看｜高清◎秒播(無廣告+APP源+常常死)",
       "type": 3,
+      "searchable": 1,
       "quickSearch": 1,
+      "filterable": 1,
       "api": "csp_AppGet",
       "jar": "./jar/xiaosa-0518.jar;md5;ee38cccf7fa23258b09670785aa96665",
       "ext": {
@@ -2055,8 +2089,9 @@
       "type": 3,
       "api": "csp_WexF4kvmGuard",
       "jar": "./jar/wex.txt;md5;d51df16fd164ac4c50295520b455be7d",
-      "searchable": 0,
-      "changeable": 1
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
     },
     {
       "key": "csp_七味影院",
