@@ -4955,7 +4955,6 @@
     {
       "name": "沐辰直播(MyTvSuper)",
       "url": "https://json.doube.eu.org/Doubebly/MyTvSuper/",
-      //"api": "./live/mytvsuper.m3u",
       "timeout": 5,
       "pass": true
     },
@@ -4964,21 +4963,6 @@
       "type": 3, 
       "api": "./py/live_smt.py", 
       "pass": true
-    },
-    {
-      "name": "smart(Judy)",
-      "playerType": 2,
-      "url": "./live/judy.txt",
-      "ua": "judy/5.2.1"
-    },
-    {
-      "name": "smart(pendy)",
-      "playerType": 2,
-      "url": "./live/smart-pendy.txt",
-      "ua": "okhttp/4.12.0 judy/5.2.1",
-      "timeout": 5,
-      "epg": "https://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/taipei",
-      "logo": "https://epg.112114.xyz/logo/{name}.png"
     },
     {
       "name": "曉峰直播",
