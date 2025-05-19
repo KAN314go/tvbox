@@ -4954,11 +4954,9 @@
     },
     {
       "name": "沐辰直播(MyTvSuper)",
-      "playerType": 2,
-      "api": "https://json.doube.eu.org/Doubebly/MyTvSuper/",
+      //"api": "https://json.doube.eu.org/Doubebly/MyTvSuper/",
+      "api": "./live/mytvsuper.m3u",
       "timeout": 5,
-      "epg": "https://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/taipei",
-      "logo": "https://epg.112114.xyz/logo/{name}.png",
       "pass": true
     },
     {
