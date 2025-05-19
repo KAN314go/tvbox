@@ -564,16 +564,6 @@
       "changeable": 1
     },
     {
-      "key": "py_魔方影视APP",
-      "name": "📱｜魔方｜藍光◎秒播(無廣告+部分線路有廣告)",
-      "type": 3,
-      "api": "./py/魔方影视APP.py",
-      "searchable": 1,
-      "quickSearch": 0,
-      "filterable": 0,
-      "changeable": 0
-    },
-    {
       "key": "真心影视",
       "name": "🥇｜真心｜藍光◎慢播(無廣告)",
       "type": 3,
@@ -1311,6 +1301,16 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": "./json/A8影视.json"
+    },
+    {
+      "key": "py_魔方影视APP",
+      "name": "📱｜魔方｜藍光◎秒播(無廣告+部分線路有廣告)",
+      "type": 3,
+      "api": "./py/魔方影视APP.py",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 0,
+      "changeable": 0
     },
     {
       "key": "py_奇蹟APP",
