@@ -564,16 +564,6 @@
       "changeable": 1
     },
     {
-      "key": "真心影视",
-      "name": "🥇｜真心｜藍光◎慢播(無廣告)",
-      "type": 3,
-      "api": "csp_WebGZ",
-      "jar": "./jar/feimao0403.txt;md5;5a0f3bef8b15b9bd2be978359fd5f4cd",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1
-    },
-    {
       "key": "csp_Wwys",
       "name": "🥇｜农民｜藍光◎慢播(無廣告)",
       "type": 3,
@@ -788,37 +778,6 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": "./json/飛快tv.json"
-    },
-    {
-      "key": "csp_GM_Hi视频",
-      "name": "🥇｜嗨雷｜高清◎秒播(無廣告)",
-      "type": 3,
-      "searchable": 1,
-      "changeable": 1,
-      "quickSearch": 0,
-      "style": {"type": "rect", "ratio": 0.71},
-      "api": "csp_GM",
-      "jar": "./jar/gm.jar;md5;3e59c9c3c50ea1d4609cec9dbee730c3",
-      "ext": {
-        "userScript": "./new_json/JS/hitv.user.js",
-        "debug": false,
-        "webViewSettings": {
-          "blockNetworkImage": true,
-          "blockList": ["https://*.google-analytics.com/*"]
-        },
-        "spider": {
-          "homeContent": {"loadUrl": "https://www.upfuhn.com/column/0.html"},
-          "categoryContent": {
-            "loadUrl": "https://www.upfuhn.com/column/${tid}.html"
-          },
-          "detailContent": {
-            "loadUrl": "https://www.upfuhn.com/play/${id}-1-0.html"
-          },
-          "searchContent": {
-            "loadUrl": "https://www.upfuhn.com/search/${key}.html"
-          }
-        }
-      }
     },
     {
       "key": "csp_真不卡",
@@ -1045,6 +1004,7 @@
       "name": "🥇｜永乐｜高清◎秒播(無廣告)",
       "type": 3,
       "api": "csp_XBPQ",
+      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
       "ext": {
         "请求头": "User-Agent$MOBILE_UA",
         "编码": "UTF-8",

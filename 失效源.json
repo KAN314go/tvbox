@@ -5,8 +5,47 @@
     "logo": "https://p3-pc.douyinpic.com/img/aweme-avatar/tos-cn-i-0813_6e2553f5708c414386eeca88b5f2674a~c5_300x300.jpeg?from=2956013662",
     "wallpaper": "https://picsum.photos/1080/",
     "sites": [ 
-
-
+    {
+      "key": "csp_GM_Hi视频",
+      "name": "🥇｜嗨雷｜高清◎秒播(無廣告)",
+      "type": 3,
+      "searchable": 1,
+      "changeable": 1,
+      "quickSearch": 0,
+      "style": {"type": "rect", "ratio": 0.71},
+      "api": "csp_GM",
+      "jar": "./jar/gm.jar;md5;3e59c9c3c50ea1d4609cec9dbee730c3",
+      "ext": {
+        "userScript": "./new_json/JS/hitv.user.js",
+        "debug": false,
+        "webViewSettings": {
+          "blockNetworkImage": true,
+          "blockList": ["https://*.google-analytics.com/*"]
+        },
+        "spider": {
+          "homeContent": {"loadUrl": "https://www.upfuhn.com/column/0.html"},
+          "categoryContent": {
+            "loadUrl": "https://www.upfuhn.com/column/${tid}.html"
+          },
+          "detailContent": {
+            "loadUrl": "https://www.upfuhn.com/play/${id}-1-0.html"
+          },
+          "searchContent": {
+            "loadUrl": "https://www.upfuhn.com/search/${key}.html"
+          }
+        }
+      }
+    },
+    {
+      "key": "真心影视",
+      "name": "🥇｜真心｜藍光◎慢播(無廣告)",
+      "type": 3,
+      "api": "csp_WebGZ",
+      "jar": "./jar/feimao0403.txt;md5;5a0f3bef8b15b9bd2be978359fd5f4cd",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
     {
       "key": "py_xiaohys",
       "name": "🏆｜小紅｜藍光◎秒播(無廣告)",
