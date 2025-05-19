@@ -1861,6 +1861,29 @@
       }
     },
     {
+      "key": "美帕影视",
+      "name": "📱｜美帕｜高清◎順播(無廣告+APP)",
+      "type": 3,
+      "api": "./py/美帕APP.py",
+      "searchable": 1,
+      "changeable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "playerType": 2
+    },
+    {
+      "key": "蝴蝶",
+      "name": "📱｜蝴蝶｜高清◎順播(無廣告+APP)",
+      "type": 3,
+      "api": "csp_Hudie",
+      "jar": "./jar/feimao0403.txt;md5;5a0f3bef8b15b9bd2be978359fd5f4cd",
+      "playerType": 2,
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 1,
+      "ext": "eaHR0cHM6Ly9kLmRjbW92aWUudG9w"
+    },
+    {
       "key": "csp_Uvod",
       "name": "🥈｜優視｜低清◎秒播(無廣告)",
       "type": 3,
@@ -3218,29 +3241,6 @@
       }
     },
     {
-      "key": "美帕影视",
-      "name": "📱｜美帕｜高清◎順播(無廣告+APP)",
-      "type": 3,
-      "api": "./py/美帕APP.py",
-      "searchable": 1,
-      "changeable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "playerType": 2
-    },
-    {
-      "key": "蝴蝶",
-      "name": "📱｜蝴蝶｜高清◎順播(無廣告+APP)",
-      "type": 3,
-      "api": "csp_Hudie",
-      "jar": "./jar/feimao0403.txt;md5;5a0f3bef8b15b9bd2be978359fd5f4cd",
-      "playerType": 2,
-      "searchable": 1,
-      "quickSearch": 0,
-      "filterable": 1,
-      "ext": "eaHR0cHM6Ly9kLmRjbW92aWUudG9w"
-    },
-    {
       "key": "csp_维思",
       "name": "🥉｜维思｜高清◎順播(浮水印廣告)",
       "type": 3,
@@ -3463,31 +3463,6 @@
       }
     },
     {
-      "key": "csp_奥特影视(PRO)",
-      "name": "🎥｜奥普｜重測",
-      "type": 3,
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "api": "csp_XBPQ",
-      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-      "ext": {
-        "主页url": "https://auete.pro/",
-        "數組": "class=\"trans_3\"&&</li>",
-        "标题": "title=\"&&\"",
-        "副标题": "class=\"hdtag\">&&<",
-        "简介": "<p>◎影片简介: </p>&&<div class=\"clear\">",
-        "导演": "导演: &&</p>",
-        "主演": "主演: &&</p>",
-        "线路数组": "class=\"clearfix mt-3\"&&</div>",
-        "线路标题": "』&&：<",
-        "分类url": "https://auete.pro/{cateId}/{class}/index{catePg}.html[https://auete.pro/{cateId}/{class}/index.html]",
-        "筛选": "1",
-        "剧情": "动作片$dzp#喜剧片$xjp#爱情片$aqp#科幻片$khp#恐怖片$kbp#剧情片$jqp#战争片$zzp#惊悚片$jsp||香港剧$tvbgj#国产剧$neidi#台湾剧$taiju#欧美剧$oumei#日剧$riju#韩剧$hanju#网剧$wangju#泰剧$yataiju||大陆综艺$guozong#日韩综艺$hanzong#欧美综艺$meizong||国产动漫$guoman#日本动漫$riman#欧美动漫$meiman$动画$donghua||记录片$Jlp#经典片$Jdp#经典剧$Jdj#网大电影$wlp#国产老电影$laodianying",
-        "分类": "电影$Movie#电视剧$Tv#综艺$Zy#动漫$Dm#其他$qita"
-      }
-    },
-    {
       "key": "csp_奥特影视(CC)",
       "name": "🎥｜奥悉｜重測",
       "type": 3,
@@ -3546,7 +3521,24 @@
       "filterable": 1,
       "api": "csp_XBPQ",
       "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-      "ext": "./json/楓林網.json"
+      "ext": 
+      {
+"規則名": "楓林網",
+"規則作者": "老王叔叔",
+"規則日期": "113.12.02",
+"ua":"Mozilla/5.0(WindowsNT10.0;Win64;x64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/108.0.0.0Safari/537.36",
+"编码": "UTF-8",  
+"嗅探词": ".m3u8?#play.mtle.cn#.m3u8#.mp4",
+"分类url":"https://8maple.st/filter/{cateId}-{area}-{by}------{catePg}---{year}.html",
+"分类": "電影$movie#電視劇$tv#綜藝$show#動漫$anime",
+"类型": "劇情片$drama#動作片$action#科幻片$sciencefiction#喜劇片$comedy#愛情片$love#戰爭片$war#恐怖片$horror#動畫片$cartoon#紀錄片$documentary||陸劇$cn#韓劇$kr#美劇$us#台劇$tw#日劇$jp#港劇$hk#泰劇$taidrama#海外劇$etc||日韓綜藝$jpkrtvshow#大陸綜藝$cntvshow#歐美綜藝$ustvshow#台港綜藝$twhktvshow||日韓動漫$jpkranime#國產動漫$cnanime#歐美動漫$usanime",
+"地区": "美國&歐美&韓國&大陸&日本&臺灣&香港&泰國&英國&新加坡&法國&意大利&其他||大陸&韓國&歐美&美國&日本&臺灣&香港&泰國&英國&新加坡&法國&意大利&其他||大陸&中國大陸&韓國&臺灣&美國&歐美&日本&香港||日本&美國&歐美&大陸&臺灣&香港&韓國||美國&韓國&大陸&日本&臺灣&香港&泰國&英國&新加坡&法國&意大利",
+"排序": "時間$time#人氣$hits",
+"年份": "2025&2024&2023&2022&2021&2020&2019&2018&2017&2016&2015&2014&2013&2012&2011&2010",
+"影片类型": "module-info-tag\">&&立即播放",
+"简介":"簡介：</span>&&</p>",
+"播放数组": "<ul class=\"myui-content__list&&</ul"
+}
     },
     {
       "key": "csp_Imaple8TV",
@@ -3572,7 +3564,7 @@
     },
     {
       "key": "爱看机器人",
-      "name": "爱看｜影视",
+      "name": "🧲｜爱看｜影视",
       "type": 3,
       "api": "csp_Ikanbot",
       "jar": "./jar/xiaosa-0518.jar;md5;ee38cccf7fa23258b09670785aa96665",
