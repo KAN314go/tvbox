@@ -191,15 +191,6 @@
       "changeable": 1
     },
     {
-      "key": "py_xiaohys",
-      "name": "🏆｜小紅｜藍光◎秒播(無廣告)",
-      "type": 3,
-      "api": "./py/py_xiaohys.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1
-    },
-    {
       "key": "三六零",
       "name": "🎖︎｜360｜官源",
       "type": 3,

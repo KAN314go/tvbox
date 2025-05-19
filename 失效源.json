@@ -8,6 +8,15 @@
 
 
     {
+      "key": "py_xiaohys",
+      "name": "🏆｜小紅｜藍光◎秒播(無廣告)",
+      "type": 3,
+      "api": "./py/py_xiaohys.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
       "key": "py_UpFuHn",
       "name": "🥇｜嗨影｜高清◎秒播(無廣告)",
       "type": 4,
