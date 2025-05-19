@@ -5116,8 +5116,22 @@
       "logo": "https://epg.112114.xyz/logo/{name}.png",
       "pass": true
     },
-    {"name": "yoo体育直播(python)", "type": 3, "api": "./py/yoozb.py", "ext": {}},
-    {"name": "快直播体育(python)", "type": 3, "api": "./py/kzbty.py", "ext": ""},
+    {
+      "name": "yoo体育直播(python)",
+      "type": 3, 
+      "api": "./py/yoozb.py"
+    },
+    {
+      "name": "快直播体育(python)", 
+      "type": 3, 
+      "api": "./py/kzbty.py"
+    },
+    {
+      "name": "BeeSport直播(python)",
+      "type": 3,
+      "api": "https://json.doube.eu.org/python/live_beesport.py",
+      "header": { "Referer": "https://p.m82xg4z0cdbz7.com/" }
+    },
     {
       "name": "4G-TV(雜七雜八)",
       "type": 0,
