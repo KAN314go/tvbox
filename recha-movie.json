@@ -4954,8 +4954,8 @@
     },
     {
       "name": "沐辰直播(MyTvSuper)",
-      //"api": "https://json.doube.eu.org/Doubebly/MyTvSuper/",
-      "api": "./live/mytvsuper.m3u",
+      "url": "https://json.doube.eu.org/Doubebly/MyTvSuper/",
+      //"api": "./live/mytvsuper.m3u",
       "timeout": 5,
       "pass": true
     },
