@@ -30,7 +30,15 @@
       "jar": "https://10526.kstore.vip/xinghe.txt",
       "ext": "http://www.dyxz2.com/"
     },
-
+    {
+      "key": "tufun采集",
+      "name": "？｜菠菜｜采集",
+      "type": 1,
+      "api": "https://tyyszyapi.com/api.php/provide/vod/?ac=list",
+      "playerType": 2,
+      "searchable": 1,
+      "changeable": 1
+    },
 
 
 
