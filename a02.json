@@ -39,8 +39,16 @@
       "searchable": 1,
       "changeable": 1
     },
-
-
+{
+      "key": "天涯资源",
+      "name": "？｜天涯｜采集",
+      "type": 1,
+      "api": "https://api.tufun.top/api.php/provide/vod/?ac=list",
+      "playUrl":"json:http://apijx.tufun.top/api/?key=aHj2CX8jmkJ68NXQyY&url=",
+      "searchable": 1,
+      "changeable": 1,
+      "categories": ["国产剧", "欧美剧", "国产动漫" ]
+},
 
 
 
