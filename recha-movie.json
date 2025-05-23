@@ -4856,15 +4856,12 @@
   ],
   "lives": [
     {
-      "name": "刺蝟直播",
+      "name": "立方直播",
       "playerType": 2,
-      "url": "http://iptv.herissmon.dpdns.org/jiekou/live.txt",
-      "ua": "Herissmon/2016",
+      "url": "http://breezy-audrie-zspace-7524863c.koyeb.app/sub?type=m3u&token=leifeng",
       "timeout": 5,
       "pass": true
     },
-
-
     {
       "spider": "./jar/mqitv.jar"            ,
       "jar"   : "./jar/mqitv.jar"            ,
@@ -5076,6 +5073,14 @@
       "epg": "https://epg.112114.eu.org/?ch={name}&date={date}",
       "logo": "https://epg.112114.eu.org/logo/{name}.png",
       "playerType": 2,
+      "pass": true
+    },
+    {
+      "name": "刺蝟直播",
+      "playerType": 2,
+      "url": "http://iptv.herissmon.dpdns.org/jiekou/live.txt",
+      "ua": "Herissmon/2016",
+      "timeout": 5,
       "pass": true
     },
     {
