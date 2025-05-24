@@ -78,6 +78,7 @@ asia动物,http://live4play.uk/livehttpplay?channel_id=20113
 博斯高球壹,http://live4play.uk/livehttpplay?channel_id=20103
 博斯高球贰,http://live4play.uk/livehttpplay?channel_id=20117
 ElaT体育壹,http://live4play.uk/livehttpplay?channel_id=20129
+
 央视卫视,#genre#
 CCTV-1综合,http://zqh2333.top:2222/rtp/239.93.24.184:5140
 CCTV-2财经,http://zqh2333.top:2222/rtp/239.93.24.59:5140
