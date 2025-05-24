@@ -4856,6 +4856,12 @@
   ],
   "lives": [
     {
+      "name": "好樣直播",
+      "url": "./live/haoyunlai.txt",
+      "timeout": 5,
+      "pass": true
+    },
+    {
       "name": "立方直播",
       "playerType": 2,
       "url": "http://breezy-audrie-zspace-7524863c.koyeb.app/sub?type=m3u&token=leifeng",
