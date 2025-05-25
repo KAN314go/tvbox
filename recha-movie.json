@@ -5,7 +5,18 @@
   "sites": [
 
 
-
+    {
+      "key": "csp_bestpipe",
+      "name": "🎥｜百思｜修復",
+      "type": 3,
+      "api": "csp_XBPQ",
+      "jar": "./jar/xyqxbpq.jar",
+      "ext": {
+        "分类url": "https://www.bestpipe.cn/vodshow/{cateId}-{area}-{by}------{catePg}---{year}.html",
+        "分类": "电影$20#电视剧$21#综艺$23#动漫$22#短剧$24",
+        "地区": "大陆&香港&台湾&美国&日本&韩国&英国&法国&德国&印度&泰国&丹麦&瑞典"
+      }      
+    },
 
 
 
@@ -35,16 +46,16 @@
       "playerType": 2,
       "ext": "jaHR0cHM6Ly93d3cuempjLmFwcC98YWI0ZTlhNDIxNjc1ZjE0YnxhYjRlOWE0MjE2NzVmMTRifDQ0Mg=="
     },
-  {
-    "key": "nk",
-    "name": "📱｜耐看｜修復",
-    "type": 3,
-    "api": "csp_WebNK",
-    "jar": "http://我不是.摸鱼儿.com/by/jar/moyuer.php;md5;a9edc77b65fdba8da8d6af08aeaf0d74",
-    "searchable": 0,
-    "changeable": 0,
-    "ext": "w7TCmsONw6LDrsKYwoXCosKcwqDCrcKawqDDosKnwqTCoMKjwrPCosKpw7DDscKqXsKewpvDncOpw57Cp8OnwphXXFDCoMOnw6PDqcKhbVBXwovlh77phZvmkJ/lkZzCpuWGn+S9h+WQp2rlv6roqLnotr7mvInnrZPCkFdcUMKgw5fDn8Ocw6zCrMKgwqR7w57DrMKhwrPCmlrCp8KlwqnDosKpwrDCr8KhwrA="
-},
+    {
+      "key": "nk",
+      "name": "📱｜耐看｜修復",
+      "type": 3,
+      "api": "csp_WebNK",
+      "jar": "http://我不是.摸鱼儿.com/by/jar/moyuer.php;md5;a9edc77b65fdba8da8d6af08aeaf0d74",
+      "searchable": 0,
+      "changeable": 0,
+      "ext": "w7TCmsONw6LDrsKYwoXCosKcwqDCrcKawqDDosKnwqTCoMKjwrPCosKpw7DDscKqXsKewpvDncOpw57Cp8OnwphXXFDCoMOnw6PDqcKhbVBXwovlh77phZvmkJ/lkZzCpuWGn+S9h+WQp2rlv6roqLnotr7mvInnrZPCkFdcUMKgw5fDn8Ocw6zCrMKgwqR7w57DrMKhwrPCmlrCp8KlwqnDosKpwrDCr8KhwrA="
+    },
     {
       "key": "zj",
       "name": "🎥｜8K影院｜修復",
@@ -57,7 +68,7 @@
         "地区": "大陆&香港&台湾&美国&法国&英国&日本&韩国&德国&泰国&印度&意大利&西班牙&加拿大&其他"
       }      
     },
-        {
+    {
       "key": "csp_电影驿站",
       "name": "🎥｜驿站｜修復",
       "type": 3,
