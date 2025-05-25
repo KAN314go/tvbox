@@ -7,14 +7,7 @@
 
 
 
-    {
-      "key": "步步",
-      "name": "🥇｜步步｜(待測)",
-      "type": 3,
-      "api": "https://weixine.net/js/lib/drpy2.min.js",
-      "jar": "./jar/mi-0513.txt;md5;bcb27d2740df8d21bfc49c507432663a",
-      "ext": "https://gitee.com/smallmi1007/mimi/raw/master/ceshi.js"
-    },
+
     {
       "key": "py_悠悠APP",
       "name": "🥇｜悠悠｜藍光◎秒播(無廣告+PY)",
@@ -530,7 +523,15 @@
         "分类url": "https://www.foxjun.com/channel/{cateId}.html?apage1={catePg}"
       }
     },
-        {
+    {
+      "key": "步步",
+      "name": "🥇｜步步｜高清◎秒播(無廣告)",
+      "type": 3,
+      "api": "https://weixine.net/js/lib/drpy2.min.js",
+      "jar": "./jar/mi-0513.txt;md5;bcb27d2740df8d21bfc49c507432663a",
+      "ext": "https://gitee.com/smallmi1007/mimi/raw/master/ceshi.js"
+    },
+    {
       "key": "csp_Qiyou",
       "name": "🥇｜七友｜高清◎秒播(無廣告)",
       "type": 3,
@@ -651,7 +652,7 @@
     },
     {
       "key": "zxzj",
-      "name": "🥇｜在线｜高清◎順播(隨機廣告+)",
+      "name": "🥇｜在线｜高清◎順播(隨機廣告)",
       "type": 3,
       "api": "csp_ZxzjGuard",
       "jar": "./jar/fty.jar;md5;948a482e3bad5bd090a87a6a85d38903",
