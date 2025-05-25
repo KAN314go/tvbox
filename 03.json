@@ -19,8 +19,9 @@
       "ext": {
         "搜索url": "https://www.kpkuang.fun/vodsearch/-------------.html?wd={wd}",
         "分类url": "https://dongman.2345.com/{cateId}/{area}/nd{year}/",
-        "分类": " 热血$ltlxrexue#爱情$ltlxaiqing#搞笑$ltlxmeinv#美女$ltlxshaoer#少儿$ltlxqinzi#亲子$ltlxmofa#魔法$ltlxmofa#运动$ltlxyundong#机战$ltlxjizhan#科幻$ltlxkehuan#校园$ltlxxiaoyuan#动物$ltlxdongwu#冒险$ltlxmaoxian#神话$ltlxshenhua#推理$ltlxtuili#剧情$ltlxjuqing#历史$ltlxlishi#战争$ltlxzhanzheng#经典$ltlxjingdian#男性向$ltlxnanxingxiang#女性向$ltlxnvxingxiang",
-        "地区": "大陆$dqdalu#日本$dqriben#美国$dqmeiguo#韩国$dqhanguo#其他$dqqita"
+        "类型": " 热血$ltlxrexue#爱情$ltlxaiqing#搞笑$ltlxmeinv#美女$ltlxshaoer#少儿$ltlxqinzi#亲子$ltlxmofa#魔法$ltlxmofa#运动$ltlxyundong#机战$ltlxjizhan#科幻$ltlxkehuan#校园$ltlxxiaoyuan#动物$ltlxdongwu#冒险$ltlxmaoxian#神话$ltlxshenhua#推理$ltlxtuili#剧情$ltlxjuqing#历史$ltlxlishi#战争$ltlxzhanzheng#经典$ltlxjingdian#男性向$ltlxnanxingxiang#女性向$ltlxnvxingxiang",
+        "地区": "大陆$dqdalu#日本$dqriben#美国$dqmeiguo#韩国$dqhanguo#其他$dqqita",
+        "年份": "2025$nd2025#2024$nd2024#2023$nd2023#2022$nd2022#2021$nd2021#2020$nd2020#2019$nd2019#2018$nd2018#2017$nd2017#2016$nd2016#2015$nd2015#2014$nd2014#2013$nd2013#2012$nd2012#2011$nd2011#2010-2000$nd20102000#更早$nd19991800"
       }
     },
 
