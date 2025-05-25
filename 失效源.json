@@ -5,6 +5,18 @@
     "logo": "https://p3-pc.douyinpic.com/img/aweme-avatar/tos-cn-i-0813_6e2553f5708c414386eeca88b5f2674a~c5_300x300.jpeg?from=2956013662",
     "wallpaper": "https://picsum.photos/1080/",
     "sites": [ 
+
+
+    {
+      "key": "py_4K影院",
+      "name": "🏆｜看4K｜藍光◎順播(無廣告+無篩選)",
+      "type": 3,
+      "api": "./py/4k影院.py",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 0,
+      "changeable": 0
+    },
     {
       "key": "csp_GM_Hi视频",
       "name": "🥇｜嗨雷｜高清◎秒播(無廣告)",
