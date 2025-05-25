@@ -7,23 +7,6 @@
 
 
 
-    {
-      "key": "py_2345",
-      "name": "🏆｜2345｜??",
-      "type": 3,
-      "api": "./py/kan2345.py",
-      "searchable": 1,
-      "quickSearch": 0,
-      "filterable": 0,
-      "changeable": 1
-    },
-
-
-
-
-
-
-
     
     {
       "key": "豆瓣",
