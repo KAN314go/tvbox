@@ -13,7 +13,6 @@
   "sites": [
       {"key":"csp_XYQHiker_njavtv.com","name": "🔞Njavtv.com","type": 3,"api": "csp_XYQHiker","searchable": 1,"quickSearch": 0,"filterable": 0,"ext": "./json/njavtv.json","style": {"type": "rect","ratio": 1.6}},   
       {"key":"csp_XYQHiker_njav.com","name": "🔞Njav.com","type": 3,"api": "csp_XYQHiker","searchable": 1,"quickSearch": 0,"filterable": 0,"ext": "./json/njav.com.json","style": {"type": "rect","ratio": 1.6}},
-      {"key":"csp_XYQHiker_njav","name": "🔞Njav","type": 3,"api": "csp_XYQHiker","searchable": 1,"quickSearch": 0,"filterable": 0,"ext": "./json/njav.json","style": {"type": "rect","ratio": 1.6}},
       {"key":"csp_XYQHiker_御姐诱惑","name": "🔞御姐诱惑","type": 3,"api": "csp_XYQHiker","searchable": 1,"quickSearch": 0,"filterable": 0,"ext": "./json/御姐诱惑.json","style": {"type": "rect","ratio": 1.6}},
           {"key": "fhapiby","name": "🔞番号資源","type": 1,"api": "http://fhapiby.com/api.php/provide/vod","searchable": 1,"quickSearch": 1, "categories": [],"style": {"type": "rect","ratio": 1.8}},
         {"key": "桃花资源","name": "🔞桃花資源","type": 1,"api": "https://thzy1.me/api.php/provide/vod/?ac=list","searchable": 1,"quickSearch": 1, "categories": [],"style": {"type": "rect","ratio": 1.8}},
