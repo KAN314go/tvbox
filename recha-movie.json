@@ -9,15 +9,7 @@
 
 
 
-    {
-      "key": "玉米",
-      "name": "🥇｜玉米｜藍光◎秒播(無廣告+APP)",
-      "type": 3,
-      "api": "csp_Xdai",
-      "jar": "./jar/pizza.jar",
-      "playerType": 2,
-      "ext": "jaHR0cHM6Ly93d3cuempjLmFwcC98YWI0ZTlhNDIxNjc1ZjE0YnxhYjRlOWE0MjE2NzVmMTRifDQ0Mg=="
-    },
+
     {
       "key": "nk",
       "name": "📱｜耐看｜修復",
@@ -2014,6 +2006,15 @@
       "filterable": 1,
       "playerType": 1,
       "ext": "caHR0cHM6Ly93d3cuY2Zrajg2LmNvbQ=="
+    },
+        {
+      "key": "玉米",
+      "name": "🥈｜玉米｜高清◎秒播(無篩選的搜索源)",
+      "type": 3,
+      "api": "csp_Xdai",
+      "jar": "./jar/pizza.jar",
+      "playerType": 2,
+      "ext": "jaHR0cHM6Ly93d3cuempjLmFwcC98YWI0ZTlhNDIxNjc1ZjE0YnxhYjRlOWE0MjE2NzVmMTRifDQ0Mg=="
     },
     {
       "key": "PKW",
