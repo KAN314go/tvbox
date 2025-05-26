@@ -6,99 +6,6 @@
 
 
 
-      {
-         "key":"苹果",
-         "name":"苹果",
-         "type":3,
-         "api":"./py/py_pingguo.py",
-         "searchable":1,
-         "filterable":0,
-         "changeable":1
-      },
-      {
-         "key":"剧粑",
-         "name":"剧粑",
-         "type":3,
-         "api":"./py/py_jubaba.py",
-         "searchable":1,
-         "filterable":0,
-         "changeable":1
-      },
-    {
-      "key": "仓鼠",
-      "name": "🏆｜倉鼠(優化)｜藍光◎秒播(無廣告)",
-      "jar": "./jar/xiaosa-0526.jar;md5;6c87c9a352a0d2e60fed23f28bf4f9c6",
-      "type": 3,
-      "quickSearch": 1,
-      "api": "csp_AppGet",
-      "ext": 
-           {
-           "url": "https://appcms.cs4k.top",
-           "dataKey": "Hui6595253......",
-           "dataIv": "Hui6595253......",
-           "deviceId": "",
-           "version": ""
-            }
-    },
-    {
-            "key": "集多",
-            "name": "集多｜APP",
-            "type": 3,
-            "quickSearch": 1,
-            "api": "csp_AppGet",
-            "jar": "./jar/xiaosa-0526.jar;md5;6c87c9a352a0d2e60fed23f28bf4f9c6",
-            "ext": {
-                "url": "http://220.231.146.94:6261",
-                "dataKey": "hL7xN4P9rS2vK5Mq",
-                "dataIv": "hL7xN4P9rS2vK5Mq",
-                "deviceId": "",
-                "version": "200"
-            }
-      },
-      {
-            "key": "诺雪",
-            "name": "诺雪｜APP",
-            "type": 3,
-            "quickSearch": 1,
-            "api": "csp_AppGet",
-            "jar": "./jar/xiaosa-0526.jar;md5;6c87c9a352a0d2e60fed23f28bf4f9c6",
-            "ext": {
-                "url": "https://appcms.rx4k.top",
-                "dataKey": "LiGFzV6csf21zsu6",
-                "dataIv": "LiGFzV6csf21zsu6",
-                "deviceId": "",
-                "version": ""
-            }
-        },
-        {
-            "key": "橘子",
-            "name": "橘子｜APP",
-            "type": 3,
-            "quickSearch": 1,
-            "api": "csp_AppGet",
-            "jar": "./jar/xiaosa-0526.jar;md5;6c87c9a352a0d2e60fed23f28bf4f9c6",
-            "ext": {
-                "url": "https://api1.bffree.cn",
-                "dataKey": "2015692015692015",
-                "dataIv": "2015692015692015",
-                "deviceId": "",
-                "version": "300"
-            }
-        },
-        {
-            "key": "驿站",
-            "name": "驿站｜APP",
-            "type": 3,
-            "quickSearch": 1,
-            "api": "csp_AppMuou",
-            "jar": "./jar/xiaosa-0526.jar;md5;6c87c9a352a0d2e60fed23f28bf4f9c6",         
-            "ext": {
-                "url": "http://110.42.107.216:56677",
-                "dataKey": "d7378557d1d9c924",
-                "dataIv": "fb4594f622f34fea",
-                "jxurl": "https://qqiqiyiyoukumgtvapiappdyyztvjsoni8n2o0z1ws2n7b6v3x8.68.gy:56789"
-            }
-        },
 
     
 
@@ -245,6 +152,24 @@
       "changeable": 1
     },
     {
+         "key":"苹果",
+         "name":"🏆｜苹果｜藍光◎秒播(無廣告)",
+         "type":3,
+         "api":"./py/py_pingguo.py",
+         "searchable":1,
+         "filterable":0,
+         "changeable":1
+    },
+    {
+         "key":"剧粑",
+         "name":"🏆｜剧粑｜藍光◎秒播(無廣告)",
+         "type":3,
+         "api":"./py/py_jubaba.py",
+         "searchable":1,
+         "filterable":0,
+         "changeable":1
+    },
+    {
       "key": "py_貓眼",
       "name": "🏆｜貓眼｜藍光◎秒播(無廣告)",
       "type": 3,
@@ -254,6 +179,52 @@
       "filterable": 1,
       "changeable": 1
     },
+    {
+      "key": "仓鼠",
+      "name": "🏆｜倉鼠(優化)｜藍光◎秒播(無廣告+APP)",
+      "jar": "./jar/xiaosa-0526.jar;md5;6c87c9a352a0d2e60fed23f28bf4f9c6",
+      "type": 3,
+      "quickSearch": 1,
+      "api": "csp_AppGet",
+      "ext": 
+           {
+           "url": "https://appcms.cs4k.top",
+           "dataKey": "Hui6595253......",
+           "dataIv": "Hui6595253......",
+           "deviceId": "",
+           "version": ""
+            }
+    },
+    {
+            "key": "诺雪",
+            "name": "🏆｜诺雪｜藍光◎秒播(無廣告+APP)",
+            "type": 3,
+            "quickSearch": 1,
+            "api": "csp_AppGet",
+            "jar": "./jar/xiaosa-0526.jar;md5;6c87c9a352a0d2e60fed23f28bf4f9c6",
+            "ext": {
+                "url": "https://appcms.rx4k.top",
+                "dataKey": "LiGFzV6csf21zsu6",
+                "dataIv": "LiGFzV6csf21zsu6",
+                "deviceId": "",
+                "version": ""
+            }
+      },
+      {
+            "key": "橘子",
+            "name": "🏆｜橘子｜藍光◎秒播(無廣告+APP)",
+            "type": 3,
+            "quickSearch": 1,
+            "api": "csp_AppGet",
+            "jar": "./jar/xiaosa-0526.jar;md5;6c87c9a352a0d2e60fed23f28bf4f9c6",
+            "ext": {
+                "url": "https://api1.bffree.cn",
+                "dataKey": "2015692015692015",
+                "dataIv": "2015692015692015",
+                "deviceId": "",
+                "version": "300"
+            }
+      },
     {
       "key": "三六零",
       "name": "🎖︎｜360｜官源",
