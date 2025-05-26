@@ -380,7 +380,20 @@ HAPPY,p3p://167.114.175.6:55331/616b79be000a35b17ab2f7b84c325eeb
 欧美版HOT,http://live.redtraffic.xyz:80/hardcore.m3u8
 
 欧美版香蕉台,http://live.redtraffic.xyz:80/milf.m3u8
-
+XXX tv,https://vod.mycamtv.net/13163.m3u8
+XXX ,https://vod.mycamtv.net/13164.m3u8
+lBiZatv,https://vod.mycamtv.net/13165.m3u8
+lBiZatv1,https://vod.mycamtv.net/13166.m3u8
+lBiZatv2,https://vod.mycamtv.net/13167.m3u8
+lBiZatv3,https://vod.mycamtv.net/13168.m3u8
+lBiZatv4,https://vod.mycamtv.net/13169.m3u8
+lBiZatv5,https://vod.mycamtv.net/13170.m3u8
+lBiZatv6,https://vod.mycamtv.net/13171.m3u8
+红松05,https://vod.mycamtv.net/13172.m3u8
+红松06,https://vod.mycamtv.net/13173.m3u8
+lBiZatv7,https://vod.mycamtv.net/13174.m3u8
+lBiZatv8,https://vod.mycamtv.net/13175.m3u8
+lBiZatv9,https://vod.mycamtv.net/13176.m3u8
 pigoo,http://s.mrw.so/7DlB
 奧視2,http://125.227.210.55:55643/VideoInput/play.ts
 奧視3,http://125.227.210.55:8917/VideoInput/play.ts
