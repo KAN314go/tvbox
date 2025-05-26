@@ -5110,6 +5110,13 @@
     }
   ],
   "lives": [
+   {
+      "name": "smart(HFR1107)",
+      "url": "https://000.hfr1107.top/tv/smt.php",
+      "timeout": 5,
+      "pass": true
+    },
+    
     {
       "name": "立方直播",
       "playerType": 2,
