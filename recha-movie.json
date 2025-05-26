@@ -6,7 +6,24 @@
 
 
 
-
+      {
+         "key":"苹果",
+         "name":"苹果",
+         "type":3,
+         "api":"./py/py_pingguo.py",
+         "searchable":1,
+         "filterable":0,
+         "changeable":1
+      },
+      {
+         "key":"剧粑",
+         "name":"剧粑",
+         "type":3,
+         "api":"./py/py_jubaba.py",
+         "searchable":1,
+         "filterable":0,
+         "changeable":1
+      }
 
 
 
