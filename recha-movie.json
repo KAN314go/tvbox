@@ -5524,13 +5524,6 @@
       "logo": "https://epg.112114.eu.org/logo/{name}.png"
     },
     {
-      "name": "小武哥(18+)",
-      "playerType": 2,
-      "url": "https://qu.ax/PEHy.txt",
-      "epg": "http://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Taipei",
-      "pass": true
-    },
-    {
       "name": "私密線路(18+)",
       "playerType": 2,
       "url": "./live/178.txt",
@@ -5539,14 +5532,6 @@
       "header": {
         "X-Api-key": "eef635a7806e57ab688fa46eaddb6926a728de071bc267cb5f336d7be068d880..0..1735089945..75b109b1-81c5-4caf-aea1-776e6a81"
       }
-    },
-    {
-      "name": "松园(18+)",
-      "type": 0,
-      "url": "http://files.catbox.moe/ohoob2.txt",
-      "ua": "Lavf/58.12.100",
-      "timeout": 20,
-      "playerType": 2
     },
     {
       "name": "台灣景點直播",
