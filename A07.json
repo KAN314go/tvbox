@@ -49,13 +49,24 @@
     },
     {
       "key": "浪酷版",
-      "name": "👓浪酷┃秒播",
+      "name": "OK｜浪酷｜？",
       "type": 3,
       "api": "csp_TianTianGuard",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
       "ext": {"site": 2},
+      "timeout": 10
+    },
+    {
+      "key": "糯米",
+      "name": "OK｜糯米｜？",
+      "type": 3,
+      "api": "csp_NmysGuard",
+      "jar": "./jar/ok.png;md5;db2132e631faa708621652a32f2894b9",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
       "timeout": 10
     },
     {
