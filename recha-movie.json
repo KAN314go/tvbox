@@ -18,17 +18,7 @@
       "filterable": 1,
       "timeout": 10
     },
-    {
-      "key": "晴天",
-      "name": "OK｜晴天｜藍光◎秒播(無廣告+OK源)",
-      "type": 3,
-      "api": "csp_Sun4kGuard",
-      "jar": "./jar/ok.png;md5;db2132e631faa708621652a32f2894b9",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "timeout": 10
-    },
+
     {
       "key": "浪酷版",
       "name": "OK｜浪酷｜？",
@@ -1417,6 +1407,34 @@
       "ext": "./json/A8影视.json"
     },
     {
+      "key": "晴天",
+      "name": "📱｜晴天｜藍光◎秒播(無廣告+OK源)",
+      "type": 3,
+      "api": "csp_Sun4kGuard",
+      "jar": "./jar/ok.png;md5;db2132e631faa708621652a32f2894b9",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 10
+    },
+    {
+      "key": "晴天",
+      "name": "📱｜晴天｜藍光◎秒播(無廣告+APP)",
+      "type": 3,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "api": "csp_AppGet",
+      "jar": "./jar/xiaosa.jar;md5;e4619193d9073ff124bb77f88f61d057",
+      "ext": {
+        "url"     : "https://appcms.sun4k.top",
+        "dataKey" : "b025dcd9c289cbb3"        ,
+        "dataIv"  : "b025dcd9c289cbb3"        ,
+        "deviceId": ""                        ,
+        "version" : ""
+      }
+    },
+    {
       "key": "py_魔方影视APP",
       "name": "📱｜魔方｜藍光◎秒播(無廣告+部分線路有廣告)",
       "type": 3,
@@ -1927,23 +1945,6 @@
         "dataIv"  : "laodiesdawsswasd"                 ,
         "deviceId": "298e5fe29c74b35aabb9836ee2f6f449f",
         "version" : "105"
-      }
-    },
-    {
-      "key": "晴天",
-      "name": "📱｜晴天｜高清◎秒播(無廣告+APP)",
-      "type": 3,
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "api": "csp_AppGet",
-      "jar": "./jar/xiaosa.jar;md5;e4619193d9073ff124bb77f88f61d057",
-      "ext": {
-        "url"     : "https://appcms.sun4k.top",
-        "dataKey" : "b025dcd9c289cbb3"        ,
-        "dataIv"  : "b025dcd9c289cbb3"        ,
-        "deviceId": ""                        ,
-        "version" : ""
       }
     },
     {
