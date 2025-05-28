@@ -5264,6 +5264,12 @@
       "pass": true
     },
     {
+      "name": "沐辰直播(OfIii)",
+      "url": "http://tw-ty-line-11-1-5.sudatech.store:20680/Sub.m3u?token=Doubebly&proxy=true",
+      "timeout": 5,
+      "pass": true
+    },
+    {
       "name": "沐辰直播(MyTvSuper)",
       "url": "https://json.doube.eu.org/Doubebly/MyTvSuper/",
       "timeout": 5,
