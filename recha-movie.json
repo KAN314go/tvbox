@@ -7,7 +7,63 @@
 
 
 
-    
+        {
+      "key": "时常",
+      "name": "OK｜时常｜？",
+      "type": 3,
+      "api": "csp_ShiChangGuard",
+      "jar": "./jar/ok.png;md5;db2132e631faa708621652a32f2894b9",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 10
+    },
+    {
+      "key": "晴天",
+      "name": "OK｜晴天｜？",
+      "type": 3,
+      "api": "csp_Sun4kGuard",
+      "jar": "./jar/ok.png;md5;db2132e631faa708621652a32f2894b9",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 10
+    },
+    {
+      "key": "小红",
+      "name": "OK｜小红｜藍光◎秒播(無廣告+OK源)",
+      "type": 3,
+      "api": "csp_XiaoHongGuard",
+      "jar": "./jar/ok.png;md5;db2132e631faa708621652a32f2894b9",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 10
+    },
+
+    {
+      "key": "韩圈",
+      "name": "OK｜韩圈｜？",
+      "type": 3,
+      "api": "csp_HanXiaoQuanGuard",
+      "jar": "./jar/ok.png;md5;db2132e631faa708621652a32f2894b9",
+      "playerType": 2,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 10
+    },
+    {
+      "key": "️爱看Bot",
+      "name": "OK｜爱看｜？",
+      "type": 3,
+      "api": "csp_IkanbotGuard",
+      "jar": "./jar/ok.png",      
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 10
+    }
 
 
 
@@ -197,22 +253,6 @@
       "quickSearch": 1,
       "filterable": 1,
       "changeable": 1
-    },
-    {
-      "key": "仓鼠",
-      "name": "🏆｜倉鼠｜藍光◎秒播(無廣告+APP)",
-      "jar": "./jar/xiaosa-0526.jar;md5;6c87c9a352a0d2e60fed23f28bf4f9c6",
-      "type": 3,
-      "quickSearch": 1,
-      "api": "csp_AppGet",
-      "ext": 
-           {
-           "url": "https://appcms.cs4k.top",
-           "dataKey": "Hui6595253......",
-           "dataIv": "Hui6595253......",
-           "deviceId": "",
-           "version": ""
-            }
     },
     {
             "key": "诺雪",

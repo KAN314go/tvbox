@@ -6,7 +6,33 @@
     "wallpaper": "https://picsum.photos/1080/",
     "sites": [ 
 
-
+    {
+      "key": "仓鼠",
+      "name": "🏆｜倉鼠｜藍光◎秒播(無廣告+APP)",
+      "jar": "./jar/xiaosa-0526.jar;md5;6c87c9a352a0d2e60fed23f28bf4f9c6",
+      "type": 3,
+      "quickSearch": 1,
+      "api": "csp_AppGet",
+      "ext": 
+           {
+           "url": "https://appcms.cs4k.top",
+           "dataKey": "Hui6595253......",
+           "dataIv": "Hui6595253......",
+           "deviceId": "",
+           "version": ""
+            }
+    },
+    {
+      "key": "仓鼠",
+      "name": "OK｜仓鼠｜藍光◎秒播(無廣告+OK源)",
+      "type": 3,
+      "api": "csp_CangShuGuard",
+      "jar": "./jar/ok.png;md5;db2132e631faa708621652a32f2894b9",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 10
+    },
     {
       "key": "py_4K影院",
       "name": "🏆｜看4K｜藍光◎順播(無廣告+無篩選)",
