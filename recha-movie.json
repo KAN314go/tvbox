@@ -7,7 +7,7 @@
 
 
 
-    {
+        {
       "key": "时常",
       "name": "OK｜时常｜？",
       "type": 3,
@@ -38,6 +38,28 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
+      "timeout": 10
+    },
+    {
+      "key": "素白白",
+      "name": "OK｜白白｜？",
+      "type": 3,
+      "api": "csp_SubaibaiGuard",
+      "jar": "./jar/ok.png;md5;db2132e631faa708621652a32f2894b9",      
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 10
+    },
+    {
+      "key": "浪酷版",
+      "name": "OK｜浪酷｜？",
+      "type": 3,
+      "api": "csp_TianTianGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": {"site": 2},
       "timeout": 10
     },
     {
