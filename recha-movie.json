@@ -9,7 +9,7 @@
 
         {
       "key": "时常",
-      "name": "OK｜时常｜？",
+      "name": "OK｜时常｜高清◎秒播(無廣告+OK源)",
       "type": 3,
       "api": "csp_ShiChangGuard",
       "jar": "./jar/ok.png;md5;db2132e631faa708621652a32f2894b9",
@@ -20,7 +20,7 @@
     },
     {
       "key": "晴天",
-      "name": "OK｜晴天｜？",
+      "name": "OK｜晴天｜藍光◎秒播(無廣告+OK源)",
       "type": 3,
       "api": "csp_Sun4kGuard",
       "jar": "./jar/ok.png;md5;db2132e631faa708621652a32f2894b9",
@@ -42,7 +42,7 @@
     },
     {
       "key": "素白白",
-      "name": "OK｜白白｜？",
+      "name": "OK｜白白｜高清◎秒播(浮水印廣告+OK源)",
       "type": 3,
       "api": "csp_SubaibaiGuard",
       "jar": "./jar/ok.png;md5;db2132e631faa708621652a32f2894b9",      
