@@ -5271,7 +5271,7 @@
     },
     {
       "name": "沐辰直播(OfIii)",
-      "url": "http://tw-ty-line-11-1-5.sudatech.store:20680/Sub.m3u?token=Doubebly&proxy=true",
+      "url": "http://tw-ty-line-11-1-5.sudatech.store:20680/Sub.m3u?token=Doubebly",
       "timeout": 5,
       "pass": true
     },
