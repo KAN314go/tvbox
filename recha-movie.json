@@ -5239,7 +5239,13 @@
       "timeout": 5,
       "pass": true
     },
-    
+    {
+      "name": "smart(wanjiatv)",
+      "url": "./live/smart.txt",
+      "epg": "http://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Taipei",
+      "logo": "https://epg.112114.xyz/logo/{name}.png",
+      "pass": true
+    },
     {
       "name": "立方直播",
       "playerType": 2,
@@ -5472,14 +5478,6 @@
       "url": "http://iptv.herissmon.dpdns.org/jiekou/live.txt",
       "ua": "Herissmon/2016",
       "timeout": 5,
-      "pass": true
-    },
-    {
-      "name": "smart(跟安博一樣卡)",
-      "playerType": 2,
-      "url": "./live/smart.txt",
-      "epg": "http://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Taipei",
-      "logo": "https://epg.112114.xyz/logo/{name}.png",
       "pass": true
     },
     {
