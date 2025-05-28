@@ -30,28 +30,6 @@
       "timeout": 10
     },
     {
-      "key": "小红",
-      "name": "OK｜小红｜藍光◎秒播(無廣告+OK源)",
-      "type": 3,
-      "api": "csp_XiaoHongGuard",
-      "jar": "./jar/ok.png;md5;db2132e631faa708621652a32f2894b9",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "timeout": 10
-    },
-    {
-      "key": "素白白",
-      "name": "OK｜白白｜高清◎秒播(浮水印廣告+OK源)",
-      "type": 3,
-      "api": "csp_SubaibaiGuard",
-      "jar": "./jar/ok.png;md5;db2132e631faa708621652a32f2894b9",      
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "timeout": 10
-    },
-    {
       "key": "浪酷版",
       "name": "OK｜浪酷｜？",
       "type": 3,
@@ -240,8 +218,19 @@
       "changeable": 1
     },
     {
+      "key": "小红",
+      "name": "🏆｜鮮红｜藍光◎秒播(無廣告+OK源)",
+      "type": 3,
+      "api": "csp_XiaoHongGuard",
+      "jar": "./jar/ok.png;md5;db2132e631faa708621652a32f2894b9",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 10
+    },
+    {
       "key": "py_xiaohys",
-      "name": "🏆｜小紅｜藍光◎秒播(無廣告+篩選壞掉)",
+      "name": "🏆｜暗紅｜藍光◎秒播(無廣告+篩選壞掉)",
       "type": 3,
       "api": "./py/小红影视.py",
       "searchable": 1,
@@ -498,7 +487,19 @@
       "api": "./py/素白白.py",
       "searchable": 1,
       "quickSearch": 1,
-      "filterable": 1
+      "filterable": 1,
+      "timeout": 10
+    },
+    {
+      "key": "素白白",
+      "name": "🥇｜白白｜高清◎秒播(無廣告)",
+      "type": 3,
+      "api": "csp_SubaibaiGuard",
+      "jar": "./jar/ok.png;md5;db2132e631faa708621652a32f2894b9",      
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 10
     },
     {
       "key": "csp_看片狂人",
