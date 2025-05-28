@@ -53,17 +53,7 @@
       "timeout": 10
     },
 
-    {
-      "key": "️爱看Bot",
-      "name": "OK｜爱看｜高清◎秒播(全線路採集+隨機廣告)",
-      "type": 3,
-      "api": "csp_IkanbotGuard",
-      "jar": "./jar/ok.png",      
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "timeout": 10
-    },
+
 
 
 
@@ -2081,6 +2071,17 @@
       "quickSearch": 0,
       "filterable": 1,
       "ext": "eaHR0cHM6Ly9kLmRjbW92aWUudG9w"
+    },
+    {
+      "key": "️爱看Bot",
+      "name": "🥈｜爱看｜高清◎秒播(全線路採集+隨機廣告)",
+      "type": 3,
+      "api": "csp_IkanbotGuard",
+      "jar": "./jar/ok.png",      
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 10
     },
     {
       "key": "csp_Uvod",
