@@ -5,7 +5,7 @@
   "sites": [
     {
       "key": "时常",
-      "name": "OK｜时常｜高清◎秒播(無廣告+OK源)",
+      "name": "OK｜時常｜高清◎秒播(無廣告+OK源)",
       "type": 3,
       "api": "csp_ShiChangGuard",
       "jar": "./jar/ok.png;md5;db2132e631faa708621652a32f2894b9",
