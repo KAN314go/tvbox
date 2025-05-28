@@ -5270,12 +5270,6 @@
       "pass": true
     },
     {
-      "name": "沐辰直播(OfIii)",
-      "url": "http://tw-ty-line-11-1-5.sudatech.store:20680/Sub.m3u?token=Doubebly",
-      "timeout": 5,
-      "pass": true
-    },
-    {
       "name": "沐辰直播(MyTvSuper)",
       "url": "https://json.doube.eu.org/Doubebly/MyTvSuper/",
       "timeout": 5,
@@ -5439,24 +5433,6 @@
       "ua": "okhttp/3.15",
       "logo": "https://epg.112114.xyz/logo/{name}.png",
       "pass": true
-    },
-        {
-      "name": "星河体育",
-      "type": 3,
-      "playerType": 2,
-      "url": "http://b.u6v.cn/6xdpjM",
-      "epg": "http://epg.51zmt.top:8000/e.xml",
-      "logo": "https://epg.v1.mk/logo/{name}.png"
-    },
-    {
-      "name": "yoo体育直播(python)",
-      "type": 3, 
-      "api": "./py/yoozb.py"
-    },
-    {
-      "name": "快直播体育(python)", 
-      "type": 3, 
-      "api": "./py/kzbty.py"
     },
     {
       "name": "BeeSport直播(python)",
