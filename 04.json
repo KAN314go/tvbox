@@ -5,38 +5,7 @@
   "sites": [
 
 
-    {
-      "key": "py_aidianying",
-      "name": "🏆｜愛電影｜藍光◎秒播(無廣告)",
-      "type": 3,
-      "api": "./py/aidianying.py",
-      "searchable": 1,
-      "filterable": 0,
-      "changeable": 0
-    },
-    {
-      "key": "仓鼠",
-      "name": "🏆｜倉鼠｜藍光◎秒播(無廣告+APP)",
-      "type": 3,
-      "searchable": 1,
-      "api": "./py/cangshu.py"
-    },
-    {
-      "key": "巧技",
-      "name": "🏆｜巧技｜搜索專用(只能用於搜索，含獨播庫)",
-      "type": 3,
-      "api": "csp_qiao2",
-      "jar": "./jar/Qiaoji.jar",
-      "spider": "./jar/Qiaoji.jar",
-      "playerType": 2,
-      "searchable": 1,
-      "quickSearch":1,
-      "changeable": 1,
-      "filterable": 1,
-      "timeout": 60,
-      "style": {"type": "rect","ratio": 1.3},
-      "ext":"7lj763gg402i79425739i7jghj118797l4hj840gi18633331l4708g2h7145403549g44l8ii56i187681hkjj3hhgh1ih3l32j250lk1k786lj20j468hk3hli4l46gig4i3g7g2722328j0136h01i7g5183k22k7gg3i72hk81gl8k9839kl7i0707"
-    },
+
     {
       "key": "耐看影视",
       "name": "📱｜舊耐｜高清◎秒播(無廣告+APP)",
@@ -99,6 +68,21 @@
         "proxy": ""
       },
       "style": {"type": "rect", "ratio": 1.77}
+    },
+        {
+      "key": "巧技",
+      "name": "🇹🇼｜搜索專用(只能用於搜索，含所有優等線路)",
+      "type": 3,
+      "api": "csp_qiao2",
+      "jar": "./jar/Qiaoji.jar",
+      "playerType": 2,
+      "searchable": 1,
+      "quickSearch":1,
+      "changeable": 1,
+      "filterable": 1,
+      "timeout": 60,
+      "style": {"type": "rect","ratio": 1.3},
+      "ext":"7lj763gg402i79425739i7jghj118797l4hj840gi18633331l4708g2h7145403549g44l8ii56i187681hkjj3hhgh1ih3l32j250lk1k786lj20j468hk3hli4l46gig4i3g7g2722328j0136h01i7g5183k22k7gg3i72hk81gl8k9839kl7i0707"
     },
     {
       "key": "py_又是一個金牌",
@@ -207,7 +191,7 @@
     },
     {
       "key": "py_海马",
-      "name": "🏆｜海马｜高清◎秒播(無廣告)",
+      "name": "🏆｜海马｜高清◎秒播(無廣告+APP)",
       "type": 3,
       "api": "./py/海马影视APP.py",
       "searchable": 1,
