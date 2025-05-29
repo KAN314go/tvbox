@@ -5291,9 +5291,27 @@
     {
       "spider": "./jar/mqitv.jar"            ,
       "jar"   : "./jar/mqitv.jar"            ,
-      "name"  : "MQi-TV"                     ,
+      "name"  : "59酒店源"                     ,
       "api"   : "csp_MQiTV"                  ,
       "ext"   : "https://59.125.210.231:4433",
+      "epg": "http://iptv.52sw.top:668/?ch={name}&date={date}",
+      "logo": "https://epg.112114.xyz/logo/{name}.png"
+    },
+        {
+      "spider": "./jar/mqitv.jar"            ,
+      "jar"   : "./jar/mqitv.jar"            ,
+      "name"  : "60酒店源"                     ,
+      "api"   : "csp_MQiTV"                  ,
+      "ext"   : "https://60.248.127.232:4433",
+      "epg": "http://iptv.52sw.top:668/?ch={name}&date={date}",
+      "logo": "https://epg.112114.xyz/logo/{name}.png"
+    },
+        {
+      "spider": "./jar/mqitv.jar"            ,
+      "jar"   : "./jar/mqitv.jar"            ,
+      "name"  : "101酒店源"                     ,
+      "api"   : "csp_MQiTV"                  ,
+      "ext"   : "http://60.249.93.7:1888",
       "epg": "http://iptv.52sw.top:668/?ch={name}&date={date}",
       "logo": "https://epg.112114.xyz/logo/{name}.png"
     },
