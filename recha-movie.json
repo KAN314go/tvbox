@@ -6,7 +6,15 @@
 
 
 
-
+    {
+      "key": "py_aidianying",
+      "name": "星河｜愛電影｜待測",
+      "type": 3,
+      "api": "./py/aidianying.py",
+      "searchable": 1,
+      "filterable": 0,
+      "changeable": 0
+    },
 
 
 
