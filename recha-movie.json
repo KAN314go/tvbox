@@ -6,15 +6,6 @@
 
 
 
-    {
-      "key": "py_aidianying",
-      "name": "星河｜愛電影｜待測",
-      "type": 3,
-      "api": "./py/aidianying.py",
-      "searchable": 1,
-      "filterable": 0,
-      "changeable": 0
-    },
 
 
 
@@ -156,6 +147,22 @@
       "quickSearch": 1,
       "filterable": 1,
       "changeable": 1
+    },
+    {
+      "key": "py_aidianying",
+      "name": "🏆｜愛電影｜藍光◎秒播(無廣告)",
+      "type": 3,
+      "api": "./py/aidianying.py",
+      "searchable": 1,
+      "filterable": 0,
+      "changeable": 0
+    },
+    {
+      "key": "仓鼠",
+      "name": "🏆｜倉鼠｜藍光◎秒播(無廣告+APP)",
+      "type": 3,
+      "searchable": 1,
+      "api": "./py/cangshu.py"
     },
     {
       "key": "py_海马",
@@ -1405,13 +1412,23 @@
     },
         {
       "key": "nk",
-      "name": "📱｜耐看｜藍光◎秒播(無廣告+APP)",
+      "name": "📱｜新耐｜藍光◎秒播(無廣告+APP)",
       "type": 3,
       "api": "csp_WebNK",
       "jar": "http://我不是.摸鱼儿.com/by/jar/moyuer.php;md5;a9edc77b65fdba8da8d6af08aeaf0d74",
       "searchable": 0,
       "changeable": 0,
       "ext": "w7TCmsONw6LDrsKYwoXCosKcwqDCrcKawqDDosKnwqTCoMKjwrPCosKpw7DDscKqXsKewpvDncOpw57Cp8OnwphXXFDCoMOnw6PDqcKhbVBXwovlh77phZvmkJ/lkZzCpuWGn+S9h+WQp2rlv6roqLnotr7mvInnrZPCkFdcUMKgw5fDn8Ocw6zCrMKgwqR7w57DrMKhwrPCmlrCp8KlwqnDosKpwrDCr8KhwrA="
+    },
+    {
+      "key": "耐看影视",
+      "name": "📱｜舊耐｜高清◎秒播(無廣告+APP)",
+      "type": 3,
+      "api": "csp_WebNK",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "w7TClcONw6LDrsKYwoXCosKcwpvCrcKcw6HDrsKnwqDCo2rCqMKiw7HDsMOxYcKewpvClMOvw5fCqMOmw59VXFLCpMOiw6PCnMKzwpzCjuWGtemEmOaPleWRnMKf5Yem5L6Q5ZGxbeW+oeintui1tOa8ieetjMOXwpvDtw=="
     },
     {
       "key": "浪酷影视",
