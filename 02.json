@@ -26,12 +26,27 @@
       "name": "📱｜舊耐｜高清◎秒播(無廣告+APP)",
       "type": 3,
       "api": "csp_WebNK",
+      "jar": "./jar/xiaosa-0526.jar;md5;6c87c9a352a0d2e60fed23f28bf4f9c6",     
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
       "ext": "w7TClcONw6LDrsKYwoXCosKcwpvCrcKcw6HDrsKnwqDCo2rCqMKiw7HDsMOxYcKewpvClMOvw5fCqMOmw59VXFLCpMOiw6PCnMKzwpzCjuWGtemEmOaPleWRnMKf5Yem5L6Q5ZGxbeW+oeintui1tOa8ieetjMOXwpvDtw=="
     },
-
+    {
+      "key": "巧技",
+      "name": "📱｜巧技｜聚搜",
+      "type": 3,
+      "api": "csp_qiao2",
+      "jar": "./jar/Qiaoji.jar",
+      "playerType": 2,
+      "searchable": 1,
+      "quickSearch":1,
+      "changeable": 1,
+      "filterable": 1,
+      "timeout": 60,
+      "style": {"type": "rect","ratio": 1.3},
+      "ext":"7lj763gg402i79425739i7jghj118797l4hj840gi18633331l4708g2h7145403549g44l8ii56i187681hkjj3hhgh1ih3l32j250lk1k786lj20j468hk3hli4l46gig4i3g7g2722328j0136h01i7g5183k22k7gg3i72hk81gl8k9839kl7i0707"
+    },
 
     
     {
