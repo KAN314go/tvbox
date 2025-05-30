@@ -9,84 +9,12 @@
         "key": "csp_HK_91短剧",
         "name": "🇹🇼【老王短劇專區】🇹🇼",
         "type": 3,
-        "api": "csp_XBPQ",
+        "api": "csp_AppXY",
         "searchable": 1,
         "quickSearch": 1,
         "filterable": 1,
-        "ext": "./json/91duanju.json"
-      },
-      {
-          "key": "短剧go",
-          "name": "📺｜短剧go",
-          "type": 1,
-          "api": "http://zhangqun1818.serv00.net:5052",
-          "searchable": 1,
-          "quickSearch": 0,
-          "changeable": 0
-      },
-      {
-        "key": "py_旺旺短劇",
-        "name": "旺旺短剧",
-        "type": 3,
-        "api": "./py/py_旺旺.py",
-        "searchable": 1,
-        "quickSearch": 0,
-        "filterable": 0
-      },  
-      {
-        "key": "py_偷樂短劇",
-        "name": "偷樂短剧",
-        "type": 3,
-        "api": "./py/偷乐短剧.py",
-        "searchable": 1,
-        "quickSearch": 0,
-        "filterable": 0
-      },
-      {
-        "key": "py_偷樂短劇[V2]",
-        "name": "偷樂短剧[V2]",
-        "type": 3,
-        "api": "./py/py_偷乐短剧.py",
-        "searchable": 1,
-        "quickSearch": 0,
-        "filterable": 0
-      },
-      {
-        "key": "py_甜圈短剧.py",
-        "name": "📺｜甜圈短剧",
-        "type": 3,
-        "api": "./py/甜圈短剧.py",
-       "searchable": 1,
-       "quickSearch": 1,
-        "filterable": 1,
-        "changeable": 0
-      },
-      {
-        "key": "py_好帅短剧.py",
-        "name": "📺｜好帅短剧",
-        "type": 3,
-        "api": "./py/好帅短剧.py",
-       "searchable": 1,
-       "quickSearch": 1,
-        "filterable": 1,
-        "changeable": 0
-      },
-      {
-        "key": "csp_AppXY",
-        "name": "📺｜星芽短劇",
-        "type": 3,
         "jar":"./jar/PandaQ250227c.jar;md5;ceda5421cdce5fad2a2f6d8c71ae4311",
-        "api": "csp_AppXY"
       },
-      {
-        "key": "Wexvipduanju",
-        "name": "📺｜牛二短剧",
-        "type": 3,
-        "api": "csp_WexvipduanjuGuard",
-        "jar": "./jar/wex.txt",
-        "searchable": 1,
-        "changeable": 1
-      },		
       {
       "key": "py_红果网页",
       "name": "📺｜红果短劇",
@@ -95,29 +23,6 @@
       "searchable": 1,
       "filterable": 0,
       "changeable": 0
-      },
-      {
-        "key": "河马短剧",
-        "name": "📺｜河马短剧",
-        "type": 3,
-        "api": "csp_AppHMDJ",
-        "jar": "./jar/spider.png",
-        "searchable": 1,
-        "quickSearch": 0,
-        "filterable": 0,
-        "ext": "KhY021WelCEl+6MsvwnzaPussky/EAoc9z7C4keyHaEQ+sKbXhMKd83VjTL7Ls6+m7XDIcGdziOxPv79y/h4QCvmOEJmZ1VD6dopzAVxkFzEFw=="
-      },
-      {
-        "key": "爱看短剧",
-        "name": "📺｜爱看短剧",
-        "type": 3,
-        "api": "https://gitee.com/PizazzXS/another-d/raw/master/movie/py/AKDJ.py",
-        "jar": "./jar/spider.png",
-        "searchable": 1,
-        "changeable": 1,
-        "quickSearch": 1,
-        "filterable": 1,
-        "playerType": 2
       },
       {
         "key":"csp_XBPQ_短剧4",
@@ -149,24 +54,6 @@
                 "类型":"有声动漫$ysdm#女频恋爱$npla#反转爽剧$fzsj#古装仙侠$gzxx#年代穿越$ndcy#脑洞悬疑$ndxy#现代都市$xdds||动作片$dongzuopian#喜剧片$xijupian#爱情片$aiqingpian#科幻片$kehuanpian#恐怖片$kongbupian#剧情片$juqingpian#纪录片$jilupian#战争片$zhanzhengpian#动画片$donghuapian||国产剧$guochanju#欧美剧$oumeiju#韩剧$hanju#日剧$riju#港剧$gangju#台剧$taiju#泰剧$taiju2#海外剧$haiwaiju||国产动漫$guochandongman#日韩动漫$rihandongman#欧美动漫$oumeidongman#港台动漫$gangtaidongman#海外动漫$haiwaidongman||演唱会$yanchanghui#大陆综艺$daluzongyi#日韩综艺$rihanzongyi#港台综艺$gangtaizongyi#欧美综艺$oumeizongyi"}
     },
     {
-      "key": "py_剧多短剧APP",
-      "name": "📺｜剧多短剧",
-      "type": 3,
-      "api": "./py/剧多短剧APP.py",
-      "searchable": 1,
-      "filterable": 0,
-      "changeable": 0
-    },
-    {
-      "key": "py_甜圈短剧",
-      "name": "📺｜甜圈短剧",
-      "type": 3,
-      "api": "./py/甜圈短剧.py",
-      "searchable": 1,
-      "filterable": 0,
-      "changeable": 0
-    },
-    {
       "key": "旺旺采集资源",
       "name": "📺｜旺財短劇",
       "type": 1,
@@ -184,37 +71,6 @@
         "searchable": 1,
         "quickSearch": 0,
         "filterable": 0
-    },
-    {
-        "key": "NUU短剧",
-        "name": "📺｜NUU短剧",
-        "type": 3,
-        "api": "csp_XBPQ",
-        "searchable": 1,
-        "quickSearch": 1,
-        "filterable": 1,
-        "ext": "./json/NUU短剧.json"
-    },
-    {
-      "key": "csp_偷樂",
-      "name": "📺｜偷樂短剧",
-      "type": 3,
-      "api": "csp_XBPQ",
-      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": "./json/偷樂短劇.json"
-    },
-    {
-        "key": "麦田影院",
-        "name": "📺｜麦田短剧",
-        "type": 3,
-        "api": "csp_XBPQ",
-        "searchable": 1,
-        "quickSearch": 1,
-        "filterable": 1,
-        "ext": "./json/麦田短剧.json"
     },
     {
         "key": "天龙影院",
@@ -255,16 +111,6 @@
         "quickSearch": 1,
         "filterable": 1,
         "ext": "./json/七味短剧.json"
-    },
-    {
-        "key": "111影视",
-        "name": "📺｜111短剧",
-        "type": 3,
-        "api": "csp_XBPQ",
-        "searchable": 1,
-        "quickSearch": 1,
-        "filterable": 1,
-        "ext": "./json/111短剧.json"
     },
     {
         "key": "纽约短剧",
@@ -313,16 +159,6 @@
         }
     },
     {
-        "key": "稀饭短剧",
-        "name": "📺｜稀饭短剧",
-        "type": 3,
-        "api": "csp_XBPQ",
-        "searchable": 1,
-        "quickSearch": 1,
-        "filterable": 1,
-        "ext": "./json/稀饭短剧.json"
-    },
-    {
         "key": "安迪短剧",
         "name": "📺｜安迪短剧",
         "type": 3,
@@ -353,16 +189,6 @@
         "ext": "./json/理理短剧.json"
     },
     {
-        "key": "白嫖者联盟",
-        "name": "📺｜白嫖短剧",
-        "type": 3,
-        "api": "csp_XBPQ",
-        "searchable": 1,
-        "quickSearch": 1,
-        "filterable": 1,
-        "ext": "./json/白嫖者.json"
-    },
-    {
         "key": "老王影院",
         "name": "📺｜老王短剧",
         "type": 3,
@@ -371,16 +197,6 @@
         "quickSearch": 1,
         "filterable": 1,
         "ext": "./json/老王短剧.json"
-    },
-    {
-        "key": "胖虎影院",
-        "name": "📺｜胖虎短剧",
-        "type": 3,
-        "api": "csp_XBPQ",
-        "searchable": 1,
-        "quickSearch": 1,
-        "filterable": 1,
-        "ext": "./json/胖虎短剧.json"
     },
     {
         "key": "奇优影院",
@@ -413,18 +229,8 @@
         "ext": "./json/微云短剧.json"
     },
     {
-        "key": "一个短剧",
-        "name": "📺｜一个短剧",
-        "type": 3,
-        "api": "csp_XBPQ",
-        "searchable": 1,
-        "quickSearch": 1,
-        "filterable": 1,
-        "ext": "./json/一个短剧.json"
-    },
-    {
       "key": "py_lm",
-      "name": "蓝莓短剧",
+      "name": "📺｜蓝莓短剧",
       "type": 3,
       "api": "./py/py_蓝莓短剧.py",
       "searchable": 1,
@@ -527,38 +333,7 @@
         "quickSearch": 1,
         "filterable": 1,
         "ext": "./json/短劇王.json"
-      },
-       {
-          "key": "短剧网③",
-          "name": "📺｜短剧看看",
-          "type": 3,
-          "api": "csp_XBPQ",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "ext": {
-            "请求头"   : "User-Agent$MOBILE_UA"                                     ,
-            "编码"    : "UTF-8"                                                    ,
-            "主页url" : "https://kanjuju.com/"                                     ,
-            "数组"    : "lazyload\"&&</a>"                                         ,
-            "标题"    : "title=\"&&\""                                             ,
-            "图片"    : "data-original=\"&&\""                                     ,
-            "副标题"   : "right\">&&<"                                              ,
-            "链接"    : "href=\"&&\""                                              ,
-            "线路数组"  : "<h3 class=\"title&&h3>"                                   ,
-            "线路标题"  : "\">&&</"                                                  ,
-            "播放数组"  : "playlist clearfix&&</ul>"                                 ,
-            "倒序"    : "0"                                                        ,
-            "播放列表"  : "<a&&a>"                                                   ,
-            "播放标题"  : ">&&</"                                                    ,
-            "播放链接"  : "href=\"&&\""                                              ,
-            "搜索模式"  : "1"                                                        ,
-            "跳转播放链接": "var player_*\"url\":\"&&\""                               ,
-            "搜索url" : "https://kanjuju.com/vodsearch/{wd}----------{pg}---/"     ,
-            "分类url" : "https://kanjuju.com/show/{cateId}--{by}------{catePg}---/",
-            "分类"    : "短剧$duanju#韩剧$hanju"
-          }
-        }
+      }
       ],
       "parses": [
         {"name": "七智", "type": 3, "url": "https://jx.2s0.cn/player/?url="},
