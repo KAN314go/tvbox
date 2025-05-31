@@ -15,7 +15,7 @@
             "quickSearch": 1,
             "filterable": 1,
             "ext": {
-                "请求头": "user-Agent$Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.91 Mobile Safari/537.36",
+                "请求头": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
                 "编码": "UTF-8",
                 "简介": "class=\"detail-sketch\">&&</span>",
                 "标题": "title=\"&&\"",
