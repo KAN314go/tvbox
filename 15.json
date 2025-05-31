@@ -7,17 +7,7 @@
 
 
 
-        {
-            "key": "奇库影视",
-            "name": "奇库｜APP",
-            "type": 3,
-            "api": "./py/奇库影视.py",
-            "searchable": 1,
-            "changeable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "playerType": 2
-        },
+
         {
             "key": "csp_廠長",
             "name": "🏆｜廠長｜自營線路無法使用",
@@ -2131,6 +2121,17 @@
       "quickSearch": 0,
       "filterable": 1,
       "ext": "eaHR0cHM6Ly9kLmRjbW92aWUudG9w"
+    },
+    {
+            "key": "奇库",
+            "name": "📱｜奇库｜高清◎秒播(浮水印廣告+APP)",
+            "type": 3,
+            "api": "./py/奇库影视.py",
+            "searchable": 1,
+            "changeable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "playerType": 2
     },
     {
       "key": "️爱看Bot",
