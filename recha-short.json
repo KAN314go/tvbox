@@ -25,6 +25,29 @@
       "changeable": 0
       },
       {
+            "key": "csp_廠長短劇",
+            "name": "📺｜廠長短劇｜",
+            "type": 3,
+            "api": "csp_XBPQ",
+            "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "ext": {
+                "主页url": "https://www.czvod.cc/type/duanju.html",
+                "请求头": "User-Agent$Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54#Cookie$myannoun=1; Hm_lvt_c08e84f2c697dc9d0af77ff0dbfb3d6d=1670321007,1671784910,1672743612; Hm_lvt_d06dda04a24e89e1117ee1455e217c30=1670321007,1671784910,1672743612; Hm_lpvt_d06dda04a24e89e1117ee1455e217c30=1672743885; Hm_lpvt_c08e84f2c697dc9d0af77ff0dbfb3d6d=1672743885",
+                "编码": "UTF-8",
+                "数组": "stui-vodlist__box\"&&</li>",
+                "简介": "class=\"detail-sketch\">&&</span>",
+                "标题": "title=\"&&\"",
+                "副标题": "pic-text text-right\"&&</span>",
+                "图片": "data-original=\"&&\"",
+                "播放数组": "ul class=\"stui-content__playlist clearfix\"&&</ul>",
+                "分类url": "https://www.czvod.cc/vodshow/id/duanju/page/{catePg}.html",
+                "分类": "短剧$duanju"
+            }
+      },
+      {
         "key":"csp_XBPQ_短剧4",
         "name":"📺｜短剧CC",
         "type":3,
