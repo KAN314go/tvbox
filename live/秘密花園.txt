@@ -1,44 +1,51 @@
 台湾频道,#genre#
+松視1台,http://ali.hlspull.yximgs.com:80/live/9c98b9f7dd238be0b9c8096edaceb176.flv
 松視1台,http://ali.hlspull.yximgs.com:80/live/50ef4b505ee4eaee84695e05dd76416b.flv
 松視1台,http://m6z.cn/5GDoCV
 松視1台,http://ali.hlspull.yximgs.com:80/live/b6526b4f416c1e3cfa3962a56478a8c6.flv
 
 
+松視3台,http://ali.hlspull.yximgs.com:80/live/356b3616406cfe7e2d19f457f94a90af.flv
 松視3台,http://ali.hlspull.yximgs.com:80/live/f673e599ae7adbe670d806be01df24e9.flv
 松視3台,http://m6z.cn/5zN90y
 松視3台,http://ali.hlspull.yximgs.com:80/live/4322a3624955805f0df7e82951d96131.flv
 
 
+潘朵拉玩美,http://ali.hlspull.yximgs.com:80/live/72fb3c6551504c947277906c766352c5.flv
 潘朵拉玩美,http://ali.hlspull.yximgs.com:80/live/eb04cd9948630d102558b9b141a2378d.flv
 潘朵拉玩美,http://m6z.cn/6aDZTt
 潘朵拉玩美,http://ali.hlspull.yximgs.com:80/live/f3221f0df098ded0e683e21af5383be4.flv
 
 
+彩虹頻道,http://ali.hlspull.yximgs.com:80/live/cd66f962dc5bfaeb9c59658a9e6475b5.flv
 彩虹頻道,http://ali.hlspull.yximgs.com:80/live/525dba358dd3d61a4a916784f6f41713.flv
 彩虹頻道,http://m6z.cn/6i9MXg
 彩虹頻道,http://ali.hlspull.yximgs.com:80/live/e2005516553acb98f9ed5a23a5ee3a1b.flv
 
 
+彩虹K,http://ali.hlspull.yximgs.com:80/live/643911581f37fff06a9fd7db0af4a40d.flv
 彩虹K,http://ali.hlspull.yximgs.com:80/live/a6e2e5e4a84afaa551b91f0d46696c35.flv
 彩虹K,http://m6z.cn/6xcd6E
 彩虹K,http://ali.hlspull.yximgs.com:80/live/7cf51c7c4d984d58f9fab21ee5d93f56.flv
 
 
+彩虹E,http://ali.hlspull.yximgs.com:80/live/f6abd0c0830b0a2a6c9008530bacf371.flv
 彩虹E,http://ali.hlspull.yximgs.com:80/live/7a7649bbf442ec4bb0646ac76469f9ec.flv
 彩虹E,http://m6z.cn/5z2wv5
 彩虹E,http://ali.hlspull.yximgs.com:80/live/60d90edab99fb0a37f6a14e7127a92e6.flv
 
-
+香蕉台,http://ali.hlspull.yximgs.com:80/live/ff774e2be6a42d7d236d30c9bf30ec4f.flv
 香蕉台,http://ali.hlspull.yximgs.com:80/live/ad8be608918f515c45e5b4e02a0476ea.flv
 香蕉台,http://m6z.cn/5VFM9f
 香蕉台,http://ali.hlspull.yximgs.com:80/live/d54708669063b7a2d0a713e198962124.flv
 
-
+极限電影台,http://ali.hlspull.yximgs.com:80/live/9c5225e5f3f005a3f77da0166f3e5db4.flv
 极限電影台,http://ali.hlspull.yximgs.com:80/live/91dc51a893678bdcff4bc3cb2e1d479a.flv
 极限電影台,http://m6z.cn/5z2wtj
 极限電影台,http://ali.hlspull.yximgs.com:80/live/4b724ab5a3b77bff74855fe81111e708.flv
 
 
+驚豔台,http://ali.hlspull.yximgs.com:80/live/1abcf27c538a3252cf3ea1244938bc48.flv
 驚豔台,http://ali.hlspull.yximgs.com:80/live/26902b97d91dc19b2e07674732d2eba8.flv
 驚豔台,http://m6z.cn/63bZdW
 驚豔台,http://ali.hlspull.yximgs.com:80/live/d81a80286be7ce42e0b1feb5aac811f5.flv
@@ -49,7 +56,7 @@ pigoo,https://luong.utako.moe/pigoo/index.m3u8#http://a.u6v.cn/6xcd6u
 pigoo,http://ali.hlspull.yximgs.com:80/live/f831b5a0ea2a7931a3f68bf740474ab1.flv
 pigoo,https://luong.utako.moe/pigoo/index.m3u8 
 
-
+happy,http://ali.hlspull.yximgs.com:80/live/eae555aaff9a9be74babaf2269e493d3.flv
 Happy,http://ali.hlspull.yximgs.com:80/live/9465185b1cce59c929d3af7de1497520.flv
 Happy,http://ali.hlspull.yximgs.com:80/live/45e59c84acc89f09c9d1f4c7133c281a.flv
 happy,http://m6z.cn/5zN8YM
