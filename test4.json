@@ -16,22 +16,22 @@
       "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
       "ext": {
         "数组": "<li&&</p>",
-        //"链接": "href=\"&&\"",
-        //"标题": "title=\"&&\"",
-        //"图片": "data-original=\"&&\"",
-        //"简介": "简介：&&</div>",
-        //"副标题": "class=\"item-status text-overflow\">&&<",
-        //"二次截取": "<ul class=\"row&&</ul",
+        "链接": "href=\"&&\"",
+        "标题": "title=\"&&\"",
+        "图片": "data-original=\"&&\"",
+        "简介": "简介：&&</div>",
+        "副标题": "class=\"item-status text-overflow\">&&<",
+        "二次截取": "<ul class=\"row&&</ul",
         "分类url": "https://www.7.movie/vodshow/24---{cateId}-----{catePg}---.html",
-        "分类": "古代&现代&穿越&玄幻&霸总&英雄救美&未婚妻&师姐&绝美&逆袭&美女&爱情&甜宠&虐恋&爽剧&搞笑&情感&动漫&萌宝"
-        //"搜索数组": "<a&&</a>",
-        //"搜索二次截取": "<ul class=\"ewave-page&&href\"&&\">",
-        //"搜索": "https://www.7.movie/vodsearch/-------------.html?wd={wd}",
-        //"搜索图片": "class=\"pic\">*data-original=\"&&\"",
-        //"搜索链接": "class=\"btn-box\">\"&&\"</",
-        //"播放数组": "ewave-playlist-sort-content\"&&</ul>",
-        //"线路数组": "swiper-slide ewave-tab&&</li>[排序:极速线路>极速线路2>高清线路2>超清线路]",
-        //"线路标题": ">&&</em>"
+        "分类": "古代&现代&穿越&玄幻&霸总&英雄救美&未婚妻&师姐&绝美&逆袭&美女&爱情&甜宠&虐恋&爽剧&搞笑&情感&动漫&萌宝",
+        "搜索数组": "<a&&</a>",
+        "搜索二次截取": "<ul class=\"ewave-page&&href\"&&\">",
+        "搜索": "https://www.7.movie/vodsearch/-------------.html?wd={wd}",
+        "搜索图片": "class=\"pic\">*data-original=\"&&\"",
+        "搜索链接": "class=\"btn-box\">\"&&\"</",
+        "播放数组": "ewave-playlist-sort-content\"&&</ul>",
+        "线路数组": "swiper-slide ewave-tab&&</li>[排序:极速线路>极速线路2>高清线路2>超清线路]",
+        "线路标题": ">&&</em>"
       }
     },
 
