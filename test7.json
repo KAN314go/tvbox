@@ -25,7 +25,6 @@
                 "图片": "data-original=\"&&\"",
                 "播放数组": "ul class=\"stui-content__playlist clearfix\"&&</ul>",
                 "分类url": "https://www.czvod.cc/vodshow/id/duanju/page/{catePg}.html",
-                "分类": "短剧$duanju"
             }
         },
         {
