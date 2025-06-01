@@ -5708,7 +5708,7 @@
     {
       "name": "臨時(18+)",
       "playerType": 2,
-      "url": "./live/私密花園.txt",
+      "url": "./live/花園.txt",
       "epg": "http://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Taipei",
       "ua": "Lavf/58.12.100",
       "header": {
