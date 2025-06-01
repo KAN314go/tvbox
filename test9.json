@@ -6,28 +6,7 @@
 
 
 
-        {
-            "key": "csp_廠長",
-            "name": "🏆｜廠長｜自營線路無法使用",
-            "type": 3,
-            "api": "csp_XBPQ",
-            "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "ext": {
-                "请求头": "User-Agent$Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54#Cookie$myannoun=1; Hm_lvt_c08e84f2c697dc9d0af77ff0dbfb3d6d=1670321007,1671784910,1672743612; Hm_lvt_d06dda04a24e89e1117ee1455e217c30=1670321007,1671784910,1672743612; Hm_lpvt_d06dda04a24e89e1117ee1455e217c30=1672743885; Hm_lpvt_c08e84f2c697dc9d0af77ff0dbfb3d6d=1672743885",
-                "编码": "UTF-8",
-                "简介": "class=\"detail-sketch\">&&</span>",
-                "标题": "title=\"&&\"",
-                "副标题": "pic-text text-right\"&&</span>",
-                "图片": "data-original=\"&&\"",
-                "播放数组": "ul class=\"stui-content__playlist clearfix\"&&</ul>",
-                "分类url": "https://www.czvod.cc/vodshow/area/{area}/by/{by}/id/{cateId}/page/{catePg}/year/{year}.html",
-                "分类": "电影$dianying#剧集$juji#综艺$zongyi#動漫$dongman#短剧$duanju",
-                "地区": "中国大陆&中国香港&中国台湾&美国&法国&英国&日本&韩国&德国&泰国&印度&意大利&西班牙&加拿大&其他||中国大陆&中国香港&中国台湾&韩国&日本&美国&泰国&英国&新加坡&其他||中国大陆&中国香港&中国台湾&日本&韩国&美国||中国大陆&日本&美国&其他||空"
-            }
-        },
+
 
 
     
@@ -913,6 +892,28 @@
       "filterable": 1,
       "ext": "./json/飛快tv.json"
     },
+    {
+      "key": "csp_廠長",
+      "name": "🥇｜廠長｜自營線路無法使用",
+      "type": 3,
+      "api": "csp_XBPQ",
+      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": {
+          "请求头": "User-Agent$Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54#Cookie$myannoun=1; Hm_lvt_c08e84f2c697dc9d0af77ff0dbfb3d6d=1670321007,1671784910,1672743612; Hm_lvt_d06dda04a24e89e1117ee1455e217c30=1670321007,1671784910,1672743612; Hm_lpvt_d06dda04a24e89e1117ee1455e217c30=1672743885; Hm_lpvt_c08e84f2c697dc9d0af77ff0dbfb3d6d=1672743885",
+          "编码": "UTF-8",
+          "简介": "class=\"detail-sketch\">&&</span>",
+          "标题": "title=\"&&\"",
+          "副标题": "pic-text text-right\"&&</span>",
+          "图片": "data-original=\"&&\"",
+          "播放数组": "ul class=\"stui-content__playlist clearfix\"&&</ul>",
+          "分类url": "https://www.czvod.cc/vodshow/area/{area}/by/{by}/id/{cateId}/page/{catePg}/year/{year}.html",
+          "分类": "电影$dianying#剧集$juji#综艺$zongyi#動漫$dongman#短剧$duanju",
+          "地区": "中国大陆&中国香港&中国台湾&美国&法国&英国&日本&韩国&德国&泰国&印度&意大利&西班牙&加拿大&其他||中国大陆&中国香港&中国台湾&韩国&日本&美国&泰国&英国&新加坡&其他||中国大陆&中国香港&中国台湾&日本&韩国&美国||中国大陆&日本&美国&其他||空"
+       }
+    },    
     {
       "key": "csp_真不卡",
       "name": "🥇｜不卡｜高清◎秒播(無廣告)",
