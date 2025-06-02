@@ -5754,7 +5754,7 @@
       "pass": true
     },
     {
-      "name": "223線路(故障)",
+      "name": "大雜燴",
       "type": 0,
       "url": "./live/666-live.txt",
       "epg": "https://epg.112114.eu.org/?ch={name}&date={date}",
