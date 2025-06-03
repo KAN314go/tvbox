@@ -1,16 +1,16 @@
 {
-  "spider": "https://raw.githubusercontent.com/kimwang1978/tvbox/79aa1af4cc0757482da9d4d42642e9d17dda50b0/%E6%91%B8%E9%B1%BC%E5%84%BF/spider.jar",
+  "spider": "./jar/moyu-0530.php;md5;0a9c6b44a20445a9b3c2a39763ef7cf1",
   "logo": "https://p3-pc.douyinpic.com/img/aweme-avatar/tos-cn-i-0813_6e2553f5708c414386eeca88b5f2674a~c5_300x300.jpeg?from=2956013662",
   "wallpaper": "https://tv.nxog.top/m//t/",
   "sites": [
 
     {
       "key": "雨滴",
-      "name": "🥈｜雨滴｜高清◎秒播(無篩選的搜索源)",
+      "name": "🏆｜雨滴｜高清◎秒播",
       "type": 3,
       "api": "csp_Xdai",
-      "jar": "https://raw.githubusercontent.com/kimwang1978/tvbox/79aa1af4cc0757482da9d4d42642e9d17dda50b0/%E6%91%B8%E9%B1%BC%E5%84%BF/jars/%E9%85%8D%E7%BD%AE%E4%B8%AD%E5%BF%83.jar",
-      "ext": "jaHR0cHM6Ly93d3cuempjLmFwcC98YWI0ZTlhNDIxNjc1ZjE0YnxhYjRlOWE0MjE2NzVmMTRifDQ0Mg=="
+      "jar": "./jar/moyuer.php;md5;2d5e6b5456c7cae497af11938df2662d",
+      "ext": "jaHR0cDovL2M4dzJvdjd1NXdnMnoxbzhwMjFjLmFsaXl1bmNzLmNsaWNrfGs5bzNwMmM4YjdtM3owbzh8azlvM3AyYzhiN20zejBvOHwxMDA="
     },
     {
       "key": "仓鼠",
