@@ -309,9 +309,10 @@
       "key": "py_仓鼠",
       "name": "🏆｜倉鼠｜藍光◎秒播(無廣告+APP)",
       "type": 3,
+      "api": "csp_AppGet2",    
+      "jar": "./jar/星河-0603.jar",
       "searchable": 1,
       "quickSearch": 1,
-      "jar": "./jar/星河-0603.jar",
       "ext": "sHR2rlsfjI4L3t4RXQMkn85YdqME5ZFXdHXyEUNrexXmXuKOZHlPhQJvT6ZKEMODJQuGTLg+gpKS+XoOxUH8DdjcutGqV/lfrY9l/Ww/J/LYA0AH34KTXsOeg1p5p+KSYaG5at+IT/dqPugeQjLLpkECHqWJpIs4B2evdM7dDIOBuPmMrT5lbU1yNZHMNkr8tConVxhS1qlq57WIByuNTQ=="
     },
     {
