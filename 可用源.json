@@ -5,6 +5,36 @@
     "sites": [ 
 
     {
+      "key": "驿站",
+      "name": "📱｜驿站｜APP",
+      "type": 3,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "api": "csp_AppMuou",
+      "jar": "./jar/xiaosa-0526.jar;md5;6c87c9a352a0d2e60fed23f28bf4f9c6",
+      "ext": {
+        "url": "http://110.42.107.216:56677",
+        "dataKey": "d7378557d1d9c924",
+        "dataIv": "fb4594f622f34fea",
+        "jxurl": "https://qqiqiyiyoukumgtvapiappdyyztvjsoni8n2o0z1ws2n7b6v3x8.68.gy:56789"
+      }
+    },
+    {
+      "key": "驿站2",
+      "name": "📱｜驿站2｜APP",
+      "type": 3,
+      "quickSearch": 1,
+      "api": "csp_AppMuou",
+      "jar": "./jar/box-0603.jar",
+      "ext": {
+        "url": "http://110.42.110.230:16189",
+        "dataKey": "d7378557d1d9c924",
+        "dataIv": "fb4594f622f34fea",
+        "jxurl": "https://qqiqiyiyoukumgtvapiappdyyztvjsoni8n2o0z1ws2n7b6v3x8.68.gy:56789"
+      }
+    },   
+    {
       "key": "csp_XBiu唐人街影院COM",
       "name": "🎥｜唐人街影院1",
       "type": 3,
