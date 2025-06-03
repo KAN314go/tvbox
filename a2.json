@@ -37,18 +37,6 @@
       }
     },
     {
-      "key": "菲儿影视",
-      "name": "🥪菲菲┃蓝光┃无广",
-      "type": 3,
-      "api": "csp_AppFerr",
-      "jar": "./jar/moyuer.php;md5;2d5e6b5456c7cae497af11938df2662d",
-      "ext": {
-        "url": "https://appcms.freehd.vip",
-        "dataKey": "be5348dfb0c3c283",
-        "dataIv": "5f5449dd14313217"
-      }
-    },
-    {
       "key": "橘子",
       "name": "🍊橘子┃蓝光┃无广",
       "type": 3,
@@ -140,6 +128,7 @@
       "type": 3,
       "api": "csp_NmyswvGuard",
       "jar": "./jar/moyuer.php;md5;2d5e6b5456c7cae497af11938df2662d",
+      "spider": "./jar/moyuer.php;md5;2d5e6b5456c7cae497af11938df2662d",      
       "timeout": 15,
       "searchable": 1,
       "quickSearch": 1,
@@ -151,6 +140,7 @@
       "type": 3,
       "api": "csp_AppSKGuard",
       "jar": "./jar/moyuer.php;md5;2d5e6b5456c7cae497af11938df2662d",
+      "spider": "./jar/moyuer.php;md5;2d5e6b5456c7cae497af11938df2662d",      
       "searchable": 1,
       "quickSearch": 0,
       "changeable": 0,
@@ -162,6 +152,7 @@
       "type": 3,
       "api": "csp_AppTTGuard",
       "jar": "./jar/moyuer.php;md5;2d5e6b5456c7cae497af11938df2662d",
+      "spider": "./jar/moyuer.php;md5;2d5e6b5456c7cae497af11938df2662d",      
       "playerType": 2,
       "searchable": 1,
       "quickSearch": 1,
@@ -173,6 +164,7 @@
       "name": "📔厂长┃不卡┃纯净",
       "type": 3,
       "api": "csp_NewCzGuard",
+      "spider": "./jar/moyuer.php;md5;2d5e6b5456c7cae497af11938df2662d",      
       "jar": "./jar/moyuer.php;md5;2d5e6b5456c7cae497af11938df2662d",
       "timeout": 10,
       "playerType": 2,
@@ -205,6 +197,7 @@
       "name": "🦋蝴蝶┃蓝光┃纯净",
       "type": 3,
       "api": "csp_Hudie",
+      "spider": "./jar/moyuer.php;md5;2d5e6b5456c7cae497af11938df2662d",      
       "jar": "./jar/moyuer.php;md5;2d5e6b5456c7cae497af11938df2662d",
       "playerType": 2,
       "ext": "eaHR0cHM6Ly9kLmRjbW92aWUudG9w"
@@ -212,6 +205,7 @@
     {
       "key": "二三",
       "name": "🍧二三┃蓝光┃纯净",
+      "spider": "./jar/moyuer.php;md5;2d5e6b5456c7cae497af11938df2662d",      
       "jar": "./jar/moyuer.php;md5;2d5e6b5456c7cae497af11938df2662d",
       "type": 3,
       "api": "csp_Muou",
@@ -223,6 +217,7 @@
       "name": "🍆洽洽┃蓝光┃纯净",
       "type": 3,
       "api": "csp_AppGZ",
+      "spider": "./jar/moyuer.php;md5;2d5e6b5456c7cae497af11938df2662d",      
       "jar": "./jar/moyuer.php;md5;2d5e6b5456c7cae497af11938df2662d",
       "searchable": 1,
       "quickSearch": 1,
@@ -267,6 +262,7 @@
       "type": 3,
       "api": "csp_AppYsV2Guard",
       "jar": "./jar/moyuer.php;md5;2d5e6b5456c7cae497af11938df2662d",    
+      "spider": "./jar/moyuer.php;md5;2d5e6b5456c7cae497af11938df2662d",      
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,

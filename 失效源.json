@@ -5,6 +5,18 @@
     "logo": "https://p3-pc.douyinpic.com/img/aweme-avatar/tos-cn-i-0813_6e2553f5708c414386eeca88b5f2674a~c5_300x300.jpeg?from=2956013662",
     "wallpaper": "https://picsum.photos/1080/",
     "sites": [ 
+          {
+      "key": "菲儿影视",
+      "name": "🥪菲菲┃蓝光┃无广",
+      "type": 3,
+      "api": "csp_AppFerr",
+      "jar": "./jar/moyuer.php;md5;2d5e6b5456c7cae497af11938df2662d",
+      "ext": {
+        "url": "https://appcms.freehd.vip",
+        "dataKey": "be5348dfb0c3c283",
+        "dataIv": "5f5449dd14313217"
+      }
+    },
     {
       "key": "7点影视",
       "name": "🥇｜七點｜高清◎秒播(有廣告)",
