@@ -4,30 +4,7 @@
   "wallpaper": "https://tv.nxog.top/m//t/",
   "sites": [
 
-    {
-      "key": "雨滴",
-      "name": "🏆｜雨滴｜高清◎秒播",
-      "type": 3,
-      "api": "csp_Xdai",
-      "jar": "./jar/moyuer.php;md5;2d5e6b5456c7cae497af11938df2662d",
-      "ext": "jaHR0cDovL2M4dzJvdjd1NXdnMnoxbzhwMjFjLmFsaXl1bmNzLmNsaWNrfGs5bzNwMmM4YjdtM3owbzh8azlvM3AyYzhiN20zejBvOHwxMDA="
-    },
-    {
-      "key": "仓鼠",
-      "name": "🏆｜倉鼠｜藍光◎秒播(無廣告+APP)",
-      "jar": "./jar/moyuer.php;md5;2d5e6b5456c7cae497af11938df2662d",
-      "type": 3,
-      "quickSearch": 1,
-      "api": "csp_AppGet2",
-      "ext": 
-           {
-           "url": "https://qjappcms.cs4k.top",
-            "dataKey": "Z98KXaLtO2wC1Pte",
-            "dataIv": "Z98KXaLtO2wC1Pte",
-            "deviceId": "",
-            "version": "120"
-            }
-    },
+
     {
       "key": "糯米",
       "name": "🏆｜糯米",
@@ -39,17 +16,6 @@
       "changeable": 1
     },
     {
-      "key": "萌米",
-      "name": "📱｜萌米",
-      "type": 3,
-      "api": "csp_AppTTGuard",
-      "playerType": 2,
-      "searchable": 1,
-      "quickSearch": 1,
-      "changeable": 1,
-      "ext": "uqGL1bNENEIVq+dC1p/Y9uWjuA=="
-    },    
-    {
       "key": "Auete",
       "name": "🏆｜奥特",
       "type": 3,
@@ -59,6 +25,36 @@
       "quickSearch": 1,
       "changeable": 1,
       "ext": "https://auete.com/"
+    },        
+    {
+      "key": "面包影视",
+      "name": "🏆｜面包",
+      "type": 3,
+      "api": "csp_XBPQ",
+      "jar": "./jar/moyuer.php;md5;2d5e6b5456c7cae497af11938df2662d",
+      "ext": "http://我不是.摸鱼儿.com/api/moyu.php?file=面包"
+    },
+    {
+      "key": "五五影视",
+      "name": "🏆｜五五",
+      "type": 3,
+      "api": "csp_XBPQ",
+      "jar": "./jar/moyuer.php;md5;2d5e6b5456c7cae497af11938df2662d",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "http://我不是.摸鱼儿.com/api/moyu.php?file=55"
+    },
+    {
+      "key": "萌米",
+      "name": "📱｜萌米",
+      "type": 3,
+      "api": "csp_AppTTGuard",
+      "playerType": 2,
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 1,
+      "ext": "uqGL1bNENEIVq+dC1p/Y9uWjuA=="
     },    
     {
       "key": "彼岸",
@@ -105,45 +101,8 @@
         "version": ""
       }
     },
-    {
-      "key": "4Kdy",
-      "name": "🏆｜4Kdy",
-      "type": 3,
-      "api": "csp_XBPQ",
-      "jar": "./jar/moyuer.php;md5;2d5e6b5456c7cae497af11938df2662d",
-      "ext": "http://我不是.摸鱼儿.com/api/moyu.php?file=4kdy"
-    },
-    {
-      "key": "面包影视",
-      "name": "🏆｜面包",
-      "type": 3,
-      "api": "csp_XBPQ",
-      "jar": "./jar/moyuer.php;md5;2d5e6b5456c7cae497af11938df2662d",
-      "ext": "http://我不是.摸鱼儿.com/api/moyu.php?file=面包"
-    },
-    {
-      "key": "五五影视",
-      "name": "🏆｜五五",
-      "type": 3,
-      "api": "csp_XBPQ",
-      "jar": "./jar/moyuer.php;md5;2d5e6b5456c7cae497af11938df2662d",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": "http://我不是.摸鱼儿.com/api/moyu.php?file=55"
-    },
 
-    {
-      "key": "酷影视",
-      "name": "🏆｜酷影",
-      "type": 3,
-      "api": "csp_AppYsV2Guard",
-      "jar": "./jar/moyuer.php;md5;2d5e6b5456c7cae497af11938df2662d",    
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": "https://www.tvkuys.xyz/api.php/app/"
-    },
+
 
 
 
@@ -317,8 +276,24 @@
       "filterable": 0,
       "changeable": 0
     },
-    {
+        {
       "key": "仓鼠",
+      "name": "🏆｜錢鼠｜藍光◎秒播(無廣告+APP)",
+      "jar": "./jar/moyuer.php;md5;2d5e6b5456c7cae497af11938df2662d",
+      "type": 3,
+      "quickSearch": 1,
+      "api": "csp_AppGet2",
+      "ext": 
+           {
+           "url": "https://qjappcms.cs4k.top",
+            "dataKey": "Z98KXaLtO2wC1Pte",
+            "dataIv": "Z98KXaLtO2wC1Pte",
+            "deviceId": "",
+            "version": "120"
+            }
+    },
+    {
+      "key": "py_仓鼠",
       "name": "🏆｜倉鼠｜藍光◎秒播(無廣告+APP)",
       "type": 3,
       "searchable": 1,
