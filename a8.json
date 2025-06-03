@@ -1783,10 +1783,11 @@
     },
         {
       "key": "雨滴",
-      "name": "雨滴｜APP",
+      "name": "📱｜雨滴｜APP",
       "type": 3,
       "quickSearch": 1,
       "api": "csp_AppGet",
+      "jar": "./jar/box-0603.jar",
       "ext": {
         "url": "https://c8w2ov7u5wg2z1o8p21c.aliyuncs.click:27899",
         "dataKey": "k9o3p2c8b7m3z0o8",
