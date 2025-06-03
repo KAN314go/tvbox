@@ -1749,6 +1749,19 @@
       "changeable": 1
     },
     {
+      "key": "热播影视",
+      "name": "📱｜热播",
+      "type": 3,
+      "api": "csp_AppRJ",
+      "jar": "./jar/box-0603.jar",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "ext": {
+        "url": "http://v.rbotv.cn"
+      }
+    },    
+    {
       "key": "光速",
       "name": "📱｜光速｜高清◎秒播(無廣告+APP)",
       "type": 3,
