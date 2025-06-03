@@ -131,7 +131,6 @@
       "type": 3,
       "api": "csp_Xdai",
       "jar": "./jar/moyuer.php;md5;2d5e6b5456c7cae497af11938df2662d",
-      "playerType": 1,
       "ext": "jaHR0cDovL2M4dzJvdjd1NXdnMnoxbzhwMjFjLmFsaXl1bmNzLmNsaWNrfGs5bzNwMmM4YjdtM3owbzh8azlvM3AyYzhiN20zejBvOHwxMDA="
     },
     {
@@ -140,7 +139,6 @@
       "type": 3,
       "api": "csp_AppYsV2Guard",
       "jar": "./jar/moyuer.php;md5;2d5e6b5456c7cae497af11938df2662d",    
-      "spider": "./jar/moyuer.php;md5;2d5e6b5456c7cae497af11938df2662d",      
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
