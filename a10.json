@@ -4,14 +4,7 @@
   "wallpaper": "https://tv.nxog.top/m//t/",
   "sites": [
 
-    {
-      "key": "雨滴",
-      "name": "📱｜雨滴",
-      "type": 3,
-      "api": "csp_Xdai",
-      "jar": "./jar/xiaosa-0526.jar;md5;6c87c9a352a0d2e60fed23f28bf4f9c6",
-      "ext": "jaHR0cDovL2M4dzJvdjd1NXdnMnoxbzhwMjFjLmFsaXl1bmNzLmNsaWNrfGs5bzNwMmM4YjdtM3owbzh8azlvM3AyYzhiN20zejBvOHwxMDA="
-    },
+
     {
       "key": "仓鼠",
       "name": "🏆｜倉鼠｜藍光◎秒播(無廣告+APP)",
@@ -1660,7 +1653,8 @@
       "type": 3,
       "searchable": 1,
       "quickSearch": 1,
-      "filterable": 1,      "api": "csp_AppGet",
+      "filterable": 1,      
+      "api": "csp_AppGet",
       "jar": "./jar/xiaosa-0526.jar;md5;6c87c9a352a0d2e60fed23f28bf4f9c6",
       "ext": {
         "url"     : "https://www.zjc.app",
@@ -2317,8 +2311,7 @@
       "name": "🥈｜玉米｜高清◎秒播(無篩選的搜索源)",
       "type": 3,
       "api": "csp_Xdai",
-      "jar": "./jar/pizza.jar",
-      "playerType": 2,
+      "jar": "./jar/moyuer.php;md5;2d5e6b5456c7cae497af11938df2662d",
       "ext": "jaHR0cHM6Ly93d3cuempjLmFwcC98YWI0ZTlhNDIxNjc1ZjE0YnxhYjRlOWE0MjE2NzVmMTRifDQ0Mg=="
     },
     {
