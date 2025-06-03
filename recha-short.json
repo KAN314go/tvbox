@@ -47,6 +47,28 @@
                 "分类": "短剧$duanju"
             }
       },
+    {
+      "key": "河马短剧",
+      "name": "📺｜河马短剧",
+      "type": 3,
+      "api": "./py/河马短剧.py",
+      "searchable": 1,
+      "changeable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "playerType": 2
+    },      
+    {
+      "key": "偷乐短剧",
+      "name": "📺｜偷乐短剧",
+      "type": 3,
+      "api": "./py/偷乐短剧.py",
+      "searchable": 1,
+      "changeable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "playerType": 2
+    },    
       {
         "key":"csp_XBPQ_短剧4",
         "name":"📺｜短剧CC",
