@@ -23,7 +23,7 @@
     },
     {
       "key": "糯米",
-      "name": "🍓糯米┃秒播┃纯净",
+      "name": "🏆｜糯米",
       "type": 3,
       "api": "csp_NmyswvGuard",
       "timeout": 15,
@@ -33,7 +33,7 @@
     },
     {
       "key": "萌米",
-      "name": "👀萌米┃多线┃纯净",
+      "name": "📱｜萌米",
       "type": 3,
       "api": "csp_AppTTGuard",
       "playerType": 2,
@@ -44,7 +44,7 @@
     },    
     {
       "key": "Auete",
-      "name": "🏝奥特┃无广┃纯净",
+      "name": "🏆｜奥特",
       "type": 3,
       "api": "csp_AueteGuard",
       "timeout": 15,
@@ -55,7 +55,7 @@
     },    
     {
       "key": "彼岸",
-      "name": "🍂菲菲┃蓝光┃弹幕",
+      "name": "📱｜彼岸",
       "type": 3,
       "quickSearch": 1,
       "api": "csp_AppGet",
@@ -69,38 +69,8 @@
       }
     },
     {
-      "key": "橘子",
-      "name": "🍊橘子┃蓝光┃无广",
-      "type": 3,
-      "quickSearch": 1,
-      "api": "csp_AppGet",
-      "jar": "./jar/moyuer.php;md5;2d5e6b5456c7cae497af11938df2662d",
-      "ext": {
-        "url": "https://api1.bffree.cn",
-        "dataKey": "2015692015692015",
-        "dataIv": "2015692015692015",
-        "deviceId": "",
-        "version": "300"
-      }
-    },
-    {
-      "key": "雨滴",
-      "name": "⛱️雨滴┃蓝光┃无广",
-      "type": 3,
-      "quickSearch": 1,
-      "api": "csp_AppGet",
-      "jar": "./jar/moyuer.php;md5;2d5e6b5456c7cae497af11938df2662d",
-      "ext": {
-        "url": "https://c8w2ov7u5wg2z1o8p21c.aliyuncs.click:27899",
-        "dataKey": "k9o3p2c8b7m3z0o8",
-        "dataIv": "k9o3p2c8b7m3z0o8",
-        "deviceId": "",
-        "version": "100"
-      }
-    },
-    {
       "key": "人人",
-      "name": "☃️人人┃蓝光┃无广",
+      "name": "📱｜人人",
       "type": 3,
       "quickSearch": 1,
       "api": "csp_AppGet",
@@ -115,7 +85,7 @@
     },
     {
       "key": "忍者",
-      "name": "🥷忍者┃蓝光┃弹幕",
+      "name": "📱｜忍者",
       "type": 3,
       "quickSearch": 1,
       "api": "csp_AppGet",
@@ -128,27 +98,9 @@
         "version": ""
       }
     },
-        {
-      "key": "nk",
-      "name": "🫣耐看┃蓝光┃无广",
-      "type": 3,
-      "api": "csp_WebNK",
-      "jar": "./jar/moyuer.php;md5;2d5e6b5456c7cae497af11938df2662d",
-      "searchable": 0,
-      "changeable": 0,
-      "ext": "w7TCmsONw6LDrsKYwoXCosKcwqDCrcKawqDDosKnwqTCoMKjwrPCosKpw7DDscKqXsKewpvDncOpw57Cp8OnwphXXFDCoMOnw6PDqcKhbVBXwovlh77phZvmkJ/lkZzCpuWGn+S9h+WQp2rlv6roqLnotr7mvInnrZPCkFdcUMKgw5fDn8Ocw6zCrMKgwqR7w57DrMKhwrPCmlrCp8KlwqnDosKpwrDCr8KhwrA="
-    },
-    {
-      "key": "664K",
-      "name": "🌀沐风┃蓝光┃无广",
-      "type": 3,
-      "api": "csp_XBPQ",
-      "jar": "./jar/moyuer.php;md5;2d5e6b5456c7cae497af11938df2662d",
-      "ext": "http://我不是.摸鱼儿.com/api/moyu.php?file=664k"
-    },
     {
       "key": "4Kdy",
-      "name": "🕊️凝安┃蓝光┃无广",
+      "name": "🏆｜4Kdy",
       "type": 3,
       "api": "csp_XBPQ",
       "jar": "./jar/moyuer.php;md5;2d5e6b5456c7cae497af11938df2662d",
@@ -156,7 +108,7 @@
     },
     {
       "key": "面包影视",
-      "name": "🍞面包┃蓝光┃无广",
+      "name": "🏆｜面包",
       "type": 3,
       "api": "csp_XBPQ",
       "jar": "./jar/moyuer.php;md5;2d5e6b5456c7cae497af11938df2662d",
@@ -164,7 +116,7 @@
     },
     {
       "key": "五五影视",
-      "name": "😭呜呜┃蓝光┃无广",
+      "name": "🏆｜五五",
       "type": 3,
       "api": "csp_XBPQ",
       "jar": "./jar/moyuer.php;md5;2d5e6b5456c7cae497af11938df2662d",
@@ -175,7 +127,7 @@
     },
     {
       "key": "雨滴",
-      "name": "🌿雨滴┃蓝光┃无广",
+      "name": "📱｜雨滴",
       "type": 3,
       "api": "csp_Xdai",
       "jar": "./jar/moyuer.php;md5;2d5e6b5456c7cae497af11938df2662d",
@@ -183,21 +135,8 @@
       "ext": "jaHR0cDovL2M4dzJvdjd1NXdnMnoxbzhwMjFjLmFsaXl1bmNzLmNsaWNrfGs5bzNwMmM4YjdtM3owbzh8azlvM3AyYzhiN20zejBvOHwxMDA="
     },
     {
-      "key": "浪酷影视",
-      "name": "😎浪酷┃蓝光┃弹幕",
-      "type": 3,
-      "api": "csp_AppRJ",
-      "jar": "./jar/moyuer.php;md5;2d5e6b5456c7cae497af11938df2662d",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "ext": {
-        "url": "http://v.lkuys.cn"
-      }
-    },
-    {
       "key": "酷影视",
-      "name": "😎酷影┃蓝光┃纯净",
+      "name": "🏆｜酷影",
       "type": 3,
       "api": "csp_AppYsV2Guard",
       "jar": "./jar/moyuer.php;md5;2d5e6b5456c7cae497af11938df2662d",    
@@ -925,7 +864,7 @@
       "name": "🥇｜糯米｜高清◎秒播(無廣告)",
       "type": 3,
       "api": "csp_Nmys",
-      "jar": "./jar/xiaosa.jar;md5;e4619193d9073ff124bb77f88f61d057",
+      "jar": "./jar/xiaosa-0526.jar;md5;6c87c9a352a0d2e60fed23f28bf4f9c6",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
@@ -1625,17 +1564,17 @@
     },
         {
       "key": "nk",
-      "name": "📱｜新耐｜藍光◎秒播(無廣告+APP)",
+      "name": "📱｜耐摸｜藍光◎秒播(無廣告+APP)",
       "type": 3,
       "api": "csp_WebNK",
-      "jar": "http://我不是.摸鱼儿.com/by/jar/moyuer.php;md5;a9edc77b65fdba8da8d6af08aeaf0d74",
+      "jar": "./jar/moyuer.php;md5;2d5e6b5456c7cae497af11938df2662d",
       "searchable": 0,
       "changeable": 0,
       "ext": "w7TCmsONw6LDrsKYwoXCosKcwqDCrcKawqDDosKnwqTCoMKjwrPCosKpw7DDscKqXsKewpvDncOpw57Cp8OnwphXXFDCoMOnw6PDqcKhbVBXwovlh77phZvmkJ/lkZzCpuWGn+S9h+WQp2rlv6roqLnotr7mvInnrZPCkFdcUMKgw5fDn8Ocw6zCrMKgwqR7w57DrMKhwrPCmlrCp8KlwqnDosKpwrDCr8KhwrA="
     },
     {
       "key": "耐看影视",
-      "name": "📱｜舊耐｜高清◎秒播(無廣告+APP)",
+      "name": "📱｜舊瀟｜高清◎秒播(無廣告+APP)",
       "type": 3,
       "api": "csp_WebNK",
       "jar": "./jar/xiaosa-0526.jar;md5;6c87c9a352a0d2e60fed23f28bf4f9c6",     
@@ -1644,6 +1583,19 @@
       "filterable": 1,
       "ext": "w7TClcONw6LDrsKYwoXCosKcwpvCrcKcw6HDrsKnwqDCo2rCqMKiw7HDsMOxYcKewpvClMOvw5fCqMOmw59VXFLCpMOiw6PCnMKzwpzCjuWGtemEmOaPleWRnMKf5Yem5L6Q5ZGxbeW+oeintui1tOa8ieetjMOXwpvDtw=="
     },
+    {
+      "key": "浪酷影视",
+      "name": "📱｜摸酷｜高清◎秒播(無廣告)",
+      "type": 3,
+      "api": "csp_AppRJ",
+      "jar": "./jar/moyuer.php;md5;2d5e6b5456c7cae497af11938df2662d",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "ext": {
+        "url": "http://v.lkuys.cn"
+      }
+    },    
     {
       "key": "浪酷影视",
       "name": "📱｜瀟酷｜高清◎秒播(無廣告)",
@@ -1827,7 +1779,7 @@
     },
     {
       "key": "光速",
-      "name": "📱｜光速｜高清◎秒播(無廣告+APP)",
+      "name": "📱｜雨滴｜高清◎秒播(無廣告+APP)",
       "type": 3,
       "searchable": 1,
       "quickSearch": 1,
@@ -4693,7 +4645,7 @@
       "type": 3,
       "api": "csp_XBPQ",
       "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-      "ext": "http://我不是.摸鱼儿.com/api/moyu.php?file=4kdy"
+      "ext": "./jar/moyu.php?file=4kdy"
     },
     {
       "key": "py_animal3",
