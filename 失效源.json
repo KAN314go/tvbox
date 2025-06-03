@@ -5,7 +5,22 @@
     "logo": "https://p3-pc.douyinpic.com/img/aweme-avatar/tos-cn-i-0813_6e2553f5708c414386eeca88b5f2674a~c5_300x300.jpeg?from=2956013662",
     "wallpaper": "https://picsum.photos/1080/",
     "sites": [ 
-          {
+
+    {
+      "key": "彼岸",
+      "name": "📱｜彼岸",
+      "type": 3,
+      "quickSearch": 1,
+      "api": "csp_AppGet",
+      "ext": {
+        "url": "https://mfsp33.top",
+        "dataKey": "1234567887654321",
+        "dataIv": "1234567887654321",
+        "deviceId": "298e5fe29c74b35aabb9836ee2f6f449f",
+        "version": "315"
+      }
+    },
+    {
       "key": "菲儿影视",
       "name": "🥪菲菲┃蓝光┃无广",
       "type": 3,

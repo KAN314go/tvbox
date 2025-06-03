@@ -3,7 +3,25 @@
     "logo": "https://p3-pc.douyinpic.com/img/aweme-avatar/tos-cn-i-0813_6e2553f5708c414386eeca88b5f2674a~c5_300x300.jpeg?from=2956013662",
     "wallpaper": "https://picsum.photos/1080/",
     "sites": [ 
-
+    {
+      "key": "面包影视",
+      "name": "🏆｜面包",
+      "type": 3,
+      "api": "csp_XBPQ",
+      "jar": "./jar/moyuer.php;md5;2d5e6b5456c7cae497af11938df2662d",
+      "ext": "http://我不是.摸鱼儿.com/api/moyu.php?file=面包"
+    },
+    {
+      "key": "五五影视",
+      "name": "🏆｜五五",
+      "type": 3,
+      "api": "csp_XBPQ",
+      "jar": "./jar/moyuer.php;md5;2d5e6b5456c7cae497af11938df2662d",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "http://我不是.摸鱼儿.com/api/moyu.php?file=55"
+    },
     {
       "key": "驿站",
       "name": "📱｜驿站｜APP",
