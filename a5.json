@@ -57,8 +57,8 @@
       "ext": "uqGL1bNENEIVq+dC1p/Y9uWjuA=="
     },    
     {
-      "key": "彼岸",
-      "name": "📱｜彼岸",
+      "key": "晴天",
+      "name": "📱｜晴天",
       "type": 3,
       "quickSearch": 1,
       "api": "csp_AppGet",
@@ -101,7 +101,20 @@
         "version": ""
       }
     },
-
+    {
+      "key": "彼岸",
+      "name": "📱｜彼岸",
+      "type": 3,
+      "quickSearch": 1,
+      "api": "csp_AppGet",
+      "ext": {
+        "url": "https://mfsp33.top",
+        "dataKey": "1234567887654321",
+        "dataIv": "1234567887654321",
+        "deviceId": "298e5fe29c74b35aabb9836ee2f6f449f",
+        "version": "315"
+      }
+    },
 
 
 
@@ -2193,11 +2206,11 @@
       "api": "csp_AppGet",
       "jar": "./jar/xiaosa-0526.jar;md5;6c87c9a352a0d2e60fed23f28bf4f9c6",
       "ext": {
-        "url"     : "http://149.88.64.161:9525",
-        "dataKey" : "123456789ABCDEFG"         ,
-        "dataIv"  : "123456789ABCDEFG"         ,
-        "deviceId": ""                         ,
-        "version" : ""
+        "url": "http://149.88.64.161:8627",
+        "dataKey": "123456789ABCDEFG",
+        "dataIv": "123456789ABCDEFG",
+        "deviceId": "2bb4c10f3e043307dbfc579bd0db23f4e",
+        "version": "110"
       }
     },
     {
