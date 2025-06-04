@@ -6,6 +6,19 @@
 
 
 
+        
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -274,22 +287,54 @@
                 "version": ""
             }
       },
-      {
-            "key": "橘子",
-            "name": "🏆｜橘子｜藍光◎秒播(無廣告+APP)",
-            "type": 3,
-            "quickSearch": 1,
-            "api": "csp_AppGet",
-            "jar": "./jar/xiaosa-0526.jar;md5;6c87c9a352a0d2e60fed23f28bf4f9c6",
-            "ext": {
-                "url": "https://api1.bffree.cn",
-                "dataKey": "2015692015692015",
-                "dataIv": "2015692015692015",
-                "deviceId": "",
-                "version": "300"
-            }
-      },
-      {
+          {
+      "key": "橘猫",
+      "name": "📱｜橘猫｜藍光◎秒播(4K線無廣告+APP)",
+      "type": 3,
+      "quickSearch": 1,
+      "api": "csp_AppGet",
+      "jar": "./jar/box-0603.jar",
+      "ext": {
+        "url": "https://appcms.jm4k.top",
+        "dataKey": "KPEkKAESYi38CQdn",
+        "dataIv": "KPEkKAESYi38CQdn",
+        "deviceId": "",
+        "version": "119"
+      }
+    },
+    {
+      "key": "橘子",
+      "name": "🏆｜橘子｜藍光◎秒播(無廣告+APP)",
+      "type": 3,
+      "quickSearch": 1,
+      "api": "csp_AppGet",
+      "jar": "./jar/xiaosa-0526.jar;md5;6c87c9a352a0d2e60fed23f28bf4f9c6",
+      "ext": {
+          "url": "https://api1.bffree.cn",
+          "dataKey": "2015692015692015",
+          "dataIv": "2015692015692015",
+          "deviceId": "",
+          "version": "300"
+         }
+    },
+    {
+      "key": "米兔",
+      "name": "🏆｜米兔｜藍光◎秒播(無廣告+APP)",
+      "type": 3,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "api": "csp_AppGet",
+      "jar": "./jar/xiaosa-0526.jar;md5;6c87c9a352a0d2e60fed23f28bf4f9c6",
+      "ext": {
+        "url"     : "https://www.zjc.app",
+        "dataKey" : "ab4e9a421675f14b"   ,
+        "dataIv"  : "ab4e9a421675f14b"   ,
+        "deviceId": ""                   ,
+        "version" : "442"
+      }
+    },    
+    {
       "key": "晴天",
       "name": "🏆｜晴天｜藍光◎秒播(無廣告+OK源)",
       "type": 3,
@@ -1426,6 +1471,17 @@
       }
     },
     {
+      "key": "奇库",
+      "name": "🥇｜奇库｜高清◎秒播(浮水印廣告+PY)",
+      "type": 3,
+      "api": "./py/奇库影视.py",
+      "searchable": 1,
+      "changeable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "playerType": 2
+    },    
+    {
       "key": "A8",
       "name": "🥇｜A8｜高清◎秒播(無廣告+無篩選)",
       "type": 3,
@@ -1457,6 +1513,21 @@
       "changeable": 0,
       "ext": "w7TCmsONw6LDrsKYwoXCosKcwqDCrcKawqDDosKnwqTCoMKjwrPCosKpw7DDscKqXsKewpvDncOpw57Cp8OnwphXXFDCoMOnw6PDqcKhbVBXwovlh77phZvmkJ/lkZzCpuWGn+S9h+WQp2rlv6roqLnotr7mvInnrZPCkFdcUMKgw5fDn8Ocw6zCrMKgwqR7w57DrMKhwrPCmlrCp8KlwqnDosKpwrDCr8KhwrA="
     },
+    {
+      "key": "水滴",
+      "name": "📱｜水滴｜高清◎秒播(主線無廣告+APP)",
+      "type": 3,
+      "quickSearch": 1,
+      "api": "csp_AppGet2",
+      "jar": "./jar/box-0603.jar",
+      "ext": {
+        "url": "http://1.94.105.93",
+        "dataKey": "gKdQKLbwhhLp4Ytv",
+        "dataIv": "gKdQKLbwhhLp4Ytv",
+        "deviceId": "",
+        "version": ""
+      }
+    },    
     {
       "key": "萌米",
       "name": "📱｜萌米｜高清◎秒播(無廣告+APP)",
@@ -1514,8 +1585,22 @@
       }
     },
     {
+      "key": "趣看",
+      "name": "📱｜趣看｜高清◎秒播(主線無廣告+APP)",
+      "type": 3,
+      "quickSearch": 1,
+      "api": "csp_AppMuou",
+      "jar": "./jar/box-0603.jar",
+      "ext": {
+        "url": "https://xjuzi.top",
+        "dataKey": "6a482a70b80eefc9",
+        "dataIv": "c995826a3e86fedd",
+        "jxurl": "https://www.ququkan.cc"
+      }
+    },    
+    {
       "key": "耐看影视",
-      "name": "📱｜舊瀟｜高清◎秒播(無廣告+APP)",
+      "name": "📱｜好看｜高清◎秒播(無廣告+APP)",
       "type": 3,
       "api": "csp_WebNK",
       "jar": "./jar/xiaosa-0526.jar;md5;6c87c9a352a0d2e60fed23f28bf4f9c6",     
@@ -1581,23 +1666,6 @@
       "ext": "sHR2rlsfjI4L3t4RXQMknxhunFUlA4159TKiKvIPpfcM1xianxebcSLajBbwFymqC+z9WoGzQYbh7FSvh8KdiC0BKF0CalaPaCEMOZm+ClGEeNzXAaR0FnrV04SiB2NK"
     },
     {
-      "key": "橘子",
-      "name": "📱｜橘子｜APP",
-      "type": 3,
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "api": "csp_AppGet",
-      "jar": "./jar/xiaosa-0526.jar;md5;6c87c9a352a0d2e60fed23f28bf4f9c6",
-      "ext": {
-        "url"     : "https://api1.bffree.cn",
-        "dataKey" : "2015692015692015"      ,
-        "dataIv"  : "2015692015692015"      ,
-        "deviceId": ""                      ,
-        "version" : "300"
-      }
-    },
-    {
       "key": "玉米APP",
       "name": "📱｜玉米｜APP",
       "type": 3,
@@ -1624,23 +1692,6 @@
       "quickSearch": 1,
       "filterable": 1,
       "timeout": 10
-    },
-    {
-      "key": "米兔",
-      "name": "📱｜米兔｜APP",
-      "type": 3,
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "api": "csp_AppGet",
-      "jar": "./jar/xiaosa-0526.jar;md5;6c87c9a352a0d2e60fed23f28bf4f9c6",
-      "ext": {
-        "url"     : "https://www.zjc.app",
-        "dataKey" : "ab4e9a421675f14b"   ,
-        "dataIv"  : "ab4e9a421675f14b"   ,
-        "deviceId": ""                   ,
-        "version" : "442"
-      }
     },
     {
       "key": "电影",
@@ -1705,7 +1756,7 @@
     },
     {
       "key": "热播影视",
-      "name": "📱｜热播",
+      "name": "📱｜热播｜高清◎秒播(無廣告+APP)",
       "type": 3,
       "api": "csp_AppRJ",
       "jar": "./jar/box-0603.jar",
@@ -1716,6 +1767,17 @@
         "url": "http://v.rbotv.cn"
       }
     },
+    {
+      "key": "热播弹幕",
+      "name": "📱｜热播｜高清◎秒播(無廣告+APP)",
+      "type": 3,
+      "api": "csp_TianTian",
+      "jar": "./jar/pizza.jar",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": {"danmu": true, "site": "aHR0cDovL3YucmJvdHYuY24="}
+    },    
     {
       "key": "光速",
       "name": "📱｜光速｜高清◎秒播(無廣告+APP)",
@@ -1733,6 +1795,21 @@
         "version" : "112"
       }
     },
+    {
+      "key": "悠悠",
+      "name": "📱｜悠悠｜高清◎秒播(主線無廣告+APP)",
+      "type": 3,
+      "quickSearch": 1,
+      "api": "csp_AppGet",
+      "jar": "./jar/box-0603.jar",
+      "ext": {
+        "url": "http://46.203.125.54:7070",
+        "dataKey": "RuN9LRvwTRgpQnpK",
+        "dataIv": "RuN9LRvwTRgpQnpK",
+        "deviceId": "298e5fe29c74b35aabb9836ee2f6f449f",
+        "version": "547"
+      }
+    },    
     {
       "key": "雨滴",
       "name": "📱｜雨滴｜高清◎秒播(無廣告+APP)",
@@ -1892,17 +1969,6 @@
       "filterable": 0,
       "jar": "./jar/巧记.jar;md5;9d8407a76b2abeeaabdd147b1b93799f",
       "ext": "maHR0cHM6Ly93d3cuc3ViYWliYWkuY29tLw=="
-    },
-    {
-      "key": "热播弹幕",
-      "name": "📱｜热播｜高清◎秒播(無廣告+APP)",
-      "type": 3,
-      "api": "csp_TianTian",
-      "jar": "./jar/pizza.jar",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": {"danmu": true, "site": "aHR0cDovL3YucmJvdHYuY24="}
     },
     {
       "key": "天天弹幕",
@@ -2172,16 +2238,20 @@
       "ext": "eaHR0cHM6Ly9kLmRjbW92aWUudG9w"
     },
     {
-            "key": "奇库",
-            "name": "📱｜奇库｜高清◎秒播(浮水印廣告+APP)",
-            "type": 3,
-            "api": "./py/奇库影视.py",
-            "searchable": 1,
-            "changeable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "playerType": 2
-    },
+      "key": "米兔",
+      "name": "📱｜米兔｜普清◎秒播(無廣告+APP)",
+      "type": 3,
+      "quickSearch": 1,
+      "api": "csp_AppGet",
+      "jar": "./jar/box-0603.jar",
+      "ext": {
+        "url": "http://v.tkbot.fun",
+        "dataKey": "d032c12876bc6848",
+        "dataIv": "d032c12876bc6848",
+        "deviceId": "",
+        "version": "200"
+      }
+    },    
     {
       "key": "️爱看Bot",
       "name": "🥈｜爱看｜高清◎秒播(全線路採集+隨機廣告)",
