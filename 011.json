@@ -10,7 +10,7 @@
       "name": "bili歌单┃★星河★",
       "type": 3,
       "api": "csp_Bili",
-      "jar": "./jar/xmky-0606.jar",
+      "jar": "./jar/xmky.jar",
       "searchable": 1,
       "ext": {
         "json": "./json/酷奇mv.json",
@@ -26,7 +26,7 @@
       "name": "bili演唱会┃★星河★",
       "type": 3,
       "api": "csp_Bili",
-      "jar": "./jar/xmky-0606.jar",
+      "jar": "./jar/xmky.jar",
       "searchable": 1,
       "ext": {
         "json": "./json/song.json",
@@ -42,10 +42,10 @@
       "name": "哔哩歌曲┃★星河★",
       "type": 3,
       "api": "csp_Bili",
-      "jar": "./jar/xmky-0606.jar",
+      "jar": "./xmky.jar",
       "searchable": 1,
       "ext": {
-        "json": "./json/mtv.json",
+        "json": "./星河影视/mtv.json",
         "cookie": "SESSDATA=819d93e8%2C1764426658%2C4ec10%2A61CjA74Z7n0isRlTABldomYIMAwyRBPDvLaJl9ERae-vTzTalKiYoDX6Qu9J0E5fof-h0SVlJfUUE0T1RLaExUQWloSUNBNG9ROEZQazBJX3FDX0VkWUFZQ0t2LXFtbnJmdUI1eEkwUnVJVl96Nk1sZTBDeFYtTkxVUjc5MjZsVjFWSENjR0hnZUVBIIEC;bili_jct=b655010f87e4dcb20ea46a191d23a443;DedeUserID=3546382984022310;DedeUserID__ckMd5=9728526c8c2ad2a5;sid=51az4mji"
       },
       "style": {
@@ -423,7 +423,7 @@
       "type": 3,
       "searchable": 1,
       "quickSearch": 1,
-      "api": "./drpy_libs/星河解碼.js",
+      "api": "./drpy_libs/drpy2.min.js",
       "ext": "./drpy_js/360影视[官].js"
     },
     {
@@ -442,7 +442,7 @@
       "type": 3,
       "searchable": 1,
       "quickSearch": 1,
-      "api": "./drpy_libs/星河解碼.js",
+      "api": "./drpy_libs/drpy2.min.js",
       "ext": "./drpy_js/奇珍异兽[官].js"
     },
     {
@@ -461,7 +461,7 @@
       "type": 3,
       "searchable": 1,
       "quickSearch": 1,
-      "api": "./drpy_libs/星河解碼.js",
+      "api": "./drpy_libs/drpy2.min.js",
       "ext": "./drpy_js/百忙无果[官].js"
     },
     {
@@ -480,7 +480,7 @@
       "type": 3,
       "searchable": 1,
       "quickSearch": 1,
-      "api": "./drpy_libs/星河解碼.js",
+      "api": "./drpy_libs/drpy2.min.js",
       "ext": "./drpy_js/腾云驾雾[官].js"
     },
     {
@@ -489,7 +489,7 @@
       "type": 3,
       "searchable": 1,
       "quickSearch": 1,
-      "api": "./drpy_libs/星河解碼.js",
+      "api": "./drpy_libs/drpy2.min.js",
       "ext": "./drpy_js/菜狗[官].js"
     },
     {
@@ -508,7 +508,7 @@
       "type": 3,
       "searchable": 1,
       "quickSearch": 1,
-      "api": "./drpy_libs/星河解碼.js",
+      "api": "./drpy_libs/drpy2.min.js",
       "ext": "./drpy_js/优酷[官].js"
     },
     {
@@ -1287,7 +1287,7 @@
       "key": "csp_低端",
       "name": "🥇｜低端｜高清◎秒播(無廣告)",
       "type": 3,
-      "api": "./drpy_libs/星河解碼.js",
+      "api": "./drpy_libs/drpy2.min.js",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
@@ -4233,7 +4233,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "api": "./drpy_libs/星河解碼.js",
+      "api": "./drpy_libs/drpy2.min.js",
       "ext": "./drpy_js/xb6v.js",
       "playerType": "1"
     },
@@ -4241,7 +4241,7 @@
       "key": "drpy_js_MP4US",
       "name": "🧲｜MP4电影｜無廣",
       "type": 3,
-      "api": "./drpy_libs/星河解碼.js",
+      "api": "./drpy_libs/drpy2.min.js",
       "ext": "./drpy_js/mp4us.js",
       "playerType": "1",
       "searchable": 1,
@@ -5090,7 +5090,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "api": "./drpy_libs/星河解碼.js",
+      "api": "./drpy_libs/drpy2.min.js",
       "ext": "./drpy_js/去看吧.js"
     },
     {
@@ -5100,7 +5100,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "api": "./drpy_libs/星河解碼.js",
+      "api": "./drpy_libs/drpy2.min.js",
       "ext": "./drpy_js/奇米动漫.js"
     },
     {
@@ -5110,7 +5110,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "api": "./drpy_libs/星河解碼.js",
+      "api": "./drpy_libs/drpy2.min.js",
       "ext": "./drpy_js/DHPDQ.js"
     },
     {
@@ -5120,7 +5120,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "api": "./drpy_libs/星河解碼.js",
+      "api": "./drpy_libs/drpy2.min.js",
       "ext": "./drpy_js/DMD.js"
     },
     {
@@ -5130,7 +5130,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "api": "./drpy_libs/星河解碼.js",
+      "api": "./drpy_libs/drpy2.min.js",
       "ext": "./drpy_js/HKDM.js"
     },
     {
@@ -5140,7 +5140,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "api": "./drpy_libs/星河解碼.js",
+      "api": "./drpy_libs/drpy2.min.js",
       "ext": "./drpy_js/爱弹幕.js"
     },
     {
@@ -5150,14 +5150,14 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "api": "./drpy_libs/星河解碼.js",
+      "api": "./drpy_libs/drpy2.min.js",
       "ext": "./drpy_js/路漫漫.js"
     },
     {
       "key": "hipy_js_大米动漫[漫]",
       "name": "动漫｜大米",
       "type": 3,
-      "api": "./drpy_libs/星河解碼.js",
+      "api": "./drpy_libs/drpy2.min.js",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
@@ -5171,7 +5171,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "api": "./drpy_libs/星河解碼.js",
+      "api": "./drpy_libs/drpy2.min.js",
       "ext": "./drpy_js/动漫巴士.js"
     },
     {
@@ -5181,7 +5181,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "api": "./drpy_libs/星河解碼.js",
+      "api": "./drpy_libs/drpy2.min.js",
       "ext": "./drpy_js/七色番[漫].js"
     },
     {
@@ -5191,7 +5191,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "api": "./drpy_libs/星河解碼.js",
+      "api": "./drpy_libs/drpy2.min.js",
       "ext": "./drpy_js/奇米动漫.js"
     },
     {
@@ -5201,14 +5201,14 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "api": "./drpy_libs/星河解碼.js",
+      "api": "./drpy_libs/drpy2.min.js",
       "ext": "./drpy_js/58动漫.js"
     },
     {
       "key": "hipy_js_爱弹幕[漫]",
       "name": "动漫｜爱弹幕",
       "type": 3,
-      "api": "./drpy_libs/星河解碼.js",
+      "api": "./drpy_libs/drpy2.min.js",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
@@ -5218,7 +5218,7 @@
       "key": "喵物",
       "name": "动漫｜喵物",
       "type": 3,
-      "api": "./drpy_libs/星河解碼.js",
+      "api": "./drpy_libs/drpy2.min.js",
       "searchable": 1,
       "changeable": 1,
       "ext": "./drpy_js/喵物次元.js"
@@ -5227,7 +5227,7 @@
       "key": "漫元",
       "name": "动漫｜漫元",
       "type": 3,
-      "api": "./drpy_libs/星河解碼.js",
+      "api": "./drpy_libs/drpy2.min.js",
       "searchable": 1,
       "changeable": 1,
       "ext": "./drpy_js/漫次元.js"
@@ -5236,7 +5236,7 @@
       "key": "异世界",
       "name": "动漫｜异世界",
       "type": 3,
-      "api": "./drpy_libs/星河解碼.js",
+      "api": "./drpy_libs/drpy2.min.js",
       "searchable": 1,
       "quickSearch": 1,
       "ext": "./drpy_js/异世界.js"
@@ -5245,7 +5245,7 @@
       "key": "hipy_js_NT动漫[漫]",
       "name": "动漫｜牛顿",
       "type": 3,
-      "api": "./drpy_libs/星河解碼.js",
+      "api": "./drpy_libs/drpy2.min.js",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
@@ -5256,7 +5256,7 @@
       "key": "hipy_js_次元城动漫[漫]",
       "name": "动漫｜次元城｜T3",
       "type": 3,
-      "api": "./drpy_libs/星河解碼.js",
+      "api": "./drpy_libs/drpy2.min.js",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
@@ -5267,7 +5267,7 @@
       "key": "hipy_js_奇米动漫[漫]",
       "name": "动漫｜奇米",
       "type": 3,
-      "api": "./drpy_libs/星河解碼.js",
+      "api": "./drpy_libs/drpy2.min.js",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
@@ -5278,7 +5278,7 @@
       "key": "hipy_js_嗷呜动漫",
       "name": "动漫｜嗷呜动漫",
       "type": 3,
-      "api": "./drpy_libs/星河解碼.js",
+      "api": "./drpy_libs/drpy2.min.js",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
@@ -5292,14 +5292,14 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "api": "./drpy_libs/星河解碼.js",
+      "api": "./drpy_libs/drpy2.min.js",
       "ext": "./drpy_js/大米动漫.js"
     },
     {
       "key": "哔哩直播",
       "name": "🎖︎｜bilbile直播",
       "type": 3,
-      "api": "./drpy_libs/星河解碼.js",
+      "api": "./drpy_libs/drpy2.min.js",
       "searchable": 1,
       "quickSearch": 0,
       "filterable": 1,
@@ -5332,7 +5332,7 @@
       "key": "drpy_js_KTV",
       "name": "🎤｜KTV",
       "type": 3,
-      "api": "./drpy_libs/星河解碼.js",
+      "api": "./drpy_libs/drpy2.min.js",
       "spider": "./jar/星河音樂.jar",
       "jar": "./jar/星河音樂.jar",
       "changeable": 0,
@@ -5435,7 +5435,7 @@
       "key": "hipy_js_有声小说吧",
       "name": "㊙︎｜听书吧",
       "type": 3,
-      "api": "./drpy_libs/星河解碼.js",
+      "api": "./drpy_libs/drpy2.min.js",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
@@ -5446,7 +5446,7 @@
       "key": "hipy_js_海洋听书[听]",
       "name": "㊙︎｜海洋听书",
       "type": 3,
-      "api": "./drpy_libs/星河解碼.js",
+      "api": "./drpy_libs/drpy2.min.js",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
@@ -5457,7 +5457,7 @@
       "key": "hipy_js_六月听书[听]",
       "name": "㊙︎｜六月听书｜T3",
       "type": 3,
-      "api": "./drpy_libs/星河解碼.js",
+      "api": "./drpy_libs/drpy2.min.js",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
