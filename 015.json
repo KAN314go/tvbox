@@ -6,22 +6,7 @@
 
 
 
-    {
-      "key": "MV_vod",
-      "name": "哔哩歌曲┃★星河★",
-      "type": 3,
-      "api": "csp_Bili",
-      "jar": "./jar/xmky.jar",
-      "searchable": 1,
-      "ext": {
-        "json": "./json/mtv.json",
-        "cookie": "SESSDATA=819d93e8%2C1764426658%2C4ec10%2A61CjA74Z7n0isRlTABldomYIMAwyRBPDvLaJl9ERae-vTzTalKiYoDX6Qu9J0E5fof-h0SVlJfUUE0T1RLaExUQWloSUNBNG9ROEZQazBJX3FDX0VkWUFZQ0t2LXFtbnJmdUI1eEkwUnVJVl96Nk1sZTBDeFYtTkxVUjc5MjZsVjFWSENjR0hnZUVBIIEC;bili_jct=b655010f87e4dcb20ea46a191d23a443;DedeUserID=3546382984022310;DedeUserID__ckMd5=9728526c8c2ad2a5;sid=51az4mji"
-      },
-      "style": {
-        "type": "rect",
-        "ratio": 1.333
-      }
-    },
+
 
         
 
@@ -5286,16 +5271,20 @@
       }
     },
     {
-      "key": "MTV",
+      "key": "MV_vod",
       "name": "🎵｜MTV",
       "type": 3,
       "api": "csp_Bili",
-      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-      "style": {"type": "rect", "ratio": 1.597},
+      "jar": "./jar/xmky.jar",
       "searchable": 1,
-      "quickSearch": 1,
-      "changeable": 0,
-      "ext": "./json/MTV.json"
+      "ext": {
+        "json": "https://10526.kstore.vip/星河影视/mtv.json",
+        "cookie": "SESSDATA=819d93e8%2C1764426658%2C4ec10%2A61CjA74Z7n0isRlTABldomYIMAwyRBPDvLaJl9ERae-vTzTalKiYoDX6Qu9J0E5fof-h0SVlJfUUE0T1RLaExUQWloSUNBNG9ROEZQazBJX3FDX0VkWUFZQ0t2LXFtbnJmdUI1eEkwUnVJVl96Nk1sZTBDeFYtTkxVUjc5MjZsVjFWSENjR0hnZUVBIIEC;bili_jct=b655010f87e4dcb20ea46a191d23a443;DedeUserID=3546382984022310;DedeUserID__ckMd5=9728526c8c2ad2a5;sid=51az4mji"
+      },
+      "style": {
+        "type": "rect",
+        "ratio": 1.333
+      }
     },
     {
       "key": "biliMV",
@@ -5341,7 +5330,7 @@
         "type": "rect",
         "ratio": 1
       },
-      "ext": "./drpy_js/KTV.js"
+      "ext": "https://10526.kstore.vip/星河影视/KTV.js"
     },
     {
       "key": "py_LIVES",
