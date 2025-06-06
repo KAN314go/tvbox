@@ -9,6 +9,7 @@
       "name": "KTV音乐┃★星河★",
       "type": 3,
       "api": "./jrpy_libs/星河解碼.js",
+      "spider": "./jar/星河音樂.jar",
       "jar": "./jar/星河音樂.jar",
       "changeable": 0,
       "style": {
@@ -54,6 +55,7 @@
       "name": "哔哩歌曲┃★星河★",
       "type": 3,
       "api": "csp_Bili",
+      "spider": "./jar/星河音樂.jar",
       "jar": "./jar/xmky.jar",
       "searchable": 1,
       "ext": {
