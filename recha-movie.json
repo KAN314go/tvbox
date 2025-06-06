@@ -5444,7 +5444,6 @@
       "pass": true
     },
     {
-      "spider": "./jar/mqitv.jar"            ,
       "jar"   : "./jar/mqitv.jar"            ,
       "name"  : "59酒店源"                     ,
       "api"   : "csp_MQiTV"                  ,
@@ -5453,7 +5452,6 @@
       "logo": "https://epg.112114.xyz/logo/{name}.png"
     },
         {
-      "spider": "./jar/mqitv.jar"            ,
       "jar"   : "./jar/mqitv.jar"            ,
       "name"  : "60酒店源"                     ,
       "api"   : "csp_MQiTV"                  ,
@@ -5462,7 +5460,6 @@
       "logo": "https://epg.112114.xyz/logo/{name}.png"
     },
         {
-      "spider": "./jar/mqitv.jar"            ,
       "jar"   : "./jar/mqitv.jar"            ,
       "name"  : "101酒店源"                     ,
       "api"   : "csp_MQiTV"                  ,
