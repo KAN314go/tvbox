@@ -5627,6 +5627,11 @@
       "ua": "xieanqishiwoerzi/0.0.1"
     },
     {
+      "name": "4GTV(謝安琪)",
+      "playerType": 2,
+      "url": "./live/4gtv-anche.txt"
+    },    
+    {
       "name": "4GTV(ROB)",
       "playerType": 2,
       "url": "./live/4gtv.txt",
