@@ -1,10 +1,125 @@
-//114.04.27 清除1個月以上仍未恢復廢源
+//114.06.07 清除1個月以上仍未恢復廢源
 
 {
     "spider": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/jar1/pg.jar;md5;60d0b94a00860a27e433ffe0e2fea2a0",
     "logo": "https://p3-pc.douyinpic.com/img/aweme-avatar/tos-cn-i-0813_6e2553f5708c414386eeca88b5f2674a~c5_300x300.jpeg?from=2956013662",
     "wallpaper": "https://picsum.photos/1080/",
     "sites": [ 
+    {
+      "key": "天天",
+      "name": "📱｜後天｜高清◎順播(無廣告+APP源)",
+      "type": 3,
+      "api": "csp_TianTianGuard",
+      "jar": "./jar/ok.png;md5;db2132e631faa708621652a32f2894b9",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": {
+        "site": 1
+      },
+      "timeout": 10
+    },
+    {
+      "key": "韩圈",
+      "name": "🥇｜韩圈｜高清◎秒播(無廣告+APP)",
+      "type": 3,
+      "api": "csp_HanXiaoQuanGuard",
+      "jar": "./jar/ok.png;md5;db2132e631faa708621652a32f2894b9",
+      "playerType": 2,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 10
+    },    
+    {
+      "key": "素白白",
+      "name": "🥇｜白白｜高清◎秒播(無廣告)",
+      "type": 3,
+      "api": "csp_SubaibaiGuard",
+      "jar": "./jar/ok.png;md5;db2132e631faa708621652a32f2894b9",      
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 10
+    },    
+    {
+      "key": "晴天",
+      "name": "🏆｜晴天｜藍光◎秒播(無廣告+OK源)",
+      "type": 3,
+      "api": "csp_Sun4kGuard",
+      "jar": "./jar/ok.png;md5;db2132e631faa708621652a32f2894b9",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 10
+    },    
+    {
+      "key": "糯米",
+      "name": "🥈｜糯米｜高清◎秒播(滿版廣告+OK源)",
+      "type": 3,
+      "api": "csp_NmysGuard",
+      "jar": "./jar/ok.png;md5;db2132e631faa708621652a32f2894b9",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 10
+    },
+    {
+      "key": "小红",
+      "name": "🏆｜鮮红｜藍光◎秒播(無廣告+OK源)",
+      "type": 3,
+      "api": "csp_XiaoHongGuard",
+      "jar": "./jar/ok.png;md5;db2132e631faa708621652a32f2894b9",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 10
+    },        
+    {
+      "key": "️爱看Bot",
+      "name": "🥈｜爱看｜高清◎秒播(全線路採集+隨機廣告)",
+      "type": 3,
+      "api": "csp_IkanbotGuard",
+      "jar": "./jar/ok.png",      
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 10
+    },    
+    {
+      "key": "瓜子",
+      "name": "📱｜棗子｜高清◎秒播(無廣告+APP)",
+      "type": 3,
+      "api": "csp_GuaziGuard",
+      "jar": "./jar/ok.png;md5;db2132e631faa708621652a32f2894b9",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 10
+    },          
+    {
+      "key": "时常",
+      "name": "📱｜時常｜高清◎秒播(無廣告+APP)",
+      "type": 3,
+      "api": "csp_ShiChangGuard",
+      "jar": "./jar/ok.png;md5;db2132e631faa708621652a32f2894b9",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 10
+    },      
+    {
+      "key": "浪酷版",
+      "name": "📱｜歐酷｜高清◎秒播(無廣告)",
+      "type": 3,
+      "api": "csp_TianTianGuard",
+      "jar": "./jar/ok.png;md5;db2132e631faa708621652a32f2894b9",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": {"site": 2},
+      "timeout": 10
+    },      
     {
       "key": "主角",
       "name": "主角｜APP",
