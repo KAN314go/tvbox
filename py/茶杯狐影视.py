@@ -260,7 +260,7 @@ class Spider(Spider):
         code = response.text
         name = self.extract_middle_text(code, "s1='", "'", 0)
         Jumps = self.extract_middle_text(code, "s2='", "'", 0)
-        content = '😸繁华🎉绍剧情📢本资源来源于网络🚓侵权请联系删除👉' + self.extract_middle_text(res,'<p class="detail-intro-text','</p>', 0)
+        content = self.extract_middle_text(res,'<p class="detail-intro-text','</p>', 0)
         content = content.replace('text-row ewave-collapse-content">', '').replace('\u3000\u3000', '')
         if name not in content:
             bofang = Jumps
