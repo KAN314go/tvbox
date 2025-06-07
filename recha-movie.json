@@ -11,6 +11,7 @@
       "name": "臻彩世界┃★星河★",
       "type": 3,
       "api": "csp_AppYsV2",
+      "spider": I"http://10526.kstore.vip/xinghe.txt",
       "jar": "./jar/xmky.jar",
       "searchable": 1,
       "quickSearch": 1,
