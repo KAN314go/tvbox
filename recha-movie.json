@@ -3382,6 +3382,16 @@
     },
     {
       "key": "csp_茶杯狐",
+      "name": "🥈｜茶杯狐｜高清◎秒播(全版廣告+PY)",
+      "type": 3,
+      "api": "./py/茶杯狐影视.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "changeable": 1
+    },
+    {
+      "key": "csp_茶杯狐",
       "name": "🥈｜茶狐｜普清◎秒播(浮水印廣告)",
       "type": 3,
       "api": "csp_XBPQ",
@@ -5468,8 +5478,8 @@
   "lives": [
     {
       "name"  : "不知道",
-      "url" :"https://syokkterbaik.serv00.net/freeforever",
-      "ua" :"syokfree909",
+      "url": "https://syokkterbaik.serv00.net/freeforever",
+      "ua" : "syokfree909",
       "epg": "https://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/taipei",
       "logo": "https://epg.112114.xyz/logo/{name}.png",
       "pass": true
