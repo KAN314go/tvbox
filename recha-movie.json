@@ -5865,7 +5865,7 @@
     {
       "name": "私密線路(18+)",
       "playerType": 2,
-      "url": "./live/178.txt",
+      "url": "https://gitee.com/sji820/des/raw/master/0.jpg",
       "epg": "http://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Taipei",
       "ua": "Lavf/58.12.100",
       "header": {

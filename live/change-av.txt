@@ -1,4 +1,4 @@
-午夜频道,#genre#
+午夜频道(114.06.07),#genre#
 日本映画専門チャンネル,https://stream02.willfonk.com/live_playlist.m3u8?cid=BS255&r=FHD&ccode=JP&m=d0:20:20:04:35:cc&t=0d6938cb3dcf4b79848bc1753a59daf1#https://stream01.willfonk.com/live_playlist.m3u8?cid=BS255&r=FHD&ccode=JP&m=d0:20:20:04:35:cc&t=0d6938cb3dcf4b79848bc1753a59daf1
 東映チャンネル,https://stream02.willfonk.com/live_playlist.m3u8?cid=CS218&r=FHD&ccode=JP&m=d0:20:20:04:35:cc&t=0d6938cb3dcf4b79848bc1753a59daf1#https://stream01.willfonk.com/live_playlist.m3u8?cid=CS218&r=FHD&ccode=JP&m=d0:20:20:04:35:cc&t=0d6938cb3dcf4b79848bc1753a59d
 东映チャンネルhttp://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs27
@@ -7,32 +7,29 @@
 
 
 台湾频道_1818,#genre#
-松視1台,http://push-rtmp-hs-spe-f5.douyincdn.com/live/stream-3973637316-3973637316-668f647cf780c820685c549b3818eb68-9799210307-10057-A-0-1.flv
-松視1台,http://ali.hlspull.yximgs.com:80/live/7a05ec3a1ab9f0fa1b97096fb2586003.flv
+松視1台,http://ali.hlspull.yximgs.com:80/live/da65af872ef710d9cd4dddec14631eac.flv
 
 松視2台,http://push-rtmp-hs-spe-f5.douyincdn.com/live/stream-1337006443-1337006443-4ecc322e191a9689e7e4f503117a9e39-9078192192-10057-A-0-1.flv
 
-松視3台,http://push-rtmp-hs-spe-f5.douyincdn.com/live/stream-7029882454-7029882454-b72e8e029257d823b5354397c8b8313e-4519573171-10057-A-0-1.flv
 松視3台,http://ali.hlspull.yximgs.com:80/live/d19ca6e6b19c9bf461d861dafaf356c6.flv
+
 松視4台,http://push-rtmp-hs-spe-f5.douyincdn.com/live/stream-8617122102-8617122102-c5769c977bf756e775a7b79f3fc9d72d-2614932201-10057-A-0-1.flv
 松視4台,http://push-rtmp-hs-spe-f5.douyincdn.com/live/stream-8617122102-8617122102-c5769c977bf756e775a7b79f3fc9d72d-2614932201-10057-A-0-1.flv
 
 happy,http://ali.hlspull.yximgs.com:80/live/98f94700935912b511a14422039d3d05.flv
-happy,http://ali.hlspull.yximgs.com:80/live/4ba947051707136ddea755d9fdfe8e13.flv
 
-香蕉台,http://ali.hlspull.yximgs.com:80/live/e8ca161fb933c424a984bc96d699adce.flv
-香蕉台,http://push-rtmp-hs-spe-f5.douyincdn.com/live/stream-8293122710-8293122710-baf9f0e3c7289560f4e7a1b2bcdf8cd5-1163636327-10057-A-0-1.flv
+香蕉,http://ali.hlspull.yximgs.com:80/live/bc95b6a7414411338afe131bec5b110d.flv
+香蕉,http://ali.hlspull.yximgs.com:80/live/e8ca161fb933c424a984bc96d699adce.flv
 
-惊艳台,http://1tv41.icu:8080/LaLa34@yahoo.com/LaLa7678/159958
+惊艳,http://ali.hlspull.yximgs.com:80/live/b672a4c1ba201014732a5124872fce4a.flv
+惊艳,http://1tv41.icu:8080/LaLa34@yahoo.com/LaLa7678/159958
 
-
-潘朵拉玩美,http://ali.hlspull.yximgs.com:80/live/33ee6f09106a157c335558040a626842.flv
-潘朵拉玩美,http://push-rtmp-hs-spe-f5.douyincdn.com/live/stream-9423895111-9423895111-f10150c49c75aea61172b0b06d353eee-7896659482-10057-A-0-1.flv
-
-
-潘朵啦粉红,http://push-rtmp-hs-spe-f5.douyincdn.com/live/stream-8914473628-8914473628-173e52790be4b8ac95c2a691fbe2c9b6-2751931933-10057-A-0-1.flv
+潘朵拉,http://ali.hlspull.yximgs.com:80/live/555c139abc101e05b60e5fea10b30eb3.flv
+潘朵拉,http://ali.hlspull.yximgs.com:80/live/33ee6f09106a157c335558040a626842.flv
+潘朵啦,http://push-rtmp-hs-spe-f5.douyincdn.com/live/stream-8914473628-8914473628-173e52790be4b8ac95c2a691fbe2c9b6-2751931933-10057-A-0-1.flv
 
 彩虹电影,http://ali.hlspull.yximgs.com:80/live/5fe3a1b75993be83956e3d17b6d925ff.flv
+彩虹电影,http://ali.hlspull.yximgs.com:80/live/17c82bfd1d296d75a855f6f575500864.flv
 彩虹电影,http://push-rtmp-hs-spe-f5.douyincdn.com/live/stream-9817045316-9817045316-2e024635d43ee9c619f34ff011374d50-6002488944-10057-A-0-1.flv
 
 彩虹k频道,http://ali.hlspull.yximgs.com:80/live/9a09cfd14a8b1ad18dbd61f286fa81b8.flv
@@ -42,19 +39,12 @@ happy,http://ali.hlspull.yximgs.com:80/live/4ba947051707136ddea755d9fdfe8e13.flv
 極限,http://ali.hlspull.yximgs.com:80/live/2d7b99b886a1d12286c641d11cb0b283.flv
 極限,http://ali.hlspull.yximgs.com:80/live/de74f001fa638349eafe6bf6ff18acaa.flv
 
-pigo,http://ali.hlspull.yximgs.com:80/live/e1d0b7c095d39aca00e75858c7485f4d.flv
-
+pigoo,http://ali.hlspull.yximgs.com:80/live/e1d0b7c095d39aca00e75858c7485f4d.flv
 pigoo,https://luong.utako.moe/pigoo/index.m3u8 
-
-私房写真,https://luong.utako.moe/pigoo/index.m3u8
 
 Zoom tv,http://185.236.229.62:9981/play/a02a
 
 3,https://live.iptvxxx.net/siptarskaGOVNA.m3u8
-
-Pigoo写真,http://ali.hlspull.yximgs.com:80/live/eab490573b9b9a117ed967f07dab9d0e.flv
-Pigoo写真,https://luong.utako.moe/pigoo/index.m3u8
-
 
 
 
