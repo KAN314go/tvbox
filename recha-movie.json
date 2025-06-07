@@ -5466,7 +5466,15 @@
     }
   ],
   "lives": [
-   {
+    {
+      "name"  : "不知道",
+      "url" :"https://syokkterbaik.serv00.net/freeforever",
+      "ua" :"syokfree909",
+      "epg": "https://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/taipei",
+      "logo": "https://epg.112114.xyz/logo/{name}.png",
+      "pass": true
+    },
+    {
       "name": "smart(HFR1107)",
       "url": "https://000.hfr1107.top/tv/smt.php",
       "timeout": 5,
