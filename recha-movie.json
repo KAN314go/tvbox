@@ -20,18 +20,6 @@
             }
         },
         {
-            "key": "多多",
-            "name": "多多｜4K弹幕",
-            "type": 3,
-            "api": "csp_PanWebShare",
-            "jar": "./jar/xiaosa-0607.jar",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "changeable": 1,
-            "ext": "./json/yyds.json"
-        },
-        {
             "key": "橘猫",
             "name": "橘猫｜APP",
             "type": 3,
