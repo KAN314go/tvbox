@@ -5,16 +5,17 @@
   "sites": [
 
 
+
     {
       "key": "csp_appys_臻彩",
-      "name": "臻彩世界",
+      "name": "臻彩世界┃★星河★",
       "type": 3,
       "api": "csp_AppYsV2",
-      "jar": "./jar/星河-0603.jar",
+      "jar": "./jar/xmky.jar",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": "http://cms.lygdyy.cn/api.php/app/"
+      "ext": "https://cnb.cool/xiaomideyun/xiaomideyun/-/git/raw/main/kan.txt"
     },
 
 
