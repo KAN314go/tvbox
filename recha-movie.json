@@ -4,111 +4,13 @@
   "wallpaper": "https://tv.nxog.top/m/t/",
   "sites": [
 
-        {
-            "key": "咖啡",
-            "name": "咖啡｜APP",
-            "type": 3,
-            "quickSearch": 1,
-            "api": "csp_AppGet2",
-            "jar": "./jar/xiaosa-0607.jar",
-            "ext": {
-                "url": "http://160.202.243.62:2566",
-                "dataKey": "qwertyuiopqwerty",
-                "dataIv": "qwertyuiopqwerty",
-                "deviceId": "",
-                "version": "120"
-            }
-        },
-        {
-            "key": "橘猫",
-            "name": "橘猫｜APP",
-            "type": 3,
-            "quickSearch": 1,
-            "jar": "./jar/xiaosa-0607.jar",
-            "api": "csp_AppGet2",
-            "ext": {
-                "url": "https://qjappcms.jm4k.top",
-                "dataKey": "pBVmysmGX8TsgrQN",
-                "dataIv": "pBVmysmGX8TsgrQN",
-                "deviceId": "",
-                "version": "120"
-            }
-        },
-        {
-            "key": "诺雪",
-            "name": "诺雪｜APP",
-            "type": 3,
-            "quickSearch": 1,
-            "api": "csp_AppGet2",
-            "jar": "./jar/xiaosa-0607.jar",
-            "ext": {
-                "url": "https://qjappcms.rx4k.top",
-                "dataKey": "ZX10ysTYZWtIJCTU",
-                "dataIv": "ZX10ysTYZWtIJCTU",
-                "deviceId": "",
-                "version": "120"
-            }
-        },
-        {
-            "key": "乐乐",
-            "name": "乐乐｜APP",
-            "type": 3,
-            "quickSearch": 1,
-            "api": "csp_AppGet",
-            "jar": "./jar/xiaosa-0607.jar",
-            "ext": {
-                "url": "https://get.le163.top",
-                "dataKey": "4f870065c9c193fc",
-                "dataIv": "4f870065c9c193fc",
-                "deviceId": "",
-                "version": ""
-            }
-        },
-        {
-            "key": "乐看",
-            "name": "乐看｜APP",
-            "type": 3,
-            "quickSearch": 1,
-            "api": "csp_AppGet",
-            "jar": "./jar/xiaosa-0607.jar",
-            "ext": {
-                "url": "https://app.weis.vip",
-                "dataKey": "e65144389e9361b5",
-                "dataIv": "e65144389e9361b5",
-                "deviceId": "",
-                "version": ""
-            }
-        },     
-        {
-            "key": "梦缘",
-            "name": "梦缘｜APP",
-            "type": 3,
-            "quickSearch": 1,
-            "api": "csp_AppGet",
-            "jar": "./jar/xiaosa-0607.jar",
-            "ext": {
-                "url": "http://150.138.84.88:44444",
-                "dataKey": "fdnwxwnkyylwdyqh",
-                "dataIv": "fdnwxwnkyylwdyqh",
-                "deviceId": "29ac7568b4dc23ca9a40b6ca5b7cc6f68",
-                "version": "520"
-            }
-        },
-        {
-            "key": "麒麟",
-            "name": "麒麟｜APP",
-            "type": 3,
-            "quickSearch": 1,
-            "api": "csp_AppGet",
-            "jar": "./jar/xiaosa-0607.jar",
-            "ext": {
-                "url": "https://www.70yy.fun",
-                "dataKey": "sfsdgsgcccss55xa",
-                "dataIv": "sfsdgsgcccss55xa",
-                "deviceId": "2129ec9e6e5703cb0aeeddd79554e38f8",
-                "version": "100"
-            }
-        },
+
+
+
+
+
+
+
 
 
 
@@ -288,7 +190,22 @@
       "filterable": 0,
       "changeable": 0
     },
-        {
+    {
+      "key": "咖啡",
+      "name": "🏆｜咖啡｜藍光◎秒播(無廣告+APP)",
+      "type": 3,
+      "quickSearch": 1,
+      "api": "csp_AppGet2",
+      "jar": "./jar/xiaosa-0607.jar",
+      "ext": {
+             "url": "http://160.202.243.62:2566",
+             "dataKey": "qwertyuiopqwerty",
+             "dataIv": "qwertyuiopqwerty",
+             "deviceId": "",
+             "version": "120"
+             }
+    },
+    {
       "key": "仓鼠",
       "name": "🏆｜錢鼠｜藍光◎秒播(無廣告+APP)",
       "jar": "./jar/moyuer.php;md5;2d5e6b5456c7cae497af11938df2662d",
@@ -383,21 +300,36 @@
       "changeable": 1
     },
     {
-            "key": "诺雪",
-            "name": "🏆｜諾雪｜藍光◎秒播(無廣告+APP)",
-            "type": 3,
-            "quickSearch": 1,
-            "api": "csp_AppGet",
-            "jar": "./jar/xiaosa-0526.jar;md5;6c87c9a352a0d2e60fed23f28bf4f9c6",
-            "ext": {
-                "url": "https://appcms.rx4k.top",
-                "dataKey": "LiGFzV6csf21zsu6",
-                "dataIv": "LiGFzV6csf21zsu6",
-                "deviceId": "",
-                "version": ""
-            }
+      "key": "诺雪1",
+      "name": "🏆｜諾雪｜藍光◎秒播(無廣告+APP)",
+      "type": 3,
+      "quickSearch": 1,
+      "api": "csp_AppGet",
+      "jar": "./jar/xiaosa-0526.jar;md5;6c87c9a352a0d2e60fed23f28bf4f9c6",
+      "ext": {
+             "url": "https://appcms.rx4k.top",
+             "dataKey": "LiGFzV6csf21zsu6",
+             "dataIv": "LiGFzV6csf21zsu6",
+             "deviceId": "",
+             "version": ""
+             }
       },
-          {
+      {
+        "key": "诺雪2",
+        "name": "诺雪｜APP",
+        "type": 3,
+        "quickSearch": 1,
+        "api": "csp_AppGet2",
+        "jar": "./jar/xiaosa-0607.jar",
+        "ext": {
+               "url": "https://qjappcms.rx4k.top",
+               "dataKey": "ZX10ysTYZWtIJCTU",
+               "dataIv": "ZX10ysTYZWtIJCTU",
+               "deviceId": "",
+               "version": "120"
+               }    
+     },      
+     {
       "key": "橘猫",
       "name": "🏆｜橘猫｜藍光◎秒播(4K線無廣告+APP)",
       "type": 3,
@@ -1642,7 +1574,22 @@
       "jar": "./jar/mi-0607.jar",
       "api": "csp_AppGet2",
       "ext": "N/01JeZBCBEQ0wOXNuAI/q97iGf3Y/QaLBH0kIoVdrnchbMLbbfPL19q8ovW5h2m+h6Vc2ZfvuHR8URxTWX9fgAm0kDDPtgJttitzPQi4xPbaH/BOVSMXdJGDbrzM3VAoJEcX+yxPdaXkrxvaZdq0lCjldlb9yAWC8ZiHssSH+9EKI//ESHDquz0m1V5Bhe/W7UmkE2CRveFiiN2uJABZy1DE1fmdV0B+V+gwiUMKelPBhYA29qkB/0/MY0gVsENky2zTdTFCl4qaFGUz8+G6j6ze5mYO4KfuQ9soedmY0yeXNzPeMZ6rquyAGtngEkw"
-    },  
+    },
+    {
+      "key": "乐乐",
+      "name": "📱｜乐乐｜高清◎秒播(無廣告+APP)",
+      "type": 3,
+      "quickSearch": 1,
+      "api": "csp_AppGet",
+      "jar": "./jar/xiaosa-0607.jar",
+      "ext": {
+             "url": "https://get.le163.top",
+             "dataKey": "4f870065c9c193fc",
+             "dataIv": "4f870065c9c193fc",
+             "deviceId": "",
+             "version": ""
+             }
+    },    
     {
       "key": "水滴",
       "name": "📱｜水滴｜高清◎秒播(主線無廣告+APP)",
@@ -1699,6 +1646,21 @@
         "version": "166"
       }
     },
+    {
+      "key": "麒麟",
+      "name": "📱｜麒麟｜高清◎秒播(無廣告+APP)",
+      "type": 3,
+      "quickSearch": 1,
+      "api": "csp_AppGet",
+      "jar": "./jar/xiaosa-0607.jar",
+      "ext": {
+             "url": "https://www.70yy.fun",
+             "dataKey": "sfsdgsgcccss55xa",
+             "dataIv": "sfsdgsgcccss55xa",
+             "deviceId": "2129ec9e6e5703cb0aeeddd79554e38f8",
+             "version": "100"
+             }
+    },    
     {
       "key": "忍者",
       "name": "📱｜忍者｜高清◎秒播(無廣告+APP)",
@@ -1784,6 +1746,21 @@
       "quickSearch": 1,
       "filterable": 1
     },
+    {
+      "key": "橘猫",
+      "name": "橘猫｜APP",
+      "type": 3,
+      "quickSearch": 1,
+      "jar": "./jar/xiaosa-0607.jar",
+      "api": "csp_AppGet2",
+      "ext": {
+             "url": "https://qjappcms.jm4k.top",
+             "dataKey": "pBVmysmGX8TsgrQN",
+             "dataIv": "pBVmysmGX8TsgrQN",
+             "deviceId": "",
+             "version": "120"
+             }
+    },    
     {
       "key": "星辉弹幕",
       "name": "📱｜星辉｜藍光◎秒播(無廣告+APP)",
@@ -2301,7 +2278,7 @@
     },
     {
       "key": "人人",
-      "name": "📱｜人人｜｜高清◎秒播(無廣告+APP源)",
+      "name": "📱｜人人｜高清◎秒播(無廣告+APP源)",
       "type": 3,
       "api": "csp_AppGet",
       "searchable": 1,
@@ -2310,6 +2287,21 @@
       "jar": "./jar/mi-0513.txt;md5;bcb27d2740df8d21bfc49c507432663a",
       "ext": "sHR2rlsfjI4L3t4RXQMknw+zXdsvYSFPrylVBk8Otj7BtrOcImUIxu7uCmi/oCEVSH+1Tuw/tXHzW47SGQsj8bRydPRgWesjHAxv9eu8eO9hOGeUeBKsucMHODs09HXY4kiPp3p1vemBghpvJFm9mx/FFTQYaEQ33Bpqwk73VkDa2zWgoB0CNuBseJhbj2hRKqOiT08iymzh4sSfhjJ5tbS5yTDxPIJAjwMijWuyOJB++d859vxajKD2Jg5qw0lv"
     },
+    {
+      "key": "梦缘",
+      "name": "📱｜梦缘｜高清◎秒播(無廣告+APP源)",
+      "type": 3,
+      "quickSearch": 1,
+      "api": "csp_AppGet",
+      "jar": "./jar/xiaosa-0607.jar",
+      "ext": {
+             "url": "http://150.138.84.88:44444",
+             "dataKey": "fdnwxwnkyylwdyqh",
+             "dataIv": "fdnwxwnkyylwdyqh",
+             "deviceId": "29ac7568b4dc23ca9a40b6ca5b7cc6f68",
+             "version": "520"
+             }
+    },    
     {
       "key": "彼岸",
       "name": "📱｜彼岸｜高清◎秒播(浮水印廣告+APP源)",

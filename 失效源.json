@@ -301,7 +301,21 @@
         "Referer": "test"
       }
     },
-
+        {
+            "key": "乐看",
+            "name": "乐看｜APP",
+            "type": 3,
+            "quickSearch": 1,
+            "api": "csp_AppGet",
+            "jar": "./jar/xiaosa-0607.jar",
+            "ext": {
+                "url": "https://app.weis.vip",
+                "dataKey": "e65144389e9361b5",
+                "dataIv": "e65144389e9361b5",
+                "deviceId": "",
+                "version": ""
+            }
+        },     
 
 
     {
