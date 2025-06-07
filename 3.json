@@ -8,18 +8,13 @@
 
     {
       "key": "csp_茶杯狐",
-      "name": "🥇｜茶杯狐｜藍光◎秒播(超多線路)",
+      "name": "🏆｜茶杯狐｜藍光◎秒播(超多線路)",
       "type": 3,
-      "api": "csp_XBPQ",
-      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+      "api": "./py/茶杯狐影视.py",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": {
-        "数组": "class=\"vod-item-img\"&&</a>",
-        "分类url": "https://cupfoxys.cc/vod/{cateId}-{area}-{by}------{catePg}---{year}/",
-        "分类": "电影$dy#电视剧$dsj#综艺$zy#动漫$dm"
-      }
+      "changeable": 1
     },
 
         
