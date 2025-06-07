@@ -8,14 +8,14 @@
 台湾频道_1818,#genre#
 松視1台,http://ali.hlspull.yximgs.com:80/live/da65af872ef710d9cd4dddec14631eac.flv
 松視1台,http://suo.im/aeQTj
+松視1台,http://kkk.888.3116598.xyz/api.php?n=HKTV&id=gkJ6XG&tk=8vCbr0RKnnoG
 
+松視2台,http://kkk.888.3116598.xyz/api.php?n=HKTV&id=sWvUzX&tk=8vCbr0RKnnoG
 松視2台,http://push-rtmp-hs-spe-f5.douyincdn.com/live/stream-1337006443-1337006443-4ecc322e191a9689e7e4f503117a9e39-9078192192-10057-A-0-1.flv
 
 松視3台,http://ali.hlspull.yximgs.com:80/live/d19ca6e6b19c9bf461d861dafaf356c6.flv
 松視3台,http://suo.im/aeQT9
-
-松視4台,http://push-rtmp-hs-spe-f5.douyincdn.com/live/stream-8617122102-8617122102-c5769c977bf756e775a7b79f3fc9d72d-2614932201-10057-A-0-1.flv
-松視4台,http://push-rtmp-hs-spe-f5.douyincdn.com/live/stream-8617122102-8617122102-c5769c977bf756e775a7b79f3fc9d72d-2614932201-10057-A-0-1.flv
+松視3台,http://kkk.888.3116598.xyz/api.php?n=HKTV&id=r3Kqrz&tk=8vCbr0RKnnoG
 
 happy,http://ali.hlspull.yximgs.com:80/live/98f94700935912b511a14422039d3d05.flv
 
