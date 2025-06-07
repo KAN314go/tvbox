@@ -6,29 +6,9 @@
 
 
 
-    {
-      "key": "csp_appys_臻彩",
-      "name": "臻彩世界",
-      "type": 3,
-      "api": "csp_AppYsV2",
-      //"spider": "http://10526.kstore.vip/xinghe.txt",
-      "jar": "./jar/xmky.jar",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": "http://cmszcsj.lfytv.cn/api.php/app/"
-    },
 
-    {
-      "key": "咖啡",
-      "name": "咖啡影视",
-      "type": 3,
-      "quickSearch": 1,
-      "api": "csp_AppGet2",
-      //s"spider": "http://10526.kstore.vip/xinghe.txt",
-      "jar": "./jar/xmky.jar",
-      "ext": "N/01JeZBCBEQ0wOXNuAI/q97iGf3Y/QaLBH0kIoVdrnchbMLbbfPL19q8ovW5h2m+h6Vc2ZfvuHR8URxTWX9fgAm0kDDPtgJttitzPQi4xPbaH/BOVSMXdJGDbrzM3VAoJEcX+yxPdaXkrxvaZdq0lCjldlb9yAWC8ZiHssSH+9EKI//ESHDquz0m1V5Bhe/W7UmkE2CRveFiiN2uJABZy1DE1fmdV0B+V+gwiUMKelPBhYA29qkB/0/MY0gVsENky2zTdTFCl4qaFGUz8+G6j6ze5mYO4KfuQ9soedmY0yeXNzPeMZ6rquyAGtngEkw"
-    },
+
+
         
 
 
@@ -384,6 +364,18 @@
         "deviceId": ""                        ,
         "version" : ""
       }
+    },
+    {
+      "key": "csp_appys_臻彩",
+      "name": "🏆｜臻彩｜藍光◎秒播(無廣告)",
+      "type": 3,
+      "api": "csp_AppYsV2",
+      "spider": "http://10526.kstore.vip/xinghe.txt",
+      "jar": "./jar/xmky.jar",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "http://cmszcsj.lfytv.cn/api.php/app/"
     },
     {
       "key": "三六零",
@@ -2237,6 +2229,15 @@
         "version": "110"
       }
     },
+    {
+      "key": "咖啡",
+      "name": "📱｜咖啡｜藍光◎秒播(無廣告+APP源+超常死)",
+      "type": 3,
+      "quickSearch": 1,
+      "api": "csp_AppGet2",
+      "jar": "./jar/xmky.jar",
+      "ext": "N/01JeZBCBEQ0wOXNuAI/q97iGf3Y/QaLBH0kIoVdrnchbMLbbfPL19q8ovW5h2m+h6Vc2ZfvuHR8URxTWX9fgAm0kDDPtgJttitzPQi4xPbaH/BOVSMXdJGDbrzM3VAoJEcX+yxPdaXkrxvaZdq0lCjldlb9yAWC8ZiHssSH+9EKI//ESHDquz0m1V5Bhe/W7UmkE2CRveFiiN2uJABZy1DE1fmdV0B+V+gwiUMKelPBhYA29qkB/0/MY0gVsENky2zTdTFCl4qaFGUz8+G6j6ze5mYO4KfuQ9soedmY0yeXNzPeMZ6rquyAGtngEkw"
+    },    
     {
       "key": "美帕影视",
       "name": "📱｜美帕｜高清◎順播(無廣告+APP)",

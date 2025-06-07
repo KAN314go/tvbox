@@ -6,18 +6,7 @@
 
 
 
-    {
-      "key": "csp_appys_臻彩",
-      "name": "臻彩世界",
-      "type": 3,
-      "api": "csp_AppYsV2",
-      "spider": "http://10526.kstore.vip/xinghe.txt",
-      "jar": "./jar/xmky.jar",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": "http://cmszcsj.lfytv.cn/api.php/app/"
-    },
+
 
     {
       "key": "咖啡",
