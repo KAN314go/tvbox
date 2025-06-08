@@ -5547,6 +5547,11 @@
       "ua": "xieanqishiwoerzi/0.0.1"
     },
     {
+      "name": "IPTV(Judy)",
+      "url": "https://iptv.mydiver.eu.org/get.php?username=tg_odofk3ni&password=u9asy5ukep96&type=m3u_plus",
+      "ua": "xieanqishiwoerzi/0.0.1"
+    },
+    {
       "name": "4GTV(Migu)",
       "playerType": 2,
       "url": "./live/migu.m3u",
@@ -5856,11 +5861,6 @@
       "url": "https://v-ip.eu.org/xxoo.php",
       "epg": "https://epg.pw/xmltv/epg.xml"
     },
-
-
-
-
-
     {
       "name": "台灣景點直播",
       "playerType": 2,
