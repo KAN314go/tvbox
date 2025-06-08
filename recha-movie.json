@@ -5541,12 +5541,6 @@
       "pass": true
     },
     {
-      "name": "4GTV(Judy)",
-      "playerType": 2,
-      "url": "https://smart.pendy.dpdns.org/m3u/iptv-gongyi.m3u",
-      "ua": "xieanqishiwoerzi/0.0.1"
-    },
-    {
       "name": "IPTV(Judy)",
       "url": "https://iptv.mydiver.eu.org/get.php?username=tg_odofk3ni&password=u9asy5ukep96&type=m3u_plus",
       "ua": "xieanqishiwoerzi/0.0.1"
@@ -5619,34 +5613,6 @@
       "playerType": 2,
       "url": "https://tv.iill.top/m3u/Live",
       "epg": "http://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Taipei",
-      "pass": true
-    },
-    {
-      "name": "169線路",
-      "playerType": 2,
-      "url": "./live/169.txt",
-      "epg": "http://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Taipei",
-      "logo": "https://epg.112114.xyz/logo/{name}.png",
-      "pass": true
-    },
-    {
-      "name": "F13線路",
-      "playerType": 2,
-      "url": "./live/king.txt",
-      "ua": "okhttp/3.15",
-      "timeout": 5,
-      "epg": "https://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/taipei",
-      "logo": "https://epg.112114.xyz/logo/{name}.png",
-      "pass": true
-    },
-    {
-      "name": "大街MDO",
-      "type": 0,
-      "playerType": 2,
-      "url": "./live/mod.txt",
-      "ua": "okhttp/3.15",
-      "epg": "http://epg.112114.xyz/?ch={name}&date={date}",
-      "logo": "https://epg.112114.xyz/logo/{name}.png",
       "pass": true
     },
     {
