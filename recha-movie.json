@@ -5,14 +5,16 @@
   "sites": [
 
 
-
-
-
-
-
-
-{"key":"http://dyttzyw.tv/","name":"电影天堂","type":1,"api":"http://caiji.dyttzyapi.com/api.php/provide/vod/","searchable":1,"quickSearch":1,"categories":["国产剧","韩国剧","日本剧","欧美剧","香港剧","台湾剧","泰国剧","海外剧","动作片","喜剧片","爱情片","科幻片","恐怖片","剧情片","战争片","记录片","动画片","伦理片","大陆综艺","港台综艺","日韩综艺","欧美综艺","国产动漫","日韩动漫","欧美动漫","港台动漫","短剧"]},
-
+{
+      "key": "php_TianTang",
+      "name": "天堂资源",
+      "type": 4,
+      "api": "https://v-ip.eu.org/tiantang.php",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 0,
+      "changeable": 0
+    },
 
 
 
@@ -5827,7 +5829,7 @@
       "name": "私密線路(18+)",
       "playerType": 2,
       "url": "https://gitee.com/sji820/des/raw/master/0.jpg",
-      "epg": "http://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Taipei",
+      "epg": "https://epg.pw/xmltv/epg.xml",
       "ua": "Lavf/58.12.100",
       "header": {
         "X-Api-key": "eef635a7806e57ab688fa46eaddb6926a728de071bc267cb5f336d7be068d880..0..1735089945..75b109b1-81c5-4caf-aea1-776e6a81"
@@ -5837,8 +5839,19 @@
       "name": "臨時(18+)",
       "playerType": 2,
       "url": "./live/change-av.txt",
-      "epg": "http://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Taipei"
+      "epg": "https://epg.pw/xmltv/epg.xml"
     },
+    {
+      "name": "沐辰看毛片(18+)",
+      "playerType": 2,
+      "url": "https://v-ip.eu.org/xxoo.php",
+      "epg": "https://epg.pw/xmltv/epg.xml"
+    },
+
+
+
+
+
     {
       "name": "台灣景點直播",
       "playerType": 2,
