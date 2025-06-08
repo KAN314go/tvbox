@@ -26,20 +26,15 @@
 惊艳,http://ali.hlspull.yximgs.com:80/live/c6b7163d79240e546a1cac10f879cc17.flv
 惊艳,http://suo.im/dfkTT
 
-潘朵拉玩美,http://ali.hlspull.yximgs.com:80/live/555c139abc101e05b60e5fea10b30eb3.flv
 潘朵拉玩美,http://ali.hlspull.yximgs.com:80/live/28df492fd4a36a6bbbc4d3817cc03e61.flv
-潘朵拉玩美,http://ali.hlspull.yximgs.com:80/live/33ee6f09106a157c335558040a626842.flv
-潘朵拉玩美,http://push-rtmp-hs-spe-f5.douyincdn.com/live/stream-8914473628-8914473628-173e52790be4b8ac95c2a691fbe2c9b6-2751931933-10057-A-0-1.flv
 潘朵拉玩美,http://suo.im/aZtnO
 
 
 潘朵拉粉紅,http://ali.hlspull.yximgs.com:80/live/e1d0b7c095d39aca00e75858c7485f4d.flv
 
 
-彩虹電影,http://ali.hlspull.yximgs.com:80/live/5fe3a1b75993be83956e3d17b6d925ff.flv
 彩虹電影,http://ali.hlspull.yximgs.com:80/live/ee25f1b8e3dfe78d6742dd3bf789a36b.flv
-彩虹电影,http://ali.hlspull.yximgs.com:80/live/17c82bfd1d296d75a855f6f575500864.flv
-彩虹电影,http://suo.im/cuIoU
+彩虹電影,http://suo.im/cuIoU
 
 彩虹k频道,http://ali.hlspull.yximgs.com:80/live/9a09cfd14a8b1ad18dbd61f286fa81b8.flv
 彩虹k频道,http://s.mrw.so/aZtoi
