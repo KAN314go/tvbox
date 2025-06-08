@@ -1,8 +1,8 @@
 {"sites":[
-{"key":"csp_appys_臻彩","name": "🏆｜臻彩｜藍光◎秒播(無廣告)","type": 3,"api": "csp_AppYsV2","jar": "https://gitlab.com/newrecha/tvbox/-/raw/main/jar/xmky.jar","searchable": 1,"quickSearch": 1,"filterable": 1,"ext": "http://cmszcsj.lfytv.cn/api.php/app/"},
-{"key":"tufun采集","name": "🧲｜菠菜｜無廣","type": 1,"api": "https://tyyszyapi.com/api.php/provide/vod/?ac=list","searchable": 1,"changeable": 1},
-{"key":"黑木影视","name":"🏆｜黑木耳｜","type":1,"api":"https://heimuer.ggff.net/api.php/tvbox","jar":"https://gitlab.com/newrecha/tvbox/-/raw/main/jar/custom_spider.jar;md5;5e53c8f9ddd4ede5359c16bee091db93","filterable":0},
-{"key":"csp_moxmi","name":"🥇｜樂美｜","type":1,"api":"http://mi.moxmi.top:81/api.php/provide/vod/","playUrl":"json:http://iid.moxmi.top:81/gg.php?url=","jar":"https://raw.githubusercontent.com/cpu170/bf/0b1b3e305fd4ac2e206d3589cd1ca3e70cf7b28e/n/g/jars/林中的小屋.jar","categories":["电影","剧集","综艺","动漫","短剧"]},
+{"key":"csp_appys_臻彩","name": "臻彩","type": 3,"api": "csp_AppYsV2","jar": "https://gitlab.com/newrecha/tvbox/-/raw/main/jar/xmky.jar","searchable": 1,"quickSearch": 1,"filterable": 1,"ext": "http://cmszcsj.lfytv.cn/api.php/app/"},
+{"key":"tufun采集","name": "菠菜","type": 1,"api": "https://tyyszyapi.com/api.php/provide/vod/?ac=list","searchable": 1,"changeable": 1},
+{"key":"黑木影视","name":"黑木耳","type":1,"api":"https://heimuer.ggff.net/api.php/tvbox","jar":"https://gitlab.com/newrecha/tvbox/-/raw/main/jar/custom_spider.jar;md5;5e53c8f9ddd4ede5359c16bee091db93","filterable":0},
+{"key":"csp_moxmi","name":"樂美","type":1,"api":"http://mi.moxmi.top:81/api.php/provide/vod/","playUrl":"json:http://iid.moxmi.top:81/gg.php?url=","jar":"https://raw.githubusercontent.com/cpu170/bf/0b1b3e305fd4ac2e206d3589cd1ca3e70cf7b28e/n/g/jars/林中的小屋.jar","categories":["电影","剧集","综艺","动漫","短剧"]},
 {"name":"小紅影視","type":3,"api":"csp_xiaohys","ext":"https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/xiaohys.js"},
 {"name":"絕對影視","type":3,"api":"csp_jdys","ext":"https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/jdys.js"},
 {"name":"小蘋果","type":3,"api":"csp_apple","ext":"https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/apple.js"},
