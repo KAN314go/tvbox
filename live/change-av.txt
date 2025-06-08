@@ -1,4 +1,4 @@
-午夜频道(114.06.07),#genre#
+午夜频道(114.06.08),#genre#
 日本映画専門チャンネル,https://stream02.willfonk.com/live_playlist.m3u8?cid=BS255&r=FHD&ccode=JP&m=d0:20:20:04:35:cc&t=0d6938cb3dcf4b79848bc1753a59daf1#https://stream01.willfonk.com/live_playlist.m3u8?cid=BS255&r=FHD&ccode=JP&m=d0:20:20:04:35:cc&t=0d6938cb3dcf4b79848bc1753a59daf1
 東映チャンネル,https://stream02.willfonk.com/live_playlist.m3u8?cid=CS218&r=FHD&ccode=JP&m=d0:20:20:04:35:cc&t=0d6938cb3dcf4b79848bc1753a59daf1#https://stream01.willfonk.com/live_playlist.m3u8?cid=CS218&r=FHD&ccode=JP&m=d0:20:20:04:35:cc&t=0d6938cb3dcf4b79848bc1753a59d
 东映チャンネルhttp://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs27
@@ -7,6 +7,7 @@
 
 台湾频道_1818,#genre#
 松視1台,http://ali.hlspull.yximgs.com:80/live/da65af872ef710d9cd4dddec14631eac.flv
+松視1台,http://ali.hlspull.yximgs.com:80/live/ec89b895842a6981104e4302fb870d99.flv
 松視1台,http://suo.im/aeQTj
 松視1台,http://kkk.888.3116598.xyz/api.php?n=HKTV&id=gkJ6XG&tk=8vCbr0RKnnoG
 
@@ -17,22 +18,26 @@
 松視3台,http://suo.im/aeQT9
 松視3台,http://kkk.888.3116598.xyz/api.php?n=HKTV&id=r3Kqrz&tk=8vCbr0RKnnoG
 
-happy,http://ali.hlspull.yximgs.com:80/live/98f94700935912b511a14422039d3d05.flv
-
 香蕉,http://ali.hlspull.yximgs.com:80/live/bc95b6a7414411338afe131bec5b110d.flv
-香蕉,http://ali.hlspull.yximgs.com:80/live/e8ca161fb933c424a984bc96d699adce.flv
+香蕉,http://ali.hlspull.yximgs.com:80/live/f9d211fcafe371b393a046a07d5a983b.flv
 香蕉,http://s.mrw.so/bK5Rb
 
 惊艳,http://ali.hlspull.yximgs.com:80/live/b672a4c1ba201014732a5124872fce4a.flv
-惊艳,http://1tv41.icu:8080/LaLa34@yahoo.com/LaLa7678/159958
+惊艳,http://ali.hlspull.yximgs.com:80/live/c6b7163d79240e546a1cac10f879cc17.flv
 惊艳,http://suo.im/dfkTT
 
-潘朵拉,http://ali.hlspull.yximgs.com:80/live/555c139abc101e05b60e5fea10b30eb3.flv
-潘朵拉,http://ali.hlspull.yximgs.com:80/live/33ee6f09106a157c335558040a626842.flv
-潘朵拉,http://push-rtmp-hs-spe-f5.douyincdn.com/live/stream-8914473628-8914473628-173e52790be4b8ac95c2a691fbe2c9b6-2751931933-10057-A-0-1.flv
-潘朵拉,http://suo.im/aZtnO
+潘朵拉玩美,http://ali.hlspull.yximgs.com:80/live/555c139abc101e05b60e5fea10b30eb3.flv
+潘朵拉玩美,http://ali.hlspull.yximgs.com:80/live/28df492fd4a36a6bbbc4d3817cc03e61.flv
+潘朵拉玩美,http://ali.hlspull.yximgs.com:80/live/33ee6f09106a157c335558040a626842.flv
+潘朵拉玩美,http://push-rtmp-hs-spe-f5.douyincdn.com/live/stream-8914473628-8914473628-173e52790be4b8ac95c2a691fbe2c9b6-2751931933-10057-A-0-1.flv
+潘朵拉玩美,http://suo.im/aZtnO
 
-彩虹电影,http://ali.hlspull.yximgs.com:80/live/5fe3a1b75993be83956e3d17b6d925ff.flv
+
+潘朵拉粉紅,http://ali.hlspull.yximgs.com:80/live/e1d0b7c095d39aca00e75858c7485f4d.flv
+
+
+彩虹電影,http://ali.hlspull.yximgs.com:80/live/5fe3a1b75993be83956e3d17b6d925ff.flv
+彩虹電影,http://ali.hlspull.yximgs.com:80/live/ee25f1b8e3dfe78d6742dd3bf789a36b.flv
 彩虹电影,http://ali.hlspull.yximgs.com:80/live/17c82bfd1d296d75a855f6f575500864.flv
 彩虹电影,http://suo.im/cuIoU
 
@@ -42,9 +47,13 @@ happy,http://ali.hlspull.yximgs.com:80/live/98f94700935912b511a14422039d3d05.flv
 彩虹e频道,http://ali.hlspull.yximgs.com:80/live/0377d6869f56f7af77f91da3714f3e84.flv
 彩虹e频道,http://s.mrw.so/aeQSZ
 
+happy,http://ali.hlspull.yximgs.com:80/live/98f94700935912b511a14422039d3d05.flv
+
+
 極限,http://ali.hlspull.yximgs.com:80/live/2d7b99b886a1d12286c641d11cb0b283.flv
-極限,http://ali.hlspull.yximgs.com:80/live/de74f001fa638349eafe6bf6ff18acaa.flv
-极限,http://suo.im/7emO2
+極限,http://ali.hlspull.yximgs.com:80/live/2d7b99b886a1d12286c641d11cb0b283.flv惊艳,http://1tv41.icu:8080/LaLa34@yahoo.com/LaLa7678/159958香蕉,http://ali.hlspull.yximgs.com:80/live/e8ca161fb933c424a984bc96d699adce.flv極限,http://ali.hlspull.yximgs.com:80/live/de74f001fa638349eafe6bf6ff18acaa.flv
+極限,http://suo.im/7emO2
+
 
 pigoo,http://ali.hlspull.yximgs.com:80/live/e1d0b7c095d39aca00e75858c7485f4d.flv
 pigoo,https://luong.utako.moe/pigoo/index.m3u8 
