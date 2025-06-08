@@ -53,12 +53,12 @@
 彩虹電影,http://suo.im/cuIoU
 
 彩虹k频道,http://ali.hlspull.yximgs.com:80/live/9a09cfd14a8b1ad18dbd61f286fa81b8.flv
+彩虹k频道,p3p://167.114.175.6:55331/63fd56ec000b5f0d26d4fe1b07963493
 彩虹k频道,http://s.mrw.so/aZtoi
-彩虹K频道,p3p://167.114.175.6:55331/63fd56ec000b5f0d26d4fe1b07963493
 
 彩虹e频道,http://ali.hlspull.yximgs.com:80/live/0377d6869f56f7af77f91da3714f3e84.flv
-彩虹e频道,http://s.mrw.so/aeQSZ
 彩虹e频道,p3p://167.114.175.6:55331/6062716c0008efc86f76f0c44d55329f
+彩虹e频道,http://s.mrw.so/aeQSZ
 
 彩虹频道,p3p://167.114.175.6:55331/63fd589300099ff426db7203798a21f9
 
