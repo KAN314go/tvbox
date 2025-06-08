@@ -5617,9 +5617,9 @@
       "pass": true
     },
     {
-      "name": "173線路",
+      "name": "169線路",
       "playerType": 2,
-      "url": "./live/173.txt",
+      "url": "./live/169.txt",
       "epg": "http://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Taipei",
       "logo": "https://epg.112114.xyz/logo/{name}.png",
       "pass": true
