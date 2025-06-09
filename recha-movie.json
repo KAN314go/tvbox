@@ -5,20 +5,6 @@
   "sites": [
 
 
-      {
-         "key":"黑木影视",
-         "name":"🏆｜黑木耳｜藍光◎秒播(無廣告+測試中)",
-         "type":1,
-         "api":"https://heimuer.ggff.net/api.php/tvbox",
-         "playUrl":"json:https://heimuer.ggff.net/noads.php?url=",
-         "searchable":1,
-         "quickSearch":1,
-         "filterable":0,
-         "header":{
-            "User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
-         }
-      },
-
 
 
 
@@ -164,8 +150,41 @@
       "filterable": 1
     },
     {
+     "key": "萌新XBPQ_独播库",
+    "name": "🏆｜獨播｜藍光◎秒播(無廣告+無圖)",
+    "type": 3,
+     "api": "csp_XBPQ",
+    "playerType": 2,
+    "searchable": 1,
+    "quickSearch":1,
+    "changeable": 1,
+    "filterable": 1,
+    "timeout": 60,
+    "style": {"type": "rect","ratio": 1.3},
+    "click": "document.querySelector(\"#playleft iframe\").contentWindow.document.querySelector(\"button.vjs-big-play-button\").click();",
+    "jar": "./jar/xyqxbpq.jar",
+    "ext": {
+           "主页url":"https://www.duboku.tv/",
+           "分类url":"https://www.duboku.tv/vodshow/{cateId}-{area}-{by}------{catePg}---{year}.html",
+           "分类": "电影$1#剧集$2#综艺$3#动漫$4",
+           "地区": "大陆&香港&台湾&美国&英国&日本&韩国&印度&西班牙&加拿大&法国&意大利&荷兰&澳大利亚&俄罗斯||内地&韩国&香港&台湾&美国&英国&巴西&泰国&法国&日本&新加坡||内地&香港&台湾&韩国&美国||国产&日本&美国&法国&其他",
+           "数组":"myui-vodlist__box&&</p>",
+           "标题":"title=\"&&\"",
+           "副标题":"class=\"pic-text text-right\">&&</span>",
+           "图片":"data-original=\"&&\"",
+           "链接":"href=\"&&\"",
+           "播放数组":"myui-content__list scrollbar sort-list clearfix&&</ul>",
+           "播放列表":"<a&&</a>",
+           "播放标题":">&&</a>",
+           "跳转播放链接":"src=\"&&\"",
+           "线路数组":"<li class=\"active\"&&</li>",
+           "线路标题":"独播库",
+           "搜索url":"https://u.duboku.io/vodsearch/-------------.html?wd={wd}&submit="
+           }
+    },    
+    {
       "key": "Wexduboku",
-      "name": "🏆｜獨播｜藍光◎秒播(無廣告)",
+      "name": "🏆｜獨播｜藍光◎秒播(無廣告+ok源)",
       "type": 3,
       "api": "csp_WexdubokuGuard",
       "jar": "./jar/wex.txt;md5;d51df16fd164ac4c50295520b455be7d",
@@ -189,6 +208,17 @@
       "searchable": 1,
       "filterable": 0,
       "changeable": 0
+    },
+    {
+      "key":"黑木影视",
+      "name":"🏆｜黑木耳｜藍光◎秒播(無廣告)",
+      "type":1,
+      "api":"https://heimuer.ggff.net/api.php/tvbox",
+      "playUrl":"json:https://heimuer.ggff.net/noads.php?url=",
+      "searchable":1,
+      "quickSearch":1,
+      "filterable":0,
+      "header":{"User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"}
     },
     {
       "key": "咖啡",
@@ -3607,7 +3637,7 @@
     },
     {
       "key": "Auete",
-      "name": "🥈｜奥特｜高清◎秒播(隨機出廣告)",
+      "name": "🥈｜奧特｜高清◎秒播(隨機出廣告)",
       "type": 3,
       "api": "csp_AueteGuard",
       "timeout": 15,
@@ -3631,216 +3661,20 @@
       }
     },
     {
-      "key": "XBPQ_fxzcjy",
-      "name": "🥉｜柴姬｜高清◎秒播(全版廣告)",
-      "jar": "./jar/tvkj.jar",
+      "key": "csp_純享",
+      "name": "🥈｜純享｜高清◎秒播(線路1浮水印+線路2全版廣告)",
       "type": 3,
-      "api": "csp_Xpg",
+      "api": "csp_XBPQ",
+      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": "",
-      "timeout": 10
+      "ext": {
+        "分类url": "https://cxmovie.cc/index.php/vod/show/area/{area}/by/{by}/id/{cateId}/page/{catePg}/year/{year}.html",      
+        "分类": "电影$1#连续剧$2#动漫$3",
+        "地区": "大陆&香港&台湾&美国&法国&英国&日本&韩国&德国&泰国&印度&意大利&西班牙&加拿大&其他||大陆&内地&韩国&香港&台湾&日本&美国&泰国&英国&新加坡&其他||内地&港台&日韩&欧美"
+      }
     },    
-    {
-      "key": "03yh",
-      "name": "🥉｜零三｜高清◎秒播(隨機出廣告)",
-      "type": 3,
-      "api": "csp_XBPQ",
-      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-      "playerType": 2,
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": {
-        "站名": "03影院",
-        "请求头": "User-Agent$Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 Edg/128.0.0.0",
-        "编码": "UTF-8",
-        "图片代理": "0",
-        "主页url": "https://www.03yy.cyou",
-        "搜索url": "https://www.03yy.cyou/search.php?page={pg}&searchword={wd}&searchtype=",
-        "数组": "class=\"m-pic-l&&</div>",
-        "链接": "href=\"&&\"",
-        "图片": "src=\"&&\"",
-        "标题": "title=\"&&\"",
-        "副标题": "<span>&&</span>",
-        "线路数组": "setTab&&/li>[排序:普通线路2>普通线路4>高清在线>高速一线>高速在线②]",
-        "线路标题": ">&&<",
-        "播放二次截取": "class=\"play_list active&&class=\"m-intro",
-        "播放数组": "<ul>&&</ul>",
-        "播放标题": ">&&</a>",
-        "简介": "剧情简介</h4>&&</p>",
-        "导演": "",
-        "主演": "",
-        "首页": "20",
-        "起始页": "1",
-        "直接播放": "0",
-        "嗅探词": ".mp4#.m3u8",
-        "分类url": "https://www.03yy.cyou/type/index{cateId}-{catePg}.html;;mrcd0",
-        "分类": "電影&連續劇&動畫&綜藝",
-        "分类值": "1&2&4&3"
-      }
-    },
-    {
-      "key": "csp_维思",
-      "name": "🥉｜维思｜高清◎順播(浮水印廣告)",
-      "type": 3,
-      "api": "csp_XBPQ",
-      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": {
-        "请求头": "User-Agent$MOBILE_UA",
-        "编码": "UTF-8",
-        "主页url": "https://www.nxgqmy.com/",
-        "数组": "lazyload\"&&</a>",
-        "标题": "title=\"&&\"",
-        "图片": "data-original=\"&&\"",
-        "副标题": "text-\">&&<",
-        "链接": "href=\"&&\"",
-        "简介": "简介：&&</p>",
-        "线路数组": "\\#playlist&&a>[排序:优质>秒播>无尽]",
-        "线路标题": ">&&</[不包含:非凡]",
-        "播放数组": "class=\"myui-content&&</ul>",
-        "播放列表": "<a&&a>[不包含:APP秒播]",
-        "播放链接": "href=\"&&\"",
-        "播放标题": ">&&</",
-        "跳转播放链接": "var player_*\"url\":\"&&\"",
-        "分类url": "https://www.nxgqmy.com/ybsitp/{cateId}-{catePg}.html",
-        "分类": "电影$1#电视剧$2#综艺$3#动漫$4#动画片$31#短剧$5",
-        "筛选": "1",
-        "类型": "动作片$6#喜剧片$7#爱情片$8#科幻片$9#恐怖片$10#剧情片$11#战争片$12#纪录片$13||国产剧$17#港台剧$18#日韩剧$20#欧美剧$21#其它剧$22||大陆综艺$23#日韩综艺$24#港台综艺$26#欧美综艺$25||国产动漫$27#日韩动漫$28#欧美动漫$29#其它动漫$30||空||空"
-      }
-    },
-    {
-      "key": "csp_布卡",
-      "name": "🥉｜布卡｜高清◎順播(浮水印廣告)",
-      "type": 3,
-      "api": "csp_XBPQ",
-      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": {
-        "分类url": "https://www.gtrgt.com/vodshow/{cateId}-{area}-{by}------{catePg}---{year}.html",
-        "数组": "pic\">&&</li>",
-        "标题": "title=\"&&\"",
-        "图片": "data-original=\"&&\"",
-        "副标题": "text-overflow\">&&</p>",
-        "链接": "href=\"&&\"",
-        "简介": "简介：&&</p>",
-        "线路数组": "slide ewave-tab active&&/em>",
-        "线路标题": ">&&<",
-        "播放数组": "ewave-tab-content&&</ul>",
-        "倒序": "0",
-        "播放列表": "<a&&</li>",
-        "播放标题": ">&&</a>",
-        "播放链接": "href=\"&&\"",
-        "跳转播放链接": "var player_*\"url\":\"&&\"",
-        "分类": "电影$dy#电视剧$dsj#综艺$zy#动漫$dm#短剧$duanju",
-        "类型": "动作片$dz#喜剧片$xj#爱情片$aq#科幻片$kh#恐怖片$kb#剧情片$jq#战争片$zz||大陆剧$dalu#港台剧$gangtai#美剧$meiju#海外剧$qita#韩国剧$rihan#香港剧$xianggangju#日本剧$ribenju#泰国剧$taiguoju||大陆综艺$daluzongyi#港台综艺$gangtaizongyi#日韩综艺$rihanzongyi#欧美综艺$oumeizongyi||国产动漫$guochandongman#日韩动漫$rihandongman#欧美动漫$oumeidongman#港台动漫$gangtaidongman#海外动漫$haiwaidongman||空",
-        "地区": "大陆&香港&台湾&美国&法国&英国&日本&韩国&德国&泰国&印度&意大利||大陆&韩国&香港&台湾&日本&美国&泰国&英国&新加坡&其他||空||空||空"
-      }
-    },
-    {
-      "key": "csp_飞兔",
-      "name": "🥉｜飞兔｜高清◎順播(浮水印廣告)",
-      "type": 3,
-      "api": "csp_XBPQ",
-      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": {
-        "主页url": "https://www.feitu.tv",
-        "数组": "hl-lazy&&hl-lc-1\">",
-        "副标题": "hl-lc-1 remarks\">&&</span>",
-        "图片": "data-original=\"&&\"",
-        "标题": "title=\"&&\"",
-        "影片类型": "类型：</em>&&</a>",
-        "影片年代": "年份：</em>&&</li>",
-        "影片地区": "地区：</em>&&</li>",
-        "搜索模式": "0",
-        "搜索后缀": "/detail/",
-        "搜索url": "/search/-/?wd={wd}",
-        "线路数组": "<span class=\"hl-from&&</li>",
-        "线路标题": ">&&</span>[不包含:线路2(高速)]",
-        "分类url": "https://www.feitu.tv/filter/{cateId}/by/{by}/page/{catePg}/year/{year}/",
-        "分类": "电影$1#剧集$2#动漫$4#综艺$3"
-      }
-    },
-    {
-      "key": "大海影视①",
-      "name": "🥉｜伊海｜高清◎順播(浮水印廣告)",
-      "type": 3,
-      "api": "csp_XBPQ",
-      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": "./json/大海1號.json"
-    },
-    {
-      "key": "csp_泰劇網",
-      "name": "🥉｜泰劇｜高清◎順播(浮水印廣告)",
-      "type": 3,
-      "api": "csp_XBPQ",
-      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": "./json/泰劇.json"
-    },
-    {
-      "key": "csp_觀影台",
-      "name": "🥉｜觀影｜高清◎順播(無廣告)",
-      "type": 3,
-      "api": "csp_XBPQ",
-      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": "./json/觀影台.json"
-    },
-    {
-      "key": "py_素白白.py",
-      "name": "🥉｜素白｜高清◎順播(無廣告)",
-      "type": 3,
-      "api": "./py/素白白.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1
-    },
-    {
-      "key": "csp_中畅影院",
-      "name": "🥉｜中暢｜高清◎順播(浮水印廣告)",
-      "type": 3,
-      "api": "csp_XBPQ",
-      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-      "ext": {
-        "请求头": "User-Agent$MOBILE_UA",
-        "编码": "UTF-8",
-        "主页url": "https://szdy168.com/",
-        "数组": "默认--lazyload\"&&</a>||搜索--lazyload\"&&</a>",
-        "标题": "默认--title=\"&&\"||搜索--title=\"&&\"",
-        "图片": "默认--data-original=\"&&\"||搜索--data-original=\"&&\"",
-        "副标题": "默认--right\">&&</span>||搜索--right\">&&</span>",
-        "链接": "默认--href=\"&&\"||搜索--href=\"&&\"",
-        "播放数组": "playlist clearfix&&</ul>",
-        "播放列表": "<a&&a>",
-        "播放链接": "href=\"&&\"",
-        "播放标题": ">&&</",
-        "线路数组": "more text-muted pull-right&&</div>",
-        "线路标题": "title\">&&</",
-        "简介": "learfix\"><p>&&</p>",
-        "跳转播放链接": "var player_*\"url\":\"&&\"",
-        "搜索url": "https://szdy168.com/sousuoye/{wd}----------{pg}---.html",
-        "分类url": "https://szdy168.com/show/{cateId}-{area}-{by}-{class}-{lang}----{catePg}---{year}.html",
-        "分类": "电影&电视剧&动漫&综艺",
-        "分类值": "dianying&dianshiju&dongman&zongyi"
-      }
-    },
     {
       "key": "py_BaHaoTV",
       "name": "🥉｜八號｜普清◎順播(無廣告)",
@@ -3864,7 +3698,7 @@
     },
     {
       "key": "csp_NIVODvip",
-      "name": "🎥｜泥視頻(VIP)｜藍光◎順播(無廣告)",
+      "name": "🥉｜泥視頻(VIP)｜藍光◎順播(無廣告)",
       "type": 3,
       "api": "csp_XBPQ",
       "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
@@ -3875,7 +3709,7 @@
     },
     {
       "key": "py_NIVOD.CC",
-      "name": "🎥｜泥視頻｜高清◎秒播(浮水印廣告)",
+      "name": "🥉｜泥視頻｜高清◎秒播(浮水印廣告)",
       "type": 3,
       "api": "./py/py_nivod_cc.py",
       "searchable": 1,
@@ -3885,7 +3719,7 @@
     },
     {
       "key": "csp_NIVODapp",
-      "name": "🎥｜泥視頻(APP)｜藍光◎順播(跑馬燈廣告)",
+      "name": "🥉｜泥視頻(APP)｜藍光◎順播(跑馬燈廣告)",
       "type": 3,
       "api": "csp_XBPQ",
       "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
@@ -3904,8 +3738,8 @@
       }
     }, 
     {
-      "key": "csp_奥特影视(CC)",
-      "name": "🎥｜奥悉｜重測",
+      "key": "csp_奧特影视(CC)",
+      "name": "🥉｜奧悉｜重測",
       "type": 3,
       "searchable": 1,
       "quickSearch": 1,
@@ -3929,8 +3763,8 @@
       }
     },
     {
-      "key": "csp_奥特影视(COM)",
-      "name": "🎥｜奥康｜重測",
+      "key": "csp_奧特影视(COM)",
+      "name": "🥉｜奧康｜重測",
       "type": 3,
       "searchable": 1,
       "quickSearch": 1,
@@ -3955,7 +3789,7 @@
     },
     {
       "key": "csp_楓林網",
-      "name": "🎥｜楓花｜重測",
+      "name": "🥉｜楓花｜重測",
       "type": 3,
       "searchable": 1,
       "quickSearch": 1,
@@ -3983,7 +3817,7 @@
     },
     {
       "key": "csp_Imaple8TV",
-      "name": "🎥｜楓月｜重測",
+      "name": "🥉｜楓月｜重測",
       "type": 3,
       "api": "csp_XBPQ",
       "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
@@ -4005,7 +3839,7 @@
     },
       {
     "key": "csp_JUMITV",
-    "name": "🎥｜劇迷｜保留",
+    "name": "🥉｜劇迷｜保留",
     "type": 3,
     "api": "csp_XBPQ",
     "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
@@ -4021,7 +3855,7 @@
   },
   {
     "key": "csp_统一影視",
-    "name": "🎥｜统一｜保留",
+    "name": "🥉｜统一｜保留",
     "type": 3,
     "api": "csp_XBPQ",
     "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
@@ -4032,7 +3866,7 @@
   },
   {
     "key": "csp_nyys",
-    "name": "🎥｜纽约｜保留",
+    "name": "🥉｜纽约｜保留",
     "type": 3,
     "api": "csp_XBPQ",
     "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
@@ -4043,7 +3877,7 @@
   },
     {
     "key": "csp_XBPQ_樱花",
-    "name": "🎥｜樱花｜保留",
+    "name": "🥉｜樱花｜保留",
     "type": 3,
     "api": "csp_XBPQ",
     "jar": "./jar/xyqxbpq.jar",
@@ -4074,7 +3908,7 @@
   },
   {
     "key": "csp_美柏影视",
-    "name": "🎥｜美柏｜保留",
+    "name": "🥉｜美柏｜保留",
     "type": 3,
     "api": "csp_XBPQ",
     "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
@@ -4085,7 +3919,7 @@
   },
   {
     "key": "csp_XBPQ_小宝",
-    "name": "🎥｜小宝｜藍光◎秒播(浮水印廣告)",
+    "name": "🥉｜小宝｜藍光◎秒播(浮水印廣告)",
     "type": 3,
     "api": "csp_XBPQ",
     "jar": "./jar/xyqxbpq.jar",
@@ -4113,7 +3947,7 @@
   },
   {
     "key": "csp_獨播庫",
-    "name": "🎥｜偽獨｜保留",
+    "name": "🥉｜偽獨｜保留",
     "type": 3,
     "api": "csp_XBPQ",
     "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
@@ -4136,7 +3970,7 @@
   },
   {
     "key": "csp_考拉TV",
-    "name": "🎥｜考拉｜保留",
+    "name": "🥉｜考拉｜保留",
     "type": 3,
     "api": "csp_XBPQ",
     "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
@@ -4150,7 +3984,7 @@
   },
   {
     "key": "csp_星空影院②",
-    "name": "🎥｜星空｜保留",
+    "name": "🥉｜星空｜保留",
     "type": 3,
     "api": "csp_XBPQ",
     "jar": "./jar/xyqxbpq.jar",
@@ -5562,7 +5396,7 @@
       "playerType": 2,
       "url": "./live/migu.m3u",
       "ua": "xieanqishiwoerzi/0.0.1"
-    },
+    },    
     {
       "name": "4GTV(謝安琪)",
       "playerType": 2,
