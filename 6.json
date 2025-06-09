@@ -49,8 +49,9 @@
    "jar": "./jar/xyqxbpq.jar",
    "ext": {
     "主页url":"https://www.duboku.tv/",
-    "分类url":"https://www.duboku.tv/vodtype/{cateId}-{catePg}.html",
-    "分类": "剧集$2#电影$1",
+    "分类url":"https://www.duboku.tv/vodshow/{cateId}-{area}-{by}------{catePg}---{year}.html",
+    "分类": "电影$1#剧集$2#综艺$3#动漫$4",
+    "地区": "大陆&香港&台湾&美国&英国&日本&韩国&印度&西班牙&加拿大&法国&意大利&荷兰&澳大利亚&俄罗斯||内地&韩国&香港&台湾&美国&英国&巴西&泰国&法国&日本&新加坡||内地&香港&台湾&韩国&美国||国产&日本&美国&法国&其他",
     "数组":"myui-vodlist__box&&</p>",
     "标题":"title=\"&&\"",
     "副标题":"class=\"pic-text text-right\">&&</span>",
