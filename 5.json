@@ -33,8 +33,38 @@
         "地区": "大陆&香港&台湾&美国&法国&英国&日本&韩国&德国&泰国&印度&意大利&西班牙&加拿大&其他||大陆&内地&韩国&香港&台湾&日本&美国&泰国&英国&新加坡&其他||内地&港台&日韩&欧美"
       }
     },
-
-
+{
+"key": "萌新XBPQ_独播库",
+   "name": "✈️独播库",
+   "type": 3,
+   "api": "csp_XBPQ",
+   "playerType": 2,
+   "searchable": 1,
+   "quickSearch":1,
+   "changeable": 1,
+   "filterable": 1,
+   "timeout": 60,
+   "style": {"type": "rect","ratio": 1.3},
+   "click": "document.querySelector(\"#playleft iframe\").contentWindow.document.querySelector(\"button.vjs-big-play-button\").click();",
+   "jar": "./jar/xyqxbpq.jar",
+   "ext": {
+    "主页url":"https://www.duboku.tv/",
+    "分类url":"https://www.duboku.tv/vodtype/{cateId}-{catePg}.html",
+    "分类": "剧集$2#电影$1",
+    "数组":"myui-vodlist__box&&</p>",
+    "标题":"title=\"&&\"",
+    "副标题":"class=\"pic-text text-right\">&&</span>",
+    "图片":"data-original=\"&&\"",
+    "链接":"href=\"&&\"",
+    "播放数组":"myui-content__list scrollbar sort-list clearfix&&</ul>",
+    "播放列表":"<a&&</a>",
+    "播放标题":">&&</a>",
+    "跳转播放链接":"src=\"&&\"",
+    "线路数组":"<li class=\"active\"&&</li>",
+    "线路标题":"独播库",
+    "搜索url":"https://u.duboku.io/vodsearch/-------------.html?wd={wd}&submit="
+   }
+  },
 
 
 
@@ -5576,7 +5606,7 @@
       "playerType": 2,
       "url": "./live/migu.m3u",
       "ua": "xieanqishiwoerzi/0.0.1"
-    },
+    },    
     {
       "name": "4GTV(謝安琪)",
       "playerType": 2,
