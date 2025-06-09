@@ -419,7 +419,7 @@
     },
     {
       "key": "快看影视",
-      "name": "🎥｜快看｜高清◎秒播(廣告？)",
+      "name": "🎥｜快看｜高清◎秒播",
       "type": 3,
       "api": "csp_Kuaikan",
       "jar": "https://raw.githubusercontent.com/fastbuild7099/fastbuild7099/refs/heads/main/jar1/配置中心.jar",
@@ -429,7 +429,7 @@
     },
     {
       "key": "csp_AppYsV2_天天美剧网（APP）",
-      "name": "🎥｜天美｜高清◎秒播(廣告？)",
+      "name": "🎥｜天美｜高清◎秒播",
       "type": 3,
       "api": "csp_AppYsV2",
       "ext": "https://www.ttmja.com/api.php/app/",
@@ -437,7 +437,7 @@
     },
     {
       "key": "csp_蛙視頻",
-      "name": "🎥｜蛙視頻｜高清◎秒播(廣告？)",
+      "name": "🎥｜蛙視頻｜高清◎秒播",
       "type": 3,
       "api": "csp_XBPQ",
       "jar": "./jar/xyqxbpq.jar",
@@ -797,28 +797,6 @@
         "filterable": 1,
         "changeable": 1,
         "ext": "http://kkwk123.top/api.php/app/"
-      },
-      {
-        "key": "csp_奥特影视(PRO)",
-        "name": "🎥｜奥普｜高清◎秒播(全版廣告)",
-        "type": 3,
-        "api": "csp_XBPQ",
-        "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-        "ext": {
-          "主页url": "https://auete.pro/",
-          "數組": "class=\"trans_3\"&&</li>",
-          "标题": "title=\"&&\"",
-          "副标题": "class=\"hdtag\">&&<",
-          "简介": "<p>◎影片简介: </p>&&<div class=\"clear\">",
-          "导演": "导演: &&</p>",
-          "主演": "主演: &&</p>",
-          "线路数组": "class=\"clearfix mt-3\"&&</div>",
-          "线路标题": "』&&：<",
-          "分类url": "https://auete.pro/{cateId}/{class}/index{catePg}.html[https://auete.pro/{cateId}/{class}/index.html]",
-          "筛选": "1",
-          "剧情": "动作片$dzp#喜剧片$xjp#爱情片$aqp#科幻片$khp#恐怖片$kbp#剧情片$jqp#战争片$zzp#惊悚片$jsp||香港剧$tvbgj#国产剧$neidi#台湾剧$taiju#欧美剧$oumei#日剧$riju#韩剧$hanju#网剧$wangju#泰剧$yataiju||大陆综艺$guozong#日韩综艺$hanzong#欧美综艺$meizong||国产动漫$guoman#日本动漫$riman#欧美动漫$meiman$动画$donghua||记录片$Jlp#经典片$Jdp#经典剧$Jdj#网大电影$wlp#国产老电影$laodianying",
-          "分类": "电影$Movie#电视剧$Tv#综艺$Zy#动漫$Dm#其他$qita"
-        }
       },
       {
         "key": "csp_奥特影视(CC)",
