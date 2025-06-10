@@ -5294,6 +5294,13 @@
       "pass": true
     },
     {
+      "name": "smart(pendy)",
+      "url": "./live/smart-pendy.txt",
+      "epg": "http://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Taipei",
+      "logo": "https://epg.112114.xyz/logo/{name}.png",
+      "pass": true
+    },     
+    {
       "name": "立方直播",
       "playerType": 2,
       "url": "http://breezy-audrie-zspace-7524863c.koyeb.app/sub?type=m3u&token=leifeng",
