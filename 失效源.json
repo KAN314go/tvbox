@@ -55,6 +55,107 @@
       }
     },
     {
+      "key": "美帕影视",
+      "name": "📱｜美帕｜高清◎順播(無廣告+APP)",
+      "type": 3,
+      "api": "./py/美帕APP.py",
+      "searchable": 1,
+      "changeable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "playerType": 2
+    },
+    {
+      "key": "蝴蝶",
+      "name": "📱｜蝴蝶｜高清◎順播(無廣告+APP)",
+      "type": 3,
+      "api": "csp_Hudie",
+      "jar": "./jar/feimao-0611.jar",
+      "playerType": 2,
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 1,
+      "ext": "eaHR0cHM6Ly9kLmRjbW92aWUudG9w"
+    },           
+    {
+      "key": "py_悠悠APP",
+      "name": "🥇｜悠悠｜藍光◎秒播(無廣告+PY)",
+      "type": 3,
+      "api": "./py/悠悠APP.py",
+      "searchable": 1,
+      "filterable": 0,
+      "changeable": 0
+    },
+    {
+      "key": "嗨皮影视",
+      "name": "📱｜嗨皮｜高清◎秒播(無廣告+APP)",
+      "type": 3,
+      "api": "./py/嗨皮APP.py",
+      "searchable": 1,
+      "changeable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "playerType": 2
+    },
+    {
+      "key": "永夜",
+      "name": "📱｜永夜｜高清◎秒播(無廣告+APP)",
+      "type": 3,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "api": "csp_AppMuou",
+      "jar": "./jar/xiaosa-0526.jar;md5;6c87c9a352a0d2e60fed23f28bf4f9c6",
+      "ext": {
+        "url"    : "http://cms.neyym.cn",
+        "dataKey": "66247d82fcfaeda9"   ,
+        "dataIv" : "70691065ee3c4c54"   ,
+        "jxurl"  : "http://app.neyym.cn"
+      }
+    },
+    {
+      "key": "鲶鱼",
+      "name": "📱｜鲶鱼｜高清◎秒播(無廣告+APP)",
+      "type": 3,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "api": "csp_AppGet",
+      "jar": "./jar/xiaosa.jar;md5;e4619193d9073ff124bb77f88f61d057",
+      "ext": {
+        "url"     : "http://47.122.22.78",
+        "dataKey" : "1234567890123456"   ,
+        "dataIv"  : "1234567890123456"   ,
+        "deviceId": ""                   ,
+        "version" : "119"
+      }
+    },
+    {
+      "key": "溢彩",
+      "name": "📱｜溢彩｜高清◎秒播(無廣告)",
+      "type": 3,
+      "api": "csp_AppSxGuard",
+      "spider": "./jar/fty.jar;md5;948a482e3bad5bd090a87a6a85d38903",
+      "jar": "./jar/fty.jar;md5;948a482e3bad5bd090a87a6a85d38903",
+      "timeout": 10,
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 1,
+      "ext": "rfOb1uAWbkRHp7hdxprG9un3+TfN183v1zIyaYDoDAIaLw5L8Dp8+v88LrEL3dBzrmWbdMBX0WNm7HtkQuw0AIzUurGBVyPqCKzDmbriATuukhctJlsLo8KxCw=="
+    },        
+    {
+      "key": "A8",
+      "name": "🥇｜A8｜高清◎秒播(無廣告+無篩選)",
+      "type": 3,
+      "api": "csp_XBPQ",
+      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+      "playerType": 2,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "./json/A8影视.json"
+    },        
+    {
       "key": "GQJC",
       "name": "🥇｜高清｜高清◎秒播(無廣告)",
       "type": 3,
@@ -180,6 +281,60 @@
       "filterable": 1,
       "timeout": 10
     },
+    {
+      "key": "py_恋鱼影视",
+      "name": "🥈｜恋鱼｜高清◎順播(無廣告)",
+      "type": 3,
+      "api": "./py/恋鱼影视APP.py",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 0,
+      "changeable": 1
+    },
+    {
+      "key": "csp_神马影视",
+      "name": "🥈｜神马｜高清◎秒播(浮水印廣告)",
+      "type": 3,
+      "api": "csp_XBPQ",
+      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": {
+        "数组": "class=\"hl-item-thumb hl-lazy\"&&</li",
+        "图片": "data-original=\"&&\"",
+        "标题": "title=\"&&\"",
+        "链接": "href=\"&&\"",
+        "副标题": "<span class=\"hl-lc-1 remarks\">&&</span>",
+        "线路二次截取": "<div class=\"hl-plays-from hl-tabs swiper-wrapper clearfix&&</div",
+        "线路数组": "<a&&</a>",
+        "线路标题": "</i>&&</a>[替换:高清>>高品质]",
+        "状态": "地区：&&</li>",
+        "导演": "导演：&&</li>",
+        "主演": "主演：&&</li>",
+        "简介": "简介：&&</div>",
+        "播放数组": "id=\"hl-plays-list\"&&</ul>",
+        "播放列表": "<a&&/a>",
+        "播放标题": ">&&<",
+        "播放链接": "href=\"&&\"",
+        "嗅探词": ".m3u8?#v3.huoshanvod.com#.m3u8#v3-dy-o.zjcdn#sf16-sg.larksuitecdn.com#v.kd1.qq.com#.mp4#video_mp4",
+        "过滤词": "/hls/#php",
+        "分类url": "https://www.18ys.cc/vodshow/{cateId}-{area}-{by}----{catePg}-{year}.html",
+        "分类": "电影$1#电视剧$2#综艺$3#动漫$4",
+        "地区": "中国大陆&大陆&香港&台湾&日本&韩国&泰国&新加坡&马来西亚&越南&印度&美国&英国&德国&法国&意大利"
+      }
+    },
+    {
+      "key": "csp_辰辰",
+      "name": "🥈｜辰辰｜高清◎秒播(浮水印廣告)",
+      "type": 3,
+      "api": "csp_XBPQ",
+      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "./json/辰辰影院.json"
+    },            
     {
       "key": "小红",
       "name": "🏆｜鮮红｜藍光◎秒播(無廣告+OK源)",
