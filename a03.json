@@ -598,7 +598,7 @@
     },
     {
       "key": "csp_SaoHuo",
-      "name": "🥇｜火火｜藍光◎秒播(無廣告)",
+      "name": "❌｜火火｜藍光◎秒播(無廣告)",
       "type": 3,
       "api": "csp_SaoHuo",
       "playerType": 2,
@@ -650,8 +650,8 @@
       "key": "步步",
       "name": "🥇｜步步｜高清◎秒播(無廣告)",
       "type": 3,
-      "api": "https://weixine.net/js/lib/drpy2.min.js",
-      "jar": "./jar/mi-0513.txt;md5;bcb27d2740df8d21bfc49c507432663a",
+      "api": "./drpy_libs/drpy2.min.js",
+      "jar": "./jar/mi-0513.txt",
       "ext": "https://gitee.com/smallmi1007/mimi/raw/master/ceshi.js"
     },
     {
