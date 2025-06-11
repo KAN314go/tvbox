@@ -8,10 +8,11 @@
 
         {
             "key": "剧咖",
-            "name": "剧咖｜APP",
+            "name": "📱｜剧咖｜APP",
             "type": 3,
             "quickSearch": 1,
             "api": "csp_AppGet",
+            "jar": "./jar/xiaosa-0611.jar;md5;0f97d54d1dafebe68cfdd9c415c1aa3b",
             "ext": {
                 "url": "https://ys.xiaoqi0.cn",
                 "dataKey": "jukayingshi88888",
@@ -22,10 +23,11 @@
         },
         {
             "key": "超前",
-            "name": "超前｜APP",
+            "name": "📱｜超前｜APP",
             "type": 3,
             "quickSearch": 1,
             "api": "csp_AppGet",
+            "jar": "./jar/xiaosa-0611.jar;md5;0f97d54d1dafebe68cfdd9c415c1aa3b",
             "ext": {
                 "url": "https://app.ystva.com",
                 "dataKey": "A1akVPQmnnE4Fz9Z",
@@ -36,10 +38,11 @@
         },
         {
             "key": "溜溜",
-            "name": "溜溜｜APP",
+            "name": "📱｜溜溜｜APP",
             "type": 3,
             "quickSearch": 1,
             "api": "csp_AppGet",
+            "jar": "./jar/xiaosa-0611.jar;md5;0f97d54d1dafebe68cfdd9c415c1aa3b",
             "ext": {
                 "url": "https://appcms.ll4k.xyz",
                 "dataKey": "NiDGaKiVnkO3QX1Q",
@@ -50,10 +53,11 @@
         },
         {
             "key": "沐沐",
-            "name": "沐沐｜APP",
+            "name": "📱｜沐沐｜APP",
             "type": 3,
             "quickSearch": 1,
             "api": "csp_AppGet",
+            "jar": "./jar/xiaosa-0611.jar;md5;0f97d54d1dafebe68cfdd9c415c1aa3b",
             "ext": {
                 "url": "http://xk.ys088.cn",
                 "dataKey": "1846397456616237",
@@ -64,10 +68,11 @@
         },
         {
             "key": "晓晓",
-            "name": "晓晓｜APP",
+            "name": "📱｜晓晓｜APP",
             "type": 3,
             "quickSearch": 1,
             "api": "csp_AppGet",
+            "jar": "./jar/xiaosa-0611.jar;md5;0f97d54d1dafebe68cfdd9c415c1aa3b",
             "ext": {
                 "url": "https://ys.ewo.asia",
                 "dataKey": "Z0qTnwyLAJCtuIkI",
