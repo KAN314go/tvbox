@@ -10,7 +10,7 @@
       "key":"18+採集",
       "name":"🏆｜18+採集｜",
       "type":1,
-      "api":"https://api.souavzy.vip/api.php/provide/vod/at/json",
+      "api":"https://api.souavzy.vip/api.php/provide/vod/?ac=list",
       "playUrl":"json:https://souavzy.info/m3u8/?url=",
       "searchable":1,
       "quickSearch":1,
