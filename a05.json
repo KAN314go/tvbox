@@ -745,17 +745,6 @@
       "ext": "https://www.zxzjhd.com/"
     },
     {
-      "key": "糯米弹幕",
-      "name": "🥇｜糯米｜高清◎秒播(無廣告)",
-      "type": 3,
-      "api": "csp_Nmys",
-      "jar": "./jar/xiaosa-0526.jar;md5;6c87c9a352a0d2e60fed23f28bf4f9c6",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": {"danmu": true}
-    },
-    {
       "key": "py_绝对影视",
       "name": "🥇｜絕對｜高清◎秒播(無廣告)",
       "type": 3,
@@ -793,13 +782,6 @@
       "quickSearch": 0,
       "filterable": 0,
       "changeable": 1
-    },
-    {
-      "key": "csp_Jpys",
-      "name": "🥇｜銀光｜高清◎秒播(無廣告)",
-      "type": 3,
-      "jar": "./jar/mi-0319.jar;md5;b73ed98a0a285189794be3c8d9c3a335",
-      "api": "csp_JpysGuard"
     },
     {
       "key": "py_OleVod",
@@ -842,15 +824,6 @@
         "分类": "電視劇$2#電影$1#動漫$4#綜藝$3#短劇$53",
         "地区": "大陆&香港&台湾&美国&法国&英国&日本&韩国&德国&泰国&印度&意大利&西班牙&加拿大&其他"
       }
-    },
-    {
-      "key": "js_youyou",
-      "name": "🥇｜悠悠｜高清◎秒播(無廣告+JS)",
-      "type": 3,
-      "api": "./js/youyou.js",
-      "searchable": 1,
-      "filterable": 0,
-      "changeable": 0
     },
     {
       "key": "py_jieyingshi",
@@ -936,30 +909,6 @@
        }
     },    
     {
-      "key": "csp_真不卡",
-      "name": "🥇｜不卡｜高清◎秒播(無廣告)",
-      "type": 3,
-      "api": "csp_XBPQ",
-      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-      "searchable": 1,
-      "quickSearch": 1,
-      "changeable": 1,
-      "filterable": 1,
-      "ext": {
-        "規則名": "真不卡",
-        "規則作者": "老王叔叔",
-        "規則日期": "114.03.10",
-        "数组": "class=\"v-pic\"&&</li>",
-        "标题": "title=\"&&\"",
-        "副标题": "class=\"v-tips\">&&</div>",
-        "主页url": "https://www.zbkyyy.com/",
-        "搜索url": "https://www.zbkyyy.com/qyvodsearch/-------------.html?wd={wd}",
-        "分类url": "https://www.zbkyyy.com/qyvodshow/{cateId}-{area}-{by}------{catePg}---{year}.html",
-        "分类": "電影$1#電視劇$2#綜藝$3#動漫$4",
-        "地区": "大陆&香港&台湾&美国&法国&英国&日本&韩国||大陆&韩国&香港&台湾&日本&美国&泰国&英国||大陆&港台&日韩&欧美||大陆&日本&欧美&其他"
-      }
-    },
-    {
       "key": "底端",
       "name": "🥇｜底端｜高清◎秒播(無廣告，夸克線不能用)",
       "type": 3,
@@ -1002,21 +951,12 @@
       }
     },
     {
-      "key": "糯米",
-      "name": "🥇｜糯米｜高清◎秒播(無廣告)",
-      "type": 3,
-      "api": "csp_NmyswvGuard",
-      "timeout": 15,
-      "searchable": 1,
-      "quickSearch": 1,
-      "changeable": 1
-    },
-    {
       "key": "csp_黑夜影视",
-      "name": "🥇｜黑夜｜高清◎秒播(無廣告)",
+      "name": "🥇｜黑夜｜高清◎秒播(特殊，需手動開網頁)",
       "type": 3,
       "api": "csp_XBPQ",
       "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+      "click": "document.querySelector(\"#playleft iframe\").contentWindow.document.querySelector(\"#start\").click();",     
       "ext": "./json/黑夜影視.json"
     },
     {
@@ -1084,25 +1024,6 @@
       "ext": "./json/櫻花影視.json"
     },
     {
-      "key": "csp_奇趣影视",
-      "name": "🥇｜奇趣｜高清◎秒播(無廣告)",
-      "type": 3,
-      "api": "csp_XBPQ",
-      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-      "ext": {
-        "主页url": "https://www.qqutv.com",
-        "简介": ">&&</span>",
-        "导演": "导演：&&</div>",
-        "主演": "主演：&&</div>",
-        "倒序": "0",
-        "线路数组": "data-toggle=\"&&</li>",
-        "线路标题": ">&&</a>[不包含:极速①#高清①]",
-        "分类url": "https://www.qqutv.com/qqys/{cateId}/area/{area}/page/{catePg}/year/{year}.html",
-        "分类": "电影$dianying#电视剧$dianshiju#综艺$zongyi#动漫$dongmna",
-        "地区": "中国&大陆&内地&香港&台湾&日本&韩国&泰国&新加坡&马来西亚&越南&印度&美国&英国&德国&法国&意大利"
-      }
-    },
-    {
       "key": "csp_Euvod",
       "name": "🥇｜伊優｜高清◎秒播(無廣告)",
       "type": 3,
@@ -1125,27 +1046,6 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": "./json/微雲.json"
-    },
-    {
-      "key": "真心影视",
-      "name": "🥇｜真心｜高清◎秒播(無廣告)",
-      "type": 3,
-      "api": "csp_WebGZ",
-      "jar": "./jar/feimao-0611.jar",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1
-    },
-    {
-      "key": "小苹果弹幕",
-      "name": "🥇｜苹果｜高清◎秒播(無廣告)",
-      "type": 3,
-      "api": "csp_Xpg",
-      "jar": "./jar/xiaosa.jar;md5;e4619193d9073ff124bb77f88f61d057",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": {"danmu": true}
     },
     {
       "key": "csp_YLSP",
@@ -1200,18 +1100,6 @@
       "ext": "./drpy_js/低端.js"
     },
     {
-      "key": "csp_moxmi",
-      "name": "🥇｜樂美｜高清◎秒播(無廣告)",
-      "type": 1,
-      "api": "http://mi.moxmi.top:81/api.php/provide/vod/?ac=list",
-      "playUrl": "json:http://iid.moxmi.top:81/gg.php?url=",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "jar": "https://raw.githubusercontent.com/cpu170/bf/0b1b3e305fd4ac2e206d3589cd1ca3e70cf7b28e/n/g/jars/林中的小屋.jar",
-      "categories": ["电影", "剧集", "综艺", "动漫", "短剧"]
-    },
-    {
       "key": "csp_即看影视",
       "name": "🥇｜即看｜高清◎秒播(無廣告)",
       "type": 3,
@@ -1252,66 +1140,6 @@
       "filterable": 1,
       "changeable": 0
     },
-        {
-      "key": "黑木影视",
-      "name": "🥇｜黑木耳｜高清◎秒播(多廣告)",
-      "type": 1,
-      "api": "https://heimuer.ggff.net/api.php/tvbox",
-      "jar": "./jar/custom_spider.jar;md5;5e53c8f9ddd4ede5359c16bee091db93",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0
-    },
-    {
-      "key": "DDYS",
-      "name": "🥇｜多多｜高清◎秒播(30分鐘後出廣告)",
-      "type": 3,
-      "api": "csp_XBPQ",
-      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-      "playerType": 2,
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": {
-        "站名": "多多影视",
-        "请求头": "User-Agent$Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 Edg/128.0.0.0",
-        "编码": "UTF-8",
-        "图片代理": "0",
-        "主页url": "https://www.ddhqw.com",
-        "搜索url": "https://www.ddhqw.com/ddcz{wd}/page/{pg}.html",
-        "数组": "class=\"stui-vodlist__thumb&&</a>",
-        "链接": "href=\"&&\"",
-        "图片": "data-original=\"&&\"",
-        "标题": "title=\"&&\"",
-        "副标题": "text-right\">&&<",
-        "线路数组": "class=\"stui-pannel__head bottom-line&&</div>",
-        "线路标题": ">&&</h3>",
-        "播放数组": "class=\"stui-content__playlist&&</ul>",
-        "播放标题": ">&&</a>",
-        "简介": "解說col-pd\">&&</p>",
-        "导演": "",
-        "主演": "",
-        "首页": "20",
-        "起始页": "1",
-        "直接播放": "0",
-        "嗅探词": ".mp4#.m3u8",
-        "分类url": "https://www.ddhqw.com/list/{cateId}/page/{catePg}/year/{year}.html;;mrcd0",
-        "分类": "電影&連續劇&綜藝&動畫&紀錄",
-        "分类值": "dianying&dianshiju&zongyi&dongmna&jilupian"
-      }
-    },
-    {
-      "key": "csp_Tvyb",
-      "name": "🥇｜雲播｜高清◎秒播(無廣告)",
-      "type": 3,
-      "searchable": 1,
-      "changeable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "playerType": 2,
-      "jar": "./jar/feimao-0611.jar",
-      "api": "csp_Tvyb"
-    },
     {
       "key": "WYtv",
       "name": "🥇｜微雲｜高清◎秒播(無廣告)",
@@ -1323,44 +1151,6 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": "./json/微雲TV.json"
-    },
-    {
-      "key": "GQJC",
-      "name": "🥇｜高清｜高清◎秒播(無廣告)",
-      "type": 3,
-      "api": "csp_XBPQ",
-      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-      "playerType": 2,
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": {
-        "站名": "高清剧场",
-        "请求头": "User-Agent$Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 Edg/128.0.0.0",
-        "编码": "UTF-8",
-        "图片代理": "0",
-        "主页url": "https://www.kanbd.com",
-        "搜索url": "https://www.kanbd.com/search/{wd}----------{pg}---.html",
-        "数组": "hl-lazy\"&&</a>",
-        "链接": "href=\"&&\"",
-        "图片": "data-original=\"&&\"",
-        "标题": "title=\"&&\"",
-        "副标题": "remarks\">&&<",
-        "线路数组": "class=\"hl-tabs-btn&&/a>[排序:线路5.>线路2.>线路6.>线路4.>线路1.]",
-        "线路标题": "</i>&&<",
-        "播放数组": "class=\"hl-plays-list&&</ul>",
-        "播放标题": ">&&</a>",
-        "简介": "简介：</em>&&</li>",
-        "导演": "",
-        "主演": "",
-        "首页": "20",
-        "起始页": "1",
-        "直接播放": "0",
-        "嗅探词": ".mp4#.m3u8",
-        "分类url": "https://www.kanbd.com/s/{cateId}--------{catePg}---{year}.html;;mrcd0",
-        "分类": "電影&連續劇&綜藝&動畫&紀錄&動畫&短劇",
-        "分类值": "movie&series&variety&anime&documentary&animation&skit"
-      }
     },
     {
       "key": "csp_新電影先生",
@@ -1392,7 +1182,6 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "url": "https://jx.2s0.cn/player/?url=",
       "ext": {
         "线路数组": "data-dropdown-value=\"&&</div>[排序:高清②>普通T1>高清④>高清①>高清③]",
         "线路标题": "span>&&</span",
@@ -3932,6 +3721,18 @@
       "searchable": 1,
       "changeable": 1
     },
+    {
+      "key": "csp_moxmi",
+      "name": "🧲｜樂美｜高清◎秒播(無廣告)",
+      "type": 1,
+      "api": "http://mi.moxmi.top:81/api.php/provide/vod/?ac=list",
+      "playUrl": "json:http://iid.moxmi.top:81/gg.php?url=",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "jar": "https://raw.githubusercontent.com/cpu170/bf/0b1b3e305fd4ac2e206d3589cd1ca3e70cf7b28e/n/g/jars/林中的小屋.jar",
+      "categories": ["电影", "剧集", "综艺", "动漫", "短剧"]
+    },    
     {
       "key": "天涯资源",
       "name": "🧲｜天涯｜無廣",
