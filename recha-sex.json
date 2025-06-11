@@ -1178,6 +1178,17 @@
       "style": {"type": "rect", "ratio": 1.33}
     },
     {
+      "key":"18+採集",
+      "name":"🔞送AV采集",
+      "type":1,
+      "api":"https://api.souavzy.vip/api.php/provide/vod/?ac=list",
+      "jar": "./jar/pg.jar",
+      "searchable":1,
+      "quickSearch":1,
+      "filterable":0,
+      "header":{"User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"}
+    },    
+    {
       "key": "大地专场",
       "name": "🔞大地采集",
       "type": 0,
