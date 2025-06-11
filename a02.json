@@ -602,6 +602,7 @@
       "type": 3,
       "api": "csp_SaoHuo",
       "playerType": 2,
+      "spider": "./jar/feimao-0611.jar",     
       "jar": "./jar/feimao-0611.jar",
       "ext": "https://shdy5.us"
     },
