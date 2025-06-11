@@ -185,16 +185,6 @@
       "changeable": 1
     },
     {
-      "key": "py_4KAV",
-      "name": "🏆｜4KAV｜藍光◎秒播(無廣告)",
-      "type": 3,
-      "api": "./py/4KAV.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "changeable": 1
-    },
-    {
       "key": "py_aidianying",
       "name": "🏆｜愛電影｜藍光◎秒播(無廣告)",
       "type": 3,
@@ -247,7 +237,7 @@
     },
     {
       "key": "py_仓鼠",
-      "name": "🏆｜倉鼠｜藍光◎秒播(無廣告+APP)",
+      "name": "❌｜倉鼠｜藍光◎秒播(無廣告+APP)",
       "type": 3,
       "api": "csp_AppGet2",    
       "jar": "./jar/mi-0607.jar",
@@ -277,14 +267,29 @@
 
     {
       "key": "py_劇爸爸",
-      "name": "🏆｜劇爸｜藍光◎秒播(無廣告)",
+      "name": "❌｜劇爸｜藍光◎秒播(無廣告)",
       "type": 3,
       "searchable":1,
       "filterable":0,
       "changeable":1,
       "api": "./py/劇爸爸.py",
       "ext": ""
-    },       
+    },
+    {
+      "key": "米兔",
+      "name": "🏆｜米兔｜藍光◎秒播(無廣告+APP)",
+      "type": 3,
+      "quickSearch": 1,
+      "api": "csp_AppGet",
+      "jar": "./jar/xiaosa-0611.jar",
+      "ext": {
+        "url": "http://v.tkbot.fun",
+        "dataKey": "d032c12876bc6848",
+        "dataIv": "d032c12876bc6848",
+        "deviceId": "",
+        "version": "200"
+      }
+    },         
     {
       "key": "py_貓眼",
       "name": "🏆｜貓眼｜藍光◎秒播(無廣告)",
@@ -309,8 +314,8 @@
              "deviceId": "",
              "version": ""
              }
-      },
-      {
+    },
+    {
         "key": "诺雪2",
         "name": "🏆｜诺雪｜藍光◎秒播(無廣告+APP)",
         "type": 3,
@@ -324,22 +329,7 @@
                "deviceId": "",
                "version": "120"
                }    
-     },      
-     {
-      "key": "橘猫",
-      "name": "🏆｜橘猫｜藍光◎秒播(4K線無廣告+APP)",
-      "type": 3,
-      "quickSearch": 1,
-      "api": "csp_AppGet",
-      "jar": "./jar/box-0603.jar",
-      "ext": {
-        "url": "https://appcms.jm4k.top",
-        "dataKey": "KPEkKAESYi38CQdn",
-        "dataIv": "KPEkKAESYi38CQdn",
-        "deviceId": "",
-        "version": "119"
-      }
-    },
+    },      
     {
       "key": "橘子",
       "name": "🏆｜橘子｜藍光◎秒播(無廣告+APP)",
@@ -355,23 +345,6 @@
           "version": "300"
          }
     },
-    {
-      "key": "米兔",
-      "name": "🏆｜米兔｜藍光◎秒播(無廣告+APP)",
-      "type": 3,
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "api": "csp_AppGet",
-      "jar": "./jar/xiaosa-0526.jar;md5;6c87c9a352a0d2e60fed23f28bf4f9c6",
-      "ext": {
-        "url"     : "https://www.zjc.app",
-        "dataKey" : "ab4e9a421675f14b"   ,
-        "dataIv"  : "ab4e9a421675f14b"   ,
-        "deviceId": ""                   ,
-        "version" : "442"
-      }
-    },    
     {
       "key": "晴天",
       "name": "🏆｜晴天｜藍光◎秒播(無廣告+APP)",
@@ -2291,22 +2264,7 @@
       "quickSearch": 0,
       "filterable": 1,
       "ext": "eaHR0cHM6Ly9kLmRjbW92aWUudG9w"
-    },
-    {
-      "key": "米兔",
-      "name": "📱｜米兔｜普清◎秒播(無廣告+APP)",
-      "type": 3,
-      "quickSearch": 1,
-      "api": "csp_AppGet",
-      "jar": "./jar/box-0603.jar",
-      "ext": {
-        "url": "http://v.tkbot.fun",
-        "dataKey": "d032c12876bc6848",
-        "dataIv": "d032c12876bc6848",
-        "deviceId": "",
-        "version": "200"
-      }
-    },    
+    },   
     {
       "key": "csp_Uvod",
       "name": "🥈｜優視｜低清◎秒播(無廣告)",
