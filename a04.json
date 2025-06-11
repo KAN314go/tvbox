@@ -648,7 +648,7 @@
     },
     {
       "key": "步步",
-      "name": "🥇｜步步｜高清◎秒播(無廣告)",
+      "name": "❌｜步步｜高清◎秒播(無廣告)",
       "type": 3,
       "api": "./drpy_libs/drpy2.min.js",
       "jar": "./jar/mi-0513.txt",
@@ -724,15 +724,6 @@
       }
     },
     {
-      "key": "新6V",
-      "name": "🥇｜６Ｖ｜藍光◎秒播(無廣告)",
-      "type": 3,
-      "api": "csp_WexXb6vGuard",
-      "jar": "./jar/wex.txt;md5;d51df16fd164ac4c50295520b455be7d",
-      "searchable": 0,
-      "changeable": 1
-    },
-    {
       "key": "csp_Wwys",
       "name": "🥇｜农民｜藍光◎慢播(無廣告)",
       "type": 3,
@@ -754,33 +745,6 @@
       "ext": "https://www.zxzjhd.com/"
     },
     {
-      "key": "WexquickvodGuard",
-      "name": "🥇｜美剧｜高清◎秒播(無廣告)",
-      "type": 3,
-      "api": "csp_WexquickvodGuard",
-      "jar": "./jar/wex.txt;md5;d51df16fd164ac4c50295520b455be7d",
-      "searchable": 0,
-      "changeable": 1
-    },
-    {
-      "key": "Wexbaozitv",
-      "name": "🥇｜包子｜高清◎秒播(無廣告)",
-      "type": 3,
-      "api": "csp_WexbaozitvGuard",
-      "jar": "./jar/wex.txt;md5;d51df16fd164ac4c50295520b455be7d",
-      "searchable": 0,
-      "changeable": 1
-    },
-    {
-      "key": "Wexzxzj",
-      "name": "🥇｜外剧｜高清◎秒播(無廣告)",
-      "type": 3,
-      "api": "csp_WexzxzjGuard",
-      "jar": "./jar/wex.txt;md5;d51df16fd164ac4c50295520b455be7d",
-      "searchable": 0,
-      "changeable": 1
-    },
-    {
       "key": "糯米弹幕",
       "name": "🥇｜糯米｜高清◎秒播(無廣告)",
       "type": 3,
@@ -790,24 +754,6 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": {"danmu": true}
-    },
-    {
-      "key": "Diduanys",
-      "name": "🥇｜深渊｜高清◎秒播(無廣告)",
-      "type": 3,
-      "api": "csp_WexDiduanysGuard",
-      "jar": "./jar/wex.txt;md5;d51df16fd164ac4c50295520b455be7d",
-      "searchable": 0,
-      "changeable": 1
-    },
-    {
-      "key": "WexBDys",
-      "name": "🥇｜滴滴｜高清◎秒播(無廣告)",
-      "type": 3,
-      "api": "csp_WexBDysGuard",
-      "jar": "./jar/wex.txt;md5;d51df16fd164ac4c50295520b455be7d",
-      "searchable": 0,
-      "changeable": 1
     },
     {
       "key": "py_绝对影视",
