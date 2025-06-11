@@ -6,81 +6,7 @@
 
 
 
-        {
-            "key": "剧咖",
-            "name": "📱｜剧咖｜APP",
-            "type": 3,
-            "quickSearch": 1,
-            "api": "csp_AppGet",
-            "jar": "./jar/xiaosa-0611.jar;md5;0f97d54d1dafebe68cfdd9c415c1aa3b",
-            "ext": {
-                "url": "https://ys.xiaoqi0.cn",
-                "dataKey": "jukayingshi88888",
-                "dataIv": "jukayingshi88888",
-                "deviceId": "20d9b2c01d130342a99fdc8d693bfc0cd",
-                "version": "112"
-            }
-        },
-        {
-            "key": "超前",
-            "name": "📱｜超前｜APP",
-            "type": 3,
-            "quickSearch": 1,
-            "api": "csp_AppGet",
-            "jar": "./jar/xiaosa-0611.jar;md5;0f97d54d1dafebe68cfdd9c415c1aa3b",
-            "ext": {
-                "url": "https://app.ystva.com",
-                "dataKey": "A1akVPQmnnE4Fz9Z",
-                "dataIv": "A1akVPQmnnE4Fz9Z",
-                "deviceId": "2112fc5eac600314ba95c4d65da9286b3",
-                "version": "134"
-            }
-        },
-        {
-            "key": "溜溜",
-            "name": "📱｜溜溜｜APP",
-            "type": 3,
-            "quickSearch": 1,
-            "api": "csp_AppGet",
-            "jar": "./jar/xiaosa-0611.jar;md5;0f97d54d1dafebe68cfdd9c415c1aa3b",
-            "ext": {
-                "url": "https://appcms.ll4k.xyz",
-                "dataKey": "NiDGaKiVnkO3QX1Q",
-                "dataIv": "NiDGaKiVnkO3QX1Q",
-                "deviceId": "2fbaf48ee97783260bc907e3ab0bd40c3",
-                "version": "200"
-            }
-        },
-        {
-            "key": "沐沐",
-            "name": "📱｜沐沐｜APP",
-            "type": 3,
-            "quickSearch": 1,
-            "api": "csp_AppGet",
-            "jar": "./jar/xiaosa-0611.jar;md5;0f97d54d1dafebe68cfdd9c415c1aa3b",
-            "ext": {
-                "url": "http://xk.ys088.cn",
-                "dataKey": "1846397456616237",
-                "dataIv": "1846397456616237",
-                "deviceId": "2112fc5eac600314ba95c4d65da9286b3",
-                "version": "119"
-            }
-        },
-        {
-            "key": "晓晓",
-            "name": "📱｜晓晓｜APP",
-            "type": 3,
-            "quickSearch": 1,
-            "api": "csp_AppGet",
-            "jar": "./jar/xiaosa-0611.jar;md5;0f97d54d1dafebe68cfdd9c415c1aa3b",
-            "ext": {
-                "url": "https://ys.ewo.asia",
-                "dataKey": "Z0qTnwyLAJCtuIkI",
-                "dataIv": "Z0qTnwyLAJCtuIkI",
-                "deviceId": "",
-                "version": ""
-            }
-        },
+
 
 
 
@@ -342,7 +268,21 @@
       "quickSearch": 1,
       "filterable": 1
     },
-
+    {
+      "key": "溜溜",
+      "name": "📱｜溜溜｜APP",
+      "type": 3,
+      "quickSearch": 1,
+      "api": "csp_AppGet",
+      "jar": "./jar/xiaosa-0611.jar;md5;0f97d54d1dafebe68cfdd9c415c1aa3b",
+      "ext": {
+             "url": "https://appcms.ll4k.xyz",
+             "dataKey": "NiDGaKiVnkO3QX1Q",
+             "dataIv": "NiDGaKiVnkO3QX1Q",
+             "deviceId": "2fbaf48ee97783260bc907e3ab0bd40c3",
+             "version": "200"
+             }
+    },
     {
       "key": "py_劇爸爸",
       "name": "❌｜劇爸｜藍光◎秒播(無廣告)",
@@ -1322,21 +1262,81 @@
              "deviceId": "",
              "version": ""
              }
-    },    
-    {
-      "key": "水滴",
-      "name": "📱｜水滴｜高清◎秒播(主線無廣告+APP)",
-      "type": 3,
-      "quickSearch": 1,
-      "api": "csp_AppGet2",
-      "jar": "./jar/xiaosa-0611.jar;md5;0f97d54d1dafebe68cfdd9c415c1aa3b",
-      "ext": {
-        "url": "http://1.94.105.93",
-        "dataKey": "gKdQKLbwhhLp4Ytv",
-        "dataIv": "gKdQKLbwhhLp4Ytv",
-        "deviceId": "",
-        "version": ""
-      }
+    },
+        {
+            "key": "剧咖",
+            "name": "📱｜剧咖｜APP",
+            "type": 3,
+            "quickSearch": 1,
+            "api": "csp_AppGet",
+            "jar": "./jar/xiaosa-0611.jar;md5;0f97d54d1dafebe68cfdd9c415c1aa3b",
+            "ext": {
+                "url": "https://ys.xiaoqi0.cn",
+                "dataKey": "jukayingshi88888",
+                "dataIv": "jukayingshi88888",
+                "deviceId": "20d9b2c01d130342a99fdc8d693bfc0cd",
+                "version": "112"
+            }
+        },
+        {
+            "key": "超前",
+            "name": "📱｜超前｜APP",
+            "type": 3,
+            "quickSearch": 1,
+            "api": "csp_AppGet",
+            "jar": "./jar/xiaosa-0611.jar;md5;0f97d54d1dafebe68cfdd9c415c1aa3b",
+            "ext": {
+                "url": "https://app.ystva.com",
+                "dataKey": "A1akVPQmnnE4Fz9Z",
+                "dataIv": "A1akVPQmnnE4Fz9Z",
+                "deviceId": "2112fc5eac600314ba95c4d65da9286b3",
+                "version": "134"
+            }
+        },
+        {
+            "key": "沐沐",
+            "name": "📱｜沐沐｜APP",
+            "type": 3,
+            "quickSearch": 1,
+            "api": "csp_AppGet",
+            "jar": "./jar/xiaosa-0611.jar;md5;0f97d54d1dafebe68cfdd9c415c1aa3b",
+            "ext": {
+                "url": "http://xk.ys088.cn",
+                "dataKey": "1846397456616237",
+                "dataIv": "1846397456616237",
+                "deviceId": "2112fc5eac600314ba95c4d65da9286b3",
+                "version": "119"
+            }
+        },
+        {
+            "key": "晓晓",
+            "name": "📱｜晓晓｜APP",
+            "type": 3,
+            "quickSearch": 1,
+            "api": "csp_AppGet",
+            "jar": "./jar/xiaosa-0611.jar;md5;0f97d54d1dafebe68cfdd9c415c1aa3b",
+            "ext": {
+                "url": "https://ys.ewo.asia",
+                "dataKey": "Z0qTnwyLAJCtuIkI",
+                "dataIv": "Z0qTnwyLAJCtuIkI",
+                "deviceId": "",
+                "version": ""
+            }
+        },    
+        {
+          "key": "水滴",
+          "name": "📱｜水滴｜高清◎秒播(主線無廣告+APP)",
+          "type": 3,
+          "quickSearch": 1,
+          "api": "csp_AppGet2",
+          "jar": "./jar/xiaosa-0611.jar;md5;0f97d54d1dafebe68cfdd9c415c1aa3b",
+          "ext": {
+                 "url": "http://1.94.105.93",
+                 "dataKey": "gKdQKLbwhhLp4Ytv",
+                 "dataIv": "gKdQKLbwhhLp4Ytv",
+                 "deviceId": "",
+                 "version": ""
+                 }
     },    
     {
       "key": "晴天",
