@@ -1837,6 +1837,17 @@
       }
     },   
     {
+      "key": "csp_七味影院",
+      "name": "🥈｜七味｜高清◎秒播(浮水印廣告)",
+      "type": 3,
+      "api": "csp_XBPQ",
+      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "./json/七味影院.json"
+    },    
+    {
       "key": "csp_純享",
       "name": "🥈｜純享｜高清◎秒播(線路1浮水印+線路2全版廣告)",
       "type": 3,
@@ -1873,6 +1884,16 @@
       "filterable": 1,
       "jar": "https://raw.githubusercontent.com/cpu170/bf/0b1b3e305fd4ac2e206d3589cd1ca3e70cf7b28e/n/g/jars/林中的小屋.jar",
       "categories": ["电影", "剧集", "综艺", "动漫", "短剧"]
+    },    
+    {
+      "key": "csp_PTT",
+      "name": "🥈｜PTT｜高清◎秒播(浮水印廣告+太多成人)",
+      "type": 3,
+      "api": "csp_PTT",
+      "jar": "./jar/lem0611.jar;md5;023ea5272f1838c42984cb033ae56c43",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
     },    
     {"key": "vod_虎牙","name":"🧲｜虎牙｜浮水印廣告+轉圈","type":1,"api":"https://www.huyaapi.com/api.php/provide/vod/from/hym3u8","searchable":1,"quickSearch":1,"filterable":1}
 

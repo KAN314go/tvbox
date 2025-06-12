@@ -138,17 +138,6 @@
       }
     },
     {
-      "key": "csp_七味影院",
-      "name": "🥈｜七味｜高清◎秒播(浮水印廣告)",
-      "type": 3,
-      "api": "csp_XBPQ",
-      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": "./json/七味影院.json"
-    },
-    {
       "key": "新可可影视③",
       "name": "🥈｜新可｜高清◎秒播(浮水印廣告)",
       "type": 3,
@@ -430,16 +419,6 @@
         "分类url": "http://yjsp.mxys8.com/index.php/vod/show/area/{area}/by/{by}/class/{class}/id/{cateId}/page/{catePg}/year/{year}.html",
         "分类": "电影$1#连续剧$2#动漫$4#综艺$3#纪录片$27"
       }
-    },
-    {
-      "key": "csp_PTT",
-      "name": "🥈｜PTT｜高清◎秒播(浮水印廣告+成人動畫)",
-      "type": 3,
-      "api": "csp_PTT",
-      "jar": "./jar/lem0611.jar;md5;023ea5272f1838c42984cb033ae56c43",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1
     },
     {
       "key": "csp_琥珀影院",
@@ -1420,17 +1399,6 @@
       "playerType": "1"
     },
     {
-      "key": "drpy_js_MP4US",
-      "name": "🧲｜MP4电影｜無廣",
-      "type": 3,
-      "api": "./drpy_libs/drpy2.min.js",
-      "ext": "./drpy_js/mp4us.js",
-      "playerType": "1",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1
-    },
-    {
       "key": "采集之王",
       "name": "🧲｜採集大合集",
       "type": 3,
@@ -1457,16 +1425,6 @@
       "api": "https://api.1080zyku.com/inc/api_mac10.php",
       "searchable": 1,
       "quickSearch": 1
-    },
-    {
-      "key": "csp_HkTv",
-      "name": "🧲｜TVB｜高清◎秒播(無廣告)",
-      "type": 3,
-      "api": "csp_HkTv",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "jar": "./jar/jar0423.jar;md5;f5f25556deaf4016a82345864b16cd81"
     },
     {
       "key": "vod_天涯",
@@ -1632,15 +1590,6 @@
       "name": "🧲｜如意｜高清◎秒播(賭城廣告+成人)",
       "type": 1,
       "api": "https://cj.rycjapi.com/api.php/provide/vod/at/json/",
-      "playerType": 1,
-      "searchable": 1,
-      "changeable": 1
-    },
-    {
-      "key": "九零采集资源",
-      "name": "🧲｜九零｜高清◎秒播(賭城廣告)",
-      "type": 1,
-      "api": "https://oknnews.com/api.php/provide/vod/",
       "playerType": 1,
       "searchable": 1,
       "changeable": 1
@@ -1837,14 +1786,6 @@
         "台湾剧" , "韩国剧" , "纪录片" , "动画片" , "日本剧" , "泰国剧" , "欧美剧" , "国产动漫", "日本动漫",
         "欧美"  , "海外动漫", "电影解说", "大陆综艺", "港台综艺", "日韩综艺", "欧美综艺"
       ]
-    },
-    {
-      "key": "4Kdy",
-      "name": "🧲｜4K-DY｜磁力網盤",
-      "type": 3,
-      "api": "csp_XBPQ",
-      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-      "ext": "./jar/moyu.php?file=4kdy"
     }
 
   ],

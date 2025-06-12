@@ -631,6 +631,27 @@
       "filterable": 1
     },
     {
+      "key": "drpy_js_MP4US",
+      "name": "🧲｜MP4电影｜無廣",
+      "type": 3,
+      "api": "./drpy_libs/drpy2.min.js",
+      "ext": "./drpy_js/mp4us.js",
+      "playerType": "1",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "csp_HkTv",
+      "name": "🧲｜TVB｜高清◎秒播(無廣告)",
+      "type": 3,
+      "api": "csp_HkTv",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "jar": "./jar/jar0423.jar;md5;f5f25556deaf4016a82345864b16cd81"
+    },        
+    {
       "key": "圣农极光",
       "name": "🥈｜聖農｜高清◎秒播(片頭廣告)",
       "type": 3,
