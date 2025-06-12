@@ -194,16 +194,6 @@
       }
     },        
     {
-      "key": "py_4KAV",
-      "name": "🏆｜4KAV｜藍光◎秒播(無廣告)",
-      "type": 3,
-      "api": "./py/4KAV.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "changeable": 1
-    },      
-    {
       "key": "csp_奇趣影视",
       "name": "🥇｜奇趣｜高清◎秒播(無廣告)",
       "type": 3,
@@ -222,40 +212,7 @@
         "地区": "中国&大陆&内地&香港&台湾&日本&韩国&泰国&新加坡&马来西亚&越南&印度&美国&英国&德国&法国&意大利"
       }
     },    
-    {
-      "key": "韩圈",
-      "name": "🥇｜韩圈｜高清◎秒播(無廣告+APP)",
-      "type": 3,
-      "api": "csp_HanXiaoQuanGuard",
-      "jar": "./jar/ok.png;md5;db2132e631faa708621652a32f2894b9",
-      "playerType": 2,
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "timeout": 10
-    },    
-    {
-      "key": "素白白",
-      "name": "🥇｜白白｜高清◎秒播(無廣告)",
-      "type": 3,
-      "api": "csp_SubaibaiGuard",
-      "jar": "./jar/ok.png;md5;db2132e631faa708621652a32f2894b9",      
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "timeout": 10
-    },    
-    {
-      "key": "晴天",
-      "name": "🏆｜晴天｜藍光◎秒播(無廣告+OK源)",
-      "type": 3,
-      "api": "csp_Sun4kGuard",
-      "jar": "./jar/ok.png;md5;db2132e631faa708621652a32f2894b9",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "timeout": 10
-    },    
+
     {
       "key": "糯米",
       "name": "🥈｜糯米｜高清◎秒播(滿版廣告+OK源)",
@@ -321,62 +278,11 @@
       "filterable": 1,
       "ext": "./json/辰辰影院.json"
     },            
-    {
-      "key": "小红",
-      "name": "🏆｜鮮红｜藍光◎秒播(無廣告+OK源)",
-      "type": 3,
-      "api": "csp_XiaoHongGuard",
-      "jar": "./jar/ok.png;md5;db2132e631faa708621652a32f2894b9",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "timeout": 10
-    },        
-    {
-      "key": "️爱看Bot",
-      "name": "🥈｜爱看｜高清◎秒播(全線路採集+隨機廣告)",
-      "type": 3,
-      "api": "csp_IkanbotGuard",
-      "jar": "./jar/ok.png",      
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "timeout": 10
-    },    
-    {
-      "key": "瓜子",
-      "name": "📱｜棗子｜高清◎秒播(無廣告+APP)",
-      "type": 3,
-      "api": "csp_GuaziGuard",
-      "jar": "./jar/ok.png;md5;db2132e631faa708621652a32f2894b9",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "timeout": 10
-    },          
-    {
-      "key": "时常",
-      "name": "📱｜時常｜高清◎秒播(無廣告+APP)",
-      "type": 3,
-      "api": "csp_ShiChangGuard",
-      "jar": "./jar/ok.png;md5;db2132e631faa708621652a32f2894b9",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "timeout": 10
-    },      
-    {
-      "key": "浪酷版",
-      "name": "📱｜歐酷｜高清◎秒播(無廣告)",
-      "type": 3,
-      "api": "csp_TianTianGuard",
-      "jar": "./jar/ok.png;md5;db2132e631faa708621652a32f2894b9",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": {"site": 2},
-      "timeout": 10
-    },      
+  
+
+      
+     
+      
     {
       "key": "主角",
       "name": "主角｜APP",
@@ -450,17 +356,6 @@
       }
     },
     {
-      "key": "仓鼠",
-      "name": "OK｜仓鼠｜藍光◎秒播(無廣告+OK源)",
-      "type": 3,
-      "api": "csp_CangShuGuard",
-      "jar": "./jar/ok.png;md5;db2132e631faa708621652a32f2894b9",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "timeout": 10
-    },
-    {
       "key": "csp_GM_Hi视频",
       "name": "🥇｜嗨雷｜高清◎秒播(無廣告)",
       "type": 3,
@@ -509,7 +404,6 @@
       "jar": "./jar/mi-0513.txt;md5;bcb27d2740df8d21bfc49c507432663a",
       "ext": "sHR2rlsfjI4L3t4RXQMknxZ67tu9z+phb0aSTvZQgyA6q0xr5CADU+Ci4NlKxGdylKHER46Cs4iIIIx6DdbWw0Sng/Z0F+jfaucg9epO4FUb/E7RG8NezsS+R4Dvsb4o50UjQG9bvlSBY9p/s5XD9KtJNMrH5tj1EbC6eEwZ4KOT7oCjM7uBxZRVhTmijQCvcoza/h46Fz6BrnGO68PxIg=="
     },
-
     {
       "key": "悠悠",
       "name": "📱｜悠悠｜高清◎秒播(無廣告+APP源+常常死)",

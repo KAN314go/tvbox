@@ -209,6 +209,16 @@
       "header":{"User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"}
     },
     {
+      "key": "py_4KAV",
+      "name": "🏆｜4KAV｜藍光◎秒播(無廣告)",
+      "type": 3,
+      "api": "./py/4KAV.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "changeable": 1
+    },         
+    {
       "key": "咖啡",
       "name": "🏆｜咖啡｜藍光◎秒播(無廣告+APP)",
       "type": 3,
@@ -1220,6 +1230,51 @@
       }
     },   
     {
+      "key": "韩圈",
+      "name": "🥇｜韩圈｜高清◎秒播(無廣告+APP)",
+      "type": 3,
+      "api": "csp_HanXiaoQuanGuard",
+      "jar": "./jar/ok.png;md5;db2132e631faa708621652a32f2894b9",
+      "playerType": 2,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 10
+    },    
+    {
+      "key": "素白白",
+      "name": "🥇｜白白｜高清◎秒播(無廣告)",
+      "type": 3,
+      "api": "csp_SubaibaiGuard",
+      "jar": "./jar/ok.png;md5;db2132e631faa708621652a32f2894b9",      
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 10
+    },    
+    {
+      "key": "晴天",
+      "name": "🏆｜晴天｜藍光◎秒播(無廣告+OK源)",
+      "type": 3,
+      "api": "csp_Sun4kGuard",
+      "jar": "./jar/ok.png;md5;db2132e631faa708621652a32f2894b9",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 10
+    },  
+    {
+      "key": "小红",
+      "name": "🏆｜鮮红｜藍光◎秒播(無廣告+OK源)",
+      "type": 3,
+      "api": "csp_XiaoHongGuard",
+      "jar": "./jar/ok.png;md5;db2132e631faa708621652a32f2894b9",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 10
+    },                
+    {
       "key": "py_魔方影视APP",
       "name": "📱｜魔方｜藍光◎秒播(無廣告+部分線路有廣告)",
       "type": 3,
@@ -1814,6 +1869,40 @@
       "filterable": 1
     },
     {
+      "key": "瓜子",
+      "name": "📱｜棗子｜高清◎秒播(無廣告+APP)",
+      "type": 3,
+      "api": "csp_GuaziGuard",
+      "jar": "./jar/ok.png;md5;db2132e631faa708621652a32f2894b9",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 10
+    },    
+    {
+      "key": "时常",
+      "name": "📱｜時常｜高清◎秒播(無廣告+APP)",
+      "type": 3,
+      "api": "csp_ShiChangGuard",
+      "jar": "./jar/ok.png;md5;db2132e631faa708621652a32f2894b9",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 10
+    }, 
+    {
+      "key": "浪酷版",
+      "name": "📱｜歐酷｜高清◎秒播(無廣告)",
+      "type": 3,
+      "api": "csp_TianTianGuard",
+      "jar": "./jar/ok.png;md5;db2132e631faa708621652a32f2894b9",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": {"site": 2},
+      "timeout": 10
+    },            
+    {
       "key": "人人2",
       "name": "📱｜人人｜高清◎秒播(無廣告+APP)",
       "type": 3,
@@ -1890,6 +1979,17 @@
         "version": "110"
       }
     },
+    {
+      "key": "️爱看Bot",
+      "name": "🥈｜爱看｜高清◎秒播(全線路採集+隨機廣告)",
+      "type": 3,
+      "api": "csp_IkanbotGuard",
+      "jar": "./jar/ok.png",      
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 10
+    },        
     {
       "key": "csp_Uvod",
       "name": "🥈｜優視｜低清◎秒播(無廣告)",
