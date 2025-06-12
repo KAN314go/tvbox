@@ -62,7 +62,7 @@ HAPPY,p3p://167.114.175.6:55331/616b79be000a35b17ab2f7b84c325eeb
 
 LOOK,p3p://167.114.175.6:55331/606271190002a1266f75aaee0463186a
 
-极限,https://ali.hlspull.yximgs.com:443/live/2d7b99b886a1d12286c641d11cb0b283.flv
+極限,https://ali.hlspull.yximgs.com:443/live/2d7b99b886a1d12286c641d11cb0b283.flv
 極限,p3p://167.114.175.6:55331/6109e9bb0005fd87fd9ce5ea2c1f18d3
 極限,http://ali.hlspull.yximgs.com:80/live/2d7b99b886a1d12286c641d11cb0b283.flv
 極限,http://ali.hlspull.yximgs.com:80/live/de74f001fa638349eafe6bf6ff18acaa.flv
