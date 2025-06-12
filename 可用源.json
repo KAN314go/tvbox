@@ -1818,7 +1818,18 @@
         "filterable": 1,
         "ext": "./json/全民影院.json"
     },
-
+    {
+      "key": "csp_moxmi",
+      "name": "🧲｜樂美｜高清◎秒播(無廣告)",
+      "type": 1,
+      "api": "http://mi.moxmi.top:81/api.php/provide/vod/?ac=list",
+      "playUrl": "json:http://iid.moxmi.top:81/gg.php?url=",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "jar": "https://raw.githubusercontent.com/cpu170/bf/0b1b3e305fd4ac2e206d3589cd1ca3e70cf7b28e/n/g/jars/林中的小屋.jar",
+      "categories": ["电影", "剧集", "综艺", "动漫", "短剧"]
+    },    
     {"key": "vod_虎牙","name":"🧲｜虎牙｜浮水印廣告+轉圈","type":1,"api":"https://www.huyaapi.com/api.php/provide/vod/from/hym3u8","searchable":1,"quickSearch":1,"filterable":1}
 
     ],

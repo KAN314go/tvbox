@@ -9,29 +9,8 @@
 
 
 
-    {
-      "key": "圣农极光",
-      "name": "🥈｜聖農｜高清◎秒播(片頭廣告)",
-      "type": 3,
-      "api": "csp_Wwys",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "jar": "./jar/feimao-0611.jar;md5;d4723dd9544a35b67c09ae2c096cb24e",
-      "ext": "https://www.wwgz.cn"
-    },
-    {
-      "key": "剧评",
-      "name": "🥈｜剧评｜普清◎秒播(無廣告)",
-      "type": 3,
-      "api": "csp_Jpys",
-      "jar": "./jar/pizza.jar;md5;6bcb3de5f0d7c9b3d4f19cfe9a314ab2",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "playerType": 1,
-      "ext": "caHR0cHM6Ly93d3cuY2Zrajg2LmNvbQ=="
-    },
+
+
     {
       "key": "奇库",
       "name": "🥈｜奇库｜高清◎秒播(浮水印廣告+PY)",
@@ -1463,18 +1442,7 @@
       "searchable": 1,
       "changeable": 1
     },
-    {
-      "key": "csp_moxmi",
-      "name": "🧲｜樂美｜高清◎秒播(無廣告)",
-      "type": 1,
-      "api": "http://mi.moxmi.top:81/api.php/provide/vod/?ac=list",
-      "playUrl": "json:http://iid.moxmi.top:81/gg.php?url=",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "jar": "https://raw.githubusercontent.com/cpu170/bf/0b1b3e305fd4ac2e206d3589cd1ca3e70cf7b28e/n/g/jars/林中的小屋.jar",
-      "categories": ["电影", "剧集", "综艺", "动漫", "短剧"]
-    },    
+
     {
       "key": "天涯资源",
       "name": "🧲｜天涯｜無廣",
@@ -1654,15 +1622,6 @@
       "type": 4,
       "api": "http://zhangqun66.com/sn.php",
       "jar": "./jar/fm.jar;md5;41c87635d7592069884a5dafa12acabe",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1
-    },
-    {
-      "key": "vod_OK",
-      "name": "🧲｜ＯＫ｜高清◎秒播(跑馬燈廣告)",
-      "type": 1,
-      "api": "https://api.okzy.org/api.php/provide/vod/",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1
