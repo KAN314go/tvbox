@@ -3,7 +3,12 @@
   "logo": "https://p3-pc.douyinpic.com/img/aweme-avatar/tos-cn-i-0813_6e2553f5708c414386eeca88b5f2674a~c5_300x300.jpeg?from=2956013662",
   "wallpaper": "https://tv.nxog.top/m/t/",
   "lives": [
-
+    {
+      "name"  : "榴芒"                     ,
+      "url": "./live/free.txt",
+      "epg": "http://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Taipei",
+      "logo": "https://epg.112114.xyz/logo/{name}.png"
+    },
     {
       "name"  : "晴天"                     ,
       "url": "http://ys.my.to//i/?T=晴天",
