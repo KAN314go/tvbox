@@ -6,6 +6,14 @@
     "wallpaper": "https://picsum.photos/1080/",
     "sites": [ 
     {
+      "key": "csp_Lgyy",
+      "name": "🥈｜流光｜高清◎秒播(全版廣告)",
+      "jar": "./jar/xmky.jar;md5;bcb27d2740df8d21bfc49c507432663a",
+      "type": 3,
+      "quickSearch": 1,
+      "api": "csp_FreeOk"
+    },
+    {
       "key": "糯米弹幕",
       "name": "🥇｜糯米｜高清◎秒播(無廣告)",
       "type": 3,
