@@ -854,26 +854,6 @@
       "ext": "./json/vidhub.json"
     },
     {
-      "key": "csp_2077",
-      "name": "🥈｜2077｜普清◎秒播(浮水印廣告)",
-      "type": 3,
-      "api": "csp_XBPQ",
-      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": {
-        "副标题": "module-item-note\">&&</div>",
-        "简介": "module-info-introduction-content\">&& ",
-        "线路数组": "class=\"swiper-slide module-tab-item tab-item\"&&</small>",
-        "线路标题": ">&&<small",
-        "跳转播放链接": "var player_*\"url\":\"&&\"",
-        "分类url": "https://www.m2077.com/vod-show/{cateId}-{area}-{by}------{catePg}---{year}/",
-        "分类": "电影$1#剧集$2#综艺$3#动漫$4#纪录片$5#短剧爽剧$41",
-        "地区": "中国大陆&香港&台湾&日本&韩国&美国&法国&英国&德国&泰国&印度&意大利&西班牙&加拿大&其它"
-      }
-    },
-    {
       "key": "csp_茶杯狐",
       "name": "🥈｜茶杯狐｜高清◎秒播(全版廣告+PY)",
       "type": 3,
@@ -1367,17 +1347,6 @@
       "playerType": 2,
       "searchable": 1,
       "changeable": 1
-    },
-
-    {
-      "key": "天涯资源",
-      "name": "🧲｜天涯｜無廣",
-      "type": 1,
-      "api": "https://api.tufun.top/api.php/provide/vod/?ac=list",
-      "playUrl":"json:http://apijx.tufun.top/api/?key=aHj2CX8jmkJ68NXQyY&url=",
-      "searchable": 1,
-      "changeable": 1,
-      "categories": ["国产剧", "欧美剧", "国产动漫" ]
     },
     {
       "key": "drpy_js_xb6v",
