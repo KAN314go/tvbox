@@ -5,13 +5,6 @@
   "lives": [
 
     {
-      "name"  : "xxoo"                     ,
-      "url": "./live/xxoo.m3u",
-      "epg": "http://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Taipei",
-      "logo": "https://epg.112114.xyz/logo/{name}.png"
-    },
-
-    {
       "name"  : "榴芒"                     ,
       "url": "./live/free.txt",
       "epg": "http://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Taipei",
