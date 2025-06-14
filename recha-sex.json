@@ -13,16 +13,7 @@
   "sites": [
 
 
-    {
-      "key": "py_MissAv",
-      "name": "⏭｜MissAv｜PYTHON",
-      "type": 3,
-      "api": "./py/py_missav.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "changeable": 1
-    },
+
 
 
 
@@ -145,6 +136,16 @@
       "playerType": 2,
       "filterable": 1
     },
+    {
+      "key": "py_MissAv",
+      "name": "⏭｜MissAv(沐辰)｜PYTHON",
+      "type": 3,
+      "api": "./py/py_missav.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1
+    },    
     {
       "key": "py_51吸瓜.py",
       "name": "⏭｜51吸瓜｜PYTHON",
