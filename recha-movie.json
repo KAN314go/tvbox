@@ -3,15 +3,7 @@
   "logo": "https://p3-pc.douyinpic.com/img/aweme-avatar/tos-cn-i-0813_6e2553f5708c414386eeca88b5f2674a~c5_300x300.jpeg?from=2956013662",
   "wallpaper": "https://tv.nxog.top/m/t/",
   "sites": [
-    {
-      "key": "dr_AppGet_小红",
-      "name": "🏆｜小紅｜試修(道長源)",
-      "type": 3,"api": "./drpy_libs/drpy2.min.js",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": "./drpy_js/AppGet模板.js?type=url&params=https://www.xiaohys.com$ENonBHeVBoYZhVUV$ENonBHeVBoYZhVUV"
-    },
+
 
     {
       "key": "豆瓣",
@@ -438,6 +430,15 @@
       "filterable": 1,
       "ext": "http://cmszcsj.lfytv.cn/api.php/app/"
     },
+    {
+      "key": "dr_AppGet_小红",
+      "name": "🏆｜小紅｜(道長源)",
+      "type": 3,"api": "./drpy_libs/drpy2.min.js",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "./drpy_js/AppGet模板.js?type=url&params=https://www.xiaohys.com$ENonBHeVBoYZhVUV$ENonBHeVBoYZhVUV"
+    },    
     {
       "key": "三六零",
       "name": "🎖︎｜360｜官源",
