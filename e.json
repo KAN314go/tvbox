@@ -15,7 +15,8 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": {
-        "分类url": "https://www.ttdm.me/vod-show/{cateId}--{by}-{class}-----{catePg}---/[https://www.ttdm.me/vod-type/2/]",            
+        "数组": "class=\"lazyload\"&&</a>",
+        "分类url": "https://www.ttdm.me/vod-show/{cateId}--{by}-{class}-----{catePg}---/",            
         "分类": " 中国动漫$1#日本动漫$2#欧美动漫$3#其他动漫$4#动画电影$5",
         "剧情": "玄幻&科幻&武侠&冒险&战斗&搞笑&恋爱&魔幻&竞技&热血&治愈&励志&机战&奇幻&悬疑&日常&校园&真人&推理&历史&经典&美食&偶像"
             }
