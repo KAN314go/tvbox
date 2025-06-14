@@ -5,8 +5,8 @@
   "lives": [
 
     {
-      "name"  : "ooxx(P2P)"                     ,
-      "url": "./live/ooxx.m3u",
+      "name"  : "xxoo(P2P)"                     ,
+      "url": "./live/xxoo.m3u",
       "epg": "http://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Taipei",
       "logo": "https://epg.112114.xyz/logo/{name}.png"
     },
