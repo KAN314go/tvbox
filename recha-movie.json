@@ -4,6 +4,16 @@
   "wallpaper": "https://tv.nxog.top/m/t/",
   "sites": [
     {
+      "key": "dr_AppGet_小红",
+      "name": "🏆｜小紅｜試修(道長源)",
+      "type": 3,"api": "./drpy_libs/drpy2.min.js",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "./drpy_js/AppGet模板.js?type=url&params=https://www.xiaohys.com$ENonBHeVBoYZhVUV$ENonBHeVBoYZhVUV"
+    },
+
+    {
       "key": "豆瓣",
       "name": "🇹🇼｜熱播排行榜｜自動切換",
       "type": 3,
@@ -73,7 +83,7 @@
     },
     {
       "key": "py_xiaohys",
-      "name": "🇹🇼｜小紅｜藍光◎秒播(只能用於搜索，無廣告)",
+      "name": "🇹🇼｜小紅｜搜索專用(只能用於搜索，4K畫質)",
       "type": 3,
       "api": "./py/小红影视.py",
       "searchable": 1,
