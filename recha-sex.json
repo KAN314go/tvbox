@@ -11,6 +11,25 @@
   "logo": ".美.gif",
   "wallpaper": "https://picsum.photos/1080/",
   "sites": [
+
+
+    {
+      "key": "py_MissAv",
+      "name": "⏭｜MissAv｜PYTHON",
+      "type": 3,
+      "api": "./py/py_missav.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1
+    },
+
+
+
+
+
+
+
     {
       "key": "麻豆",
       "name": "🇹🇼【老王成人專區】🇹🇼",
