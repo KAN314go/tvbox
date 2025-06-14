@@ -73,6 +73,15 @@
       }
     },
     {
+      "key": "csp_SaoHuo",
+      "name": "❌｜火火｜藍光◎秒播(無廣告)",
+      "type": 3,
+      "api": "csp_SaoHuo",
+      "playerType": 2,
+      "jar": "./jar/feimao-0611.jar;md5;d4723dd9544a35b67c09ae2c096cb24e",
+      "ext": "https://shdy5.us"
+    },    
+    {
       "key": "美帕影视",
       "name": "📱｜美帕｜高清◎順播(無廣告+APP)",
       "type": 3,
