@@ -15,6 +15,20 @@
         "filterable": 1,
         "jar":"./jar/PandaQ250227c.jar;md5;ceda5421cdce5fad2a2f6d8c71ae4311"
       },
+    {
+      "key": "csp_短劇網",
+      "name": "📺｜短劇網",
+      "type": 3,
+      "api": "csp_XBPQ",
+      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": {
+        "分类url": "https://www.duanju2.com/show/duanju--{by}-{cateId}-----{catePg}---{year}.html",            
+        "分类": "女频恋爱&脑洞悬疑&年代穿越&古装仙侠&现代都市&反转&爽文&短剧"
+      }
+    },      
       {
       "key": "py_红果网页",
       "name": "📺｜红果短劇",
