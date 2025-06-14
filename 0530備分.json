@@ -602,6 +602,28 @@
       }
     },
     {
+      "key": "csp_天天動漫",
+      "name": "？｜天天動漫",
+      "type": 3,
+      "api": "csp_XBPQ",
+      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": {
+        			"请求头": "User-Agent$MOBILE_UA",
+    			    "编码": "UTF-8",
+			        "线路二次截取": "class=\"module-tab-items-box&&lass=\"swiper[替换:</div>>></a>]",
+      			  "线路数组": "class=\"module-tab-item tab-item&&</a>",
+			        "线路标题": "<span>&&</span>",
+			        "跳转播放链接": "var player_*\"url\":\"&&\"",
+              "主页url": "https://www.ttdm.me/vod-type/1/",
+              "分类url": "https://www.ttdm.me/vod-show/{cateId}--{by}-{class}-----{catePg}---/",            
+              "分类": " 中国动漫$1#日本动漫$2#欧美动漫$3#其他动漫$4#动画电影$5",
+              "剧情": "玄幻&科幻&武侠&冒险&战斗&搞笑&恋爱&魔幻&竞技&热血&治愈&励志&机战&奇幻&悬疑&日常&校园&真人&推理&历史&经典&美食&偶像"
+            }
+    },    
+    {
       "key": "58动漫网",
       "name": "动漫｜58动漫网",
       "type": 3,
