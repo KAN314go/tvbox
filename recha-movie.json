@@ -1,5 +1,5 @@
 {
-  "spider": "./jar/fm.jar",
+  "spider": "./jar/pg.jar;md5;7840d0b61f9641a47728e3a92020f35a",
   "logo": "https://p3-pc.douyinpic.com/img/aweme-avatar/tos-cn-i-0813_6e2553f5708c414386eeca88b5f2674a~c5_300x300.jpeg?from=2956013662",
   "wallpaper": "https://tv.nxog.top/m/t/",
   "sites": [
@@ -82,6 +82,15 @@
       "style": {"type": "rect","ratio": 1.3},
       "ext":"7lj763gg402i79425739i7jghj118797l4hj840gi18633331l4708g2h7145403549g44l8ii56i187681hkjj3hhgh1ih3l32j250lk1k786lj20j468hk3hli4l46gig4i3g7g2722328j0136h01i7g5183k22k7gg3i72hk81gl8k9839kl7i0707"
     },
+    {
+      "key": "py_xiaohys",
+      "name": "🇹🇼｜小紅｜藍光◎秒播(只能用於搜索，無廣告)",
+      "type": 3,
+      "api": "./py/小红影视.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },    
     {
       "key": "py_又是一個金牌",
       "name": "🏆｜王牌｜藍光◎秒播(無廣告)",
@@ -251,7 +260,7 @@
     },
     {
       "key": "py_仓鼠",
-      "name": "❌｜倉鼠｜藍光◎秒播(無廣告+APP)",
+      "name": "🏆｜倉鼠｜藍光◎秒播(無廣告+APP)",
       "type": 3,
       "api": "csp_AppGet2",    
       "jar": "./jar/mi-0607.jar;md5;29ee410002b5d90fb5008059ef6bfe2e",
@@ -270,17 +279,8 @@
       "changeable": 1
     },
     {
-      "key": "py_xiaohys",
-      "name": "🏆｜小紅｜藍光◎秒播(無廣告+篩選壞掉)",
-      "type": 3,
-      "api": "./py/小红影视.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1
-    },
-    {
       "key": "溜溜",
-      "name": "📱｜溜溜｜APP",
+      "name": "🏆｜溜溜｜藍光◎秒播(無廣告+APP",
       "type": 3,
       "quickSearch": 1,
       "api": "csp_AppGet",
