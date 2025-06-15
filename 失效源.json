@@ -5,6 +5,55 @@
     "logo": "https://p3-pc.douyinpic.com/img/aweme-avatar/tos-cn-i-0813_6e2553f5708c414386eeca88b5f2674a~c5_300x300.jpeg?from=2956013662",
     "wallpaper": "https://picsum.photos/1080/",
     "sites": [ 
+  {
+    "key": "csp_GM_注视影视",
+    "name": "🎥｜注視｜高清◎卡頓(無廣告)",
+    "type": 3,
+    "searchable": 1,
+    "changeable": 1,
+    "quickSearch": 0,
+    "style": {
+      "type": "rect",
+      "ratio": 0.66
+    },
+    "api": "csp_GM",
+    "jar": "./jar/gm.jar",
+    "ext": {
+      "userScript": "./js/gaze.user.js",
+      "debug": false,
+      "webViewSettings": {
+        "blockNetworkImage": true,
+        "blockList": [
+          "https://*.bytecdntp.com/cdn/expire-1-M/font-awesome/*",
+          "https://*.clarity.ms/*",
+          "https://gaze.run/visitorslog.php*",
+          "*.css*"
+        ]
+      },
+      "playUrlMatch": [
+        "https://dl-b.cloud.189.cn/corp/downloadFile.action?*",
+        "https://gaze.run/gaze_filey/pb/*.m3u8",
+        "https://*/obj/tos*"
+      ],
+      "spider": {
+        "homeContent": {
+          "loadUrl": "https://gaze.run/filter"
+        },
+        "categoryContent": {
+          "loadUrl": "https://gaze.run/filter"
+        },
+        "detailContent": {
+          "loadUrl": "https://gaze.run/play/${id}"
+        },
+        "playerContent": {
+          "loadUrl": "https://gaze.run/play/${mcid}#${path}"
+        },
+        "searchContent": {
+          "loadUrl": "https://gaze.run/filter"
+        }
+      }
+    }
+  },
     {
       "key": "csp_Lgyy",
       "name": "🥈｜流光｜高清◎秒播(全版廣告)",
@@ -72,6 +121,16 @@
         "分类值": "dianying&dianshiju&zongyi&dongmna&jilupian"
       }
     },
+  {
+    "key": "py_mp",
+    "name": "🎥｜美柏｜高清◎秒播(滿版廣告)",
+    "type": 3,
+    "api": "./py/pymp.py",
+    "searchable": 1,
+    "quickSearch": 0,
+    "filterable": 0,
+    "changeable": 0
+  },    
     {
       "key": "csp_SaoHuo",
       "name": "❌｜火火｜藍光◎秒播(無廣告)",
