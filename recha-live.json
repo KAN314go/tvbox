@@ -51,7 +51,6 @@
     },     
     {
       "name": "立方直播",
-      "playerType": 2,
       "url": "http://breezy-audrie-zspace-7524863c.koyeb.app/sub?type=m3u&token=leifeng",
       "timeout": 5,
       "pass": true
@@ -69,20 +68,6 @@
       "name"  : "60酒店源"                     ,
       "api"   : "csp_MQiTV"                  ,
       "ext"   : "https://60.248.127.232:4433",
-      "epg": "http://iptv.52sw.top:668/?ch={name}&date={date}",
-      "logo": "https://epg.112114.xyz/logo/{name}.png"
-    },
-        {
-      "jar"   : "./jar/mqitv.jar"            ,
-      "name"  : "101酒店源"                     ,
-      "api"   : "csp_MQiTV"                  ,
-      "ext"   : "http://60.249.93.7:1888",
-      "epg": "http://iptv.52sw.top:668/?ch={name}&date={date}",
-      "logo": "https://epg.112114.xyz/logo/{name}.png"
-    },
-    {
-      "name"  : "103酒店源"                     ,
-      "url": "./live/103.txt",
       "epg": "http://iptv.52sw.top:668/?ch={name}&date={date}",
       "logo": "https://epg.112114.xyz/logo/{name}.png"
     },
@@ -107,20 +92,11 @@
     },
     {
       "name": "曉峰直播",
-      "playerType": 2,
       "url": "./live/fong.txt",
       "ua": "okhttp/3.15",
       "timeout": 5,
       "epg": "https://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/taipei",
       "logo": "https://epg.112114.xyz/logo/{name}.png",
-      "pass": true
-    },
-    {
-      "name": "LiTV",
-      "type": 0,
-      "url": "http://xg.52sw.top/iptv/litv.php",
-      "ua": "okhttp/3.15",
-      "epg": "http://iptv.52sw.top:668/?ch={name}&date={date}",
       "pass": true
     },
     {
@@ -133,8 +109,7 @@
       "pass": true
     },
     {
-      "name": "歐華167(P3P)",
-      "playerType": 2,
+      "name": "歐華167",
       "url": "./live/167.txt",
       "ua": "okhttp/3.15",
       "timeout": 5,
@@ -149,18 +124,15 @@
     },
     {
       "name": "4GTV(Migu)",
-      "playerType": 2,
       "url": "./live/migu.m3u",
       "ua": "xieanqishiwoerzi/0.0.1"
     },    
     {
       "name": "4GTV(謝安琪)",
-      "playerType": 2,
       "url": "./live/4gtv-anche.txt"
     },    
     {
       "name": "4GTV(ROB)",
-      "playerType": 2,
       "url": "./live/4gtv.txt",
       "epg": "http://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Taipei",
       "logo": "https://epg.112114.xyz/logo/{name}.png",
@@ -169,7 +141,6 @@
     {
       "name": "Free TV",
       "url": "https://freeman.neocities.org/520free@tv.txt",
-      "playerType": 2,
       "ua": "okhttp/3.15",
       "epg": "http://epg.112114.xyz/?ch={name}&date={date}",
       "logo": "https://epg.112114.xyz/logo/{name}.png",
@@ -185,7 +156,6 @@
     },
     {
       "name": "live 4 play",
-      "playerType": 2,
       "url": "./live/175.txt",
       "ua": "okhttp/3.15",
       "timeout": 5,
@@ -195,9 +165,7 @@
     },
     {
       "name": "香蕉-Gather",
-      "playerType": 2,
       "url": "https://tv.iill.top/m3u/Gather",
-      "playerplayerType": 1,
       "ua": "okhttp/3.15",
       "epg": "http://epg.112114.xyz/?ch={name}&date={date}",
       "logo": "https://epg.112114.xyz/logo/{name}.png",
@@ -205,14 +173,12 @@
     },
     {
       "name": "香蕉-MYTV",
-      "playerType": 2,
       "url": "https://tv.iill.top/m3u/MyTV",
       "epg": "http://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Taipei",
       "pass": true
     },
     {
       "name": "香蕉-LIVE",
-      "playerType": 2,
       "url": "https://tv.iill.top/m3u/Live",
       "epg": "http://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Taipei",
       "pass": true
@@ -249,8 +215,6 @@
     },
     {
       "name": "安博台",
-      "type": 0,
-      "playerType": 2,
       "ua": "AptvPlayer/1.3.3",
       "url": "http://a90120.serv00.net/anbox/p3plink.txt",
       "timeout": 5,
@@ -261,7 +225,6 @@
     },
     {
       "name": "瑪斯特",
-      "playerType": 2,
       "url": "./live/must.txt",
       "ua": "okhttp/3.15",
       "timeout": 5,
@@ -272,7 +235,6 @@
     {
       "name": "RobYang| http://RobYang.ggff.net",
       "type": 0,
-      "playerType": 2,
       "url": "http://www1.RobYang.ggff.net/VodLive/lb8ffa",
       "ua": "okhttp/4.12.0",
       "timeout": 5,
@@ -283,7 +245,6 @@
     {
       "name": "RobYang備1| http://RobYang.dpdns.org",
       "type": 0,
-      "playerType": 2,
       "url": "http://www1.RobYang.dpdns.org/VodLive/lb8ffa",
       "ua": "okhttp/4.12.0",
       "timeout": 5,
@@ -294,7 +255,6 @@
     {
       "name": "RobYang備2| http://RobYang.rr.nu",
       "type": 0,
-      "playerType": 2,
       "url": "http://RobYang.runasp.net/VodLive/lb8ffa",
       "ua": "okhttp/4.12.0",
       "timeout": 5,
@@ -306,7 +266,6 @@
       "name": "雷蒙直播",
       "type": 0,
       "url": "https://raw.githubusercontent.com/n3rddd/CTVLive/main/live.txt",
-      "playerType": 2,
       "ua": "okhttp/3.15",
       "epg": "http://epg.112114.xyz/?ch={name}&date={date}",
       "logo": "https://epg.112114.xyz/logo/{name}.png",
@@ -315,7 +274,6 @@
     {
       "name": "日本直播台",
       "type": 0,
-      "playerType": 2,
       "ua": "AptvPlayer/1.3.3",
       "url": "https://raw.githubusercontent.com/luongz/iptv-jp/refs/heads/main/jp.m3u",
       "timeout": 5,
@@ -369,69 +327,19 @@
       "ua": "okhttp/4.12",
       "epg": "http://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Taipei"
     },
-        {
-      "name": "小雲1台",
-      "url": "./live/ueen.m3u",
-      "spider": "https://tang.hz.cz/api/custom_spider.jar;md5;b5079660bb98ded216e787a0458981b4",
-      "jar": "https://tang.hz.cz/api/custom_spider.jar;md5;b5079660bb98ded216e787a0458981b4",
-      "playerType": 2,
-      "core": {
-        "auth": "local://tvbus",
-        "name": "123",
-        "pass": "345",
-        "resp": "{\"result_code\":\"0\",\"result\":\"ok\",\"keys\":{\"user_id\":\"0027000005f5c398\",\"peer_id\":\"0ec044591d9e1418\",\"session_key\":\"0a49662f37674af5\"}}",
-        "so": "./live/gold/tvbus.so",
-        "pkg": "com.svc.vlive.home.ytv9x",
-        "sign": "308203533082023ba00302010202042108f284300d06092a864886f70d01010b05003059310c300a0603550406130378797a310d300b060355040813047a7a7979310d300b0603550407130479787978310d300b060355040a130478797879310d300b060355040b130479797878310d300b06035504031304787879793020170d3139303332363038333233305a180f32313139303330323038333233305a3059310c300a0603550406130378797a310d300b060355040813047a7a7979310d300b0603550407130479787978310d300b060355040a130478797879310d300b060355040b130479797878310d300b060355040313047878797930820122300d06092a864886f70d01010105000382010f003082010a0282010100bb3298eb5910860b7ae30b6b874ca374667133fd08cbf42bb52d5c1a49e0fe4818fc768f5155a95eacc465d8649467c40ce632081297fb66c6838534ee4221e3d2b6b56060fdde5569e37465852f9daa3a987bff4f013981c9ff063b7e0ca7d52ccacfeddbe066bcc29780d78e929ad9dacc3b804f51c9eb0548aac4803b0d32764135d6d8d987381adea6d5ec34966aebdec717c95e064e203a3ba6d10bf8336eae43a01ca42406055c62312c6ed057afb386cd12b0b54ac1611e6e1fef8e71c8da0597a43f542e645f54e614c2603b58ce3690e69e0da24e944eecacdcf6faa2043ccce1f15860432527b706269510cd6bd8314999fa870fb8825a1e1805070203010001a321301f301d0603551d0e041604149fcb5d4d1dd5743459052b9ab79539ebc8924570300d06092a864886f70d01010b05000382010100658ddae3d7833e5b7cbf504cc016deda2cee97cb2b0bbdb889d06f19860389904ffcdf0f21966299d4c0e19d109065bdd769977f1a67d4928fecdee48eb3c7ce5fb4009653510b9897bdc66aa54a29930ed5c27cbd3a75c4362944afa4625a7c7f0d3e77bcaf8f23d9233ad9c83d33305c88f6110f6d50de9eec1c47135fff99826bc79c88355f99d41c00eb54a7292c44a340fb78d3ac1acf39ad0d13bccc2fdf69e1d86504ae4087a4b59a662986a4e03c0b379f92dce5c8c9da54e164f9480c8a9fed01bcc562640b78adaaa5adcfda0e03a477ea63ec136819298e55f428f74076c1b444556001b84cbd5d47b080b6aeb5f1a567c03ea6a64a9c2876e3b2"
-      }
+    {
+      "jar"   : "./jar/mqitv.jar"            ,
+      "name"  : "101酒店源(卡頓)"                     ,
+      "api"   : "csp_MQiTV"                  ,
+      "ext"   : "http://60.249.93.7:1888",
+      "epg": "http://iptv.52sw.top:668/?ch={name}&date={date}",
+      "logo": "https://epg.112114.xyz/logo/{name}.png"
     },
     {
-      "name": "小雲2台",
-      "url": "./live/ueen2.txt",
-      "spider": "https://tang.hz.cz/api/custom_spider.jar;md5;b5079660bb98ded216e787a0458981b4",
-      "jar": "https://tang.hz.cz/api/custom_spider.jar;md5;b5079660bb98ded216e787a0458981b4",
-      "epg": "https://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/taipei",
-      "logo": "https://epg.112114.xyz/logo/{name}.png",
-      "playerType": 2,
-      "core": {
-        "auth": "local://tvbus",
-        "name": "123",
-        "pass": "345",
-        "resp": "{\"result_code\":\"0\",\"result\":\"ok\",\"keys\":{\"user_id\":\"0027000005f5c398\",\"peer_id\":\"0ec044591d9e1418\",\"session_key\":\"0a49662f37674af5\"}}",
-        "so": "./live/gold/tvbus.so",
-        "pkg": "com.svc.vlive.home.ytv9x",
-        "sign": "308203533082023ba00302010202042108f284300d06092a864886f70d01010b05003059310c300a0603550406130378797a310d300b060355040813047a7a7979310d300b0603550407130479787978310d300b060355040a130478797879310d300b060355040b130479797878310d300b06035504031304787879793020170d3139303332363038333233305a180f32313139303330323038333233305a3059310c300a0603550406130378797a310d300b060355040813047a7a7979310d300b0603550407130479787978310d300b060355040a130478797879310d300b060355040b130479797878310d300b060355040313047878797930820122300d06092a864886f70d01010105000382010f003082010a0282010100bb3298eb5910860b7ae30b6b874ca374667133fd08cbf42bb52d5c1a49e0fe4818fc768f5155a95eacc465d8649467c40ce632081297fb66c6838534ee4221e3d2b6b56060fdde5569e37465852f9daa3a987bff4f013981c9ff063b7e0ca7d52ccacfeddbe066bcc29780d78e929ad9dacc3b804f51c9eb0548aac4803b0d32764135d6d8d987381adea6d5ec34966aebdec717c95e064e203a3ba6d10bf8336eae43a01ca42406055c62312c6ed057afb386cd12b0b54ac1611e6e1fef8e71c8da0597a43f542e645f54e614c2603b58ce3690e69e0da24e944eecacdcf6faa2043ccce1f15860432527b706269510cd6bd8314999fa870fb8825a1e1805070203010001a321301f301d0603551d0e041604149fcb5d4d1dd5743459052b9ab79539ebc8924570300d06092a864886f70d01010b05000382010100658ddae3d7833e5b7cbf504cc016deda2cee97cb2b0bbdb889d06f19860389904ffcdf0f21966299d4c0e19d109065bdd769977f1a67d4928fecdee48eb3c7ce5fb4009653510b9897bdc66aa54a29930ed5c27cbd3a75c4362944afa4625a7c7f0d3e77bcaf8f23d9233ad9c83d33305c88f6110f6d50de9eec1c47135fff99826bc79c88355f99d41c00eb54a7292c44a340fb78d3ac1acf39ad0d13bccc2fdf69e1d86504ae4087a4b59a662986a4e03c0b379f92dce5c8c9da54e164f9480c8a9fed01bcc562640b78adaaa5adcfda0e03a477ea63ec136819298e55f428f74076c1b444556001b84cbd5d47b080b6aeb5f1a567c03ea6a64a9c2876e3b2"
-      }
-    },
-    {
-      "name": "小雲-唐三",
-      "url": "https://tang.hz.cz/so/xiaoyun.m3u",
-      "spider": "https://tang.hz.cz/api/custom_spider.jar",
-      "jar": "https://tang.hz.cz/api/custom_spider.jar",
-      "core": {
-        "auth": "local://tvbus",
-        "name": "123",
-        "pass": "345",
-        "resp": "{\"result_code\":\"0\",\"result\":\"ok\",\"keys\":{\"user_id\":\"0027000005f5c398\",\"peer_id\":\"0ec044591d9e1418\",\"session_key\":\"0a49662f37674af5\"}}",
-        "so": "http://127.0.0.1:9978/proxy?do=xiaoy",
-        "pkg": "com.svc.vlive.home.ytv9x",
-        "sign": "308203533082023ba00302010202042108f284300d06092a864886f70d01010b05003059310c300a0603550406130378797a310d300b060355040813047a7a7979310d300b0603550407130479787978310d300b060355040a130478797879310d300b060355040b130479797878310d300b06035504031304787879793020170d3139303332363038333233305a180f32313139303330323038333233305a3059310c300a0603550406130378797a310d300b060355040813047a7a7979310d300b0603550407130479787978310d300b060355040a130478797879310d300b060355040b130479797878310d300b060355040313047878797930820122300d06092a864886f70d01010105000382010f003082010a0282010100bb3298eb5910860b7ae30b6b874ca374667133fd08cbf42bb52d5c1a49e0fe4818fc768f5155a95eacc465d8649467c40ce632081297fb66c6838534ee4221e3d2b6b56060fdde5569e37465852f9daa3a987bff4f013981c9ff063b7e0ca7d52ccacfeddbe066bcc29780d78e929ad9dacc3b804f51c9eb0548aac4803b0d32764135d6d8d987381adea6d5ec34966aebdec717c95e064e203a3ba6d10bf8336eae43a01ca42406055c62312c6ed057afb386cd12b0b54ac1611e6e1fef8e71c8da0597a43f542e645f54e614c2603b58ce3690e69e0da24e944eecacdcf6faa2043ccce1f15860432527b706269510cd6bd8314999fa870fb8825a1e1805070203010001a321301f301d0603551d0e041604149fcb5d4d1dd5743459052b9ab79539ebc8924570300d06092a864886f70d01010b05000382010100658ddae3d7833e5b7cbf504cc016deda2cee97cb2b0bbdb889d06f19860389904ffcdf0f21966299d4c0e19d109065bdd769977f1a67d4928fecdee48eb3c7ce5fb4009653510b9897bdc66aa54a29930ed5c27cbd3a75c4362944afa4625a7c7f0d3e77bcaf8f23d9233ad9c83d33305c88f6110f6d50de9eec1c47135fff99826bc79c88355f99d41c00eb54a7292c44a340fb78d3ac1acf39ad0d13bccc2fdf69e1d86504ae4087a4b59a662986a4e03c0b379f92dce5c8c9da54e164f9480c8a9fed01bcc562640b78adaaa5adcfda0e03a477ea63ec136819298e55f428f74076c1b444556001b84cbd5d47b080b6aeb5f1a567c03ea6a64a9c2876e3b2"
-      }
-    },
-    {
-      "name": "安博測試台(很卡-不能看)",
-      "type": 0,
-      "url": "./live/UBLIVE.php",
-      "epg": "https://epg.112114.eu.org/?ch={name}&date={date}",
-      "logo": "https://epg.112114.eu.org/logo/{name}.png",
-      "pass": true
-    },
-    {
-      "name": "大雜燴",
-      "type": 0,
-      "url": "./live/666-live.txt",
-      "epg": "https://epg.112114.eu.org/?ch={name}&date={date}",
-      "logo": "https://epg.112114.eu.org/logo/{name}.png"
+      "name"  : "103酒店源(卡頓)"                     ,
+      "url": "./live/103.txt",
+      "epg": "http://iptv.52sw.top:668/?ch={name}&date={date}",
+      "logo": "https://epg.112114.xyz/logo/{name}.png"
     },
     {
       "name": "168線路(故障)",

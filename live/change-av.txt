@@ -23,8 +23,6 @@
 
 台湾频道_1818,#genre#
 松視1台,http://ali.hlspull.yximgs.com:80/live/52f274c1bedf4791f95ab9601f0700ac.flv
-松視1台,p3p://167.114.175.6:55331/5fe445280008a40682a0367c343436bb
-松視1台,p3p://167.114.175.6:55331/5fe445280008a40682a0367c343436bb
 松視1台,http://suo.im/aeQTj
 松視1台,http://kkk.888.3116598.xyz/api.php?n=HKTV&id=gkJ6XG&tk=8vCbr0RKnnoG
 
@@ -35,7 +33,6 @@
 松視3台,http://ali.hlspull.yximgs.com:80/live/d19ca6e6b19c9bf461d861dafaf356c6.flv
 松視3台,p3p://167.114.175.6:55331/65db7c0f000d072a728d380931a81160
 松視3台,p3p://167.114.175.6:55331/6109e9590001f40bfd9b661109395f3b
-松視3台3,p3p://167.114.175.6:55331/6109e9590001f40bfd9b661109395f3b
 松視3台,http://suo.im/aeQT9
 松視3台,http://kkk.888.3116598.xyz/api.php?n=HKTV&id=r3Kqrz&tk=8vCbr0RKnnoG
 
@@ -59,6 +56,7 @@
 潘朵拉玩美,p3p://167.114.175.6:55331/5fe4450c000c918b829fca233c845311
 潘朵拉玩美,http://suo.im/aZtnO
 
+奧視1台,p3p://167.114.175.6:55331/5fe445280008a40682a0367c343436bb
 
 
 潘朵拉粉紅,http://ali.hlspull.yximgs.com:80/live/e1d0b7c095d39aca00e75858c7485f4d.flv
