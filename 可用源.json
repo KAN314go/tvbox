@@ -190,17 +190,6 @@
       }
     },
     {
-      "key": "csp_琥珀影院",
-      "name": "🥉｜琥珀｜高清◎秒播(滿版廣告)",
-      "type": 3,
-      "api": "csp_XBPQ",
-      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": "./json/琥珀影院.json"
-    },
-    {
       "key": "csp_MomoVod",
       "name": "🥉｜默默｜高清◎秒播(滿版廣告)",
       "type": 3,
