@@ -56,10 +56,11 @@
 潘朵拉玩美,p3p://167.114.175.6:55331/5fe4450c000c918b829fca233c845311
 潘朵拉玩美,http://suo.im/aZtnO
 
-奧視1台,p3p://167.114.175.6:55331/5fe445280008a40682a0367c343436bb
-
 
 潘朵拉粉紅,http://ali.hlspull.yximgs.com:80/live/e1d0b7c095d39aca00e75858c7485f4d.flv
+
+
+奧視1台,p3p://167.114.175.6:55331/5fe445280008a40682a0367c343436bb
 
 
 彩虹電影,http://ali.hlspull.yximgs.com:80/live/115197608906fed2c16d2a52e98314dc.flv
