@@ -326,30 +326,6 @@
       "url": "./live/11.txt",
       "ua": "okhttp/4.12",
       "epg": "http://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/Taipei"
-    },
-    {
-      "jar"   : "./jar/mqitv.jar"            ,
-      "name"  : "101酒店源(卡頓)"                     ,
-      "api"   : "csp_MQiTV"                  ,
-      "ext"   : "http://60.249.93.7:1888",
-      "epg": "http://iptv.52sw.top:668/?ch={name}&date={date}",
-      "logo": "https://epg.112114.xyz/logo/{name}.png"
-    },
-    {
-      "name"  : "103酒店源(卡頓)"                     ,
-      "url": "./live/103.txt",
-      "epg": "http://iptv.52sw.top:668/?ch={name}&date={date}",
-      "logo": "https://epg.112114.xyz/logo/{name}.png"
-    },
-    {
-      "name": "168線路(故障)",
-      "playerType": 2,
-      "url": "./live/168.m3u",
-      "ua": "okhttp/3.15",
-      "timeout": 5,
-      "epg": "https://epg.112114.xyz/?ch={name}&date={date}&serverTimeZone=Asia/taipei",
-      "logo": "https://epg.112114.xyz/logo/{name}.png",
-      "pass": true
     }
   ],
   "parses": [
