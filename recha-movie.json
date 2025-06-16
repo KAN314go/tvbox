@@ -440,7 +440,7 @@
       "name": "🏆｜臻彩｜藍光◎秒播(無廣告)",
       "type": 3,
       "api": "csp_AppYsV2",
-      "jar": "./jar/xmky-0616.jar",
+      "jar": "https://10526.kstore.vip/xmky.jar",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
@@ -481,7 +481,7 @@
       "name": "🏆｜海豚｜藍光◎秒播(無廣告+APP)",
       "type": 3,
       "api": "csp_AppGet",
-      "jar": "./jar/xmky-0616.jar",
+      "jar": "https://10526.kstore.vip/xmky.jar",
       "ext": "sHR2rlsfjI4L3t4RXQMknx77uAkBngyVCOo9nRhjtYEYVZhfCVy1trqBss1N9z/rDj66qnYWTA57CvnxJsOMbb1R0y0vBLYBpNMTyfbz36dsqgawYeyyXpTwdiQYs9rb4CFK1aW6bX+LcZiFVV4uzNbizESdy9tdeYkjDnNiCbfRD1K5N84R+TKB+U4Im7pOR8gnvFFwwx6KSDahektkXrxVKpbBw/neJaeyX3K+BkxPEzxo40Ecg3vBNUzl7RZs"
     },
     {
@@ -3974,7 +3974,7 @@
       "name": "🎵｜MTV",
       "type": 3,
       "api": "csp_Bili",
-      "jar": "./jar/xmky-0616.jar",
+      "jar": "https://10526.kstore.vip/xmky.jar",
       "searchable": 1,
       "ext": {
         "json": "https://10526.kstore.vip/星河影视/mtv.json",
@@ -3987,7 +3987,7 @@
       "name": "🎵｜歌单｜",
       "type": 3,
       "api": "csp_Bili",
-      "jar": "./jar/xmky-0616.jar",
+      "jar": "https://10526.kstore.vip/xmky.jar",
       "searchable": 1,
       "ext": {
         "json": "./json/酷奇mv.json",
@@ -4000,7 +4000,7 @@
       "name": "🎵｜演唱会｜",
       "type": 3,
       "api": "csp_Bili",
-      "jar": "./jar/xmky-0616.jar",
+      "jar": "https://10526.kstore.vip/xmky.jar",
       "searchable": 1,
       "ext": {
         "json": "./json/song.json",
