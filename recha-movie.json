@@ -10,6 +10,7 @@
             "type": 3,
             "quickSearch": 1,
             "api": "csp_AppGet2",
+            "jar": "./jar/xiaosa-0616.jar;md5;08b61f009f77be1627bf982e8bd5a9bd",
             "ext": {
                 "url": "http://122.228.193.2:9988",
                 "dataKey": "ca94b06ca359d80e",
@@ -24,7 +25,8 @@
             "type": 3,
             "quickSearch": 1,
             "api": "csp_AppGet",
-            "ext": {
+            "jar": "./jar/xiaosa-0616.jar;md5;08b61f009f77be1627bf982e8bd5a9bd",
+                "ext": {
                 "url": "http://49.235.114.19:130",
                 "dataKey": "q7gj4f9br3fls6nh",
                 "dataIv": "q7gj4f9br3fls6nh",
@@ -38,6 +40,7 @@
             "type": 3,
             "quickSearch": 1,
             "api": "csp_AppGet",
+            "jar": "./jar/xiaosa-0616.jar;md5;08b61f009f77be1627bf982e8bd5a9bd",            
             "ext": {
                 "url": "https://appcms.htsp4k.top",
                 "dataKey": "7CYQQzwchRQpHCOj",
@@ -52,6 +55,7 @@
             "type": 3,
             "quickSearch": 1,
             "api": "csp_AppMuou",
+            "jar": "./jar/xiaosa-0616.jar;md5;08b61f009f77be1627bf982e8bd5a9bd",            
             "ext": {
                 "url": "http://154.12.90.59:14580",
                 "dataKey": "6b7cf13bf47ba2e6",
@@ -65,6 +69,7 @@
             "type": 3,
             "quickSearch": 1,
             "api": "csp_AppGet",
+            "jar": "./jar/xiaosa-0616.jar;md5;08b61f009f77be1627bf982e8bd5a9bd",            
             "ext": {
                 "url": "https://pzoap.moedot.net",
                 "dataKey": "1yZ2Spn9krnzVKoC",
@@ -73,8 +78,32 @@
                 "version": ""
             }
         },
-
-
+    {
+      "key": "huomaoys",
+      "name": "猫猫影视┃★星河★",
+      "type": 3,
+      "api": "csp_Muou",
+      "jar": "https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1749917849270/0615qj.jpg;md5;410ad21caad9e6f6d40c1ae5ca2be662",
+      "playerType": 2,
+      "ext": "7lj763gg0939790i413gi484k8058896highi4414h68l7g6hk8qiaojig9k2k289l9ik807i213k5j602"
+    },
+    {
+      "key": "追忆",
+      "name": "追忆影视┃★星河★",
+      "type": 3,
+      "api": "csp_Shark",
+      "playerType": 2,
+      "jar": "https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1749917849270/0615qj.jpg;md5;410ad21caad9e6f6d40c1ae5ca2be662",
+      "ext": "7lj763gg402i794247239g9jk10kjl82l3g6845ki2i66j7906194lg6g8460h5k548i51l8824hjj902309g182l7kl0hk3l4776346lihki7kl3kj425kl3jk31j0kggkhj0g7l5632376984k395496k449626gh0k66l26k7j6h49j9331h9701k106i"
+    },    
+    {
+      "key": "海豚",
+      "name": "海豚影视┃★星河★",
+      "type": 3,
+      "api": "csp_AppGet",
+      "jar": "./xmky.jar",
+      "ext": "sHR2rlsfjI4L3t4RXQMknx77uAkBngyVCOo9nRhjtYEYVZhfCVy1trqBss1N9z/rDj66qnYWTA57CvnxJsOMbb1R0y0vBLYBpNMTyfbz36dsqgawYeyyXpTwdiQYs9rb4CFK1aW6bX+LcZiFVV4uzNbizESdy9tdeYkjDnNiCbfRD1K5N84R+TKB+U4Im7pOR8gnvFFwwx6KSDahektkXrxVKpbBw/neJaeyX3K+BkxPEzxo40Ecg3vBNUzl7RZs"
+    },
 
 
 
