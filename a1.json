@@ -398,23 +398,6 @@
     },
     {
       "key": "晴天",
-      "name": "🏆｜晴天｜藍光◎秒播(無廣告+APP)",
-      "type": 3,
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "api": "csp_AppGet",
-      "jar": "./jar/xiaosa.jar;md5;e4619193d9073ff124bb77f88f61d057",
-      "ext": {
-        "url"     : "https://appcms.sun4k.top",
-        "dataKey" : "b025dcd9c289cbb3",
-        "dataIv"  : "b025dcd9c289cbb3",
-        "deviceId": "",
-        "version" : ""
-      }
-    },
-    {
-      "key": "晴天",
       "name": "🏆｜晴天｜藍光◎秒播(無廣告+OK源)",
       "type": 3,
       "api": "csp_Sun4kGuard",
