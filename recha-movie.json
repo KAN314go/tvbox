@@ -440,7 +440,7 @@
       "name": "🏆｜臻彩｜藍光◎秒播(無廣告)",
       "type": 3,
       "api": "csp_AppYsV2",
-      "jar": "https://10526.kstore.vip/xmky.jar",
+      "jar": "./jar/xmky.jar",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
