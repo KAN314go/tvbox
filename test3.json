@@ -4,7 +4,36 @@
   "wallpaper": "https://tv.nxog.top/m/t/",
   "sites": [
 
-
+{
+            "key": "黑猫TV",
+            "name": "黑猫TV",
+            "type": 3,
+            "api": "csp_XBPQ",
+            "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "ext": {
+                    "请求头": "手机",
+                    "二次截取": "list-items\">&&id=\"pagination",
+                    "数组": "<a&&class=\"vid_item_mask",
+                    "标题": "class=\"title\">*>&&</a>",
+                    "图片": "data-original=\"&&\"",
+                    "链接": "href=\"&&\"",
+                    "副标题": "class=\"unit\">&&</div>",
+                    "多线二次截取": "class=\"desc\">&&class=\"section-box",
+                    "多线数组": "class=\"h5_more\">&&</a>",
+                    "多线链接": "href=\"&&\"",
+                    "多线链接前缀": "https://www.hmaotv.com",
+                    "线路数组": "layui-tab-title playline-tabs-title&&</ul>",  
+                    "线路标题": ">&&</li>",
+                    "播放数组": "class=\"layui-tab-item playline-tab-item&&</div>",
+                    "播放标题": ">&&</li>",
+                    "分类url": "https://www.hmaotv.com/vod/index.html?page={catePg}&{cateId}[https://www.hmaotv.com/vod/index.html?{cateId}]",
+                    "分类": "电影&电视剧&综艺&动漫",
+                    "分类值": "type_id=229&type_id=230&type_id=231&type_id=232"
+}
+        },
 
     {
       "key": "豆瓣",
