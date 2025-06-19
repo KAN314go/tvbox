@@ -10,7 +10,7 @@
       "name": "直播测试",
       "api": "csp_MQiTV",
       "epg": "http://epg.51zmt.top:8000/e.xml",
-      "jar": "./mqitv.jar",
+      "jar": "./jar/mqitv.jar",
       "ext": [
         {
           "name": "国内直播",
@@ -29,6 +29,7 @@
     {
       "name": "migu体育",
       "type": 2,
+      "jar": "./jar/mqitv.jar",
       "url": "./移动.txt",
       "epg": "http://epg.51zmt.top:8000/e.xml",
       "logo": "https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/{name}.png"
