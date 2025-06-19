@@ -6,7 +6,12 @@
 
 
 
-
+{
+      "name": "直播测试",
+      "api": "csp_MQiTV",
+      "epg": "http://epg.51zmt.top:8000/e.xml",
+      "jar": "./mqitv.jar",
+      "ext": [
         {
           "name": "国内直播",
           "url": "http://42.239.166.97:8899"
@@ -15,8 +20,19 @@
           "name": "台湾直播",
           "url": "https://60.248.127.232:4433"
         },
-
-
+        {
+          "name": "国内测试",
+          "url": "https://27.13.170.199:4433"
+        }
+      ]
+    },
+    {
+      "name": "migu体育",
+      "type": 2,
+      "url": "./移动.txt",
+      "epg": "http://epg.51zmt.top:8000/e.xml",
+      "logo": "https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/{name}.png"
+    },
 
 
 
