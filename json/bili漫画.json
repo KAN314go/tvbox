@@ -1,0 +1,52 @@
+{
+  "class": [
+    {
+      "type_name": "大陆动漫",
+      "type_id": "大陆动漫"
+    },
+    {
+      "type_name": "日本动漫",
+      "type_id": "日本动漫"
+    },
+    {
+      "type_name": "动态漫画",
+      "type_id": "动态漫画"
+    },
+    {
+      "type_name": "都市漫画",
+      "type_id": "都市漫画"
+    },
+    {
+      "type_name": "言情漫画",
+      "type_id": "言情漫画"
+    },
+    {
+      "type_name": "武侠漫画",
+      "type_id": "武侠漫画"
+    },
+    {
+      "type_name": "仙侠漫画",
+      "type_id": "仙侠漫画"
+    },
+    {
+      "type_name": "玄幻漫画",
+      "type_id": "玄幻漫画"
+    },
+    {
+      "type_name": "重生漫画",
+      "type_id": "重生漫画"
+    },
+    {
+      "type_name": "穿越漫画",
+      "type_id": "穿越漫画"
+    },
+    {
+      "type_name": "恐怖惊悚漫画",
+      "type_id": "恐怖惊悚漫画"
+    },
+    {
+      "type_name": "网游竞技漫画",
+      "type_id": "网游竞技漫画"
+    }
+  ]
+}

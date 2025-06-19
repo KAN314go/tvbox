@@ -1,0 +1,52 @@
+{
+  "class": [
+    {
+      "type_name": "全部小说",
+      "type_id": "全部小说"
+    },
+    {
+      "type_name": "爱国小说",
+      "type_id": "爱国小说"
+    },
+    {
+      "type_name": "玄幻小说",
+      "type_id": "玄幻小说"
+    },
+    {
+      "type_name": "都市小说",
+      "type_id": "都市小说"
+    },
+    {
+      "type_name": "言情小说",
+      "type_id": "言情小说"
+    },
+    {
+      "type_name": "武侠小说",
+      "type_id": "武侠小说"
+    },
+    {
+      "type_name": "仙侠小说",
+      "type_id": "仙侠小说"
+    },
+    {
+      "type_name": "科幻小说",
+      "type_id": "科幻小说"
+    },
+    {
+      "type_name": "重生小说",
+      "type_id": "重生小说"
+    },
+    {
+      "type_name": "穿越小说",
+      "type_id": "穿越小说"
+    },
+    {
+      "type_name": "恐怖惊悚小说",
+      "type_id": "恐怖惊悚小说"
+    },
+    {
+      "type_name": "网游竞技小说",
+      "type_id": "网游竞技小说"
+    }
+  ]
+}
