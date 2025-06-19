@@ -6,7 +6,7 @@
 
     {
       "key": "bilitingshu",
-      "name": "bili听书┃★星河★",
+      "name": "bili聽書趣",
       "type": 3,
       "api": "csp_Bili",
       "jar": "./jar/xmky.jar",
@@ -22,7 +22,7 @@
     },
     {
       "key": "bilimanhua",
-      "name": "bili漫画┃★星河★",
+      "name": "bili漫畫屋",
       "type": 3,
       "api": "csp_Bili",
       "jar": "./jar/xmky.jar",
