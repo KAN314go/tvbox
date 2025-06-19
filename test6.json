@@ -29,7 +29,7 @@
                     "线路标题": ">&&</li>",
                     "播放数组": "class=\"layui-tab-item playline-tab-item&&</div>",
                     "播放标题": ">&&</li>",
-                    "分类url": "https://www.hmaotv.com/vod/index.html?page={catePg}&{cateId}[https://www.hmaotv.com/vod/index.html?{cateId}]",
+                    "分类url": "https://www.hmaotv.com/vod/index.html?page={catePg}&{cateId}",
                     "分类": "电影&电视剧&综艺&动漫",
                     "分类值": "type_id=229&type_id=230&type_id=231&type_id=232"
                     }
