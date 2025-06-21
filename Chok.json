@@ -9,14 +9,14 @@
 			"name": "Chok吧",
 			"type": 3,
 			"api": "csp_XBPQ",
-      "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",    
+            "jar": "./jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",    
 			"ext": {
 				"线路数组": "stui-pannel__head bottom-line active clearfix&&</div",
 				"线路标题": "title\">&&</h3",
 				"分类url": "https://www.chok8.vip/vodshow/{cateId}-{area}-{by}------{catePg}---{year}.html",                 
 				"分类": "电影$dianying#电视剧$lianxuju#综艺$zongyi#动漫$dongman",
 				"类型": "动作片$dongzuopian#喜剧片$xijupian#爱情片$aiqingpian#科幻片$kehuanpian#恐怖片$kongbupian#剧情片$juqingpian#战争片$zhanzhengpian#纪录片$jilupian#犯罪片$fanzuipian||国产剧$guochanju#港台剧$gangtaiju#日韩剧$rihanju#欧美剧$oumeiju||空||空",
-        "地區": "中国大陆&中国香港&中国台湾&美国&韩国&日本&泰国&新加坡&马来西亚&印度&英国&法国&加拿大&西班牙&俄罗斯&其它"
+                "地区": "中国大陆&中国香港&中国台湾&美国&韩国&日本&泰国&新加坡&马来西亚&印度&英国&法国&加拿大&西班牙&俄罗斯&其它"
 			}
 		}
   ],
